@@ -26,12 +26,13 @@ jobs:
         uses: yusancky/setup-typst@v3
         id: setup-typst
 
-      # Installs a forked version of the Notebookinator typst template
-      - name: Install Notebookinator
-        run:
-          git clone https://github.com/RubyflameWarrior/notebookinator.git
-          ./notebookinator/scripts/package @local
-          rm -rf notebookinator
+      # Clones a forked version of the Notebookinator typst template
+      - name: Clone Notebookinator Repository
+        run: git clone https://github.com/RubyflameWarrior/notebookinator.git
+      
+      # Installs the Notebookinator typst template
+      - name: Install Notebookinator Package
+        run: ./notebookinator/scripts/package @local
 
       # Compiles the notebook
       - name: Compile Notebook
