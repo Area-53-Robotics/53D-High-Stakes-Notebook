@@ -1,5 +1,5 @@
 #import "/packages.typ": *
-#import "/delta/components/components.typ"
+#import components: toc
 
 #create-frontmatter-entry(title: "Table of Contents")[
   #components.toc()

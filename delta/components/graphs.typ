@@ -1,5 +1,5 @@
 #import "../colors.typ": *
-#import "/packages.typ": cetz
+#import "../theme-packages.typ": cetz
 #import "@local/notebookinator:1.0.1": utils
 
 /// Creates a labeled pie chart.

@@ -8,8 +8,7 @@
   season: "High Stakes",
   year: "2024-2025",
   theme: delta-theme,
-  count-current: 1,
-  count-total: 1,
+  count: (current: 1, total: 1),
   cover-background: image("/assets/cover.png"),
 )
 

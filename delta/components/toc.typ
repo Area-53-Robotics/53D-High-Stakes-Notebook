@@ -6,6 +6,7 @@
   _,
   body,
   appendix,
+  program,
 ) => {
   heading(level: 1)[Entries]
 
@@ -33,6 +34,28 @@
       )
     },
   )
+
+  if (program.len() <= 0) {
+    return
+  }
+
+  linebreak()
+
+  heading(level: 1)[Program]
+
+  for entry in program [
+    #entry.title
+    #box(
+      width: 1fr,
+      line(
+        length: 100%,
+        stroke: (
+          dash: "dotted",
+        ),
+      ),
+    )
+    #entry.page-number
+  ]
 
   if (appendix.len() <= 0) {
     return

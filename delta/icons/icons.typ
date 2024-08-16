@@ -17,22 +17,3 @@
 // #let nb_web = read("./web.svg")
 // #let nb_quotes = read("./quotes.svg")
 // #let nb_function = read("./function.svg")
-
-
-
-// Returns the raw image data, not image content
-// You'll still need to run image.decode on the result
-#let nb_change_icon_color(raw_icon: "", fill: red) = {
-  return raw_icon.replace("<path", "<path style=\"fill: " + fill.to-hex() + "\"")
-}
-
-#let nb_change_icon_stroke(raw_icon: "", stroke: red) = {
-  return raw_icon.replace("stroke=\"currentColor\"", "stroke=\"" + stroke.to-hex() + "\"")
-}
-
-#let nb_icon(label: "", size: 0.7em) = {
-  let data = type_metadata.at(label)
-  let raw_icon = data.icon
-  
-  image.decode(raw_icon, height: size)
-}

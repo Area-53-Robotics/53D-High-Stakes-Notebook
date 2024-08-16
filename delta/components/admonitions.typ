@@ -2,7 +2,7 @@
 #import "../icons/icons.typ"
 #import "@local/notebookinator:1.0.1": utils
 #import "../metadata.typ": *
-#import "/packages.typ": showybox
+#import "../theme-packages.typ": showybox
 #import showybox: *
 
 #let admonition = utils.make-admonition((type, title, body) => {

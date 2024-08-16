@@ -1,7 +1,8 @@
-#import "./format.typ"
 #import "./colors.typ": *
 #import "@local/notebookinator:1.0.1": utils
-#import "../packages.typ": *
+#import "./theme-packages.typ": *
+#import "components/components.typ": *
+#import "format.typ"
 
 #let rules = utils.make-rules(doc => {
   set text(font: "Linux Libertine", size: 11pt)

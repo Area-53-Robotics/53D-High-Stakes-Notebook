@@ -1,7 +1,6 @@
 // this file allows us to only specify package versions once
 
 #import "@local/notebookinator:1.0.1": *
-#import "/delta/delta.typ": delta-theme, components
 
 #import "@preview/tablex:0.0.8"
 #import "@preview/showybox:2.0.1"

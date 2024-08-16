@@ -1,5 +1,5 @@
-#import "/packages.typ": tablex
-#import tablex: *
+// #import "/packages.typ": *
+// #import components: tablex
 #import "./colors.typ": *
 
 #let table(it) = {
