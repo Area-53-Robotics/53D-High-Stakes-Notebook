@@ -7,8 +7,9 @@
 /// - end (content):
 /// - body (content):
 /// -> content
-#let title(color: gray, beginning: none, end: none, body) = {
-  let highlight(color: none, body, width: auto) = {
+#let title(color: gray, beginning: none, beginning-fill: none, end: none, body) = {
+  
+  let highlight(color: none, body, width: auto, bottom-border-size: 0pt, bottom-color: color) = {
     box(
       fill: color,
       outset: 5pt,
@@ -16,21 +17,34 @@
       body,
       height: 1em,
       width: width,
+      stroke: {
+        if bottom-border-size != 0pt {(bottom: bottom-border-size + bottom-color)}
+      }
     )
   }
 
   set text(size: 18pt, weight: "bold")
-  set align(horizon)
 
   if not beginning == none {
-    highlight(color: color, beginning)
-    h(15pt)
+    if beginning-fill != none {
+      highlight(color: color, bottom-border-size: 5pt, bottom-color: color)[
+        #box(baseline: -30%, beginning)
+      ]
+      h(5pt)
+    } else {
+      box(baseline: 30%, align(left)[#beginning])
+    }
+    h(10pt)
   }
-  highlight(color: color.lighten(80%), width: 1fr)[
-    #body
-  ]
+
   if not end == none {
-    h(15pt)
-    highlight(color: color.lighten(80%), end)
+    highlight(color: color)[
+      #end
+    ]
+    h(10pt)
   }
+
+  highlight(color: color.lighten(50%), width: 1fr, bottom-border-size: 5pt, bottom-color: color)[
+    #box(baseline: -30%, body)
+  ]
 }

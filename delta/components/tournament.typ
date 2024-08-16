@@ -1,79 +1,213 @@
 #import "../colors.typ": *
 
-/// A Series of tables displaying match data from a tournament. Useful for tournament analysis entries.
-/// - ..matches (dictionary): A list of all of the matches at the tournament.
-/// Each dictionary must contain the following fields:
-/// - match (string) The name of the match
-/// - red-alliance `<dictionary>` The red alliance
-///   - teams `<array>`
-///   - score `<integer>`
-/// - blue-alliance `<dictionary>` The blue alliance
-///   - teams `<array>`
-///   - score `<integer>`
-/// - won `<boolean>` Whether you won the match
-/// - auton `<boolean>` Whether you got the autonomous bonus
-/// - awp `<boolean>` Whether you scored the autonomous win point
-/// - notes `<content>` Any additional notes you have about the match
-/// -> content
-#let tournament(..matches) = {
-  for match in matches.pos() {
-    let color = if match.won {
-      green
-    } else {
-      red
-    }
-    let cell = rect.with(fill: color.lighten(80%), width: 100%, height: 30pt)
-    let header-cell = cell.with(fill: color, height: 20pt)
-    let alliance-info(alliance: none) = {
-      cell[
-        #grid(
-          columns: (1fr, 1fr),
-          [
-            #alliance.teams.at(0) \
-            #alliance.teams.at(1) \
-          ], [
-            #set text(size: 15pt)
-            #set align(horizon + center)
-            #alliance.score
-          ],
+#let nb_tournament_match(
+  match: "",
+  red_alliance: (teams: ("", ""), score: 0),
+  blue_alliance: (teams: ("", ""), score: 0),
+  won: false,
+  auton: "Tie",
+  awp: false,
+  strategy: [],
+  auton_notes: [],
+  match_notes: [],
+  subsystems: (
+    overperformed: none,
+    satisfactory: none,
+    underperformed: none,
+    disabled: none,
+  )
+) = {
+  assert((auton == "Red") or (auton == "Blue") or (auton == "Tie"), message: "Invalid auton winner")
 
-        )
-      ]
-    }
-
-    let bool-icon(input) = {
-      cell[
-        #set align(horizon + center)
-        #if input {
-          image("../icons/check.svg", width: 1.5em)
+  
+  show: showybox.with(
+    frame:(
+      border-color: {
+        if won == true {
+          green
         } else {
-          image("../icons/x.svg", width: 1.5em)
+          red
         }
-      ]
-    }
-
-    box(
-      grid(
-        columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-        header-cell(radius: (top-left: 1.5pt))[*Match*],
-        header-cell[*Red Alliance*],
-        header-cell[*Blue Alliance*],
-        header-cell[*Auton Bonus*],
-        header-cell(radius: (top-right: 1.5pt))[*AWP*],
-        cell[#match.match],
-        alliance-info(alliance: match.red-alliance),
-        alliance-info(alliance: match.blue-alliance),
-        bool-icon(match.auton),
-        bool-icon(match.awp),
-      ),
+      },
+      body-color: none,
+      thickness: (left: 4pt/*, right: 4pt, top: 4pt, bottom: 4pt*/),
+      radius: 1.5pt,
     )
+  )
 
-    if not match.at("notes", default: none) == none [
-      === Notes
+  show "53D": it => underline[*#it*]
 
-      #match.notes
-    ] else [
+  grid(
+    columns: (20%, auto),
+    rows: 1,
+    column-gutter: 5pt,
 
-    ]
-  }
+    align(horizon)[
+      #set text(size: 13pt)
+      #grid(
+        columns: 1,
+        rows: 3,
+
+        rect(
+          radius: (top: 5pt),
+          width: 100%,
+          fill: gray,
+          stroke: black + 1pt
+        )[
+          #align(center)[
+            *#match* \
+            #if won == true [
+              Win
+            ] else [
+              Loss
+            ]
+          ]
+        ],
+
+        rect(
+          width: 100%,
+          fill: red.lighten(20%),
+          stroke: black + 1pt
+        )[
+          #grid(
+            columns: (50%, 50%),
+            rows: 1,
+
+            [
+              #red_alliance.teams.first() \
+              #red_alliance.teams.last()
+            ],
+
+            align(center)[
+              #text(size: 19pt)[
+                #red_alliance.score
+              ]
+            ]
+          )
+        ],
+
+        rect(
+          radius: (bottom: 5pt),
+          width: 100%,
+          fill: blue.lighten(20%),
+          stroke: black + 1pt
+        )[
+          #grid(
+            columns: (50%, 50%),
+            rows: 1,
+
+            [
+              #blue_alliance.teams.first() \
+              #blue_alliance.teams.last()
+            ],
+
+            align(center)[
+              #text(size: 19pt)[
+                #blue_alliance.score
+              ]
+            ]
+          )
+        ],
+      )
+    ],
+
+    align(horizon)[
+      #show red_alliance.teams.first(): it => text(red)[#it]
+      #show red_alliance.teams.last(): it => text(red)[#it]
+      #show blue_alliance.teams.first(): it => text(blue)[#it]
+      #show blue_alliance.teams.last(): it => text(blue)[#it]
+
+      #grid(
+        columns: 1,
+        rows: 4,
+        row-gutter: 5pt,
+
+        rect(
+          radius: 5pt,
+          width: 100%
+        )[
+          *Strategy:* \
+          #strategy
+        ],
+
+        rect(
+          radius: 5pt,
+          width: 100%,
+          inset: 0pt
+        )[
+          #grid(
+            columns: (25%, 17%, 58%),
+            rows: 1,
+
+            rect(
+              stroke: (right: 1pt)
+            )[
+              #align(center)[
+
+                #text(size: 13pt)[*Auton Bonus:*]
+                #if auton == "Red" {
+                  text(size: 16pt, fill: red)[Red]
+                } else if auton == "Blue" {
+                  text(size: 16pt, fill: blue)[Blue]
+                } else {
+                  text(size: 16pt, fill: gray)[Tie]
+                }
+              ]
+            ],
+
+            rect(
+              stroke: (right: 1pt)
+            )[
+              #align(center)[
+                #grid(
+                  columns: 2,
+                  rows: 1,
+                  column-gutter: 2pt,
+
+                  text(size: 13pt)[*AWP:*],
+                  [
+                    #if awp == false {
+                      image("/template/tabler-icons/square.svg", height: 2em)
+                    } else {
+                      image("/template/tabler-icons/square-check-filled.svg", height: 2em)
+                    }
+                  ]
+                )
+              ]
+            ],
+
+            rect(
+              stroke: (left: 1pt),
+              width: 100%
+            )[
+              #text(size: 13pt)[*Auton Notes:*] \
+              #auton_notes
+            ]
+          )
+        ],
+
+        rect(
+          radius: 5pt,
+          width: 100%
+        )[
+          #text(size: 13pt)[*Match Notes:*] \
+          #match_notes
+        ],
+
+        rect(
+          radius: 5pt,
+          width: 100%
+        )[
+          #text(size: 13pt)[*Subsystem Performance:*] \
+          - Overperformed: #subsystems.overperformed \
+          - Satisfactory: #subsystems.satisfactory \
+          - Underperformed: #subsystems.underperformed
+          #if (subsystems.disabled != none) [
+            - Disabled: #subsystems.disabled
+          ]
+        ],
+
+      )
+    ],
+  )
 }
