@@ -5,7 +5,6 @@
 53D's notebook for the 2024-25 VRC High Stakes challenge. Written by Ajibola Ajani, Jin Hao Cao, and Ishika Saha.
 
 ## Special Thanks To
-- Felix for backend code support
 - Terry for notebooking advice
 
 ## Typst Extensions Used
@@ -19,7 +18,7 @@
 1. Install the required fonts:
     - Linux Libertine
     - Orbitron
-    - Excalifont
+    - Virgil 3 YOFF
 2. Install Typst
 
 Download a [release](https://github.com/typst/typst/releases/), and add it to your system's PATH. 

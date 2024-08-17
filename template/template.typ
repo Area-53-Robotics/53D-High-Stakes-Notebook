@@ -85,7 +85,7 @@
   
   print_frontmatter_entries()
 
-  nb_toc()
+  // nb_toc()
 
   print_entries()
 

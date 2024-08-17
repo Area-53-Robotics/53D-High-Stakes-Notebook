@@ -1,6 +1,8 @@
 #import "/template/entries.typ": *
 #import "/template/colors.typ" : *
 #import "/template/components/components.typ": *
+#import "../packages.typ": showybox
+#import showybox: showybox
 
 #show: create_frontmatter_entry.with(
   title: "Meet the Team"

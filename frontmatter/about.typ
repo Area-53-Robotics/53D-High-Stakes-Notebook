@@ -1,7 +1,8 @@
 #import "/template/entries.typ": *
 #import "/template/components/components.typ": *
-#import "@preview/tablex:0.0.8"
-#import "@preview/codetastic:0.2.2": qrcode
+#import "../packages.typ": tablex, codetastic
+#import tablex: gridx
+#import codetastic: qrcode
 
 #show: create_frontmatter_entry.with(
   title: "About Our Notebook"

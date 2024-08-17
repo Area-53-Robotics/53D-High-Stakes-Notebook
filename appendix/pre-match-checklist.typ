@@ -1,4 +1,6 @@
 #import "/template/entries.typ": *
+#import "../packages.typ": tablex
+#import tablex: gridx
 
 #show: create_appendix_entry.with(
   title: "Pre-Match Checklist",

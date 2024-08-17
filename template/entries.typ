@@ -1,6 +1,8 @@
 #import "./colors.typ" : *
 #import "./globals.typ": *
 #import "./components/components.typ": *
+#import "template-packages.typ": tablex
+#import tablex: *
 
 #let create_entry(
   title: "",

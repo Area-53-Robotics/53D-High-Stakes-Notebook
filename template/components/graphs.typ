@@ -1,6 +1,6 @@
 #import "../colors.typ": *
 
-#import "@preview/cetz:0.1.2"
+#import "../template-packages.typ": cetz
 
 #let nb_pie_chart(..data) = {
   let total;

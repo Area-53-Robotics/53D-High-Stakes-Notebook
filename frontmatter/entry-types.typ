@@ -1,6 +1,7 @@
 #import "/template/entries.typ": *
 #import "/template/components/components.typ": *
-#import "@preview/tablex:0.0.8"
+#import "../packages.typ": tablex
+#import tablex: *
 
 #show: create_frontmatter_entry.with(
   title: "Notebook Entry Types"

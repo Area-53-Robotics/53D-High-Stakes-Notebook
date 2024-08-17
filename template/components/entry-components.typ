@@ -1,4 +1,4 @@
-#import "@preview/tablex:0.0.8": *
+#import "../template-packages.typ": tablex
 #import "../icons/icons.typ": *
 #import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries, signature-type, page-number-offset
 #import "./entry-lists.typ": *
