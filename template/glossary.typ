@@ -30,8 +30,9 @@
 )[
   #locate(
     loc => {
-      // let sorted_glossary = glossary_entries.final(loc).sorted(key: ((title, _)) => title)
-      let sorted_glossary = glossary_entries.final(loc)
+      let sorted_glossary = glossary_entries.final(loc).sorted(key: (
+      (title: title, category: category, definition: definition),
+    ) => title)
 
       for entry in sorted_glossary [
         #rect(
