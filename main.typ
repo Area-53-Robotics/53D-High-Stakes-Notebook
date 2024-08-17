@@ -1,19 +1,21 @@
-#import "/packages.typ": *
-#import "delta/delta.typ": delta-theme, components
+#import "template/template.typ": *
+#include "/entries/entries.typ"
+#include "/appendix/appendix_entries.typ"
+#include "/program/program_entries.typ"
+#include "/appendix/glossary.typ"
 
-// applies the template
-// the show rule essentially passes the entire document into the `notebook` function. 
 #show: notebook.with(
-  team-name: "53D",
-  season: "High Stakes",
-  year: "2024-2025",
-  theme: delta-theme,
+  team: "53D",
+  organization: "Area 53",
   count: (current: 1, total: 1),
-  cover-background: image("/assets/cover.png"),
+  cover: circle(align(center + horizon)[#image("/assets/logos/logo.svg", width: 110%)], fill: black),
+  year: "2024 - 2025",
+  season: "High Stakes",
+  about: [
+    #include "about.typ"
+  ],
+  intro: [
+    #include "introduction.typ"
+  ],
+  innovate-form: false
 )
-
-#include "./frontmatter/frontmatter.typ"
-
-// #include "./entries/entries.typ"
-
-// #include "./appendix.typ"
