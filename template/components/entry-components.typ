@@ -243,7 +243,7 @@
       assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
 
       let entry = valid_entries.first()
-      let info = type_metadata.at(entry.last().type)
+      let info = type-metadata.at(entry.last().type)
       let page = counter(page).at(query(selector(<nb_entry>), loc).at(entry.first()).location()).at(0)
 
       [
@@ -302,7 +302,7 @@
       assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
 
       let entry = valid_entries.first()
-      let info = type_metadata.at(entry.type)
+      let info = type-metadata.at(entry.type)
       let page = entry.body
 
       [

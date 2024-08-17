@@ -4,7 +4,7 @@
 #import "@preview/tablex:0.0.8": *
 
 #let nb_admonition(type: "", title: none, body) = {
-  let info = type_metadata.at(type)
+  let info = type-metadata.at(type)
 
   if title == none {
     title = info.name

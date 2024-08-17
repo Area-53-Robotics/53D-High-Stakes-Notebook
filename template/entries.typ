@@ -42,7 +42,7 @@
     // make a second array for locations for toc linking?
     for entry in entries.final(loc) {
       [
-        #let info = type_metadata.at(entry.type)
+        #let info = type-metadata.at(entry.type)
         #let type = entry.type
 
         #set page(
@@ -174,6 +174,16 @@
   })
 }
 
+#let create_frontmatter_entry(title: "", body) = {
+  frontmatter_entries.update(x => {
+    x.push((
+      title: title,
+      body: body,
+    ))
+    x
+  })
+}
+
 #let create_appendix_entry(title: "", updated: none, body) = {
   appendix_entries.update(x => {
     x.push((
@@ -192,6 +202,26 @@
       body: body,
     ))
     x
+  })
+}
+
+#let print_frontmatter_entries() = {
+  locate(loc => {
+    for entry in frontmatter_entries.final(loc) {
+      [
+        #set page(
+          margin: (left: 5em, right: 5em),
+          background: nb_side_margin_color(color: gray),
+          header: [
+            #nb_title[#entry.title]
+          ],
+          footer: nb_frontmatter_footer()
+        )
+
+        #entry.body <nb_frontmatter_entry>
+        #counter(footnote).update(0)
+      ]
+    }
   })
 }
 

@@ -3,7 +3,7 @@
 
 #let nb_icon_box(type: "") = {
   let nb_solid_labels = true;
-  let info = type_metadata.at(type)
+  let info = type-metadata.at(type)
 
   if nb_solid_labels == false {
     box(

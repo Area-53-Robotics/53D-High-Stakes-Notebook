@@ -1,4 +1,5 @@
 #import "template/template.typ": *
+#include "/frontmatter/frontmatter-entries.typ"
 #include "/entries/entries.typ"
 #include "/appendix/appendix_entries.typ"
 #include "/program/program_entries.typ"
@@ -11,11 +12,5 @@
   cover: circle(align(center + horizon)[#image("/assets/logos/logo.svg", width: 110%)], fill: black),
   year: "2024 - 2025",
   season: "High Stakes",
-  about: [
-    #include "about.typ"
-  ],
-  intro: [
-    #include "introduction.typ"
-  ],
   innovate-form: false
 )

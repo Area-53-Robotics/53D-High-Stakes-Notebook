@@ -27,7 +27,7 @@
         )
 
         let entry = valid_entries.first()
-        let info = type_metadata.at(entry.last().type)
+        let info = type-metadata.at(entry.last().type)
         let headings = query(selector(<nb_entry>), loc)
         for (index, entry) in valid_entries {
           let page_number = counter(page).at(headings.at(index).location()).at(0)
@@ -35,7 +35,7 @@
           let start_date = entry.start_date.display("[year]/[month]/[day]")
           let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
 
-          let info = type_metadata.at(entry.type)
+          let info = type-metadata.at(entry.type)
 
           let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
 

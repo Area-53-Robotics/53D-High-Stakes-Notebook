@@ -24,8 +24,6 @@
   cover: [],
   year: "",
   season: "",
-  about: [],
-  intro: [],
   appendix: [],
   innovate-form: false,
   body,
@@ -84,10 +82,8 @@
   
   pagebreak()
   pagebreak()
-
-  about
-
-  intro
+  
+  print_frontmatter_entries()
 
   nb_toc()
 

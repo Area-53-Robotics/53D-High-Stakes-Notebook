@@ -1,14 +1,9 @@
 #import "/template/entries.typ": *
 #import "/template/colors.typ" : *
-#import "template/components/components.typ": *
+#import "/template/components/components.typ": *
 
-#show: page.with(
-  margin: (left: 5em, right: 5em),
-  background: nb_side_margin_color(color: gray),
-  header: nb_title[Meet the Team],
-  footer: [
-    #nb_frontmatter_footer()
-  ]
+#show: create_frontmatter_entry.with(
+  title: "Meet the Team"
 )
 
 // TODO: move to template
@@ -90,7 +85,4 @@
       - Builder
     ],
   )
-
-  #colbreak()
-  
 ]

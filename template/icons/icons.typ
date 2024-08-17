@@ -19,12 +19,12 @@
 // #let nb_function = read("./function.svg")
 
 // Images are stored undecoded so they can be changed later
-#let type_metadata = (
+#let type-metadata = (
   "identify": (icon: nb_question_mark, color: red, name: "Identify"),
   "understand": (icon: nb_book, color: pink300, name: "Understand"),
   "brainstorm": (icon: nb_light_bulb, color: orange, name: "Brainstorm"),
   "select": (icon: nb_target, color: yellow, name: "Select"),
-  "plan": (icon: nb_target, color: lime, name: "Plan"),
+  "plan": (icon: nb_clipboard, color: lime, name: "Plan"),
   "build": (icon: nb_shapes, color: green, name: "Build"),
   "program": (icon: nb_file, color: blue, name: "Program"),
   "test": (icon: nb_chart, color: purple, name: "Test"),
@@ -48,7 +48,7 @@
 }
 
 #let nb_icon(label: "", size: 0.7em) = {
-  let data = type_metadata.at(label)
+  let data = type-metadata.at(label)
   let raw_icon = data.icon
   
   image.decode(raw_icon, height: size)
