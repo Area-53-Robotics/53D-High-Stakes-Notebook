@@ -1,53 +1,6 @@
-#import "../template-packages.typ": tablex
 #import "../icons/icons.typ": *
 #import "../globals.typ": frontmatter-page-counter, entry-page-counter, appendix-page-counter, entries, signature-type, page-number-offset
 #import "./entry-lists.typ": *
-
-#let nb_pro_con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
-  #assert(name != none, message: "No name given")
-  #assert(pros != [], message: "No pros recorded")
-  #assert(cons != [], message: "No cons recorded")
-
-  #if notes != [] {
-    tablex(
-      columns: (image-width, 1fr, 1fr),
-      rows: 4,
-      align: left + top,
-
-      cellx(align: center, fill: gray)[*#name*],
-      cellx(fill: green)[*Pros*],
-      cellx(fill: red)[*Cons*],
-      cellx(align: center + horizon, rowspan: 3)[#image],
-      [
-        #pros
-      ],
-      [
-        #cons
-      ],
-      cellx(colspan: 2, fill: gray)[*Notes*],
-      cellx(colspan: 2)[
-        #notes
-      ],
-    )
-  } else {
-    tablex(
-      columns: (40%, 1fr, 1fr),
-      rows: 2,
-      align: left + top,
-
-      cellx(align: center, fill: gray)[*#name*],
-      cellx(fill: green)[*Pros*],
-      cellx(fill: red)[*Cons*],
-      cellx(align: center + horizon)[#image],
-      [
-        #pros
-      ],
-      [
-        #cons
-      ],
-    )
-  }
-]
 
 #let signature_metadata = (
   "Ajibola": (name: "Ajibola Ajani", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
@@ -154,7 +107,7 @@
 ) = {
   align(center)[
     #if is-vertical == false {
-      tablex(
+      table(
         columns: 5,
         rows: 2,
         align: center + horizon,
@@ -170,7 +123,7 @@
           }
         },
 
-        cellx(colspan: 5)[Key],
+        table.cell(colspan: 5)[Key],
         [Intended Schedule],
         [Behind Schedule],
         [On Schedule],
@@ -178,9 +131,9 @@
         [Off Schedule]
       )
     } else {
-      tablex(
+      table(
         columns: 2,
-        rows: 3,
+        rows: 6,
         align: center + horizon,
 
         fill: (col, row) => {
@@ -189,15 +142,17 @@
             else if row == 2 {color.rgb(204,0,0,255)}
             else if row == 3 {color.rgb(241,194,50,255)}
             else if row == 4 {color.rgb(106,168,79,255)}
+            else if row == 5 {color.rgb(20,51,83,255)}
             else {white}
           }
         },
 
-        cellx(colspan: 2)[Key],
+        table.cell(colspan: 2)[Key],
         [Intended Schedule], [],
         [Behind Schedule], [],
         [On Schedule], [],
         [Ahead of Schedule], [],
+        [Off Schedule], [],
       )
     }
   ]

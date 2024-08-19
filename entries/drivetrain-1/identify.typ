@@ -29,26 +29,24 @@
   box(height: 25%)[#image("/assets/identify/identify-drivetrain.excalidraw.svg")]
 )
 
-#tablex(
+#table(
   columns: (1fr),
   rows: 4,
-  header-rows: 1,
   align: left + top,
 
-  cellx(fill: gray, align: center)[*Aspects of the Drivetrain*],
+  table.header(table.cell(fill: gray, align: center)[*Aspects of the Drivetrain*]),
   [*Mobility* - enables the robot to move in different directions. This includes forward and backward motion and strafing or lateral movement.],
   [*Versatility* - different drivetrain setups, such as tank drive, holonomic (omni-directional) drive, or mecanum drive, offer varying levels of maneuverability and are suited to different game strategies.],
   [*Foundation* - the drivetrain serves as the robot's base, so its weight will be distributed on top of the drivetrain. Proper weight distribution is crucial for maintaining stability and preventing tipping during rapid movements or interacting with game elements.],
 )
 
-#tablex(
+#table(
   columns: (1fr, 1fr),
   rows: 2,
-  header-rows: 1,
   align: left + top,
 
-  cellx(fill: green)[*Design Goals*], 
-  cellx(fill: red)[*Design Constraints*],
+  table.header(table.cell(fill: green)[*Design Goals*], table.cell(fill: red)[*Design Constraints*]),
+  
   [
     - To withstand and support the weight of other subsystems on the robot.
     - A speed faster than 333 RPM (56.723 in/sec)

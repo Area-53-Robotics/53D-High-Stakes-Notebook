@@ -1,8 +1,7 @@
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
-#import "../template-packages.typ": showybox, tablex
+#import "../template-packages.typ": showybox
 #import showybox: showybox
-#import tablex: *
 
 #let nb_admonition(type: "", title: none, body) = {
   let info = type-metadata.at(type)
@@ -55,20 +54,13 @@
   }
 
   nb_admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
-    #gridx(
+    #grid(
       columns: 2,
       align: left + horizon,
-      inset: (rest: 0pt),
-
-      map-cols: (col, cells) => cells.map(c =>
-        if col == 0 {
-          (..c, inset: (rest: 0pt))
-        } else if col == 1 {
-          (..c, inset: (left: 3pt, rest: 0pt))
-        } else {
-          c
-        }
-      ),
+      inset: (x, _) => {(
+        left: if x == 1 {3pt} else {0pt},
+        rest: 0pt
+      )},
 
       ..for (completed, task) in body {
         (
@@ -115,26 +107,18 @@
 
     *Number Ranking Key:*
     #set text(size: 13pt)
-    #tablex(
+    #table(
       rows: 2,
       columns: (1fr, 1fr, 1fr, 1fr, 1fr),
       align: center + horizon,
 
-      map-cols: (col, cells) => cells.map(c =>
-        if col == 0 {
-          (..c, fill: green.lighten(10%))
-        } else if col == 1 {
-          (..c, fill: yellow.lighten(10%))
-        } else if col == 2 {
-          (..c, fill: red.lighten(10%))
-        } else if col == 3 {
-          (..c, fill: red.darken(10%))
-        } else if col == 4 {
-          (..c, fill: red.darken(40%))
-        } else {
-          c
-        }
-      ),
+      fill: (x, y) =>
+        if x == 0 { green.lighten(10%) }
+        else if x == 1 { yellow.lighten(10%) }
+        else if x == 2 { red.lighten(10%) }
+        else if x == 3 { red.darken(10%) }
+        else if x == 4 { red.darken(40%) }
+        else { white },
 
       [4], [3], [2], [1], [0],
       [Excellent], [Fair], [Poor], [Very Poor], [Incapable],

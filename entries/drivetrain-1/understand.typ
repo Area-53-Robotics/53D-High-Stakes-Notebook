@@ -9,14 +9,14 @@
   witnessed: "Eric",
 )
 
-#tablex(
+#table(
   columns: 2,
   rows: 6,
-  auto-lines: false,
+  stroke: none,
   gutter: 5pt,
   align: left,
 
-  cellx(colspan: 2)[
+  table.cell(colspan: 2)[
     = Gear Ratios
   ],
   [#image("./understand/DT stem - Gear ratio.svg")],
@@ -28,7 +28,7 @@
 
     Gear ratios are crucial for optimizing the performance of motorized systems. They are used to achieve the desired balance between speed and torque, allowing robots to move efficiently.
   ],
-  cellx(colspan: 2)[
+  table.cell(colspan: 2)[
     = Structural Dynamics
   ],
   [#image("./understand/Structural dynamics.svg")],
@@ -73,7 +73,7 @@
     #image("./understand/Newton's Second Law.excalidraw.svg")
     #image("./understand/Newton's Third Law.excalidraw.svg")
   ],
-  cellx(colspan: 2)[
+  table.cell(colspan: 2)[
     == How do they relate to the drivetrain?
 
     Newton's laws of motion directly influence the behavior of a drivetrain in the following ways:

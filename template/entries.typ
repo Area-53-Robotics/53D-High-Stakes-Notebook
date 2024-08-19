@@ -1,8 +1,6 @@
 #import "./colors.typ" : *
 #import "./globals.typ": *
 #import "./components/components.typ": *
-#import "template-packages.typ": tablex
-#import tablex: *
 
 #let create_entry(
   title: "",
@@ -60,97 +58,88 @@
                   entry-page-counter.step()
 
                 if calc.odd(loc.page()) {
-                  tablex(
+                  table(
                     columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
                     rows: 4,
                     align: left + horizon,
-                    width: 1fr,
-                    auto_hlines: false,
+                    stroke: none,
 
-                    hlinex(start: 0, end: 4, stroke: black + 1pt, y: 0),
-                    hlinex(start: 0, end: 4, stroke: black + 1pt, y: 1),
-                    hlinex(start: 0, end: 5, stroke: black + 1pt, y: 2),
-                    hlinex(start: 0, end: 5, stroke: black + 1pt, y: 3),
-                    // hlinex(start: 5, end: 6, stroke: white + 2pt, y: 3),
-                    hlinex(start: 0, end: 5, stroke: black + 1pt, y: 4),
-                    vlinex(start: 0, end: 3, stroke: 0pt, x: 6),
+                    table.hline(start: 0, end: 4, stroke: black + 1pt, y: 0),
+                    table.hline(start: 0, end: 4, stroke: black + 1pt, y: 1),
+                    table.hline(start: 0, end: 5, stroke: black + 1pt, y: 2),
+                    table.hline(start: 0, end: 5, stroke: black + 1pt, y: 3),
+                    table.hline(start: 0, end: 5, stroke: black + 1pt, y: 4),
 
-                    colspanx(4)[
-                      #align(center)[
-                        #link((page: frontmatter-page-counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
-                          #text(fill: black)[
-                            _ #entry.title _
-                          ]
+                    table.vline(start: 0, end: 4, stroke: black + 1pt, x: 0),
+                    table.vline(start: 3, end: 4, stroke: black + 1pt, x: 1),
+                    table.vline(start: 0, end: 4, stroke: black + 1pt, x: 4),
+                    table.vline(start: 3, end: 4, stroke: black + 1pt, x: 5),
+
+                    table.cell(colspan: 4, align: center)[
+                      #link((page: frontmatter-page-counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
+                        #text(fill: black)[
+                          _ #entry.title _
                         ]
                       ]
                     ],
-                    (), (), (),
-
-                    cellx(colspan: 2, rowspan: 3)[
-                      #align(center + horizon)[
-                        #nb_icon_box(type: entry.type)
-                      ]
+                    table.cell(colspan: 2, rowspan: 3, align: center + horizon)[
+                      #nb_icon_box(type: entry.type)
                     ],
-                    (),
-                    colspanx(4)[Designed By: #nb_signature(entry.designed)], (), (), (), (), (),
-                    colspanx(4)[Witnessed By: #nb_signature(entry.witnessed)], (), (), (), (), (),
-                    align(center)[#entry.date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
-                      align(center + horizon)[
-                        #box(
-                          fill: info.color,
-                          outset: 5pt,
-                          radius: 1.5pt,
-                          height: auto,
-                          width: 20pt,
-                        )[#counter(page).display()]
-                      ]),
+                    table.cell(colspan: 4)[Designed By: #nb_signature(entry.designed)],
+                    table.cell(colspan: 4)[Witnessed By: #nb_signature(entry.witnessed)],
+                    table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")],
+                    table.cell(colspan: 4)[Attendance: #entry.attendance],
+                    table.cell(align: center + horizon)[
+                      #box(
+                        fill: info.color,
+                        outset: 5pt,
+                        radius: 1.5pt,
+                        height: auto,
+                        width: 20pt,
+                      )[#counter(page).display()]
+                    ],
                   )
                 } else {
-                  tablex(
+                  table(
                     columns: (35pt, 2fr, 1fr, 1fr, 1fr, 1fr),
                     rows: 4,
                     align: left + horizon,
-                    width: 1fr,
-                    auto_hlines: false,
+                    stroke: none,
 
-                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 0),
-                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 1),
-                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 2),
-                    hlinex(start: 2, end: 7, stroke: black + 1pt, y: 3),
-                    hlinex(start: 1, end: 7, stroke: black + 1pt, y: 4),
-                    vlinex(start: 0, end: 3, stroke: 0pt, x: 0),
+                    table.hline(start: 2, end: 7, stroke: black + 1pt, y: 0),
+                    table.hline(start: 2, end: 7, stroke: black + 1pt, y: 1),
+                    table.hline(start: 2, end: 7, stroke: black + 1pt, y: 2),
+                    table.hline(start: 1, end: 7, stroke: black + 1pt, y: 3),
+                    table.hline(start: 1, end: 7, stroke: black + 1pt, y: 4),
 
-                    cellx(colspan: 2, rowspan: 3)[
-                      #align(center + horizon)[
-                        #nb_icon_box(type: entry.type)
-                      ]
+                    table.vline(start: 3, end: 4, stroke: black + 1pt, x: 1),
+                    table.vline(start: 0, end: 4, stroke: black + 1pt, x: 2),
+                    table.vline(start: 3, end: 4, stroke: black + 1pt, x: 5),
+                    table.vline(start: 0, end: 4, stroke: black + 1pt, x: 6),
+
+                    table.cell(colspan: 2, rowspan: 3, align: center + horizon)[
+                      #nb_icon_box(type: entry.type)
                     ],
-                    (),
-                    colspanx(4)[
-                      #align(center)[
-                        #link((page: frontmatter-page-counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
-                          #text(fill: black)[
-                            _ #entry.title _
-                          ]
+                    table.cell(colspan: 4, align: center)[
+                      #link((page: frontmatter-page-counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
+                        #text(fill: black)[
+                          _ #entry.title _
                         ]
                       ]
-                    ], (), (), (),
-
-                    (), (), colspanx(4)[Designed By: #nb_signature(entry.designed)], (), (), (),
-
-                    (), (), colspanx(4)[Witnessed By: #nb_signature(entry.witnessed)], (), (), (),
-                    
-                    (
-                      align(center + horizon)[
-                        #box(
-                          fill: info.color,
-                          outset: 5pt,
-                          radius: 1.5pt,
-                          height: auto,
-                          width: 20pt,
-                        )[#counter(page).display()]
-                      ]
-                    ), cellx(colspan: 4, align: right)[Attendance: #entry.attendance], (), (), (), align(center)[#entry.date.display("[year]/[month]/[day]")]
+                    ],
+                    table.cell(colspan: 4)[Designed By: #nb_signature(entry.designed)],
+                    table.cell(colspan: 4)[Witnessed By: #nb_signature(entry.witnessed)],
+                    table.cell(align: center + horizon)[
+                      #box(
+                        fill: info.color,
+                        outset: 5pt,
+                        radius: 1.5pt,
+                        height: auto,
+                        width: 20pt,
+                      )[#counter(page).display()]
+                    ],
+                    table.cell(colspan: 4, align: right)[Attendance: #entry.attendance],
+                    table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")]
                   )
                 }
               }

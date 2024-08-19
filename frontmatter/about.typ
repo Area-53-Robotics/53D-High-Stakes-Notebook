@@ -1,7 +1,6 @@
 #import "/template/entries.typ": *
 #import "/template/components/components.typ": *
-#import "../packages.typ": tablex, codetastic
-#import tablex: gridx
+#import "../packages.typ": codetastic
 #import codetastic: qrcode
 
 #show: create_frontmatter_entry.with(
@@ -40,10 +39,11 @@ The source code for our notebook can be accessed on
   GitHub #glossary-footnote[GitHub]
 ] using either of the following methods:
 
-#gridx(
+#grid(
   columns: (1fr, 1fr),
   gutter: 20pt,
   align: center,
+
   [
     == Link
     #box[

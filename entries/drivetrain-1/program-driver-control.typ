@@ -1,6 +1,4 @@
 #import "/template/template.typ": *
-#import "/packages.typ": tablex
-#import tablex: *
 
 #show: create_entry.with(
   title: "Drivetrain #1 - Driver Control",
@@ -78,20 +76,19 @@ There are multiple times throughout the match where the bot may be facing the dr
 #pagebreak()
 
 == Reverse Function Visualization
-#tablex(
-  auto-lines: true,
+#table(
   align: center + horizon,
   rows: (1em, 20em, 1em, 20em),
-  columns: 2,
+  columns: (1fr, 1fr),
   inset: 15pt,
 
-  cellx(colspan: 2, fill: gray.lighten(20%))[Controller Mapping],
-  cellx(colspan: 2)[
+  table.cell(colspan: 2, fill: gray.lighten(20%))[Controller Mapping],
+  table.cell(colspan: 2)[
     #image.decode(read("./program-driver-control/controller-mapping.svg"))
   ],
 
-  cellx(fill: gray.lighten(20%))[Normal Bot Control],
-  cellx(fill: gray.lighten(20%))[Reversed Bot Control],
+  table.cell(fill: gray.lighten(20%))[Normal Bot Control],
+  table.cell(fill: gray.lighten(20%))[Reversed Bot Control],
 
   [
     #image.decode(read("./program-driver-control/normal-mapping.excalidraw.svg"))

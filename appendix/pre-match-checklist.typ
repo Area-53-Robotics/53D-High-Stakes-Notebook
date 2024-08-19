@@ -1,6 +1,4 @@
 #import "/template/entries.typ": *
-#import "../packages.typ": tablex
-#import tablex: gridx
 
 #show: create_appendix_entry.with(
   title: "Pre-Match Checklist",
@@ -12,7 +10,7 @@
   tight: false
 )
 
-#gridx(
+#grid(
   columns: 2,
   inset: (right: 20pt),
 
@@ -38,8 +36,10 @@
 - Auton Alignment Tool
 
 = Drive Team
-#gridx(
+#v(5pt)
+#grid(
   columns: 3,
+  column-gutter: 7pt,
   [
     == Makhi
     - Controller
