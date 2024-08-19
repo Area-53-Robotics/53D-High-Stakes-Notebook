@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Autonomous Movement - Position Tracking (Odometry)",
   type: "program",
-  start_date: datetime(year: 2024, month: 1, day: 1),
+  date: datetime(year: 2024, month: 1, day: 1),
   attendance: "Ajibola, Ishika",
   designed: "Ajibola",
   witnessed: "Ishika",

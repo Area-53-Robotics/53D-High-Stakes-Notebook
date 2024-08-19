@@ -1,14 +1,11 @@
 #import "/template/template.typ": *
-#include "/template/components/codly.typ"
-#include "/template/components/headings.typ"
 #import "/packages.typ": tablex
 #import tablex: *
-
 
 #show: create_entry.with(
   title: "Drivetrain #1 - Driver Control",
   type: "program",
-  start_date: datetime(year: 2023, month: 9, day: 15),
+  date: datetime(year: 2023, month: 9, day: 15),
   attendance: "Ajibola, Ishika, Eric, Rory",
   designed: "Ajibola",
   witnessed: "Ishika",

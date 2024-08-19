@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Drivetrain #1 - Wheel Types",
   type: "brainstorm",
-  start_date: datetime(year: 2023, month: 7, day: 22),
+  date: datetime(year: 2023, month: 7, day: 22),
   attendance: "Ajibola, Ishika, Eric, Emma",
   designed: "Ajibola",
   witnessed: "Eric",

@@ -2,7 +2,7 @@
 
 #let entry_page_list() = locate(
   loc => {
-    let headings = query(selector(<nb_entry>), loc)
+    let headings = query(selector(<notebook-entry>), loc)
 
     let enumerated-entry-list = entries.final(loc).enumerate().map(
       it => {
@@ -42,11 +42,11 @@
             )
 
             for (index, entry) in valid_entries [
-              #let first-page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+              #let first-page = counter(page).at(query(selector(<notebook-entry>), loc).at(index).location()).at(0)
               #let last-page = 0
 
-              #if index < query(selector(<nb_entry>), loc).len() - 1 {
-                last-page = counter(page).at(query(selector(<nb_entry>), loc).at(index + 1).location()).at(0) - 1
+              #if index < query(selector(<notebook-entry>), loc).len() - 1 {
+                last-page = counter(page).at(query(selector(<notebook-entry>), loc).at(index + 1).location()).at(0) - 1
               } else {
                 last-page = [END]
               }
@@ -64,11 +64,11 @@
             )
 
             for (index, entry) in valid_entries [
-              #let first-page = counter(page).at(query(selector(<nb_entry>), loc).at(index).location()).at(0)
+              #let first-page = counter(page).at(query(selector(<notebook-entry>), loc).at(index).location()).at(0)
               #let last-page = 0
 
-              #if index < query(selector(<nb_entry>), loc).len() - 1 {
-                last-page = counter(page).at(query(selector(<nb_entry>), loc).at(index + 1).location()).at(0) - 1
+              #if index < query(selector(<notebook-entry>), loc).len() - 1 {
+                last-page = counter(page).at(query(selector(<notebook-entry>), loc).at(index + 1).location()).at(0) - 1
               } else {
                 last-page = [END]
               }

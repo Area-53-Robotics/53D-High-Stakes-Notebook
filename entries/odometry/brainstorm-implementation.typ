@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Autonomous - Implementation",
   type: "brainstorm",
-  start_date: datetime(year: 2024, month: 2, day: 13),
+  date: datetime(year: 2024, month: 2, day: 13),
   attendance: "Ajibola, Ishika",
   designed: "Ajibola",
   witnessed: "Ishika",

@@ -7,18 +7,14 @@
 #let create_entry(
   title: "",
   type: "",
-  start_date: none,
-  end_date: none,
+  date: none,
   attendance: "",
   designed: "",
   witnessed: "",
   body
 ) = {
-  if start_date == none {
+  if date == none {
     panic("No valid start date specified")
-  }
-  if end_date == none {
-    end_date = start_date
   }
 
   assert((designed == "Ajibola") or (designed == "Ishika") or (designed == "Jin") or (designed == "Makhi") or (designed == "Eric") or (designed == "Rory"), message: "Invalid \"Designed By\"")
@@ -28,8 +24,7 @@
     x.push((
       title: title,
       type: type,
-      start_date: start_date,
-      end_date: end_date,
+      date: date,
       attendance: attendance,
       designed: designed,
       witnessed: witnessed,
@@ -62,7 +57,7 @@
           footer: [
             #locate(
               loc => {
-                  entry_page_counter.step()
+                  entry-page-counter.step()
 
                 if calc.odd(loc.page()) {
                   tablex(
@@ -82,7 +77,7 @@
 
                     colspanx(4)[
                       #align(center)[
-                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
+                        #link((page: frontmatter-page-counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
                           #text(fill: black)[
                             _ #entry.title _
                           ]
@@ -99,7 +94,7 @@
                     (),
                     colspanx(4)[Designed By: #nb_signature(entry.designed)], (), (), (), (), (),
                     colspanx(4)[Witnessed By: #nb_signature(entry.witnessed)], (), (), (), (), (),
-                    align(center)[#entry.start_date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
+                    align(center)[#entry.date.display("[year]/[month]/[day]")], colspanx(4)[Attendance: #entry.attendance], (), (), (), (
                       align(center + horizon)[
                         #box(
                           fill: info.color,
@@ -133,7 +128,7 @@
                     (),
                     colspanx(4)[
                       #align(center)[
-                        #link((page: frontmatter_page_counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
+                        #link((page: frontmatter-page-counter.final(loc).at(0) + 2 - 1, x: 0pt, y: 0pt))[
                           #text(fill: black)[
                             _ #entry.title _
                           ]
@@ -155,7 +150,7 @@
                           width: 20pt,
                         )[#counter(page).display()]
                       ]
-                    ), cellx(colspan: 4, align: right)[Attendance: #entry.attendance], (), (), (), align(center)[#entry.start_date.display("[year]/[month]/[day]")]
+                    ), cellx(colspan: 4, align: right)[Attendance: #entry.attendance], (), (), (), align(center)[#entry.date.display("[year]/[month]/[day]")]
                   )
                 }
               }
@@ -167,7 +162,7 @@
           background: nb_side_margin_color(color: info.color)
         )
 
-        #entry.body <nb_entry>
+        #entry.body <notebook-entry>
         #counter(footnote).update(0)
       ]
     }
@@ -177,7 +172,7 @@
 }
 
 #let create_frontmatter_entry(title: "", body) = {
-  frontmatter_entries.update(x => {
+  frontmatter-entries.update(x => {
     x.push((
       title: title,
       body: body,
@@ -187,7 +182,7 @@
 }
 
 #let create_appendix_entry(title: "", updated: none, body) = {
-  appendix_entries.update(x => {
+  appendix-entries.update(x => {
     x.push((
       title: title,
       updated: updated,
@@ -198,7 +193,7 @@
 }
 
 #let create_program_entry(title: "", body) = {
-  program_entries.update(x => {
+  program-entries.update(x => {
     x.push((
       title: title,
       body: body,
@@ -209,7 +204,7 @@
 
 #let print_frontmatter_entries() = {
   locate(loc => {
-    for entry in frontmatter_entries.final(loc) {
+    for entry in frontmatter-entries.final(loc) {
       [
         #set page(
           margin: (left: 5em, right: 5em),
@@ -220,7 +215,7 @@
           footer: nb_frontmatter_footer()
         )
 
-        #entry.body <nb_frontmatter_entry>
+        #entry.body <notebook-frontmatter>
         #counter(footnote).update(0)
       ]
     }
@@ -229,7 +224,7 @@
 
 #let print_appendix_entries() = {
   locate(loc => {
-    for entry in appendix_entries.final(loc) {
+    for entry in appendix-entries.final(loc) {
       [
         #set page(
           margin: (left: 5em, right: 5em),
@@ -243,7 +238,7 @@
           footer: nb_appendix_footer(updated: entry.updated)
         )
 
-        #entry.body <nb_appendix_entry>
+        #entry.body <notebook-appendix>
         #counter(footnote).update(0)
         #appendix_entry_counter.step()
       ]
@@ -254,7 +249,7 @@
 #let print_program_entries() = {
   locate(loc => {
     // make a second array for locations for toc linking?
-    for entry in program_entries.final(loc) {
+    for entry in program-entries.final(loc) {
       [
         #set page(
           margin: (left: 5em, right: 5em),
@@ -269,7 +264,7 @@
           footer: nb_program_footer()
         )
 
-        #entry.body <nb_program_entry>
+        #entry.body <notebook-program>
         #counter(footnote).update(0)
       ]
     }

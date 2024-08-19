@@ -4,7 +4,7 @@
 #show: create_entry.with(
   title: "",
   type: "competition",
-  start_date: datetime(year: 2024, month: 01, day: 13),
+  date: datetime(year: 2024, month: 01, day: 13),
   attendance: "Jin, Ishika, Makhi",
   designed: "Jin",
   witnessed: "Ishika",

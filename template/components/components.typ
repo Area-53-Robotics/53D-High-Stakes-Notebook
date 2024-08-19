@@ -8,4 +8,5 @@
 #import "page.typ": *
 #import "text-format.typ": *
 #import "title.typ": *
+#import "toc.typ": *
 #import "tournament.typ": *

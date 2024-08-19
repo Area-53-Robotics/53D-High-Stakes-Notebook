@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "",
   type: "identify",
-  start_date: datetime(year: 2023, month: 7, day: 15),
+  date: datetime(year: 2023, month: 7, day: 15),
   attendance: "Ajibola, Jin, Ishika, Makhi, Rory, Eric",
   designed: "Ajibola",
   witnessed: "Jin",

@@ -28,16 +28,15 @@
 
         let entry = valid_entries.first()
         let info = type-metadata.at(entry.last().type)
-        let headings = query(selector(<nb_entry>), loc)
+        let headings = query(selector(<notebook-entry>), loc)
         for (index, entry) in valid_entries {
           let page_number = counter(page).at(headings.at(index).location()).at(0)
-          // let page_number = entry_page_counter.at(headings.at(index).location()).at(0) + 1
-          let start_date = entry.start_date.display("[year]/[month]/[day]")
-          let end_date = if (not entry.start_date == entry.end_date) { entry.end_date.display("[year]/[month]/[day]") } else { none }
+          // let page_number = entry-page-counter.at(headings.at(index).location()).at(0) + 1
+          let date = entry.date.display("[year]/[month]/[day]")
 
           let info = type-metadata.at(entry.type)
 
-          let frontmatter_count = frontmatter_page_counter.final(loc).at(0)
+          let frontmatter_count = frontmatter-page-counter.final(loc).at(0)
 
           [
             #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
@@ -46,7 +45,7 @@
               #align(center + horizon)[
                 #link((page: {frontmatter_count + page_number + 2 - page-number-offset}, x: 0pt, y: 0pt))[
                   #text(fill: black)[
-                    _#h(2pt) #start_date #sym.dash.em #info.name: #entry.title #h(2pt)_
+                    _#h(2pt) #date #sym.dash.em #info.name: #entry.title #h(2pt)_
                   ]
                 ]
               ]

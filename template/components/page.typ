@@ -1,4 +1,4 @@
-#import "../globals.typ": frontmatter_page_counter, appendix_page_counter, program_page_counter
+#import "../globals.typ": frontmatter-page-counter, appendix-page-counter, program-page-counter
 #import "../icons/icons.typ": *
 
 #let nb_icon_box(type: "") = {
@@ -33,7 +33,7 @@
 #let nb_frontmatter_footer() = {
   locate(
     loc => {
-      frontmatter_page_counter.step()
+      frontmatter-page-counter.step()
       align(
         if calc.odd(loc.page()) == true {
           right + bottom
@@ -47,7 +47,7 @@
           radius: 1.5pt,
           height: auto,
           width: 20pt,
-        )[#align(center + horizon)[#frontmatter_page_counter.display("i")]]
+        )[#align(center + horizon)[#frontmatter-page-counter.display("i")]]
       ]
       v(2em)
     }
@@ -57,7 +57,7 @@
 #let nb_appendix_footer(color: gray, updated: none) = {
   locate(
     loc => {
-      appendix_page_counter.step()
+      appendix-page-counter.step()
       align(left)[
         Updated #updated.display("[year]/[month]/[day]")
       ]
@@ -84,7 +84,7 @@
 #let nb_program_footer(color: blue) = {
   locate(
     loc => {
-      program_page_counter.step()
+      program-page-counter.step()
       align(
         if calc.odd(loc.page()) == true {
           right + bottom

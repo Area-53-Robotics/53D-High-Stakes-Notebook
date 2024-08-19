@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "",
   type: "brainstorm",
-  start_date: datetime(year: 2024, month: 1, day: 14),
+  date: datetime(year: 2024, month: 1, day: 14),
   attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
   designed: "Jin",
   witnessed: "Ajibola",

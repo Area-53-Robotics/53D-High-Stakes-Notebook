@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Drivetrain #1 - Wheel Types",
   type: "select",
-  start_date: datetime(year: 2023, month: 7, day: 22),
+  date: datetime(year: 2023, month: 7, day: 22),
   attendance: "Ajibola, Ishika, Eric, Emma",
   designed: "Ishika",
   witnessed: "Eric",

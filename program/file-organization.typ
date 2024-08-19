@@ -1,5 +1,5 @@
 #import "/template/entries.typ": *
-#import "/template/globals.typ": program_entries
+#import "/template/globals.typ": program-entries
 
 #show: create_program_entry.with(
   title: "File Organization"
@@ -23,7 +23,7 @@
 }
 
 #locate(loc => [
-  #let program_entries = query(selector(<nb_program_entry>), loc)
+  #let program_entries = query(selector(<notebook-program>), loc)
 
   #let program-file(name: none, label: none, body) = [
     #link(query(selector(label), loc).at(0).location())[

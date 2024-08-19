@@ -2,6 +2,7 @@
 #import "../icons/icons.typ": *
 #import "../template-packages.typ": showybox, tablex
 #import showybox: showybox
+#import tablex: *
 
 #let nb_admonition(type: "", title: none, body) = {
   let info = type-metadata.at(type)

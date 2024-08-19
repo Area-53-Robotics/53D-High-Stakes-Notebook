@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Drivetrain #1",
   type: "understand",
-  start_date: datetime(year: 2023, month: 7, day: 15),
+  date: datetime(year: 2023, month: 7, day: 15),
   attendance: "Ajibola, Ishika, Eric, Emma",
   designed: "Ajibola",
   witnessed: "Eric",

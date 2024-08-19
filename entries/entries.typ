@@ -6,3 +6,5 @@
 */
 
 #include "./drivetrain-1/program-driver-control.typ"
+#include "./odometry/select-movement.typ"
+#include "./odometry/select-implementation.typ"

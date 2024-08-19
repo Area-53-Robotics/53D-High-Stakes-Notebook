@@ -1,4 +1,5 @@
 #import "../template-packages.typ": tablex
+#import tablex: *
 #import "../colors.typ": *
 
 #let nb_decision_matrix(criteria: (), choices: (), body: []) = [

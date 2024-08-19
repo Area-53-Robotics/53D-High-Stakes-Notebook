@@ -3,7 +3,7 @@
 #show: create_entry.with(
   title: "Drivetrain #1 - Drive Configurations",
   type: "brainstorm",
-  start_date: datetime(year: 2023, month: 7, day: 21),
+  date: datetime(year: 2023, month: 7, day: 21),
   attendance: "Ajibola, Ishika, Eric, Emma",
   designed: "Ajibola",
   witnessed: "Ishika",

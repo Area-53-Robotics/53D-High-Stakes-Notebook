@@ -1,15 +1,15 @@
 #import "./colors.typ": *
 // Global State
 
-#let frontmatter_page_counter = counter("frontmatter_page_counter")
-#let entry_page_counter = counter("entry_page_counter")
-#let appendix_page_counter = counter("appendix_page_counter")
-#let program_page_counter = counter("program_page_counter")
+#let frontmatter-page-counter = counter("frontmatter-page-counter")
+#let entry-page-counter = counter("entry-page-counter")
+#let appendix-page-counter = counter("appendix-page-counter")
+#let program-page-counter = counter("program-page-counter")
 
-#let frontmatter_entries = state("frontmatter_entries", ())
+#let frontmatter-entries = state("frontmatter-entries", ())
 #let entries = state("entries", ())
-#let appendix_entries = state("appendix_entries", ())
-#let program_entries = state("program_entries", ())
+#let appendix-entries = state("appendix-entries", ())
+#let program-entries = state("program-entries", ())
 
 #let glossary_entries = state("glossary_entries", ())
 

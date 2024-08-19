@@ -1,6 +1,6 @@
 #import "../template-packages.typ": tablex
 #import "../icons/icons.typ": *
-#import "../globals.typ": frontmatter_page_counter, entry_page_counter, appendix_page_counter, entries, signature-type, page-number-offset
+#import "../globals.typ": frontmatter-page-counter, entry-page-counter, appendix-page-counter, entries, signature-type, page-number-offset
 #import "./entry-lists.typ": *
 
 #let nb_pro_con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
@@ -94,7 +94,7 @@
       footer: {
         locate(
           loc => {
-            entry_page_counter.step()
+            entry-page-counter.step()
             
             align(
               if calc.odd(loc.page()) {
@@ -204,7 +204,7 @@
 }
 
 // ! You can only have two entry references in an entry without getting the "did not converge" error
-#let nb_entry_reference(
+#let nb-entry-reference(
   date: none,
   type: none,
   title: none,
@@ -218,7 +218,7 @@
       if date != none {
         valid_entries = valid_entries.filter(
           entry => {
-            entry.last().start_date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+            entry.last().date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
           }
         )
       }
@@ -244,15 +244,15 @@
 
       let entry = valid_entries.first()
       let info = type-metadata.at(entry.last().type)
-      let page = counter(page).at(query(selector(<nb_entry>), loc).at(entry.first()).location()).at(0)
+      let page = counter(page).at(query(selector(<notebook-entry>), loc).at(entry.first()).location()).at(0)
 
       [
         #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
         #h(1pt)
         #highlight(fill: info.color.lighten(30%))[
-          #link((page: {frontmatter_page_counter.final(loc).at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
+          #link((page: {frontmatter-page-counter.final(loc).at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
             #text(fill: black)[
-              _#h(2pt) #entry.last().start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
+              _#h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
             ]
           ]
         ]
@@ -263,7 +263,7 @@
 }
 
 // ! You can only have two entry references in an entry without getting the "did not converge" error
-#let past_nb_entry_reference(
+#let past-nb-entry-reference(
   date: none,
   type: none,
   title: none,
@@ -277,7 +277,7 @@
       if date != none {
         valid_entries = valid_entries.filter(
           entry => {
-            entry.start_date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+            entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
           }
         )
       }
@@ -309,7 +309,7 @@
         #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
         #h(1pt)
         #highlight(fill: info.color.lighten(30%))[
-          #h(2pt) #entry.start_date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.title #h(2pt)
+          #h(2pt) #entry.date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.title #h(2pt)
         ]
         #body pg. #page #h(-0.2em)
       ]

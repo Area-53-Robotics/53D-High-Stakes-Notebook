@@ -1,5 +1,4 @@
 #import "./entries.typ": *
-#import "./toc.typ": *
 #import "./colors.typ": *
 #import "./icons/icons.typ": *
 #import "./glossary.typ": *
@@ -8,15 +7,6 @@
 #import "/appendix/resources.typ": *
 #import "/appendix/innovate.typ": *
 
-#let program-icon(codepoint) = {
-  box(
-    height: 0.8em,
-    baseline: 0.05em,
-    image(codepoint)
-  )
-  h(0.1em)
-}
-
 #let notebook(
   team: "",
   organization: "",
@@ -24,7 +14,6 @@
   cover: [],
   year: "",
   season: "",
-  appendix: [],
   innovate-form: false,
   body,
 ) = {
@@ -79,16 +68,20 @@
   ]
 
   appendix_entry_counter.update(_ => 1)
+  frontmatter-page-counter.update(_ => page-number-offset)
   
   pagebreak()
   pagebreak()
   
   print_frontmatter_entries()
 
-  // nb_toc()
+  counter(page).update(_ => 0)
+
+  pagebreak()
+  pagebreak()
 
   print_entries()
-
+  
   pagebreak()
   pagebreak()
 
