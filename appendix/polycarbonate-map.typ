@@ -2,7 +2,7 @@
 
 #show: create_appendix_entry.with(
   title: "Polycarbonate Map",
-  updated: datetime(year: 2024, month: 3, day: 2)
+  updated: datetime(year: 2024, month: 8, day: 19)
 )
 
 // Below is a diagram of our polycarbonate usage:

@@ -1,4 +1,5 @@
 #import "../icons/icons.typ": *
+#import "../colors.typ"
 
 #let nb_toc(
   frontmatter: (),
@@ -24,16 +25,24 @@
           #h(5pt)
           #if previous-date == entry.date [
             #h(25pt) | #h(25pt)
-           ] else {
+          ] else {
             box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
               #align(center + horizon)[
-                #h(2pt) #date #h(2pt)
+                #link((page: entry.position.page, x: 0pt, y: 0pt))[
+                  #text(fill: black)[
+                    _ #h(2pt) #date #h(2pt) _
+                  ]
+                ]
               ]
             ]
           }
           #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
             #align(center + horizon)[
-              _#h(2pt) #info.name: #entry.title #h(2pt)_
+              #link((page: entry.position.page, x: 0pt, y: 0pt))[
+                #text(fill: black)[
+                  _#h(2pt) #info.name: #entry.title #h(2pt)_
+                ]
+              ]
             ]
           ]
           #h(5pt)
@@ -67,7 +76,11 @@
     ..for entry in program {
       (
         [
-          #entry.title
+          #link((page: entry.position.page, x: 0pt, y: 0pt))[
+            #text(fill: black)[
+              _ #entry.title _
+            ]
+          ]
           #box(
             width: 1fr,
             line(
@@ -97,7 +110,11 @@
     ..for entry in appendix {
       (
         [
-          #entry.title
+          #link((page: entry.position.page, x: 0pt, y: 0pt))[
+            #text(fill: black)[
+              _ #entry.title _
+            ]
+          ]
           #box(
             width: 1fr,
             line(

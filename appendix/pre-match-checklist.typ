@@ -4,7 +4,7 @@
 
 #show: create_appendix_entry.with(
   title: "Pre-Match Checklist",
-  updated: datetime(year: 2024, month: 2, day: 18)
+  updated: datetime(year: 2024, month: 8, day: 19)
 )
 
 #set list(

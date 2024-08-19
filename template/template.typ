@@ -1,7 +1,6 @@
 #import "./entries.typ": *
 #import "./colors.typ": *
 #import "./icons/icons.typ": *
-#import "./glossary.typ": *
 #import "./components/components.typ": *
 
 #import "/appendix/resources.typ": *

@@ -46,6 +46,10 @@
       markers.at(index).location(),
     ).at(0)
     entry.page-number = page-number
+
+    let location = markers.at(index).location()
+    entry.position = location.position()
+
     result.push(entry)
   }
   return result

@@ -13,7 +13,7 @@
 = Brief Description
 -
 
-= Dcoumentation Page Numbers
+= Documentation Page Numbers
 /*
 #locate(
   loc => {

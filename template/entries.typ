@@ -231,7 +231,7 @@
           background: nb_side_margin_color(color: gray),
           header: [
             #nb_title(
-              beginning: [Appendix #appendix_entry_counter.display("A"):],
+              beginning: [Appendix #context appendix_entry_counter.display("A"):],
               beginning-fill: gray
             )[#entry.title]
           ],
