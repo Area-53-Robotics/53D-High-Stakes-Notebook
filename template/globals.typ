@@ -1,6 +1,6 @@
 #import "./colors.typ": *
-// Global State
 
+// Global State
 #let frontmatter-page-counter = counter("frontmatter-page-counter")
 #let entry-page-counter = counter("entry-page-counter")
 #let appendix-page-counter = counter("appendix-page-counter")
@@ -15,6 +15,7 @@
 
 #let appendix_entry_counter = counter("appendix_entry_counter")
 
+// Global Notebook Variables
 #let page-number-offset = 0
 
 /*

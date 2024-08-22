@@ -67,14 +67,14 @@
   ]
 
   appendix_entry_counter.update(_ => 1)
-  frontmatter-page-counter.update(_ => page-number-offset)
+  frontmatter-page-counter.update(_ => 1)
   
   pagebreak()
   pagebreak()
   
   print_frontmatter_entries()
 
-  counter(page).update(_ => 0)
+  counter(page).update(_ => page-number-offset)
 
   pagebreak()
   pagebreak()

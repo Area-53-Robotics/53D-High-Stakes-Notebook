@@ -54,7 +54,7 @@
     marker: []
   )
 
-  - #icon("folder-root") 53D_Over_Under #line-fill The root folder of the repository
+  - #icon("folder-root") 53D_HighStakes #line-fill The root folder of the repository
     - #icon("folder-cog") .github #line-fill Config files for our GitHub workflows
     - #icon("folder-cog") firmware #line-fill PROS firmware code
     - #icon("folder-open") include #line-fill C++ header files
@@ -90,4 +90,4 @@
     - #icon(color: orange, "letter-m") Makefile #line-fill PROS build configs
     - #icon("align-justified") project.pros #line-fill Program upload configurations such as program title and slot
     - #icon(color: blue.darken(30%), "info-circle") README.md #line-fill GitHub repository description
-])
+]

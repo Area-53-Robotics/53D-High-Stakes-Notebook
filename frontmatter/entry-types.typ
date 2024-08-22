@@ -5,14 +5,16 @@
   title: "Notebook Entry Types"
 )
 
-Entries all have 1 out of 10 types displayed in the top left corner, labeled at the bottom, and shown in the table of contents. The 7 types with a black border are part of the engineering design process.
+Entries all have 1 out of 10 types displayed in the top left corner, labeled at the bottom left or right corner, and shown in the table of contents. The 7 types with a black border are part of the engineering design process.
+
+Here are the existing types:
 
 #align(center)[
   #set text(size: 14pt)
   #grid(
     columns: (auto, auto, auto),
     rows: 8,
-    gutter: 8pt,
+    gutter: 10pt,
     align: center + horizon,
     stroke: (x, y) => if x == 0 and ((y == 0) or ((y > 1) and (y < 8))) {
       (left: (

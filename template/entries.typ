@@ -75,7 +75,7 @@
                   table.vline(start: 3, end: 4, stroke: black + 1pt, x: 5),
 
                   table.cell(colspan: 4, align: center)[
-                    #link((page: frontmatter-page-counter.final().at(0) + 2 - 1, x: 0pt, y: 0pt))[
+                    #link((page: query(selector(<notebook-toc>)).first().location().position().page, x: 0pt, y: 0pt))[
                       #text(fill: black)[
                         _ #entry.title _
                       ]
@@ -120,7 +120,7 @@
                     #nb_icon_box(type: entry.type)
                   ],
                   table.cell(colspan: 4, align: center)[
-                    #link((page: frontmatter-page-counter.final().at(0) + 2 - 1, x: 0pt, y: 0pt))[
+                    #link((page: query(selector(<notebook-toc>)).first().location().position().page, x: 0pt, y: 0pt))[
                       #text(fill: black)[
                         _ #entry.title _
                       ]
