@@ -3,7 +3,7 @@
 #import "../template-packages.typ": showybox
 #import showybox: showybox
 
-#let nb_admonition(type: "", title: none, body) = {
+#let admonition(type: "", title: none, body) = {
   let info = type-metadata.at(type)
 
   if title == none {
@@ -53,7 +53,7 @@
     }
   }
 
-  nb_admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
+  admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
     #grid(
       columns: 2,
       align: left + horizon,
@@ -101,7 +101,7 @@
 }
 
 #let nb_matrix_criteria(body) = [
-  #nb_admonition(type: "select", title: "Decision Matrix")[
+  #admonition(type: "select", title: "Decision Matrix")[
     *Ranking Criteria:*
     #body
 

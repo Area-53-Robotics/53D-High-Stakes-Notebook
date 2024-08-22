@@ -2,7 +2,7 @@
 #import "../globals.typ": frontmatter-page-counter, entry-page-counter, appendix-page-counter, entries, signature-type, page-number-offset
 #import "./entry-lists.typ": *
 
-#let signature_metadata = (
+#let signature-metadata = (
   "Ajibola": (name: "Ajibola Ajani", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
   "Ishika": (name: "Ishika Saha", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
   "Jin": (name: "Jin Cao", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
@@ -11,19 +11,19 @@
   "Rory": (name: "Rory Cullum", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
 )
 
-#let nb_signature(name) = {
+#let signature(name) = {
   if signature-type == 0 [
     #label(name)
   ] else if signature-type == 1 [
-    #signature_metadata.at(name).name #label(name)
+    #signature-metadata.at(name).name #label(name)
   ] else if signature-type == 2 [
-    #signature_metadata.at(name).signature #label(name)
+    #signature-metadata.at(name).signature #label(name)
   ] else {
     panic("Invalid signature-type value")
   }
 }
 
-#let nb_cad(
+#let cad(
   folder: "",
   sheets: 1,
   add-views: none,
@@ -69,13 +69,13 @@
       foreground: {
         align(bottom + left)[
           #move(dx: 6.4em, dy: -2.5em)[
-            #gridx(
+            #grid(
               columns: (10.75em, 8.35em),
               rows: (1.2em, 1.2em),
               align: left + horizon,
 
-              [#nb_signature(designed)], cellx(align: center + horizon)[#date.display("[year]/[month]/[day]")],
-              [#nb_signature(witnessed)], cellx(align: center + horizon)[#date.display("[year]/[month]/[day]")],
+              [#signature(designed)], grid.cell(align: center + horizon)[#date.display("[year]/[month]/[day]")],
+              [#signature(witnessed)], grid.cell(align: center + horizon)[#date.display("[year]/[month]/[day]")],
             )
           ]
         ]
@@ -99,8 +99,8 @@
   ]
 ]
 
-#let nb_gantt_chart_key(
-  intended_color: color.rgb(207,226,243,255),
+#let nb-gantt-chart-key(
+  intended-color: color.rgb(207,226,243,255),
   is-vertical: false
 ) = {
   align(center)[
@@ -112,7 +112,7 @@
 
         fill: (col, row) => {
           if row == 1 {
-            if col == 0 {intended_color}
+            if col == 0 {intended-color}
             else if col == 1 {color.rgb(204,0,0,255)}
             else if col == 2 {color.rgb(241,194,50,255)}
             else if col == 3 {color.rgb(106,168,79,255)}
@@ -136,7 +136,7 @@
 
         fill: (col, row) => {
           if col == 1 {
-            if row == 1 {intended_color}
+            if row == 1 {intended-color}
             else if row == 2 {color.rgb(204,0,0,255)}
             else if row == 3 {color.rgb(241,194,50,255)}
             else if row == 4 {color.rgb(106,168,79,255)}
@@ -165,10 +165,10 @@
 ) = {
   context {
 
-      let valid_entries = entries.final(loc).enumerate()
+      let valid-entries = entries.final(loc).enumerate()
 
       if date != none {
-        valid_entries = valid_entries.filter(
+        valid-entries = valid-entries.filter(
           entry => {
             entry.last().date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
           }
@@ -176,7 +176,7 @@
       }
 
       if type != none {
-        valid_entries = valid_entries.filter(
+        valid-entries = valid-entries.filter(
           entry => {
             entry.last().type.match(type) != none
           }
@@ -184,17 +184,17 @@
       }
 
       if title != none {
-        valid_entries = valid_entries.filter(
+        valid-entries = valid-entries.filter(
           entry => {
             entry.last().title.match(title) != none
           }
         )
       }
 
-      assert(valid_entries.len() > 0, message: "No entries meet the given attributes")
-      assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
+      assert(valid-entries.len() > 0, message: "No entries meet the given attributes")
+      assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes")
 
-      let entry = valid_entries.first()
+      let entry = valid-entries.first()
       let info = type-metadata.at(entry.last().type)
       let page = counter(page).at(query(selector(<notebook-entry>), loc).at(entry.first()).location()).at(0)
 
@@ -222,10 +222,10 @@
 ) = {
   context {
 
-    let valid_entries = full-entry-list
+    let valid-entries = full-entry-list
 
     if date != none {
-      valid_entries = valid_entries.filter(
+      valid-entries = valid-entries.filter(
         entry => {
           entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
         }
@@ -233,7 +233,7 @@
     }
 
     if type != none {
-      valid_entries = valid_entries.filter(
+      valid-entries = valid-entries.filter(
         entry => {
           entry.type.match(type) != none
         }
@@ -241,17 +241,17 @@
     }
 
     if title != none {
-      valid_entries = valid_entries.filter(
+      valid-entries = valid-entries.filter(
         entry => {
           entry.title.match(title) != none
         }
       )
     }
 
-    assert(valid_entries.len() > 0, message: "No entries meet the given attributes")
-    assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
+    assert(valid-entries.len() > 0, message: "No entries meet the given attributes")
+    assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes")
 
-    let entry = valid_entries.first()
+    let entry = valid-entries.first()
     let info = type-metadata.at(entry.type)
     let page = entry.body
 

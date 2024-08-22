@@ -1,7 +1,7 @@
 #import "../template-packages.typ": showybox
 #import showybox: showybox
 
-#let nb_tournament_match(
+#let tournament-match(
   match: "",
   red_alliance: (teams: ("", ""), score: 0),
   blue_alliance: (teams: ("", ""), score: 0),
@@ -212,7 +212,7 @@
   )
 }
 
-#let nb_tournament_match_old(
+#let tournament-match_old(
   match: "",
   red_alliance: (teams: ("", ""), score: 0),
   blue_alliance: (teams: ("", ""), score: 0),

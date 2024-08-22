@@ -1,6 +1,6 @@
 #include "../colors.typ"
 
-#let nb_pro_con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
+#let pro-con(name: none, image: [], image-width: 40%, pros: [], cons: [], notes: []) = [
   #assert(name != none, message: "No name given")
   #assert(pros != [], message: "No pros recorded")
   #assert(cons != [], message: "No cons recorded")

@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Drivetrain #1 - Driver Control",
   type: "program",
   date: datetime(year: 2023, month: 9, day: 15),
@@ -30,13 +30,13 @@ Because basic tank drive code does not change between seasons, it did not take l
   }
 ```
 
-#nb_admonition(type: "note")[
+#admonition(type: "note")[
   PROS #glossary-footnote[PROS] takes joystick input from the closed interval [-127, 127], and controls motors using the same interval.
 ]
 
 After verifying that the basic tank drive code worked as intended, we brainstormed some programming features that could help our driver drive more effectively while on the field.
 
-#nb_admonition(type: "brainstorm", title: "Mini-Brainstorm: Driver Control")[
+#admonition(type: "brainstorm", title: "Mini-Brainstorm: Driver Control")[
   - Reverse Function (Suggested by Ishika)
   - Drive Curve (Suggested by Makhi)
   - Deadzone (Suggested by Ajibola)
@@ -113,7 +113,7 @@ However, this default value mapping does not make the best use of the joysticks 
 
 To create the drive curve, we used the following formula created by Team 5225A The E-Bots PiLons #footnote([https://www.vexforum.com/t/vexcode-joystick-curving/76987]):
 
-#nb_admonition(type: "equation")[
+#admonition(type: "equation")[
   If:
   - $x$ is an integer from [-127, 127] representing the joystick input
   - $t$ is a constant value representing the severity of the curve

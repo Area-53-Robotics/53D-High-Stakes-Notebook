@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 #import "@preview/cetz:0.2.0"
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "",
   type: "competition",
   date: datetime(year: 2024, month: 01, day: 13),
@@ -10,7 +10,7 @@
   witnessed: "Ishika",
 )
 
-#nb_admonition(type: "competition", title: "Competition Results")[
+#admonition(type: "competition", title: "Competition Results")[
   - *Rank:* -/-
   - *Qualification Matches Wins/Losses/Ties:* -/-/-
   - *Eliminated in:* -
@@ -20,7 +20,7 @@
 - [Comp goal here]
 
 = Matches
-#nb_tournament_match(
+#tournament-match(
   match: "Q-",
   red_alliance: (teams: ("#", "#"), score: 0),
   blue_alliance: (teams: ("#", "#"), score: 0),
@@ -355,7 +355,7 @@
 #colbreak()
 
 = Skills
-#nb_admonition(type: "competition", title: "Skills Performance")[
+#admonition(type: "competition", title: "Skills Performance")[
   - *Driver Skills Score:* #
   - *Programming Skills Score:* #
   - *Total Skills Score:* #

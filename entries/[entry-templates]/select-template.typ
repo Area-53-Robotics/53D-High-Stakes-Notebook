@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "",
   type: "select",
   date: datetime(year: 2023, month: 9, day: 23),
@@ -30,6 +30,6 @@
   ),
 )
 
-#nb_admonition(type: "select", title: "Final Selection")[
+#admonition(type: "select", title: "Final Selection")[
   E
 ]

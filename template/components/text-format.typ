@@ -1,4 +1,4 @@
-#let nb_highlight(color: red, body) = {
+#let nb-highlight(color: red, body) = {
   // Felix's
   box(fill: color, outset: 3pt, radius: 1.5pt)[
     #set align(center + horizon)

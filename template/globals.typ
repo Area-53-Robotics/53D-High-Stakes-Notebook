@@ -11,9 +11,9 @@
 #let appendix-entries = state("appendix-entries", ())
 #let program-entries = state("program-entries", ())
 
-#let glossary_entries = state("glossary_entries", ())
+#let glossary-entries = state("glossary-entries", ())
 
-#let appendix_entry_counter = counter("appendix_entry_counter")
+#let appendix-entry-counter = counter("appendix-entry-counter")
 
 // Global Notebook Variables
 #let page-number-offset = 0

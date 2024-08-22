@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Drivetrain #1 - Wheel Types",
   type: "brainstorm",
   date: datetime(year: 2023, month: 7, day: 22),
@@ -23,7 +23,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 
 = Wheel Types
 
-#nb_pro_con(
+#pro-con(
   name: "Omni",
   image: image("brainstorm-wheel-types/OmniWheel.excalidraw.svg", height: 70%),
   pros: [
@@ -40,7 +40,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 
 #colbreak()
 
-#nb_pro_con(
+#pro-con(
   name: "Traction",
   image: image("brainstorm-wheel-types/TractionWheel.excalidraw.svg", height: 12em),
   pros: [
@@ -54,7 +54,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "Mecanum",
   image: image("brainstorm-wheel-types/MecanumWheel.excalidraw.svg", height: 12em),
   pros: [
@@ -71,7 +71,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 
 = Tank Drive Configurations
 
-#nb_pro_con(
+#pro-con(
   name: "Tank Drive with Omnis",
   image: image("brainstorm-wheel-types/TankDriveOmnis.excalidraw.svg", height: 14em),
   pros: [
@@ -85,7 +85,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "Tank Drive with Traction",
   image: image("brainstorm-wheel-types/TankDriveTraction.excalidraw.svg", height: 14em),
   pros: [
@@ -104,7 +104,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 
 #colbreak()
 
-#nb_pro_con(
+#pro-con(
   name: "Tank Drive w/ Omnis & Traction",
   image: image("brainstorm-wheel-types/TankDriveOmnis+Traction.excalidraw.svg", height: 14em),
   pros: [
@@ -117,7 +117,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "Tank Drive with Mecanums",
   image: image("brainstorm-wheel-types/TankDriveMecanums.excalidraw.svg", height: 14em),
   pros: [

@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Drivetrain #1 - Drive Configurations",
   type: "brainstorm",
   date: datetime(year: 2023, month: 7, day: 21),
@@ -21,7 +21,7 @@
 
 While most of our team was already familiar with the different types of drives, we did not have much information on the pros and cons of each. During our research, a very helpful resource was the BLRS Wiki Page on VEX Drivetrains #footnote[#link("https://wiki.purduesigbots.com/hardware/vex-drivetrains")].
 
-#nb_pro_con(
+#pro-con(
   name: "Tank Drive",
   image: image("brainstorm-drive-configurations/TankDrive.excalidraw.svg"),
   pros: [
@@ -42,7 +42,7 @@ While most of our team was already familiar with the different types of drives, 
 
 #colbreak()
 
-#nb_pro_con(
+#pro-con(
   name: "H-Drive",
   image: image("brainstorm-drive-configurations/H-Drive.excalidraw.svg"),
   pros: [
@@ -64,7 +64,7 @@ While most of our team was already familiar with the different types of drives, 
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "Holonomic Drive",
   image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg"),
   pros: [

@@ -3,7 +3,7 @@
 #import "../packages.typ": codetastic
 #import codetastic: qrcode
 
-#show: create_frontmatter_entry.with(
+#show: create-frontmatter-entry.with(
   title: "About Our Notebook"
 )
 

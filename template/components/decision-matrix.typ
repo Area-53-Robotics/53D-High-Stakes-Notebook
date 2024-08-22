@@ -12,7 +12,7 @@
       }
     }
     
-    #let totaled_choices = choices.map(
+    #let totaled-choices = choices.map(
       choice => {
         let total = 0
         for element in choice {
@@ -24,7 +24,7 @@
 
     #let highest = (index: (), value: 0)
 
-    #for (index, choice) in totaled_choices.enumerate() {
+    #for (index, choice) in totaled-choices.enumerate() {
       if choice.at(choice.len() - 1) > highest.value {
         highest.index.push(index + 1)
         highest.index = highest.index.slice(highest.index.len() - 1)
@@ -90,19 +90,19 @@
       hlinex(start: 1, end: choices.len() + 1, stroke: black),
 
       [],
-      ..for choice in totaled_choices {
+      ..for choice in totaled-choices {
         (choice.at(0),)
       },
       ..for criterion in criteria.enumerate() {
         (
           criterion.last().first(),
-          ..for choice in totaled_choices {
+          ..for choice in totaled-choices {
             (choice.at(criterion.first() + 1),)
           }
         )
       },
       cellx(fill: gray.lighten(10%))[Score],
-      ..for choice in totaled_choices {
+      ..for choice in totaled-choices {
         (choice.last(),)
       },
     )
@@ -111,7 +111,7 @@
   #text(size: 11pt)[#body]
 
   #align(center)[#box[
-    #let weighted_choices = choices.map(
+    #let weighted-choices = choices.map(
       choice => {
         choice = choice.enumerate().map(
           binding => {
@@ -134,7 +134,7 @@
       },
     )
 
-    #let totaled_weighted_choices = weighted_choices.map(
+    #let totaled-weighted-choices = weighted-choices.map(
       choice => {
         let total = 0
         for element in choice {
@@ -146,7 +146,7 @@
 
     #let highest = (index: (), value: 0)
 
-    #for (index, choice) in totaled_weighted_choices.enumerate() {
+    #for (index, choice) in totaled-weighted-choices.enumerate() {
       if choice.at(choice.len() - 1) > highest.value {
         highest.index.push(index + 1)
         highest.index = highest.index.slice(highest.index.len() - 1)
@@ -218,21 +218,21 @@
 
       [],
       [Weight],
-      ..for choice in totaled_weighted_choices {
+      ..for choice in totaled-weighted-choices {
         (choice.first(),)
       },
       ..for criterion in criteria.enumerate() {
         (
           criterion.last().first(),
           str(criterion.last().last()) + "x",
-          ..for choice in totaled_weighted_choices {
+          ..for choice in totaled-weighted-choices {
             (choice.at(criterion.first() + 1),)
           }
         )
       },
       cellx(fill: gray.lighten(10%))[Score],
       [#sym.dash.em],
-      ..for choice in totaled_weighted_choices {
+      ..for choice in totaled-weighted-choices {
         (choice.last(),)
       },
     )

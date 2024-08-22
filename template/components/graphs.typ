@@ -2,7 +2,7 @@
 
 #import "../template-packages.typ": cetz
 
-#let nb_pie_chart(..data) = {
+#let nb-pie-chart(..data) = {
   let total;
   let percentages = ();
 

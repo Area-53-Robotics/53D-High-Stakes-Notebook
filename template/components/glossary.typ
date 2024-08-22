@@ -9,7 +9,7 @@
     panic("No glossary entry definition")
   }
 
-  glossary_entries.update(it => {
+  glossary-entries.update(it => {
     it.push((title: title, category: category, definition: definition))
     it
   })

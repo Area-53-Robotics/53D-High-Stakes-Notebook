@@ -280,7 +280,7 @@
 )
 */
 
-#show: create_appendix_entry.with(
+#show: create-appendix-entry.with(
   title: "Glossary",
   updated: datetime(year: 2024, month: 8, day: 19)
 )
@@ -291,11 +291,11 @@
   2,
 )[
   #context {
-    let sorted_glossary = glossary_entries.final().sorted(key: (
+    let sorted-glossary = glossary-entries.final().sorted(key: (
     (title: title, category: category, definition: definition),
     ) => title)
 
-    for entry in sorted_glossary [
+    for entry in sorted-glossary [
       #rect(
         radius: 5pt
       )[

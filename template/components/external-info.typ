@@ -30,15 +30,15 @@
         [= #name], [],
         [== Designed By Pages], [== Witnessed By Pages],
         {
-          let valid_entries = entries.final().enumerate()
+          let valid-entries = entries.final().enumerate()
 
-          valid_entries = valid_entries.filter(
+          valid-entries = valid-entries.filter(
             entry => {
               entry.last().designed.match(name) != none
             }
           )
 
-          for (index, entry) in valid_entries [
+          for (index, entry) in valid-entries [
             #let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
             #let last-page = 0
 
@@ -52,15 +52,15 @@
           ]
         },
         {
-          let valid_entries = entries.final().enumerate()
+          let valid-entries = entries.final().enumerate()
 
-          valid_entries = valid_entries.filter(
+          valid-entries = valid-entries.filter(
             entry => {
               entry.last().witnessed.match(name) != none
             }
           )
 
-          for (index, entry) in valid_entries [
+          for (index, entry) in valid-entries [
             #let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
             #let last-page = 0
 

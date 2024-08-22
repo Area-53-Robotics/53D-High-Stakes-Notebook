@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Pre-Reveal Reflection",
   type: "identify",
   date: datetime(year: 2024, month: 4, day: 20),

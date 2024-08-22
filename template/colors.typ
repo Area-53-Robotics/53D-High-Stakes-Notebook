@@ -1,4 +1,5 @@
-// All colors are part of the Material Colors 500 color set unless otherwise named
+// All colors are part of the 2014 Material Colors 500 color set unless otherwise named
+// https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
 
 #let red = rgb("#F44336")
 #let pink = rgb("#E91E63")
@@ -23,8 +24,3 @@
 #let blue-gray = rgb("#607D8B")
 #let white = rgb("#FFFFFF")
 #let black = rgb("#000000")
-
-//Temporary
-#let gray3 = rgb("#9E9E9E")
-#let gray2 = rgb("#607D8C")
-#let blue-gray1 = rgb("#607D8B")

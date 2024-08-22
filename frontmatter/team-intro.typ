@@ -4,7 +4,7 @@
 #import "../packages.typ": showybox
 #import showybox: showybox
 
-#show: create_frontmatter_entry.with(
+#show: create-frontmatter-entry.with(
   title: "Meet the Team"
 )
 

@@ -66,30 +66,31 @@
     ]
   ]
 
-  appendix_entry_counter.update(_ => 1)
+  appendix-entry-counter.update(_ => 1)
   frontmatter-page-counter.update(_ => 1)
+  counter(page).update(_ => 0)
   
   pagebreak()
   pagebreak()
   
-  print_frontmatter_entries()
+  print-frontmatter-entries()
 
   counter(page).update(_ => page-number-offset)
 
   pagebreak()
   pagebreak()
 
-  print_entries()
+  print-entries()
   
   pagebreak()
   pagebreak()
 
-  print_program_entries()
+  print-program-entries()
 
   pagebreak()
   pagebreak()
 
-  print_appendix_entries()
+  print-appendix-entries()
 
   // signature-list()
 

@@ -1,6 +1,6 @@
 #import "/template/entries.typ": *
 
-#show: create_appendix_entry.with(
+#show: create-appendix-entry.with(
   title: "Polycarbonate Map",
   updated: datetime(year: 2024, month: 8, day: 19)
 )

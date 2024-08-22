@@ -1,7 +1,7 @@
 #import "/template/entries.typ": *
 #import "/template/components/components.typ": *
 
-#show: create_frontmatter_entry.with(
+#show: create-frontmatter-entry.with(
   title: "Notebook Entry Types"
 )
 
@@ -25,42 +25,42 @@ Here are the existing types:
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "identify", size: 3em)],
     [*Identify the Problem*],
-    nb_icon_box(type: "identify"),
+    icon-box(type: "identify"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "understand", size: 3em)],
     [*Understand the Concepts*],
-    nb_icon_box(type: "understand"),
+    icon-box(type: "understand"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "brainstorm", size: 3em)],
     [*Brainstorm Solutions*],
-    nb_icon_box(type: "brainstorm"),
+    icon-box(type: "brainstorm"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "select", size: 3em)],
     [*Select the Best Solution*],
-    nb_icon_box(type: "select"),
+    icon-box(type: "select"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "plan", size: 3em)],
     [*Plan the Solution*],
-    nb_icon_box(type: "plan"),
+    icon-box(type: "plan"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "build", size: 3em)],
     [*Build the Solution*],
-    nb_icon_box(type: "build"),
+    icon-box(type: "build"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "program", size: 3em)],
     [*Program the Solution*],
-    nb_icon_box(type: "program"),
+    icon-box(type: "program"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "test", size: 3em)],
     [*Test the Solution*],
-    nb_icon_box(type: "test"),
+    icon-box(type: "test"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "management", size: 3em)],
     [*Team Management*],
-    nb_icon_box(type: "management"),
+    icon-box(type: "management"),
 
     grid.cell(inset: (x: 10pt))[#nb_icon(label: "competition", size: 3em)],
     [*Competition Reflection*],
-    nb_icon_box(type: "competition"),
+    icon-box(type: "competition"),
   )
 ]

@@ -18,18 +18,18 @@
   }
   
   if it.level == 1 {
-      set text(size: 15pt)
-      highlight(color: gray.lighten(60%), bottom-border-size: 3pt, bottom-color: gray)[
-        #box(baseline: 130%, it.body)
-      ]
+    set text(size: 15pt)
+    highlight(color: gray.lighten(60%), bottom-border-size: 3pt, bottom-color: gray)[
+      #box(baseline: 130%, it.body)
+    ]
   } else if it.level == 2 {
-      set text(size: 13pt)
-        highlight(color: gray.lighten(70%), bottom-border-size: 0pt, bottom-color: gray)[
-        #box(baseline: 130%, it.body)
-      ]
+    set text(size: 13pt)
+      highlight(color: gray.lighten(70%), bottom-border-size: 0pt, bottom-color: gray)[
+      #box(baseline: 130%, it.body)
+    ]
   } else if it.level == 3 {
-      set text(size: 12pt)
-      it.body
+    set text(size: 12pt)
+    it.body
   }
   v(3pt)
 }

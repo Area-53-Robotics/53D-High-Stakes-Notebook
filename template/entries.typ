@@ -2,7 +2,7 @@
 #import "./globals.typ": *
 #import "./components/components.typ": *
 
-#let create_entry(
+#let create-entry(
   title: "",
   type: "",
   date: none,
@@ -32,9 +32,8 @@
   })
 }
 
-#let print_entries() = {
+#let print-entries() = {
   context {
-    // make a second array for locations for toc linking?
     for entry in entries.final() {
       [
         #let info = type-metadata.at(entry.type)
@@ -42,7 +41,7 @@
 
         #set page(
           header: [
-            #nb_title(
+            #title(
               color: info.color,
               beginning: [
                 #nb_icon(label: type, size: 2.5em)
@@ -82,10 +81,10 @@
                     ]
                   ],
                   table.cell(colspan: 2, rowspan: 3, align: center + horizon)[
-                    #nb_icon_box(type: entry.type)
+                    #icon-box(type: entry.type)
                   ],
-                  table.cell(colspan: 4)[Designed By: #nb_signature(entry.designed)],
-                  table.cell(colspan: 4)[Witnessed By: #nb_signature(entry.witnessed)],
+                  table.cell(colspan: 4)[Designed By: #signature(entry.designed)],
+                  table.cell(colspan: 4)[Witnessed By: #signature(entry.witnessed)],
                   table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")],
                   table.cell(colspan: 4)[Attendance: #entry.attendance],
                   table.cell(align: center + horizon)[
@@ -117,7 +116,7 @@
                   table.vline(start: 0, end: 4, stroke: black + 1pt, x: 6),
 
                   table.cell(colspan: 2, rowspan: 3, align: center + horizon)[
-                    #nb_icon_box(type: entry.type)
+                    #icon-box(type: entry.type)
                   ],
                   table.cell(colspan: 4, align: center)[
                     #link((page: query(selector(<notebook-toc>)).first().location().position().page, x: 0pt, y: 0pt))[
@@ -126,8 +125,8 @@
                       ]
                     ]
                   ],
-                  table.cell(colspan: 4)[Designed By: #nb_signature(entry.designed)],
-                  table.cell(colspan: 4)[Witnessed By: #nb_signature(entry.witnessed)],
+                  table.cell(colspan: 4)[Designed By: #signature(entry.designed)],
+                  table.cell(colspan: 4)[Witnessed By: #signature(entry.witnessed)],
                   table.cell(align: center + horizon)[
                     #box(
                       fill: info.color,
@@ -146,7 +145,7 @@
 
           margin: (left: 5em, bottom: 11em, right: 5em),
 
-          background: nb_side_margin_color(color: info.color)
+          background: side-margin-color(color: info.color)
         )
 
         #entry.body <notebook-entry>
@@ -158,7 +157,7 @@
   }
 }
 
-#let create_frontmatter_entry(title: "", body) = {
+#let create-frontmatter-entry(title: "", body) = {
   frontmatter-entries.update(x => {
     x.push((
       title: title,
@@ -168,7 +167,7 @@
   })
 }
 
-#let create_appendix_entry(title: "", updated: none, body) = {
+#let create-appendix-entry(title: "", updated: none, body) = {
   appendix-entries.update(x => {
     x.push((
       title: title,
@@ -179,7 +178,7 @@
   })
 }
 
-#let create_program_entry(title: "", body) = {
+#let create-program-entry(title: "", body) = {
   program-entries.update(x => {
     x.push((
       title: title,
@@ -189,17 +188,17 @@
   })
 }
 
-#let print_frontmatter_entries() = {
+#let print-frontmatter-entries() = {
   context {
     for entry in frontmatter-entries.final() {
       [
         #set page(
           margin: (left: 5em, right: 5em),
-          background: nb_side_margin_color(color: gray),
+          background: side-margin-color(color: gray),
           header: [
-            #nb_title[#entry.title]
+            #title[#entry.title]
           ],
-          footer: nb_frontmatter_footer()
+          footer: frontmatter-footer()
         )
 
         #entry.body <notebook-frontmatter>
@@ -209,46 +208,45 @@
   }
 }
 
-#let print_appendix_entries() = {
+#let print-appendix-entries() = {
   context {
     for entry in appendix-entries.final() {
       [
         #set page(
           margin: (left: 5em, right: 5em),
-          background: nb_side_margin_color(color: gray),
+          background: side-margin-color(color: gray),
           header: [
-            #nb_title(
-              beginning: [Appendix #context appendix_entry_counter.display("A"):],
+            #title(
+              beginning: [Appendix #context appendix-entry-counter.display("A"):],
               beginning-fill: gray
             )[#entry.title]
           ],
-          footer: nb_appendix_footer(updated: entry.updated)
+          footer: appendix-footer(updated: entry.updated)
         )
 
         #entry.body <notebook-appendix>
         #counter(footnote).update(0)
-        #appendix_entry_counter.step()
+        #appendix-entry-counter.step()
       ]
     }
   }
 }
 
-#let print_program_entries() = {
+#let print-program-entries() = {
   context {
-    // make a second array for locations for toc linking?
     for entry in program-entries.final() {
       [
         #set page(
           margin: (left: 5em, right: 5em),
-          background: nb_side_margin_color(color: blue),
+          background: side-margin-color(color: blue),
           header: [
-            #nb_title(
+            #title(
               color: blue,
               beginning: [Program:],
               beginning-fill: blue
             )[#entry.title]
           ],
-          footer: nb_program_footer()
+          footer: program-footer()
         )
 
         #entry.body <notebook-program>

@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 #import "@preview/tablex:0.0.8": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Game Challenge - Analysis",
   type: "identify",
   start_date: datetime(year: 2023, month: 4, day: 30),
@@ -123,7 +123,7 @@
   image("/assets/field-elements/neutral-zones.png")
 )
 
-#nb_admonition(type: "note")[
+#admonition(type: "note")[
   #vex-rule[SG9] makes a solo autonomous win point impossible to achieve unless you can consistently score into your goal from across the field. We strongly believe that teams will not be able to do this, especially at the beginning of the season.
 ]
 
@@ -145,6 +145,6 @@
   [Elevation - 4th Tier], [5 Points]
 )
 
-#nb_admonition(type: "note")[
+#admonition(type: "note")[
   We will be going on summer break hiatus until July.
 ]

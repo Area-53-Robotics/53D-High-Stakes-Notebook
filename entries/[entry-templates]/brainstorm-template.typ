@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "",
   type: "brainstorm",
   date: datetime(year: 2024, month: 1, day: 14),
@@ -11,7 +11,7 @@
 
 // Throughout the season, we have observed a large variety of elevation options, with each of them varying greatly in how they are constructed. We created a pros and cons list for each of them to organize our collective thoughts.
 
-#nb_pro_con(
+#pro-con(
   name: "---",
   image: image("./brainstorm/---.svg"),
   pros: [
@@ -25,7 +25,7 @@
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "---",
   image: image("./brainstorm/---.svg"),
   pros: [
@@ -41,7 +41,7 @@
 
 // #colbreak()
 
-#nb_pro_con(
+#pro-con(
   name: "---",
   image: image("./brainstorm/---.svg"),
   pros: [

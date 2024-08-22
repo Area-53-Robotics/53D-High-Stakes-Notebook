@@ -1,7 +1,7 @@
 #import "/template/entries.typ": *
 #import "/template/globals.typ": page-number-offset
 
-#show: create_appendix_entry.with(
+#show: create-appendix-entry.with(
   title: "Innovate Award Submission Information Form",
   updated: datetime(year: 2024, month: 1, day: 26)
 )
@@ -18,19 +18,19 @@
 #context {
   heading(level: 3)[Kicker]
 
-  let valid_entries = entries.final().enumerate()
+  let valid-entries = entries.final().enumerate()
 
-  valid_entries = valid_entries.filter(
+  valid-entries = valid-entries.filter(
     entry => {
       (entry.last().title.match("Kicker") != none) or ((entry.last().title.match("Outtake #2") != none) and (entry.last().type.match("understand") != none))
     }
   )
 
-  let entry = valid_entries.first()
+  let entry = valid-entries.first()
   let info = type-metadata.at(entry.last().type)
   let headings = query(selector(<notebook-entry>))
 
-  for (index, entry) in valid_entries {
+  for (index, entry) in valid-entries {
     let page_number = counter(page).at(headings.at(index).location()).at(0)
     // let page_number = entry-page-counter.at(headings.at(index).location()).at(0) + 1
     let date = entry.date.display("[year]/[month]/[day]")

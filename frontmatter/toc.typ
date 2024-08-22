@@ -2,7 +2,7 @@
 #import "/template/components/components.typ": *
 #import "../template/globals.typ"
 
-#show: create_frontmatter_entry.with(
+#show: create-frontmatter-entry.with(
   title: "Table of Contents"
 )
 
@@ -56,13 +56,13 @@
 }
 
 #context {
-  let frontmatter-entries = helper("frontmatter")
+  // let frontmatter-entries = helper("frontmatter")
   let body-entries = helper("body")
   let appendix-entries = helper("appendix")
   let program-entries = helper("program")
 
   nb_toc(
-    frontmatter: frontmatter-entries,
+    frontmatter: (),
     body: body-entries,
     program: program-entries,
     appendix: appendix-entries

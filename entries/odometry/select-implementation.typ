@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Autonomous - Implementation",
   type: "select",
   date: datetime(year: 2024, month: 2, day: 12),
@@ -34,7 +34,7 @@ After brainstorming the autonomous implementation options, we needed to select o
   ),
 )
 
-#nb_admonition(type: "select", title: "Final Selection")[
+#admonition(type: "select", title: "Final Selection")[
   LemLib offers the greatest flexibility with autonomous movement using both PID and Pure Pursuit.
 ]
 

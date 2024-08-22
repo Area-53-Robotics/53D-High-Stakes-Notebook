@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Autonomous - Movement",
   type: "brainstorm",
   date: datetime(year: 2024, month: 2, day: 12),
@@ -11,7 +11,7 @@
 
 // There are multiple methods of programming an autonomous, ranging from DIY implementations to libraries made by other teams. We brainstormed and researched a few of them to ensure that we have multiple options available to us.
 
-#nb_pro_con(
+#pro-con(
   name: "Relative Movements",
   image: image("./brainstorm-movement/relative-movements.excalidraw.svg"),
   pros: [
@@ -30,7 +30,7 @@
 
 #colbreak()
 
-#nb_pro_con(
+#pro-con(
   name: "PID",
   image: image("./brainstorm-movement/PID.excalidraw.svg"),
   pros: [
@@ -45,7 +45,7 @@
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "Pure Pursuit",
   image: image("./brainstorm-movement/pure-pursuit.excalidraw.svg"),
   pros: [

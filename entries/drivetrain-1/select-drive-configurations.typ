@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Drivetrain #1 - Drive Configurations",
   type: "select",
   date: datetime(year: 2023, month: 7, day: 21),
@@ -38,6 +38,6 @@ After brainstorming different drive configurations, we had to pick one to begin 
     ),
 )
 
-#nb_admonition(type: "select", title: "Final Selection")[
+#admonition(type: "select", title: "Final Selection")[
   A tank drive configuration meets the most of the criteria we identified for the what we need in a drive configuration. The flexibility it offers will be useful later in the season when we have to rebuild subsystems.
 ]

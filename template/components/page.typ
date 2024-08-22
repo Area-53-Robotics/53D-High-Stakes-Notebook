@@ -1,7 +1,7 @@
 #import "../globals.typ": frontmatter-page-counter, appendix-page-counter, program-page-counter
 #import "../icons/icons.typ": *
 
-#let nb_icon_box(type: "") = {
+#let icon-box(type: "") = {
   let nb_solid_labels = true;
   let info = type-metadata.at(type)
 
@@ -30,7 +30,7 @@
   }
 }
 
-#let nb_frontmatter_footer() = {
+#let frontmatter-footer() = {
   context {
     frontmatter-page-counter.step()
     align(
@@ -52,7 +52,7 @@
   }
 }
 
-#let nb_appendix_footer(color: gray, updated: none) = {
+#let appendix-footer(color: gray, updated: none) = {
   context {
     appendix-page-counter.step()
     align(left)[
@@ -77,7 +77,7 @@
   }
 }
 
-#let nb_program_footer(color: blue) = {
+#let program-footer(color: blue) = {
   context {
     program-page-counter.step()
     align(
@@ -99,7 +99,7 @@
   }
 }
 
-#let nb_side_margin_color(color: "") = {
+#let side-margin-color(color: "") = {
   let margin-width = 35pt
   context {
     if calc.odd(here().page()) {

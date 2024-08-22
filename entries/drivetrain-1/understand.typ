@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Drivetrain #1",
   type: "understand",
   date: datetime(year: 2023, month: 7, day: 15),
@@ -49,7 +49,7 @@
 
     + *Second Law* ($#sym.Sigma F = m a$): The acceleration of an object is directly related to the net force acting upon it and inversely related to its mass.
 
-    #nb_admonition(type: "equation")[
+    #admonition(type: "equation")[
       If:
       - $#sym.Sigma F$ is the net force acting on an object
       - $m$ is the mass of the object
@@ -60,7 +60,7 @@
 
     3. *Third Law* (Action and Reaction): For every action, there is an equal and opposite reaction.
 
-    #nb_admonition(type: "equation")[
+    #admonition(type: "equation")[
       If:
       - $F_"in"$ is the force that the first object exerts on the second object
       - $F_"out"$ is the force that the second object exerts back on the first object

@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Autonomous - Movement",
   type: "select",
   date: datetime(year: 2024, month: 2, day: 12),
@@ -32,11 +32,11 @@
   ),
 )
 
-#nb_admonition(type: "select", title: "Final Selection")[
+#admonition(type: "select", title: "Final Selection")[
   PID strikes the best balance between implementation & testing time and its resulting performance.
 ]
 
-#nb_admonition(type: "note")[
+#admonition(type: "note")[
   Although we will be using PID for the majority of our autonomous movements, it is not exclusive with Pure Pursuit implementation. If possible, we would like to implement both movement options and use them as needed.
 ]
 

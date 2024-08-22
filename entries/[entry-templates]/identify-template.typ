@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "",
   type: "identify",
   date: datetime(year: 2023, month: 7, day: 15),

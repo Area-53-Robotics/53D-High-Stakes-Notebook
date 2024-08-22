@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Autonomous - Implementation",
   type: "brainstorm",
   date: datetime(year: 2024, month: 2, day: 13),
@@ -20,7 +20,7 @@
 
 Now that we have decided to use PID with a possibility for Pure Pursuit, we brainstormed a few different implementation methods that have the capability to use them.
 
-#nb_pro_con(
+#pro-con(
   name: "DIY Implementation",
   image: circle(fill: gray, image("/assets/logos/logo.svg")),
   pros: [
@@ -39,7 +39,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
 
 #colbreak()
 
-#nb_pro_con(
+#pro-con(
   name: "LemLib",
   image: image("./brainstorm-implementation/LemLib.png", height: 5em),
   pros: [
@@ -55,7 +55,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
   ],
 )
 
-#nb_pro_con(
+#pro-con(
   name: "ARMS",
   image: image("./brainstorm-implementation/ARMS.svg"),
   pros: [

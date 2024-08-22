@@ -1,7 +1,7 @@
 #import "/template/entries.typ": *
 #import "/template/globals.typ": program-entries
 
-#show: create_program_entry.with(
+#show: create-program-entry.with(
   title: "File Organization"
 )
 

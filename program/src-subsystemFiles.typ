@@ -1,6 +1,6 @@
 #import "/template/entries.typ": *
 
-#show: create_program_entry.with(
+#show: create-program-entry.with(
   title: "53D_Over_Under/src/subsystemFiles/"
 )
 

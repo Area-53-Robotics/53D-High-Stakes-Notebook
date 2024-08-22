@@ -1,4 +1,5 @@
-#import "@preview/codly:0.2.0": * // TEST THE NEW THEME-PACKAGES
+#import "../template-packages.typ": codly
+#import codly: *
 #import "../colors.typ": *
 
 #let program-icon(codepoint) = {

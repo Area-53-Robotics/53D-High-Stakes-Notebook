@@ -1,6 +1,6 @@
 #import "/template/template.typ": *
 
-#show: create_entry.with(
+#show: create-entry.with(
   title: "Drivetrain #1 - Wheel Types",
   type: "select",
   date: datetime(year: 2023, month: 7, day: 22),
@@ -39,6 +39,6 @@ Different wheel configurations can have very different purposes. To determine wh
   ),
 )
 
-#nb_admonition(type: "select", title: "Final Selection")[
+#admonition(type: "select", title: "Final Selection")[
   A hybrid wheel configuration meets the most of the criteria we identified for the wheel configurations. Many other teams use a similar wheel configuration, so we will be able to do research on methods to build a drivetrain with it.
 ]
