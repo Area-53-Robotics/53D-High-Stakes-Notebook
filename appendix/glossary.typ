@@ -290,27 +290,25 @@
 #columns(
   2,
 )[
-  #locate(
-    loc => {
-      let sorted_glossary = glossary_entries.final(loc).sorted(key: (
-      (title: title, category: category, definition: definition),
+  #context {
+    let sorted_glossary = glossary_entries.final().sorted(key: (
+    (title: title, category: category, definition: definition),
     ) => title)
 
-      for entry in sorted_glossary [
-        #rect(
-          radius: 5pt
-        )[
-          #align(left)[
-            #if entry.category != none [#box(baseline: 30%, nb_icon(label: entry.category, size: 2em))]
-            #h(5pt)
-            *#text(14pt)[#entry.title]*
-          ]
-          #v(-7pt)
-          #line(length: 100%)
-          #v(-7pt)
-          #entry.definition
+    for entry in sorted_glossary [
+      #rect(
+        radius: 5pt
+      )[
+        #align(left)[
+          #if entry.category != none [#box(baseline: 30%, nb_icon(label: entry.category, size: 2em))]
+          #h(5pt)
+          *#text(14pt)[#entry.title]*
         ]
+        #v(-7pt)
+        #line(length: 100%)
+        #v(-7pt)
+        #entry.definition
       ]
-    }
-  )
+    ]
+  }
 ]

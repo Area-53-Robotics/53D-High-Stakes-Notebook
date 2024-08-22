@@ -17,5 +17,5 @@
 ]
 
 #let code-header(body) = align(center)[
-  *53D_OverUnder/#body*
+  *53D_HighStakes/#body*
 ]

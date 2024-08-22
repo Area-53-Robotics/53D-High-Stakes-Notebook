@@ -22,15 +22,15 @@
   box(width: 1fr, baseline: -0.3em, line(length: 100%, stroke: (dash: "dotted")))
 }
 
-#locate(loc => [
-  #let program_entries = query(selector(<notebook-program>), loc)
+#context [
+  #let program_entries = query(selector(<notebook-program>))
 
   #let program-file(name: none, label: none, body) = [
-    #link(query(selector(label), loc).at(0).location())[
+    #link(query(selector(label)).at(0).location())[
       #text(fill: black)[
         _ #name _
       ]
-    ] #line-fill *#body, docs on pg. P-#counter(page).at(query(selector(label), loc).at(0).location()).at(0)*
+    ] #line-fill *#body, docs on pg. P-#counter(page).at(query(selector(label)).at(0).location()).at(0)*
   ]
 
   #let program-folder(name: none, num: none, bold: false, under: false, body) = [

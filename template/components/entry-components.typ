@@ -45,28 +45,26 @@
       background: image(path),
       header: none,
       footer: {
-        locate(
-          loc => {
-            entry-page-counter.step()
-            
-            align(
-              if calc.odd(loc.page()) {
-                right + bottom
-              } else {
-                left + bottom
-              }
-            )[
-              #box(
-                fill: yellow,
-                outset: 5pt,
-                radius: 1.5pt,
-                height: auto,
-                width: 20pt,
-              )[#align(center + horizon)[#counter(page).display()]]
-            ]
-            v(1em)
-          }
-        )
+        context {
+          entry-page-counter.step()
+          
+          align(
+            if calc.odd(here().page()) {
+              right + bottom
+            } else {
+              left + bottom
+            }
+          )[
+            #box(
+              fill: yellow,
+              outset: 5pt,
+              radius: 1.5pt,
+              height: auto,
+              width: 20pt,
+            )[#align(center + horizon)[#counter(page).display()]]
+          ]
+          v(1em)
+        }
       },
       foreground: {
         align(bottom + left)[
@@ -165,8 +163,7 @@
   title: none,
   body: [entry on],
 ) = {
-  locate(
-    loc => {
+  context {
 
       let valid_entries = entries.final(loc).enumerate()
 
@@ -213,8 +210,7 @@
         ]
         #body pg. #page #h(-0.2em)
       ]
-    }
-  )
+  }
 }
 
 // ! You can only have two entry references in an entry without getting the "did not converge" error
@@ -224,50 +220,48 @@
   title: none,
   body: [entry on],
 ) = {
-  locate(
-    loc => {
+  context {
 
-      let valid_entries = full-entry-list
+    let valid_entries = full-entry-list
 
-      if date != none {
-        valid_entries = valid_entries.filter(
-          entry => {
-            entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
-          }
-        )
-      }
-
-      if type != none {
-        valid_entries = valid_entries.filter(
-          entry => {
-            entry.type.match(type) != none
-          }
-        )
-      }
-
-      if title != none {
-        valid_entries = valid_entries.filter(
-          entry => {
-            entry.title.match(title) != none
-          }
-        )
-      }
-
-      assert(valid_entries.len() > 0, message: "No entries meet the given attributes")
-      assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
-
-      let entry = valid_entries.first()
-      let info = type-metadata.at(entry.type)
-      let page = entry.body
-
-      [
-        #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
-        #h(1pt)
-        #highlight(fill: info.color.lighten(30%))[
-          #h(2pt) #entry.date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.title #h(2pt)
-        ]
-        #body pg. #page #h(-0.2em)
-      ]
+    if date != none {
+      valid_entries = valid_entries.filter(
+        entry => {
+          entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+        }
+      )
     }
-  )
+
+    if type != none {
+      valid_entries = valid_entries.filter(
+        entry => {
+          entry.type.match(type) != none
+        }
+      )
+    }
+
+    if title != none {
+      valid_entries = valid_entries.filter(
+        entry => {
+          entry.title.match(title) != none
+        }
+      )
+    }
+
+    assert(valid_entries.len() > 0, message: "No entries meet the given attributes")
+    assert(valid_entries.len() <= 1, message: "More than one entry meet the given attributes")
+
+    let entry = valid_entries.first()
+    let info = type-metadata.at(entry.type)
+    let page = entry.body
+
+    [
+      #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
+      #h(1pt)
+      #highlight(fill: info.color.lighten(30%))[
+        #h(2pt) #entry.date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.title #h(2pt)
+      ]
+      #body pg. #page #h(-0.2em)
+    ]
+  }
 }
