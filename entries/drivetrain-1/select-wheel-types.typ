@@ -21,7 +21,7 @@ Different wheel configurations can have very different purposes. To determine wh
   - Ease of Driving - How easy the drivetrain configuration is to drive.
 ]
 
-#nb_decision_matrix(
+#double-decision-matrix(
   criteria: (
     ("Speed", 5),
     ("Compactness", 2),

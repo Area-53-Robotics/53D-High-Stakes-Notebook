@@ -19,7 +19,7 @@ After brainstorming the autonomous implementation options, we needed to select o
   - Pure Pursuit Implementation Time - How little time it takes to get the Pure Pursuit made using the implementation method working
 ]
 
-#nb_decision_matrix(
+#double-decision-matrix(
   criteria: (
     ("Setup Intuitiveness", 2),
     ("PID Robustness", 5),

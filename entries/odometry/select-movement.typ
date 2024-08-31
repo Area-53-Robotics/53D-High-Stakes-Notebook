@@ -18,7 +18,7 @@
   - Consistency - How consistent the autons made using the autonomous implementation are.
 ]
 
-#nb_decision_matrix(
+#double-decision-matrix(
   criteria: (
     ("Implementation Time", 5),
     ("Testing Time", 5),
@@ -29,7 +29,7 @@
     ("Relative Movements", 4, 1, 2, 2),
     ("PID", 3, 3, 3, 3),
     ("Pure Pursuit", 1, 3, 4, 4),
-  ),
+  )
 )
 
 #admonition(type: "select", title: "Final Selection")[

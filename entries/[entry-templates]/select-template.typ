@@ -14,7 +14,7 @@
   - Crit - e
 ]
 
-#nb_decision_matrix(
+#double-decision-matrix(
   criteria: (
     ("-", 5),
     ("-", 5),

@@ -4,6 +4,7 @@
 #import showybox: showybox
 
 #let admonition(type: "", title: none, body) = {
+  assert(type in type-metadata, message: "Invalid admonition type given")
   let info = type-metadata.at(type)
 
   if title == none {

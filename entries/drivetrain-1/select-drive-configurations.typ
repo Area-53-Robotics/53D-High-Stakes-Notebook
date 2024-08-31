@@ -21,7 +21,7 @@ After brainstorming different drive configurations, we had to pick one to begin 
   - Ease of Driving - How easy the drivetrain configuration is to drive.
 ]
 
-#nb_decision_matrix(
+#double-decision-matrix(
   criteria: (
     ("Speed", 5),
     ("Turning", 4),

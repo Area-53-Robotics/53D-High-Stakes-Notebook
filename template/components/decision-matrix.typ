@@ -1,240 +1,237 @@
-#import "../template-packages.typ": tablex
-#import tablex: *
 #import "../colors.typ": *
 
-#let nb_decision_matrix(criteria: (), choices: (), body: []) = [
-  #set text(size: 13pt)
+#let decision-matrix(weighted: false, criteria: (), choices: (), body: []) = {
+  set text(size: 13pt)
 
-  #align(center)[#box[
-    #for choice in choices {
-      if not (choice.len() - 1) == criteria.len() {
-        panic("a choice did not have the right amount of criteria")
-      }
-    }
-    
-    #let totaled-choices = choices.map(
-      choice => {
-        let total = 0
-        for element in choice {
-          if type(element) == "integer" or type(element) == "float" { total += element }
+  choices = choices.map(
+    choice => {
+      let new-choice = ()
+      let unweighted-total = 0
+      let weighted-total = 0
+
+      for (index, value) in choice.enumerate() {
+        if type(value) == str {
+          new-choice.push(value)
+        } else {
+          let weighted-value = value * (criteria.at(index - 1).last())
+
+          unweighted-total += value
+          weighted-total += weighted-value
+
+          new-choice.push((
+            unweighted: value,
+            weighted: weighted-value,
+            fill-color: if value == 4 {
+              green.lighten(10%)
+            } else if value == 3 {
+              yellow.lighten(10%)
+            } else if value == 2 {
+              red.lighten(10%)
+            } else if value == 1 {
+              red.darken(10%)
+            } else {
+              red.darken(40%)
+            }
+          ))
         }
-        choice + (total,)
-      },
-    )
-
-    #let highest = (index: (), value: 0)
-
-    #for (index, choice) in totaled-choices.enumerate() {
-      if choice.at(choice.len() - 1) > highest.value {
-        highest.index.push(index + 1)
-        highest.index = highest.index.slice(highest.index.len() - 1)
-        highest.value = choice.at(choice.len() - 1)
-      } else if choice.at(choice.len() - 1) == highest.value {
-        highest.index.push(index + 1)
-        highest.value = choice.at(choice.len() - 1)
       }
+      new-choice.push((
+        unweighted-total: unweighted-total,
+        weighted-total: weighted-total,
+      ))
+      new-choice
+    }
+  )
+
+  let highest = (
+    unweighted: (indexes: (), value: 0),
+    weighted: (indexes: (), value: 0)
+  )
+
+  for (index, choice) in choices.enumerate() {    
+    if choice.last().unweighted-total > highest.unweighted.value {
+      highest.unweighted.indexes.push(index)
+      highest.unweighted.indexes = highest.unweighted.indexes.slice(highest.unweighted.indexes.len() - 1)
+      highest.unweighted.value = choice.last().unweighted-total
+    } else if choice.last().unweighted-total == highest.unweighted.value {
+      highest.unweighted.indexes.push(index)
     }
 
-    = Unweighted Decision Matrix
-    #tablex(
+    if choice.last().weighted-total > highest.weighted.value {
+      highest.weighted.indexes.push(index)
+      highest.weighted.indexes = highest.weighted.indexes.slice(highest.weighted.indexes.len() - 1)
+      highest.weighted.value = choice.last().weighted-total
+    } else if choice.last().weighted-total == highest.weighted.value {
+      highest.weighted.indexes.push(index)
+    }
+  }
 
-      auto-lines: true,
+  for (index, choice) in choices.enumerate() {
+    if index in highest.unweighted.indexes {
+      choice.last().insert("unweighted-bold", true)
+    } else {
+      choice.last().insert("unweighted-bold", false)
+    }
+
+    if index in highest.weighted.indexes {
+      choice.last().insert("weighted-bold", true)
+    } else {
+      choice.last().insert("weighted-bold", false)
+    }
+  }
+
+  let abs-unweighted-total = 0
+  let abs-weighted-total = 0
+
+  for choice in choices {
+    abs-unweighted-total += choice.last().unweighted-total
+    abs-weighted-total += choice.last().weighted-total
+  }
+
+  let unweighted-mean = abs-unweighted-total / choices.len()
+  let weighted-mean = abs-weighted-total / choices.len()
+
+  let unweighted-deviation-sum = 0
+  let weighted-deviation-sum = 0
+
+  for choice in choices {
+    unweighted-deviation-sum += calc.pow(choice.last().unweighted-total - highest.unweighted.value, 2)
+    weighted-deviation-sum += calc.pow(choice.last().weighted-total - highest.weighted.value, 2)
+  }
+
+  let unweighted-standard-deviation = calc.sqrt(unweighted-deviation-sum / choices.len())
+  let weighted-standard-deviation = calc.sqrt(weighted-deviation-sum / choices.len())
+
+  choices = choices.map(
+    choice => {
+      let unweighted-z-score = (highest.unweighted.value - choice.last().unweighted-total) / unweighted-standard-deviation
+      
+      let unweighted-total-fill-color = if unweighted-z-score == 0 {green.lighten(10%)}
+      else if unweighted-z-score < 1 {yellow.lighten(10%)}
+      else if unweighted-z-score < 2 {red.lighten(10%)}
+      else if unweighted-z-score < 3 {red.darken(10%)}
+      else {red.darken(40%)}
+
+      choice.last().insert("unweighted-total-fill-color", unweighted-total-fill-color)
+
+      let weighted-z-score = (highest.weighted.value - choice.last().weighted-total) / weighted-standard-deviation
+
+      let weighted-total-fill-color = if weighted-z-score == 0 {green.lighten(10%)}
+      else if weighted-z-score < 1 {yellow.lighten(10%)}
+      else if weighted-z-score < 2 {red.lighten(10%)}
+      else if weighted-z-score < 3 {red.darken(10%)}
+      else {red.darken(40%)}
+
+      choice.last().insert("weighted-total-fill-color", weighted-total-fill-color)
+
+      choice
+    }
+  )
+
+  if weighted == false {
+    table(
       align: center + horizon,
       columns: choices.len() + 1,
       rows: criteria.len() + 2,
 
-      map-cells: cell => {
-        let fill-color = []
-        if cell.x > 0 and cell.y > 0 and cell.y < criteria.len() + 1 {
-          let value = int(cell.content.text)
-
-          let fill-color = if value == 4 {
-            green.lighten(10%)
-          } else if value == 3 {
-            yellow.lighten(10%)
-          } else if value == 2 {
-            red.lighten(10%)
-          } else if value == 1 {
-            red.darken(10%)
-          } else {
-            red.darken(40%)
-          }
-          (..cell, fill: fill-color.desaturate(20%))
-        } else if cell.x > 0 and cell.y == criteria.len() + 1 {
-          let value = int(cell.content.text)
-            fill-color = if value == highest.value {
-            green.lighten(10%)
-          } else if highest.value - value < 4 {
-            yellow.lighten(10%)
-          } else if highest.value - value < 8 {
-            red.lighten(10%)
-          } else if highest.value - value < 12 {
-            red.darken(10%)
-          } else {
-            red.darken(40%)
-          }
-          (..cell, fill: fill-color.desaturate(20%))
-        }
-        else {cell}
-      },
-
-      map-cols: (col_index, cells) => {
-        cells.map(c => {
-          if highest.index.contains(col_index) {
-          (..c, content: strong(delta: 400)[#c.content])
-          } else {c}
-        })
-      },
-
-      vlinex(start: 1, end: criteria.len() + 2, stroke: black),
-      hlinex(start: 1, end: choices.len() + 1, stroke: black),
+      table.vline(start: 0, end: 1, stroke: none, x: 0),
+      table.hline(start: 0, end: 1, stroke: none, y: 0),
 
       [],
-      ..for choice in totaled-choices {
-        (choice.at(0),)
+      ..for (index, choice) in choices.enumerate() {
+        let cell = table.cell
+        if index in highest.unweighted.indexes {
+          (cell[*#choice.first()*],)
+        } else {
+          (cell[#choice.first()],)
+        }
       },
-      ..for criterion in criteria.enumerate() {
+      ..for (index, criterion) in criteria.enumerate() {
         (
-          criterion.last().first(),
-          ..for choice in totaled-choices {
-            (choice.at(criterion.first() + 1),)
-          }
-        )
-      },
-      cellx(fill: gray.lighten(10%))[Score],
-      ..for choice in totaled-choices {
-        (choice.last(),)
-      },
-    )
-  ]]
-
-  #text(size: 11pt)[#body]
-
-  #align(center)[#box[
-    #let weighted-choices = choices.map(
-      choice => {
-        choice = choice.enumerate().map(
-          binding => {
-            if type(binding.last()) == "integer" or type(binding.last()) == "float" {
-              binding.insert(1, {binding.remove(1) * criteria.at(binding.first() - 1).last()})
+          criterion.first(),
+          ..for (index2, choice) in choices.enumerate() {
+            let cell = table.cell.with(fill: choice.at(index + 1).fill-color)
+            if index2 in highest.unweighted.indexes {
+              (cell[*#choice.at(index + 1).unweighted*],)
+            } else {
+              (cell[#choice.at(index + 1).unweighted],)
             }
-            binding
           }
         )
-
-        let choice-values = ()
-
-        for binding in choice {
-          choice-values.push(binding.last())
+      },
+      table.cell(fill: gray.lighten(10%))[Score],
+      ..for (index, choice) in choices.enumerate() {
+        let cell = table.cell.with(fill: choice.last().unweighted-total-fill-color)
+        if index in highest.unweighted.indexes {
+          (cell[*#choice.last().unweighted-total*],)
+        } else {
+          (cell[#choice.last().unweighted-total],)
         }
-
-        choice = choice-values
-
-        choice
       },
     )
-
-    #let totaled-weighted-choices = weighted-choices.map(
-      choice => {
-        let total = 0
-        for element in choice {
-          if type(element) == "integer" or type(element) == "float" { total += element }
-        }
-        choice + (total,)
-      },
-    )
-
-    #let highest = (index: (), value: 0)
-
-    #for (index, choice) in totaled-weighted-choices.enumerate() {
-      if choice.at(choice.len() - 1) > highest.value {
-        highest.index.push(index + 1)
-        highest.index = highest.index.slice(highest.index.len() - 1)
-        highest.value = choice.at(choice.len() - 1)
-      } else if choice.at(choice.len() - 1) == highest.value {
-        highest.index.push(index + 1)
-        highest.value = choice.at(choice.len() - 1)
-      }
-    }
-
-    = Weighted Decision Matrix
-    #tablex(
-
-      auto-lines: true,
+  } else {
+    table(
       align: center + horizon,
       columns: choices.len() + 2,
       rows: criteria.len() + 2,
 
-      map-cells: cell => {
-        let fill-color = []
-        if cell.x == 1 and cell.y == 0 {
-          fill-color = purple.lighten(20%).desaturate(30%)
-          (..cell, fill: fill-color.desaturate(20%))
-        } else if cell.x == 1 and cell.y > 0 {
-          fill-color = purple.lighten(70%)
-          (..cell, fill: fill-color.desaturate(20%))
-        } else if cell.x > 1 and cell.y > 0 and cell.y < criteria.len() + 1 {
-          let value = int(cell.content.text)
-          fill-color = if value == (criteria.at(cell.y - 1).last() * 4) {
-            green.lighten(10%)
-          } else if value == (criteria.at(cell.y - 1).last() * 3) {
-            yellow.lighten(10%)
-          } else if value == (criteria.at(cell.y - 1).last() * 2) {
-            red.lighten(10%)
-          } else if value == (criteria.at(cell.y - 1).last() * 1) {
-            red.darken(10%)
-          } else {
-            red.darken(40%)
-          }
-          (..cell, fill: fill-color.desaturate(20%))
-        } else if cell.x > 1 and cell.y == criteria.len() + 1 {
-          let value = int(cell.content.text)
-          let fill-color = if value == highest.value {
-            green.lighten(10%)
-          } else if highest.value - value < 6 {
-            yellow.lighten(10%)
-          } else if highest.value - value < 12 {
-            red.lighten(10%)
-          } else if highest.value - value < 18 {
-            red.darken(10%)
-          } else {
-            red.darken(40%)
-          }
-          (..cell, fill: fill-color.desaturate(20%))
-        }
-        else {cell}
-      },
-
-      map-cols: (col_index, cells) => {
-        cells.map(c => {
-          if highest.index.contains(col_index - 1) {
-          (..c, content: strong(delta: 400)[#c.content])
-          } else {c}
-        })
-      },
-
-      vlinex(start: 1, end: criteria.len() + 2, stroke: black),
-      hlinex(start: 1, end: choices.len() + 2, stroke: black),
+      table.vline(start: 0, end: 1, stroke: none, x: 0),
+      table.hline(start: 0, end: 1, stroke: none, y: 0),
 
       [],
-      [Weight],
-      ..for choice in totaled-weighted-choices {
-        (choice.first(),)
+      table.cell(fill: purple.lighten(20%).desaturate(30%))[Weight],
+      ..for (index, choice) in choices.enumerate() {
+        let cell = table.cell
+        if index in highest.weighted.indexes {
+          (cell[*#choice.first()*],)
+        } else {
+          (cell[#choice.first()],)
+        }
       },
-      ..for criterion in criteria.enumerate() {
+      ..for (index, criterion) in criteria.enumerate() {
         (
-          criterion.last().first(),
-          str(criterion.last().last()) + "x",
-          ..for choice in totaled-weighted-choices {
-            (choice.at(criterion.first() + 1),)
+          criterion.first(),
+          table.cell(fill: purple.lighten(70%))[#str(criterion.last())x],
+          ..for (index2, choice) in choices.enumerate() {
+            let cell = table.cell.with(fill: choice.at(index + 1).fill-color)
+            if index2 in highest.weighted.indexes {
+              (cell[*#choice.at(index + 1).weighted*],)
+            } else {
+              (cell[#choice.at(index + 1).weighted],)
+            }
           }
         )
       },
-      cellx(fill: gray.lighten(10%))[Score],
-      [#sym.dash.em],
-      ..for choice in totaled-weighted-choices {
-        (choice.last(),)
+      table.cell(fill: gray.lighten(10%))[Score],
+      table.cell(fill: purple.lighten(70%))[#sym.dash.em],
+      ..for (index, choice) in choices.enumerate() {
+        let cell = table.cell.with(fill: choice.last().weighted-total-fill-color)
+        if index in highest.weighted.indexes {
+          (cell[*#choice.last().weighted-total*],)
+        } else {
+          (cell[#choice.last().weighted-total],)
+        }
       },
     )
-  ]]
+  }
+}
+
+#let double-decision-matrix(criteria: (), choices: (), body: []) = [
+  #show: align.with(center)
+
+  = Unweighted Decision Matrix
+  #decision-matrix(
+    weighted: false,
+    criteria: criteria,
+    choices: choices
+  )
+
+  #body
+
+  = Weighted Decision Matrix
+  #decision-matrix(
+    weighted: true,
+    criteria: criteria,
+    choices: choices
+  )
 ]
