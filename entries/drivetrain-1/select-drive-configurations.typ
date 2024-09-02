@@ -11,7 +11,7 @@
 
 After brainstorming different drive configurations, we had to pick one to begin building. This will be a very important decision as it will determine what we can build in the future. As such, we identified as much criteria as possible to make an accurate judgement.
 
-#nb_matrix_criteria[
+#decision-matrix-criteria[
   - Speed - The maximum speed of the drivetrain configuration.
   - Turning - The smoothness of the turns made with the drivetrain configuration.
   - Force - How much force the drivetrain configuration can generate.

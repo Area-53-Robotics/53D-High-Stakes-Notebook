@@ -18,6 +18,8 @@
 // Global Notebook Variables
 #let page-number-offset = 0
 
+#let team-members = ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders")
+
 /*
   0 = Metadata
   1 = Text

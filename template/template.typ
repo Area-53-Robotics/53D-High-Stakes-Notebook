@@ -46,7 +46,7 @@
   show: codly-init.with()
 
   // Headings
-  show heading: it => nb_heading(it)
+  show heading: it => nb-heading(it)
 
   set raw(theme: "/assets/vscode_light.tmTheme")
 
@@ -92,7 +92,7 @@
 
   print-appendix-entries()
 
-  // signature-list()
+  signature-list(chronological: true)
 
   // entry_page_list()
 }

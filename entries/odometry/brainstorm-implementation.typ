@@ -9,7 +9,7 @@
   witnessed: "Ishika",
 )
 
-#nb_todo(
+#to-do(
   date: datetime(year: 2024, month: 2, day: 13),
   (
     (true, "Brainstorm possible implementation methods for PID (Everyone)"),

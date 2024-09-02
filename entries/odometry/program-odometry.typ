@@ -9,7 +9,7 @@
   witnessed: "Ishika",
 )
 
-#nb_todo(
+#to-do(
   date: datetime(year: 2023, month: 12, day: 1),
   (
     (true, ""),

@@ -11,7 +11,7 @@
 
 Different wheel configurations can have very different purposes. To determine which wheel configuration would be best for us to use, we created an unweighted and a weighted decision matrix.
 
-#nb_matrix_criteria[
+#decision-matrix-criteria[
   - Speed - The maximum speed of the wheel configuration.
   - Compactness - How little space the wheel configuration takes up.
   - Strafing - The ability of the wheel configuration to move from side-to-side.

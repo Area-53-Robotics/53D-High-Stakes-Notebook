@@ -9,6 +9,7 @@
   "Makhi": (name: "Makhi Epps", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
   "Eric": (name: "Eric Singer", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
   "Rory": (name: "Rory Cullum", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Anders": (name: "Anders", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
 )
 
 #let signature(name) = {

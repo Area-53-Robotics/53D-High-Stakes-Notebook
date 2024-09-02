@@ -11,7 +11,7 @@
 
 After brainstorming the autonomous implementation options, we needed to select one to use.
 
-#nb_matrix_criteria[
+#decision-matrix-criteria[
   - Setup Intuitiveness - How easy the implementation method is to setup
   - PID Robustness - How flexible the PID movement made using the implementation method is
   - PID Implementation Time - How little time it takes to get the PID made using the implementation method working

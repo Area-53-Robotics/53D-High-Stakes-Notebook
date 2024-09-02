@@ -1,6 +1,6 @@
 #import "../colors.typ": *
 
-#let nb_heading(it) = {
+#let nb-heading(it) = {
   // TODO: move highlight to a single spot, rn I have like 5 of them
   let highlight(color: none, body, width: auto, bottom-border-size: 0pt, bottom-color: color) = {
     box(

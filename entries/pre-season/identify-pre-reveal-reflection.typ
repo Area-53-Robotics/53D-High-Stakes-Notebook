@@ -9,7 +9,7 @@
   witnessed: "Jin",
 )
 
-#nb_todo(
+#to-do(
   date: datetime(year: 2024, month: 4, day: 20),
   (
     (true, "Reflect on the High Stakes season and identify what we can improve on. (Everyone)"),

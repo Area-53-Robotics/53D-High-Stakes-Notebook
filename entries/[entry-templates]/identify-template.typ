@@ -9,7 +9,7 @@
   witnessed: "Jin",
 )
 
-#nb_todo(
+#to-do(
   date: datetime(year: 2024, month: 1, day: 14),
   monthly-schedule: "On",
   yearly-schedule: "Behind",

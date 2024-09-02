@@ -10,7 +10,7 @@
 )
 
 
-#nb_matrix_criteria[
+#decision-matrix-criteria[
   - Crit - e
 ]
 

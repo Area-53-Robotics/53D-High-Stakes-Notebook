@@ -11,7 +11,7 @@
 
 // After brainstorming the autonomous implementations, we needed to select one to use. Because the signature event is in one week (2023/02/03), implementation time is going to be the most restrictive criteria.
 
-#nb_matrix_criteria[
+#decision-matrix-criteria[
   - Implementation Time - How little time it takes to create the algorithms and functions necessary for the autonomous implementation.
   - Testing Time - How little time it takes to develop and test the autons made using the autonomous implementation.
   - Robustness - How many types of movements can be made using the auton implementation.

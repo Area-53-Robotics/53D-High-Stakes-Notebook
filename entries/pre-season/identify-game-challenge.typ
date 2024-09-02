@@ -10,7 +10,7 @@
   witnessed: "Eric",
 )
 
-#nb_todo(
+#to-do(
   date: datetime(year: 2023, month: 4, day: 30),
   (
     (true, "Analyze the game challenge rules to identify the game objectives for the season. (Everyone)"),

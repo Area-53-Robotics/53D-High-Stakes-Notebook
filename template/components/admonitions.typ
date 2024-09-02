@@ -41,17 +41,15 @@
   )
 }
 
-#let nb_todo(date: none, monthly-schedule: none, yearly-schedule: none, attendance: none, body) = {
+#let to-do(date: none, monthly-schedule: none, yearly-schedule: none, attendance: none, body) = {
+  let schedule-statuses = ("On", "Behind", "Ahead", "Off")
+
   if monthly-schedule != none {
-    if ((monthly-schedule != "On") and (monthly-schedule != "Behind") and (monthly-schedule != "Ahead") and (monthly-schedule != "Off")) {
-      panic("Invalid monthly schedule status")
-    }
+    assert(monthly-schedule in schedule-statuses, message: "Invalid monthly schedule status")
   }
 
   if yearly-schedule != none {
-    if ((yearly-schedule != "On") and (yearly-schedule != "Behind") and (yearly-schedule != "Ahead") and (monthly-schedule != "Off")) {
-      panic("Invalid yearly schedule status")
-    }
+    assert(yearly-schedule in schedule-statuses, message: "Invalid yearly schedule status")
   }
 
   admonition(type: "management", title: [To-Do: (#date.display("[year]/[month]/[day]"))])[
@@ -101,7 +99,7 @@
   ]
 }
 
-#let nb_matrix_criteria(body) = [
+#let decision-matrix-criteria(body) = [
   #admonition(type: "select", title: "Decision Matrix")[
     *Ranking Criteria:*
     #body

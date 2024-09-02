@@ -1,4 +1,4 @@
-#import "../globals.typ": entries
+#import "../globals.typ": entries, team-members
 
 #let entry_page_list() = context {
   let headings = query(selector(<notebook-entry>))
@@ -19,59 +19,87 @@
   entry-list
 }
 
-#let signature-list() = {
+#let signature-list(chronological: true) = {
   context {
+    if chronological == false {
+      for name in team-members {
+        table(
+          columns: 2,
+          rows: 3,
 
-    for name in ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory") {
+          [= #name], [],
+          [== Designed By Pages], [== Witnessed By Pages],
+          {
+            let valid-entries = entries.final().enumerate()
+
+            valid-entries = valid-entries.filter(
+              entry => {
+                entry.last().designed.match(name) != none
+              }
+            )
+
+            for (index, entry) in valid-entries [
+              #let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
+              #let last-page = 0
+
+              #if index < query(selector(<notebook-entry>)).len() - 1 {
+                last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
+              } else {
+                last-page = [END]
+              }
+
+              #first-page - #last-page,
+            ]
+          },
+          {
+            let valid-entries = entries.final().enumerate()
+
+            valid-entries = valid-entries.filter(
+              entry => {
+                entry.last().witnessed.match(name) != none
+              }
+            )
+
+            for (index, entry) in valid-entries [
+              #let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
+              #let last-page = 0
+
+              #if index < query(selector(<notebook-entry>)).len() - 1 {
+                last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
+              } else {
+                last-page = [END]
+              }
+
+              #first-page - #last-page,
+            ]
+          },
+        )
+      }
+    } else {
       table(
-        columns: 2,
-        rows: 3,
+        columns: 4,
+        table.header(
+          [Entry \#], [Page Range], [Designed By], [Witnessed By],
+        ),
+        ..for (index, entry) in entries.final().enumerate() {
+          let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
+          let last-page = 0
 
-        [= #name], [],
-        [== Designed By Pages], [== Witnessed By Pages],
-        {
-          let valid-entries = entries.final().enumerate()
+          if index < query(selector(<notebook-entry>)).len() - 1 {
+            last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
+          } else {
+            last-page = [END]
+          }
 
-          valid-entries = valid-entries.filter(
-            entry => {
-              entry.last().designed.match(name) != none
-            }
+          let cell = table.cell
+          (
+            cell[#(index + 1)],
+            cell[
+              #first-page - #last-page
+            ],
+            cell[#entry.designed],
+            cell[#entry.witnessed]
           )
-
-          for (index, entry) in valid-entries [
-            #let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
-            #let last-page = 0
-
-            #if index < query(selector(<notebook-entry>)).len() - 1 {
-              last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
-            } else {
-              last-page = [END]
-            }
-
-            #first-page - #last-page,
-          ]
-        },
-        {
-          let valid-entries = entries.final().enumerate()
-
-          valid-entries = valid-entries.filter(
-            entry => {
-              entry.last().witnessed.match(name) != none
-            }
-          )
-
-          for (index, entry) in valid-entries [
-            #let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
-            #let last-page = 0
-
-            #if index < query(selector(<notebook-entry>)).len() - 1 {
-              last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
-            } else {
-              last-page = [END]
-            }
-
-            #first-page - #last-page,
-          ]
         },
       )
     }

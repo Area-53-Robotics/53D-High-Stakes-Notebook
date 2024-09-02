@@ -12,28 +12,16 @@
   body
 ) = {
   if date == none {
-    panic("No valid start date specified")
+    panic("No valid date specified")
   }
 
   assert(
-    (designed == "Ajibola") or
-    (designed == "Ishika") or
-    (designed == "Jin") or
-    (designed == "Makhi") or
-    (designed == "Eric") or
-    (designed == "Rory") or
-    (designed == "Anders"),
+    designed in team-members,
     message: "Invalid \"Designed By\""
   )
 
   assert(
-    (witnessed == "Ajibola") or
-    (witnessed == "Ishika") or
-    (witnessed == "Jin") or
-    (witnessed == "Makhi") or
-    (witnessed == "Eric") or
-    (witnessed == "Rory") or
-    (witnessed == "Anders"),
+    witnessed in team-members,
     message: "Invalid \"Witnessed By\""
   )
 
