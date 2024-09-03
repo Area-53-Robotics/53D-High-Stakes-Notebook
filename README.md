@@ -8,11 +8,10 @@
 - Terry for notebooking advice
 
 ## Typst Extensions Used
-- [tablex](https://github.com/PgBiel/typst-tablex/)    
-- [codly](https://github.com/Dherse/codly)
-- [showybox](https://github.com/Pablo-Gonzalez-Calderon/showybox-package)
-- [codetastic](https://github.com/jneug/typst-codetastic)
-- [cetz](https://github.com/johannes-wolf/cetz)
+- [codly](https://typst.app/universe/package/codly)
+- [showybox](https://typst.app/universe/package/showybox)
+- [codetastic](https://typst.app/universe/package/codetastic)
+- [cetz](https://typst.app/universe/package/cetz)
 
 ## How to Compile
 1. Install the required fonts:

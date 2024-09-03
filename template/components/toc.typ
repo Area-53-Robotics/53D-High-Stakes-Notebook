@@ -1,7 +1,7 @@
 #import "../icons/icons.typ": *
 #import "../colors.typ"
 
-#let nb_toc(
+#let toc(
   frontmatter: (),
   body: (),
   program: (),

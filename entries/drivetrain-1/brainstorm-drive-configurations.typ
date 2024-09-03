@@ -4,7 +4,7 @@
   title: "Drivetrain #1 - Drive Configurations",
   type: "brainstorm",
   date: datetime(year: 2023, month: 7, day: 21),
-  attendance: "Ajibola, Ishika, Eric, Emma",
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )

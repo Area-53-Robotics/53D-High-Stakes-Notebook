@@ -61,7 +61,7 @@
   let appendix-entries = helper("appendix")
   let program-entries = helper("program")
 
-  nb_toc(
+  toc(
     frontmatter: (),
     body: body-entries,
     program: program-entries,

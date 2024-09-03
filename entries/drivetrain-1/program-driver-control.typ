@@ -4,7 +4,7 @@
   title: "Drivetrain #1 - Driver Control",
   type: "program",
   date: datetime(year: 2023, month: 9, day: 15),
-  attendance: "Ajibola, Ishika, Eric, Rory",
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )

@@ -4,7 +4,7 @@
   title: "Reveal Video Thoughts",
   type: "identify",
   date: datetime(year: 2024, month: 4, day: 27),
-  attendance: "Ajibola, Jin, Ishika, Makhi, Eric, Rory",
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Jin",
 )

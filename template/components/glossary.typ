@@ -1,6 +1,6 @@
 #import "../globals.typ": *
 
-#let nb_glossary_entry(title: none, category: none, definition: none) = {
+#let glossary-entry(title: none, category: none, definition: none) = {
   if type(title) == none {
     panic("No glossary entry title")
   }

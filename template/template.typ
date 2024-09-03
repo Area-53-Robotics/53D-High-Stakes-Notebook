@@ -94,5 +94,5 @@
 
   signature-list(chronological: true)
 
-  // entry_page_list()
+  // entry-page-list()
 }

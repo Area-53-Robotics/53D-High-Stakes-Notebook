@@ -4,7 +4,7 @@
   title: "Pre-Auton Menu",
   type: "program",
   date: datetime(year: 2024, month: 8, day: 23),
-  attendance: "Ajibola, Ishika",
+  attendance: ("Ajibola", "Ishika"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )

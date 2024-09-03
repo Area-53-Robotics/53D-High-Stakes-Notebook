@@ -1,6 +1,6 @@
 #import "../globals.typ": entries, team-members
 
-#let entry_page_list() = context {
+#let entry-page-list() = context {
   let headings = query(selector(<notebook-entry>))
 
   let enumerated-entry-list = entries.final().enumerate().map(

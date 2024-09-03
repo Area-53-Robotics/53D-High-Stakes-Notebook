@@ -4,7 +4,7 @@
   title: "Autonomous - Implementation",
   type: "select",
   date: datetime(year: 2024, month: 2, day: 12),
-  attendance: "Ajibola, Ishika, Eric, Makhi",
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )

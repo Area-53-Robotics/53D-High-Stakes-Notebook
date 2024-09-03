@@ -26,7 +26,8 @@
       body-color: color.lighten(80%),
       border-color: color.darken(60%),
       radius: (top-left: 10pt, bottom-right: 10pt, rest: 0pt),
-      inset: 20pt,
+      title-inset: 10pt,
+      body-inset: (x: 20pt, y: 10pt),
       width: 200pt,
       height: 170pt,
     ),
@@ -47,7 +48,8 @@
   #grid(
     columns: 2,
     rows: 3,
-    gutter: 20pt,
+    row-gutter: 20pt,
+    column-gutter: 20pt,
     team-member(name: "Ajibola Ajani", picture: "/assets/members/ajibola.jpg")[
       - Grade: 12
       - First Season: Tipping Point (2021-22)
@@ -84,6 +86,11 @@
     team-member(name: "Rory Cullum", picture: "/assets/members/rory.jpg")[
       - Grade: 10
       - First Season: Over Under (2023-24)
+      - Builder
+    ],
+    team-member(name: "Anders Pyenson", picture: "/assets/members/rory.jpg")[
+      - Grade: 9
+      - First Season: High Stakes (2024-25)
       - Builder
     ],
   )

@@ -11,9 +11,10 @@
   witnessed: "",
   body
 ) = {
-  if date == none {
-    panic("No valid date specified")
-  }
+  assert(
+    date != none,
+    message: "No valid date specified"
+  )
 
   assert(
     designed in team-members,
@@ -24,6 +25,13 @@
     witnessed in team-members,
     message: "Invalid \"Witnessed By\""
   )
+
+  for member in attendance {
+    assert(
+      member in team-members,
+      message: "Invalid team member in the attendance list"
+    )
+  }
 
   entries.update(x => {
     x.push((
@@ -93,7 +101,7 @@
                   table.cell(colspan: 4)[Designed By: #signature(entry.designed)],
                   table.cell(colspan: 4)[Witnessed By: #signature(entry.witnessed)],
                   table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")],
-                  table.cell(colspan: 4)[Attendance: #entry.attendance],
+                  table.cell(colspan: 4)[Attendance: #entry.attendance.join(", ")],
                   table.cell(align: center + horizon)[
                     #box(
                       fill: info.color,
@@ -143,7 +151,7 @@
                       width: 20pt,
                     )[#counter(page).display()]
                   ],
-                  table.cell(colspan: 4, align: right)[Attendance: #entry.attendance],
+                  table.cell(colspan: 4, align: right)[Attendance: #entry.attendance.join(", ")],
                   table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")]
                 )
               }

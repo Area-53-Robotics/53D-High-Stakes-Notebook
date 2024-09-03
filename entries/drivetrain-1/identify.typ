@@ -4,7 +4,7 @@
   title: "Drivetrain #1 - Identify Design Goals and Constraints",
   type: "identify",
   date: datetime(year: 2023, month: 7, day: 15),
-  attendance: "Ajibola, Ishika, Eric, Emma",
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )

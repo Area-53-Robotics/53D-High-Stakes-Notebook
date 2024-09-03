@@ -1,7 +1,6 @@
 #import "../colors.typ": *
 
 #let title(color: gray, beginning: none, beginning-fill: none, end: none, body) = {
-  
   let highlight(color: none, body, width: auto, bottom-border-size: 0pt, bottom-color: color) = {
     box(
       fill: color,

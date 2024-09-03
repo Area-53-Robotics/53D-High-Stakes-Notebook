@@ -3,13 +3,13 @@
 #import "./entry-lists.typ": *
 
 #let signature-metadata = (
-  "Ajibola": (name: "Ajibola Ajani", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
-  "Ishika": (name: "Ishika Saha", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
-  "Jin": (name: "Jin Cao", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
-  "Makhi": (name: "Makhi Epps", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
-  "Eric": (name: "Eric Singer", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
-  "Rory": (name: "Rory Cullum", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
-  "Anders": (name: "Anders", signature: box(image("/assets/signatures/ajibola.png"), height: 1em)),
+  "Ajibola": (name: "Ajibola Ajani", signature: text(font: "Edwardian Script ITC", "Ajibola Ajani")),
+  "Ishika": (name: "Ishika Saha", signature: text(font: "Freestyle Script", "Ishika Saha")),
+  "Jin": (name: "Jin Cao", signature: text(font: "French Script MT", "Jin Cao")),
+  "Makhi": (name: "Makhi Epps", signature: text(font: "Kunstler Script", "Makhi Epps")),
+  "Eric": (name: "Eric Singer", signature: text(font: "Lucida Handwriting", "Eric Singer")),
+  "Rory": (name: "Rory Cullum", signature: text(font: "Palace Script MT", "Rory Cullum")),
+  "Anders": (name: "Anders Pyenson", signature: text(font: "Segoe Script", "Anders Pyenson")),
 )
 
 #let signature(name) = {
@@ -100,7 +100,7 @@
   ]
 ]
 
-#let nb-gantt-chart-key(
+#let gantt-chart-key(
   intended-color: color.rgb(207,226,243,255),
   is-vertical: false
 ) = {
@@ -158,71 +158,69 @@
 }
 
 // ! You can only have two entry references in an entry without getting the "did not converge" error
-#let nb-entry-reference(
+#let entry-reference(
   date: none,
   type: none,
   title: none,
   body: [entry on],
 ) = {
   context {
+    let valid-entries = entries.final(loc).enumerate()
 
-      let valid-entries = entries.final(loc).enumerate()
+    if date != none {
+      valid-entries = valid-entries.filter(
+        entry => {
+          entry.last().date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+        }
+      )
+    }
 
-      if date != none {
-        valid-entries = valid-entries.filter(
-          entry => {
-            entry.last().date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
-          }
-        )
-      }
+    if type != none {
+      valid-entries = valid-entries.filter(
+        entry => {
+          entry.last().type.match(type) != none
+        }
+      )
+    }
 
-      if type != none {
-        valid-entries = valid-entries.filter(
-          entry => {
-            entry.last().type.match(type) != none
-          }
-        )
-      }
+    if title != none {
+      valid-entries = valid-entries.filter(
+        entry => {
+          entry.last().title.match(title) != none
+        }
+      )
+    }
 
-      if title != none {
-        valid-entries = valid-entries.filter(
-          entry => {
-            entry.last().title.match(title) != none
-          }
-        )
-      }
+    assert(valid-entries.len() > 0, message: "No entries meet the given attributes")
+    assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes")
 
-      assert(valid-entries.len() > 0, message: "No entries meet the given attributes")
-      assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes")
+    let entry = valid-entries.first()
+    let info = type-metadata.at(entry.last().type)
+    let page = counter(page).at(query(selector(<notebook-entry>), loc).at(entry.first()).location()).at(0)
 
-      let entry = valid-entries.first()
-      let info = type-metadata.at(entry.last().type)
-      let page = counter(page).at(query(selector(<notebook-entry>), loc).at(entry.first()).location()).at(0)
-
-      [
-        #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
-        #h(1pt)
-        #highlight(fill: info.color.lighten(30%))[
-          #link((page: {frontmatter-page-counter.final(loc).at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
-            #text(fill: black)[
-              _#h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
-            ]
+    [
+      #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
+      #h(1pt)
+      #highlight(fill: info.color.lighten(30%))[
+        #link((page: {frontmatter-page-counter.final(loc).at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
+          #text(fill: black)[
+            _#h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
           ]
         ]
-        #body pg. #page #h(-0.2em)
       ]
+      #body pg. #page #h(-0.2em)
+    ]
   }
 }
 
 // ! You can only have two entry references in an entry without getting the "did not converge" error
-#let past-nb-entry-reference(
+#let past-entry-reference(
   date: none,
   type: none,
   title: none,
   body: [entry on],
 ) = {
   context {
-
     let valid-entries = full-entry-list
 
     if date != none {

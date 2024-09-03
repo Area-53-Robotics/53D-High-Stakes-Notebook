@@ -4,7 +4,7 @@
   title: "Drivetrain #1",
   type: "understand",
   date: datetime(year: 2023, month: 7, day: 15),
-  attendance: "Ajibola, Ishika, Eric, Emma",
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Eric",
 )

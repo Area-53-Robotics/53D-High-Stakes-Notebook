@@ -1,56 +1,56 @@
 #import "/template/entries.typ": *
 #import "/template/template.typ": *
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Area 53",
   category: "management",
   definition: [
   The name of our organization. Consists of 6 teams/squads from A-F.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Spin Up",
   category: "competition",
   definition: [
   The 2022-23 VEX Robotics Challenge. It involved shooting frisbee-like discs into elevated baskets, scoring rollers, and expanding during the endgame.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "RPM",
   category: "build",
   definition: [
   An acronym for "Rotations per Minute." Used to interpret the speed of motors and motorized subsystems.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Typst",
   category: "program",
   definition: [
     A programming language similar to Markdown and LaTeX. It is used to write formatting instructions that get automatically rendered into a printable PDF.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "PROS",
   category: "program",
   definition: [
   An API developed by students at Purdue SIGBots, used to control VEX robots. It functions as an alternative to VEXCode V5.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Python",
   category: "program",
   definition: [
   A general purpose, high-level programming language primarily used for data science. We utilize it to create graphs and other visual representations of data collected during our "Test" phases.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Bash",
   category: "program",
   definition: [
   A command-line interface shell program used in macOS and Linux. The equivalent of it for Windows is Windows PowerShell.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Slip Gear",
   category: "build",
   definition: [
@@ -58,7 +58,7 @@
   ]
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Auton",
   category: "program",
   definition: [
@@ -68,21 +68,21 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "CAD",
   category: "select",
   definition: [
   An acronym for "Computer Aided Design". CAD programs are used at the industry level to plan out and test designs digitally. 53D uses Onshape as our CAD program.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Onshape",
   category: "select",
   definition: [
   A cloud-based CAD program with a readily available educational license. 53D uses it to plan out designs digitally before the "Build" phase.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Git",
   category: "program",
   definition: [
@@ -90,7 +90,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "GitHub",
   category: "program",
   definition: [
@@ -98,7 +98,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Visual Studio Code (VSCode)",
   category: "program",
   definition: [
@@ -106,7 +106,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "LVGL",
   category: "program",
   definition: [
@@ -114,7 +114,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Repository",
   category: "program",
   definition: [
@@ -122,7 +122,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "PID",
   category: "program",
   definition: [
@@ -133,7 +133,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Boxing",
   category: "build",
   definition: [
@@ -141,7 +141,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Telemetry",
   category: "program",
   definition: [
@@ -149,7 +149,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "AWP",
   category: "competition",
   definition: [
@@ -157,7 +157,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "C++",
   category: "program",
   definition: [
@@ -165,7 +165,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Meta",
   category: "competition",
   definition: [
@@ -173,7 +173,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Over Under",
   category: "competition",
   definition: [
@@ -183,13 +183,13 @@
 
 // Old Glossary Entries
 /*
-#nb_glossary_entry(
+#glossary-entry(
   title: "Singleton Pattern",
   definition: [
   A software design pattern where a class is only instantiated once.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Mutual Exclusion",
   definition: [
     A software design pattern where a shared resource can only be accessed by a
@@ -198,7 +198,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Skid Steer",
   definition: [
     A style of vehicle where the wheels have a fixed alignment. This is typically
@@ -206,11 +206,11 @@
   ],
 )
 
-#nb_glossary_entry(title: "Parallelism", definition: [
+#glossary-entry(title: "Parallelism", definition: [
   The process of running code in parallel across multiple cores.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Asynchronous",
   definition: [
     When code is run out of order to achieve the illusion of running at the same
@@ -219,7 +219,7 @@
 )
 
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "API",
   definition: [
     Acronym for application programming interface. It is a translation layer between
@@ -227,7 +227,7 @@
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Arcade Drive",
   definition: [
     A driver control method where one joystick controls forward and backwards, and
@@ -236,7 +236,7 @@
 )
 
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Framework",
   definition: [
     A collection of code that serves as a base for other code to be written on top
@@ -244,34 +244,34 @@
   ],
 )
 
-#nb_glossary_entry(title: "Library", definition: [
+#glossary-entry(title: "Library", definition: [
   A collection of code that provides common utility.
 ])
 
-#nb_glossary_entry(title: "PID", definition: [
+#glossary-entry(title: "PID", definition: [
   Control theory used to move a system to a target smoothly.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Pure Pursuit",
   definition: [
     A path following algorithm that causes the robot to move to a series of points.
   ],
 )
 
-#nb_glossary_entry(title: "Odometry", definition: [
+#glossary-entry(title: "Odometry", definition: [
   A method of tracking the position of the robot in cartesian coordinates
   developed by team 5225, the Pilons.
 ])
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Absolute Movement",
   definition: [
     Movement that is in relation to a fixed point, rather than relative to itself.
   ],
 )
 
-#nb_glossary_entry(
+#glossary-entry(
   title: "Tank Drive",
   definition: [
     A driver control method where the left joystick controls the left wheels of the
