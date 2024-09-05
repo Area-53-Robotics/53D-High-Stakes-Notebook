@@ -13,6 +13,9 @@
 - [codetastic](https://typst.app/universe/package/codetastic)
 - [cetz](https://typst.app/universe/package/cetz)
 
+## How to Read the Notebook
+You can either compile the notebook yourself using the instructions below, or download the most recent version of the notebook by going to the "Actions" tab, clicking on the latest "Build Typst Document" workflow, and downloading the pdf file in "Artifacts."
+
 ## How to Compile
 1. Install the required fonts:
     - Linux Libertine

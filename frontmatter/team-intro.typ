@@ -78,7 +78,7 @@
       - Designer
       - Driver
     ],
-    team-member(name: "Eric Singer", picture: "/assets/members/eric.png")[
+    team-member(name: "Eric Singer", picture: "/assets/members/eric.jpg")[
       - Grade: 10
       - First Season: Over Under (2023-24)
       - Builder
@@ -88,7 +88,7 @@
       - First Season: Over Under (2023-24)
       - Builder
     ],
-    team-member(name: "Anders Pyenson", picture: "/assets/members/rory.jpg")[
+    team-member(name: "Anders Pyenson", picture: "/assets/members/anders.jpg")[
       - Grade: 9
       - First Season: High Stakes (2024-25)
       - Builder
