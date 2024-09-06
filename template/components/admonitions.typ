@@ -1,5 +1,6 @@
 #import "../colors.typ": *
 #import "../icons/icons.typ": *
+#import "../globals.typ": team-members
 #import "../template-packages.typ": showybox
 #import showybox: showybox
 
@@ -61,7 +62,7 @@
         rest: 0pt
       )},
 
-      ..for (completed, task) in body {
+      ..for (completed, task, members) in body {
         (
           {
             if completed == true {
@@ -69,8 +70,17 @@
             } else {
               image("/template/tabler-icons/square.svg", height: 1em)
             }
+
+            let temp-team-members = team-members + ("Everyone",)
+
+            for member in members {
+              assert(
+                member in temp-team-members,
+                message: "Invalid team member"
+              )
+            }
           },
-          task
+          task + " (" + members.join(", ") + ")"
         )
       }
     )

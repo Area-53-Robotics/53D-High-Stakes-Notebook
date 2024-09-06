@@ -14,8 +14,8 @@
   monthly-schedule: "On",
   yearly-schedule: "On",
   (
-    (true, "Identify the design constraints and goals for the drivetrain. (Everyone)"),
-    (true, "Determine the mathematical and scientific concepts involved in drivetrain design (Everyone)"),
+    (true, "Identify the design constraints and goals for the drivetrain.", ("Everyone",)),
+    (true, "Determine the mathematical and scientific concepts involved in drivetrain design.", ("Everyone",)),
   )
 )
 

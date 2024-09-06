@@ -4,7 +4,7 @@
   title: "",
   type: "",
   date: datetime(year: 2024, month: 1, day: 1),
-  attendance: "",
+  attendance: (),
   designed: "",
   witnessed: "",
 )

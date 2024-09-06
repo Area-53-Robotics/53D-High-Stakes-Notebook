@@ -12,7 +12,7 @@
 #to-do(
   date: datetime(year: 2024, month: 8, day: 23),
   (
-    (true, "Program a versatile Pre-Auton menu for the VEX brain"),
+    (true, "Program a versatile Pre-Auton menu for the VEX brain.", ("Ajibola", "Ishika")),
   )
 )
 
