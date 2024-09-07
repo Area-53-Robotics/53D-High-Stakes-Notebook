@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Game Challenge - Analysis",
+  title: "Game Challenge - Rules Analysis",
   type: "identify",
   date: datetime(year: 2024, month: 4, day: 30),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
@@ -13,8 +13,11 @@
   date: datetime(year: 2024, month: 4, day: 30),
   (
     (true, "Analyze the game challenge rules to identify the game objectives for the season.", ("Everyone",)),
+    (true, "Identify strategies to approach the game objectives for the season.", ("Everyone",)),
   )
 )
+
+#show image: it => align(center, it)
 
 VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration, robot composition, and tactics.
 
@@ -83,16 +86,17 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
 
 #colbreak()
 
-= Field Elements #footnote[All images and diagrams are sourced from #link("https://content.vexrobotics.com/docs/23-24/vrc-overunder/VRC-Manual-2324-1.1-Release.pdf")]
+= Field Elements #footnote[All images and diagrams are sourced from #link("https://content.vexrobotics.com/docs/2024-2025/v5rc-high-stakes/VRC-HighStakesManual-24-25-0.1release.pdf")]
 
-#v(5pt)
+#show grid.cell.where(x: 1): set align(center + horizon)
 
+== Stakes
 #grid(
   columns: (1fr, 1fr),
-  row-gutter: 50pt,
-  column-gutter: 50pt,
+  row-gutter: 10pt,
+  column-gutter: 10pt,
+
   [
-    = Stakes
     - *Stake* #sym.dash.em A vertical ½” Schedule 40 PVC pipe (gray, red, or blue) with a compliant barb at the top, used for Scoring Rings.
     - There are 10 Stakes:
       - 5 neutral Stakes in Mobile Goals, which fit 6 Rings each
@@ -111,8 +115,23 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
     image("/assets/field-elements/neutral-wall-stake.png"),
     image("/assets/field-elements/alliance-wall-stake.png"),
   ),
+  grid.cell(colspan: 2)[
+    #admonition(type: "note", title: "Element Analysis: Stakes")[
+      + The barb at the top of the stake will create resistance when trying to drop rings onto the stake, which will make creating intakes harder.
+      + The shape of the barb will make it especially hard to pull a ring off of the stake, which will make creating claws and other descore mechanisms harder.
+    ]
+  ]
+)
+
+#colbreak()
+
+== Rings
+#grid(
+  columns: (1fr, 1fr),
+  row-gutter: 10pt,
+  column-gutter: 10pt,
+
   [
-    = Rings
     - 48 Rings, 24 of each color
     - *Ring* #sym.dash.em A hollow red or blue torus-shaped plastic object with an outer diameter of 7”, an inner “hole” diameter of 3", and a thickness (or “tube diameter”) of 2”
     - #vex-rule[SC4] A Ring is considered a Top Ring if it meets the following criteria:
@@ -122,8 +141,26 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
       - Note: A Ring that is considered a Top Ring does not also receive points for being Scored on a Stake; i.e., that Ring is worth 3 points, not a total of “3 + 1” points.
   ],
   image("/assets/field-elements/ring.png"),
+  grid.cell(colspan: 2)[
+    #admonition(type: "note", title: "Element Analysis: Rings")[
+      The High Stakes rings are very similar to the Tipping Point #glossary-footnote[Tipping Point] rings, but with a few notable differences:
+      + The High Stakes rings are flat, while the Tipping Point rings were bent.
+      + The High Stakes rings have a greater thickness than the Tipping Point rings.
+
+      Therefore, it will be harder to make consistent intake mechanisms because the rings will be less workable.
+    ]
+  ]
+)
+
+#colbreak()
+
+== Mobile Goal
+#grid(
+  columns: (1fr, 1fr),
+  row-gutter: 10pt,
+  column-gutter: 10pt,
+  
   [
-    == Mobile Goal
     - 5 Mobile Goals, each with 1 Stake
     - *Mobile Goal* #sym.dash.em One of 5 large Scoring Objects, each with a Stake in the center. Mobile Goals are hexagonal, with a maximal diameter of 10” and an overall height of 14.5”. The Stake is considered part of the Mobile Goal
     - #vex-rule[SC6] A Mobile Goal that has been Placed will result in the following Corner modifiers to its Scored Rings: 
@@ -131,12 +168,32 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
         - i. Values of all Scored Rings on the Mobile Goal will be doubled. Scored Rings will receive 2 points, and Scored Top Rings will receive 6 points.
       - b. Placed in a Negative Corner
         - i. Values of all Scored Rings on the Mobile Goal will be set to zero points.
-        - ii. For each Ring, an equivalent amount of points will be removed from that Alliance's other Scored Rings. Scored Rings will remove (1) point, and Scored Top Rings will remove three (3) points.
+        - ii. For each Ring, an equivalent amount of points will be removed from that Alliance's other Scored Rings. Scored Rings will remove 1 point, and Scored Top Rings will remove 3 points.
         - iii. This negator only applies to an Alliance's “Ring points.”
   ],
   image("/assets/field-elements/mobile-goal.png"),
+  grid.cell(colspan: 2)[
+    #admonition(type: "note", title: "Element Analysis: Mobile Goals")[
+      The High Stakes mobile goals are very similar to the Tipping Point mobile goals, but with a few notable differences:
+      + The depth of the High Stakes mobile goals' bases is less than those of the Tipping Point mobile goals' bases.
+      + The High Stakes mobile goals' stakes have a barb at the top, while the Tipping Point mobile goals' stakes did not.
+
+      These differences will cause a few notable issues when building our robot:
+      + It will be hard to design a clamp that can successfully hold onto the mobile goals.
+      + It will be difficult to deposit rings onto the mobile goals' stakes.
+    ]
+  ]
+)
+
+#colbreak()
+
+== Ladder
+#grid(
+  columns: (1fr, 1fr),
+  row-gutter: 10pt,
+  column-gutter: 10pt,
+
   [
-    = Ladder
     - *Ladder* #sym.dash.em A 36” x 36” x 46” structure located in the center of the field. The Ladder has four vertical posts, and three sets of horizontal rungs at 18”, 32”, and 46” to denote the three Climbing Levels. There is also a single High Stake atop the vertical post nearest the audience side of the Field, at the 180 degree mark on a GPS strip. All supporting structures, hardware, and the High Stake are considered part of the Ladder
     - #vex-rule[SC7] A Robot is considered to have Climbed to a Level if it meets the following criteria:
       - a. The Robot is contacting the Ladder.
@@ -145,11 +202,34 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
       - d. The Robot's lowest point is past that Level's minimum height from the gray foam tiles.
   ],
   image("/assets/field-elements/ladder.png"),
+  grid.cell(colspan: 2)[
+    #admonition(type: "note", title: "Element Analysis: Ladder")[
+      Similar to High Stakes, VRC Over Under #glossary-footnote[Over Under] also had an endgame elevation mechanic, but with a few key differences:
+      + The High Stakes ladder has 3 elevation rungs, while the Over Under elevation bar had 1 rung.
+      + There is only 1 ladder on the High Stakes field, while there was 1 elevation bar per alliance in Over Under.
+      + Elevation scoring in Over Under had 10 scorable tiers, while High Stakes has 3 scorable tiers.
+      + It was possible to balance on the mid-field barrier in Over Under, but there is no similar mechanic in High Stakes.
+
+      These differences will cause a few notable effects in matches:
+      + Because it is harder to elevate this year, less teams will create successful elevation mechanisms.
+      + Out of the teams that do make elevation mechanisms, very few of them will get past level 1.
+      + We will have to make decide during in-round endgames whether it is worth taking time to elevate to higher levels, or if it is better to score mobile goals in corners.
+    ]
+  ]
+)
+
+#colbreak()
+
+== Corners
+#grid(
+  columns: (1fr, 1fr),
+  row-gutter: 10pt,
+  column-gutter: 10pt,
+
   [
-    = Corners
     - *Corner* #sym.dash.em One of four 12” x 12” locations in which Mobile Goals can be Placed. The Corners are bounded by the inner edges of the Field Perimeter and the outer edge of the associated white tape lines. The Corner is defined as the foam tile and tape line themselves; it is not a 3-dimensional volume.
-      - Negative Corner - A Corner of the field, designated by the “-” sign on the stickers applied to the top of the Field Perimeter.
-      - Positive Corner - A Corner of the field, designated by the “+” sign on the stickers applied to the top of the Field Perimeter.
+      - *Negative Corner* #sym.dash.em A Corner of the field, designated by the “-” sign on the stickers applied to the top of the Field Perimeter.
+      - *Positive Corner* #sym.dash.em A Corner of the field, designated by the “+” sign on the stickers applied to the top of the Field Perimeter.
     - #vex-rule[SC5] A Mobile Goal is considered Placed in a Corner if it meets the following criteria: 
       - a. The Mobile Goal's base is contacting the Corner (i.e., the Floor and/or white tape line).
       - b. It is “upright.” For the purposes of this definition, a Mobile Goal is considered “upright” if no contact is being made between its Stake (and/or any Rings on this Stake) and the Floor or Field Perimeter.
@@ -158,19 +238,28 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
   ],
   stack(
     spacing: 5pt,
-    image("/assets/field-elements/highlighted-negative-corner.png", width: 55%),
-    image("/assets/field-elements/negative-corner.png", width: 55%),
-    image("/assets/field-elements/positive-corner.png", width: 55%),
+    image("/assets/field-elements/highlighted-negative-corner.png", width: 50%),
+    image("/assets/field-elements/negative-corner.png", width: 50%),
+    image("/assets/field-elements/positive-corner.png", width: 50%),
   ),
+  grid.cell(colspan: 2)[
+    #admonition(type: "note", title: "Element Analysis: Corners")[
+      The corner modifier mechanic in High Stakes is unlike anything we have experienced in previous VEX challenges. Due to how significantly the corner modifiers can affect final scores, we predict they will have a large impact on matches in the following ways:
+      + During early and mid-season, when most robots don't have elevation capabilities, fights to score and descore mobile goals in corners will be a prominent part of the endgame.
+      + During late season, when some robots have elevation capabilities, it will be important for alliances to strategize how they will elevate while also maximizing their score using the corners modifiers.
+    ]
+  ]
 )
+
+#colbreak()
 
 = Autonomous
 #figure(
   image("/assets/field-elements/autonomous-field.png", width: 70%),
   caption: "An overhead view of the Field, with the Starting Lines highlighted green."
 )
-- 15 seconds long
-- *Autonomous Period* #sym.dash.em A time period during which Robots operate and react only to sensor inputs and pre-programmed commands
+
+- *Autonomous Period* #sym.dash.em A 15 second-long time period during which Robots operate and react only to sensor inputs and pre-programmed commands
 - *Autonomous Line* #sym.dash.em The pair of white tape lines that run across the field, and the space between those lines.
 - #vex-rule[SG7] Don't cross the Autonomous Line. During the Autonomous Period, Robots may not contact foam tiles, Scoring Objects, or Field Elements which are on the opposing Alliance's side of the Autonomous Line.
 - #vex-rule[SC2] Scoring of the Autonomous Bonus is evaluated immediately after the Autonomous Period ends (i.e., once all Scoring Objects, Field Elements, and Robots on the Field come to rest). 
@@ -185,6 +274,7 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
 
 = Match Scoring Summary
 #show table.cell.where(y: 0): strong
+
 #table(
   columns: 2,
   fill: (_, y) =>
@@ -197,15 +287,23 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
   [Autonomous Bonus], [6 Points],
   [Each Ring Scored on a Stake], [1 Point],
   [Each Top Ring on a Stake], [3 Points],
-  [Ring Scored on High Stake], [2 additional points to each alliance robots successful climb],
+  [Ring Scored on High Stake], [2 additional points to each alliance robots climb],
   [Climb - Level 1], [3 Points],
   [Climb - Level 2], [6 Points],
   [Climb - Level 3], [12 Points],
-  [Each Ring Scored on a Mobile Goal Stake that has been Placed in a Corner], [See #vex-rule[SC6>]],
+  [Each Ring Scored on a Mobile Goal Stake that has been Placed in a Corner], [See #vex-rule[SC6] in our Mobile Goal Analysis],
 )
 
+#colbreak()
+
 = Robot Skills Challenge
-#image("/assets/field-elements/skills-field.png", width: 70%)
+#align(center)[
+  #rotate(
+    90deg,
+    reflow: true,
+    image("/assets/field-elements/skills-field.png", width: 250pt)
+  )
+]
 
 == Robot Skills Challenge Rules
 + #vex-rule[RSC3] Robots must start the Robot Skills Match in a legal starting position for the red Alliance
@@ -214,122 +312,22 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
 + #vex-rule[RSC6] If any Ring is Scored on a Stake but does not have a point value based on rule #vex-rule[RSC4] or #vex-rule[RSC5], no Ring on that Stake will earn points as a Top Ring.
 + #vex-rule[RSC7] No Corner Modifiers. Each Mobile goal Placed in a Corner will receive 5 points.
 
-
-/*
-#gridx(
-  columns: (1fr, 1fr),
-  rows: auto,
-  gutter: 50pt,
-  [
-    == Triballs
-    - 60 total Triballs can be in play
-    - 2 Alliance Triballs per team
-    - 22 Match Load Triballs per alliance
-    - 12 Field Triballs
-    - 6.18” tall
-    - Weight of 103-138g
-    - Abnormal shape (Reuleaux triangle/Tetrahedral Sphreroform)
-
-    #tablex(
-      columns: 2,
-
-      cellx(fill: gray)[*Achievement*], cellx(fill: gray)[*Point Value*],
-      [Each Triball Scored in a Goal], [5 points],
-      [Each Triball Scored in an Offensive Zone], [2 points]
-    )
-  ],
-  [#image("/assets/field-elements/triball.png", height: 20em)],
-  [#image("/assets/field-elements/elevation-bar.png")],
-  [
-    == Elevation Bar
-    - *Elevation Bar* - The Alliance-colored PVC pipes, two red and two blue, at either end of the Barrier.
-    - *Elevation Bar Cap* - The yellow plastic piece at the top of each set of Elevation Bars. The Elevation Bar Cap is a separate field element and is not considered part of the Elevation Bar.
-    - *Elevation Tier* - A status that represents an Elevated Robot's height off of the field at the end of the Match. They go from A tier to J tier as the highest
-    - 1 set of Elevation Bars per alliance
-  ],
-  [
-    == Goal
-    - *Goal* - The Alliance-colored, netted structure on either side of the field, one red and one blue, into which Triballs can be scored for points.
-    - Two (2) goals, one (1) per Alliance
-    - Total length - 47.13 inches 
-    - Gap length - 39.37 inches
-    - Width - 19.20 inches
-    - Height (exclude net) - 5.78 inches
-    - Degree of net - 14.27 degrees
-  ],
-  [#image("/assets/field-elements/goal1.png")],
-  [#image("/assets/field-elements/load-zone.png")],
-  [
-    == Match Load Zones
-    - *Match Load Bar* - The Alliance-colored structure, made up of 2” Schedule 40 PVC pipe (with a 2.375” outer diameter) and associated connectors/hardware, that connects diagonally across a corner of the Field.
-    - Four Match Load Bars / Match Load Zones, two per Alliance
-    - Length - 30 inches
-    - Height - 2.38 inches
-    - Distance away from corner - 17.33 inches 
-    - Angle - 45 degrees
-  ],
-  [
-    == Robot Skills Challenge
-    - One minute long Matches in an effort to score as many points as possible.
-    - These Matches consist of Driving Skills Matches, which are entirely driver-controlled, and Autonomous Coding Skills Matches, which are autonomous with limited human interaction.
-    - Teams will be ranked based on their combined score in the two types of Matches.
-    - The two (2) Blue Alliance Triball Preloads will not be used
-    - All of the forty-four (44) Match Load Triballs will be located in the red Alliance Station
-  ],
-  [#image("/assets/field-elements/skills-field.png")],
-)
-
-== Robot Sizing Restrictions
-- #vex-rule[R4] Robot must fit within an 18” x 18” x 18” volume
-- #vex-rule[SG2] Horizontal expansion is limited to 36”
-- There is NO limit on vertical expansion
-
-#grid(
+== Robot Skills Challenge Scoring
+#show table: it => align(center, it)
+#table(
   columns: 2,
-  rows: 1,
+  fill: (_, y) =>
+    if y == 0 {
+      gray
+    },
 
-  [
-    == Autonomous
-    - *Autonomous Period* - A time period during which Robots operate and react only to sensor inputs and commands pre-programmed by the Students into the Robot control system.
-      - Fifteen (15) seconds long
-    - *Neutral Zone* - One of two areas of the field bordered by white tape lines, the Barrier, and the field perimeter. The Neutral Zone is defined as the gray foam tiles themselves; it is not a 3-dimensional volume.
-    - #vex-rule[SC2] Scoring of the Autonomous Bonus is evaluated immediately after the Autonomous Period ends (i.e., once all Triballs, Field Elements, and Robots on the field come to rest).
-      - Elevation Tier points are not included in the calculation of an Alliance's score for the purposes of determining the Autonomous Bonus.
-      - If the Autonomous Period ends in a tie, including a zero-to-zero tie, each Alliance will receive an Autonomous Bonus of four (4) points.
-    - #vex-rule[SG1] Each robot must begin the match on their alliance's starting tiles that are adjacent to their alliance robot
-    - #vex-rule[SG9] Stay in your starting Zone during Autonomous: During the Autonomous Period, Robots may not contact foam tiles, Triballs, or Field Elements on the opposing Alliance's side of the Neutral Zone, or in the opposite Offensive Zone from which they began the Match.
-    - #vex-rule[SC7] Autonomous Win Point Conditions:
-      - Removed the triball from the Alliance's Match Load Zone that coincides with their Starting Tiles
-      - Scored at least one Alliance Triball in the Alliance's own Goal
-      - Ended the Autonomous Period with at least one Robot contacting their own Elevation Bar
-    - Autonomous Bonus: 8 Points
-  ],
-  image("/assets/field-elements/neutral-zones.png")
+  table.header([Achievement], [Point Value]),
+  
+  [Each Ring Scored on a Stake], [1 Point],
+  [Each Top Ring on a Stake], [3 Points],
+  [Ring Scored on High Stake], [2 additional points to a successful climb],
+  [Climb - Level 1], [3 Points],
+  [Climb - Level 2], [6 Points],
+  [Climb - Level 3], [12 Points],
+  [Mobile Goal Placed in a Corner], [5 Points],
 )
-
-#admonition(type: "note")[
-  #vex-rule[SG9] makes a solo autonomous win point impossible to achieve unless you can consistently score into your goal from across the field. We strongly believe that teams will not be able to do this, especially at the beginning of the season.
-]
-
-== Match Scoring
-
-#tablex(
-  columns: (1fr, 1fr),
-  rows: 8,
-  align: center + horizon,
-  header-rows: 1,
-
-  cellx(fill: gray)[*Achievement*], cellx(fill: gray)[*Point Value*],
-  [Autonomous Bonus], [8 Points],
-  [Each Triball Scored in a Goal], [5 Points],
-  [Each Triball Scored in an Offensive Zone], [2 Points],
-  [Elevation - Top Tier], [20 Points],
-  [Elevation - 2nd Tier], [15 Points],
-  [Elevation - 3rd Tier], [10 Points],
-  [Elevation - 4th Tier], [5 Points]
-)
-
-#admonition(type: "note")[
-  We will be going on summer break hiatus until July.
-]
-*/

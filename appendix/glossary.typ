@@ -181,6 +181,14 @@
   ],
 )
 
+#glossary-entry(
+  title: "Tipping Point",
+  category: "competition",
+  definition: [
+    The 2021-22 VEX Robotics Challenge. It involved scoring rings onto mobile goals and balancing on a seesaw during the endgame.
+  ]
+)
+
 // Old Glossary Entries
 /*
 #glossary-entry(
