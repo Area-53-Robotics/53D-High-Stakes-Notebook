@@ -24,6 +24,7 @@ While most of our team was already familiar with the different types of drives, 
 #pro-con(
   name: "Tank Drive",
   image: image("brainstorm-drive-configurations/TankDrive.excalidraw.svg"),
+  description: [Tank],
   pros: [
     - Easy to build, saving time to build other subsystems
     - Open front and back, leaving space for other subsystems
@@ -45,6 +46,7 @@ While most of our team was already familiar with the different types of drives, 
 #pro-con(
   name: "H-Drive",
   image: image("brainstorm-drive-configurations/H-Drive.excalidraw.svg"),
+  description: [H-Drive],
   pros: [
     - Easy to build (but less so than Tank Drive)
     - Open front and back
@@ -67,6 +69,7 @@ While most of our team was already familiar with the different types of drives, 
 #pro-con(
   name: "Holonomic Drive",
   image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg"),
+  description: [Holonomic],
   pros: [
     - Greatest maneuverability (8/omni-directional movement)
     - Faster than other drivetrains

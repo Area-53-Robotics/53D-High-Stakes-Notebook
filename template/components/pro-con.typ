@@ -2,7 +2,7 @@
 
 #let pro-con(name: none, image: [], image-width: 40%, pros: [], cons: [], description:[] , notes: []) = [
   #assert(name != none, message: "No name given")
-  #assert(description !=[], message: "No description given")
+  #assert(description != [], message: "No description given")
   #assert(pros != [], message: "No pros recorded")
   #assert(cons != [], message: "No cons recorded")
 

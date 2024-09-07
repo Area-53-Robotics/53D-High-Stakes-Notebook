@@ -39,55 +39,62 @@
   [Total], [], [92]
 )
 
-#cetz.canvas({
-  import cetz.draw: *
-  import cetz.chart
+#grid(
+  columns: 2,
+  align: center + horizon,
+  image("/assets/field-elements/theoretical-maximum-score.png", width: 80%),
+  cetz.canvas({
+    import cetz.draw: *
+    import cetz.chart
 
-  let data = (
-    ("Auton Bonus", 6),
-    ("Wall Stakes", 9),
-    ("Mobile Goals", 30),
-    ("Corner Modifiers", 16),
-    ("Climb", 24),
-    ("Ladder Stake", 7),
-  ).sorted(key: (
-    (name, value),
-  ) => value)
+    let data = (
+      ("Auton Bonus", 6),
+      ("Wall Stakes", 9),
+      ("Mobile Goals", 30),
+      ("Corner Modifiers", 16),
+      ("Climb", 24),
+      ("Ladder Stake", 7),
+    ).sorted(key: (
+      (name, value),
+    ) => value)
 
-  let colors = ()
+    let colors = ()
 
-  for (index, data-value) in data.enumerate() {
-    let color = gradient.linear(..color.map.rainbow).sample(100% * ((index + 1) / data.len()))
+    for (index, data-value) in data.enumerate() {
+      let color = gradient.linear(..color.map.rainbow).sample(100% * ((index + 1) / data.len()))
 
-    colors.push((
-      fill: if index == data.len() - 1 {color}
-        else {color.lighten(75%)},
-      stroke: if index == data.len() - 1 {color.darken(50%) + 2pt}
-        else {none}
-    ))
-  }
+      colors.push((
+        fill: if index == data.len() - 1 {color}
+          else {color.lighten(75%)},
+        stroke: if index == data.len() - 1 {color.darken(50%) + 2pt}
+          else {none}
+      ))
+    }
 
-  chart.piechart(
-    data,
-    start: 90deg,
-    stop: 450deg,
-    gap: 1deg,
-    value-key: 1,
-    label-key: 0,
-    radius: 3.5,
-    slice-style: colors,
-    inner-radius: 1,
-    inner-label: (
-      content: "%",
-      radius: 110%
-    ),
-    outer-label: (
-      content: (value, label) => {
-        let string = label + " (" + str(value) + ")"
-        string = string.replace(" ", "\n")
-        align(center)[#string]
-      },
-      radius: 125%
+    chart.piechart(
+      data,
+      start: 90deg,
+      stop: 450deg,
+      gap: 1deg,
+      value-key: 1,
+      label-key: 0,
+      radius: 3.5,
+      slice-style: colors,
+      inner-radius: 1,
+      inner-label: (
+        content: "%",
+        radius: 110%
+      ),
+      outer-label: (
+        content: (value, label) => {
+          let string = label + " (" + str(value) + ")"
+          string = string.replace(" ", "\n")
+          align(center)[#string]
+        },
+        radius: 125%
+      )
     )
-  )
-})
+  })
+)
+
+
