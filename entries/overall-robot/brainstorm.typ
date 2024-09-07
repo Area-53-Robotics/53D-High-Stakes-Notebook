@@ -124,7 +124,7 @@
   name: "Eric",
   image: image("/entries/overall-robot/brainstorm/eric-robot-idea.excalidraw.svg"),
   description: [
-    A 4 wheel drive, a conveyor that picks up ring and drop it into the mobile goal, a clamp ot secure the mobile goal.
+    A 4 wheel drive, a conveyor that picks up ring and drop it into the mobile goal, a clamp to secure the mobile goal.
   ],
   pros: [
     - Space efficient 

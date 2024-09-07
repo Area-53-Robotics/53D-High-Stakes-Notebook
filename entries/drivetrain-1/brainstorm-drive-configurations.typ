@@ -3,14 +3,14 @@
 #show: create-entry.with(
   title: "Drivetrain #1 - Drive Configurations",
   type: "brainstorm",
-  date: datetime(year: 2023, month: 7, day: 21),
+  date: datetime(year: 2024, month: 6, day: 21),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
 #to-do(
-  date: datetime(year: 2023, month: 7, day: 21),
+  date: datetime(year: 2023, month: 7, day: 22),
   monthly-schedule: "On",
   yearly-schedule: "On",
   (
@@ -24,7 +24,9 @@ While most of our team was already familiar with the different types of drives, 
 #pro-con(
   name: "Tank Drive",
   image: image("brainstorm-drive-configurations/TankDrive.excalidraw.svg"),
-  description: [Tank],
+  description: [
+    Tank drive is a drivetrain where two sets of wheels (left and right) are powered independently, allowing for precise movement similar to a tank. The left joystick controls the left wheels, and the right joystick controls the right wheels, enabling the robot to move forward, backward, and turn by adjusting the speed of each side.
+  ],
   pros: [
     - Easy to build, saving time to build other subsystems
     - Open front and back, leaving space for other subsystems
@@ -46,7 +48,9 @@ While most of our team was already familiar with the different types of drives, 
 #pro-con(
   name: "H-Drive",
   image: image("brainstorm-drive-configurations/H-Drive.excalidraw.svg"),
-  description: [H-Drive],
+  description: [
+    H-drive is a drivetrain configuration that adds a horizontal, center-mounted wheel perpendicular to the traditional tank drive wheels, forming an "H" shape. This center wheel allows the robot to strafe in addition to forward, backward, and turning motions.
+  ],
   pros: [
     - Easy to build (but less so than Tank Drive)
     - Open front and back
@@ -66,10 +70,13 @@ While most of our team was already familiar with the different types of drives, 
   ],
 )
 
+
 #pro-con(
   name: "Holonomic Drive",
-  image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg"),
-  description: [Holonomic],
+  image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg", width: 50pt),
+  description: [
+    Holonomic drive is a drivetrain that allows a robot to move in any direction independently of its orientation, offering full omnidirectional movement. This is typically achieved using specialized wheels like omni-wheels or mecanum wheels, which can be controlled individually to move the robot forward, backward, sideways, and diagonally without needing to turn first.
+  ],
   pros: [
     - Greatest maneuverability (8/omni-directional movement)
     - Faster than other drivetrains
@@ -86,9 +93,9 @@ While most of our team was already familiar with the different types of drives, 
     - Less traction
     - More complex programming
   ],
-  notes: [
+  /*notes: [
     - Suggested by Ajibola
     - High learning curve in building
     - Able to make precise adjustments while moving
-  ],
+  ],*/
 )
