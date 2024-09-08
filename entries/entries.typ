@@ -4,11 +4,14 @@
 #include "./pre-season/identify-game-challenge-rules.typ"
 #include "./pre-season/identify-game-challenge-strategy.typ"
 
+#include "./overall-robot/brainstorm.typ"
+
+#include "./pre-auton-menu/program-pre-auton-menu.typ"
+
 #include "./drivetrain-1/identify.typ"
 #include "./drivetrain-1/understand.typ"
+#include "./drivetrain-1/brainstorm-drive-configurations.typ"
 #include "./drivetrain-1/program-driver-control.typ"
+
 #include "./odometry/select-movement.typ"
 #include "./odometry/select-implementation.typ"
-#include "./drivetrain-1/brainstorm-drive-configurations.typ"
-#include "./pre-auton-menu/program-pre-auton-menu.typ"
-#include "./overall-robot/brainstorm.typ"

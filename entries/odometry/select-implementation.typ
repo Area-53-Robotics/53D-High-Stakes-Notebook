@@ -28,9 +28,9 @@ After brainstorming the autonomous implementation options, we needed to select o
     ("Pure Pursuit Implementation Time", 3),
   ),
   choices: (
-    ("DIY Implementation", 2, 5, 3, 2, 1),
-    ("LemLib", 3, 5, 4, 3, 3),
-    ("ARMS", 5, 4, 4, 1, 1),
+    ("DIY Implementation", 2, 4, 3, 2, 1),
+    ("LemLib", 3, 4, 4, 3, 3),
+    ("ARMS", 4, 4, 4, 1, 1),
   ),
 )
 

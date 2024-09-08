@@ -25,7 +25,7 @@ While most of our team was already familiar with the different types of drives, 
   name: "Tank Drive",
   image: image("brainstorm-drive-configurations/TankDrive.excalidraw.svg"),
   description: [
-    Tank drive is a drivetrain where two sets of wheels (left and right) are powered independently, allowing for precise movement similar to a tank. The left joystick controls the left wheels, and the right joystick controls the right wheels, enabling the robot to move forward, backward, and turn by adjusting the speed of each side.
+    Tank drive has two sets of wheels (left and right) that are powered independently, allowing for precise movement similar to a tank. The left joystick controls the left wheels, and the right joystick controls the right wheels, enabling the robot to move forwards, backwards, and turn by adjusting the speed of each side.
   ],
   pros: [
     - Easy to build, saving time to build other subsystems
@@ -38,7 +38,6 @@ While most of our team was already familiar with the different types of drives, 
     - Shaky drive when not constructed well
   ],
   notes: [
-    - Suggested by Eric
     - Locked omnis mitigate the risk of getting pushed by other teams, however, they can damage the wheels and having too many creates difficulty turning
   ],
 )
@@ -49,7 +48,7 @@ While most of our team was already familiar with the different types of drives, 
   name: "H-Drive",
   image: image("brainstorm-drive-configurations/H-Drive.excalidraw.svg"),
   description: [
-    H-drive is a drivetrain configuration that adds a horizontal, center-mounted wheel perpendicular to the traditional tank drive wheels, forming an "H" shape. This center wheel allows the robot to strafe in addition to forward, backward, and turning motions.
+    H-drive adds a horizontal, center-mounted wheel perpendicular to the traditional tank drive wheels, forming an "H" shape. This center wheel allows the robot to strafe in addition to forwards, backwards, and turning motions.
   ],
   pros: [
     - Easy to build (but less so than Tank Drive)
@@ -64,8 +63,7 @@ While most of our team was already familiar with the different types of drives, 
     - The extra wheel can get caught on obstacles such as the middle barrier
   ],
   notes: [
-    - Suggested by Emma
-    - More complex than standard tank drive
+    // - More complex than a standard tank drive
     - Programming an H-drive requires specific attention to control the lateral movement of the strafing wheel.
   ],
 )
@@ -73,9 +71,9 @@ While most of our team was already familiar with the different types of drives, 
 
 #pro-con(
   name: "Holonomic Drive",
-  image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg", width: 50pt),
+  image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg"),
   description: [
-    Holonomic drive is a drivetrain that allows a robot to move in any direction independently of its orientation, offering full omnidirectional movement. This is typically achieved using specialized wheels like omni-wheels or mecanum wheels, which can be controlled individually to move the robot forward, backward, sideways, and diagonally without needing to turn first.
+    Holonomic drive allows a robot to move in any direction independently of its orientation, offering full omnidirectional movement. This is achieved by placing omni-wheels at an angle, which can be controlled individually to move the robot forward, backward, sideways, and diagonally without needing to turn first.
   ],
   pros: [
     - Greatest maneuverability (8/omni-directional movement)
@@ -93,9 +91,9 @@ While most of our team was already familiar with the different types of drives, 
     - Less traction
     - More complex programming
   ],
-  /*notes: [
-    - Suggested by Ajibola
+  notes: [
+    // - Suggested by Ajibola
     - High learning curve in building
     - Able to make precise adjustments while moving
-  ],*/
+  ],
 )
