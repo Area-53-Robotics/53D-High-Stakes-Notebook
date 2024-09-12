@@ -14,8 +14,8 @@
   monthly-schedule: "On",
   yearly-schedule: "On",
   (
-    (true, "Brainstorm possible configurations for the drivetrain.", ("Everyone",)),
-    (true, "Select the best configuration for the drivetrain using a decision matrix.", ("Everyone",)),
+    (true, "Brainstorm possible configurations for the drivetrain.", "Everyone"),
+    (true, "Select the best configuration for the drivetrain using a decision matrix.", "Everyone"),
   )
 )
 

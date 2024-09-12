@@ -12,7 +12,7 @@
 #to-do(
   date: datetime(year: 2024, month: 4, day: 20),
   (
-    (true, "Reflect on the High Stakes season and identify what we can improve on.", ("Everyone",)),
+    (true, "Reflect on the High Stakes season and identify what we can improve on.", "Everyone"),
   )
 )
 
@@ -38,7 +38,7 @@
 
 #h(1em) Something that we did right from last season that I want to keep for this season is our gantt charts. These gantt charts have been very helpful for planning ahead and making deadlines. I am very excited to continue working with 53D for this season!
 
-#h(1em) I predict that the new game will have a shooting element. For the past two games, spin up and over under, there was a shooting mechanism where we had to throw a game element across the field. This aspect of the game encourages a diverse array of robots because there are multiple ways of throwing an object: catapults, punchers, kicker, and slingshots. Additionally, since the team has experience with building shooting mechanisms, having a game with a shooting mechanic will give us an early advantage. 
+#h(1em) I predict that the new game will have a shooting element. For the past two games, Spin Up and Over Under, there was a shooting mechanism where we had to throw a game element across the field. This aspect of the game encourages a diverse array of robots because there are multiple ways of throwing an object: catapults, punchers, kicker, and slingshots. Additionally, since the team has experience with building shooting mechanisms, having a game with a shooting mechanic will give us an early advantage. 
 
 
 = Ishika

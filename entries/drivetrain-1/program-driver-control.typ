@@ -11,7 +11,7 @@
 
 Because basic tank drive code does not change between seasons, it did not take long for us to program the tank drive configuration for our drivetrain.
 
-#align(center)[*53D_OverUnder/src/subsystemFiles/drive.cpp*]
+#code-header[src/subsystemFiles/drive.cpp]
 ```cpp
   // Integer variable to store the value of Axis 3
   short int LYAxis;
@@ -36,7 +36,7 @@ Because basic tank drive code does not change between seasons, it did not take l
 
 After verifying that the basic tank drive code worked as intended, we brainstormed some programming features that could help our driver drive more effectively while on the field.
 
-#admonition(type: "brainstorm", title: "Mini-Brainstorm: Driver Control")[
+#admonition(type: "brainstorm", title: "Sub-Brainstorm: Driver Control")[
   - Reverse Function (Suggested by Ishika)
   - Drive Curve (Suggested by Makhi)
   - Deadzone (Suggested by Ajibola)
@@ -45,7 +45,7 @@ After verifying that the basic tank drive code worked as intended, we brainstorm
 = Reverse Function
 There are multiple times throughout the match where the bot may be facing the driver instead of away from the driver, such as when travelling to our non-offensive zone or when we are getting pushed by another team. During these instances, it becomes harder for the driver to quickly reorient themselves. To assist the driver in doing this, we decided to make a function that temporarily reverses the mapping of the joystick values to the controller.
 
-#align(center)[*53D_OverUnder/src/subsystemFiles/drive.cpp*]
+#code-header[src/subsystemFiles/drive.cpp]
 ```cpp
   // Boolean variable to keep track of whether the robot is moving in reverse or not
   bool isReverse = false;
@@ -132,9 +132,9 @@ The graph below is an exponential curve with a t-value of 20 compared to a linea
   )
 ]
 
-We implemented this into our code by creating a function that takes in the joystick value as a parameter and outputs the curved value as a float.
+We implemented this into our code by creating a function that takes in the joystick value as a parameter and outputs the curved value as a decimal.
 
-#align(center)[*53D_OverUnder/src/subsystemFiles/drive.cpp*]
+#code-header[src/subsystemFiles/drive.cpp]
 ```cpp
   // Returns the curved output based off of the joystick value input as a parameter
   float GetCurveOutput(int input) {
@@ -144,9 +144,9 @@ We implemented this into our code by creating a function that takes in the joyst
 
 
 = Deadzone
-Very early into the Spin Up season last year, 53D encountered a problem with controller drift. Controller drift is when the controller joystick stops responding accurately to the driver's input. In our case, the problem was that even when the controller was at rest, the joystick was returning small input values when it should have been returning 0. This made it hard for our driver to get into exact positions because the robot would slowly drift out of those positions. To mitigate this issue this year, we implemented a deadzone where if the reported input value of the joystick was within the interval [-10, 10], the robot would treat the input as if it were 0, and would not move. Here is the code we used to do it:
+Very early into the Over Under season last year, 53D encountered a problem with controller drift. Controller drift is when the controller joystick stops responding accurately to the driver's input. In our case, the problem was that even when the controller was at rest, the joystick was returning small input values when it should have been returning 0. This made it hard for our driver to get into exact positions because the robot would slowly drift out of those positions. To mitigate this issue this year, we implemented a deadzone where if the reported input value of the joystick was within the interval [-10, 10], the robot would treat the input as if it were 0, and would not move. Here is the code we used to do it:
 
-#align(center)[*53D_OverUnder/src/subsystemFiles/drive.cpp*]
+#code-header[src/subsystemFiles/drive.cpp]
 ```cpp
   if(abs(LYAxis) <= 10) LYAxis = 0;
   if(abs(RYAxis) <= 10) RYAxis = 0;
@@ -162,7 +162,7 @@ Very early into the Spin Up season last year, 53D encountered a problem with con
 = Final Drive Code
 Here is the completed tank drive code with the additional features:
 
-#align(center)[*53D_OverUnder/src/subsystemFiles/drive.cpp*]
+#code-header[src/subsystemFiles/drive.cpp]
 ```cpp
   // Integer variable to store the value of Axis 3
   short int LYAxis;
@@ -206,7 +206,7 @@ Here is the completed tank drive code with the additional features:
 = Driver Control Implementation
 To implement the tank drive code into driver control, we just needed to call the ```cpp SetDriveMotors()``` function in the driver control loop.
 
-#align(center)[*53D_OverUnder/src/opcontrol.cpp*]
+#code-header[src/opcontrol.cpp]
 ```cpp
 void opcontrol() {
 	while (true) {

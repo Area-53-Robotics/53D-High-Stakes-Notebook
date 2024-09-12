@@ -42,9 +42,13 @@
   )
 }
 
-#let to-do(date: none, monthly-schedule: none, yearly-schedule: none, attendance: none, body) = {
+#let to-do(date: none, monthly-schedule: none, yearly-schedule: none, attendance: none, tasks) = {
   let schedule-statuses = ("On", "Behind", "Ahead", "Off")
 
+  assert(
+    type(date) == datetime,
+    message: "To-do list date parameter needs to be of type \"datetime\""
+  )
   if monthly-schedule != none {
     assert(monthly-schedule in schedule-statuses, message: "Invalid monthly schedule status")
   }
@@ -62,25 +66,37 @@
         rest: 0pt
       )},
 
-      ..for (completed, task, members) in body {
+      ..for (completed, task, members) in tasks {
         (
           {
-            if completed == true {
+            if completed {
               image("/template/tabler-icons/square-check-filled.svg", height: 1em)
             } else {
               image("/template/tabler-icons/square.svg", height: 1em)
             }
-
-            let temp-team-members = team-members + ("Everyone",)
-
-            for member in members {
-              assert(
-                member in temp-team-members,
-                message: "Invalid team member"
-              )
-            }
           },
-          task + " (" + members.join(", ") + ")"
+          {
+            assert(
+              type(members) == array or type(members) == str,
+              message: "Members to-do admonition parameter should be of type 'array' or type 'string'"
+            )
+
+            if type(members) == array {
+              for member in members {
+                assert(
+                  member in team-members,
+                  message: "Invalid team member in to-do admonition"
+                )
+              }
+              task + " (" + members.join(", ") + ")"
+            } else {
+              assert(
+                members == "Everyone",
+                message: "The only valid string for the to-do admonition 'members' parameter is 'Everyone'"
+              )
+              task + " (Everyone)"
+            }
+          }
         )
       }
     )

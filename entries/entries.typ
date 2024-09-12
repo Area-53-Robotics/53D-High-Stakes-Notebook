@@ -1,8 +1,12 @@
 // April
-#include "./pre-season/identify-pre-reveal-reflection.typ"
-#include "./pre-season/identify-reveal-video-thoughts.typ"
-#include "./pre-season/identify-game-challenge-rules.typ"
-#include "./pre-season/identify-game-challenge-strategy.typ"
+#include "./pre-season/pre-reveal-reflection.typ"
+#include "./pre-season/reveal-video-thoughts.typ"
+#include "./pre-season/game-challenge-rules.typ"
+#include "./pre-season/game-challenge-strategy.typ"
+#include "./management/high-stakes.typ"
+
+// June
+#include "./management/june.typ"
 
 #include "./overall-robot/brainstorm.typ"
 

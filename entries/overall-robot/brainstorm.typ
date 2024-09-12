@@ -13,9 +13,9 @@
 
 #pro-con(
   name: "Ajibola",
-  image:  image("/entries/overall-robot/brainstorm/ajibola-robot-idea.png"),
-  description: ["
-    A three wheel drive, a four bar with a claw at the end for mobile goal manipulation and hang, am adjustable intake and a pneumatic clamp. 
+  image: image("/entries/overall-robot/brainstorm/ajibola-robot-idea.png"),
+  description: [
+    A three wheel drive, a four bar with a claw at the end for mobile goal manipulation and hang, an adjustable intake and a pneumatic clamp. 
   ],
   pros: [
     - Center of gravity is closer to the center of the robot due to the bulky 4-bar and intake

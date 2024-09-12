@@ -7,6 +7,7 @@
 #import "graphs.typ": *
 #import "headings.typ": *
 #import "page.typ": *
+#import "pie-chart.typ": *
 #import "pro-con.typ": *
 #import "text-format.typ": *
 #import "title.typ": *

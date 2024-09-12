@@ -14,9 +14,11 @@
 - [cetz](https://typst.app/universe/package/cetz)
 
 ## How to Read the Notebook
-You can either compile the notebook yourself using the instructions below, or download the most recent version of the notebook by going to the "Actions" tab, clicking on the latest "Build Typst Document" workflow, and downloading the pdf file in "Artifacts."
+- You can download the latest [release](https://github.com/Area-53-Robotics/53D-Notebook/releases) of the notebook, which gets updated everytime we attend a tournament
+- You can download the most recent version of the notebook by going to the [Actions](https://github.com/Area-53-Robotics/53D-Notebook/actions) tab, clicking on the latest [Build Typst Document](https://github.com/Area-53-Robotics/53D-Notebook/actions/workflows/build.yml) workflow, and downloading the pdf file in "Artifacts."
+- You can compile the notebook yourself using the instructions below
 
-## How to Compile
+## How to Compile the Notebook
 1. Install the required fonts:
     - Linux Libertine
     - Orbitron

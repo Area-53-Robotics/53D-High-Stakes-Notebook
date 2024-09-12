@@ -28,24 +28,24 @@
   #let program-file(name: none, label: none, body) = [
     #link(query(selector(label)).at(0).location())[
       #text(fill: black)[
-        _ #name _
+        _ #name #line-fill *#body, docs on pg. P-#counter(page).at(query(selector(label)).at(0).location()).at(0)* _
       ]
-    ] #line-fill *#body, docs on pg. P-#counter(page).at(query(selector(label)).at(0).location()).at(0)*
+    ]
   ]
 
   #let program-folder(name: none, num: none, bold: false, under: false, body) = [
     #link(program_entries.at(num).location())[
       #text(fill: black)[
         _ #name _
+        #line-fill
+        #if bold == true and under == false [
+          _ *#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)* _
+        ] else if bold == false and under == true [
+          _ #underline[#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)] _
+        ] else if bold == true and under == true [
+          _ #underline[*#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*] _
+        ]
       ]
-    ]
-    #line-fill 
-    #if bold == true and under == false [
-      *#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*
-    ] else if bold == false and under == true [
-      #underline[#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)]
-    ] else if bold == true and under == true [
-      #underline[*#body, docs begin on pg. P-#counter(page).at(program_entries.at(num).location()).at(0)*]
     ]
   ]
 

@@ -12,7 +12,7 @@
 #to-do(
   date: datetime(year: 2024, month: 4, day: 27),
   (
-    (true, "Identify our immediate thoughts and predictions after watching the game reveal.", ("Everyone",)),
+    (true, "Identify our immediate thoughts and predictions after watching the game reveal.", "Everyone"),
   )
 )
 

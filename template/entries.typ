@@ -11,10 +11,10 @@
   witnessed: "",
   body
 ) = {
-  assert(
-    date != none,
-    message: "No valid date specified"
-  )
+  // assert(
+  //   type(date) == datetime,
+  //   message: "Entry date parameter needs to be of type \"datetime\""
+  // )
 
   assert(
     designed in team-members,

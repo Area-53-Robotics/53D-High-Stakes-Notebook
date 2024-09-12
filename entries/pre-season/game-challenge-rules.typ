@@ -12,14 +12,15 @@
 #to-do(
   date: datetime(year: 2024, month: 4, day: 30),
   (
-    (true, "Analyze the game challenge rules to identify the game objectives for the season.", ("Everyone",)),
-    (true, "Identify strategies to approach the game objectives for the season.", ("Everyone",)),
+    (true, "Analyze the game challenge rules to identify the game objectives for the season.", "Everyone"),
+    (true, "Identify strategies to approach the game objectives for the season.", "Everyone"),
+    (true, "Plan out the High Stakes season by creating a Gantt chart.", "Everyone"),
   )
 )
 
 #show image: it => align(center, it)
 
-VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration, robot composition, and tactics.
+VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, robot composition, and tactics.
 
 = Rules Overview
 #v(5pt)
@@ -161,7 +162,6 @@ VRC High Stakes is a 2024-2025 game that focuses significantly on collaboration,
   column-gutter: 10pt,
   
   [
-    - 5 Mobile Goals, each with 1 Stake
     - *Mobile Goal* #sym.dash.em One of 5 large Scoring Objects, each with a Stake in the center. Mobile Goals are hexagonal, with a maximal diameter of 10” and an overall height of 14.5”. The Stake is considered part of the Mobile Goal
     - #vex-rule[SC6] A Mobile Goal that has been Placed will result in the following Corner modifiers to its Scored Rings: 
       - a. Placed in a Positive Corner

@@ -14,8 +14,8 @@
   monthly-schedule: "On",
   yearly-schedule: "On",
   (
-    (true, "Identify the design constraints and goals for the drivetrain.", ("Everyone",)),
-    (true, "Determine the mathematical and scientific concepts involved in drivetrain design.", ("Everyone",)),
+    (true, "Identify the design constraints and goals for the drivetrain.", "Everyone"),
+    (true, "Determine the mathematical and scientific concepts involved in drivetrain design.", "Everyone"),
   )
 )
 
@@ -50,7 +50,7 @@
   [
     - To withstand and support the weight of other subsystems on the robot.
     - A speed faster than 333 RPM (56.723 in/sec)
-      - This game will likely require faster movement than Spin Up, so we want a drivetrain speed higher than last year.
+      - This game will likely require faster movement than Over Under, so we want a drivetrain speed higher than last year.
     - To be able to generate enough torque to push other robots
     - To fit under the goals for descoring
   ],

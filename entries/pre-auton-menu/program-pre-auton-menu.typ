@@ -33,12 +33,19 @@
 Before a tournament match, there is an empty period of time where robots are being set up on the field, which we call the _pre-autonomous_ phase of the match. To utilize this time, we decided to make a pre-auton menu for the VEX brain screen that allows the drive team members to obtain important information about the robot before the match.
 
 #admonition(type: "brainstorm", title: "Sub-Brainstorm: Pre-Auton Menu Functionality")[
-We brainstormed some functionalities that we wanted in the pre-autonomous menu:
-- Autonomous selection - allowing for quick switching the selected autonomous before a match without requiring a re-upload of the code, streamlining preparation time in between competition matches.
-- Motor monitoring - a method to check if each motor is plugged in, if the motor is over the temperature limit, and other important motor telemetry information.
-- Sensor display - a screen to check the values being returned by our sensors.
-- Keybind display - a screen displaying all the controls of the robot.
-- Notes section - a place to write down any urgent messages or notes the drive team should be aware of before the match starts.
+  We brainstormed some functionalities that we wanted in the pre-autonomous menu:
+  - Autonomous selection - allowing for quick switching the selected autonomous before a match without requiring a re-upload of the code, streamlining preparation time in between competition matches.
+  - Motor monitoring - a method to check if each motor is plugged in, if the motor is over the temperature limit, and other important motor telemetry information.
+  - Sensor display - a screen to check the values being returned by our sensors.
+  - Keybind display - a screen displaying all the controls of the robot.
+  - Notes section - a place to write down any urgent messages or notes the drive team should be aware of before the match starts.
+]
+
+#admonition(type: "plan", title: "Sub-Plan: Pre-Auton Menu Development")[
+  The development process of the Pre-Autonomous menu was planned out to be the following steps:
+  + Install the LVGL library
+  + Create the base screen layout
+  + Create screens for each of the functionalities we brainstormed
 ]
 
 To do this, we installed version 8.3.6 of LVGL #glossary-footnote[LVGL] by running the following command:
@@ -46,9 +53,6 @@ To do this, we installed version 8.3.6 of LVGL #glossary-footnote[LVGL] by runni
 ```sh
 pros c apply liblvgl@8.3.6 --beta
 ```
-
-The development process of the Pre-Autonomous menu was planned out to be the following steps:
-+ Create the base layout
 
 = Base Layout
 The first step was to create a dropdown selection menu for the different tabs in the Auton Selector.
