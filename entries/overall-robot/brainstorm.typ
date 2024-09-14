@@ -20,15 +20,9 @@
   pros: [
     - *Balance* - The equally bulky intake and four-bar are on opposite sides of the robot, keeping the robot balanced.
     - *Stability* - The center of gravity of the robot is close to the ground, keeping the robot stable when driving.
-    - Very defensive
   ],
   cons: [
     - *Inefficient Climbing* - The robot is likely to tilt backwards when climbing due to the clamp only supporting the elevated robot on the front.
-  ],
-  notes: [
-    - 4-bar for climbing and putting rings on the high stake with the clamp
-    - Back clamp for carrying a mogo
-    - Intake 
   ],
 )
 
@@ -36,23 +30,15 @@
   name: "Jin Hao",
   image: image("/entries/overall-robot/brainstorm/jin-robot-idea.excalidraw.svg"),
   description: [
-    A four wheel drive, Over Under flex wheel intake first stage, adjustable conveyor intake that can reach wall stakes, passive clamp, and a pneumatic clamp
+    A four wheel drive, Over Under flex wheel intake first stage, adjustable conveyor intake that can reach wall stakes, passive clamp, and a pneumatic clamp.
   ],
   pros: [
-    - *Traction* - The two traction wheels on the drivetrain 
-    - Faster than the average robot speed
-    - Space efficient
-    - Electronics 
+    - *Traction* - The two traction wheels on the drivetrain will prevent the robot from getting pushed on the side.
+    - *Balance* - The point of balance when the robot climbs is close to the center of gravity, keeping the robot balanced when climbing.
   ],
   cons: [
     - *Motor Temperature* - Having four wheels on the drivetrain instead of three will make the drivetrain motors heat up faster.
     - *Front Heavy* - The four-bar intake shifts the center of gravity towards the front of the robot, making it more prone to tipping.
-  ],
-  notes: [
-    - 450 3.25” RPM
-    - Pneumatic Mogo clamp
-    - 4-bar intake to intake rings while also using to climb
-    - Color sensor to filter out unwanted boxes
   ],
 )
 
@@ -72,10 +58,6 @@
     - *Intake Joints* - The extra joints on the intake give it more possible points for failure
     - *Front Loaded* - The center of gravity shifts forwards when the intake is extended, increasing the possibility of the bot tipping over.
   ],
-  notes: [
-    - Flip-out lift
-    - Intake intakes directly onto the flip
-  ],
 )
 
 // #colbreak()
@@ -87,27 +69,15 @@
     A three wheel drive, a pneumatic clamp for mobile goals, an plunger to pick up rings, a pneumatic arm for hang.
   ],
   pros: [
-    - Takes space into consideration.
-    - Fast and Powerful
+    - *Quick Cycling* - The lightness of the bot combined with the simplicity of the intake will make it efficient at scoring rings on mobile goals.
+    - *Drivetrain Space* - There are no subsystems near the center of the drivetrain, so we can use that space for sensors.
   ],
   cons: [
-    - Pneumatics for the climb mech may be less powerful. 
-    - Expansion might not be very great. 
-    - Hang mech can cause interference with intake.
-    - Chain can break
-  ],
-  notes: [
-    - 450 3.25
-    - Mogo clamp
-    - Climb mech uses grappler shape.
-    - 4 motor drive
-    - 1 motor intake
-    - Climb mech uses Pneumatics
-
+    - *Weak Climb* - Using pneumatics for the climb mechanism may not produce enough force to consistently climb.
   ],
 )
-#colbreak()
 
+#colbreak()
 
 #pro-con(
   name: "Eric",
@@ -121,16 +91,7 @@
   ],
   cons: [
     - *Accessibility* - Hard to access the interior of the robot for fixes and tuning.
-  ],
-  notes: [
-    - Four bar used for overtaking and climbing 
-    - 450 3,25” 
-    - Mogo clamp
-    - Motor Usage:
-      - 6 motor drive
-      - 1 motor 4-bar
-      - 1 motor intake
-      - 2 piston mogo mech
+    - *No Climb* - There is no climbing mechanism, preventing us from getting climb points and ladder stake points.
   ],
 )
 
@@ -138,22 +99,13 @@
   name: "Rory",
   image: image("/entries/overall-robot/brainstorm/rory-robot-idea.excalidraw.svg"),
   description: [
-    A 4 wheel drive, an adjustable conveyor with a passive hang on the end, an conveyor that picks up rings and a pneumatic mobile goal clamp
+    A 4 wheel drive, an adjustable conveyor with a passive hang on the end, an conveyor that picks up rings and a pneumatic mobile goal clamp.
   ],
   pros: [
-    - Good radio placement
-    - Multipurpose parts and motors
-    - Quick Climb
+    - *Electronics Placement* - Most of the electronics are all in safe places, while also being mostly close to the robot's center of gravity.
+    - *Light* - Because the climb mechanism and intake are combined into one mechanism, the robot is light, making it easier to climb.
   ],
   cons: [
-    - Chain can break
-    - Battery can fall out
-    - Climb mech is difficult to aim
-  ],
-  notes: [
-    - 6 Motor drive
-    - 4 wheels to a side
-    - Intake on climbing arm
-    - Centralized Brain and Battery
+    - *Ring Clearance* - It will be hard for the rings on the intake to get over the climb mechanism and radio.
   ],
 )

@@ -17,8 +17,8 @@ After brainstorming different robot ideas, we had to pick one to begin building.
   - Space Use - To utilize the space to the maximum ability.
   - Intake - The consideration and quality of the intake. 
   - Clamp Ability - How well the clamp functions in consideration to the rest of the robot.
-  - Wall Stake Possibility - Is it possible to score on the wall stake with the design.
-  - Climb Ability  - How efficient the climb is.
+  - Wall Stake Consistency - How consistently the robot can score rings on the wall stakes.
+  - Climb Ability - How efficient the climb is.
 ]
 
 #double-decision-matrix(
@@ -28,7 +28,7 @@ After brainstorming different robot ideas, we had to pick one to begin building.
     ("Space Use", 4),
     ("Intake", 5),
     ("Clamp Ability", 4),
-    ("Wall Stake Possibility", 3),
+    ("Wall Stake Consistency", 3),
     ("Climb Ability", 3),
   ),
   choices: (
@@ -39,7 +39,7 @@ After brainstorming different robot ideas, we had to pick one to begin building.
     ("Eric", 3, 4, 4, 4, 3, 2, 2),
     ("Rory", 3, 4, 4, 4, 3, 2, 2),
   ),
-  body: [#colbreak()]
+  body: colbreak()
 )
 
 #admonition(type: "select", title: "Final Selection")[
