@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Overall Robot Idea",
+  title: "Overall Robot Plan",
   type: "brainstorm",
   date: datetime(year: 2024, month: 6, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
