@@ -9,6 +9,7 @@
 #include "./management/june.typ"
 
 #include "./overall-robot/brainstorm.typ"
+#include "./overall-robot/select.typ"
 
 #include "./pre-auton-menu/program-pre-auton-menu.typ"
 

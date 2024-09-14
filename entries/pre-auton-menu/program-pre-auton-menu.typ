@@ -199,11 +199,20 @@ void OpenAutonSelectMenu() {
 }
 ```
 
-I then created a list menu that contains the buttons to select an auton.
+We then created a list menu that contains the buttons to select an auton.
 ```cpp
 ```
 
+Lastly, we made it so that when an auton button is pressed, its description is loaded onto the menu screen.
+
 = Motor Telemetry Screen
+The purpose of this screen of the pre-auton menu is to monitor key motor information before the round. Most importantly, we want to be able to verify that the motors are plugged in and that they are at a safe temperature.
+
+== Motor Object Management
+Similar to the auton selection screen, in order for the motor telemetry screen to display motor information, the program has to have an easily accessible list of the motors and motor groups.
+
+Next, the program needs to have a list of the number of motors in each motor group, as well as the total number of motors. To do this, when the robot program is started, a function automatically calculates those numbers.
+
 = Sensor Telemetry Screen
 = Keybind Display Screen
 = Notes Display Screen

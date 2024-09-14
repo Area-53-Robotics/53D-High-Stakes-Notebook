@@ -18,14 +18,12 @@
     A three wheel drive, a four bar with a claw at the end for mobile goal manipulation and hang, an adjustable intake and a pneumatic clamp. 
   ],
   pros: [
-    - Center of gravity is closer to the center of the robot due to the bulky 4-bar and intake
-    - Stable
+    - *Balance* - The equally bulky intake and four-bar are on opposite sides of the robot, keeping the robot balanced.
+    - *Stability* - The center of gravity of the robot is close to the ground, keeping the robot stable when driving.
     - Very defensive
   ],
   cons: [
-    - Climbing would be very inefficient, as it would tilt backwards
-    - Slow drivetrain
-    - Unsupported parts
+    - *Inefficient Climbing* - The robot is likely to tilt backwards when climbing due to the clamp only supporting the elevated robot on the front.
   ],
   notes: [
     - 4-bar for climbing and putting rings on the high stake with the clamp
@@ -41,22 +39,20 @@
     A four wheel drive, Over Under flex wheel intake first stage, adjustable conveyor intake that can reach wall stakes, passive clamp, and a pneumatic clamp
   ],
   pros: [
+    - *Traction* - The two traction wheels on the drivetrain 
     - Faster than the average robot speed
     - Space efficient
     - Electronics 
- 
   ],
   cons: [
-    - Front heavy
-    - Load heavy - so it's a faster burn out time
- 
+    - *Motor Temperature* - Having four wheels on the drivetrain instead of three will make the drivetrain motors heat up faster.
+    - *Front Heavy* - The four-bar intake shifts the center of gravity towards the front of the robot, making it more prone to tipping.
   ],
   notes: [
     - 450 3.25” RPM
     - Pneumatic Mogo clamp
     - 4-bar intake to intake rings while also using to climb
     - Color sensor to filter out unwanted boxes
-
   ],
 )
 
@@ -69,43 +65,36 @@
     A two wheel drive, flex wheel intake to store the rings in chassis, a plunger like arm that can stick onto the rings and score them onto the rings.
   ],
   pros: [
-    - More accurate overtaking on the high stake
-    - Possibilities to descore
-
+    - *Rings* - The plunger system deposits rings onto stakes quickly, making it easier to score points and get top ring bonuses.
   ],
   cons: [
-    - Easy to push around
-    - More joints - more points of failure
-    - Harder to control
-    - Front Loaded when the intake is extended outwards, prone to tipping
- 
+    - *Lacking Torque* - The lack of bulk on the robot makes it easy to push around
+    - *Intake Joints* - The extra joints on the intake give it more possible points for failure
+    - *Front Loaded* - The center of gravity shifts forwards when the intake is extended, increasing the possibility of the bot tipping over.
   ],
   notes: [
     - Flip-out lift
     - Intake intakes directly onto the flip
-
   ],
 )
-// #colbreak()
 
+// #colbreak()
 
 #pro-con(
   name: "Ishika",
   image: image("/entries/overall-robot/brainstorm/ishika-robot-idea.excalidraw.svg"),
   description: [
-      A three wheel drive, a pneumatic clamp for mobile goals, an plunger to pick up rings, a pneumatic arm for hang.
+    A three wheel drive, a pneumatic clamp for mobile goals, an plunger to pick up rings, a pneumatic arm for hang.
   ],
   pros: [
     - Takes space into consideration.
     - Fast and Powerful
-
   ],
   cons: [
     - Pneumatics for the climb mech may be less powerful. 
     - Expansion might not be very great. 
     - Hang mech can cause interference with intake.
     - Chain can break
-
   ],
   notes: [
     - 450 3.25
@@ -127,18 +116,14 @@
     A 4 wheel drive, a conveyor that picks up ring and drop it into the mobile goal, a clamp to secure the mobile goal.
   ],
   pros: [
-    - Space efficient 
-    - Good Radio Placement
-    - Multipurpose parts/motors
-
+    - *Compact* - There are no extendable subsystems, so the robot stays compact and lithe.
+    - *Electronics Placement* - The electronics are all in safe places, while also being mostly close to the robot's center of gravity.
   ],
   cons: [
-    - Chain can break at bad times
-    - Hard to access interior of the robot
-
+    - *Accessibility* - Hard to access the interior of the robot for fixes and tuning.
   ],
   notes: [
-    -  Four bar used for overtaking and climbing 
+    - Four bar used for overtaking and climbing 
     - 450 3,25” 
     - Mogo clamp
     - Motor Usage:
@@ -146,7 +131,6 @@
       - 1 motor 4-bar
       - 1 motor intake
       - 2 piston mogo mech
-       
   ],
 )
 
@@ -154,25 +138,22 @@
   name: "Rory",
   image: image("/entries/overall-robot/brainstorm/rory-robot-idea.excalidraw.svg"),
   description: [
-      A 4 wheel drive, an adjustable conveyor with a passive hang on the end, an conveyor that picks up rings and a pneumatic mobile goal clamp
+    A 4 wheel drive, an adjustable conveyor with a passive hang on the end, an conveyor that picks up rings and a pneumatic mobile goal clamp
   ],
   pros: [
     - Good radio placement
     - Multipurpose parts and motors
     - Quick Climb
-
   ],
   cons: [
     - Chain can break
     - Battery can fall out
     - Climb mech is difficult to aim
-
   ],
   notes: [
     - 6 Motor drive
     - 4 wheels to a side
     - Intake on climbing arm
     - Centralized Brain and Battery
-
   ],
 )

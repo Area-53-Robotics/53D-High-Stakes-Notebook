@@ -4,7 +4,7 @@
   title: "Overall Robot",
   type: "select",
   date: datetime(year: 2024, month: 6, day: 15),
-  attendance: "Ajibola, Ishika, Eric, Jin, Rory, Makhi",
+  attendance: ("Ajibola", "Ishika", "Eric", "Jin", "Rory", "Makhi"),
   designed: "Eric",
   witnessed: "Ishika",
 )
@@ -18,7 +18,7 @@ After brainstorming different robot ideas, we had to pick one to begin building.
   - Intake - The consideration and quality of the intake. 
   - Clamp Ability - How well the clamp functions in consideration to the rest of the robot.
   - Wall Stake Possibility - Is it possible to score on the wall stake with the design.
-  - Climb Ability  - How efficient the climb is and 
+  - Climb Ability  - How efficient the climb is.
 ]
 
 #double-decision-matrix(
@@ -39,6 +39,7 @@ After brainstorming different robot ideas, we had to pick one to begin building.
     ("Eric", 3, 4, 4, 4, 3, 2, 2),
     ("Rory", 3, 4, 4, 4, 3, 2, 2),
   ),
+  body: [#colbreak()]
 )
 
 #admonition(type: "select", title: "Final Selection")[
