@@ -63,11 +63,11 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   ],
   [
     == General Game Rules
-    + #vex-rule[G6] Keep your Robots together.
+    + #vex-rule[G6] Robots may not intentionally detach parts during the Match.
     + #vex-rule[G7] Don't clamp your Robot to the Field.
     + #vex-rule[G13] Don't destroy other Robots.
     + #vex-rule[G14] Offensive Robots get the “benefit of the doubt.”
-    + #vex-rule[G16] No Holding for more than a 5-count
+    + #vex-rule[G16] No Holding for more than a 5-second count
   ],
 )
 
