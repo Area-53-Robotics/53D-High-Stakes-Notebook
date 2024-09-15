@@ -1,10 +1,10 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Drivetrain #1 - Drive Configurations",
+  title: "Drivetrain v1 - Drive Configurations",
   type: "select",
-  date: datetime(year: 2023, month: 7, day: 21),
-  attendance: "Ajibola, Ishika, Eric, Emma",
+  date: datetime(year: 2024, month: 6, day: 22),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Eric",
   witnessed: "Ishika",
 )

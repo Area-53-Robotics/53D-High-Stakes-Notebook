@@ -1,12 +1,21 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Drivetrain #1 - Wheel Types",
+  title: "Drivetrain v1 - Wheel Types",
   type: "select",
-  date: datetime(year: 2023, month: 7, day: 22),
-  attendance: "Ajibola, Ishika, Eric, Emma",
+  date: datetime(year: 2024, month: 6, day: 24),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ishika",
   witnessed: "Eric",
+)
+
+#to-do(
+  date: datetime(year: 2024, month: 7, day: 24),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
+  (
+    (true, "Select the best wheel configurations for the tank drive using a decision matrix.", "Everyone"),
+  )
 )
 
 Different wheel configurations can have very different purposes. To determine which wheel configuration would be best for us to use, we created an unweighted and a weighted decision matrix.

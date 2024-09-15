@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Drivetrain #1",
+  title: "Drivetrain v1",
   type: "understand",
   date: datetime(year: 2023, month: 7, day: 15),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),

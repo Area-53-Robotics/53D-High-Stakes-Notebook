@@ -1,21 +1,21 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Drivetrain #1 - Wheel Types",
+  title: "Drivetrain v1 - Wheel Types",
   type: "brainstorm",
-  date: datetime(year: 2023, month: 7, day: 22),
-  attendance: "Ajibola, Ishika, Eric, Emma",
+  date: datetime(year: 2024, month: 6, day: 23),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Eric",
 )
 
 #to-do(
-  date: datetime(year: 2023, month: 7, day: 22),
-  monthly-schedule: "Behind",
+  date: datetime(year: 2024, month: 7, day: 23),
+  monthly-schedule: "On",
   yearly-schedule: "On",
   (
-    (true, "Brainstorm possible wheel configurations for the tank drive. (Everyone)"),
-    (true, "Select the best wheel configurations for the tank drive using a decision matrix. (Everyone)"),
+    (true, "Brainstorm possible wheel configurations for the tank drive.", "Everyone"),
+    (false, "Select the best wheel configurations for the tank drive using a decision matrix.", "Everyone"),
   )
 )
 
@@ -26,6 +26,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Omni",
   image: image("brainstorm-wheel-types/OmniWheel.excalidraw.svg", height: 70%),
+  description: [Omni],
   pros: [
     - * Partially Omnidirectional Movement* - Enabling the robot to move forward, backward, and sideways with ease
     - *Strafing* - The ability to strafe easily allow the robot to navigate around obstacles, align with targets, or avoid opponents
@@ -43,6 +44,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Traction",
   image: image("brainstorm-wheel-types/TractionWheel.excalidraw.svg", height: 12em),
+  description: [Traction],
   pros: [
     - *High Traction* - Traction wheels are designed to maximize grip on the surface
     - *Stability* - Traction wheels contribute to the stability of the robot, especially at higher speeds or during rapid acceleration and deceleration. 
@@ -57,6 +59,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Mecanum",
   image: image("brainstorm-wheel-types/MecanumWheel.excalidraw.svg", height: 12em),
+  description: [Mecanum],
   pros: [
     - *Omnidirectional Movement* - Mecanum wheels enable omnidirectional movement
     - *Simple Control System* - The control system for mecanum wheels is relatively simple compared to some other omnidirectional drive systems.
@@ -74,6 +77,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Tank Drive with Omnis",
   image: image("brainstorm-wheel-types/TankDriveOmnis.excalidraw.svg", height: 14em),
+  description: [Omni],
   pros: [
     - *Basic Maneuverability* - Excels in basic maneuverability (forward, backward, and turns)
     - *Pivoting* - Wheels can pivot easily, putting less stress on the motors
@@ -88,6 +92,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Tank Drive with Traction",
   image: image("brainstorm-wheel-types/TankDriveTraction.excalidraw.svg", height: 14em),
+  description: [Traction],
   pros: [
     - *Immovability* - Cannot be pushed from the side by other teams, making it easier to match load
     - *Force* - Generates a lot of traction, which makes it easier to push other teams
@@ -107,6 +112,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Tank Drive w/ Omnis & Traction",
   image: image("brainstorm-wheel-types/TankDriveOmnis+Traction.excalidraw.svg", height: 14em),
+  description: [Omni],
   pros: [
     - *Motor Strain* - Has a decreased strain on motors compared to full traction wheels
     - *Immovability* - More protected against pushing compared to a full omni configuration
@@ -120,6 +126,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
 #pro-con(
   name: "Tank Drive with Mecanums",
   image: image("brainstorm-wheel-types/TankDriveMecanums.excalidraw.svg", height: 14em),
+  description: [Mecanum],
   pros: [
     - *Build Difficulty* - Relatively simple to build
     - *Lateral Movement* - Difficult to move from the side

@@ -1,16 +1,16 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Drivetrain #1 - Drive Configurations",
+  title: "Drivetrain v1 - Drive Configurations",
   type: "brainstorm",
-  date: datetime(year: 2024, month: 6, day: 21),
+  date: datetime(year: 2024, month: 6, day: 22),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
 #to-do(
-  date: datetime(year: 2023, month: 7, day: 22),
+  date: datetime(year: 2024, month: 6, day: 22),
   monthly-schedule: "On",
   yearly-schedule: "On",
   (

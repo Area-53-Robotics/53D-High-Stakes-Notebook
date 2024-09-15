@@ -1,24 +1,32 @@
 // April
-#include "./pre-season/pre-reveal-reflection.typ"
-#include "./pre-season/reveal-video-thoughts.typ"
-#include "./pre-season/game-challenge-rules.typ"
-#include "./pre-season/game-challenge-strategy.typ"
-#include "./management/high-stakes.typ"
+#include "pre-season/pre-reveal-reflection.typ"
+#include "pre-season/reveal-video-thoughts.typ"
+#include "pre-season/game-challenge-rules.typ"
+#include "pre-season/game-challenge-strategy.typ"
+#include "management/high-stakes.typ"
 
 // June
-#include "./management/june.typ"
+#include "management/june.typ"
+#include "overall-robot/brainstorm.typ"
+#include "overall-robot/select.typ"
+#include "overall-robot/plan.typ"
+#include "drivetrain-1/identify.typ"
+#include "drivetrain-1/understand.typ"
+#include "drivetrain-1/brainstorm-drive-configurations.typ"
+#include "drivetrain-1/select-drive-configurations.typ"
+#include "drivetrain-1/brainstorm-wheel-types.typ"
+#include "drivetrain-1/select-wheel-types.typ"
+#include "drivetrain-1/brainstorm-gear-ratio.typ"
+#include "drivetrain-1/select-gear-ratio.typ"
+#include "drivetrain-1/program-driver-control.typ"
 
-#include "./overall-robot/brainstorm.typ"
-#include "./overall-robot/select.typ"
+// August
+#include "overall-robot/brainstorm-2.typ"
 
-#include "./pre-auton-menu/program-pre-auton-menu.typ"
-
-#include "./drivetrain-1/identify.typ"
-#include "./drivetrain-1/understand.typ"
-#include "./drivetrain-1/brainstorm-drive-configurations.typ"
-#include "./drivetrain-1/program-driver-control.typ"
-
-#include "./odometry/select-movement.typ"
-#include "./odometry/select-implementation.typ"
-
-#include "./overall-robot/brainstorm-2.typ"
+// TBD
+#include "misc-program/github-workflows.typ"
+#include "pre-auton-menu/program-pre-auton-menu.typ"
+#include "odometry/brainstorm-movement.typ"
+#include "odometry/select-movement.typ"
+#include "odometry/brainstorm-implementation.typ"
+#include "odometry/select-implementation.typ"
