@@ -13,7 +13,7 @@
 
 = Timeline Management
 Before beginning our early season brainstorming, we decided to make a general timeline for the robot's construction. We did this at the beginning of the Over Under season last year, and it was a significant help in keeping us on time for task completion. This year, we want to dedicate a large amount of time to a few tasks & mechanisms:
-- *Initial Drivetrain:* The drivetrain is the robot's core, and we want to try to get it right the first time.
+- *Initial Drivetrain:* The drivetrain is the robot's core, and attempting to make changes to it can sometimes require reconstruction of parts of, or the entire, robot. Therefore, we want to try to get the drivetrain right the first time. 
 - *Autonomous Programming:* During the early and mid-season last year, our autonomous programming was repeatedly put off until right before tournaments. This made programming autonomous routines stressful and prevented us from making the best autonomous routines possible. We wanted an autonomous system that could obtain the autonomous win point without assistance from our alliance partner, but we could not complete it due to time constraints. We hope to get the best autonomous possible by dedicating more time this year.
 - *Robot Tuning before States:* Having the best robot possible for the state competition is of utmost priority, and to achieve this we need an optimum amount of time to test and adjust mechanisms
 - *Scrimmages before States:* Last year, we participated in multiple scrimmages with other Area 53 teams before the States competition. This resulted in a visible performance increase at the States competition compared to our performance in other late-season tournaments. We plan to do the same this year.
