@@ -24,6 +24,22 @@
   }
 }
 
+#let goals-constraints(goals: [], constraints: []) = {
+  assert(goals != [], message: "No goals given for goals-constraints component")
+  assert(constraints != [], message: "No constraints given for goals-constraints component")
+
+  table(
+    columns: (1fr, 1fr),
+    rows: 2,
+    align: left + top,
+
+    table.header(table.cell(fill: green)[*Design Goals*], table.cell(fill: red)[*Design Constraints*]),
+    
+    goals,
+    constraints,
+  )
+}
+
 #let cad(
   folder: "",
   sheets: 1,

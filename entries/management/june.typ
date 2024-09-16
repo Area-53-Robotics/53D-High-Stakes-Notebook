@@ -16,7 +16,6 @@
   (
     (true, "Plan out the June meetings by creating a Gantt chart and reviewing our budget.", "Everyone"),
     (true, "Brainstorm overall robot ideas to build our bot around.", "Everyone"),
-    (true, "Select an overall robot idea to build for the first robot iteration.", "Everyone"),
   )
 )
 

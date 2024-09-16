@@ -1,10 +1,10 @@
 #import "/template/template.typ": *
 
-#include "./glossary.typ"
-#include "./resources.typ"
-#include "./controller.typ"
-#include "./brain.typ"
-#include "./polycarbonate-map.typ"
-#include "./pre-match-checklist.typ"
+#include "glossary.typ"
+#include "resources.typ"
+#include "controller.typ"
+#include "brain.typ"
+#include "polycarbonate-map.typ"
+#include "pre-match-checklist.typ"
 
-#include "./innovate.typ"
+#include "innovate.typ"

@@ -9,6 +9,16 @@
   witnessed: "Ishika",
 )
 
+#to-do(
+  date: datetime(year: 2024, month: 6, day: 15),
+  monthly-schedule: "On",
+  yearly-schedule: "On",
+  (
+    (true, "Select an overall robot idea to build for the first robot iteration.", "Everyone"),
+    (true, "Plan the implementation of the overall robot idea.", "Everyone"),
+  )
+)
+
 After brainstorming different robot ideas, we had to pick one to begin building. This will be a very important decision as it will determine what we can build in the future. As such, we identified as much criteria as possible to make an accurate judgement.
 
 #decision-matrix-criteria[
