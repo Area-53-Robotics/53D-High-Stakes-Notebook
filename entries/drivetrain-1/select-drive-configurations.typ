@@ -25,21 +25,22 @@ After brainstorming different drive configurations, we had to pick one to begin 
 #double-decision-matrix(
   criteria: (
     ("Speed", 5),
-    ("Acceleration",5),
-    ("Turning", 4),
+    ("Acceleration", 5),
+    ("Turning", 5),
     ("Force", 4),
-    ("Compactness", 3),
-    ("Omni-Directionality", 2),
+    ("Compactness", 5),
+    ("Omni-Directionality", 3),
     ("Ease of Programming", 2),
-    ("Ease of Driving", 2),
+    ("Ease of Driving", 3),
   ),
   choices: (
     ("Tank Drive", 3, 4, 3, 4, 4, 2, 4, 4),
     ("H-Drive", 3, 3, 3, 3, 2, 3, 3, 3),
     ("Holonomic", 4, 2, 4, 2, 2, 4, 2, 3),
   ),
+  body: colbreak()
 )
 
 #admonition(type: "select", title: "Final Selection")[
-  A tank drive configuration meets the most of the criteria we identified for the what we need in a drive configuration. The flexibility it offers will be useful later in the season when we have to rebuild subsystems.
+  A tank drive configuration meets the most of the criteria we identified for the what we need in a drive configuration. In addition, we are the most familiar with tank drive, and it allows us to get the most speed and acceleration without sacrificing torque. The flexibility it offers will be useful later in the season when we likely have to rebuild subsystems.
 ]

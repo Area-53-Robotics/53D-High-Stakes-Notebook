@@ -137,15 +137,18 @@
       table.vline(start: 0, end: 1, stroke: none, x: 0),
       table.hline(start: 0, end: 1, stroke: none, y: 0),
 
-      [],
-      ..for (index, choice) in choices.enumerate() {
-        let cell = table.cell
-        if index in highest.unweighted.indexes {
-          (cell[*#choice.first()*],)
-        } else {
-          (cell[#choice.first()],)
-        }
-      },
+      table.header(
+        [],
+        ..for (index, choice) in choices.enumerate() {
+          let cell = table.cell
+          if index in highest.unweighted.indexes {
+            (cell[*#choice.first()*],)
+          } else {
+            (cell[#choice.first()],)
+          }
+        },
+      ),
+
       ..for (index, criterion) in criteria.enumerate() {
         (
           criterion.first(),
@@ -178,16 +181,18 @@
       table.vline(start: 0, end: 1, stroke: none, x: 0),
       table.hline(start: 0, end: 1, stroke: none, y: 0),
 
-      [],
-      table.cell(fill: purple.lighten(20%).desaturate(30%))[Weight],
-      ..for (index, choice) in choices.enumerate() {
-        let cell = table.cell
-        if index in highest.weighted.indexes {
-          (cell[*#choice.first()*],)
-        } else {
-          (cell[#choice.first()],)
-        }
-      },
+      table.header(
+        [],
+        table.cell(fill: purple.lighten(20%).desaturate(30%))[Weight],
+        ..for (index, choice) in choices.enumerate() {
+          let cell = table.cell
+          if index in highest.weighted.indexes {
+            (cell[*#choice.first()*],)
+          } else {
+            (cell[#choice.first()],)
+          }
+        },
+      ),
       ..for (index, criterion) in criteria.enumerate() {
         (
           criterion.first(),

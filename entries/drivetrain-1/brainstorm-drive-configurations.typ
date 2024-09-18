@@ -11,8 +11,8 @@
 
 #to-do(
   date: datetime(year: 2024, month: 6, day: 22),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Ahead",
   (
     (true, "Brainstorm possible configurations for the drivetrain.", "Everyone"),
     (true, "Select the best configuration for the drivetrain using a decision matrix.", "Everyone"),
@@ -34,7 +34,7 @@ While most of our team was already familiar with the different types of drives, 
   ],
   cons: [
     - Cannot strafe or drive omni-directional, limiting our mobility
-    - Able to be pushed sideways, making us vulnerable to offense from other teams
+    - Able to be pushed sideways (when built using omni wheels), making us vulnerable to offense from other teams
     - Shaky drive when not constructed well
   ],
   notes: [
@@ -53,14 +53,14 @@ While most of our team was already familiar with the different types of drives, 
   pros: [
     - Easy to build (but less so than Tank Drive)
     - Open front and back
-    - Allows you to strafe sideways
+    - Allows us to strafe sideways
       - However, slower than forwards and backwards movement
   ],
   cons: [
     - Requires an extra motor for the middle wheel
     - Can take up space from mechanisms in the middle of the robot
     - System has to be made to keep the middle wheel in contact with the floor
-    - The extra wheel can get caught on obstacles such as the middle barrier
+    - The extra wheel can get caught on obstacles such as rings
   ],
   notes: [
     // - More complex than a standard tank drive
@@ -73,7 +73,7 @@ While most of our team was already familiar with the different types of drives, 
   name: "Holonomic Drive",
   image: image("brainstorm-drive-configurations/HolonomicDrive.excalidraw.svg"),
   description: [
-    Holonomic drive allows a robot to move in any direction independently of its orientation, offering full omnidirectional movement. This is achieved by placing omni-wheels at an angle, which can be controlled individually to move the robot forward, backward, sideways, and diagonally without needing to turn first.
+    Holonomic drive is a drivetrain configuration that allows a robot to move in any direction independently of its orientation, offering full omnidirectional movement. This is achieved by placing omni-wheels at an angle, which can be controlled individually to move the robot forward, backward, sideways, and diagonally without needing to turn first.
   ],
   pros: [
     - Greatest maneuverability (8/omni-directional movement)

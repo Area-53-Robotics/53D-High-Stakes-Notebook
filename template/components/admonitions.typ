@@ -102,7 +102,9 @@
     )
 
     #if monthly-schedule != none or yearly-schedule != none or attendance != none [
+      #v(-7pt)
       #line(length: 100%)
+      #v(-7pt)
     ]
 
     #set list(spacing: 5pt)

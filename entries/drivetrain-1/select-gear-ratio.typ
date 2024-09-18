@@ -11,8 +11,8 @@
 
 #to-do(
   date: datetime(year: 2024, month: 6, day: 29),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Ahead",
   (
     (true, "Select the best gear ratio for the tank drive using a decision matrix.", "Everyone"),
     (true, "Create a plan for the construction of the drivetrain using CAD.", ("Ajibola", "Jin")),
@@ -20,33 +20,38 @@
 )
 
 #decision-matrix-criteria[
-  - Inches per Second - The expected speed of the drivetrain using the gear ratio.
-  - RPM - The expected output RPM using the gear ratio.
-  - Strength - The amount of force the drivetrain can generate using the gear ratio.
-  - Maneuverability - The responsiveness of the drivetrain using the gear ratio.
+  - Speed - The maximum speed of the gear ratio.
+  - Torque - How much rotational force the gear ratio can generate.
+  - Maneuverability - The smoothness of the turns made with the drivetrain configuration.
+  - Traction - How well the gear ratio enhances the force of the wheels onto the surface below them.
+  - Control - The responsiveness of the drivetrain using the gear ratio.
+  - Stability - How well the gear ratio holds together under extended usage.
+  - Weight Capacity - How well the gear ratio allows the drivetrain to support the robot's weight.
 ]
 
 #double-decision-matrix(
   criteria: (
-    ("Inches per Second", 5),
-    ("RPM", 4),
-    ("Strength", 4),
-    ("Maneuverability", 4),
+    ("Speed", 5),
+    ("Torque", 5),
+    ("Maneuverability", 5),
+    ("Traction", 3),
+    ("Control", 5),
+    ("Stability", 4),
+    ("Weight Capacity", 4),
   ),
   choices: (
-    ("5:3 Ratio,\n4 Inch Wheel,\n200 RPM Motor", 4, 3, 3, 2),
-    ("3:5 Ratio,\n4 Inch Wheel,\n600 RPM Motor", 4, 4, 2, 3),
-    ("5:3 Ratio,\n3.25 Inch Wheel,\n200 RPM Motor", 2, 3, 3, 2),
-    ("3:5 Ratio,\n3.25 Inch Wheel,\n600 RPM Motor", 3, 4, 4, 4),
+    ("450 RPM,\n2.75” Wheels", 3, 3, 4, 3, 4, 3, 3),
+    ("600 RPM,\n2.75” Wheels", 4, 2, 2, 3, 2, 3, 2),
+    ("450 RPM,\n3.25” Wheels", 3, 4, 4, 4, 4, 3, 4),
   ),
+  body: colbreak()
 )
 
 #admonition(type: "select", title: "Final Selection")[
-  We decided to use a 3.25 inch wheel powered by a 600 RPM motor geared with a 3:5 gear ratio.
+  We decided to use 3.25 inch wheels powered by 600 RPM motors geared with a 3:4 gear ratio.
 
-  + *Ratio* - The 3:5 Ratio contributes to a smoother motion, reduced friction, and improved torque distribution. It also offers us a versatile choice of suitable ratios and is compatible with most VEX robotics motors.
-  + *Wheel Size* - The choice of a 3.25-inch wheel offers greater maneuverability due to its smaller size. The 3.25-inch wheel also strikes a balance between greater stability and smoother motion and enhances maneuverability and acceleration. 
-  + *Motor* - A 600 RPM motor represents a deliberate compromise between speed and torque. The selection of this motor speed is likely driven by the specific requirements of the system. Higher RPM can deliver faster motion but may sacrifice torque, while lower RPM provides more torque at the expense of speed.
+  + *Speed-Torque Balance* - This gear ratio provides the best balance of speed and torque. We need the speed to get around the field and secure as many mobile goals as possible. We need the torque to push back enemy bots trying to take away our mobile goals or upsetting them when they're trying to score on the wall stakes.
+  + *Weight Capacity* - Because our drivetrain is likely going to be heavier than last year's drivetrain (to provide extra force), we also want a gear ratio that can support that weight.
 ]
 
 // #cad(
