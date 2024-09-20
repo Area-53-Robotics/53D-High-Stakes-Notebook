@@ -121,7 +121,7 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
 
 #colbreak()
 
-== Mobile Goal
+== Mobile Goals
 #grid(
   columns: (1fr, 1fr),
   row-gutter: 10pt,
