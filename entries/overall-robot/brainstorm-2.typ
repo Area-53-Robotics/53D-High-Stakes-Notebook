@@ -3,7 +3,7 @@
 #show: create-entry.with(
   title: "Overall Robot Plan #2",
   type: "brainstorm",
-  date: datetime(year: 2024, month: 1, day: 14),
+  date: datetime(year: 2024, month: 8, day: 6),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Jin",
   witnessed: "Ajibola",
@@ -30,7 +30,7 @@
     - Extensive testing is needed to fine-tune the coordination between the intake, hook mechanism, and trap door.
   ],
 )
-
+#colbreak() 
 #pro-con(
   name: "Idea 2",
   image: image("/entries/overall-robot/brainstorm-2/overall robot-idea 2.excalidraw.svg"),

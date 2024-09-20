@@ -22,3 +22,4 @@
 #include "./odometry/select-implementation.typ"
 
 #include "./overall-robot/brainstorm-2.typ"
+#include "./overall-robot/select-2.typ"
