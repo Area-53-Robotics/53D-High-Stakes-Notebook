@@ -1,8 +1,8 @@
 #import "template/template.typ": *
-#include "/frontmatter/frontmatter-entries.typ"
-#include "/entries/entries.typ"
-#include "/appendix/appendix-entries.typ"
-#include "/program/program-entries.typ"
+#include "frontmatter/frontmatter-entries.typ"
+#include "entries/entries.typ"
+#include "appendix/appendix-entries.typ"
+#include "program/program-entries.typ"
 
 #show: notebook.with(
   team: "53D",

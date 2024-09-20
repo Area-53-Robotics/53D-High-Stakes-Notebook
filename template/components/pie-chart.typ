@@ -1,6 +1,6 @@
 #import "../template-packages.typ": cetz
 
-#let pie-chart(data-type: "", colors: (), data) = {
+#let pie-chart(radius: 3.5, data-type: "", colors: (), data) = {
   if colors.len() > 0 {
     assert(
       colors.len() = data.len,
@@ -36,12 +36,12 @@
       gap: 1deg,
       value-key: 1,
       label-key: 0,
-      radius: 3.5,
+      radius: radius,
       slice-style: colors,
-      inner-radius: 1,
+      inner-radius: 0,
       inner-label: (
         content: "%",
-        radius: 100%
+        radius: 120%
       ),
       outer-label: (
         content: (value, label) => {

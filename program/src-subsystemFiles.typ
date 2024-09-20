@@ -4,5 +4,5 @@
   title: "53D_Over_Under/src/subsystemFiles/"
 )
 
-= wings.cpp <wings.cpp>
-#raw(block: true, lang: "cpp", read("src/subsystemFiles/wings.cpp"))
+= clamp.cpp <clamp.cpp>
+#raw(block: true, lang: "cpp", read("src/subsystemFiles/clamp.cpp"))

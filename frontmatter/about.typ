@@ -20,7 +20,7 @@ We decided to use a digital notebook over a physical notebook this year for the 
 
 = Why Use Typst?
 
-Typst gives us multiple benefits compared to Google Slides, the platform that we used last year.
+Typst gives us multiple benefits compared to other platforms such as Google Docs, Google Slides, and Notion.
 
 - Management and collaboration using Git #glossary-footnote[Git]
 - Verification of notebook history using Git

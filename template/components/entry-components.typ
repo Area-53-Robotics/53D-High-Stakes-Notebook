@@ -24,6 +24,22 @@
   }
 }
 
+#let goals-constraints(goals: [], constraints: []) = {
+  assert(goals != [], message: "No goals given for goals-constraints component")
+  assert(constraints != [], message: "No constraints given for goals-constraints component")
+
+  table(
+    columns: (1fr, 1fr),
+    rows: 2,
+    align: left + top,
+
+    table.header(table.cell(fill: green)[*Design Goals*], table.cell(fill: red)[*Design Constraints*]),
+    
+    goals,
+    constraints,
+  )
+}
+
 #let cad(
   folder: "",
   sheets: 1,
@@ -165,7 +181,7 @@
   body: [entry on],
 ) = {
   context {
-    let valid-entries = entries.final(loc).enumerate()
+    let valid-entries = entries.final().enumerate()
 
     if date != none {
       valid-entries = valid-entries.filter(
@@ -196,13 +212,13 @@
 
     let entry = valid-entries.first()
     let info = type-metadata.at(entry.last().type)
-    let page = counter(page).at(query(selector(<notebook-entry>), loc).at(entry.first()).location()).at(0)
+    let page = counter(page).at(query(selector(<notebook-entry>)).at(entry.first()).location()).at(0)
 
     [
       #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
       #h(1pt)
       #highlight(fill: info.color.lighten(30%))[
-        #link((page: {frontmatter-page-counter.final(loc).at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
+        #link((page: {frontmatter-page-counter.final().at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
           #text(fill: black)[
             _#h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
           ]

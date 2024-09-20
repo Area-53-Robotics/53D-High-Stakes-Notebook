@@ -1,53 +1,72 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Drivetrain #1",
+  title: "Drivetrain v1",
   type: "understand",
-  date: datetime(year: 2023, month: 7, day: 15),
+  date: datetime(year: 2024, month: 6, day: 16),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Eric",
 )
 
-#table(
-  columns: 2,
-  rows: 6,
-  stroke: none,
+#set grid(
+  columns: (1fr, 1fr),
   gutter: 5pt,
-  align: left,
+)
 
-  table.cell(colspan: 2)[
+#grid(
+  align: (x, _) =>
+    if x == 0 {center + horizon}
+    else if x == 1 {left + top},
+
+  grid.cell(colspan: 2, align: left)[
     = Gear Ratios
   ],
   [#image("./understand/DT stem - Gear ratio.svg")],
   [
     == What are gear ratios?
-    Gear ratios provide mechanical advantage. Depending on whether the driven gear has more or fewer teeth than the driving gear, the gear ratio can result in either an increase (mechanical advantage for torque) or a decrease (mechanical advantage for speed) in rotational speed or force.
+    Gear ratios provide mechanical advantage. Depending on whether the driven gear has more or fewer teeth than the driving gear, the gear ratio can either increase (mechanical advantage for torque) or decrease (mechanical advantage for speed) rotational speed or force.
 
     == How do they relate to the drivetrain?
-
-    Gear ratios are crucial for optimizing the performance of motorized systems. They are used to achieve the desired balance between speed and torque, allowing robots to move efficiently.
+    Gear ratios are crucial for optimizing the performance of motorized systems. They assist in achieving the desired balance between speed and torque, allowing robots to move efficiently.
   ],
-  table.cell(colspan: 2)[
+)
+
+#grid(
+  align: (x, _) =>
+    if x == 0 {center + horizon}
+    else if x == 1 {left + top},
+
+  grid.cell(colspan: 2, align: left)[
     = Structural Dynamics
   ],
   [#image("./understand/Structural dynamics.svg")],
   [
     == What are structural dynamics?
-
     Determining the natural frequencies of a structure is crucial in understanding how it will respond to dynamic loads. These frequencies represent the inherent vibration characteristics of the structure.
 
     == How do they relate to to the drivetrain?
+    Structural dynamics help analyze and understand the vibrations induced in the drivetrain components during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and structural members.
+  ],
+)
 
-    Structural dynamics helps in analyzing and understanding the vibrations induced in the components of the drivetrain during operation. Vibrations can be critical, affecting the performance and lifespan of various elements, such as gears, bearings, and axles.
+#colbreak()
+
+#grid(
+  align: (x, _) =>
+    if x == 0 {left + top}
+    else if x == 1 {center + horizon},
+
+  grid.cell(colspan: 2, align: left)[
+    = Newton's Laws of Motion
+    #v(10pt)
   ],
   [
-    = Newton's Laws of Motion
     == What are Newton's Laws of Motion?
 
-    + *First Law* (Law of Inertia): An object at rest remains at rest, and an object in motion continues in motion with a constant velocity unless acted upon by a net external force.
+    1. *First Law* (Law of Inertia): An object at rest remains at rest, and an object in motion continues in motion with a constant velocity unless acted upon by a net external force.
 
-    + *Second Law* ($#sym.Sigma F = m a$): The acceleration of an object is directly related to the net force acting upon it and inversely related to its mass.
+    2. *Second Law* ($#sym.Sigma F = m a$): The acceleration of an object is directly related to the net force acting upon it and inversely related to its mass.
 
     #admonition(type: "equation")[
       If:
@@ -68,12 +87,13 @@
       $ F_"in" = F_"out" $
     ]
   ],
-  box(height: 40%)[
-    #image("./understand/Newton's First Law.excalidraw.svg")
-    #image("./understand/Newton's Second Law.excalidraw.svg")
-    #image("./understand/Newton's Third Law.excalidraw.svg")
-  ],
-  table.cell(colspan: 2)[
+  stack(
+    spacing: 10pt,
+    image("understand/Newton's First Law.excalidraw.svg", fit: "contain", height: 115pt),
+    image("understand/Newton's Second Law.excalidraw.svg", fit: "contain", height: 110pt),
+    image("understand/Newton's Third Law.excalidraw.svg", fit: "contain", height: 170pt)
+  ),
+  grid.cell(colspan: 2)[
     == How do they relate to the drivetrain?
 
     Newton's laws of motion directly influence the behavior of a drivetrain in the following ways:

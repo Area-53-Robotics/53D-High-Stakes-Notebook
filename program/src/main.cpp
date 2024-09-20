@@ -1,4 +1,5 @@
 #include "main.h"
+#include "pros/misc.h"
 
 /**
  * A callback function for LLEMU's center button.
@@ -23,36 +24,10 @@ void on_center_button() {
  * to keep execution time for this mode under a few seconds.
  */
 void initialize() {
-	// Initializes the brain display
 	pros::lcd::initialize();
 	pros::lcd::set_text(1, "Hello PROS User!");
 
 	pros::lcd::register_btn1_cb(on_center_button);
-
-
-	// Sets the kicker motor to hold its position when it is stopped
-	KickerMotor.set_brake_mode(pros::E_MOTOR_BRAKE_HOLD);
-	// Brakes the kicker motor when the program is initialized
-	KickerMotor.brake();
-	// Clears the controller screen
-	controller.clear();
-	// Calibrates the LemLib chassis (takes 3 seconds)
-	chassis.calibrate();
-
-	// Prints LemLib chassis position values to the computer terminal for debugging purposes
-	pros::Task terminalTask([&]() {
-        while (true) {
-            // print robot location to the brain screen
-            std::cout << "X: " << chassis.getPose().x << std::endl; // x
-            std::cout << "Y: " << chassis.getPose().y << std::endl; // y
-            std::cout << "Theta: " << chassis.getPose().theta << std::endl; // heading
-            std::cout << "Inertial: " << Inertial.get_heading() << std::endl; // heading
-			std::cout << "Kicker: " << KickerMotor.get_position() << std::endl;
-            std::cout << "----------------------------" << std::endl;
-            // delay to save resources
-            pros::delay(500);
-        }
-    });
 }
 
 /**
@@ -71,4 +46,57 @@ void disabled() {}
  * This task will exit when the robot is enabled and autonomous or opcontrol
  * starts.
  */
-void competition_initialize() {}
+void competition_initialize() {
+    CreateMenuDropdown();
+    OpenAutonSelectMenu();
+}
+
+float GetCurveOutput(int input) {
+    return (std::exp(-20/12.7)+std::exp((std::abs(input)-127)/12.7)*(1-std::exp(-20/12.7))) * input;
+}
+
+void MotorAccelerationTest() {
+	std::cout << "Time, BLM, MLM, FLM, BRM, MRM, FRM" << std::endl;
+	unsigned int loopCount = 0;
+
+	while(true) {
+		std::cout << (loopCount * 20) << ", ";
+			
+		pros::delay(20);
+	}
+}
+
+/**
+ * Runs the operator control code. This function will be started in its own task
+ * with the default priority and stack size whenever the robot is enabled via
+ * the Field Management System or the VEX Competition Switch in the operator
+ * control mode.
+ *
+ * If no competition control is connected, this function will run immediately
+ * following initialize().
+ *
+ * If the robot is disabled or communications is lost, the
+ * operator control task will be stopped. Re-enabling the robot will restart the
+ * task, not resume it from where it left off.
+ */
+void opcontrol() {
+    // CreateMenuDropdown();
+    // OpenAutonSelectMenu();
+
+	while (true) {
+		// Tank control scheme
+		int LYAxis = Controller.get_analog(ANALOG_LEFT_Y); // Gets amount forward/backward from left joystick
+		int RYAxis = Controller.get_analog(ANALOG_RIGHT_Y);  // Gets the turn left/right from right joystick
+		
+		left_mg.move(GetCurveOutput(LYAxis)); // Sets left motor voltage
+		right_mg.move(GetCurveOutput(RYAxis)); // Sets right motor voltage
+		
+		if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) IntakeMotor.move_velocity(450);
+		else if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) IntakeMotor.move(-127);
+		else IntakeMotor.brake();
+
+		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) PneumaticClamp();
+
+		pros::delay(20); // Run for 20 ms then update
+	}
+}

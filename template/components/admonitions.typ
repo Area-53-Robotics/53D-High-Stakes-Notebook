@@ -102,15 +102,22 @@
     )
 
     #if monthly-schedule != none or yearly-schedule != none or attendance != none [
+      #v(-7pt)
       #line(length: 100%)
+      #v(-7pt)
     ]
 
+    #set list(spacing: 5pt)
+
     #if monthly-schedule != none [
-      - *Monthly Schedule Status:* #monthly-schedule Schedule
+      #if monthly-schedule == "Ahead" [
+        - *Monthly Schedule Status:* #monthly-schedule of Schedule
+      ] else [
+        - *Monthly Schedule Status:* #monthly-schedule Schedule
+      ]
     ]
 
     #if yearly-schedule != none [
-      #v(-3pt)
       #if yearly-schedule == "Ahead" [
         - *Yearly Schedule Status:* #yearly-schedule of Schedule
       ] else [
@@ -119,7 +126,6 @@
     ]
 
     #if attendance != none [
-      #v(-3pt)
       - *Attendance:* #attendance
     ]
   ]

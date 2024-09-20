@@ -4,16 +4,17 @@
   title: "Autonomous - Movement",
   type: "brainstorm",
   date: datetime(year: 2024, month: 2, day: 12),
-  attendance: "Ajibola, Ishika, Eric, Makhi",
+  attendance: ("Ajibola", "Ishika"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
-// There are multiple methods of programming an autonomous, ranging from DIY implementations to libraries made by other teams. We brainstormed and researched a few of them to ensure that we have multiple options available to us.
+There are multiple methods of programming an autonomous, ranging from DIY implementations to libraries made by other teams. We brainstormed and researched a few of them to ensure that we have multiple options available to us.
 
 #pro-con(
   name: "Relative Movements",
   image: image("./brainstorm-movement/relative-movements.excalidraw.svg"),
+  description: [Temporary],
   pros: [
     - *Low Difficulty* - Easy to understand and write code for
     - *Implementation Time* - Because we have been using relative movements until this point, we already have the code necessary to implement it
@@ -33,6 +34,7 @@
 #pro-con(
   name: "PID",
   image: image("./brainstorm-movement/PID.excalidraw.svg"),
+  description: [Temporary],
   pros: [
     - *Heavily Documented* - PID is widely used by other teams and for applications outside of VRC, so there will be a lot of documentation and assistance available if we need it
     - *Implementation Time* - While it takes more time to implement PID than relative movements, PID can be implemented relatively quickly, especially when done with a library
@@ -48,6 +50,7 @@
 #pro-con(
   name: "Pure Pursuit",
   image: image("./brainstorm-movement/pure-pursuit.excalidraw.svg"),
+  description: [Temporary],
   pros: [
     - *Smooth Movement* - Pure Pursuit gives the smoothest movement and turns out of any autonomous implementation
   ],

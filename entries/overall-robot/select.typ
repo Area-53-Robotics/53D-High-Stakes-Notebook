@@ -9,6 +9,16 @@
   witnessed: "Ishika",
 )
 
+#to-do(
+  date: datetime(year: 2024, month: 6, day: 15),
+  monthly-schedule: "Ahead",
+  yearly-schedule: "On",
+  (
+    (true, "Select an overall robot idea to build for the first robot iteration.", "Everyone"),
+    (true, "Plan the implementation of the overall robot idea.", "Everyone"),
+  )
+)
+
 After brainstorming different robot ideas, we had to pick one to begin building. This will be a very important decision as it will determine what we can build in the future. As such, we identified as much criteria as possible to make an accurate judgement.
 
 #decision-matrix-criteria[
@@ -24,7 +34,7 @@ After brainstorming different robot ideas, we had to pick one to begin building.
 #double-decision-matrix(
   criteria: (
     ("Durability", 4),
-    ("Mobility",5),
+    ("Mobility", 5),
     ("Space Use", 4),
     ("Intake", 5),
     ("Clamp Ability", 4),
@@ -43,5 +53,5 @@ After brainstorming different robot ideas, we had to pick one to begin building.
 )
 
 #admonition(type: "select", title: "Final Selection")[
-  After careful consideration the design by Jin was selected, as the subsystems are supported well and the whole design looks sturdy and uses space well. However, the intake area is a little crowded, which could block rings from being scored. The clamp is quite well supported but it might slip off during a match. The movable intake should allow for wall stake scoring if it can move high up enough.
+  After careful consideration Jin's design was selected, as the subsystems are supported well and the whole design is sturdy and space efficient. However, the intake area is a little crowded, which could block rings from being scored. The clamp is quite well supported but it might slip off during a match. The movable intake should allow for wall stake scoring if it can move high up enough.
 ]

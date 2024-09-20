@@ -4,7 +4,7 @@
   title: "Autonomous - Implementation",
   type: "brainstorm",
   date: datetime(year: 2024, month: 2, day: 13),
-  attendance: "Ajibola, Ishika",
+  attendance: ("Ajibola", "Ishika"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
@@ -12,9 +12,9 @@
 #to-do(
   date: datetime(year: 2024, month: 2, day: 13),
   (
-    (true, "Brainstorm possible implementation methods for PID (Everyone)"),
-    (true, "Select the best implementation method using a decision matrix (Everyone)"),
-    (true, "Build the kicker upgrades. (Everyone)"),
+    (true, "Brainstorm possible implementation methods for PID", "Everyone"),
+    (true, "Select the best implementation method using a decision matrix", "Everyone"),
+    (true, "Build the kicker upgrades.", "Everyone"),
   )
 )
 
@@ -23,6 +23,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
 #pro-con(
   name: "DIY Implementation",
   image: circle(fill: gray, image("/assets/logos/logo.svg")),
+  description: [Temporary],
   pros: [
     - *Customizability* - We would be able to add and change as many features as we desire, and make the algorithms specific to the robot
     - *Revertability* - Using Git commands, we can easily revert any breaking changes we make to the codebase
@@ -42,6 +43,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
 #pro-con(
   name: "LemLib",
   image: image("./brainstorm-implementation/LemLib.png", height: 5em),
+  description: [Temporary],
   pros: [
     - *Actively Maintained* - LemLib will continue being developed throughout this season, so if we encounter problems with the library we can request a fix from the developers
     - *Robust Movement Options* - LemLib has linear PID movement, turning PID movement, boomerang PID movement (curved movement), and Pure Pursuit
@@ -58,6 +60,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
 #pro-con(
   name: "ARMS",
   image: image("./brainstorm-implementation/ARMS.svg"),
+  description: [Temporary],
   pros: [
     - *PROS 3 Compatibility* - It has the greatest compatibility with PROS, which will make debugging issues easier
   ],

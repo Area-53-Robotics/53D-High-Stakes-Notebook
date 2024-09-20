@@ -18,3 +18,4 @@ We utilized many resources throughout the season. Here is the complete list of t
 + Georgia Tech Block Diagrams Instructional Materials
 + Rexpository - "a series of the best papers on control theory and robotic systems": https://github.com/rexpository/Best-Control-Theory-Resources
 + An Introduction to PID Controllers by George Gillard (2017): https://georgegillard.com/component/osdownloads/routedownload/robotics/introduction-to-pid-controllers-2nd-edition
++ VEX Gear Ratios Spreadsheet: https://docs.google.com/spreadsheets/d/1RSoLv3tnpiCgFyHb0QayxK-42r9MgVRD_4QQmeFM618/edit?gid=0#gid=0

@@ -10,6 +10,8 @@
 )
 
 = Theoretical Maximum Score
+We experimented with the VRC Hub app to determine what the maximum possible score would be in a round, and the objectives that are needed to obtain it. This allowed us to determine which objectives provide the most points, which will be critical when determining our overall robot plan.
+
 #show table.cell.where(y: 0): strong
 #show table.cell.where(y: 13): strong
 
@@ -42,8 +44,9 @@
 #grid(
   columns: 2,
   align: center + horizon,
-  image("/assets/field-elements/theoretical-maximum-score.png", width: 80%),
+  image("/assets/field-elements/theoretical-maximum-score.png", width: 70%),
   pie-chart(
+    radius: 3.5,
     data-type: "pts",
     (
       ("Auton Bonus", 6),
@@ -56,4 +59,15 @@
   ),
 )
 
+= Scoring Observations
+- Scoring rings on the mobile goals is the most efficient way to earn points during the game.
+- Climbing is one of the biggest factors in this year's game and getting at least a first tier climb should be a priority.
+- Using the four corners for strategy is very efficient in both doubling the points of your rings and lowering the points of your opponents' rings.
+- The stakes on the top of the ladder and on the walls are hard to reach, but will likely be important tiebreakers in close rounds.
 
+= Potential Strategies
++ In order to achieve the theoretical highest score possible, scoring rings on mobile goals is the fastest method. The most efficient plan would be to entirely load two mobile goals and place them in the positive corners before placing rings on as many wall stakes as possible.
+
++ Elevation is important, the theoretical maximum score is very low this season and almost a third of the maximum possible points are in relation to climbing. We could build a passive clamp so that during the last few seconds of the match, we could easily obtain a tier one climb.
+
++ Since most teams will be rushing for mobile goals we will need a speedy yet powerful robot to take and hold on to goals to score points while having enough space for other important mechanisms.
