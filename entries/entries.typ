@@ -35,6 +35,7 @@
 
 #include "./overall-robot/brainstorm-2.typ"
 #include "./overall-robot/select-2.typ"
+#include "./overall-robot/identify.typ"
 // TBD
 #include "misc-program/github-workflows.typ"
 #include "pre-auton-menu/program-pre-auton-menu.typ"
@@ -42,3 +43,4 @@
 #include "odometry/select-movement.typ"
 #include "odometry/brainstorm-implementation.typ"
 #include "odometry/select-implementation.typ"
+
