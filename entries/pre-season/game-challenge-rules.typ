@@ -320,7 +320,7 @@ There are multiple categories of rules, each of which apply to different aspects
   #rotate(
     90deg,
     reflow: true,
-    image("/assets/field-elements/skills-field.png", width: 250pt)
+    image("/assets/field-elements/skills-field.png", width: 248pt)
   )
 ]
 

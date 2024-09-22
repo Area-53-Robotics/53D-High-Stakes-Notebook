@@ -18,24 +18,14 @@
 #include "drivetrain-1/select-wheel-types.typ"
 #include "drivetrain-1/brainstorm-gear-ratio.typ"
 #include "drivetrain-1/select-gear-ratio.typ"
-#include "drivetrain-1/program-driver-control.typ"
 
 // August
+#include "overall-robot/identify-minnesota-sig.typ"
 #include "overall-robot/brainstorm-2.typ"
+#include "overall-robot/select-2.typ"
 
-#include "./pre-auton-menu/program-pre-auton-menu.typ"
+#include "drivetrain-1/program-driver-control.typ"
 
-#include "./drivetrain-1/identify.typ"
-#include "./drivetrain-1/understand.typ"
-#include "./drivetrain-1/brainstorm-drive-configurations.typ"
-#include "./drivetrain-1/program-driver-control.typ"
-
-#include "./odometry/select-movement.typ"
-#include "./odometry/select-implementation.typ"
-
-#include "./overall-robot/brainstorm-2.typ"
-#include "./overall-robot/select-2.typ"
-#include "./overall-robot/identify.typ"
 // TBD
 #include "misc-program/github-workflows.typ"
 #include "pre-auton-menu/program-pre-auton-menu.typ"
@@ -43,4 +33,3 @@
 #include "odometry/select-movement.typ"
 #include "odometry/brainstorm-implementation.typ"
 #include "odometry/select-implementation.typ"
-

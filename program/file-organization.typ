@@ -74,7 +74,7 @@
         - #icon(color: blue, "brand-cpp") #program-file(name: "motorMenu.cpp", label: <motorMenu.cpp>)[Motor telemetry screen]
         - #icon(color: blue, "brand-cpp") #program-file(name: "notesMenu.cpp", label: <notesMenu.cpp>)[Notes viewer screen]
         - #icon(color: blue, "brand-cpp") #program-file(name: "sensorMenu.cpp", label: <sensorMenu.cpp>)[Sensor telemetry screen]
-      - #icon("folder-open") #program-folder(name: "subsystemFiles", num: 2, bold: true, under: false)[Individual subsystem code] 
+      - #icon("folder-open") #program-folder(name: "subsystemFiles", num: 3, bold: true, under: false)[Individual subsystem code] 
         - #icon(color: blue, "brand-cpp") #program-file(name: "clamp.cpp", label: <clamp.cpp>)[Clamp code and helper functions]
       - #icon(color: blue, "brand-cpp") #program-file(name: "autonomous.cpp", label: <autonomous.cpp>)[Autonomous period program]
       - #icon(color: blue, "brand-cpp") #program-file(name: "autonSelector.cpp", label: <autonSelector.cpp>)[Global auton selector menu functions]

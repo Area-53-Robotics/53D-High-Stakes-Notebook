@@ -1,7 +1,7 @@
 #import "/template/entries.typ": *
 
 #show: create-program-entry.with(
-  title: "53D_Over_Under/src/brainMenus/"
+  title: "53D_HighStakes/src/brainMenus/"
 )
 
 = autonMenu.cpp <autonMenu.cpp>

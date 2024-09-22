@@ -44,8 +44,8 @@ nix run nixpkgs#typst
 ```
 3. Clone the repository
 ```sh
-git clone https://github.com/Area-53-Robotics/53D-Over-Under-Notebook.git
-cd 53D-Over-Under-Notebook
+git clone https://github.com/Area-53-Robotics/53D-Notebook.git
+cd 53D-Notebook
 ```
 4. Compile the project
 ```sh

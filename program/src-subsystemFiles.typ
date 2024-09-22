@@ -1,7 +1,7 @@
 #import "/template/entries.typ": *
 
 #show: create-program-entry.with(
-  title: "53D_Over_Under/src/subsystemFiles/"
+  title: "53D_HighStakes/src/subsystemFiles/"
 )
 
 = clamp.cpp <clamp.cpp>

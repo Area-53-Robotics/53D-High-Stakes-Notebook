@@ -2,7 +2,7 @@
 #import "/template/globals.typ": *
 
 #show: create-program-entry.with(
-  title: "53D_Over_Under/src/"
+  title: "53D_HighStakes/src/"
 )
 
 = autonomous.cpp <autonomous.cpp>
