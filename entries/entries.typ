@@ -26,6 +26,9 @@
 
 #include "drivetrain-1/program-driver-control.typ"
 
+// September
+#include "competition/area-53-scrimmage.typ"
+
 // TBD
 #include "misc-program/github-workflows.typ"
 #include "pre-auton-menu/program-pre-auton-menu.typ"

@@ -1,4 +1,4 @@
-#import "./colors.typ": *
+#import "colors.typ": *
 
 // Global State
 #let frontmatter-page-counter = counter("frontmatter-page-counter")

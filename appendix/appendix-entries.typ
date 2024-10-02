@@ -1,5 +1,3 @@
-#import "/template/template.typ": *
-
 #include "glossary.typ"
 #include "resources.typ"
 #include "controller.typ"

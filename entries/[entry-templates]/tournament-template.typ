@@ -28,19 +28,19 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    #
+    - O
   ],
   auton_notes: [
-    - #
+    - O
   ],
   match_notes: [
-    - #
+    - O
   ],
   subsystems: (
-    overperformed: "",
-    satisfactory: "",
-    underperformed: "",
-    disabled: "Drivetrain, Intake, Wings, Elevation, Kicker",
+    overperformed: none,
+    satisfactory: none,
+    underperformed: none,
+    disabled: ("Drivetrain", "Intake", "Wings", "Elevation", "Kicker"),
   )
 )
 

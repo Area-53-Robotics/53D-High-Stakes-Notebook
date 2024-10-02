@@ -1,10 +1,8 @@
-#import "./entries.typ": *
-#import "./colors.typ": *
-#import "./icons/icons.typ": *
-#import "./components/components.typ": *
-
-#import "/appendix/resources.typ": *
-#import "/appendix/innovate.typ": *
+#import "entries.typ": *
+#import "colors.typ": *
+#import "icons/icons.typ": *
+#import "components/components.typ": *
+#import "utils/utils.typ": *
 
 #let notebook(
   team: "",
@@ -13,7 +11,6 @@
   cover: [],
   year: "",
   season: "",
-  innovate-form: false,
   body,
 ) = {
   // Styling rules
@@ -92,7 +89,7 @@
 
   print-appendix-entries()
 
-  signature-list(chronological: true)
+  // signature-list(chronological: true)
 
   // entry-page-list()
 }

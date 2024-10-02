@@ -1,6 +1,6 @@
-#import "./colors.typ" : *
-#import "./globals.typ": *
-#import "./components/components.typ": *
+#import "colors.typ" : *
+#import "globals.typ": *
+#import "components/components.typ": *
 
 #let create-entry(
   title: "",

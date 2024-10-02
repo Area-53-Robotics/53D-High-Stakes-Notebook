@@ -1,5 +1,4 @@
-#import "/template/entries.typ": *
-#import "/template/components/components.typ": *
+#import "/template/template.typ": *
 #import "../packages.typ": codetastic
 #import codetastic: qrcode
 

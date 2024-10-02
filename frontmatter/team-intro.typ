@@ -1,6 +1,4 @@
-#import "/template/entries.typ": *
-#import "/template/colors.typ" : *
-#import "/template/components/components.typ": *
+#import "/template/template.typ": *
 #import "../packages.typ": showybox
 #import showybox: showybox
 

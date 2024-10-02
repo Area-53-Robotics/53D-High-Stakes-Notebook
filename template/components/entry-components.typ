@@ -1,6 +1,6 @@
 #import "../icons/icons.typ": *
 #import "../globals.typ": frontmatter-page-counter, entry-page-counter, appendix-page-counter, entries, signature-type, page-number-offset
-#import "./entry-lists.typ": *
+#import "../utils/entry-lists.typ": *
 
 #let signature-metadata = (
   "Ajibola": (name: "Ajibola Ajani", signature: text(font: "Edwardian Script ITC", "Ajibola Ajani")),

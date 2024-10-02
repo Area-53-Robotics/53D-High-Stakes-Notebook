@@ -1,4 +1,4 @@
-#import "/template/entries.typ": *
+#import "/template/template.typ": *
 
 #show: create-appendix-entry.with(
   title: "Pre-Match Checklist",

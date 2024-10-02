@@ -1,5 +1,4 @@
-#import "/template/entries.typ": *
-#import "/template/globals.typ": page-number-offset
+#import "/template/template.typ": *
 
 #show: create-appendix-entry.with(
   title: "Innovate Award Submission Information Form",

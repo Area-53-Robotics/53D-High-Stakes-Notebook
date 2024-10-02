@@ -1,4 +1,3 @@
-#import "/template/entries.typ": *
 #import "/template/template.typ": *
 
 #glossary-entry(

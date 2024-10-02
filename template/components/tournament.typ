@@ -1,5 +1,7 @@
-#import "../template-packages.typ": showybox
+#import "pie-chart.typ": *
+#import "../template-packages.typ": showybox, cetz
 #import showybox: showybox
+#import cetz: *
 
 #let tournament-match(
   match: "",
@@ -20,6 +22,13 @@
 ) = {
   assert(auton in ("Red", "Blue", "Tie"), message: "Invalid auton winner")
   
+  for category in subsystems {
+    assert(
+      (type(category) == str) or (type(category) == array),
+      message: "Tournament match subsystem reflections should be of type array or string"
+    )
+  }
+
   show: showybox.with(
     frame:(
       border-color: {
@@ -173,7 +182,7 @@
           radius: 5pt,
           width: 100%
         )[
-          #text(size: 13pt)[*Strategy:*] \
+          #text(size: 13pt)[*Strategy:*]
           #strategy
         ],
 
@@ -181,7 +190,7 @@
           radius: 5pt,
           width: 100%
         )[
-          #text(size: 13pt)[*Auton Notes:*] \
+          #text(size: 13pt)[*Auton Notes:*]
           #auton_notes
         ],
         
@@ -189,7 +198,7 @@
           radius: 5pt,
           width: 100%
         )[
-          #text(size: 13pt)[*Match Notes:*] \
+          #text(size: 13pt)[*Match Notes:*]
           #match_notes
         ],
 
@@ -197,16 +206,82 @@
           radius: 5pt,
           width: 100%
         )[
-          #text(size: 13pt)[*Subsystem Performance:*] \
-          - Overperformed: #subsystems.overperformed \
-          - Satisfactory: #subsystems.satisfactory \
-          - Underperformed: #subsystems.underperformed
-          #if (subsystems.disabled != none) [
+          #text(size: 13pt)[*Subsystem Performance:*]
+          #if type(subsystems.overperformed) == array [
+            - Overperformed: #subsystems.overperformed.join(", ")
+          ] else [
+            - Overperformed: #subsystems.overperformed
+          ]
+          #if type(subsystems.satisfactory) == array [
+            - Satisfactory: #subsystems.satisfactory.join(", ")
+          ] else [
+            - Satisfactory: #subsystems.satisfactory
+          ]
+          #if type(subsystems.underperformed) == array [
+            - Underperformed: #subsystems.underperformed.join(", ")
+          ] else [
+            - Underperformed: #subsystems.underperformed
+          ]
+          #if type(subsystems.disabled) == array [
+            - Disabled: #subsystems.disabled.join(", ")
+          ] else [
             - Disabled: #subsystems.disabled
           ]
         ],
 
       )
     ],
+  )
+}
+
+#let subsystem-analysis(
+  reflection: none,
+  radius: 3,
+  overperformed: 0,
+  satisfactory: 0,
+  underperformed: 0,
+  disabled: 0,
+) = {
+  grid(
+    columns: (1fr, 1fr),
+    align: (x, _) =>
+      if x == 0 {left + top}
+      else if x == 1 {center + horizon},
+
+    {
+      reflection
+
+      show table.cell.where(y: 0): it => strong(it)
+
+      align(center)[
+        #table(
+          columns: 2,
+          rows: 4,
+          align: center + horizon,
+          fill: (_, y) =>
+            if y == 0 {gray.lighten(20%)}
+            else {white},
+
+          [Performance], [Matches (mts)],
+          [Overperformed], [#overperformed],
+          [Satisfactory], [#satisfactory],
+          [Underperformed], [#underperformed],
+          [Disabled], [#disabled],
+        )
+      ]
+    },
+
+    pie-chart(
+      radius: 3.5,
+      outer-label-radius: 127%,
+      data-type: "mts", 
+      colors: (),
+      (
+        ("Over-\nperformed", overperformed, green),
+        ("Satisfactory", satisfactory, yellow),
+        ("Under-\nperformed", underperformed, red),
+        ("Disabled", disabled, gray),
+      ),
+    )
   )
 }

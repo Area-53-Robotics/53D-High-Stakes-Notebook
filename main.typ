@@ -10,6 +10,5 @@
   count: (current: 1, total: 1),
   cover: circle(align(center + horizon)[#image("/assets/logos/logo.svg", width: 110%)], fill: black),
   year: "2024 - 2025",
-  season: "High Stakes",
-  innovate-form: false
+  season: "High Stakes"
 )
