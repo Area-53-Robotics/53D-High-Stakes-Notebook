@@ -55,6 +55,15 @@ The source code for our notebook can be accessed on
   ],
   [
     == QR Code
-    #qrcode("https://github.com/Area-53-Robotics/53D-Notebook", size: 5pt)
+    #qrcode("https://github.com/Area-53-Robotics/53D-Notebook", size: 4pt)
   ],
 )
+
+#admonition(type: "note", title: "Formatting Information: Code Blocks")[
+  #box(fill: white)[
+  ```cpp
+  // Comments look like this, read them to get info on what the code does
+  std::String info = "Code looks like this"
+  ```
+  ]
+]

@@ -1,5 +1,8 @@
 #import "/template/template.typ": *
 
+#import "@preview/codly:1.0.0": *
+#show: codly-init.with()
+
 #show: create-entry.with(
   title: "Pre-Auton Menu",
   type: "program",
@@ -80,7 +83,7 @@ void CreateMenuDropdown()
 This creates a dropdown menu that looks like this:
 #brain-image("program/menu-dropdown.png")
 
-To add functionality to each button, I created a callback function that is triggered every time an option in the dropdown is selected:
+To add functionality to each button, we created a callback function that is triggered every time an option in the dropdown is selected:
 
 ```cpp
 void MenuDropdownCB(lv_event_t * e)
@@ -97,7 +100,7 @@ void MenuDropdownCB(lv_event_t * e)
 }
 ```
 
-The next step was to make a text display area that would be consistent between the screens of the menu. I did this by creating a rectangle object with a set width for the text that could be displayed in it:
+The next step was to make a text display area that would be consistent between the screens of the menu. we did this by creating a rectangle object with a set width for the text that could be displayed in it:
 
 ```cpp
 lv_obj_t * menuRectangle;
@@ -180,38 +183,167 @@ Auton::Auton(const char * autonName, const char * autonDescription, std::functio
 = Autonomous Selection Screen
 The autonomous selection screen was the primary reason for the creation of the Pre-Auton Menu, so a lot of time was dedicated to creating it.
 
-First, we created a main function to load all of the components of the screen:
-
+First, we created a list that contains buttons for all of the available autons:
+#code-header[src/brainMenus/autonMenu.cpp]
 ```cpp
-void OpenAutonSelectMenu() {
-  lv_scr_load_anim(autonScr, LV_SCR_LOAD_ANIM_NONE, 0, 0, false);
+void CreateAutonList()
+{
+    // Creates an empty list object
+    autonList = lv_list_create(autonScr);
+    // Sets the size of the list to 160px wide by 185px tall
+    lv_obj_set_size(autonList, 160, 185);
+    // Aligns the list to the top right of the screen, offset by 5px to the right and 50px down
+    lv_obj_align(autonList, LV_ALIGN_TOP_LEFT, 5, 50);
 
-  CreateAutonList();
-  CreateMenuRectangle();
-
-  if(autonSelect == 1) lv_event_send(leftQualsBtn, LV_EVENT_CLICKED, NULL);
-  else if(autonSelect == 2) lv_event_send(rightQualsBtn, LV_EVENT_CLICKED, NULL);
-  else if(autonSelect == 3) lv_event_send(leftElimsBtn, LV_EVENT_CLICKED, NULL);
-  else if(autonSelect == 4) lv_event_send(rightElimsBtn, LV_EVENT_CLICKED, NULL);
-  else if(autonSelect == 5) lv_event_send(fullAWPBtn, LV_EVENT_CLICKED, NULL);
-  else if(autonSelect == 6) lv_event_send(noAutonBtn, LV_EVENT_CLICKED, NULL);
-  else if(autonSelect == 7) lv_event_send(pSkillsBtn, LV_EVENT_CLICKED, NULL);
+    // For each autonomous...
+    for (int i = 0; i < Auton::autonCount; i++) {
+        // Create a button for the autonomous in the button list
+        AutonButtons[i] = lv_list_add_btn(autonList, NULL, AutonObjectList[i].name);
+        // Assign a callback event that is triggered when the button is pressed
+        lv_obj_add_event_cb(AutonButtons[i], AutonListCB, LV_EVENT_CLICKED, NULL);
+    }
 }
 ```
 
-We then created a list menu that contains the buttons to select an auton.
+After creating the buttons, we still needed to give them functionality. To do this, we created a callback function that is called everytime one of the auton buttons is pressed.
+
+#code-header[src/brainMenus/autonMenu.cpp]
 ```cpp
+void AutonListCB(lv_event_t * e)
+{
+    // Stores the pointer to the button that triggered the callback event
+    lv_obj_t * obj = lv_event_get_target(e);
+    // Stores the pointer to the label object on the rectangle
+    lv_obj_t * label = lv_obj_get_child(menuRectangle, 0);
+
+    // We need to determine which auton corresponds with the button that was pressed, so we iterate through each available auton
+    for(int i = 0; i < Auton::autonCount; i++) {
+        // Then, we compare the name of the button to the auton name we are testing, and if they are the same...
+        if(strcmp(lv_list_get_btn_text(autonList, obj), AutonObjectList[i].name) == 0) {
+            // We set the id of the newly selected auton into the global autonSelect variable
+            autonSelect = i;
+            // Then we load the description of the auton onto the rectangle on the brain screen
+            lv_label_set_text(label, AutonObjectList[i].description);
+            // Only one auton button could have been pressed, so we can stop iterating through the available autons now
+            break;
+        }
+    }
+}
 ```
 
-Lastly, we made it so that when an auton button is pressed, its description is loaded onto the menu screen.
+Lastly, we created a main function to load all of the components of the auton screen. This function gets called when the Pre-Auton menu is first initialized and everytime the "Autons" button in the Pre-Auton menu dropdown is pressed.
+
+#code-header[src/brainMenus/autonMenu.cpp]
+```cpp
+void OpenAutonSelectMenu() {
+    // Loads the auton select screen
+    lv_scr_load_anim(autonScr, LV_SCR_LOAD_ANIM_NONE, 0, 0, false);
+
+    // Loads the auton button list
+    CreateAutonList();
+    // Loads the rectangle that will display auton descriptions
+    CreateMenuRectangle();
+
+    // Loads the description for the currently selected auton onto the screen
+    for (int i = 0; i < Auton::autonCount; i++) {
+        if(autonSelect == i) {
+            lv_event_send(AutonButtons[i], LV_EVENT_CLICKED, NULL);
+            break;
+        }
+    }
+}
+```
+
+When the auton screen main function is called, the brain display looks like this:
+#brain-image("program/auton-screen.png")
 
 = Motor Telemetry Screen
-The purpose of this screen of the pre-auton menu is to monitor key motor information before the round. Most importantly, we want to be able to verify that the motors are plugged in and that they are at a safe temperature.
+The purpose of this screen of the Pre-Auton menu is to monitor key motor information before the round. Most importantly, we want to be able to verify that the motors are plugged in and that they are at a safe temperature.
 
 == Motor Object Management
-Similar to the auton selection screen, in order for the motor telemetry screen to display motor information, the program has to have an easily accessible list of the motors and motor groups.
+Similar to the auton selection screen, in order for the motor telemetry screen to display motor information, the program needs the following information:
+- List of the motor names
+- List of the motor objects
+- List of the motor groups (objects that control more than one motor)
+
+To store the lists of motor names, motor objects, and motor groups, we created arrays that can be manually edited by our programmers.
+
+#code-header[src/global.cpp]
+```cpp
+// Array that stores strings representing the name of each motor
+std::array<std::string,7> MotorNameList = {"BL", "ML", "FL", "BR", "MR", "FR", "Intake"};
+// Array that stores pointers to all the independent motor objects
+std::array<pros::Motor*,1> MotorObjectList = {&IntakeMotor};
+// Array that stores pointers to all the motor groups
+std::array<pros::MotorGroup*,2> MotorGroupObjectList = {&left_mg, &right_mg};
+```
 
 Next, the program needs to have a list of the number of motors in each motor group, as well as the total number of motors. To do this, when the robot program is started, a function automatically calculates those numbers.
+
+#code-header[src/global.cpp]
+```cpp
+void InitMotorArraySizes() {
+    // Obtain the number of motors in each motor group
+    for(pros::MotorGroup* motorGroup : MotorGroupObjectList) {
+        MotorArraySizes.push_back(motorGroup->size());
+    }
+    // Obtain the number of independent motor objects
+    MotorArraySizes.push_back(MotorObjectList.size());
+
+    // Accumulate the motor counts into one variable, representing the total number of motors
+    for(int size : MotorArraySizes) {
+        motorCount += size;
+    }
+}
+```
+
+== Motor Telemetry Table
+// Might want to make heading scheme between auton screen and motor screen documentation consistent 
+
+#code-header[src/brainMenus/motorMenu.cpp]
+```cpp
+void CreateMotorTable() {
+    // Creates the motor telemetry table
+    motorTable = lv_table_create(motorScr);
+
+    // Sets the number of rows in the table to the number of motors
+    lv_table_set_row_cnt(motorTable, motorCount);
+    // Sets the number of columns in the table to 4 (motor name & 3 telemetry values)
+    lv_table_set_col_cnt(motorTable, 4);
+
+    // Sets the width of the first column to 74px and the width of the other 3 columns to 76px
+    lv_table_set_col_width(motorTable, 0, 74);
+    lv_table_set_col_width(motorTable, 1, 76);
+    lv_table_set_col_width(motorTable, 2, 76);
+    lv_table_set_col_width(motorTable, 3, 76);
+
+    // Sets the size of the table to 305px wide by 230px tall 
+    lv_obj_set_size(motorTable, 305, 230);
+    // Adjusts the vertical padding of the text in the cells depending on the number of rows in the table
+    lv_obj_set_style_pad_ver(motorTable, (111 / motorCount) - 5, LV_PART_ITEMS);
+    // Sets the horizontal padding of the text in the cells to 2px
+    lv_obj_set_style_pad_hor(motorTable, 2, LV_PART_ITEMS);
+    // Sets the font in the table to Montserrat size 10
+    lv_obj_set_style_text_font(motorTable, &lv_font_montserrat_10, LV_PART_ITEMS);
+    // Aligns the table to the top right of the screen, offset by 5px to the left and 5px down
+    lv_obj_align(motorTable, LV_ALIGN_TOP_RIGHT, -5, 5);
+
+    // Adds an event callback to to apply the custom drawing (style) to the cells
+    lv_obj_add_event_cb(motorTable, MotorTableCB, LV_EVENT_DRAW_PART_BEGIN, NULL);
+
+    // Fills the cells in the first row of the table with motor names
+    for(int i = 0; i < motorCount; i++) {
+        lv_table_set_cell_value_fmt(motorTable, i, 0, "%s", MotorNameList[i].c_str());
+    }
+
+    // Calls the function that will display the temperature of the motors in the red column of the table
+    UpdateRedColumn(true);
+    // Calls the function that will display the velocity of the motors in the blue column of the table
+    UpdateBlueColumn(true);
+    // Calls the function that will display the torque of the motors in the yellow column of the table
+    UpdateYellowColumn(true);
+}
+```
 
 = Sensor Telemetry Screen
 = Keybind Display Screen

@@ -188,6 +188,14 @@
   ]
 )
 
+#glossary-entry(
+  title: "Pointer",
+  category: "program",
+  definition: [
+    A variable that stores the memory address of another variable or object. One of their primary uses is as a parameter to a function, removing the need to copy objects over and over.
+  ]
+)
+
 // Old Glossary Entries
 /*
 #glossary-entry(

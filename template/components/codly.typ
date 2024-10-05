@@ -19,5 +19,4 @@
     yml: (name: "YAML", icon: program-icon("/template/tabler-icons/brand-github-filled.svg"), color: purple),
   ),
   breakable: true,
-  // set breakable lines to false when the next codly update comes out
 )

@@ -19,10 +19,6 @@
   )
 )
 
-#admonition(type: "note")[
-  The work done today was done during Thanksgiving break, and not at an official Area 53 meeting. Only Ajibola worked on the code, and Ishika peer reviewed it afterward.
-]
-
 We decided to dedicate some time during our break to streamline our our usage of GitHub repositories. #glossary-footnote[Repository] We determined that we can do this by using GitHub workflows, which can be used to automate tasks after commits (changes) are made to a repository.
 
 #admonition(type: "identify", title: "Sub-Identify: GitHub Workflows")[
@@ -33,9 +29,9 @@ We decided to dedicate some time during our break to streamline our our usage of
 ]
 
 = Robot Code Compilation Workflow
-A major problem we have faced throughout the year is that when one of our programmers makes a change to the program and pushes it to the repository, they may not have checked for compilation errors in the program. This can slow down work when another programmer downloads the changes to their computer and are not able to find out where the error is coming from. This type of miscommunication can be especially dangerous during high stress situations such as competitions.
+A major problem we faced last year was that when a programmer made a change to the program and pushed it to the repository, they may not have checked for compilation errors in the program. This can slow down work when another programmer downloads the changes to their computer and are not able to find the source of the error. This type of miscommunication can be especially dangerous during high stress situations such as competitions.
 
-We solved this problem by creating a workflow that tests if the program has no compilation errors. The workflow creates a Linux virtual machine that attempts to build the code in the ```cpp 53D_HighStakes``` repository.
+We solved this problem by creating a workflow that tests if the program compiles without errors. The workflow creates a Linux virtual machine that attempts to build the code in the ```53D_HighStakes``` repository.
 - If the build succeeds, we will get a success message and no further steps are taken
 - If the build fails, we can access the error messages through GitHub and appropriately fix the problem
 
@@ -48,7 +44,7 @@ Here is the final workflow code:
 
 When the workflow succeeds, we get a message in our Discord that looks like this:
 
-#image("github-workflows/pros-build-test.png")
+#image("github-workflows/pros-build-message.png")
 
 = Digital Notebook Compilation Workflow
 One major disadvantage of writing our notebook using Typst #glossary-footnote[Typst] instead of doing it on a platform such as Google Slides is that the members on our team who do not have easy access to the notebook's GitHub repository cannot access the digital notebook on demand.

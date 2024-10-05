@@ -1,7 +1,6 @@
 #import "pie-chart.typ": *
-#import "../template-packages.typ": showybox, cetz
+#import "../template-packages.typ": showybox
 #import showybox: showybox
-#import cetz: *
 
 #let tournament-match(
   match: "",
