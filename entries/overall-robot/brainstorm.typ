@@ -13,7 +13,7 @@
 
 #pro-con(
   name: "Ajibola",
-  image: image("/entries/overall-robot/brainstorm/ajibola-robot-idea.png"),
+  image: image("/entries/overall-robot/brainstorm/ajibola-robot-idea.excalidraw.svg"),
   description: [
     A three wheel drive, a four bar with a claw at the end for mobile goal manipulation and hang, an adjustable intake and a pneumatic clamp. 
   ],

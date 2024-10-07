@@ -73,20 +73,21 @@
               if calc.odd(here().page()) {
                 table(
                   columns: (1fr, 1fr, 1fr, 1fr, 2fr, 35pt),
-                  rows: 4,
+                  rows: (17pt, 17pt, 17pt, 17pt),
                   align: left + horizon,
                   stroke: none,
 
                   table.hline(start: 0, end: 4, stroke: black + 1pt, y: 0),
                   table.hline(start: 0, end: 4, stroke: black + 1pt, y: 1),
-                  table.hline(start: 0, end: 5, stroke: black + 1pt, y: 2),
+                  table.hline(start: 0, end: 4, stroke: black + 1pt, y: 2),
+                  table.hline(start: 5, end: 6, stroke: black + 1pt, y: 2),
                   table.hline(start: 0, end: 5, stroke: black + 1pt, y: 3),
                   table.hline(start: 0, end: 5, stroke: black + 1pt, y: 4),
 
                   table.vline(start: 0, end: 4, stroke: black + 1pt, x: 0),
                   table.vline(start: 3, end: 4, stroke: black + 1pt, x: 1),
                   table.vline(start: 0, end: 4, stroke: black + 1pt, x: 4),
-                  table.vline(start: 3, end: 4, stroke: black + 1pt, x: 5),
+                  table.vline(start: 2, end: 4, stroke: black + 1pt, x: 5),
 
                   table.cell(colspan: 4, align: center)[
                     #link((page: query(selector(<notebook-toc>)).first().location().position().page, x: 0pt, y: 0pt))[
@@ -95,42 +96,47 @@
                       ]
                     ]
                   ],
-                  table.cell(colspan: 2, rowspan: 3, align: center + horizon)[
+                  table.cell(colspan: 1, rowspan: 3, align: center + horizon)[
                     #icon-box(type: entry.type)
                   ],
+                  [],
                   table.cell(colspan: 4)[Designed By: #signature(entry.designed)],
+                  [],
                   table.cell(colspan: 4)[Witnessed By: #signature(entry.witnessed)],
-                  table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")],
-                  table.cell(colspan: 4)[Attendance: #entry.attendance.join(", ")],
-                  table.cell(align: center + horizon)[
+                  table.cell(align: center + horizon, rowspan: 2)[
                     #box(
                       fill: info.color,
                       outset: 5pt,
                       radius: 1.5pt,
-                      height: auto,
+                      height: 20pt,
                       width: 20pt,
-                    )[#counter(page).display()]
+                      text(size: 14pt)[#counter(page).display()]
+                    )
                   ],
+                  table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")],
+                  table.cell(colspan: 4)[Attendance: #entry.attendance.join(", ")],
                 )
               } else {
                 table(
                   columns: (35pt, 2fr, 1fr, 1fr, 1fr, 1fr),
-                  rows: 4,
+                  rows: (17pt, 17pt, 17pt, 17pt),
                   align: left + horizon,
                   stroke: none,
 
                   table.hline(start: 2, end: 7, stroke: black + 1pt, y: 0),
                   table.hline(start: 2, end: 7, stroke: black + 1pt, y: 1),
                   table.hline(start: 2, end: 7, stroke: black + 1pt, y: 2),
+                  table.hline(start: 0, end: 1, stroke: black + 1pt, y: 2),
                   table.hline(start: 1, end: 7, stroke: black + 1pt, y: 3),
                   table.hline(start: 1, end: 7, stroke: black + 1pt, y: 4),
 
-                  table.vline(start: 3, end: 4, stroke: black + 1pt, x: 1),
+                  table.vline(start: 2, end: 4, stroke: black + 1pt, x: 1),
                   table.vline(start: 0, end: 4, stroke: black + 1pt, x: 2),
                   table.vline(start: 3, end: 4, stroke: black + 1pt, x: 5),
                   table.vline(start: 0, end: 4, stroke: black + 1pt, x: 6),
 
-                  table.cell(colspan: 2, rowspan: 3, align: center + horizon)[
+                  [],
+                  table.cell(colspan: 1, rowspan: 3, align: center + horizon)[
                     #icon-box(type: entry.type)
                   ],
                   table.cell(colspan: 4, align: center)[
@@ -140,17 +146,19 @@
                       ]
                     ]
                   ],
+                  [],
                   table.cell(colspan: 4)[Designed By: #signature(entry.designed)],
-                  table.cell(colspan: 4)[Witnessed By: #signature(entry.witnessed)],
-                  table.cell(align: center + horizon)[
+                  table.cell(align: center + horizon, rowspan: 2)[
                     #box(
                       fill: info.color,
                       outset: 5pt,
                       radius: 1.5pt,
-                      height: auto,
+                      height: 20pt,
                       width: 20pt,
-                    )[#counter(page).display()]
+                      text(size: 14pt)[#counter(page).display()]
+                    )
                   ],
+                  table.cell(colspan: 4)[Witnessed By: #signature(entry.witnessed)],
                   table.cell(colspan: 4, align: right)[Attendance: #entry.attendance.join(", ")],
                   table.cell(align: center)[#entry.date.display("[year]/[month]/[day]")]
                 )
