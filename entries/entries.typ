@@ -18,6 +18,8 @@
 #include "drivetrain-1/select-wheel-types.typ"
 #include "drivetrain-1/brainstorm-gear-ratio.typ"
 #include "drivetrain-1/select-gear-ratio.typ"
+#include "drivetrain-1/plan.typ"
+#include "manual-updates/manual-v1-update.typ"
 
 // August
 #include "overall-robot/identify-minnesota-sig.typ"

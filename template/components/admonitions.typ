@@ -49,6 +49,7 @@
     type(date) == datetime,
     message: "To-do list date parameter needs to be of type \"datetime\""
   )
+
   if monthly-schedule != none {
     assert(monthly-schedule in schedule-statuses, message: "Invalid monthly schedule status")
   }
