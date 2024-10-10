@@ -46,7 +46,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
 
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 1.png"),
+      image("minnesota-signature-event/minnesota-picture-1.png"),
       caption: "Them intaking three rings during auton"
     )
   ],
@@ -54,7 +54,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
     - *Auton*: They immediately go for the Mobile Goal that is in front of the stack of rings. Then, they intake the rings quickly so that if an enemy robot tries to intake, they will either accidentally intake their rings or mess up their auton.
   ],
   table.cell[
-    #image("minnesota signature event/Minnesota-picture 2.png", width: 170pt)
+    #image("minnesota-signature-event/minnesota-picture-2.png", width: 170pt)
   ],
   table.cell[
     - *Drivetrain*: They use 6 motors with a 450 RPM drivetrain on 3.25” wheels. They also use all Omnis for better drifting.
@@ -63,8 +63,8 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   table.cell[
     #figure(
       [
-        #image("minnesota signature event/Minnesota-picture 3.png", width: 180pt)
-        #image("minnesota signature event/Minnesota-picture 4.png", width: 180pt)
+        #image("minnesota-signature-event/minnesota-picture-3.png", width: 180pt)
+        #image("minnesota-signature-event/minnesota-picture-4.png", width: 180pt)
       ],
       caption: "From their Pits & Parts interview"
     )
@@ -75,8 +75,8 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   table.cell[
     #figure(
       [
-        #image("minnesota signature event/Minnesota-picture 5.png", width: 165pt)
-        #image("minnesota signature event/Minnesota-picture 6.png", width: 170pt)
+        #image("minnesota-signature-event/minnesota-picture-5.png", width: 165pt)
+        #image("minnesota-signature-event/minnesota-picture-6.png", width: 170pt)
       ],
       caption: "From their Pits & Parts interview"
     )
@@ -100,7 +100,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
 
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 7.png"),
+      image("minnesota-signature-event/minnesota-picture-7.png"),
       caption: "Round 1-16"
     )
   ],
@@ -109,7 +109,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   ],
   table.cell[
     #figure(
-      image("minnesota signature event\Minnesota-picture 8.png"),
+      image("minnesota-signature-event/minnesota-picture-8.png"),
       caption: "Pits & Parts interview"
     )
   ],
@@ -118,7 +118,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   ],
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 9.png"),
+      image("minnesota-signature-event/minnesota-picture-9.png"),
       caption: "Pits & Parts interview"
     )
   ],
@@ -128,13 +128,13 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   ],
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 10.png"),
+      image("minnesota-signature-event/minnesota-picture-10.png"),
       caption: "Pre-Minnesota Signature Event reveal"
     )
     #figure(
       [
-        #image("minnesota signature event/Minnesota-picture 11.png")
-        #image("minnesota signature event/Minnesota-picture 12.png")
+        #image("minnesota-signature-event/minnesota-picture-11.png")
+        #image("minnesota-signature-event/minnesota-picture-12.png")
       ],
       caption: "Pits & Parts interview"
     )
@@ -159,7 +159,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
 
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 13.png"),
+      image("minnesota-signature-event/minnesota-picture-13.png"),
       caption: "Quarterfinals: Them rushing for the mobile goal"
     )
   ],
@@ -168,7 +168,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   ],
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 14.png"),
+      image("minnesota-signature-event/minnesota-picture-14.png"),
       caption: "Pre-season reveal video"
     )
   ],
@@ -179,7 +179,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   ],
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 15.png"),
+      image("minnesota-signature-event/minnesota-picture-15.png"),
       caption: "Pre-season reveal video"
     )
   ],
@@ -201,7 +201,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
 
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 16.png"),
+      image("minnesota-signature-event/minnesota-picture-16.png"),
       caption: "Round of 16 Auton"
     )
   ],
@@ -210,7 +210,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   ],
   table.cell[
     #figure(
-      image("minnesota signature event/Minnesota-picture 17.png"),
+      image("minnesota-signature-event/minnesota-picture-17.png"),
       caption: "Pre-season Reveal"
     )
   ],
@@ -220,8 +220,8 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
   table.cell[
     #figure(
       [
-        #image("minnesota signature event/Minnesota-picture 18.png")
-        #image("minnesota signature event/Minnesota-picture 19.png")
+        #image("minnesota-signature-event/minnesota-picture-18.png")
+        #image("minnesota-signature-event/minnesota-picture-19.png")
       ],
       caption: "Pre-season reveal"
     )
