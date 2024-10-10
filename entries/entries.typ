@@ -10,6 +10,7 @@
 #include "overall-robot/brainstorm.typ"
 #include "overall-robot/select.typ"
 #include "overall-robot/plan.typ"
+#include "management/kanban-board.typ"
 #include "drivetrain-1/identify.typ"
 #include "drivetrain-1/understand.typ"
 #include "drivetrain-1/brainstorm-drive-configurations.typ"
@@ -19,6 +20,8 @@
 #include "drivetrain-1/brainstorm-gear-ratio.typ"
 #include "drivetrain-1/select-gear-ratio.typ"
 #include "drivetrain-1/plan.typ"
+
+// July
 #include "manual-updates/manual-v1-update.typ"
 
 // August
