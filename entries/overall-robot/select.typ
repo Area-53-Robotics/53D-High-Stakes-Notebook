@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Overall Robot Plan",
+  title: "Overall Robot Plan v1",
   type: "select",
   date: datetime(year: 2024, month: 6, day: 15),
   attendance: ("Ajibola", "Ishika", "Eric", "Jin", "Rory", "Makhi"),
@@ -19,7 +19,7 @@
   )
 )
 
-After brainstorming different robot ideas, we had to pick one to begin building. This will be a very important decision as it will determine what we can build in the future. As such, we identified as much criteria as possible to make an accurate judgement.
+After brainstorming different robot ideas, we had to pick one to begin building. This will be a very important decision as it will influence the functionality of our robot and subsystems in the future. As such, we identified as much criteria as possible to make an accurate judgement of each idea.
 
 #decision-matrix-criteria[
   - Durability - The ability to remain functional despite being faced with challenges and obstacles.

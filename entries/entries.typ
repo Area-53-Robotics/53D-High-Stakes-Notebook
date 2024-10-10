@@ -26,6 +26,7 @@
 #include "management/july-august.typ"
 
 // August
+#include "misc-program/github-workflows.typ"
 #include "overall-robot/identify-minnesota-sig.typ"
 #include "overall-robot/brainstorm-2.typ"
 #include "overall-robot/select-2.typ"
@@ -36,7 +37,6 @@
 #include "competition/area-53-scrimmage.typ"
 
 // TBD
-#include "misc-program/github-workflows.typ"
 #include "pre-auton-menu/program-pre-auton-menu.typ"
 #include "odometry/brainstorm-movement.typ"
 #include "odometry/select-movement.typ"

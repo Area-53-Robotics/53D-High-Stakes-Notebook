@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Overall Robot Plan",
+  title: "Overall Robot Plan v1",
   type: "brainstorm",
   date: datetime(year: 2024, month: 6, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
@@ -9,7 +9,7 @@
   witnessed: "Ajibola",
 )
 
-// Throughout the season, we have observed a large variety of elevation options, with each of them varying greatly in how they are constructed. We created a pros and cons list for each of them to organize our collective thoughts.
+Every member on 53D used the analysis in our #entry-reference(type: "identify", title: "Game Challenge - Strategy Analysis") to brainstorm an overall robot idea.
 
 #pro-con(
   name: "Ajibola",

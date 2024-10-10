@@ -224,7 +224,7 @@
           ]
         ]
       ]
-      #body pg. #page #h(-0.2em)
+      #body pg. #page #h(-0.15em)
     ]
   }
 }

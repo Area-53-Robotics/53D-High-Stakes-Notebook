@@ -4,7 +4,7 @@
   title: "Drivetrain v1",
   type: "plan",
   date: datetime(year: 2024, month: 6, day: 29),
-  attendance: team-members,
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Jin",
   witnessed: "Ajibola",
 )

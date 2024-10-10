@@ -4,7 +4,7 @@
   title: "Game Manual v1.0 Update",
   type: "identify",
   date: datetime(year: 2024, month: 7, day: 1),
-  attendance: team-members,
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Jin",
   witnessed: "Ishika",
 )

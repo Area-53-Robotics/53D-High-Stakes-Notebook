@@ -3,7 +3,6 @@
 #import "decision-matrix.typ": *
 #import "entry-components.typ": *
 #import "glossary.typ": *
-#import "graphs.typ": *
 #import "headings.typ": *
 #import "page.typ": *
 #import "pie-chart.typ": *
