@@ -39,7 +39,7 @@
 
   // show raw.where(block: false): nb_raw_not_block
   
-  include "./components/codly.typ"
+  include "components/codly.typ"
   show: codly-init.with()
 
   // Headings

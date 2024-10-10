@@ -84,18 +84,18 @@ There are multiple times throughout the match where the bot may be facing the dr
 
   table.cell(colspan: 2, fill: gray.lighten(20%))[Controller Mapping],
   table.cell(colspan: 2)[
-    #image.decode(read("./program-driver-control/controller-mapping.svg"))
+    #image.decode(read("program-driver-control/controller-mapping.svg"))
   ],
 
   table.cell(fill: gray.lighten(20%))[Normal Bot Control],
   table.cell(fill: gray.lighten(20%))[Reversed Bot Control],
 
   [
-    #image.decode(read("./program-driver-control/normal-mapping.excalidraw.svg"))
+    #image.decode(read("program-driver-control/normal-mapping.excalidraw.svg"))
   ],
 
   [
-    #image.decode(read("./program-driver-control/reverse-mapping.excalidraw.svg"))
+    #image.decode(read("program-driver-control/reverse-mapping.excalidraw.svg"))
   ],
 )
 
@@ -104,7 +104,7 @@ The purpose of a drive curve is to give the driver more precise control over the
 
 #align(center)[
   #figure(
-    image("./program-driver-control/linear-control.svg", height: 35%),
+    image("program-driver-control/linear-control.svg", height: 35%),
     caption: [Visualization of the linear drive mapping in the interval [-127,127].]
   )
 ]
@@ -127,7 +127,7 @@ The graph below is an exponential curve with a t-value of 20 compared to a linea
 
 #align(center)[
   #figure(
-    image("./program-driver-control/exponential-control.svg", height: 35%),
+    image("program-driver-control/exponential-control.svg", height: 35%),
     caption: [Visualization of the exponential drive curve mapping in red versus the linear drive mapping in blue.]
   )
 ]
@@ -154,7 +154,7 @@ Very early into the Over Under season last year, 53D encountered a problem with 
 
 #align(center)[
   #figure(
-    image("./program-driver-control/deadzone.svg", height: 35%),
+    image("program-driver-control/deadzone.svg", height: 35%),
     caption: [Visualization of the deadzone, in which the purple line represents the motor RPM within the [-10, 10] interval.]
   )
 ]

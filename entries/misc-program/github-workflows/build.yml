@@ -28,7 +28,7 @@ jobs:
 
       # Compiles the notebook
       - name: Compile Notebook
-        run: typst compile main.typ --font-path ./assets/fonts/
+        run: typst compile main.typ --font-path assets/fonts/
           
       # Uploads the rendered PDF to GitHub
       - name: Upload PDF File

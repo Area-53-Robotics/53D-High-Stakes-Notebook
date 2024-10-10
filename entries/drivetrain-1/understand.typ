@@ -22,7 +22,7 @@
   grid.cell(colspan: 2, align: left)[
     = Gear Ratios
   ],
-  [#image("./understand/DT stem - Gear ratio.svg")],
+  [#image("understand/DT stem - Gear ratio.svg")],
   [
     == What are gear ratios?
     Gear ratios provide mechanical advantage. Depending on whether the driven gear has more or fewer teeth than the driving gear, the gear ratio can either increase (mechanical advantage for torque) or decrease (mechanical advantage for speed) rotational speed or force.
@@ -40,7 +40,7 @@
   grid.cell(colspan: 2, align: left)[
     = Structural Dynamics
   ],
-  [#image("./understand/Structural dynamics.svg")],
+  [#image("understand/Structural dynamics.svg")],
   [
     == What are structural dynamics?
     Determining the natural frequencies of a structure is crucial in understanding how it will respond to dynamic loads. These frequencies represent the inherent vibration characteristics of the structure.

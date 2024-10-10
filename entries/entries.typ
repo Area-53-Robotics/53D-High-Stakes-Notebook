@@ -23,6 +23,7 @@
 
 // July
 #include "manual-updates/manual-v1-update.typ"
+#include "management/july-august.typ"
 
 // August
 #include "overall-robot/identify-minnesota-sig.typ"

@@ -11,7 +11,7 @@
 
 #pro-con(
   name: "---",
-  image: image("./brainstorm/---.svg"),
+  image: image("brainstorm/---.svg"),
   pros: [
     - 
   ],
@@ -25,7 +25,7 @@
 
 #pro-con(
   name: "---",
-  image: image("./brainstorm/---.svg"),
+  image: image("brainstorm/---.svg"),
   pros: [
     - 
   ],
@@ -41,7 +41,7 @@
 
 #pro-con(
   name: "---",
-  image: image("./brainstorm/---.svg"),
+  image: image("brainstorm/---.svg"),
   pros: [
     - 
   ],

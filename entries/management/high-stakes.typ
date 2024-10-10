@@ -55,13 +55,13 @@ Because we are attending a Signature Event, Area 53 does not plan to send any te
 
 Taking all of the above factors into consideration, we created a Gantt chart for the High Stakes season:
 
-#image("./gantt-charts/high-stakes.png")
+#image("gantt-charts/high-stakes.png")
 
 #admonition(type: "note")[
   We plan to adjust this gantt chart as the season goes on depending on new deadlines that arise.
 ]
 
-= Funds Management
+= Budget & Materials Management
 After creating our season timeline, we obtained information on our organization's budget to get an idea of what our expenses for the season will look like.
 
 Total Area 53 Organization Budget: \$27549.55
