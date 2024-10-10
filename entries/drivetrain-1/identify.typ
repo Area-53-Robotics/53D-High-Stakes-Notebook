@@ -9,16 +9,6 @@
   witnessed: "Ishika",
 )
 
-#to-do(
-  date: datetime(year: 2024, month: 6, day: 16),
-  monthly-schedule: "Ahead",
-  yearly-schedule: "Ahead",
-  (
-    (true, "Identify the design constraints and goals for the drivetrain.", "Everyone"),
-    (true, "Determine the mathematical and scientific concepts involved in drivetrain design.", "Everyone"),
-  )
-)
-
 Our team spent a lot of time talking and planning the foundation of our robot: the drivetrain. The drivetrain's shape determines what other subsystems we can build in the future, making it critical. However, before getting into the technical aspects, we figured out how the drivetrain fits into our overall game plan, ensuring it helps us do well in the competition.
 
 #figure(
@@ -36,6 +26,8 @@ Our team spent a lot of time talking and planning the foundation of our robot: t
   [*Versatility* - Different drivetrain setups, such as tank drive, holonomic (omni-directional) drive, or mecanum drive offer varying levels of maneuverability and are suited to different game strategies.],
   [*Foundation* - The drivetrain serves as the robot's base, so its weight will be distributed on top of the drivetrain. Proper weight distribution is crucial for maintaining stability and preventing tipping during rapid movements or when interacting with game elements.],
 )
+
+#colbreak()
 
 #goals-constraints(
   goals: [
