@@ -32,6 +32,7 @@
 #include "overall-robot/select-2.typ"
 
 #include "drivetrain-1/program-driver-control.typ"
+#include "drivetrain-1/test.typ"
 
 // September
 #include "competition/area-53-scrimmage.typ"

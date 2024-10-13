@@ -147,7 +147,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
 )
 
 #table(
-  columns: (1fr,1fr),
+  columns: (1fr, 1fr),
 
   table.header(
     repeat: false,

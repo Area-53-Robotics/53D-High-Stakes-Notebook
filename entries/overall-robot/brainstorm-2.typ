@@ -4,7 +4,7 @@
   title: "Overall Robot Plan v2",
   type: "brainstorm",
   date: datetime(year: 2024, month: 8, day: 6),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Jin",
   witnessed: "Ajibola",
 )

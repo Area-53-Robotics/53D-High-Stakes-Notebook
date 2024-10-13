@@ -4,18 +4,18 @@
   title: "Game Manual v1.0 Update",
   type: "identify",
   date: datetime(year: 2024, month: 7, day: 1),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
   designed: "Jin",
   witnessed: "Ishika",
 )
 
 #to-do(
   date: datetime(year: 2024, month: 7, day: 1),
-  (
-    (true, "Identify changes made to the rule manual and how they affect our gameplay.", "Everyone"),
-  ),
   monthly-schedule: "Ahead",
-  yearly-schedule: "Ahead"
+  yearly-schedule: "Ahead",
+  (
+    (true, "Identify changes made to the rules manual and how they affect our gameplay.", "Everyone"),
+  ),
 )
 
 #set table(

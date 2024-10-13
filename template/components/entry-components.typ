@@ -173,6 +173,22 @@
   ]
 }
 
+#let materials-table(..materials) = {
+  show table.cell.where(y: 0): strong
+
+  table(
+    columns: (1fr, 3fr),
+    fill: (_, y) =>
+      if y == 0 {gray.lighten(20%)},
+
+    table.header[Qty][Material],
+    
+    ..for (qty, material) in materials.pos() {
+      (str(qty) + "x", material)
+    }
+  )
+}
+
 // ! You can only have two entry references in an entry without getting the "did not converge" error
 #let entry-reference(
   date: none,

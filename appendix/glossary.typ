@@ -307,7 +307,7 @@
 )[
   #context {
     let sorted-glossary = glossary-entries.final().sorted(key: (
-    (title: title, category: category, definition: definition),
+    (title: title, category: category, definition: definition)
     ) => title)
 
     for entry in sorted-glossary [

@@ -4,7 +4,7 @@
   title: "GitHub Workflows",
   type: "program",
   date: datetime(year: 2024, month: 8, day: 3),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
