@@ -43,3 +43,5 @@
 #include "odometry/select-movement.typ"
 #include "odometry/brainstorm-implementation.typ"
 #include "odometry/select-implementation.typ"
+#include "odometry/program-odometry.typ"
+#include "odometry/program-pid.typ"

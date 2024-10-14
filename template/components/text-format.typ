@@ -16,6 +16,24 @@
   ]
 ]
 
-#let code-header(body) = align(center)[
-  *53D_HighStakes/#body*
-]
+#let code-header(
+  main: true,
+  dest: none,
+  body
+) = {
+  if main {
+    body = "53D_HighStakes/" + body
+  }
+
+  if dest != none {
+    body = link(dest)[
+      #text(black)[
+        _ #body _
+      ]
+    ]
+  }
+
+  align(center)[
+    *#body*
+  ]
+}
