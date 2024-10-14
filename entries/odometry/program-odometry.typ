@@ -9,6 +9,8 @@
   witnessed: "Ishika",
 )
 
+#show figure.caption: it => "Figure " + it.numbering + ": " + it.body
+
 // #to-do(
 //   date: datetime(year: 2023, month: 12, day: 1),
 //   (
@@ -31,14 +33,8 @@ I heavily recommend using inches for distance and position, as that is the custo
 
 = Global Variables
 #code-header(main: false, dest: "https://github.com/LemLib/LemLib/blob/stable/src/lemlib/chassis/odom.cpp")[LemLib/src/lemlib/chassis/odom.cpp]
-```cpp
-#include <math.h>
-#include "pros/rtos.hpp"
-#include "lemlib/util.hpp"
-#include "lemlib/chassis/odom.hpp"
-#include "lemlib/chassis/chassis.hpp"
-#include "lemlib/chassis/trackingWheel.hpp"
 
+```cpp
 // tracking thread
 pros::Task* trackingTask = nullptr;
 

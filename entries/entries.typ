@@ -24,6 +24,7 @@
 // July
 #include "manual-updates/manual-v1-update.typ"
 #include "management/july-august.typ"
+#include "drivetrain-1/build.typ"
 
 // August
 #include "misc-program/github-workflows.typ"

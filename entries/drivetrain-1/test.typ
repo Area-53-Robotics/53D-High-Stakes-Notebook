@@ -362,7 +362,7 @@ The drivetrain will have a turning radius of 5 inches or less when making a 90#s
             domain: (1, 5),
             style: (stroke: (paint: green), fill: green.lighten(75%)),
             hypograph: true,
-            label: "Target Ratio",
+            label: "Target Radius",
             x => {
               5
             }
