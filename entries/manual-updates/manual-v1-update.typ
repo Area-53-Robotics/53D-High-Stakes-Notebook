@@ -57,7 +57,7 @@
     Added a new rule, SC9>, that adds a 2-point bonus per Climb for whichever Alliance has a Rings Scored on the High Stake at the end of a Match
   ],
   [
-    This gives an incentive to try and score a ring on the high stake. Previously, we felt that scoring on the high stakes wasn't worth the effort because it didn't earn us enough points to justify the extra weight and material needed to build a subsystem that could reach that high.
+    This gives an incentive to try and score a ring on the high stake. Previously, we felt that scoring on the high stakes was not worth the effort because it did not earn us enough points to justify the extra weight and material needed to build a subsystem that could reach that high.
   ],
   [
     Updated #vex-rule[SG2] to clarify that Robots may expand beyond their starting size and configuration
@@ -156,6 +156,6 @@
 = Future Implications for the Robot
 + Even though scoring on the high stake will result in additional points while climbing, we do not believe it is enough points to justify trying to score on the high stake.
   + Firstly, getting a subsystem to reach that height will increase our robot's center of gravity, making it easier to be tipped over or pushed.
-  + Secondly, it is only an additional three points. Since we can't skip layers, we are realistically only going to be reaching a tier 1 climb which is 6 total points.
-+ We can't plow more than one mobile goal. Something that we noticed in the previous version of the game manual is that if we pushed a group of mobile goals, we could get more control. This is no longer possible.
+  + Secondly, it is only an additional three points. Since we cannot skip layers, we are realistically only going to be reaching a tier 1 climb which is 6 total points.
++ We cannot plow more than one mobile goal. Something that we noticed in the previous version of the game manual is that if we pushed a group of mobile goals, we could get more control. This is no longer possible.
 + The new field changes will hopefully facilitate us playing aggressively to take a positive corner while still being close enough to defend if needed a different corner if needed.

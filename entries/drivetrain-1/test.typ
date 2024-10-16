@@ -131,12 +131,12 @@ The drivetrain will display a speed of at least 72.77 in/s, which is 5% less tha
 )
 
 == Conclusion
-Even though it is slightly inconvenient that the drivetrain's speed is a bit slower than the ideal speed, it makes sense. Some parts of the drivetrain are bending, causing friction on the drivetrain. Even though our drivetrain isn't perfect, we are still satisfied with the results.
+Even though it is slightly inconvenient that the drivetrain's speed is a bit slower than the ideal speed, it makes sense. Some parts of the drivetrain are bending, causing friction on the drivetrain. Even though our drivetrain is not perfect, we are still satisfied with the results.
 
 
 = Torque Test (Foundation)
 == Background
-In a VRC match, we won't need to push an enemy robot past 5 feet. If the robot is capable of pushing a 6.65 lb box (the weight of most lighter robots) past 5 feet in 10 seconds, it will be a success. Since the robot is geared with a balance between torque and speed, we believe the drivetrain is capable of passing this test.
+In a VRC match, we will not need to push an enemy robot past 5 feet. If the robot is capable of pushing a 6.65 lb box (the weight of most lighter robots) past 5 feet in 10 seconds, it will be a success. Since the robot is geared with a balance between torque and speed, we believe the drivetrain is capable of passing this test.
 
 == Hypothesis
 The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or higher when pushing the weighted boxes.
@@ -257,7 +257,7 @@ The drivetrain satisfied our hypothesis for the 5 lb and 10 lb weights, but fail
 
 = Turning Radius Test (Versatility)
 == Background
-Since the field is open, we need the robot to make sharp turns. If the robot is capable of a turning radius of 5 inches or less, it will be considered a success. However, we believe the robot won't be able to pass this test because it is very light and therefore difficult to control.
+Since the field is open, we need the robot to make sharp turns. If the robot is capable of a turning radius of 5 inches or less, it will be considered a success. However, we believe the robot will not be able to pass this test because it is very light and therefore difficult to control.
 
 == Hypothesis
 The drivetrain will have a turning radius of 5 inches or less when making a 90#sym.degree arc turn.

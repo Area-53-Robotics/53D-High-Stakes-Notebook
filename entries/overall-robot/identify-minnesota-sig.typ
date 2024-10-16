@@ -234,4 +234,4 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
 = Final Observations
 1. We noticed that a lot of teams were camping in the positive corners in order to prevent the enemy alliance from placing their mobile goal in the positive corner. Puppy guarding is having one teammate guard a positive corner with the Mobile Goals, preventing the enemy from stealing them.
 2. Towards the last ten seconds of the round is the climax. All robots are active, either trying to grab their opponents Mobile Goals from the positive corner, placing as much rings on the wall stakes as possible or climbing.
-3. Going for the high stake is a waste of time as it isn't worth the additional points gained. Instead, the wall stakes are more valuable. Since most of the game caps around 40 points, scoring on the wall stakes can be the tie breaker. 
+3. Going for the high stake is a waste of time as it is not worth the additional points gained. Instead, the wall stakes are more valuable. Since most of the game caps around 40 points, scoring on the wall stakes can be the tie breaker. 
