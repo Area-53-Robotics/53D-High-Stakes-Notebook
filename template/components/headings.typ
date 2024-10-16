@@ -28,8 +28,8 @@
       #box(baseline: 130%, it.body)
     ]
   } else if it.level == 3 {
-    set text(size: 12pt)
-    it.body
+    set text(size: 13pt)
+    underline[#it.body]
   }
   v(3pt)
 }

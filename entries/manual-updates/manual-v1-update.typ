@@ -57,7 +57,7 @@
     Added a new rule, SC9>, that adds a 2-point bonus per Climb for whichever Alliance has a Rings Scored on the High Stake at the end of a Match
   ],
   [
-    This gives an incentive to try and score a ring on the high stake. Previously, the team felt that scoring on the high stakes wasn't worth the effort because it didn't earn us enough points to justify the extra weight and material needed to build a subsystem that could reach that high
+    This gives an incentive to try and score a ring on the high stake. Previously, we felt that scoring on the high stakes wasn't worth the effort because it didn't earn us enough points to justify the extra weight and material needed to build a subsystem that could reach that high.
   ],
   [
     Updated #vex-rule[SG2] to clarify that Robots may expand beyond their starting size and configuration
