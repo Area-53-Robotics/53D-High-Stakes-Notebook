@@ -20,7 +20,7 @@
 #to-do(
   date: datetime(year: 2024, month: 7, day: 26),
   monthly-schedule: "On",
-  yearly-schedule: "Ahead",
+  yearly-schedule: "On",
   (
     (true, "Build the drivetrain according to today's delegation.", "Everyone"),
   )
@@ -39,7 +39,7 @@ We wanted to start this season off with a running start. Since we had the CAD of
   ],
   today: [
     - Ziptie the bearing blocks: Eric
-    - Attach the motors and axles onto the drivetrain's c-channel: Jin, Eric
+    - Attach the motors and axles onto the drivetrain's C-channel: Jin, Eric
     - Attach the wheels and the screw joints: Jin, Eric
   ]
 )
@@ -73,7 +73,7 @@ We wanted to start this season off with a running start. Since we had the CAD of
     - Attached the bearing blocks onto the 29x2x1 C-channels
       - From left to right, the first bearing block is 7 holes away from the edge, then the next one is five away from the first bearing block, and the last one is also 5 holes away from the second bearing block
       - Please see the CAD in our #entry-reference(title: "Drivetrain v1", type: "plan", date: datetime(year: 2024, month: 6, day: 29)).
-      - The spacing allows us to have 2 holes worth of spacing at the front of our drivetrain for stand-off support
+      - The spacing allows us to have 2 holes worth of spacing at the front of our drivetrain for standoff support
     - The bearing blocks are ziptied to the C-channel
       - Since our drivetrain will be heavier than most other team's drivetrains, ziptying instead of using screws allow us to save weight
   ],
@@ -132,7 +132,7 @@ We wanted to start this season off with a running start. Since we had the CAD of
 #to-do(
   date: datetime(year: 2024, month: 7, day: 28),
   monthly-schedule: "On",
-  yearly-schedule: "Ahead",
+  yearly-schedule: "On",
   (
     (true, "Build the drivetrain according to today's delegation.", "Everyone"),
   )
@@ -184,7 +184,7 @@ Last meeting, we ran into a few problems with the drivetrain. Firstly, one of th
     === Assembly: Drivetrain
     - Because of the different orientation of our drivetrain, we put in and secured our screw joints using keps nuts first
       - We squeezed the spacing and the wheels in between the drivetrain 
-    - To get the inside spacing to line up, we put stand-offs at the front. This will prevent the C-channel from bending outwards 
+    - To get the inside spacing to line up, we put standoffs at the front. This will prevent the C-channel from bending outwards 
     - Since only one drive half is completed, we decided to add the middle bracing. We boxed it to prevent the C-channel from bending when it comes into contact with an enemy robot
   ],
   figure(
@@ -200,7 +200,7 @@ Last meeting, we ran into a few problems with the drivetrain. Firstly, one of th
 #grid(
   figure(
     image("build/2024.07.27-5.jpg", width: 145pt),
-    caption: "Stand-offs preventing the drivetrain form bending inwards"
+    caption: "Standoffs preventing the drivetrain form bending inwards"
   ),
   figure(
     image("build/2024.07.27-6.jpg", width: 175pt),
@@ -214,7 +214,7 @@ Last meeting, we ran into a few problems with the drivetrain. Firstly, one of th
 #to-do(
   date: datetime(year: 2024, month: 8, day: 2),
   monthly-schedule: "On",
-  yearly-schedule: "Ahead",
+  yearly-schedule: "On",
   (
     (true, "Build the drivetrain according to today's delegation.", "Everyone"),
   )
@@ -291,7 +291,7 @@ We have suffered a major setback towards making the second half of the drivetrai
 #to-do(
   date: datetime(year: 2024, month: 8, day: 3),
   monthly-schedule: "On",
-  yearly-schedule: "Ahead",
+  yearly-schedule: "On",
   (
     (true, "Build the drivetrain according to today's delegation.", "Everyone"),
   )

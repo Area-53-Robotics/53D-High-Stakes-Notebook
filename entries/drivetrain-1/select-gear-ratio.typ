@@ -50,7 +50,7 @@
 #admonition(type: "select", title: "Final Selection")[
   We decided to use 3.25 inch wheels powered by 600 RPM motors geared with a 3:4 gear ratio.
 
-  + *Speed-Torque Balance* - This gear ratio provides the best balance of speed and torque. We need the speed to get around the field and secure as many mobile goals as possible. We need the torque to push back enemy bots trying to take away our mobile goals or upsetting them when they're trying to score on the wall stakes.
+  + *Speed-Torque Balance* - This gear ratio provides the best balance of speed and torque. We need the speed to get around the field and secure as many mobile goals as possible. We need the torque to push back enemy bots trying to take away our mobile goals or upsetting them when they are trying to score on the wall stakes.
   + *Weight Capacity* - Because our drivetrain is likely going to be heavier than last year's drivetrain (to provide extra force), we also want a gear ratio that can support that weight.
 ]
 

@@ -31,6 +31,7 @@
 #include "overall-robot/identify-minnesota-sig.typ"
 #include "overall-robot/brainstorm-2.typ"
 #include "overall-robot/select-2.typ"
+#include "drivetrain-1/build-2.typ"
 
 #include "drivetrain-1/program-driver-control.typ"
 #include "drivetrain-1/test.typ"
@@ -39,10 +40,10 @@
 #include "competition/area-53-scrimmage.typ"
 
 // TBD
-#include "pre-auton-menu/program-pre-auton-menu.typ"
-#include "odometry/brainstorm-movement.typ"
-#include "odometry/select-movement.typ"
-#include "odometry/brainstorm-implementation.typ"
-#include "odometry/select-implementation.typ"
-#include "odometry/program-odometry.typ"
-#include "odometry/program-pid.typ"
+// #include "pre-auton-menu/program-pre-auton-menu.typ"
+// #include "odometry/brainstorm-movement.typ"
+// #include "odometry/select-movement.typ"
+// #include "odometry/brainstorm-implementation.typ"
+// #include "odometry/select-implementation.typ"
+// #include "odometry/program-odometry.typ"
+// #include "odometry/program-pid.typ"
