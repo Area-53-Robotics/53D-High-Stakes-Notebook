@@ -20,6 +20,7 @@
     (true, "Plan the implementation of the new overall robot idea.", "Everyone"),
   )
 )
+
 = Event Information
 - Tournament name: Minnesota Signature Event 
 - Location: Mall of America

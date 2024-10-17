@@ -81,7 +81,7 @@
     The arms of a clamp act like levers, and the pivot point of these arms is the fulcrum. When a motor or actuator applies force to the arms, torque is generated. This torque causes the arms to rotate around the fulcrum and close around the object.
     The greater the torque, the more force the clamp can apply to grip the object.
   ],
-  [#image("understand/torque.png")]
+  image("understand/torque.png")
 )
 
 #grid(
@@ -92,7 +92,7 @@
   grid.cell(colspan: 2, align: left)[
     = Equilibrium
   ],
-  [#image("understand/equilibrium.excalidraw.svg")],
+  image("understand/equilibrium.excalidraw.svg"),
   [
     == What is Equilibrium?
     Equilibrium, in the context of physics and mechanics, refers to a state in which an object or a system experiences a balance of forces and torques.

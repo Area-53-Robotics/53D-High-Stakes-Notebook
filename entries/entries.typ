@@ -36,6 +36,9 @@
 #include "drivetrain-1/test.typ"
 #include "mobile-clamp-1/identify.typ" 
 #include "mobile-clamp-1/understand.typ"
+#include "mobile-clamp-1/brainstorm.typ"
+#include "mobile-clamp-1/select.typ"
+#include "mobile-clamp-1/plan.typ"
 
 
 // September

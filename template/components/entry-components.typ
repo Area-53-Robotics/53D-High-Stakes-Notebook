@@ -236,8 +236,13 @@
       )
     }
 
-    assert(valid-entries.len() > 0, message: "No entries meet the given attributes")
-    assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes")
+    let fail-message = "\nTitle: " + title + "\nType: " + type
+    if date != none {
+      fail-message += "\nDate: " + date.display("[year]/[month]/[day]")
+    }
+
+    assert(valid-entries.len() > 0, message: "No entries meet the given attributes of:" + fail-message)
+    assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes of:" + fail-message)
 
     let entry = valid-entries.first()
     let info = type-metadata.at(entry.last().type)
