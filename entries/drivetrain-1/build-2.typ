@@ -91,6 +91,8 @@ We are happy that the drivetrain is completed. We are making much more progress 
   yearly-schedule: "On",
   (
     (true, "Build the drivetrain according to today's delegation.", "Everyone"),
+    (true, "Program a versatile driver control system for the drivetrain.", ("Ajibola", "Ishika")),
+    (true, "Test the performance of the drivetrain.", "Everyone"),
   )
 )
 

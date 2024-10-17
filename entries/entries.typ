@@ -32,11 +32,11 @@
 #include "overall-robot/brainstorm-2.typ"
 #include "overall-robot/select-2.typ"
 #include "drivetrain-1/build-2.typ"
+#include "drivetrain-1/program-driver-control.typ"
+#include "drivetrain-1/test.typ"
 #include "mobile-clamp-1/identify.typ" 
 #include "mobile-clamp-1/understand.typ"
 
-#include "drivetrain-1/program-driver-control.typ"
-#include "drivetrain-1/test.typ"
 
 // September
 #include "competition/area-53-scrimmage.typ"
