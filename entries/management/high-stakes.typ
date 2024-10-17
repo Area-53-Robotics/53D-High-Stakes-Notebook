@@ -19,7 +19,7 @@ Before beginning our early season brainstorming, we decided to make a general ti
 - *Scrimmages before States:* Last year, we participated in multiple scrimmages with other Area 53 teams before the States competition. This resulted in a visible performance increase at the States competition compared to our performance in other late-season tournaments. We plan to do the same this year.
 
 To make organization easier, we identify parts of the season with the following labels:
-- *Early Season* - Includes the spring & summer months after the game reveal (May - September), during which scrimmages occur while tournaments don't
+- *Early Season* - Includes the spring & summer months after the game reveal (May - September), during which scrimmages occur while tournaments do not
 - *Mid Season* - Includes the fall & early winter months (October - December) when state competition qualifying tournaments begin
 - *Late Season* - Includes the late winter months (January - April) when state competition qualifying tournaments end, and the state & world competitions occur
 

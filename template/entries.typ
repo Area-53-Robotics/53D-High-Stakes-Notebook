@@ -171,6 +171,10 @@
           background: side-margin-color(color: info.color)
         )
 
+        #counter(figure.where(kind: image)).update(0)
+        #counter(figure.where(kind: table)).update(0)
+        #counter(figure.where(kind: raw)).update(0)
+        
         #entry.body <notebook-entry>
         #counter(footnote).update(0)
       ]

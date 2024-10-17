@@ -10,69 +10,82 @@
 )
 
 
-// To ensure that the second iteration of our drivetrain was functioning that the level that we wanted, we tested the drivetrain on two of the "Aspects of a Drivetrain" that we identified in our #entry-reference(date: datetime(year: 2023, month: 7, day: 15), type: "identify").
+To ensure that the first version of our drivetrain was functioning that the level that we wanted, we tested the drivetrain on the three "Aspects of a Drivetrain" that we identified in our #entry-reference(title: "Drivetrain v1", type: "identify", date: datetime(year: 2024, month: 6, day: 16)).
 
 = Speed Test (Mobility)
-#v(0.5em)
+== Background
+In an ideal world, our drivetrain should have a speed of 76.6 in/s, as calculated in our #entry-reference(title: "Drivetrain v1 - Gear Ratio",type: "brainstorm", date: datetime(year: 2024, month: 6, day: 28)). However, due to factors such as friction and the bending at the front of our drivetrain, the actual drivetrain speed will likely be slightly lower than 76.6 in/s.
+
+== Hypothesis
+The drivetrain will display a speed of at least 72.77 in/s, which is 5% less than our ideal speed of 76.6 in/s.
+
 #grid(
-  columns: (2fr, 5fr),
+  columns: (3fr, 7fr),
   rows: 1,
-  column-gutter: 1em,
+  column-gutter: 15pt,
 
   [
     == Materials
     #materials-table(
       (1, "Robot"),
       (1, "Controller"),
-      (1, "Tape"),
+      (1, "White Tape"),
+      (5, "Anti-Static Field Tiles"),
       (1, "Stopwatch"),
-      (1, "Notebook"),
-      (1, "Pen"),
+      (1, "Notetaking Materials"),
     )
   ],
 
   [
     == Procedures
-    + Clear the game elements on the field to ensure a flat and obstacle-free surface.
-    + Mark the starting and ending points of the distance. The distance will be 3 meters.
-    + Place the front of the robot behind the starting point
-    + Drive the robot forward until the front of it crosses the end line
-    + Record the time it takes for the robot to cross the end line
-    + Repeat steps 3-5 for a total of 5 trials
+    + Using white tape, mark a fixed distance of 120 inches (5 VRC field tiles).
+    + Place the robot at the start point.
+    + Run the robot over a straight line and record the time it takes to reach the endpoint.
+    + Calculate the average speed of the drivetrain during that trial
+    + Compare the average speed with the ideal speed.
+    + Repeat steps 2-5 for a total of 5 trials.
   ],
 )
 
+#let speed-test-data = (73.2, 73.2, 74, 73.6, 73.2)
+
 == Results
 #align(center)[
+  #show table.cell.where(x: 0): strong
+  #show table.cell.where(y: 0): strong
+
   #table(
     columns: 6,
-    rows: 2,
 
-    fill: (x, _) =>
-      if x == 0 {gray.lighten(20%)},
+    fill: (x, y) =>
+      if (x == 0 and y > 0) or (y == 0 and x > 0) {gray.lighten(20%)},
 
-    [Trial \#], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
-    [Time (s)], [1.83], [1.82], [1.82], [1.84], [1.82],
-    [Speed (in/s)], [64.96], [64.80], [64.80], [65.04], [64.80],
+    table.hline(y: 0, end: 1, stroke: none),
+    table.vline(x: 0, end: 1, stroke: none),
+
+    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    [Time (s)], [1.64], [1.64], [1.62], [1.63], [1.64],
+    [Calculated Speed (in/s)], [73.2], [73.2], [7.4], [73.6], [73.2],
+    [Ideal Speed (in/s)], table.cell(colspan: 5)[76.6],
+    [% of ideal speed], [95.6%], [95.6%], [96.7%], [96.1%], [95.6%],
   )
 ]
 
 #grid(
-  columns: 2,
+  columns: (1fr, 2fr),
   align: center + horizon,
 
   [
-    #let data = (64.96, 64.80, 64.80, 65.04, 64.80)
-
     #table(
       columns: 2,
       align: center + horizon,
 
-      table.cell(fill: gray.lighten(20%), colspan: 2)[Statistics],
-      [Average], [#stats.mean(data)],
-      [Range], [#stats.range(data)],
-      [Variance], [#stats.variance(data)],
-      [Standard Deviation], [#stats.std-dev(data)],
+      table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
+      [Mean], [#stats.mean(speed-test-data) in/s],
+      [Median], [#stats.median(speed-test-data) in/s],
+      [Range], [#stats.range(speed-test-data, digits: 1) in/s],
+      [Variance], [#stats.variance(speed-test-data, digits: 4) in/s],
+      [Standard Deviation], [#stats.std-dev(speed-test-data, digits: 2) in/s],
     )
   ],
 
@@ -86,86 +99,279 @@
         axis-style: "scientific-auto",
 
         legend: "legend.north",
+        legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
         x-label: "Trial #",
         x-tick-step: 1,
-        // x-min: 0, x-max: 10,
-        // x-ticks: (1, 2, 4, 9),
 
         y-label: "Speed (in/s)",
-        // y-tick-step: none,
-        y-min: 72, y-max: 78,
-        // y-ticks: ((1, [One]), (2, [Two])),
+        y-min: 72, y-max: 77,
+
         {
           plot.add(
-            ((1, 73.2), (2, 73.2), (3, 74), (4, 73.6), (5, 73.2)),
+            speed-test-data.enumerate(start: 1),
             mark: "o",
             style: (stroke: none),
             label: "Speed"
           )
 
-          plot.add-hline(
-            76.6,
-            style: (stroke: (paint: red, dash: "dashed")),
-            label: "Expected Speed"
+          plot.add(
+            domain: (1, 5),
+            style: (stroke: (paint: green), fill: green.lighten(75%)),
+            epigraph: true,
+            label: "Ideal Speed",
+            x => {
+              76.6
+            }
           )
-
         }
       )
     })
   }
-  // box(stroke: 2pt)[#image("./test/Drivetrain Speed.svg")]
 )
 
-#colbreak()
-
 == Conclusion
-Our new drivetrain is slightly faster than the previous version. In addition, we noticed that the time and speed were consistent during this test. This observation was supported by the small range, variance, and standard deviation of the data we collected. We believe that the reason for this consistency is due to the compact structure of the drivetrain. It is much more well-braced than the previous design. 
+Even though it is slightly inconvenient that the drivetrain's speed is a bit slower than the ideal speed, it makes sense. Some parts of the drivetrain are bending, causing friction on the drivetrain. Even though our drivetrain is not perfect, we are still satisfied with the results.
 
-= Pushing Test (Foundation)
-#v(0.5em)
+
+= Torque Test (Foundation)
+== Background
+In a VRC match, we will not need to push an enemy robot past 5 feet. If the robot is capable of pushing a 6.65 lb box (the weight of most lighter robots) past 5 feet in 10 seconds, it will be a success. Since the robot is geared with a balance between torque and speed, we believe the drivetrain is capable of passing this test.
+
+== Hypothesis
+The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or higher when pushing the weighted boxes.
+
 #grid(
-  columns: 2,
+  columns: (3fr, 7fr),
   rows: 1,
-  column-gutter: 1em,
+  column-gutter: 15pt,
 
   [
     == Materials
-    - Robot
-    - Box
-    - Set of weights
-    - Measuring tape
-    - Stopwatch
-    - Notebook and pen for recording data
+    #materials-table(
+      (1, "Robot"),
+      (1, "Controller"),
+      (1, "Box"),
+      (5, "Weights with 5 lb increments"),
+      (1, "Stopwatch"),
+      (1, "Notetaking Materials"),
+    )
   ],
 
   [
     == Procedures
-    + Set the robot flat on the field against the field perimeter
-    + Place a box with 5 lb worth of weights in front of the robot
-    + Drive the robot forward for 10 seconds
-    + Measure the distance between the front of the box at its starting point and the front of the box at its end point
-    + Write down the distance
-    + Repeat steps 3-5 with 5 lb more weight for a total of 5 trials 
+    + Place the robot at a standstill onto a flat surface.
+    + Place a box with weights directly in front of it.
+    + Measure how far the robot manages to push the box in 10 seconds.
+    + Add 5 pounds to the box and repeat for a total of 5 trials.
   ],
 )
 
+#let weight-test-data = (13.64, 11.34, 8.97, 7.32, 6.83)
+
 == Results
 #align(center)[
+  #show table.cell.where(x: 0): strong
+  #show table.cell.where(y: 0): strong
+
   #table(
     columns: 6,
-    rows: 2,
 
-    fill: (x, _) =>
-      if x == 0 {gray.lighten(20%)},
+    fill: (x, y) =>
+      if (x == 0 and y > 0) or (y == 0 and x > 0) {gray.lighten(20%)},
 
-    [Trial \#], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
-    [Weight (lb)], [5], [10], [15], [20], [25],
-    [Distance (ft)], [13.56], [11.22], [8.76], [7.12], [6.52],
+    table.hline(y: 0, end: 1, stroke: none),
+    table.vline(x: 0, end: 1, stroke: none),
+
+    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    [Weight (lbs)], [5], [10], [15], [20], [25],
+    [Distance (ft)], [13.64], [11.34], [8.97], [7.32], [6.83],
+    [Ratio (ft/lbs)], [13.64:5 \ 2.728], [11.34:10 \ 1.134], [8.97:15 \ 0.598], [7.32:20 \ 0.366], [6.83:25 \ 0.2732],
   )
-
-  // #box(stroke: 2pt)[#image("./test/Distance (ft) vs. Trial.svg", height: 30%)]
 ]
 
+#grid(
+  columns: (1fr, 2fr),
+  align: center + horizon,
+
+  [
+    #table(
+      columns: 2,
+      align: center + horizon,
+
+      table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
+      [Mean], [#stats.mean(weight-test-data, digits: 2) ft.],
+      [Median], [#stats.median(weight-test-data) ft.],
+      [Range], [#stats.range(weight-test-data, digits: 2) ft.],
+      [Variance], [#stats.variance(weight-test-data, digits: 3) ft.],
+      [Standard Deviation], [#stats.std-dev(weight-test-data, digits: 3) ft.],
+    )
+  ],
+
+  {
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.plot
+
+      plot.plot(
+        size: (9, 4),
+        axis-style: "scientific-auto",
+
+        legend: "legend.north",
+        legend-style: (padding: 0.15, item: (spacing: 0.15)),
+
+        x-label: "Weight (lbs)",
+        x-tick-step: 5,
+
+        y-label: "Distance (ft)",
+        y-min: 6, y-max: 14,
+
+        {
+          plot.add(
+            weight-test-data.enumerate(start: 1).map(data => {
+              (data.at(0) * 5, data.at(1))
+            }),
+            mark: "o",
+            style: (stroke: none),
+            label: "Distance"
+          )
+
+          plot.add(
+            domain: (0, 25),
+            style: (stroke: (paint: green), fill: green.lighten(75%)),
+            epigraph: true,
+            label: "Target Ratio",
+            x => {
+              x * 0.75
+            }
+          )
+        }
+      )
+    })
+  }
+)
+
 == Conclusion
-Compared to the previous drivetrain, our new drivetrain's push power is slightly lower. This is expected because when gearing the drivetrain for a higher speed, torque is sacrificed as a result. However, wee are not worried because the torque loss is negligible.
+The drivetrain satisfied our hypothesis for the 5 lb and 10 lb weights, but failed for the other weights. Despite this, overall the drivetrain did a good job at pushing the box. We predict that the heavier the robot becomes as we build more subsystems, the further the drivetrain will be able to push the box. We also noticed that as we increase the weight by 5 pounds, the distances-to-weight ratio seems to half.
+
+
+= Turning Radius Test (Versatility)
+== Background
+Since the field is open, we need the robot to make sharp turns. If the robot is capable of a turning radius of 5 inches or less, it will be considered a success. However, we believe the robot will not be able to pass this test because it is very light and therefore difficult to control.
+
+== Hypothesis
+The drivetrain will have a turning radius of 5 inches or less when making a 90#sym.degree arc turn.
+
+#colbreak()
+
+#grid(
+  columns: (3fr, 7fr),
+  rows: 1,
+  column-gutter: 15pt,
+
+  [
+    == Materials
+    #materials-table(
+      (1, "Robot"),
+      (1, "Controller"),
+      (1, "White Tape"),
+      (5, "Measuring Tape"),
+    )
+  ],
+
+  [
+    == Procedures
+    + Using white tape, mark a pivot point around which the robot will turn
+    + Using white tape, mark the start and end points of the robot's turn
+    + Place the robot on the start point
+    + Drive the robot in an arc and turn toward the endpoint
+    + Measure the radius of the turn
+    + Repeat steps 3-5 for a total of 5 trials 
+  ],
+)
+
+#let turning-test-data = (12.32, 16.31, 16.87, 19.32, 14.96)
+
+== Results
+#align(center)[
+  #show table.cell.where(x: 0): strong
+  #show table.cell.where(y: 0): strong
+
+  #table(
+    columns: 6,
+
+    fill: (x, y) =>
+      if (x == 0 and y > 0) or (y == 0 and x > 0) {gray.lighten(20%)},
+
+    table.hline(y: 0, end: 1, stroke: none),
+    table.vline(x: 0, end: 1, stroke: none),
+
+    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    [Turning Radius (in)],
+    ..for value in turning-test-data {
+      (str(value),)
+    }
+  )
+]
+
+#grid(
+  columns: (1fr, 2fr),
+  align: center + horizon,
+
+  [
+    #table(
+      columns: 2,
+      align: center + horizon,
+
+      table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
+      [Mean], [#stats.mean(turning-test-data, digits: 2) in.],
+      [Median], [#stats.median(turning-test-data) in.],
+      [Range], [#stats.range(turning-test-data) in.],
+      [Variance], [#stats.variance(turning-test-data, digits: 2) in.],
+      [Standard Deviation], [#stats.std-dev(turning-test-data, digits: 2) in.],
+    )
+  ],
+
+  {
+    cetz.canvas({
+      import cetz.draw: *
+      import cetz.plot
+
+      plot.plot(
+        size: (9, 4),
+        axis-style: "scientific-auto",
+
+        legend: "legend.north",
+        legend-style: (padding: 0.15, item: (spacing: 0.15)),
+
+        x-label: "Trial #",
+        x-tick-step: 1,
+
+        y-label: "Turning Radius (in)",
+        y-min: 0, y-max: 20,
+
+        {
+          plot.add(
+            turning-test-data.enumerate(start: 1),
+            mark: "o",
+            style: (stroke: none),
+            label: "Speed"
+          )
+
+          plot.add(
+            domain: (1, 5),
+            style: (stroke: (paint: green), fill: green.lighten(75%)),
+            hypograph: true,
+            label: "Target Radius",
+            x => {
+              5
+            }
+          )
+        }
+      )
+    })
+  }
+)
+
+== Conclusion
+The drivetrain's turning radius is very inconsistent and significantly higher than what we identified in our hypothesis. However, this makes sense because the drivetrain is very light compared to the overall robot. Since it is just the drivetrain, it would be harder to control the drivetrain when making sharp turns. We will repeat this experiment once the robot is completed. 

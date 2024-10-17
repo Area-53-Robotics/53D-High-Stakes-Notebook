@@ -209,7 +209,7 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   grid.cell(colspan: 2)[
     == Element Analysis: Corners
     The corner modifier mechanic in High Stakes is unlike anything we have experienced in previous VEX challenges. Due to how significantly the corner modifiers can affect final scores, we predict they will have a large impact on matches in the following ways:
-    + During early and mid-season, when most robots don't have elevation capabilities, fights to score and descore mobile goals in corners will be a prominent part of the endgame.
+    + During early and mid-season, when most robots do not have elevation capabilities, fights to score and descore mobile goals in corners will be a prominent part of the endgame.
     + During late season, when some robots have elevation capabilities, it will be important for alliances to strategize how they will elevate while also maximizing their score using the corners modifiers.
   ]
 )

@@ -70,7 +70,7 @@ The last problem that we addressed using GitHub workflows is spell checking the 
 
 Here is the final workflow code:
 
-#align(center)[*53D-High-Stakes-Notebook/.github/workflows/typos.yml*]
+#code-header(main: false)[53D-High-Stakes-Notebook/.github/workflows/typos.yml]
 #raw(block: true, lang: "yml", read("/.github/workflows/typos.yml"))
 
 When the workflow is completed, if there is are no detected spelling errors in the notebook, a workflow success message will be sent to our Discord that looks like this:

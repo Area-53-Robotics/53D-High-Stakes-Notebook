@@ -24,6 +24,7 @@
 // July
 #include "manual-updates/manual-v1-update.typ"
 #include "management/july-august.typ"
+#include "drivetrain-1/build.typ"
 
 // August
 #include "misc-program/github-workflows.typ"
@@ -45,3 +46,5 @@
 #include "odometry/select-movement.typ"
 #include "odometry/brainstorm-implementation.typ"
 #include "odometry/select-implementation.typ"
+#include "odometry/program-odometry.typ"
+#include "odometry/program-pid.typ"

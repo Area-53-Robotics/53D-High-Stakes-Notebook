@@ -189,6 +189,19 @@
   )
 }
 
+#let delegation(
+  recurring: none,
+  today: none
+) = table(
+  columns: (1fr, 1fr),
+
+  fill: (_, y) =>
+    if y == 0 {gray.lighten(20%)},
+  
+  [*Recurring Tasks*], [*Today's Tasks*],
+  recurring, today
+)
+
 // ! You can only have two entry references in an entry without getting the "did not converge" error
 #let entry-reference(
   date: none,
