@@ -76,8 +76,8 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
     image("build/2024.08.24-3.jpg", width: 200pt),
     caption: "First design of the mobile goal stop"
   ),
-  stack(
-    spacing: 10pt,
+)
+#grid(
     [
       === Troubleshooting
       - We noticed that air was leaking from our pneumatic system.
@@ -92,5 +92,4 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
       image("build/2024.08.24-4.jpg", width: 200pt),
       caption: "Second design of the mobile goal stop"
     ),
-  ),
 )

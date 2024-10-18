@@ -19,7 +19,7 @@
 = 2024/09/06
 #to-do(
   date: datetime(year: 2024, month: 9, day: 6),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
     (true, "Build the intake according to today's delegation.", "Everyone"),
@@ -100,7 +100,7 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 = 2024/09/07
 #to-do(
   date: datetime(year: 2024, month: 9, day: 7),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
     (true, "Build the intake according to today's delegation.", "Everyone"),
@@ -145,14 +145,12 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
   [
     === Assembly
     - Replaced triangle bracing to the towers from standoffs to half-cut C-channel
-      - Previously, we had standoffs as triangle braces. However, they were in the way of the intake. Instead, we wanted to replace the standoffs with 24x1x1 c-channel.
-    - Cutted ramps for the mobile goal out of polycarbonate
+      - Previously, we had standoffs as triangle braces. However, they were in the way of the intake. Instead, we wanted to replace the standoffs with 24x1x1 C-channel.
+    - We cut ramps for the mobile goal out of polycarbonate
       - Drilled holes on the top corners to the ramp. Tied zip ties to these corners to tension them up.
-      - Cutted a gap in the middle for space for the hooks 
+      - We cut a gap in the middle for space for the hooks 
     - Created a stopper for the intake
       - We want the intake to be pivoted above a specific height. Too low or too high and it will not contract the rings.
-
-
   ],
 
    figure(
@@ -180,16 +178,19 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 )
 
 #colbreak()
+
 = 2024/09/13
 #to-do(
   date: datetime(year: 2024, month: 9, day:13),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
     (true, "Build the intake according to today's delegation.", "Everyone"),
   )
 )
+
 At this practice we finished the bottom of our intake to prepare for scoring at the next scrimmage. There were a few issues, but we found the cause of the problems and remedied the issues.
+
 == Delegation
 #delegation(
   recurring: [
@@ -261,7 +262,7 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
 = 2024/09/14
 #to-do(
   date: datetime(year: 2024, month: 9, day:14),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
     (true, "Build the intake according to today's delegation.", "Everyone"),
@@ -329,7 +330,7 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
 = 2024/09/20
 #to-do(
   date: datetime(year: 2024, month: 9, day:20),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
     (true, "Build the intake according to today's delegation.", "Everyone"),
