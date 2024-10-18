@@ -43,13 +43,13 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The m
   ]
 )
 
-#colbreak()
+
 
 == Build Process
 #grid(
   figure(
       image("build/2024.08.17-3.jpg", width: 190pt),
-      caption: "////"
+      caption: "Adding pillow bearings for triangle bracing."
   ),
   [
     === Materials
@@ -72,11 +72,11 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The m
   ],
   figure(
     image("build/2024.08.17-2.jpg", width: 190pt),
-    caption: "////"
+    caption: "Close up of how the pistons are mounted to the clamp"
   ),
     figure(
     image("build/2024.08.17-3.jpg", width: 200pt),
-    caption: "////"
+    caption: "The clamp arm on its pivots"
   ),
   stack(
     spacing: 10pt,
@@ -88,7 +88,7 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The m
     ],
     figure(
       image("build/2024.08.17-4.jpg", width: 200pt),
-      caption: "////"
+      caption: "Mounting the radio on the side of the towers"
     ),
   )
 )
@@ -124,7 +124,7 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
 #grid(
   figure(
       image("build/2024.08.23-1.jpg", width: 190pt),
-      caption: "////"
+      caption: "We cut the edge of the drivetrain to prevent the mobile goal from hitting it."
   ),
   [
     === Materials
@@ -147,11 +147,11 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
   ],
   figure(
     image("build/2024.08.23-2.jpg", width: 190pt),
-    caption: "////"
+    caption: "Picture of the tubbing for the pistons"
   ),
   figure(
     image("build/2024.08.23-3.jpg", width: 190pt),
-    caption: "////"
+    caption: "Predicted angle of the mobile goal when mobile goal clamp is on"
   ),
   stack(
     spacing: 10pt,
@@ -164,7 +164,7 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
     ],
     figure(
       image("build/2024.08.23-4.jpg", width: 100pt),
-      caption: "////"
+      caption: "Picture of mesh on mobile goal clamp"
     ),
   )
 )

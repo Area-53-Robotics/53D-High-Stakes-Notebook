@@ -47,7 +47,7 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
 #grid(
   figure(
     image("build/2024.08.24-1.jpg", width: 100pt),
-    caption: "////"
+    caption: "x2 2x2x1  C-channel"
   ),
   [
     === Materials
@@ -68,11 +68,11 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
   ],
   figure(
     image("build/2024.08.24-2.jpg", width: 200pt),
-    caption: "////"
+    caption: "The clamp at the end of the day"
   ),
     figure(
     image("build/2024.08.24-3.jpg", width: 200pt),
-    caption: "////"
+    caption: "First design of the mobile goal stop"
   ),
   stack(
     spacing: 10pt,
@@ -88,7 +88,7 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
     ],
     figure(
       image("build/2024.08.24-4.jpg", width: 200pt),
-      caption: "////"
+      caption: "Second design of the mobile goal stop"
     ),
   ),
 )

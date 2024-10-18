@@ -47,7 +47,7 @@ At this meeting, we worked on building the main towers for the bot and bracing/b
 #grid(
   figure(
     image("build/2024.08.16-1.jpg", width: 150pt),
-    caption: "///"
+    caption: "A front view of the towers. This is the space we will be working with for the mobile goal clamp"
   ),
   [
     === Materials
@@ -72,6 +72,6 @@ At this meeting, we worked on building the main towers for the bot and bracing/b
   ],
   figure(
     image("build/2024.08.16-2.jpg", width: 140pt),
-    caption: "////"
+    caption: "A back view of the towers. This is the space we will be working with for the intake and other subsystems."
   ),
 )
