@@ -10,7 +10,7 @@
 )
 
 #to-do(
-  date: datetime(year: 2024, month: 8, day: 14),
+  date: datetime(year: 2024, month: 8, day: 30),
   monthly-schedule: "Ahead",
   yearly-schedule: "Ahead",
   (
@@ -22,7 +22,7 @@
 Today we had an online meeting, during which we discussed the implementation of an intake and identified the neeeds, goals, and constraints for this mechanism.
 
 #figure(
-  image("Idenify-intake.excalidraw.svg", width: 50%),
+  image("identify-intake.excalidraw.svg", width: 50%),
   caption: "The intake allows us to collect game elements from the field. It can grab, hold, and pull objects into the robot, making it easier to transport them for scoring. The intake enables us to quickly secure multiple game elements while maintaining control during movement."
 )
 
