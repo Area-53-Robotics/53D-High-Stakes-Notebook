@@ -78,8 +78,9 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The m
     image("build/2024.08.17-3.jpg", width: 200pt),
     caption: "The clamp arm on its pivots"
   ),
-  stack(
-    spacing: 10pt,
+)
+#grid(
+
     [
       === Troubleshooting
       - The bracing between the towers interfered with the clamp. We had to change the way we braced the towers from standoffs to C-channel.
@@ -90,7 +91,6 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The m
       image("build/2024.08.17-4.jpg", width: 200pt),
       caption: "Mounting the radio on the side of the towers"
     ),
-  )
 )
 
 = 2024/08/23
@@ -119,7 +119,7 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
     - Troubleshoot the mobile goal clamp angle: Eric and Jin
  ]
 )
-
+#colbreak()
 == Build Process
 #grid(
   figure(
