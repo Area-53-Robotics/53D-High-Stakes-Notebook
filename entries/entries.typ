@@ -50,6 +50,8 @@
 // September
 #include "management/september.typ"
 #include "intake-1/select.typ"
+#include "intake-1/build.typ"
+#include "intake-1/built-troubleshoot.typ"
 #include "competition/area-53-scrimmage.typ"
 
 // October
