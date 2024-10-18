@@ -37,7 +37,12 @@
     _ #it.caption _
   ]
 
-  // show raw.where(block: false): nb_raw_not_block
+  show raw.where(block: false): box.with(
+    fill: gray.lighten(75%),
+    inset: (x: 3pt, y: 0pt),
+    outset: (y: 3pt),
+    radius: 2pt,
+  )
   
   include "components/codly.typ"
   show: codly-init.with()

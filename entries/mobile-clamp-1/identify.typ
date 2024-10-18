@@ -23,7 +23,7 @@ This season reintroduced the mobile goal, a game element that was in the 2021-22
 
 #figure(
   image("Identify-mogo-clamp.excalidraw.svg", width: 50%),
-  caption: "A mobile goal clamp help us quickly and reliably pick up mobile goals and transport them to scoring zones."
+  caption: "A mobile goal clamp helps us quickly and reliably pick up mobile goals and transport them to scoring zones."
 )
 
 #table(
