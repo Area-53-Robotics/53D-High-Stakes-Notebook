@@ -43,6 +43,8 @@
 #include "mobile-clamp-1/build.typ"
 #include "mobile-clamp-1/build-troubleshoot.typ"
 #include "mobile-clamp-1/program.typ"
+#include "intake-1\identify.typ"
+#include "intake-1\understand.typ"
 
 // September
 #include "management/september.typ"

@@ -21,6 +21,7 @@
 
   grid.cell(colspan: 2)[
     = Impulse
+    #v(10pt)
   ],
   stack(
     spacing: 10pt,
@@ -29,8 +30,7 @@
   ),
   [
     == What is Impulse?
-    Impulse describes the change in momentum of an object.
-
+    Impulse describes the change in momentum of an object. It is often denoted by the symbol J and is mathematically expressed as the product of force (F) and the time (Δt) over which the force is applied:
     #admonition(type: "equation")[
       If:
       - $J$ is the impulse (change in momentum) of an object
@@ -42,11 +42,12 @@
 
     == How does it relate to the intake?
 
-    The impulse experienced by an object is equal to the change in its momentum. When an intake mechanism interacts with an object, it applies a force over a certain duration. The resulting impulse causes a change in the object's momentum.
-  ],
-)
+    The impulse experienced by a game element is equal to the change in its momentum. When an intake mechanism interacts with a game element, it applies a force over a certain duration. The resulting impulse causes a change in the game element momentum, which is important for scoring rings onto the mobile goals.
+    ],
+  )
 
-#colbreak()
+
+
 
 #grid(
   align: (x, _) =>
@@ -55,6 +56,7 @@
 
   grid.cell(colspan: 2)[
     = Elasticity and Hooke's Law
+      #v(10pt)
   ],
   stack(
     spacing: 10pt,
@@ -64,8 +66,8 @@
   [
     == What is elasticity and Hooke's law?
 
-    - *Elasticity* is the property of a material that allows it to return to its original shape and size after deformation when the applied force is removed. Materials that exhibit high elasticity can undergo substantial deformation and then recover completely
-    - *Hooke's Law* describes the linear relationship between the force applied to a spring or elastic material and the resulting deformation.
+    - *Elasticity*  is the property of a material that allows it to return to its original shape and size after deformation when the applied force is removed. Materials that exhibit high elasticity can undergo substantial deformation and then recover completely.
+    - *Hooke's Law* describes the linear relationship between the force applied to a spring or elastic material and the resulting deformation. It is named after the 17th-century physicist Robert Hooke..
 
     #admonition(type: "equation")[
       If:
@@ -77,7 +79,7 @@
     ]
     == How do they relate to to the intake?
 
-    Elasticity is crucial for allowing the mechanism to deform when interacting with objects and then recover its original shape, especially if they use rubber bands or flex wheels.
+      Elasticity is crucial for allowing the intake to deform when interacting with rings and then recover its original shape afterwards, especially if we plan to use rubber bands or flex wheels in the intake design. 
   ],
 )
 
@@ -90,16 +92,15 @@
 
   grid.cell(colspan: 2)[
     = Tension
-  ],
+      #v(10pt)
+  ],  
   [
     == What is tension?
-
     Tension refers to the force that is transmitted through a string, rope, cable, or any flexible connector when it is pulled tight by forces acting from opposite ends. Tension is a pulling force, and it is always directed along the length of the flexible connector.
   ],
   image("understand/Tension.excalidraw.svg"),
   grid.cell(colspan: 2)[
     == How does it relate to the intake?
-
     Tension in flexible connectors contributes to the control and stability of the intake mechanism. 
   ]
 )
