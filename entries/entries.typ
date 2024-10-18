@@ -42,6 +42,7 @@
 #include "mobile-clamp-1/build-tower.typ"
 #include "mobile-clamp-1/build.typ"
 #include "mobile-clamp-1/build-troubleshoot.typ"
+#include "mobile-clamp-1/program.typ"
 
 // September
 #include "management/september.typ"
