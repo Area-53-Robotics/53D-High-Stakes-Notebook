@@ -39,6 +39,7 @@
 #include "mobile-clamp-1/brainstorm.typ"
 #include "mobile-clamp-1/select.typ"
 #include "mobile-clamp-1/plan.typ"
+#include "mobile-clamp-1/build.typ"
 
 
 // September
