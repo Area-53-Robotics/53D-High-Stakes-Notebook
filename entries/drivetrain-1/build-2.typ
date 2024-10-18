@@ -72,11 +72,11 @@ We are happy that the drivetrain is completed. We are making much more progress 
   stack(
     spacing: 10pt,
     figure(
-      image("build-2/2024.08.09-1.png", width: 200pt),
+      image("build-2/2024.08.09-1.jpg", width: 200pt),
       caption: "The cross brace is not aligned with the holes"
     ),
     figure(
-      image("build-2/2024.08.09-2.png", width: 200pt),
+      image("build-2/2024.08.09-2.jpg", width: 200pt),
       caption: "Front view of the cross-brace"
     )
   ),
@@ -117,7 +117,7 @@ We are worried about the bending at the front of the drivetrain. Not only does t
 == Build Process
 #grid(
   figure(
-    image("build-2/2024.08.10-1.png", width: 225pt),
+    image("build-2/2024.08.10-1.jpg", width: 225pt),
     caption: "Temporary radio placement"
   ),
   [
@@ -143,12 +143,12 @@ We are worried about the bending at the front of the drivetrain. Not only does t
       - They will serve as the towers for the intake.
   ],
   figure(
-    image("build-2/2024.08.10-2.png", width: 175pt),
+    image("build-2/2024.08.10-2.jpg", width: 175pt),
     caption: "The bending got better as a result of leaving the standoffs overnight"
   ),
 )
 
 #figure(
-  image("build-2/2024.08.10-3.png", width: 200pt),
+  image("build-2/2024.08.10-3.jpg", width: 200pt),
   caption: "C-channel towers"
 )
