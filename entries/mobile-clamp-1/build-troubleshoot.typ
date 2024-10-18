@@ -4,7 +4,7 @@
   title: "Mobile Goal Clamp v1 - Troubleshooting",
   type: "build",
   date: datetime(year: 2024, month: 8, day: 24),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Jin",
   witnessed: "Makhi",
 )
@@ -19,10 +19,12 @@
 = 2024/08/24
 #to-do(
   date: datetime(year: 2024, month: 8, day: 24),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Ahead",
   (
     (true, "Build the mobile goal clamp according to today's delegation.", "Everyone"),
+    (true, "Program the mobile goal clamp.", ("Ajibola", "Ishika")),
+    (true, "Test the mobile goal clamp.", "Everyone"),
   )
 )
 
@@ -31,7 +33,7 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory*: :Anders and Rory
+    - *Inventory*: Anders and Rory
     - *Manufacturing*: Rory and Eric
     - *Oversight & Quality Control*: Jin
     - *Initial Testing*: Jin, Anders, Eric, and Rory

@@ -4,7 +4,7 @@
   title: "Intake v1",
   type: "brainstorm",
   date: datetime(year: 2024, month: 8, day: 31),
-  attendance: ("Ajibola", "Ishika"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
@@ -15,12 +15,12 @@
   yearly-schedule: "Ahead",
   (
     (true, "Brainstorm intake ideas.", "Everyone"),
-    (true, "Select the best intake idea using a decision matrix.", "Everyone"),
-    (true, "Plan the implementation of the intake idea.", "Everyone"),
+    (false, "Select the best intake idea using a decision matrix.", "Everyone"),
+    (false, "Plan the implementation of the intake idea.", "Everyone"),
   )
 )
 
-Earlier in the season, we researched different intakes that other teams were using, as well as intakes that were popular in the Tipping Point season. We are confident in the ideas that we came up with and we used today’s practice to crystallize those ideas before proceeding with the design process.
+Earlier in the season, we researched different intakes that other teams were using, as well as intakes that were popular in the Tipping Point season. We are confident in the ideas that we came up with and we used today's practice to crystallize those ideas before proceeding with the design process.
 
 #pro-con(
   name: "Hook",

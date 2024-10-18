@@ -53,12 +53,3 @@
   + *Speed-Torque Balance* - This gear ratio provides the best balance of speed and torque. We need the speed to get around the field and secure as many mobile goals as possible. We need the torque to push back enemy bots trying to take away our mobile goals or upsetting them when they are trying to score on the wall stakes.
   + *Weight Capacity* - Because our drivetrain is likely going to be heavier than last year's drivetrain (to provide extra force), we also want a gear ratio that can support that weight.
 ]
-
-// #cad(
-//   folder: "drivetrain-1",
-//   sheets: 5,
-//   add-views: ("Isometric", "Top", "Side", "Front"),
-//   date: datetime(year: 2023, month: 7, day: 29),
-//   designed: "Ajibola",
-//   witnessed: "Ishika",
-// )

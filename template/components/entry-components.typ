@@ -54,7 +54,7 @@
   #let path = none
 
   #while current-sheet <= sheets {
-    path = "/assets/cad/" + folder + "/sheet" + str(current-sheet) + ".png"
+    path = "/assets/cad/" + folder + "/sheet-" + str(current-sheet) + ".jpeg"
 
     page(
       paper: "us-letter",
@@ -110,7 +110,12 @@
       rows: (50%, 50%),
 
     ..for view in add-views {
-        (image("/assets/cad/" + folder + "/" + str(view) + ".png"),)
+        (
+          figure(
+            image("/assets/cad/" + folder + "/" + str(view) + ".png"),
+            caption: view + " View"
+          ),
+        )
       },
     )
   ]

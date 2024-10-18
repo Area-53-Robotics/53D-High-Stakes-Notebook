@@ -2,7 +2,7 @@
 
 #show: create-appendix-entry.with(
   title: "Innovate Award Submission Information Form",
-  updated: datetime(year: 2024, month: 1, day: 26)
+  updated: datetime(year: 2024, month: 10, day: 18)
 )
 
 // https://kb.roboticseducation.org/hc/en-us/articles/17319258476439

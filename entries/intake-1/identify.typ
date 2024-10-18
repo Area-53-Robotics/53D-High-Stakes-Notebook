@@ -4,7 +4,7 @@
   title: "Intake v1",
   type: "identify",
   date: datetime(year: 2024, month: 8, day: 30),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
@@ -19,7 +19,7 @@
   )
 )
 
-Today we had an online meeting, during which we discussed the implementation of an intake and identified the neeeds, goals, and constraints for this mechanism.
+Today we had an online meeting, during which we discussed the implementation of an intake and identified the needs, goals, and constraints for this mechanism.
 
 #figure(
   image("identify-intake.excalidraw.svg", width: 50%),
@@ -34,7 +34,7 @@ Today we had an online meeting, during which we discussed the implementation of 
   table.header(table.cell(fill: gray, align: center)[*Aspects of the Intake*]),
 
   [*Control* - A well-designed intake enables a robot to control a game element and manipulate it into the right place. This includes grabbing the game element, releasing the game element, and moving the game element to desired locations within the robot to fulfill functions. ],
-  [*Speed* - A well-designed intake must be able to operate quickly to save as much time as possible for other tasks such as scoring rings on the neutral wall stakes. Speed is also required to be competitive as rings are limited and while not necessary, some strategies include competing for the enemy team’s rings.],
+  [*Speed* - A well-designed intake must be able to operate quickly to save as much time as possible for other tasks such as scoring rings on the neutral wall stakes. Speed is also required to be competitive as rings are limited and while not necessary, some strategies include competing for the enemy team's rings.],
   [*Grip* - Grip is required as it gives more control over the game elements while in the robot, and easens the process of pulling them in and pushing them out. Additionally, any redirection of the game elements also requires grip.],
 )
 

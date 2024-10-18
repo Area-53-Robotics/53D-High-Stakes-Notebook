@@ -16,6 +16,7 @@
   (
     (true, "Review our time and budget management during July & August.", "Everyone"),
     (true, "Plan out the September meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),
+    (true, "Select the best intake idea using a decision matrix.", "Everyone"),
   )
 )
 

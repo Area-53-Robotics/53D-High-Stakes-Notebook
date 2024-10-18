@@ -4,7 +4,7 @@
   title: "Intake v1",
   type: "build",
   date: datetime(year: 2024, month: 9, day: 6),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Jin",
   witnessed: "Makhi",
 )
@@ -220,27 +220,19 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     - Flex wheels
     - High strength axle
     - The rest of the materials can be found in the tool box
-
-
-
   ],
   [
     === Assembly
     - (NOTE: Most assembly was completed during the previous meeting or during the week)
-    - Attached the connecting 17x3x1 C-channel to the first stage intake’s two parallel C-channels with standoffs, screws, and nylons.
+    - Attached the connecting 17x3x1 C-channel to the first stage intake's two parallel C-channels with standoffs, screws, and nylons.
       - Attached a hinge at the bottom of the 17x3x1 C-channel
-    - Cutted a flap for the intake
+    - We cut a flap for the intake
       - This is to prevent rings from reaching too far up when intake. The flap will push the rings down. 
     - Place flex-wheels on the high-strength axle and attach to the intake.
-
-
-
-
   ],
-
-   figure(
-      image("build\2024.09.13-2.png", width: 200pt,),
-      caption: "Bottom roller for the hooks."
+  figure(
+    image("build\2024.09.13-2.png", width: 200pt,),
+    caption: "Bottom roller for the hooks."
   ),
 )
 #grid(
@@ -275,7 +267,7 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     (true, "Build the intake according to today's delegation.", "Everyone"),
   )
 )
-On the 14th of September we added on to our intake and mobile-goal design and followed this up with an in-team scrimmage. Since some robots weren’t fully functional, so, to increase driver practice, the coach came up with a new game that only required controlled driving.
+On the 14th of September we added on to our intake and mobile-goal design and followed this up with an in-team scrimmage. Since some robots weren't fully functional, so, to increase driver practice, the coach came up with a new game that only required controlled driving.
 *The Rules Summary*: 
 There are two teams, each consisting of two robots.
 The objectives of the game are to move as many rings as possible onto your team's side of the field and to move mobile goals to your side, rings were one point, mobile-goals were five points.

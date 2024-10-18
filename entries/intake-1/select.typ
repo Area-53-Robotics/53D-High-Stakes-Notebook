@@ -12,12 +12,12 @@
 Continuing with the design process for the intake, we identified criteria that we could use to evaluate the intake ideas. Since the intake will be the most critical subsystem apart from the drivetrain, careful consideration was required.
 
 #decision-matrix-criteria[
-  - Efficiency  - How much rotational force the gear ratio can generate.
-  - Simplicity  - How long the clamp can be in use before requiring maintenance.
+  - Efficiency - How much rotational force the gear ratio can generate.
+  - Simplicity - How long the clamp can be in use before requiring maintenance.
   - Reliability - How little space the clamp takes up.
-  - Smoothness  - How reliable the clamp is at securing a mobile goal.
-  - Durability  - How often the clamp can activate before burning out or running out of air pressure.
-  - Compactness -  How little space the intake takes up.
+  - Smoothness - How reliable the clamp is at securing a mobile goal.
+  - Durability - How often the clamp can activate before burning out or running out of air pressure.
+  - Compactness - How little space the intake takes up.
 ]
 
 #double-decision-matrix(

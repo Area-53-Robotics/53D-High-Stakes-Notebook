@@ -4,7 +4,7 @@
   title: "Mobile Goal Clamp v1",
   type: "program",
   date: datetime(year: 2024, month: 8, day: 24),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
@@ -18,7 +18,7 @@
 
 ```
 = Clamp Movement:
-  Now that the object has been made, we moved on to programming the actual clamp movement. We created a file, clamp.cpp to store all of the clamp-related variables and functions. We quickly realized after reading the PROS API that the pros::adi::DigitalOut class does not have a function for users to get the current value (0 or 1) of the object. While we could theoretically make the clamp toggleable without this information readily available to us, this could hinder our ability to make more advanced usage of the clamp later on, such as for autonomous routines. To solve this problem, we created a boolean variable to store whether the clamp’s pneumatic pistons have been activated. We plan to update this variable every time the position of the clamp is changed (ex. from outset to inset) so we can keep track of the state of the clamp.
+  Now that the object has been made, we moved on to programming the actual clamp movement. We created a file, clamp.cpp to store all of the clamp-related variables and functions. We quickly realized after reading the PROS API that the pros::adi::DigitalOut class does not have a function for users to get the current value (0 or 1) of the object. While we could theoretically make the clamp toggleable without this information readily available to us, this could hinder our ability to make more advanced usage of the clamp later on, such as for autonomous routines. To solve this problem, we created a boolean variable to store whether the clamp's pneumatic pistons have been activated. We plan to update this variable every time the position of the clamp is changed (ex. from outset to inset) so we can keep track of the state of the clamp.
   #code-header[src/subsystemFiles/clamp.cpp] 
 ```cpp
   // creates a boolean variable that sets the variable to false

@@ -43,6 +43,7 @@
 #include "mobile-clamp-1/build.typ"
 #include "mobile-clamp-1/build-troubleshoot.typ"
 #include "mobile-clamp-1/program.typ"
+#include "mobile-clamp-1/test.typ"
 #include "intake-1/identify.typ"
 #include "intake-1/understand.typ"
 #include "intake-1/brainstorm.typ"
@@ -50,8 +51,9 @@
 // September
 #include "management/september.typ"
 #include "intake-1/select.typ"
+#include "intake-1/plan.typ"
 #include "intake-1/build.typ"
-#include "intake-1/built-troubleshoot.typ"
+#include "intake-1/build-troubleshoot.typ"
 #include "competition/area-53-scrimmage.typ"
 
 // October

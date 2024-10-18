@@ -17,3 +17,12 @@
 
 = CAD Model
 We planned out the mobile goal clamp using CAD. The technical drawings begin on the next page.
+
+#cad(
+  folder: "clamp-v1",
+  sheets: 3,
+  add-views: ("Isometric", "Side", "Front", "Back"),
+  date: datetime(year: 2024, month: 8, day: 15),
+  designed: "Jin",
+  witnessed: "Ajibola",
+)
