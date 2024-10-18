@@ -15,7 +15,7 @@
   yearly-schedule: "Ahead",
   (
     (true, "Select the best gear ratio for the tank drive using a decision matrix.", "Everyone"),
-    (true, "Create a plan for the construction of the drivetrain using CAD.", ("Ajibola", "Jin")),
+    (true, "Create a plan for the construction of the drivetrain using WBS & CAD.", ("Ajibola", "Jin")),
   )
 )
 

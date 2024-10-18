@@ -19,8 +19,8 @@
 = 2024/08/16
 #to-do(
   date: datetime(year: 2024, month: 8, day: 16),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Ahead",
   (
     (true, "Build the mobile goal clamp according to today's delegation.", "Everyone"),
   )

@@ -14,10 +14,10 @@
   monthly-schedule: "On",
   yearly-schedule: "Behind",
   (
-    (true, "Identify the design constraints and goals for the kicker. (Everyone)"),
+    (true, "Identify the design goals and constraints for the kicker. (Everyone)"),
     (true, "Brainstorm possible kicker platforms (Everyone)"),
     (true, "Select the best kicker platform using a decision matrix. (Everyone)"),
-    (false, "Create a plan for the construction of the kicker platform using CAD. (Ajibola & Jin)"),
+    (false, "Create a plan for the construction of the kicker platform using WBS & CAD. (Ajibola & Jin)"),
   )
 )
 

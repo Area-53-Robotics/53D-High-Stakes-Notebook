@@ -16,7 +16,7 @@
   (
     (true, "Brainstorm possible gear ratios for the tank drive.", "Everyone"),
     (false, "Select the best gear ratio for the tank drive using a decision matrix.", "Everyone"),
-    (false, "Create a plan for the construction of the drivetrain using CAD.", ("Ajibola", "Jin")),
+    (false, "Create a plan for the construction of the drivetrain using WBS & CAD.", ("Ajibola", "Jin")),
   )
 )
 

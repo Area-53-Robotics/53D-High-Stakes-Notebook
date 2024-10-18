@@ -15,7 +15,7 @@
   yearly-schedule: "Ahead",
   (
     (true, "Review our time and budget management during June.", "Everyone"),
-    (true, "Plan out the July & August meetings by creating a Gantt chart and reviewing our budget.", "Everyone"),
+    (true, "Plan out the July & August meetings by creating a Gantt chart.", "Everyone"),
   )
 )
 
@@ -36,7 +36,7 @@ July & August make up the majority of the early season, so this will be the idea
 
 The Minnesota signature event will occur during July, during which many of the best VEX teams will debut their early season robot designs. We expect this to be a great opportunity for us to re-evaluate our overall robot plans to make sure they will remain efficient and competitive compared to other robots.
 
-Taking these factors into consideration, we created this gantt chart:
+Taking these factors into consideration, we created this Gantt chart:
 
 #image("gantt-charts/july-august-pre-1.png")
 #image("gantt-charts/july-august-pre-2.png")

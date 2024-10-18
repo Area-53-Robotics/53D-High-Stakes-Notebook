@@ -19,8 +19,8 @@
 = 2024/08/17
 #to-do(
   date: datetime(year: 2024, month: 8, day: 17),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Ahead",
   (
     (true, "Build the mobile goal clamp according to today's delegation.", "Everyone"),
   )
@@ -96,8 +96,8 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The m
 = 2024/08/23
 #to-do(
   date: datetime(year: 2024, month: 8, day: 23),
-  monthly-schedule: "On",
-  yearly-schedule: "On",
+  monthly-schedule: "Ahead",
+  yearly-schedule: "Ahead",
   (
     (true, "Build the mobile goal clamp according to today's delegation.", "Everyone"),
   )

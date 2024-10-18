@@ -43,9 +43,12 @@
 #include "mobile-clamp-1/build.typ"
 #include "mobile-clamp-1/build-troubleshoot.typ"
 
-
 // September
+#include "management/september.typ"
 #include "competition/area-53-scrimmage.typ"
+
+// October
+#include "management/october.typ"
 
 // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"

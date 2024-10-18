@@ -14,7 +14,7 @@
   monthly-schedule: "Ahead",
   yearly-schedule: "Ahead",
   (
-    (true, "Evaluate our current project workflow to identify possible improvements", "Everyone"),
+    (true, "Evaluate our current project workflow to identify possible improvements.", "Everyone"),
     (true, "Identify the design goals and constraints for the drivetrain.", "Everyone"),
     (true, "Determine the mathematical and scientific concepts involved in drivetrain design.", "Everyone"),
   )

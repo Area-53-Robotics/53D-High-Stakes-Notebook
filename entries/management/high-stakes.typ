@@ -58,7 +58,7 @@ Taking all of the above factors into consideration, we created a Gantt chart for
 #image("gantt-charts/high-stakes.png")
 
 #admonition(type: "note")[
-  We plan to adjust this gantt chart as the season goes on depending on new deadlines that arise.
+  We plan to adjust this Gantt chart as the season goes on depending on new deadlines that arise.
 ]
 
 = Budget & Materials Management
