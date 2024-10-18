@@ -50,7 +50,7 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 == Build Process
 #grid(
   figure(
-      image("build\2024.09.06-1.png", width: 170pt),
+      image("build/2024.09.06-1.png", width: 170pt),
       caption: "Standoff rails to prevent rings from interfering with the drivetrain."
   ),
   [
@@ -77,12 +77,12 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 
   ],
    figure(
-      image("build\2024.09.06-2.png", width: 160pt),
+      image("build/2024.09.06-2.png", width: 160pt),
       caption: "Close up of how the intake is mounted on the triangle brace."
   ),
 
   figure(
-      image("build\2024.09.06-3.png", width: 190pt),
+      image("build/2024.09.06-3.png", width: 190pt),
       caption: "The angle of the mobile goal when we clamp onto it."
   ),
 
@@ -129,7 +129,7 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 == Build Process
 #grid(
   figure(
-      image("build\2024.09.07-1.png", width: 170pt),
+      image("build/2024.09.07-1.png", width: 170pt),
       caption: "The finished clamp."
   ),
   [
@@ -154,17 +154,17 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
   ],
 
    figure(
-      image("build\2024.09.07-2.png", width: 190pt),
+      image("build/2024.09.07-2.png", width: 190pt),
       caption: "First stage of intake."
   ),
   figure(
-      image("build\2024.09.07-3.png", width: 130pt),
+      image("build/2024.09.07-3.png", width: 130pt),
       caption: "The 12x1x1 C-channel we used as triangle brace."
   ),
   
 
    figure(
-      image("build\2024.09.07-4.png", width: 140pt),
+      image("build/2024.09.07-4.png", width: 140pt),
       caption: "The pistons of our clamp. We experienced leaking."
   ),
   [
@@ -212,7 +212,7 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
 == Build Process
 #grid(
   figure(
-      image("build\2024.09.13-1.jpg", width: 170pt),
+      image("build/2024.09.13-1.jpg", width: 170pt),
       caption: "The flap for the intake."
   ),
   [
@@ -232,18 +232,18 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     - Place flex-wheels on the high-strength axle and attach to the intake.
   ],
   figure(
-    image("build\2024.09.13-2.png", width: 200pt,),
+    image("build/2024.09.13-2.png", width: 200pt,),
     caption: "Bottom roller for the hooks."
   ),
 )
 #grid(
   figure(
-      image("build\2024.09.13-3.png", width: 130pt),
+      image("build/2024.09.13-3.png", width: 130pt),
       caption: "Side view of the intake."
   ),
 
    figure(
-      image("build\2024.09.13-4.png", width: 150pt),
+      image("build/2024.09.13-4.png", width: 150pt),
       caption: "Top rollers for the hooks."
   ),
   [
@@ -253,7 +253,7 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     - Solution: The nuts on the wheels and gears in the drivetrain were getting too tight. We will loosen them before and after each match in the future.
   ],
   figure(
-      image("build\2024.09.13-5.png", width: 140pt),
+      image("build/2024.09.13-5.png", width: 140pt),
       caption: "Drivetrain was stuck during testing"
   ),
   
@@ -315,7 +315,7 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
 #grid(
    
    figure(
-      image("build\2024.09.14-1.png", width: 200pt,),
+      image("build/2024.09.14-1.png", width: 200pt,),
       caption: "Lexan ring guider"
   ),
 
@@ -357,7 +357,7 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
 == Build Process
 #grid(
   figure(
-      image("build\2024.09.20-1.png", width: 200pt,),
+      image("build/2024.09.20-1.png", width: 200pt,),
       caption: "Front of the intake"
   ),
   [
@@ -383,7 +383,7 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
       - The umbrella of the mobile goal would push the rings inwards into the bot, causing it to get stuck in the space between the robot and the mobile goal.
   ],
     figure(
-      image("build\2024.09.20-2.png", width: 200pt,),
+      image("build/2024.09.20-2.png", width: 200pt,),
       caption: "The lexan rings plates"
   ),
 [

@@ -346,7 +346,7 @@
     reflection: [Drivetrain],
     radius: 3,
     overperformed: 0,
-    satisfactory:   10,
+    satisfactory: 10,
     underperformed: 0,
     disabled: 0
   )
