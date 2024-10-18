@@ -84,7 +84,7 @@ The drivetrain will display a speed of at least 72.77 in/s, which is 5% less tha
       [Mean], [#stats.mean(speed-test-data) in/s],
       [Median], [#stats.median(speed-test-data) in/s],
       [Range], [#stats.range(speed-test-data, digits: 1) in/s],
-      [Variance], [#stats.variance(speed-test-data, digits: 4) in/s],
+      [Variance], [#stats.variance(speed-test-data, digits: 4) in#super("2")/s#super("2")],
       [Standard Deviation], [#stats.std-dev(speed-test-data, digits: 2) in/s],
     )
   ],
@@ -203,7 +203,7 @@ The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or 
       [Mean], [#stats.mean(weight-test-data, digits: 2) ft.],
       [Median], [#stats.median(weight-test-data) ft.],
       [Range], [#stats.range(weight-test-data, digits: 2) ft.],
-      [Variance], [#stats.variance(weight-test-data, digits: 3) ft.],
+      [Variance], [#stats.variance(weight-test-data, digits: 3) ft#super("2")],
       [Standard Deviation], [#stats.std-dev(weight-test-data, digits: 3) ft.],
     )
   ],
@@ -327,7 +327,7 @@ The drivetrain will have a turning radius of 5 inches or less when making a 90#s
       [Mean], [#stats.mean(turning-test-data, digits: 2) in.],
       [Median], [#stats.median(turning-test-data) in.],
       [Range], [#stats.range(turning-test-data) in.],
-      [Variance], [#stats.variance(turning-test-data, digits: 2) in.],
+      [Variance], [#stats.variance(turning-test-data, digits: 2) in#super("2")],
       [Standard Deviation], [#stats.std-dev(turning-test-data, digits: 2) in.],
     )
   ],

@@ -31,7 +31,7 @@
 #include "overall-robot/identify-minnesota-sig.typ"
 #include "overall-robot/brainstorm-2.typ"
 #include "overall-robot/select-2.typ"
-// #include "drivetrain-1/build-2.typ"
+#include "drivetrain-1/build-2.typ"
 #include "drivetrain-1/program-driver-control.typ"
 #include "drivetrain-1/test.typ"
 #include "mobile-clamp-1/identify.typ" 
@@ -39,7 +39,9 @@
 #include "mobile-clamp-1/brainstorm.typ"
 #include "mobile-clamp-1/select.typ"
 #include "mobile-clamp-1/plan.typ"
+#include "mobile-clamp-1/build-tower.typ"
 #include "mobile-clamp-1/build.typ"
+#include "mobile-clamp-1/build-troubleshoot.typ"
 
 
 // September
