@@ -94,7 +94,7 @@
 
   print-appendix-entries()
 
-  // signature-list(chronological: true)
+  // signature-list(chronological: false)
 
   // entry-page-list()
 }

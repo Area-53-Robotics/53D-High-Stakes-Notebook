@@ -5,8 +5,8 @@
   type: "identify",
   date: datetime(year: 2024, month: 6, day: 16),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  designed: "Jin",
+  witnessed: "Ajibola",
 )
 
 Our team spent a lot of time talking and planning the foundation of our robot: the drivetrain. The drivetrain's shape determines what other subsystems we can build in the future, making it critical. However, before getting into the technical aspects, we figured out how the drivetrain fits into our overall game plan, ensuring it helps us do well in the competition.

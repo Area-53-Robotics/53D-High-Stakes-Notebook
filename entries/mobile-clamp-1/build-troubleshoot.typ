@@ -5,7 +5,7 @@
   type: "build",
   date: datetime(year: 2024, month: 8, day: 24),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
-  designed: "Jin",
+  designed: "Eric",
   witnessed: "Makhi",
 )
 

@@ -6,7 +6,7 @@
   date: datetime(year: 2024, month: 6, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Jin",
-  witnessed: "Ajibola",
+  witnessed: "Anders",
 )
 
 Every member on 53D used the analysis in our #entry-reference(type: "identify", title: "Game Challenge - Strategy Analysis") to brainstorm an overall robot idea.

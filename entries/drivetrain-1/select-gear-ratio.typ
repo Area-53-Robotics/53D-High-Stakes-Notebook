@@ -5,7 +5,7 @@
   type: "select",
   date: datetime(year: 2024, month: 6, day: 29),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
-  designed: "Ajibola",
+  designed: "Rory",
   witnessed: "Ishika",
 )
 

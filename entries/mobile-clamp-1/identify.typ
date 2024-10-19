@@ -5,8 +5,8 @@
   type: "identify",
   date: datetime(year: 2024, month: 8, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  designed: "Anders",
+  witnessed: "Eric",
 )
 
 #to-do(

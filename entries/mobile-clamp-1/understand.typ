@@ -5,8 +5,8 @@
   type: "understand",
   date: datetime(year: 2024, month: 8, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
-  designed: "Ajibola",
-  witnessed: "Eric",
+  designed: "Jin",
+  witnessed: "Rory",
 )
 
 #set grid(

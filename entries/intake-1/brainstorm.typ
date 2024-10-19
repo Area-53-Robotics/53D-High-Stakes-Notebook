@@ -5,8 +5,8 @@
   type: "brainstorm",
   date: datetime(year: 2024, month: 8, day: 31),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  designed: "Eric",
+  witnessed: "Jin",
 )
 
 #to-do(

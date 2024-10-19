@@ -5,8 +5,8 @@
   type: "select",
   date: datetime(year: 2024, month: 8, day: 6),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
-  designed: "Ajibola",
-  witnessed: "Jin",
+  designed: "Jin",
+  witnessed: "Ajibola",
 )
 
 After brainstorming the new overall robot ideas, we had to pick one to implement. To evaluate each overall robot idea, we used the same criteria that we used in our #entry-reference(type: "select", title: "Overall Robot Plan", date: datetime(year: 2024, month: 6, day: 15)).

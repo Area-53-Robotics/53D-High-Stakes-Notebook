@@ -5,8 +5,8 @@
   type: "program",
   date: datetime(year: 2024, month: 9, day: 27),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
-  designed: "Ajibola",
-  witnessed: "Ishika",
+  designed: "Ishika",
+  witnessed: "Ajibola",
 )
 
 #to-do(

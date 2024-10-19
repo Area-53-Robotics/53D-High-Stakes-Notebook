@@ -5,7 +5,7 @@
   type: "build",
   date: datetime(year: 2024, month: 9, day: 21),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
-  designed: "Jin",
+  designed: "Anders",
   witnessed: "Makhi",
 )
 
@@ -56,7 +56,7 @@ Today, we had a practice scrimmage. At this scrimmage we learned many lessons th
 
   ],
   figure(
-      image("build\2024.09.21-1.png", width: 170pt),
+      image("build/2024.09.21-1.png", width: 170pt),
       caption: "The intake's motor fell out."
   ),
   )
@@ -72,7 +72,7 @@ Today, we had a practice scrimmage. At this scrimmage we learned many lessons th
   ],
 
   figure(
-      image("build\2024.09.21-2.png", width: 190pt),
+      image("build/2024.09.21-2.png", width: 190pt),
       caption: "Loose screws in the mobile goal clamp."
   ),
 
