@@ -11,6 +11,12 @@
   cover: [],
   year: "",
   season: "",
+  innovate: (
+    date: none,
+    event: none,
+    description: none,
+    pages: none
+  ),
   body,
 ) = {
   // Styling rules
@@ -67,6 +73,52 @@
       #season
     ]
   ]
+
+
+  if innovate.event != none {
+    pagebreak()
+    pagebreak()
+
+    page(
+      margin: (rest: 0.5in),
+      background: image("/assets/innovate-form.jpg")
+    )[
+      #place(
+        top + left,
+        dx: 52pt,
+        dy: 46pt,
+        text(size: 15pt, innovate.date.display("[year]/[month]/[day]"))
+      )
+
+      #place(
+        top + left,
+        dx: 286pt,
+        dy: 46pt,
+        text(size: 15pt, innovate.event)
+      )
+
+      #place(
+        top + left,
+        dx: 155pt,
+        dy: 225pt,
+        text(size: 15pt, team)
+      )
+
+      #place(
+        top + left,
+        dx: 25pt,
+        dy: 278pt,
+        box(stroke: black + 1pt, width: 488pt, text(size: 14pt, innovate.description))
+      )
+
+      #place(
+        top + left,
+        dx: 25pt,
+        dy: 470pt,
+        box(stroke: black + 1pt, width: 488pt, innovate.pages)
+      )
+    ]
+  }
 
   appendix-entry-counter.update(_ => 1)
   frontmatter-page-counter.update(_ => 1)

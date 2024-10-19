@@ -336,61 +336,61 @@
   )
 )
 
-#colbreak()
+// #colbreak()
 
-= Subsystem Reflection
-#v(0.5em)
-#box[
-  == Drivetrain
-  #subsystem-analysis(
-    reflection: [Drivetrain],
-    radius: 3,
-    overperformed: 0,
-    satisfactory: 10,
-    underperformed: 0,
-    disabled: 0
-  )
-]
+// = Subsystem Reflection
+// #v(0.5em)
+// #box[
+//   == Drivetrain
+//   #subsystem-analysis(
+//     reflection: [Drivetrain],
+//     radius: 3,
+//     overperformed: 0,
+//     satisfactory: 10,
+//     underperformed: 0,
+//     disabled: 0
+//   )
+// ]
 
-#box[
-  == Intake
-  #subsystem-analysis(
-    reflection: [Intake],
-    radius: 3,
-    overperformed: 0,
-    satisfactory: 8,
-    underperformed: 2,
-    disabled: 0
-  )
-]
+// #box[
+//   == Intake
+//   #subsystem-analysis(
+//     reflection: [Intake],
+//     radius: 3,
+//     overperformed: 0,
+//     satisfactory: 8,
+//     underperformed: 2,
+//     disabled: 0
+//   )
+// ]
 
-#box[
-  == Clamp
-  #subsystem-analysis(
-    reflection: [Clamp],
-    radius: 3,
-    overperformed: 0,
-    satisfactory: 0,
-    underperformed: 10,
-    disabled: 0
-  )
-]
+// #box[
+//   == Clamp
+//   #subsystem-analysis(
+//     reflection: [Clamp],
+//     radius: 3,
+//     overperformed: 0,
+//     satisfactory: 0,
+//     underperformed: 10,
+//     disabled: 0
+//   )
+// ]
 
-#colbreak()
+// #colbreak()
 
-= Individual Reflections
+// = Individual Reflections
 
-== Jin 
-- The challenges with the intake and clamp serve as reminders that even small design elements can significantly impact performance. Going further, I want to place a stronger emphasis on planning and CADding. 
+// == Jin 
+// - The challenges with the intake and clamp serve as reminders that even small design elements can significantly impact performance. Going further, I want to place a stronger emphasis on planning and CADding. 
 
-== Ishika
--  Our standing in the Scrimmage reflects how much our team has grown over the past year. The intake performed well, quickly gathering and scoring rings, although it occasionally got stuck on a wire, highlighting the need for better wire management. The clamp needs tuning for more consistent performance, as it impacted our autonomous mode, which functioned but struggled to clamp the goal effectively. Additionally, our autonomous routine could improve, as the quick version used wasn’t fully troubleshooted. I believe our driver showed great skill, but as a team, we need to discuss strategy to ensure backup drivers and the rest of the drive team understand matchplay better. Overall, the scrimmage was a valuable learning experience that helped identify our weak spots.
+// == Ishika
+// -  Our standing in the Scrimmage reflects how much our team has grown over the past year. The intake performed well, quickly gathering and scoring rings, although it occasionally got stuck on a wire, highlighting the need for better wire management. The clamp needs tuning for more consistent performance, as it impacted our autonomous mode, which functioned but struggled to clamp the goal effectively. Additionally, our autonomous routine could improve, as the quick version used wasn’t fully troubleshooted. I believe our driver showed great skill, but as a team, we need to discuss strategy to ensure backup drivers and the rest of the drive team understand matchplay better. Overall, the scrimmage was a valuable learning experience that helped identify our weak spots.
 
-== Makhi 
-- Overall I think we did quite well, a few things we need to improve on include communication and handling stress and time. We also need to have any changes completed before competitions in the future to allow as much time as possible to repair and strategize during the event itself. Getting driver practice and seeing what other teams are doing was helpful in the game. Getting 3rd in squad and second in alliances shows that we are doing much better this year than at this time last year.
+// == Makhi 
+// - Overall I think we did quite well, a few things we need to improve on include communication and handling stress and time. We also need to have any changes completed before competitions in the future to allow as much time as possible to repair and strategize during the event itself. Getting driver practice and seeing what other teams are doing was helpful in the game. Getting 3rd in squad and second in alliances shows that we are doing much better this year than at this time last year.
 
-== Rory
-- Overall we did pretty well at the scrimmage, getting second place, getting the auton working for one round, and just getting some real practice in before a real competition. Although we did well, we did have some issues. We stressed about the auton, and at one point we were building an entire new mechanism before the scrimmage started. We did have the opportunity to see how teams outside of the 53 teams were performing and the opportunity to practice with another team. We also realized that out clamp is sometimes inconsistent during a match.
+// == Rory
+// - Overall we did pretty well at the scrimmage, getting second place, getting the auton working for one round, and just getting some real practice in before a real competition. Although we did well, we did have some issues. We stressed about the auton, and at one point we were building an entire new mechanism before the scrimmage started. We did have the opportunity to see how teams outside of the 53 teams were performing and the opportunity to practice with another team. We also realized that out clamp is sometimes inconsistent during a match.
 
-== Eric
-- Our standing in the Scrimmage reflects significant growth for our team over the past year. The intake performed well, quickly gathering and scoring rings, though it occasionally got stuck on a wire, underscoring the need for better wire management to keep our workspace organized and minimize distractions. Additionally, the clamp requires tuning for more consistent performance, as it impacted our autonomous mode, which functioned but struggled to clamp the goal effectively, leading to missed opportunities during crucial moments. Our autonomous routine also needs improvement; the quick version we used wasn’t fully troubleshooted, resulting in unexpected behavior during matches. These insights will guide us in refining our mechanisms and enhancing our strategic discussions as we prepare for future competitions.
+// == Eric
+// - Our standing in the Scrimmage reflects significant growth for our team over the past year. The intake performed well, quickly gathering and scoring rings, though it occasionally got stuck on a wire, underscoring the need for better wire management to keep our workspace organized and minimize distractions. Additionally, the clamp requires tuning for more consistent performance, as it impacted our autonomous mode, which functioned but struggled to clamp the goal effectively, leading to missed opportunities during crucial moments. Our autonomous routine also needs improvement; the quick version we used wasn’t fully troubleshooted, resulting in unexpected behavior during matches. These insights will guide us in refining our mechanisms and enhancing our strategic discussions as we prepare for future competitions.
