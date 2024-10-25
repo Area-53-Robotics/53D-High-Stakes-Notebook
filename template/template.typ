@@ -20,7 +20,7 @@
   body,
 ) = {
   // Styling rules
-  set text(font: "Linux Libertine", size: 11pt)
+  set text(font: "Libertinus Serif", size: 11pt)
   set page("us-letter")
 
   set footnote.entry(separator: none)

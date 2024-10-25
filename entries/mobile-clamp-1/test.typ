@@ -93,7 +93,7 @@ The robot will be able to maintain its grip on the mobile goal
 //         size: (9, 4),
 //         axis-style: "scientific-auto",
 
-//         legend: "legend.north",
+//         legend: "north",
 //         legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
 //         x-label: "Trial #",
@@ -249,7 +249,7 @@ The robot will clamp consistently about 70% of the time
 //         size: (9, 4),
 //         axis-style: "scientific-auto",
 
-//         legend: "legend.north",
+//         legend: "north",
 //         legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
 //         x-label: "Weight (lbs)",
@@ -383,7 +383,7 @@ The mobile goal will be able to cycle from free to clamped and back to free 10 t
 //         size: (9, 4),
 //         axis-style: "scientific-auto",
 
-//         legend: "legend.north",
+//         legend: "north",
 //         legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
 //         x-label: "Trial #",

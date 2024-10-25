@@ -14,7 +14,7 @@
 
 #let signature(name) = {
   if signature-type == 0 [
-    #label(name)
+    // #label(name)
   ] else if signature-type == 1 [
     #signature-metadata.at(name).name #label(name)
   ] else if signature-type == 2 [

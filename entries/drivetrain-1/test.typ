@@ -98,7 +98,7 @@ The drivetrain will display a speed of at least 72.77 in/s, which is 5% less tha
         size: (9, 4),
         axis-style: "scientific-auto",
 
-        legend: "legend.north",
+        legend: "north",
         legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
         x-label: "Trial #",
@@ -217,7 +217,7 @@ The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or 
         size: (9, 4),
         axis-style: "scientific-auto",
 
-        legend: "legend.north",
+        legend: "north",
         legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
         x-label: "Weight (lbs)",
@@ -341,7 +341,7 @@ The drivetrain will have a turning radius of 5 inches or less when making a 90#s
         size: (9, 4),
         axis-style: "scientific-auto",
 
-        legend: "legend.north",
+        legend: "north",
         legend-style: (padding: 0.15, item: (spacing: 0.15)),
 
         x-label: "Trial #",

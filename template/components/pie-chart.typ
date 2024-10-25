@@ -1,4 +1,4 @@
-#import "../template-packages.typ": cetz
+#import "../template-packages.typ": cetz, plot, chart
 
 #let pie-chart(
   radius: 3.5,
@@ -85,7 +85,6 @@
 
   cetz.canvas({
     import cetz.draw: *
-    import cetz.chart
 
     chart.piechart(
       data,
