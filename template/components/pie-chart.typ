@@ -5,6 +5,7 @@
   outer-label-radius: 125%,
   data-type: "", 
   colors: (),
+  legend: false,
   data
 ) = {
   /*
@@ -101,13 +102,20 @@
         radius: 120%
       ),
       outer-label: (
-        content: (value, label) => {
-          let string = label + " (" + str(value)
-          string = string.replace(" ", "\n")
-          string = string + " " + data-type + ")"
-          align(center)[#string]
-        },
+        content: (value, label) => 
+          if legend == false {
+            let string = label + " (" + str(value)
+            string = string.replace(" ", "\n")
+            string = string + " " + data-type + ")"
+            align(center, string)
+          } else {
+            let string = str(value) + " " + data-type
+            align(center, string)
+          },
         radius: outer-label-radius
+      ),
+      legend: (
+        label: if legend == false {none} else {"LABEL"}
       )
     )
   })

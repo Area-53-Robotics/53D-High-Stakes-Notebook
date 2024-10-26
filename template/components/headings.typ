@@ -31,5 +31,5 @@
     set text(size: 13pt)
     underline[#it.body]
   }
-  v(3pt)
+  v(-6pt)
 }

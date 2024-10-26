@@ -9,7 +9,7 @@
 ) = {
   if (frontmatter.len() > 0) {
     heading(level: 1)[Frontmatter <notebook-toc>]
-
+    v(4pt)
     stack(
       dir: ttb,
       spacing: 1em,
@@ -39,6 +39,7 @@
 
   if (body.len() > 0) {
     heading(level: 1)[Entries <notebook-toc>]
+    v(4pt)
 
     let previous-date
 
@@ -93,6 +94,7 @@
 
   if (program.len() > 0) {
     heading(level: 1)[Program <notebook-toc>]
+    v(4pt)
     
     stack(
       dir: ttb,
@@ -123,6 +125,7 @@
 
   if (appendix.len() > 0) {
     heading(level: 1)[Appendix <notebook-toc>]
+    v(4pt)
     
     stack(
       dir: ttb,

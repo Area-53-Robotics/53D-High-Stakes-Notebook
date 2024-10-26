@@ -7,6 +7,7 @@
 )
 
 = How Was This Made?
+
 This notebook was written with Typst, a programming language similar to Markdown and LaTeX. We write instructions about formatting in Typst, and they get automatically rendered into a printable PDF.
 
 = Why Go Digital?

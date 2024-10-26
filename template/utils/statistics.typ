@@ -62,14 +62,9 @@
 }
 
 #let linear-regression(points) = {
-  (
-    (4, 2),
-    (-3, 1),
-    (5, 8)
-  )
-  
   let x-values = ()
   let y-values = ()
+
   for point in points{
     x-values.push(
       point.first()
@@ -78,29 +73,36 @@
       point.last()
     )
   }
-  let x-sqaured = x-values.map(
+
+  let x-squared = x-values.map(
     value => {
       calc.pow(value, 2)
     }
   )
+
   let y-squared = y-values.map(
     value => {
       calc.pow(value, 2)
     }
   )
+
   let x-y = points.map(
     point => {
-      point.first * point.last
+      point.first() * point.last()
     }
   )
+
   let x-values-sum = x-values.sum()
   let y-values-sum = y-values.sum()
-  let x-sqaured-sum = x-sqaured.sum()
-  let y-squared-sum = y-sqaured.sum()
+  let x-squared-sum = x-squared.sum()
+  let y-squared-sum = y-squared.sum()
   let x-y-sum = x-y.sum()
-  let n = point.len()
-  let b-0 = ((y-values-sum * x-sqaured-sum) - (x-values-sum * x-y-sum)) / (n * (x-sqaured-sum) - calc.pow(x-values-sum,2)) 
-  let b-1 = ((n * x-y-sum) - (x-values-sum * y-values-sum)) / ((n * x-sqaured-sum) - calc.pow(x-values-sum, 2))
 
-  return (b-1, b-0)
+  let n = points.len()
+
+  let slope = ((n * x-y-sum) - (x-values-sum * y-values-sum)) / ((n * x-squared-sum) - calc.pow(x-values-sum, 2))
+
+  let y-intercept = ((y-values-sum * x-squared-sum) - (x-values-sum * x-y-sum)) / (n * (x-squared-sum) - calc.pow(x-values-sum,2)) 
+  
+  return (slope, y-intercept)
 }

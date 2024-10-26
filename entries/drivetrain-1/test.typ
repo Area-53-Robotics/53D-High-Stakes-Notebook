@@ -167,7 +167,15 @@ The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or 
   ],
 )
 
-#let weight-test-data = (13.64, 11.34, 8.97, 7.32, 6.83)
+#let weight-test-data = (
+  (5, 13.64),
+  (10, 11.34),
+  (15, 8.97),
+  (20, 7.32),
+  (25, 6.83)
+)
+
+#let weight-test-y-data = deconstruct(index: 1, weight-test-data)
 
 == Results
 #align(center)[
@@ -200,11 +208,11 @@ The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or 
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
-      [Mean], [#stats.mean(weight-test-data, digits: 2) ft.],
-      [Median], [#stats.median(weight-test-data) ft.],
-      [Range], [#stats.range(weight-test-data, digits: 2) ft.],
-      [Variance], [#stats.variance(weight-test-data, digits: 3) ft#super("2")],
-      [Standard Deviation], [#stats.std-dev(weight-test-data, digits: 3) ft.],
+      [Mean], [#stats.mean(weight-test-y-data, digits: 2) ft.],
+      [Median], [#stats.median(weight-test-y-data) ft.],
+      [Range], [#stats.range(weight-test-y-data, digits: 2) ft.],
+      [Variance], [#stats.variance(weight-test-y-data, digits: 3) ft#super("2")],
+      [Standard Deviation], [#stats.std-dev(weight-test-y-data, digits: 3) ft.],
     )
   ],
 
@@ -228,7 +236,7 @@ The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or 
 
         {
           plot.add(
-            weight-test-data.enumerate(start: 1).map(data => {
+            weight-test-y-data.enumerate(start: 1).map(data => {
               (data.at(0) * 5, data.at(1))
             }),
             mark: "o",

@@ -46,7 +46,7 @@ We experimented with the VRC Hub app to determine what the maximum possible scor
   align: center + horizon,
   image("/assets/field-elements/theoretical-maximum-score.png", width: 70%),
   pie-chart(
-    radius: 3.5,
+    radius: 3.3,
     data-type: "pts",
     (
       ("Auton Bonus", 6),
