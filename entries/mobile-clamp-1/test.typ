@@ -55,14 +55,14 @@ The robot will be able to maintain its grip on the mobile goal
     columns: 6,
 
     fill: (x, y) =>
-      if y == 0 and x > 0 {gray.lighten(20%)},
+      if (y == 0 and x > 0) or (x == 0 and y > 0) {gray.lighten(20%)},
 
     table.hline(y: 0, end: 1, stroke: none),
     table.vline(x: 0, end: 1, stroke: none),
 
     [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
-    [Pass/Fail], [Fail], [Success], [Fail], [Fail], [Success],
     [Time (s)], [12.4], [15], [6.9], [11.7], [15],
+    [Pass/Fail], [Fail], [Pass], [Fail], [Fail], [Pass],
   )
 ]
 
@@ -168,56 +168,14 @@ The robot will clamp consistently about 70% of the time
   #show table.cell.where(y: 0): strong
 
   #table(
-    columns: 11,
+    columns: 21,
 
     fill: (x, y) =>
-      if calc.even(y) {gray.lighten(20%)},
-
+      if (x == 0) or (y == 0) {gray.lighten(20%)},
     
-[],
-[T1],
-[T2],
-[T3],
-[T4],
-[T5],
-[T6],
-[T7],
-[T8],
-[T9],
-[T10],
-[Pass/Fail],
-[P],
-[P],
-[F],
-[F],
-[F],
-[F],
-[F],
-[P],
-[F],
-[F],
-[],
-[T11],
-[T12],
-[T13],
-[T14],
-[T15],
-[T16],
-[T17],
-[T18],
-[T19],
-[T20],
-[Pass/Fail],
-[F],
-[F],
-[P],
-[P],
-[F],
-[F],
-[F],
-[P],
-[F],
-[F],
+    [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
+
+    [Pass/Fail], [P], [P], [F], [F], [F], [F], [F], [P], [F], [F], [F], [F], [P], [P], [F], [F], [F], [P], [F], [F],
   )
 ]
 
@@ -330,29 +288,16 @@ The mobile goal will be able to cycle from free to clamped and back to free 10 t
     columns: 6,
 
     fill: (x, y) =>
-      if y == 0 and x > 0 {gray.lighten(20%)},
+      if (y == 0 and x > 0) or (x == 0 and y > 0) {gray.lighten(20%)},
 
+    table.hline(y: 0, end: 1, stroke: none),
+    table.vline(x: 0, end: 1, stroke: none),
     
-[],
-[Trial 1],
-[Trial 2],
-[Trial 3],
-[Trial 4],
-[Trial 5],
-[Number of clamps (down)],
-[9],
-[8],
-[7],
-[9],
-[6],
-[Number of releases (up)],
-[9],
-[7],
-[7],
-[8],
-[4],
+    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
 
+    [Number of clamps (down)], [9], [8], [7], [9], [6],
 
+    [Number of releases (up)], [9], [7], [7], [8], [5],
   )
 ]
 

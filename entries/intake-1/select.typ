@@ -34,6 +34,7 @@ Continuing with the design process for the intake, we identified criteria that w
     ("Hood", 4, 3, 4, 4, 3, 3),
     ("Hybrid", 3, 2, 1, 2, 3, 2),
   ),
+  body: colbreak()
 )
 
 #admonition(type: "select", title: "Final Selection")[

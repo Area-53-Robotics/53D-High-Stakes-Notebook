@@ -53,10 +53,11 @@
   include "components/codly.typ"
   show: codly-init.with()
 
+  set raw(theme: "/assets/vscode_light.tmTheme")
+  // show raw: set text(font: "JetBrains Mono")
+
   // Headings
   show heading: it => nb-heading(it)
-
-  set raw(theme: "/assets/vscode_light.tmTheme")
 
   // Content
   page(

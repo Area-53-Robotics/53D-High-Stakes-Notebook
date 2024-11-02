@@ -73,7 +73,7 @@
             }
           )[
             #box(
-              fill: yellow,
+              fill: lime,
               outset: 5pt,
               radius: 1.5pt,
               height: auto,

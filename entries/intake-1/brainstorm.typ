@@ -44,8 +44,7 @@ Earlier in the season, we researched different intakes that other teams were usi
   name: "Hood",
   image: image("brainstorm/Brainstorm-intake-idea-2.excalidraw.svg"),
   description: [
-  The hood intake features a series of flex wheels that are strategically positioned to pull rings upward as the robot moves forward. These wheels are designed to grip the rings securely. At the top of the intake system, a hood is pivoted. This hood is designed to guide the rings as they reach the top of the intake. When the robot lifts a ring, the hood tilts down, effectively pushing the ring forward and directing it to the mobile goal.
-
+    The hood intake features a series of flex wheels that are strategically positioned to pull rings upward as the robot moves forward. These wheels are designed to grip the rings securely. At the top of the intake system, a hood is pivoted. This hood is designed to guide the rings as they reach the top of the intake. When the robot lifts a ring, the hood tilts down, effectively pushing the ring forward and directing it to the mobile goal.
   ],
   pros: [
     - *Speed* - The smooth transition between the initial flex wheels to the ramp increases the speed at which the intake can pick up rings.
@@ -64,8 +63,6 @@ Earlier in the season, we researched different intakes that other teams were usi
   image: image("brainstorm/Brainstorm-intake-idea-3.excalidraw.svg"),
   description: [
     This hybrid design leverages the strengths of both systems to improve efficiency and performance. The hook intake captures rings using its hooked arms, securing them as the robot approaches. The hooks can engage the rings from various angles, providing flexibility in collection. At the top of the intake, the hood pivots down to push the rings into the mobile goal.
-
-
   ],
   pros: [
     - *Efficiency* - The integration of both systems can streamline the collection and scoring process, reducing the time taken to capture and place rings.

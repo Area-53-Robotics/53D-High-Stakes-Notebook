@@ -21,7 +21,7 @@
 
   grid.cell(colspan: 2, align: left + horizon)[
     = Impulse
-    #v(10pt)
+    #v(15pt)
   ],
   stack(
     spacing: 10pt,
@@ -53,7 +53,7 @@
 
   grid.cell(colspan: 2)[
     = Tension
-    #v(10pt)
+    #v(15pt)
   ],  
   [
     == What is tension?
@@ -73,12 +73,12 @@
 
   grid.cell(colspan: 2)[
     = Elasticity and Hooke's Law
-    #v(10pt)
+    #v(15pt)
   ],
   [
     == What is elasticity and Hooke's law?
 
-    - *Elasticity*  is the property of a material that allows it to return to its original shape and size after deformation when the applied force is removed. Materials that exhibit high elasticity can undergo substantial deformation and then recover completely.
+    - *Elasticity* is the property of a material that allows it to return to its original shape and size after deformation when the applied force is removed. Materials that exhibit high elasticity can undergo substantial deformation and then recover completely.
     - *Hooke's Law* describes the linear relationship between the force applied to a spring or elastic material and the resulting deformation. It is named after the 17th-century physicist Robert Hooke..
 
     #admonition(type: "equation")[

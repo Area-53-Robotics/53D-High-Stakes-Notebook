@@ -50,8 +50,8 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 == Build Process
 #grid(
   figure(
-      image("build/2024.09.06-1.png", width: 170pt),
-      caption: "Standoff rails to prevent rings from interfering with the drivetrain."
+    image("build/2024.09.06-1.png", width: 170pt),
+    caption: "Standoff rails to prevent rings from interfering with the drivetrain."
   ),
   [
     === Materials
@@ -60,7 +60,6 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
     - Chain
     - Flex-Wheels
     - The rest of the material can be find in the tool box
-
   ],
   [
     === Assembly
@@ -74,25 +73,23 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
     - Mounted axle on Intake motor joint.
     - Placed chain across axles.
     - Installed front axle and flex wheels.
-
   ],
    figure(
-      image("build/2024.09.06-2.png", width: 160pt),
-      caption: "Close up of how the intake is mounted on the triangle brace."
+    image("build/2024.09.06-2.png", width: 160pt),
+    caption: "Close up of how the intake is mounted on the triangle brace."
   ),
 
   figure(
-      image("build/2024.09.06-3.png", width: 190pt),
-      caption: "The angle of the mobile goal when we clamp onto it."
+    image("build/2024.09.06-3.png", width: 190pt),
+    caption: "The angle of the mobile goal when we clamp onto it."
   ),
 
   [
     === Troubleshooting
-      - Ran Intake motor to test the lower intake portion.
-      - Changed chain length.
-      - Tested mobile goal clamp.
-      - The angle of the mobile goal is crucial for maximizing scoring efficiency. An optimized angle can significantly reduce the force required to score rings.
-
+    - Ran Intake motor to test the lower intake portion.
+    - Changed chain length.
+    - Tested mobile goal clamp.
+    - The angle of the mobile goal is crucial for maximizing scoring efficiency. An optimized angle can significantly reduce the force required to score rings.
   ]
 )
 
@@ -120,7 +117,6 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
     - Create the triangle brace for the C-channel towers: Rory, Eric, Anders
     - Create ramp for the first stage of the intake: Eric, Makhi
     - Continue working on first stage: Rory, Eric, Anders, Makhi
-
   ]
 )
 
@@ -129,8 +125,8 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
 == Build Process
 #grid(
   figure(
-      image("build/2024.09.07-1.png", width: 170pt),
-      caption: "The finished clamp."
+    image("build/2024.09.07-1.png", width: 170pt),
+    caption: "The finished clamp."
   ),
   [
     === Materials
@@ -139,8 +135,6 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
     - Screws
     - Nylons
     - Polycarbonate
-
-
   ],
   [
     === Assembly
@@ -152,29 +146,23 @@ Today we worked on the lower portion of the intake. Standoffs were added as rail
     - Created a stopper for the intake
       - We want the intake to be pivoted above a specific height. Too low or too high and it will not contract the rings.
   ],
-
-   figure(
-      image("build/2024.09.07-2.png", width: 190pt),
-      caption: "First stage of intake."
+  figure(
+    image("build/2024.09.07-2.png", width: 190pt),
+    caption: "First stage of intake."
   ),
   figure(
-      image("build/2024.09.07-3.png", width: 130pt),
-      caption: "The 12x1x1 C-channel we used as triangle brace."
+    image("build/2024.09.07-3.png", width: 130pt),
+    caption: "The 12x1x1 C-channel we used as triangle brace."
   ),
-  
-
-   figure(
-      image("build/2024.09.07-4.png", width: 140pt),
-      caption: "The pistons of our clamp. We experienced leaking."
+  figure(
+    image("build/2024.09.07-4.png", width: 140pt),
+    caption: "The pistons of our clamp. We experienced leaking."
   ),
   [
     === Troubleshooting
-     Problem: The clamp pneumatics were leaking, so we had to find the leak and fix it by cutting the tubing to be straighter.
-    \
-     Solution: We saw that the air was leaking from the tank. It was leaking around 20 PSI every 3 seconds. We replaced the tank. That seemed to have fixed the problem.
-
+    - Problem: The clamp pneumatics were leaking, so we had to find the leak and fix it by cutting the tubing to be straighter.
+    - Solution: We saw that the air was leaking from the tank. It was leaking around 20 PSI every 3 seconds. We replaced the tank. That seemed to have fixed the problem.
   ],
-  
 )
 
 #colbreak()
@@ -198,12 +186,11 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     - *Manufacturing*: Rory, Eric, and Makhi
     - *Oversight & Quality Control*: Jin
     - *Initial Testing*:Eric, Makhi, Rory, and Anders
-    - *Programming*:  Ajibola and Ishika
+    - *Programming*: Ajibola and Ishika
   ],
   today: [
     - Create gear system for the intake: Jin Hao, Makhi
     - Assemble flaps for the intake: Eric, Rory
-
   ]
 )
 
@@ -236,15 +223,15 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     caption: "Bottom roller for the hooks."
   ),
 )
+
 #grid(
   figure(
-      image("build/2024.09.13-3.png", width: 130pt),
-      caption: "Side view of the intake."
+    image("build/2024.09.13-3.png", width: 130pt),
+    caption: "Side view of the intake."
   ),
-
-   figure(
-      image("build/2024.09.13-4.png", width: 150pt),
-      caption: "Top rollers for the hooks."
+  figure(
+    image("build/2024.09.13-4.png", width: 150pt),
+    caption: "Top rollers for the hooks."
   ),
   [
     === Troubleshooting
@@ -255,8 +242,7 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
   figure(
       image("build/2024.09.13-5.png", width: 140pt),
       caption: "Drivetrain was stuck during testing"
-  ),
-  
+  )
 )
 
 = 2024/09/14
@@ -268,7 +254,9 @@ At this practice we finished the bottom of our intake to prepare for scoring at 
     (true, "Build the intake according to today's delegation.", "Everyone"),
   )
 )
+
 On the 14th of September we added on to our intake and mobile-goal design and followed this up with an in-team scrimmage. Since some robots weren't fully functional, so, to increase driver practice, the coach came up with a new game that only required controlled driving.
+
 *The Rules Summary*: 
 There are two teams, each consisting of two robots.
 The objectives of the game are to move as many rings as possible onto your team's side of the field and to move mobile goals to your side, rings were one point, mobile-goals were five points.
@@ -277,7 +265,9 @@ No pinning any robots, no parts or pieces outside the field, be respectful.
 *The Game*: 
 In the first round our team one by creating a strategy to sweep the majority of rings on to our side while grabbing mobile-goals. (Makhi Drove)
 The second and third round followed suit. (Driven by Makhi and Eric respectively)
+
 #colbreak()
+
 == Delegation
 #delegation(
   recurring: [
@@ -301,10 +291,6 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
     === Materials
     - Polycarbonate
     - The rest of the materials can be found in the toolbox
-
-
-
-
   ],
  
   [
@@ -313,10 +299,9 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
   ],
 )
 #grid(
-   
-   figure(
-      image("build/2024.09.14-1.png", width: 200pt,),
-      caption: "Lexan ring guider"
+  figure(
+    image("build/2024.09.14-1.png", width: 200pt,),
+    caption: "Lexan ring guider"
   ),
 
   [
@@ -324,8 +309,8 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
     - Intake testing after polycarbonate improvements were mounted
     - Non-real game (driver practice and robot testing)
   ],
-
 )
+
 #colbreak()
 = 2024/09/20
 #to-do(
@@ -357,8 +342,8 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
 == Build Process
 #grid(
   figure(
-      image("build/2024.09.20-1.png", width: 200pt,),
-      caption: "Front of the intake"
+    image("build/2024.09.20-1.png", width: 200pt),
+    caption: "Front of the intake"
   ),
   [
     === Materials
@@ -366,10 +351,6 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
     - Rubber Bands
     - Zip Ties
     - The rest of the materials can be found in the tool box
-
-
-
-
   ],
  
   [
@@ -382,11 +363,11 @@ The second and third round followed suit. (Driven by Makhi and Eric respectively
       - This will push the rings outward when we intake into the mobile goals
       - The umbrella of the mobile goal would push the rings inwards into the bot, causing it to get stuck in the space between the robot and the mobile goal.
   ],
-    figure(
-      image("build/2024.09.20-2.png", width: 200pt,),
-      caption: "The lexan rings plates"
+  figure(
+    image("build/2024.09.20-2.png", width: 200pt,),
+    caption: "The lexan rings plates"
   ),
-[
+  [
     === Troubleshooting
     - Intake testing after polycarbonate improvements were mounted
     - Non-real game (driver practice and robot testing)

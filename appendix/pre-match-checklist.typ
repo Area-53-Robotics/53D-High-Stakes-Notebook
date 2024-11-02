@@ -2,7 +2,7 @@
 
 #show: create-appendix-entry.with(
   title: "Pre-Match Checklist",
-  updated: datetime(year: 2024, month: 10, day: 18)
+  updated: datetime(year: 2024, month: 11, day: 1)
 )
 
 #set list(
@@ -15,13 +15,12 @@
   inset: (right: 20pt),
 
   [
-    = Ports (Devices Menu)
+    = Motors
     - Left Motors
     - Right Motors
     - Intake Motor
-    - Kicker/Elevation Motor
-    - Inertial Sensor
-    - Optical Sensor
+    - Left Ladybrown Motor
+    - Right Ladybrown Motor
   ],
   [
     = Electronics
@@ -47,12 +46,10 @@
   ],
   [
     == Ajibola
-    - Gloves
     - Goggles
   ],
   [
     == Jin
-    - Gloves
     - Goggles
   ],
 )

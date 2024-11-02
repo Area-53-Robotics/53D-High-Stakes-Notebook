@@ -14,12 +14,14 @@
   monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
-    (false, "Plan the implementation of the intake idea.", "Everyone"),
+    (true, "Plan the implementation of the intake idea.", "Everyone"),
   )
 )
 
 = Work Breakdown Structure
 #image("plan/intake-v1-wbs.excalidraw.svg")
+
+#colbreak()
 
 = Work Breakdown Gantt Chart
 #image("plan/intake-v1-gantt-chart.png")

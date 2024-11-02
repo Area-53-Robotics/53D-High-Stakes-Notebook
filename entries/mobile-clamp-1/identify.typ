@@ -36,8 +36,8 @@ This season reintroduced the mobile goal, a game element that was in the 2021-22
   [*Control* - A well-designed mobile goal clamp allows the robot to place the goal with precision, whether it's stacking, positioning in a scoring zone, or strategically placing the goal for future access.],
   [*Grip* - The mobile goal clamp is designed to grip a mobile goal firmly so the robot can lift, drag, or carry it across the field. ],
   [*Defense* - Beyond offense, mobile goal clamps can be used defensively. By gripping a mobile goal, a robot can prevent opponents from accessing or scoring with it.],
-
 )
+
 #colbreak()
 
 #goals-constraints(
