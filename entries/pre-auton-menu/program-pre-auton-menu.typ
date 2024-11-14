@@ -1,6 +1,5 @@
 #import "/template/template.typ": *
 
-#import "@preview/codly:1.0.0": *
 #show: codly-init.with()
 
 #show: create-entry.with(

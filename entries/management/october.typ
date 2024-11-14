@@ -33,11 +33,14 @@ We were on track with our schedule until September 20 and September 21, as we ne
 // #colbreak()
 
 == September Budget & Materials Management
-Once again, we did not need to buy new materials to construct our mechanisms. However, the other squads in Area 53 are starting to ramp up their building at this time, so we will have to be wary of parts that need replacing or new purchases.
+Once again, we did not need to buy new materials to construct our mechanisms. However, the other squads in Area 53 are starting to ramp up their building at this time, so we will have to keep track of parts that need replacing or new purchases.
+
+#colbreak()
 
 = October Time Management
 October is the first month in the “mid-season,” and fittingly, the first official tournament for us this season occurs this month. The Dulaney Royal Rumble competition will be on October 19th, so we must complete our design cycles before then to be competition ready.
 
 Keeping this information in mind, we created this Gantt chart:
 
-#image("gantt-charts/october-pre.png")
+#image("gantt-charts/october-pre-1.png")
+#image("gantt-charts/october-pre-2.png")

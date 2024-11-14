@@ -20,7 +20,7 @@
 )
 
 = Intake Driver Control
-First, we declared a global intake motor class to use throughout the program.
+First, we declared a global intake motor object to use throughout the program.
 
 #code-header[src/global.cpp]
 ```cpp
@@ -29,12 +29,12 @@ pros::Motor IntakeMotor(9, pros::v5::MotorGears::blue);
 ```
 
 = Completed Intake Driver Control Code
-Using the declarations that were made, the Intake was programmed to operate under driver control. The intake has two motions one which takes in the ring and the other that outtakes the ring.
+Next, we programmed the intake to operate during driver control. The intake has two motions: a forward spin to take in rings and a reverse spin to outtake rings.
 
 #code-header[src/main.cpp]
 ```cpp
-// if-else statement that move the intake motor positive when R2 is pressed and negative when R1 is pressed. 
+// The intake motor spins forward when R2 is held and spins reverse when R1 is held.
 if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) IntakeMotor.move_velocity(600);
-else if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) IntakeMotor.move(-127);
+else if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) IntakeMotor.move_velocity(-600);
 else IntakeMotor.brake();
 ```

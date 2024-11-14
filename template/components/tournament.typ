@@ -206,26 +206,34 @@
           width: 100%
         )[
           #text(size: 13pt)[*Subsystem Performance:*]
-          #if type(subsystems.overperformed) == array [
-            - Overperformed: #subsystems.overperformed.join(", ")
-          ] else [
-            - Overperformed: #subsystems.overperformed
-          ]
-          #if type(subsystems.satisfactory) == array [
-            - Satisfactory: #subsystems.satisfactory.join(", ")
-          ] else [
-            - Satisfactory: #subsystems.satisfactory
-          ]
-          #if type(subsystems.underperformed) == array [
-            - Underperformed: #subsystems.underperformed.join(", ")
-          ] else [
-            - Underperformed: #subsystems.underperformed
-          ]
-          #if type(subsystems.disabled) == array [
-            - Disabled: #subsystems.disabled.join(", ")
-          ] else [
-            - Disabled: #subsystems.disabled
-          ]
+          #if subsystems.overperformed != none {
+            if type(subsystems.overperformed) == array [
+              - Overperformed: #subsystems.overperformed.join(", ")
+            ] else [
+              - Overperformed: #subsystems.overperformed
+            ]
+          }
+          #if subsystems.satisfactory != none {
+            if type(subsystems.satisfactory) == array [
+              - Satisfactory: #subsystems.satisfactory.join(", ")
+            ] else [
+              - Satisfactory: #subsystems.satisfactory
+            ]
+          }
+          #if subsystems.underperformed != none {
+            if type(subsystems.underperformed) == array [
+              - Underperformed: #subsystems.underperformed.join(", ")
+            ] else [
+              - Underperformed: #subsystems.underperformed
+            ]
+          }
+          #if subsystems.disabled != none {
+            if type(subsystems.disabled) == array [
+              - Disabled: #subsystems.disabled.join(", ")
+            ] else [
+              - Disabled: #subsystems.disabled
+            ]
+          }
         ],
 
       )

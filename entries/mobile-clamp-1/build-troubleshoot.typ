@@ -28,29 +28,26 @@
   )
 )
 
-We did some more troubleshooting with the pneumatics to get our clamp working reliably. We decided to switch out the pistons back to single-action pistons so that we could conserve air for the climbing portion of our matches. Afterwards, we started designing the intake.
+We did some more troubleshooting with the pneumatics to get our clamp working reliably. We switched out the double-action pistons for single-action pistons so that we could conserve air for the climbing portion of our matches. Afterwards, we started designing the intake.
 
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory*: Anders and Rory
-    - *Manufacturing*: Rory and Eric
+    - *Inventory*: Anders, Rory
+    - *Manufacturing*: Rory, Eric
     - *Oversight & Quality Control*: Jin
-    - *Initial Testing*: Jin, Anders, Eric, and Rory
-    - *Programming*:  Ishika and Ajibola
+    - *Initial Testing*: Jin, Anders, Eric, Rory
+    - *Programming*: Ishika, Ajibola
   ],
   today: [
     - Set up hard stop for the clamp: Rory and Eric 
     - Troubleshoot the clamp: Ander, Eric, Rory
- ]
+  ]
 )
 
 == Build Process
 #grid(
-  figure(
-    image("build/2024.08.24-1.jpg", width: 100pt),
-    caption: "x2 2x2x1  C-channel"
-  ),
+  columns: (2fr, 1fr, 2fr),
   [
     === Materials
     - Mesh
@@ -58,38 +55,43 @@ We did some more troubleshooting with the pneumatics to get our clamp working re
     - Single action solenoid
     - Everything else can be found in the toolbox
   ],
+  figure(
+    image("build/2024.08.24-1.jpg", width: 100pt),
+    caption: "x2 2x2x1 C-channel"
+  ),
+  figure(
+    image("build/2024.08.24-2.jpg", width: 200pt),
+    caption: "The clamp at the end of today's meeting"
+  ),
+)
+
+#grid(
+  grid.cell(inset: (bottom: 10pt), figure(
+    image("build/2024.08.24-3.jpg", width: 200pt),
+    caption: "First design of the mobile goal stop"
+  )),
   [
     === Assembly
     - We secured mesh to the clamp with zip ties.
       - Since yesterday, the mesh has been slipping off, so this was an important fix.
     - We tested clamp strength and angle. The clamp should hold the mogo securely and tilt it approximately 20 degrees towards the tower.
-      - Problem: We saw that the mobile goal would ride on the top of the drivetrain.
-      - Solution: We added a C-channel to the side of the drivetrain to prevent the mobile goal from getting onto the drivetrain.
+      - #text(red)[Problem:] We saw that the mobile goal would ride on the top of the drivetrain.
+      - #text(green)[Solution:] We added a C-channel to the side of the drivetrain to prevent the mobile goal from getting onto the drivetrain.
     - We removed the mesh and changed the angle of the piston attachment.
-    - Then we performed an initial test of the clamp design with a mobile goal
+    - Then we performed an initial test of the clamp design with a mobile goal.
+  ],
+  [
+    === Troubleshooting
+    - We noticed that air was leaking from our pneumatic system.
+    - We had to listen for the location of the noise of air escaping to locate the leak. 
+      - We found that the leak was occurring at the T-junction
+      - After removing the T-junction, the air leak was fixed
+    - We also worked on optimizing the clamp angle so that we could score rings more reliably. 
+      - To do this we switched the pistons and solenoid to double-action so that we could have more grip. 
+      - However, this used a lot more air so we did not decide to keep this design.
   ],
   figure(
-    image("build/2024.08.24-2.jpg", width: 200pt),
-    caption: "The clamp at the end of the day"
+    image("build/2024.08.24-4.jpg", width: 200pt),
+    caption: "Second design of the mobile goal stop"
   ),
-    figure(
-    image("build/2024.08.24-3.jpg", width: 200pt),
-    caption: "First design of the mobile goal stop"
-  ),
-)
-#grid(
-    [
-      === Troubleshooting
-      - We noticed that air was leaking from our pneumatic system.
-      - We had to listen for the location of the noise of air escaping to locate the leak. 
-        - We found that the leak was occurring at the T-junction
-        - After removing the T-junction, the air leak was fixed
-      - We also worked on optimizing the clamp angle so that we could score rings more reliably. 
-        - To do this we switched the pistons and solenoid to double-action so that we could have more grip. 
-        - However, this used a lot more air so we did not decide to keep this design
-    ],
-    figure(
-      image("build/2024.08.24-4.jpg", width: 200pt),
-      caption: "Second design of the mobile goal stop"
-    ),
 )

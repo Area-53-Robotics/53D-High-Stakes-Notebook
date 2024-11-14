@@ -14,8 +14,8 @@ First, we declared the clamp pneumatics solenoid as a global object so that it c
 
 #code-header[src/global.cpp] 
 ```cpp
-  // Declares the clamp solenoid and sets it to ADI port A
-  pros::adi::DigitalOut ClampPistons(1);
+// Declares the clamp solenoid and sets it to ADI port A
+pros::adi::DigitalOut ClampPistons(1);
 ```
 
 = Clamp Movement
@@ -23,7 +23,7 @@ Now that the solenoid object has been made, we moved on to programming the actua
 
 #code-header[src/subsystemFiles/clamp.cpp] 
 ```cpp
-// Creates a boolean variable that sets the variable to false
+// Creates a boolean variable that to represent the activation state of the clamp pneumatic pistons
 bool clampPistonsActivated = false;
 ```
 
@@ -46,10 +46,10 @@ void PneumaticClamp() {
 ```
 
 == Driver Control 
-Now all that was left was to make the clamp usable during drive control. We did this using the following code:
+Now all that was left was to make the clamp usable during driver control. We did this using the following code:
 
 #code-header[src/main.cpp] 
 ```cpp
-// sets the clamp to operate in driver control after pressing the A button
+// Toggles the clamp between activated and deactivated when the A button is pressed
 if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)) PneumaticClamp();
 ```

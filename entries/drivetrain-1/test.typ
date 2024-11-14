@@ -99,7 +99,7 @@ The drivetrain will display a speed of at least 72.77 in/s, which is 5% less tha
         axis-style: "scientific-auto",
 
         legend: "north",
-        legend-style: (padding: 0.15, item: (spacing: 0.15)),
+        legend-style: (padding: 0.15, item: (spacing: 0.01)),
 
         x-label: "Trial #",
         x-tick-step: 1,

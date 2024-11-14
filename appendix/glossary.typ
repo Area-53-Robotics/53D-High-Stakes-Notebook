@@ -4,21 +4,21 @@
   title: "Area 53",
   category: "management",
   definition: [
-  The name of our organization. Consists of 6 teams/squads from A-F.
+    The name of our organization. Consists of 6 teams/squads from A-F.
 ])
 
 #glossary-entry(
   title: "Spin Up",
   category: "competition",
   definition: [
-  The 2022-23 VEX Robotics Challenge. It involved shooting frisbee-like discs into elevated baskets, scoring rollers, and expanding during the endgame.
+    The 2022-23 VEX Robotics Challenge. It involved shooting frisbee-like discs into elevated baskets, scoring rollers, and expanding during the endgame.
 ])
 
 #glossary-entry(
   title: "RPM",
   category: "build",
   definition: [
-  An acronym for "Rotations per Minute." Used to interpret the speed of motors and motorized subsystems.
+    An acronym for "Rotations per Minute." Used to interpret the speed of motors and motorized subsystems.
 ])
 
 #glossary-entry(
@@ -32,21 +32,21 @@
   title: "PROS",
   category: "program",
   definition: [
-  An API developed by students at Purdue SIGBots, used to control VEX robots. It functions as an alternative to VEXCode V5.
+    An API developed by students at Purdue SIGBots, used to control VEX robots. It functions as an alternative to VEXCode V5.
 ])
 
 #glossary-entry(
   title: "Python",
   category: "program",
   definition: [
-  A general purpose, high-level programming language primarily used for data science. We utilize it to create graphs and other visual representations of data collected during our "Test" phases.
+    A general purpose, high-level programming language primarily used for data science. We utilize it to create graphs and other visual representations of data collected during our "Test" phases.
 ])
 
 #glossary-entry(
   title: "Bash",
   category: "program",
   definition: [
-  A command-line interface shell program used in macOS and Linux. The equivalent of it for Windows is Windows PowerShell.
+    A command-line interface shell program used in macOS and Linux. The equivalent of it for Windows is Windows PowerShell.
 ])
 
 #glossary-entry(
@@ -71,14 +71,14 @@
   title: "CAD",
   category: "select",
   definition: [
-  An acronym for "Computer Aided Design". CAD programs are used at the industry level to plan out and test designs digitally. 53D uses Onshape as our CAD program.
+    An acronym for "Computer Aided Design". CAD programs are used at the industry level to plan out and test designs digitally. 53D uses Onshape as our CAD program.
 ])
 
 #glossary-entry(
   title: "Onshape",
   category: "select",
   definition: [
-  A cloud-based CAD program with a readily available educational license. 53D uses it to plan out designs digitally before the "Build" phase.
+    A cloud-based CAD program with a readily available educational license. 53D uses it to plan out designs digitally before the "Build" phase.
 ])
 
 #glossary-entry(
@@ -196,6 +196,14 @@
   ]
 )
 
+#glossary-entry(
+  title: "API",
+  definition: [
+    Acronym for application programming interface. It is a translation layer between
+    two pieces of software.
+  ],
+)
+
 // Old Glossary Entries
 /*
 #glossary-entry(
@@ -233,14 +241,6 @@
   ],
 )
 
-
-#glossary-entry(
-  title: "API",
-  definition: [
-    Acronym for application programming interface. It is a translation layer between
-    two pieces of software.
-  ],
-)
 
 #glossary-entry(
   title: "Arcade Drive",

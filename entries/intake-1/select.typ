@@ -38,5 +38,5 @@ Continuing with the design process for the intake, we identified criteria that w
 )
 
 #admonition(type: "select", title: "Final Selection")[
-  We chose the hook idea because of how reliable the hooks are at picking up rings from different positions and intaking them onto the mobile goal. From videos that we saw online, the hooks were able to score rings faster than a hood intake. Additionally, hook intakes are lighter than hood intakes, which keeps the door open for us to build an endgame climb mechanism in the future.
+  We chose the hook intake idea because of how reliable the hooks are at picking up rings from different positions and intaking them onto the mobile goal. From videos that we saw online, the hooks were able to score rings faster than a hood intake. Additionally, hook intakes are lighter than hood intakes, which keeps the door open for us to build an endgame climb mechanism in the future.
 ]

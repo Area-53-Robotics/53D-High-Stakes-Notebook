@@ -42,7 +42,7 @@ Today we had an online meeting, during which we discussed the implementation of 
   goals: [
     - The intake must easily and strongly grip the game rings.
     - The intake should be able to quickly grab and move game rings to maximize time for use on other tasks.
-    - The intake must properly interact with the mobile goal clamp and the held mobile goals for proper scoring.
+    - The intake must have a clear beginning and end point.
     - The intake should not interact with any other subsystems unless necessary to allow more space.
   ],
   constraints: [
@@ -50,6 +50,6 @@ Today we had an online meeting, during which we discussed the implementation of 
     - #vex-rule[R13] Motors are limited to a combined power of 88W
       - The intake should only require 11 watts to save power for new motorized subsystems in the future.
     - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal.
-    - The intake must properly fit the rings to interact well and leave space for other subsystems.
+    - The intake must properly fit the rings to allow for better grip and leave space for other subsystems.
   ],
 )

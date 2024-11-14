@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Intake v1 - Practice and Troubleshooting",
+  title: "Intake v1 - Troubleshooting",
   type: "build",
   date: datetime(year: 2024, month: 9, day: 21),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -26,7 +26,7 @@
   )
 )
 
-Today, we had a practice scrimmage. At this scrimmage we learned many lessons that will help us in the future. During the scrimmage our robot did very well scoring large amounts and moving quickly, there were three rounds in which we played, half way into the third round our front and middle motors on the left side fell out. Shortly after this, our mobile goal alignment axle was detached on one side by a collision. The rest of practice was spent repairing and taking preventative measures for the future.
+Today, we had a practice scrimmage consisting of three rounds. During the scrimmage our robot did very well scoring large amounts of rings and moving quickly. Half way into the third round our front and middle motors on the left side of the drivetrain fell out. Shortly after this, our mobile goal alignment axle was detached on one side by a collision. The rest of practice was spent repairing and taking preventative measures for the future. The scrimmage alerted us to potential points of failure on the robot, and this knowledge will help us in the future.
 
 == Delegation
 #delegation(
@@ -34,13 +34,12 @@ Today, we had a practice scrimmage. At this scrimmage we learned many lessons th
     - *Inventory*: Anders, Eric, Rory
     - *Manufacturing*: Everyone
     - *Test Drive*: Makhi, Anders
-    - *Programming*:  Ishika
+    - *Programming*: Ishika
   ],
   today: [
     - Drive practice: Makhi
     - Backup drive practice: Anders, Eric
-    - Further tuning: Everyone  
-
+    - Further tuning: Everyone
   ]
 )
 
@@ -49,40 +48,35 @@ Today, we had a practice scrimmage. At this scrimmage we learned many lessons th
   [
     === Materials
     - Motors
-    - Rubber-Bands
-    - Zip-Ties
+    - Rubber bands
+    - Zipties
     - Axle
     - The rest can be found in the tool box
-
   ],
   figure(
-      image("build/2024.09.21-1.png", width: 170pt),
-      caption: "The intake's motor fell out."
+    image("build/2024.09.21-1.png", width: 170pt),
+    caption: "The intake motor fell out"
   ),
-  )
+)
+
 #grid(
   [
     === Assembly
-    - We noticed that one of the intake mechanisms was inconsistent: sometimes it would collect rings smoothly, and other times it would jam
-      - We realized the issue stemmed from misaligned rollers that were putting uneven pressure on the rings
-    - After the middle left and front left motor fell out due to disrepair in the final scrimmage round we reattached them with zip-ties and added rubber-bands as extra security to stop the issue that caused the failure.
-    - After the mobile goal alignment axle fell off from a round in the scrimmage we noticed a number of loose screws in the mobile-goal clamp, because of that we tightened these screws and repaired the fallen axle.
-
-
+    - We noticed that the second stage intake was inconsistent: sometimes it would collect rings smoothly, and other times it would jam
+      - The issue stemmed from misaligned rollers that were putting uneven pressure on the rings
+    - After the middle left and front left drivetrain motors fell out due to disrepair in the final scrimmage round we reattached them with zipties and added rubber bands for extra security.
+    - After the mobile goal alignment axle fell off in a scrimmage round we noticed a number of loose screws in the mobile goal clamp.
+      - Subsequently, we tightened the screws and repaired the fallen axle.
   ],
 
   figure(
-      image("build/2024.09.21-2.png", width: 190pt),
-      caption: "Loose screws in the mobile goal clamp."
+    image("build/2024.09.21-2.png", width: 190pt),
+    caption: "Loose screws in the mobile goal clamp"
   ),
 
   [
     === Troubleshooting
-      - Drive testing before scrimmage
-      - Scrimmage practice.
-      - After the scrimmage test of the repaired robot.
-      - The drivetrain showed signs of wear after multiple rounds. 
-
-
+    - We performed drive testing before the scrimmage, and determined that the robot was ready
+    - The drivetrain showed signs of wear after multiple scrimmage rounds, such as slightly loosened keps nuts.
   ]
 )

@@ -57,13 +57,13 @@
 #context {
   // let frontmatter-entries = helper("frontmatter")
   let body-entries = helper("body")
-  let program-entries = helper("program")
-  let appendix-entries = helper("appendix")
+  // let program-entries = helper("program")
+  // let appendix-entries = helper("appendix")
 
   toc(
     frontmatter: (),
     body: body-entries,
-    program: program-entries,
-    appendix: appendix-entries
+    program: (),
+    appendix: ()
   )
 }
