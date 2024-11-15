@@ -59,7 +59,7 @@ Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we
   [
     === Assembly
     - Created a new screw joint as a pivot for the new clamp
-      - We added crowns to the end of the clamp’s C-channel walls to reduce the vibration of the screw.
+      - We added crowns to the end of the clamps C-channel walls to reduce the vibration of the screw.
     - Added the x2 3x1x1 C-channels to the bracing of the drivetrain.
       - This is the fulcrum of the clamp, as well as where the screw joint will be. 
     - Placed a rubber stopper at the outer end of the C-channel arm.

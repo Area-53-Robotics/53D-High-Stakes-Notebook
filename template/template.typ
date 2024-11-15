@@ -109,14 +109,14 @@
         top + left,
         dx: 25pt,
         dy: 278pt,
-        box(stroke: black + 1pt, width: 488pt, text(size: 14pt, innovate.description))
+        box(width: 488pt, text(size: 14pt, innovate.description))
       )
 
       #place(
         top + left,
         dx: 25pt,
         dy: 470pt,
-        box(stroke: black + 1pt, width: 488pt, innovate.pages)
+        box(width: 488pt, innovate.pages)
       )
     ]
   }
@@ -137,15 +137,15 @@
 
   print-entries()
   
-  // pagebreak()
-  // pagebreak()
+  pagebreak()
+  pagebreak()
 
-  // print-program-entries()
+  print-program-entries()
 
-  // pagebreak()
-  // pagebreak()
+  pagebreak()
+  pagebreak()
 
-  // print-appendix-entries()
+  print-appendix-entries()
 
   // signature-list(chronological: false)
 

@@ -196,6 +196,9 @@
   ]
 )
 
+
+// Old Glossary Entries
+/*
 #glossary-entry(
   title: "API",
   definition: [
@@ -204,8 +207,6 @@
   ],
 )
 
-// Old Glossary Entries
-/*
 #glossary-entry(
   title: "Singleton Pattern",
   definition: [

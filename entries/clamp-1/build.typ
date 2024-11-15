@@ -46,7 +46,7 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The c
 #grid(
   figure(
     image("build/2024.08.17-3.jpg", width: 190pt),
-    caption: "Adding pillow bearings for triangle bracing."
+    caption: "Adding pillow bearings for triangle bracing"
   ),
   [
     === Materials
@@ -120,7 +120,7 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
 #grid(
   figure(
     image("build/2024.08.23-1.jpg", width: 175pt),
-    caption: "We cut the edge of the drivetrain C-channel to prevent the mobile goal from hitting it."
+    caption: "We cut the edge of the drivetrain C-channel to prevent the mobile goal from hitting it"
   ),
   [
     === Materials

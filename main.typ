@@ -12,11 +12,82 @@
   year: "2024 - 2025",
   season: "High Stakes",
   innovate: (
-    date: datetime(year: 2024, month: 10, day: 19),
-    event: none,
-    description: "",
+    date: datetime(year: 2024, month: 11, day: 16),
+    event: "Capital Beltway Challenge",
+    description: "Our hook intake features a novel design that efficiently secures rings with minimal force, using a specially shaped hook mechanism to ensure a reliable grip and reduce the risk of missed rings. What sets it apart is its ability to share a motor with the flex wheel first stage intake. By utilizing a gear system to reverse rotation, the same motor powers both mechanisms, optimizing space and power usage. This innovative approach minimizes the motor count while allowing smooth transitions between the hook and flex wheel stages, enhancing the robot's efficiency and performance.",
     pages: [
-      #set text(size: 14pt)
+      #set text(size: 12pt)
+      #context {
+        let valid-entries = entries.final().enumerate()
+
+        valid-entries = valid-entries.filter(
+          entry => {
+            entry.last().title.match("Intake v1") != none
+          }
+        )
+
+        let markers = query(selector(<notebook-entry>))
+
+        for (temp-index, (absolute-index, entry)) in valid-entries.enumerate() {
+          let page-number = counter(page).at(
+            markers.at(absolute-index).location(),
+          ).at(0)
+          entry.page-number = page-number
+
+          let location = markers.at(absolute-index).location()
+          entry.position = location.position()
+
+          valid-entries.at(temp-index) = entry
+        }
+
+        let previous-date
+
+        stack(
+          dir: ttb,
+          spacing: 0.27em,
+          ..for entry in valid-entries {
+            (
+              link((page: entry.position.page, x: 0pt, y: 0pt))[
+                #let info = type-metadata.at(entry.type)
+
+                #let date = entry.date.display("[year]/[month]/[day]")
+                
+                #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
+                #h(5pt)
+                #if previous-date == entry.date [
+                  #h(27pt) _#text(fill: black)[|]_ #h(27pt)
+                ] else {
+                  box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
+                    #align(center + horizon)[
+                      #text(fill: black)[
+                        _#h(2pt) #date #h(2pt)_
+                      ]
+                    ]
+                  ]
+                }
+                #box(fill: info.color.lighten(30%), radius: 1pt, height: 1em, baseline: 15%)[
+                  #align(center + horizon)[
+                    #text(fill: black)[
+                      _#h(2pt) #info.name: #entry.title #h(2pt)_
+                    ]
+                  ]
+                ]
+                #box(
+                  width: 1fr,
+                  line(
+                    length: 100%,
+                    stroke: (
+                      dash: "dotted",
+                    ),
+                  ),
+                )
+                #text(fill: black)[_ #entry.page-number _]
+              ],
+              previous-date = entry.date
+            )
+          },
+        )
+      }
     ]
   )
 )

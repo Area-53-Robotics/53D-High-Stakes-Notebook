@@ -27,16 +27,17 @@
   description: [
   ],
   pros: [
-    - *Space*: Since the clamp’s pistons were elevated, we had enough space to possibly attach tracking wheels on the bottom of the drivetrain.
+    - *Space*: Since the clamp's pistons were elevated, we had enough space to possibly attach tracking wheels on the bottom of the drivetrain.
   ], 
   cons: [
-    - *Leverage*:Because the pistons needed to retract to activate the clamp, the pushing force was lacking.
+    - *Leverage*: Because the pistons needed to retract to activate the clamp, the pushing force was lacking.
     - *Extension*: The pistons overextended when trying to deactivate the clamp. This further decreased the little leverage that the clamp had.
     - *Grip*: Enemy teams could easily grab the mobile goal out of our possession. 
   ]
-
 )
+
 #colbreak()
+
 #pro-con(
   name: "New Idea",
   image: image("identify/Clamp-V2.excalidraw.svg"), 
@@ -44,8 +45,8 @@
 
   ],
   pros: [
-    - *Electronics Placement*: Since the pistons are on the bottom of the drivetrain, we planned on placing our brain in the space that the previous clamp’s pistons took up.
-    - *Leverage*: This design will have a strong mechanical advantage when gripping mobile goals because it makes more use of its pistons’ powers. 
+    - *Electronics Placement*: Since the pistons are on the bottom of the drivetrain, we planned on placing our brain in the space that the previous clamps pistons took up.
+    - *Leverage*: This design will have a strong mechanical advantage when gripping mobile goals because it makes more use of its pistons powers. 
     - *Compactness*: Since the pistons are below the drivetrain, the pistons are closer to eachother. 
   ], 
   cons: [
