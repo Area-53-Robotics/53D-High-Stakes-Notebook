@@ -59,6 +59,10 @@
 
 // October
 #include "management/october.typ"
+#include "clamp-2/identify.typ"
+#include "clamp-2/build.typ"
+#include "clamp-2/build-troubleshooting.typ"
+#include "redirect-mech/identify.typ"
 
 // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
