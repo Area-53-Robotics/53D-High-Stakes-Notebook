@@ -307,7 +307,9 @@
 #box[
   == Drivetrain
   #subsystem-analysis(
-    reflection: [Drivetrain],
+    reflection: [
+      We did not run into many problems with the drivetrain. The drivetrain motors overheated at some points, but this was expected because of the short time intervals between matches.
+    ],
     radius: 3,
     overperformed: 1,
     satisfactory: 7,
@@ -319,7 +321,9 @@
 #box[
   == Intake
   #subsystem-analysis(
-    reflection: [Intake],
+    reflection: [
+      In the beginning of the scrimmage, the intake had a hard time grabbing rings. This was because the intake did not have a flap to press the rings down. After Q11, we saw that the intake got more consistent.
+    ],
     radius: 3,
     overperformed: 2,
     satisfactory: 2,
@@ -331,7 +335,9 @@
 #box[
   == Clamp
   #subsystem-analysis(
-    reflection: [Clamp],
+    reflection: [
+      The clamp's arm was too low and struggled to grab the mobile goals. We came up with a solution where we added an extra piece of lexan to the end. This seemed to work as a temporary solution, but we will need to add extra length to the clamp.
+    ],
     radius: 3,
     overperformed: 4,
     satisfactory: 4,

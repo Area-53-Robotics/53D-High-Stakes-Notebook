@@ -251,6 +251,7 @@
 ) = {
   grid(
     columns: (1fr, 1fr),
+    column-gutter: 5pt,
     align: (x, _) =>
       if x == 0 {left + top}
       else if x == 1 {center + horizon},
@@ -279,13 +280,13 @@
     },
 
     pie-chart(
-      radius: 3.5,
+      radius: 3,
       outer-label-radius: 127%,
       data-type: "mts", 
       colors: (),
       (
         ("Over-\nperformed", overperformed, green),
-        ("Satisfactory", satisfactory, yellow),
+        ("Satis-\nfactory", satisfactory, yellow),
         ("Under-\nperformed", underperformed, red),
         ("Disabled", disabled, gray),
       ),
