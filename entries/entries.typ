@@ -52,14 +52,18 @@
 #include "management/september.typ"
 #include "intake-1/select.typ"
 #include "intake-1/plan.typ"
+#include "manual-updates/manual-v2-update.typ"
 #include "intake-1/build.typ"
 #include "intake-1/build-troubleshoot.typ"
 #include "intake-1/program.typ"
+#include "intake-1/test.typ"
+#include "autonomous/area-53-scrimmage-auton.typ"
 #include "competition/area-53-scrimmage.typ"
 
 // October
 #include "management/october.typ"
 #include "clamp-2/identify.typ"
+#include "clamp-2/plan.typ"
 #include "clamp-2/build.typ"
 #include "clamp-2/build-troubleshooting.typ"
 #include "redirect-mech/identify.typ"

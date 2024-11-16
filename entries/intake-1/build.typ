@@ -17,15 +17,6 @@
 )
 
 = 2024/09/06
-#to-do(
-  date: datetime(year: 2024, month: 9, day: 6),
-  monthly-schedule: "On",
-  yearly-schedule: "Ahead",
-  (
-    (true, "Build the intake according to today's delegation.", "Everyone"),
-  )
-)
-
 Today we worked on the lower portion of the intake (the first stage intake). The flex wheels that grab the rings were fully installed and the intake axle was placed and motorized. Lastly, the conveyor upper axle was installed.
 
 == Delegation
@@ -73,10 +64,10 @@ Today we worked on the lower portion of the intake (the first stage intake). The
     - Placed chain across the axles in the first stage intake.
     - Installed a front axle and flex wheels.
   ],
-  figure(
+  grid.cell(inset: (bottom: 10pt), figure(
     image("build/2024.09.06-2.png", width: 160pt),
     caption: "Close up of how the intake is mounted on the triangle brace."
-  ),
+  )),
   figure(
     image("build/2024.09.06-3.png", width: 190pt),
     caption: "The angle of the mobile goal when we clamp onto it."

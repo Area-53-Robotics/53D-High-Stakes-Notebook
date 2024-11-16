@@ -25,4 +25,4 @@
   1 = Text
   2 = Signature
 */
-#let signature-type = 0;
+#let signature-type = 1;

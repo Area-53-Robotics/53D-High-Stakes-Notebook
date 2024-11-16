@@ -26,13 +26,13 @@
   )
 )
 
-Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we learned at in our [AREA 53 SCRIMMAGE REFERENCE]. We replaced the joint and C-channel and started altering the gripping end of the clamp arm.
+Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we learned in our #entry-reference(title: "Area 53 Scrimmage", type: "competition", date: datetime(year: 2024, month: 9, day: 28)). We replaced the joint and C-channel and started altering the gripping end of the clamp arm.
 
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory* (Collecting materials):Eric, Anders
-    - *Manufacturing* (cutting pieces to size, cleaning sharp edges): : Makhi, Rory, Anders, Eric
+    - *Inventory*: Eric, Anders
+    - *Manufacturing*: Makhi, Rory, Anders, Eric
     - *Oversight & Quality Control*: Ajibola, Jin
     - *Initial Testing*: Everyone
     - *Programming*: Ishika, Ajibola
@@ -56,7 +56,7 @@ Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we
     - Rubber stopper
     - The remaining materials can be found in the toolbox
   ],
-  [
+  grid.cell(colspan: 2)[
     === Assembly
     - Created a new screw joint as a pivot for the new clamp
       - We added crowns to the end of the clamps C-channel walls to reduce the vibration of the screw.
@@ -64,18 +64,13 @@ Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we
       - This is the fulcrum of the clamp, as well as where the screw joint will be. 
     - Placed a rubber stopper at the outer end of the C-channel arm.
     - Added and modified placements of bearing blocks to be used for extra grip.
-
   ],
-   figure(
+  figure(
     image("build/24.10.4-2.png", width: 130pt),
     caption: "The new clamp arm"
   ),
    figure(
     image("build/24.10.4-3.png", width: 120pt),
-    caption: "Picture of the new clamp mount"
+    caption: "The new clamp mount"
   ),
-  [
-    === Troubleshooting
-    - Testing the new clamp and modifying as needed.
-  ]
 )

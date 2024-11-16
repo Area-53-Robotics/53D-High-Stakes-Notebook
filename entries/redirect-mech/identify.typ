@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mech v1",
+  title: "Redirect Mechanism v1",
   type: "identify",
-  date: datetime(year: 2024, month: 8, day: 30),
+  date: datetime(year: 2024, month: 10, day: 10),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Eric",
   witnessed: "Anders",
@@ -15,7 +15,7 @@
   yearly-schedule: "Ahead",
   (
     (true, "Identify the design goals and constraints for the redirect mechanism.", "Everyone"),
-    (true, "Determine the mathematical and scientific concepts involved in the redirect mech design.", "Everyone"),
+    (true, "Determine the math and scientific concepts involved in the redirect mech design.", "Everyone"),
   )
 )
 
@@ -45,12 +45,11 @@
     - The redirect mechanism must be able to efficiently lift the rings to the level of the wall stakes.
     - The redirect mechanism must precisely and accurately score the rings onto the wall stakes.
     - The redirect mechanism must be strong enough to lift the robot above the ladder.
-
   ],
   constraints: [
     - #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
     - #vex-rule[R13] Motors are limited to a combined power of 88W
-      - The intake should only require 11 watts to save power for new motorized subsystems in the future.
+      - The redirect mechanism should only require 11 watts to save power for new motorized subsystems in the future.
     - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal.
   ],
 )

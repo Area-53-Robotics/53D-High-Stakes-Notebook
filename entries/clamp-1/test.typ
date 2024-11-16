@@ -104,7 +104,7 @@ The robot will be able to maintain its grip on the mobile goal for at least 15 s
         x-label: "Trial #",
         x-tick-step: 1,
 
-        y-label: "Speed (in/s)",
+        y-label: "Time (s)",
         y-min: 0, y-max: 16,
 
         {

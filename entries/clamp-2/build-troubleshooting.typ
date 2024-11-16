@@ -32,7 +32,7 @@ Today, we wanted to finish building the clamp. We hope for this iteration of the
 #delegation(
   recurring: [
     - *Inventory* (Collecting materials): Anders
-    - *Manufacturing* (cutting pieces to size, cleaning sharp edges): :  Makhi, Rory, Anders
+    - *Manufacturing* (cutting pieces to size, cleaning sharp edges):  Makhi, Rory, Anders
     - *Oversight & Quality Control*: Ajibola, Jin
     - *Initial Testing*: Makhi
     - *Programming*: Ishika, Ajibola
@@ -54,19 +54,16 @@ Today, we wanted to finish building the clamp. We hope for this iteration of the
     - Zipties 
     - Delrin 
     - The remaining materials can be found in the toolbox
-
   ],
   [
     === Assembly
-    - Problem: The clamp did not have a full range of motion when the pistons were fully extended 
-    - Solution: We moved the pistons up a hole. We added a 2x2x1 C-channel to the piston mount to do this. 
+    - #text(red)[Problem:] The clamp did not have a full range of motion when the pistons were fully extended 
+    - #text(green)[Solution:] We moved the pistons up a hole. We added a 2x2x1 C-channel to the piston mount to do this. 
     - Replaced the rubber stopper with a standoff
         - Metal standoffs could dig into the mobile goal, in contrast to the rubber bumper that morphs to the surface that it contacts.
     - Moved the bearing blocks to a more accessible location.
-
-
   ],
-   figure(
+  figure(
     image("build-troubleshooting/24.10.5-2.png", width: 160pt),
     caption: "Picture of our new clamp during scrimmage"
   ),
@@ -79,6 +76,5 @@ Today, we wanted to finish building the clamp. We hope for this iteration of the
     - Intaking rings onto the mobile goal was inconsistent.
     - We tested different mounts of the fulcrum, pistons, and stoppers. 
     - Between changes, we filled the air tank and tested the pneumatic clamp, and a working solution was found near the end of practice.
-
   ]
 )

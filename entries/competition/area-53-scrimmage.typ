@@ -141,7 +141,7 @@
     - Since the enemy alliance is confident in their ability to score rings, we are going to try to play defense
   ],
   auton_notes: [
-    - 23382H scored 1 ring on the mobile goal
+    - Neither alliance had an auton
   ],
   match_notes: [
     - Since this is a back to back match, our drivetrain was overheating
@@ -166,19 +166,19 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    - We plan to keep track of time better and communicate with our alliance partner more.
+    - We plan to better manage time and communication with our alliance partner.
   ],
   auton_notes: [
     - Our auton failed to clamp on to the mobile goal and did not score.
     - We were the only robot with an auton.
   ],
   match_notes: [
-    - At the start of the match 53B was the only team that did not clamp on to a mobile goal.
-    - Instead, 53B pushed rings into the positive corner, which affect the match much.
+    - At the start of the match every team except 53B clamped onto a mobile goal.
+    - Instead, 53B pushed rings into the positive corner, which did not affect the match much.
     - Our clamp caused some trouble at the start, but we figured it out.
     - While the other teams were preoccupied, we managed to score two mobile goals in the positive corner.
     - 53A tried to put a mobile goal with 6 red rings into the negative corner, while 53B blocked them.
-    - Our intake worked well, and we only failed to score one ring in the entire match.
+    - Our intake worked well, and we only failed to score one ring.
   ],
   subsystems: (
     overperformed: "Intake",
@@ -234,8 +234,7 @@
   match_notes: [
     - Increasing our intake speed helped us score quickly, although it was still a little inconsistent.
     - 20096G secured the close positive corner quickly and maintained control.
-    - We tried to place our mobile goal in the other positive corner, but our clamp failed.
-    - We were the most active & agile bot.
+    - We tried to place our mobile goal in a positive corner, but our clamp failed.
     - Makhi (our driver) did very well. He saw opportunities and took them, leading to a large win for us.
   ],
    subsystems: (
