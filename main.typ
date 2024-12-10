@@ -4,6 +4,7 @@
 #include "appendix/appendix-entries.typ"
 #include "program/program-entries.typ"
 
+
 #show: notebook.with(
   team: "53D",
   organization: "Area 53",
@@ -12,9 +13,10 @@
   year: "2024 - 2025",
   season: "High Stakes",
   innovate: (
-    date: datetime(year: 2024, month: 11, day: 16),
-    event: "Capital Beltway Challenge",
+    date: datetime(year: 2024, month: 12, day: 14),
+    event: "South Hagerstown Rebel Rumble",
     description: "Our hook intake features a novel design that efficiently secures rings with minimal force, using a specially shaped hook mechanism to ensure a reliable grip and reduce the risk of missed rings. What sets it apart is its ability to share a motor with the flex wheel first stage intake. By utilizing a gear system to reverse rotation, the same motor powers both mechanisms, optimizing space and power usage. This innovative approach minimizes the motor count while allowing smooth transitions between the hook and flex wheel stages, enhancing the robot's efficiency and performance.",
+    approach: "Test",
     pages: [
       #set text(size: 12pt)
       #context {
@@ -40,17 +42,22 @@
           valid-entries.at(temp-index) = entry
         }
 
-        let previous-date
+        let sliced-mini-toc(
+          list,
+          start: 0,
+          end: 6,
+          shorten-names: false
+        ) = {
+          let previous-date
 
-        stack(
-          dir: ttb,
-          spacing: 0.27em,
-          ..for entry in valid-entries {
+          for entry in list.slice(start, end) {
             (
               link((page: entry.position.page, x: 0pt, y: 0pt))[
                 #let info = type-metadata.at(entry.type)
 
                 #let date = entry.date.display("[year]/[month]/[day]")
+
+                #if shorten-names and info.name.len() + 2 + entry.title.len() > 26 {entry.title = entry.title.slice(0, 18) + "..."}
                 
                 #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
                 #h(5pt)
@@ -85,8 +92,36 @@
               ],
               previous-date = entry.date
             )
-          },
-        )
+          }
+        }
+
+        if valid-entries.len() <= 6 {
+          stack(
+            dir: ttb,
+            spacing: 0.27em,
+            ..sliced-mini-toc(valid-entries, start: 0, end: valid-entries.len())
+          )
+        } else if valid-entries.len() <= 12 {
+          grid(
+            columns: 2,
+            inset: (x, _) => if calc.even(x) {
+              return (right: 5pt, rest: 0pt)
+            } else {
+              return (left: 5pt, rest: 0pt)
+            },
+            grid.vline(x: 1, stroke: black + 1pt),
+            stack(
+              dir: ttb,
+              spacing: 0.27em,
+              ..sliced-mini-toc(valid-entries, start: 0, end: 6, shorten-names: true)
+            ),
+            stack(
+              dir: ttb,
+              spacing: 0.27em,
+              ..sliced-mini-toc(valid-entries, start: 6, end: valid-entries.len(), shorten-names: true)
+            )
+          )
+        }
       }
     ]
   )

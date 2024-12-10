@@ -15,7 +15,8 @@
     date: none,
     event: none,
     description: none,
-    pages: none
+    pages: none,
+    approach: none
   ),
   body,
 ) = {
@@ -86,37 +87,44 @@
     )[
       #place(
         top + left,
-        dx: 52pt,
-        dy: 46pt,
+        dx: 54pt,
+        dy: 52pt,
         text(size: 15pt, innovate.date.display("[year]/[month]/[day]"))
       )
 
       #place(
         top + left,
-        dx: 286pt,
-        dy: 46pt,
+        dx: 290pt,
+        dy: 52pt,
         text(size: 15pt, innovate.event)
       )
 
       #place(
         top + left,
-        dx: 155pt,
-        dy: 225pt,
+        dx: 173pt,
+        dy: 198pt,
         text(size: 15pt, team)
       )
 
       #place(
         top + left,
-        dx: 25pt,
-        dy: 278pt,
+        dx: 27pt,
+        dy: 250pt,
         box(width: 488pt, text(size: 14pt, innovate.description))
       )
 
       #place(
         top + left,
-        dx: 25pt,
-        dy: 470pt,
+        dx: 27pt,
+        dy: 433pt,
         box(width: 488pt, innovate.pages)
+      )
+
+      #place(
+        top + left,
+        dx: 27pt,
+        dy: 584pt,
+        box(width: 488pt, text(size: 14pt, innovate.approach))
       )
     ]
   }
