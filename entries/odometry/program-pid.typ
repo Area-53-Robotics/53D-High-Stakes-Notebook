@@ -32,7 +32,7 @@ Assuming the following variables:
 #admonition(type: "equation")[
 
   $ P = K_p dot e(t) $
-  $ I = K_i dot attach(#sym.integral, t: t, b: 0)e(tau)d tau $
+  $ I = K_i dot attach(#sym.integral, t: t, b: 0)e(t)d t $
   $ D = K_d dot (d e(t)) / (d t) $
 
 ]
