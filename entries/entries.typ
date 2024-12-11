@@ -71,9 +71,12 @@
 
 // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
-// #include "odometry/brainstorm-movement.typ"
-// #include "odometry/select-movement.typ"
-// #include "odometry/brainstorm-implementation.typ"
-// #include "odometry/select-implementation.typ"
-// #include "odometry/program-odometry.typ"
-// #include "odometry/program-pid.typ"
+#include "odometry/identify.typ"
+#include "odometry/brainstorm-movement.typ"
+#include "odometry/select-movement.typ"
+#include "odometry/brainstorm-implementation.typ"
+#include "odometry/select-implementation.typ"
+#include "odometry/program-odometry.typ"
+#include "odometry/program-pid.typ"
+
+#include "ladybrown-1/program.typ"
