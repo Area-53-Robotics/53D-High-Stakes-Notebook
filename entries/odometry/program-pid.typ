@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Autonomous - PID",
+  title: "Odometry - PID",
   type: "program",
   date: datetime(year: 2024, month: 1, day: 1),
   attendance: ("Ajibola", "Ishika"),

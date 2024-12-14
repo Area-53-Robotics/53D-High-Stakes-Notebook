@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Autonomous - Movement",
+  title: "Odometry - Movement",
   type: "brainstorm",
   date: datetime(year: 2024, month: 2, day: 12),
   attendance: ("Ajibola", "Ishika"),

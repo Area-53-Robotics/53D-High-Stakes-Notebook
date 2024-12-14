@@ -40,7 +40,7 @@ During the autonomous phase of a match, the robot can only move using pre-progra
 
   [*Absolute Information* - Using odometry, the horizontal position, vertical position, and orientation of the robot can be calculated as absolute values (based on their initial values at the beginning of the match) instead of relative values calculated as summations of the changes in these values throughout the match.],
   [*Autonomous* - Odometry is mostly used for the autonomous phase of a match and programming skills, where the robot has to move on its own without driver input.],
-  [*Auto-Correcting Movement* - Using the position data produced by a position tracking system, the robot can account for disturbances (such as a robot or game element) in its autonomous movement that push the robot off-course.],
+  [*Auto-Correcting Movement* - Using the position data produced by a position tracking system, the robot can account for disturbances (such as a robot or game element) during its autonomous movement that push the robot off-course.],
 )
 
 #goals-constraints(

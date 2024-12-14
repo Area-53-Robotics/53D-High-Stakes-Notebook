@@ -67,6 +67,7 @@
 #include "clamp-2/build.typ"
 #include "clamp-2/build-troubleshooting.typ"
 #include "redirect-mech/identify.typ"
+/*
 #include "redirect-mech/understand.typ"
 
 // TBD
@@ -76,7 +77,11 @@
 #include "odometry/select-movement.typ"
 #include "odometry/brainstorm-implementation.typ"
 #include "odometry/select-implementation.typ"
-#include "odometry/program-odometry.typ"
+#include "odometry/brainstorm-hardware.typ"
+#include "odometry/select-hardware.typ"
+#include "odometry/plan.typ"
+#include "odometry/program-position-tracking.typ"
 #include "odometry/program-pid.typ"
 
 #include "ladybrown-1/program.typ"
+*/

@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Autonomous - Implementation",
+  title: "Odometry - Implementation",
   type: "select",
   date: datetime(year: 2024, month: 2, day: 12),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
@@ -37,7 +37,3 @@ After brainstorming the autonomous implementation options, we needed to select o
 #admonition(type: "select", title: "Final Selection")[
   LemLib offers the greatest flexibility with autonomous movement using both PID and Pure Pursuit.
 ]
-
-= Implementation Plan
-+ Install the LemLib template to our program
-+ Use the LemLib documentation to setup the LemLib code

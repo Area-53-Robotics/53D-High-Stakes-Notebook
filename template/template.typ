@@ -124,7 +124,7 @@
         top + left,
         dx: 27pt,
         dy: 584pt,
-        box(width: 488pt, text(size: 14pt, innovate.approach))
+        box(width: 488pt, text(size: 13pt, innovate.approach))
       )
     ]
   }

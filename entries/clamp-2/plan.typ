@@ -4,32 +4,25 @@
   title: "Mobile Goal Clamp v2",
   type: "plan",
   date: datetime(year: 2024, month: 10, day: 3),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Jin",
   witnessed: "Ajibola",
 )
 
-#colbreak()
-#colbreak()
-#colbreak()
-#colbreak()
+= Work Breakdown Structure
+#image("plan/clamp-v2-wbs.excalidraw.svg")
 
-// = Work Breakdown Structure
-// #image("plan/mobile-goal-clamp-v1-wbs.excalidraw.svg")
+= Work Breakdown Gantt Chart
+#image("plan/mobile-goal-clamp-v2-gantt-chart.png", width: 390pt)
 
-// = Work Breakdown Gantt Chart
-// #image("plan/mobile-goal-clamp-v1-gantt-chart.png")
+= CAD Model
+We planned out the mobile goal clamp v2 using CAD. The technical drawings begin on the next page.
 
-// = CAD Model
-// We planned out the mobile goal clamp using CAD. The technical drawings begin on the next page.
-
-// #cad(
-//   folder: "clamp-v1",
-//   sheets: 3,
-//   add-views: ("Isometric", "Side", "Front", "Back"),
-//   date: datetime(year: 2024, month: 8, day: 15),
-//   designed: "Jin",
-//   witnessed: "Ajibola",
-// )
-// 
-// 
+#cad(
+  folder: "clamp-v2",
+  sheets: 3,
+  add-views: ("Isometric", "Side", "Front", "Back"),
+  date: datetime(year: 2024, month: 10, day: 3),
+  designed: "Jin",
+  witnessed: "Ajibola",
+)

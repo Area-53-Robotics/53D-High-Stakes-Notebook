@@ -16,7 +16,7 @@
     date: datetime(year: 2024, month: 12, day: 14),
     event: "South Hagerstown Rebel Rumble",
     description: "Our hook intake features a novel design that efficiently secures rings with minimal force, using a specially shaped hook mechanism to ensure a reliable grip and reduce the risk of missed rings. What sets it apart is its ability to share a motor with the flex wheel first stage intake. By utilizing a gear system to reverse rotation, the same motor powers both mechanisms, optimizing space and power usage. This innovative approach minimizes the motor count while allowing smooth transitions between the hook and flex wheel stages, enhancing the robot's efficiency and performance.",
-    approach: "Test",
+    approach: "Our intake is the most efficient intake for conserving momentum because of its ability to effortlessly transition from the first stage intake to the second stage intake. Additionally, as the ring rotates around the circular flywheel, the velocity of the ring is tangential to the surface of the flywheel. As the ring deposits from the intake, the intake uses the ring's momentum to fire the ring onto the mobile goal's stake.",
     pages: [
       #set text(size: 12pt)
       #context {
