@@ -9,7 +9,9 @@
   witnessed: "Ishika",
 )
 
-#show figure.caption: it => "Figure " + it.numbering + ": " + it.body
+#show figure.caption: it => {
+  "Figure " + figure.numbering + ": " + it.body
+}
 
 // #to-do(
 //   date: datetime(year: 2023, month: 12, day: 1),
@@ -25,7 +27,9 @@ A position tracking algorithm has 3 goals:
 - Track horizontal (x-axis) displacements
 
 = Units
-I heavily recommend using inches for distance and position, as that is the custom for VEX field measurements and many user-made libraries. I also recommend using radians for angles, as radians are used for standard C++ trigonometric functions. Regardless, make sure that #underline[the units you use throughout your program are consistent.]
+We chose the following units for our position tracking algorithm:
+- Inches for distance and position, because that is the custom for VEX field measurements and many user-made libraries.
+- Radians for angles, because they are used for standard C++ trigonometric functions.
 
 #admonition(type: "note")[
   Because LemLib is a library, it has a lot of code that is meant to account for the varying situations of its users. To reduce redundancy, we only included the code snippets that are relevant to our robot's configuration.
@@ -33,7 +37,6 @@ I heavily recommend using inches for distance and position, as that is the custo
 
 = Global Variables
 #code-header(main: false, dest: "https://github.com/LemLib/LemLib/blob/stable/src/lemlib/chassis/odom.cpp")[LemLib/src/lemlib/chassis/odom.cpp]
-
 ```cpp
 // tracking thread
 pros::Task* trackingTask = nullptr;
@@ -57,20 +60,15 @@ float prevImu = 0;
 The following variables are approximately in the order that they are first used in the document. They will be further explained throughout the document.
 
 Constants:
-- $s_L$ - the left-right distance from the tracking center to the left tracking wheel
-- $s_R$ - the left-right distance from the tracking center to the right tracking wheel
-- $s_S$ - the forward-backward distance from the tracking center to the strafing tracking wheel
+- $s_V$ - the left-right distance from the tracking center to the vertical tracking wheel
 
 Variables: \
 - $arrow(d)$ - global position vector at current reset
 - $theta$ - global orientation at current reset
 - $Delta theta$ - the change in the robot's orientation since the last reset
-- $Delta L$ - distance the left wheel rolled since the last reset
-- $Delta R$ - distance the right wheel rolled since the last reset
-- $r_L$ - distance from the center of rotation to the left tracking wheel
-- $r_R$ - distance from the center of rotation to the right tracking wheel
+- $Delta V$ - distance the vertical tracking wheel rolled since the last reset
+- $r_V$ - distance from the center of rotation to the vertical tracking wheel
 - $r_C$ - distance/radius from the center of rotation to the tracking center
-- $Delta S$ - distance the strafing wheel rolled since the last reset
 - $arrow(d_l)$ - local translation vector
 - $theta_m$ - average orientation
 - $theta_0$ - global orientation at last reset
@@ -84,8 +82,7 @@ Variables: \
 ]
 
 = Tracking Theory
-The position tracking system provides the rest of the robots' code with live data on the current position and orientation (represented as a position vector $arrow(d)$, and orientation $theta$) of a predefined point on the robot (called the “tracking center”, see @figure1). Note that the tracking wheels can be placed anywhere along the dotted lines without affecting the math; it is the _perpendicular_
-distance to the tracking center that matters, as explained below.
+The position tracking system provides the rest of the robots' code with live data on the current position and orientation (represented as a position vector $arrow(d)$, and orientation $theta$) of a predefined point on the robot (called the “tracking center”, see @figure1). Note that the tracking wheels can be placed anywhere along the dotted lines without affecting the math; it is the _perpendicular_ distance to the tracking center that matters, as explained below.
 
 #figure(
   image(
@@ -95,11 +92,54 @@ distance to the tracking center that matters, as explained below.
   caption: "A sample robot base with tracking wheels."
 ) <figure1>
 
-Position tracking works by modelling the robot's motion (i.e. the motion of the tracking center) as an arc that occurs between each timed reset. The left and right tracking wheel paths are arcs that are concentric with the tracking center's arc.
+Position tracking works by modelling the robot's motion (i.e. the motion of the tracking center) as an arc that occurs between each timed reset. The vertical tracking wheel path is an arc that is concentric with the tracking center's arc.
 
 == Calculating the Change in Orientation
+Because our odometry hardware setup has an inertial measurement unit (IMU), to find the robot's change in orientation, we just subtract the current angle of the IMU from the previous angle of the IMU.
+
+// TODO: Fix comments on this code segment
+
+#code-header(main: false, dest: "https://github.com/LemLib/LemLib/blob/stable/src/lemlib/chassis/odom.cpp")[LemLib/src/lemlib/chassis/odom.cpp]
+```cpp
+void lemlib::update() {
+    // ... Non-relevant lines of code excluded
+
+    float imuRaw = 0;
+
+    // ... Non-relevant lines of code excluded
+    
+    // Gets the current heading detected by the inertial sensor
+    if (odomSensors.imu != nullptr) imuRaw = degToRad(odomSensors.imu->get_rotation());
+
+    // ... Non-relevant lines of code excluded
+
+    // calculate the change in sensor values
+    float deltaImu = imuRaw - prevImu;
+
+    // ... Non-relevant lines of code excluded
+
+    // update the previous sensor values
+    prevImu = imuRaw;
+
+    // ... Non-relevant lines of code excluded
+
+    // Obtains the current heading of the robot
+    float heading = odomPose.theta;
+
+    // ... Non-relevant lines of code excluded
+
+    if (odomSensors.imu != nullptr) heading += deltaImu;
+
+    // ... Non-relevant lines of code excluded
+
+    float deltaHeading = heading - odomPose.theta;
+}
+```
+
+
+== Calculating the Translation
 #admonition(type: "note")[
-  If your odometry setup contains an IMU, you do not need to calculate the change in orientation using tracking wheels.
+  To simplify the calculation of the global coordinates, we will first perform the calculations in a local coordinate system that treats the straight path from the initial position to the final position as the positive y direction.
 ]
 
 #figure(
@@ -110,13 +150,20 @@ Position tracking works by modelling the robot's motion (i.e. the motion of the 
 ) <figure2>
 
 The arc movement of a robot is modeled in @figure2. There are two important things to note from the model:
-+ The straight line from the initial to the new tracking center position (which is the vertical displacement, $Delta y$) forms an isosceles triangle with $r_C$, which is the same for both the initial and new tracking center position. We will use this in the next section.
-+ The arc angle is the same as the change in orientation of the robot. We can calculate the arc angle using the arc length formula below.
+// TODO: change add "local" to "vertical displacement" in the bullet point below and do so for the pictures
++ The straight line from the initial to the new tracking center position (which is the vertical displacement, $Delta y$) forms an isosceles triangle with $r_C$, which is the same for both the initial and new tracking center position.
++ $Delta y$ is a chord formed by connecting the tracking center's initial and new positions. We can calculate the length of the chord by treating it as one of the legs of the isosceles triangle formed by the robot's movement.
+
+We found two methods to calculate the formula for the length of the chord:
+- Right Angle Trigonometry
+- Law of Cosines
+
+However, before calculating the formula for the chord length, we need to find the unknown value $r_C$, the distance from the center of rotation to the tracking center. We can calculate $r_C$ knowing that the movement of the vertical tracking wheel can be modeled as an arc.
 
 #admonition(type: "equation", title: "Arc Length Equation")[
   If:
-  - s = arc length
-  - r = radius
+  - $s$ = arc length
+  - $r$ = radius
   - #sym.theta = central angle in radians
 
   $ s = r theta $
@@ -125,83 +172,37 @@ The arc movement of a robot is modeled in @figure2. There are two important thin
 #set enum(numbering: "(1)")
 
 #grid(
-  columns: (2fr, 2fr, 3fr),
+  columns: (2fr, 3fr),
   column-gutter: 5pt,
   row-gutter: 5pt,
   align: horizon,
 
+
   [
-    $ Delta L = r_L Delta theta $
-  ],
-  [
-    $ Delta R = r_R Delta theta $
+    $ Delta V = r_V Delta theta $
   ],
   [
-    1. Create arc length equations using the distance traveled by the left and right tracking wheels
+    1. Create arc length equation using the distance traveled by the vertical tracking wheel
   ],
   [
-    $ Delta L = (r_C + s_L) Delta theta $
+    $ Delta V = (r_C - s_V) Delta theta $
   ],
   [
-    $ Delta R = (r_C - s_R) Delta theta $
+    2. Substitute $r_C$ into the equation
   ],
   [
-    2. Substitute $r_C$ into both equations
+    $ (Delta V) / (Delta theta) = r_C - s_V $
   ],
   [
-    $ (Delta L) / (Delta theta) = r_C + s_L $
+    3. Divide both sides of the equation by $Delta theta$
   ],
   [
-    $ (Delta R) / (Delta theta) = r_C - s_R $
+    $ r_C = (Delta V) / (Delta theta) + s_V $
   ],
   [
-    3. Divide both sides of both equations by $Delta theta$
+    4. Isolate $r_C$
   ],
-  [
-    $ r_C = (Delta L) / (Delta theta) - s_L $
-  ],
-  [
-    $ r_C = (Delta R) / (Delta theta) + s_R $
-  ],
-  [
-    4. Isolate $r_C$ in both equations
-  ],
-  grid.cell(colspan: 2)[
-    $ (Delta L) / (Delta theta) - s_L = (Delta R) / (Delta theta) + s_R $
-  ],
-  [
-    5. Set the two equations equal to eachother, eliminating $r_C$
-  ],
-  grid.cell(colspan: 2)[
-    $ Delta L - s_L Delta theta = Delta R + s_R Delta theta $
-  ],
-  [
-    6. Multiply all terms by $Delta theta$
-  ],
-  grid.cell(colspan: 2)[
-    $ Delta L - Delta R = Delta theta (s_L + s_R) $
-  ],
-  [
-    7. Manipulate similar terms to be on the same sides of the equation
-  ],
-  grid.cell(colspan: 2)[
-    $ Delta theta = (Delta L - Delta R) / (s_L + s_R) $
-  ],
-  [
-    8. Isolate $Delta theta$
-  ]
 )
-
-== Calculating the Translation
-The change in position of the robot's center is a chord formed by connecting the tracking center's initial and new positions. We can calculate the length of the chord by treating it as one of the legs of the isosceles triangle formed by the robot's movement (@figure2).
-
-To simplify the calculations, we will first perform them in a local coordinate system that treats the straight path from the initial position to the final position as the positive y direction.
-
-We can calculate the length of the chord using either of two methods:
-- Right Angle Trigonometry
-- Law of Cosines
-
-Note that regardless of the method you use, the resulting formula will be the same.
 
 === Right Angle Trigonometry Method
 We can bisect the isosceles triangle created by the robot's movement into two right triangles as modeled in @figure3, allowing us to solve for $y$.
@@ -317,6 +318,70 @@ $ arrow(d_l) = 2 sin((Delta theta) / 2) dot vec(delim: "[", (Delta S) / (Delta t
 == Converting from Local to Global Coordinates
 Now that we have calculated the length of the robot's displacement (local translation vector),
 we need to convert it to a global translation vector that can be added to the robot's previous position.
+
+
+
+#code-header(main: false, dest: "https://github.com/LemLib/LemLib/blob/stable/src/lemlib/chassis/odom.cpp")[LemLib/src/lemlib/chassis/odom.cpp]
+```cpp
+void lemlib::update() {
+    // ... Non-relevant lines of code excluded
+
+    float vertical1Raw = 0;
+
+    // ... Non-relevant lines of code excluded
+    
+    // get the current sensor values
+    if (odomSensors.vertical1 != nullptr) vertical1Raw = odomSensors.vertical1->getDistanceTraveled();
+
+    // ... Non-relevant lines of code excluded
+
+    // calculate the change in sensor values
+    float deltaVertical1 = vertical1Raw - prevVertical1;
+
+    // ... Non-relevant lines of code excluded
+
+    // update the previous sensor values
+    prevVertical1 = vertical1Raw;
+
+    // ... Non-relevant lines of code excluded
+
+    lemlib::TrackingWheel* verticalWheel = nullptr;
+    if (!odomSensors.vertical1->getType()) verticalWheel = odomSensors.vertical1;
+
+    // ... Non-relevant lines of code excluded
+
+    float rawVertical = 0;
+    if (verticalWheel != nullptr) rawVertical = verticalWheel->getDistanceTraveled();
+
+    // ... Non-relevant lines of code excluded
+
+    float verticalOffset = 0;
+    if (verticalWheel != nullptr) verticalOffset = verticalWheel->getOffset();
+
+    // ... Non-relevant lines of code excluded
+
+    
+    // calculate change in x and y
+    float deltaX = 0;
+    float deltaY = 0;
+    if (verticalWheel != nullptr) deltaY = rawVertical - prevVertical;
+    if (horizontalWheel != nullptr) deltaX = rawHorizontal - prevHorizontal;
+    prevVertical = rawVertical;
+    prevHorizontal = rawHorizontal;
+
+    // calculate local x and y
+    float localX = 0;
+    float localY = 0;
+    if (deltaHeading == 0) { // prevent divide by 0
+        localX = deltaX;
+        localY = deltaY;
+    } else {
+        localX = 2 * sin(deltaHeading / 2) * (deltaX / deltaHeading + horizontalOffset);
+        localY = 2 * sin(deltaHeading / 2) * (deltaY / deltaHeading + verticalOffset);
+    }
+
+}
+```
 
 === Calculating the Angular Offset
 However, we first need to determine the average orientation $theta_m$, which is the angle the local translation vector is offset from the global position vector by. This situation is modeled in @figure4.

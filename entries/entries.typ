@@ -1,3 +1,4 @@
+/*
 // April
 #include "pre-season/pre-reveal-reflection.typ"
 #include "pre-season/reveal-video-thoughts.typ"
@@ -67,8 +68,8 @@
 #include "clamp-2/build.typ"
 #include "clamp-2/build-troubleshooting.typ"
 #include "redirect-mech/identify.typ"
-/*
 #include "redirect-mech/understand.typ"
+*/
 
 // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
@@ -83,5 +84,4 @@
 #include "odometry/program-position-tracking.typ"
 #include "odometry/program-pid.typ"
 
-#include "ladybrown-1/program.typ"
-*/
+// #include "ladybrown-1/program.typ"

@@ -34,7 +34,8 @@ void lemlib::update() {
     float horizontal1Raw = 0;
     float horizontal2Raw = 0;
     float imuRaw = 0;
-    // 4 lines excluded
+    if (odomSensors.vertical1 != nullptr) vertical1Raw = odomSensors.vertical1->getDistanceTraveled();
+    // 3 lines excluded
     // Gets the current heading detected by the inertial sensor
     if (odomSensors.imu != nullptr) imuRaw = degToRad(odomSensors.imu->get_rotation());
 
