@@ -72,6 +72,8 @@
 #include "redirect-mech/brainstorm.typ"
 #include "redirect-mech/select.typ"
 #include "redirect-mech/build.typ"
+#include "redirect-mech/program.typ"
+#include "competition/dulaney-royal-rumble.typ"
 #include "ladybrown-1/identify.typ"
 #include "intake-2/identify.typ"
 #include "clamp-3/identify.typ"
