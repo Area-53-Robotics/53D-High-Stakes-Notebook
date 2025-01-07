@@ -73,6 +73,7 @@
 #include "redirect-mech/select.typ"
 #include "redirect-mech/build.typ"
 #include "redirect-mech/program.typ"
+#include "redirect-mech/test.typ"
 #include "competition/dulaney-royal-rumble.typ"
 #include "ladybrown-1/identify.typ"
 #include "intake-2/identify.typ"
