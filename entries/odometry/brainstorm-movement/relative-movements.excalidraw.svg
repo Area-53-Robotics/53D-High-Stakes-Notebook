@@ -4,8 +4,8 @@
   <defs>
     <style class="style-fonts">
       @font-face {
-        font-family: "Virgil";
-        src: url("https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/jibo2/.vscode/extensions/pomdtr.excalidraw-editor-3.7.1/public//dist/excalidraw-assets/Virgil.woff2");
+        font-family: "Virgil 3 YOFF 3 YOFF 3 YOFF";
+        src: url("https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/jibo2/.vscode/extensions/pomdtr.excalidraw-editor-3.7.1/public//dist/excalidraw-assets/Virgil 3 YOFF 3 YOFF 3 YOFF.woff2");
       }
       @font-face {
         font-family: "Cascadia";

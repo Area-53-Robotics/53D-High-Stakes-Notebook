@@ -22,7 +22,7 @@
 
 #pro-con(
   name: "Original Idea",
-  image: image("identify/Clamp-V1.excalidraw.svg"), 
+  image: image("identify/clamp-v1.excalidraw.svg"), 
   description: [ ],
   pros: [
     - *Space* - Since the clamp's pistons were elevated, we had enough space to possibly attach tracking wheels on the bottom of the drivetrain.
@@ -38,7 +38,7 @@
 
 #pro-con(
   name: "New Idea",
-  image: image("identify/Clamp-V2.excalidraw.svg"), 
+  image: image("identify/clamp-v2.excalidraw.svg"), 
   description: [ ],
   pros: [
     - *Electronics Placement* - Since the pistons are on the bottom of the drivetrain, we planned on placing our brain in the space that the previous clamps pistons took up.
