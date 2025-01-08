@@ -4,7 +4,7 @@
   title: "Mobile Goal Clamp v2",
   type: "build",
   date: datetime(year: 2024, month: 10, day: 04),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Jin",
   witnessed: "Makhi",
 )
@@ -20,7 +20,7 @@
 #to-do(
   date: datetime(year: 2024, month: 10, day: 04),
   monthly-schedule: "On",
-  yearly-schedule: "On",
+  yearly-schedule: "Ahead",
   (
     (true, "Build the clamp according to today's delegation.", "Everyone"),
   )

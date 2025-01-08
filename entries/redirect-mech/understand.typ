@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mech v1",
+  title: "Redirect Mechanism v1",
   type: "understand",
   date: datetime(year: 2024, month: 10, day: 10),
   attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi"),

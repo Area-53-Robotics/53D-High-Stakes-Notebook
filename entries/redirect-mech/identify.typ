@@ -11,11 +11,14 @@
 
 #to-do(
   date: datetime(year: 2024, month: 10, day: 10),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
     (true, "Identify the design goals and constraints for the redirect mechanism.", "Everyone"),
     (true, "Determine the math and scientific concepts involved in the redirect mech design.", "Everyone"),
+    (true, "Brainstorm redirect mechanism ideas.", "Everyone"),
+    (true, "Select the best redirect mech idea using a decision matrix.", "Everyone"),
+    (true, "Plan the implementation of the redirect mech idea.", "Everyone"),
   )
 )
 

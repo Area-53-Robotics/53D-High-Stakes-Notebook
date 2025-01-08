@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mech v1",
+  title: "Redirect Mechanism v1",
   type: "brainstorm",
   date: datetime(year: 2024, month: 10, day: 10),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -9,16 +9,6 @@
   witnessed: "Jin",
 )
 
-#to-do(
-  date: datetime(year: 2024, month: 10, day: 10),
-  monthly-schedule: "Ahead",
-  yearly-schedule: "Ahead",
-  (
-    (true, "Brainstorm redirect mechanism ideas.", "Everyone"),
-    (false, "Select the best redirect mech idea using a decision matrix.", "Everyone"),
-    (false, "Plan the implementation of the redirect mech idea.", "Everyone"),
-  )
-)
 
 We have brainstormed numerous different archetypes of the redirect mechanism, each with the possibility to succeed in wall stake scoring. Several solutions include a four-bar, six-bar, or a basic level arm that is capable of picking up rings directly from the floor. Having the ability to score on the wall stakes would give us a massive advantage over the majority of Maryland teams.
 

@@ -16,8 +16,8 @@
   (
     (true, "Review our time and budget management during September.", "Everyone"),
     (true, "Plan out the October meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),
-    // (true, "Identify improvements that can be made to the current clamp.", "Everyone"),
-    // (true, "Create a plan for the construction of the new clamp.", ("Ajibola", "Jin")),
+    (true, "Identify the design goals and constraints for the mobile goal clamp v2.", "Everyone"),
+    (true, "Create a plan for the construction of the new clamp.", ("Ajibola", "Jin")),
   )
 )
 

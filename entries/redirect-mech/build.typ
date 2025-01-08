@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mech v1",
+  title: "Redirect Mechanism v1",
   type: "build",
   date: datetime(year: 2024, month: 10, day: 11),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -17,6 +17,15 @@
 )
 
 = 2024/10/11
+#to-do(
+  date: datetime(year: 2024, month: 10, day: 11),
+  monthly-schedule: "On",
+  yearly-schedule: "Ahead",
+  (
+    (true, "Build the redirect mech according to today's delegation.", "Everyone"),
+  )
+)
+
 Following the CAD, we began working on the redirect mechanism. We made great progress on the robot but had some difficulties with troubleshooting. We noticed that there is a specific angle required for successfully reversing the rings onto the four-bar.
 
 == Delegation

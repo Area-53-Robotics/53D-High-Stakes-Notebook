@@ -9,16 +9,6 @@
   witnessed: "Rory",
 )
 
-#to-do(
-  date: datetime(year: 2024, month: 10, day: 03),
-  monthly-schedule: "Ahead",
-  yearly-schedule: "Ahead",
-  (
-    (true, "Identify the design goals and constraints for version 2 of the mobile goal clamp.", "Everyone"),
-    (true, "Determine the mathematical and scientific concepts involved in clamp design.", "Everyone"),
-  )
-)
-
 
 #pro-con(
   name: "Original Idea",
@@ -34,8 +24,6 @@
   ]
 )
 
-#colbreak()
-
 #pro-con(
   name: "New Idea",
   image: image("identify/clamp-v2.excalidraw.svg"), 
@@ -49,6 +37,8 @@
     - *Tracking Wheel Placement* - Having the pistons at the bottom of the drivetrain will give us limited space to place tracking wheels. 
   ]
 )
+
+#colbreak()
 
 = New Design Goals & Constraints
 #goals-constraints(

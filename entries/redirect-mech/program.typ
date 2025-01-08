@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mech v1",
+  title: "Redirect Mechanism v1",
   type: "program",
   date: datetime(year: 2024, month: 10, day: 18),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -14,8 +14,8 @@
   monthly-schedule: "Behind",
   yearly-schedule: "Ahead",
   (
-    (true, "Program the Redirect Mech.", ("Ajibola", "Ishika")),
-    (true, "Test the Redirect Mech.", "Everyone"),
+    (true, "Program the redirect mech.", ("Ajibola", "Ishika")),
+    (true, "Test the redirect mech.", "Everyone"),
   )
 )
 

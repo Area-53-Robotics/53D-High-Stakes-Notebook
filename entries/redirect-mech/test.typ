@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mech v1",
+  title: "Redirect Mechanism v1",
   type: "test",
   date: datetime(year: 2024, month: 10, day: 18),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
@@ -45,8 +45,6 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
 )
 
 == Results
-
-
 #align(center)[
   #show table.cell.where(x: 0): strong
   #show table.cell.where(y: 0): strong
@@ -63,8 +61,6 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
     [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy],
   )
 ]
-
-// #colbreak()
 
 #grid(
   columns: (1fr, 1fr),
@@ -278,7 +274,7 @@ Unfortunately, the redirect mechanism failed to meet both of our hypotheses. Out
 
 = Range of Motion (Lift)
 == Background
-In our  #entry-reference(title: "Redirect Mech v1", type: "select", date: datetime(year: 2024, month: 10, day: 10)), we chose to use a four-bar lift because of its simplicity and height. It is important that our four-bar lift can consistently reach its highest height. Before we tested the redirect mechanism, we measured its maximum height of 28.56 inches.
+In our  #entry-reference(title: "Redirect Mechanism v1", type: "select", date: datetime(year: 2024, month: 10, day: 10)), we chose to use a four-bar lift because of its simplicity and height. It is important that our four-bar lift can consistently reach its highest height. Before we tested the redirect mechanism, we measured its maximum height of 28.56 inches.
 
 == Hypothesis
 We believe that the redirect mechanism will consistently reach 26 inches. 
