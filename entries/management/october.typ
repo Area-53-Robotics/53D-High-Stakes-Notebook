@@ -38,7 +38,7 @@ Once again, we did not need to buy new materials to construct our mechanisms. Ho
 #colbreak()
 
 = October Time Management
-October is the first month in the “mid-season,” and fittingly, the first official tournament for us this season occurs this month. The Dulaney Royal Rumble competition will be on October 19th, so we must complete our design cycles before then to be competition ready.
+October is the first month in the “mid-season," and fittingly, the first official tournament for us this season occurs this month. The Dulaney Royal Rumble competition will be on October 19th, so we must complete our design cycles before then to be competition ready.
 
 Keeping this information in mind, we created this Gantt chart:
 

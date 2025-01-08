@@ -102,7 +102,7 @@ Now that we have chosen to use a tank drive configuration, our next step is to b
     - *Inefficient Turns* - Makes it harder for the driver to make quick responses on the field
     - *Slow* - Has the slowest speed out of all the wheel types
     - *Motor Strain* - The low maneuverability of traction wheels puts strain on motors
-    // - *Availability* - Area 53 does not currently have many 3.25” traction wheels in storage, so if we want to use that size we will have to delay construction
+    // - *Availability* - Area 53 does not currently have many 3.25" traction wheels in storage, so if we want to use that size we will have to delay construction
     - *Wheel Durability* - A full traction drive displays wear and tear on the wheel quicker than any other drivetrain.
   ],
 )

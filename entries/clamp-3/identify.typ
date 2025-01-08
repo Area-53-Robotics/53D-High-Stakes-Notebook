@@ -48,7 +48,7 @@
 
   ],
   constraints: [
-    - #vex-rule [R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule [R4] Robots must fit within an 18" x 18" x 18" volume
       - The clamp will likely stick out on one side of the robot, so we have to ensure it stays within the size limit
     - The clamp cannot use motors so that we can save them for other mechanisms
     - #vex-rule [R23b] Pneumatic devices may be charged to a maximum of 100 psi

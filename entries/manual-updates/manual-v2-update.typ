@@ -95,10 +95,10 @@
 
 #qa-table(
   question: [
-    “In our recent scrimmage event (first of the season for us) is that most climbing teams only attempted their climbs in end game, and robots that couldn't climb were seeking to play defensively. Some students felt that no-violation calls for preventing access to the ladder were controversial - this could be a misunderstanding because the previous year's game had a protected period for climbing. The rules don't supply any special protections to climbing late in the game, and the competitors should probably expect climbing to be more challenging late in the game as their opponents will be expecting them to make climbs then, after positive corner protection kicks in.”
+    “In our recent scrimmage event (first of the season for us) is that most climbing teams only attempted their climbs in end game, and robots that couldn't climb were seeking to play defensively. Some students felt that no-violation calls for preventing access to the ladder were controversial - this could be a misunderstanding because the previous year's game had a protected period for climbing. The rules don't supply any special protections to climbing late in the game, and the competitors should probably expect climbing to be more challenging late in the game as their opponents will be expecting them to make climbs then, after positive corner protection kicks in."
   ],
   answer: [
-    “In your scenarios, if neither Robot meets the definition of Climbing, there cannot be an #vex-rule[SG9] Violation (major or minor).”
+    “In your scenarios, if neither Robot meets the definition of Climbing, there cannot be an #vex-rule[SG9] Violation (major or minor)."
   ],
   significance: [
     Robots with an extended Climbing mechanism will only have the protection of #vex-rule[SG9] once they meet the definition of Climbing. This means that although risky, we can prevent a robot from touching the bar to climb. Once they have begun the climb, we cannot interfere. 
@@ -107,12 +107,12 @@
 
 #qa-table(
   question: [
-    “<SG11> protects mobile stakes in the positive corners during the last 15 seconds of a match. The Violation Notes on the rule states that Intentional, strategic, or egregious Violations will be considered Major Violations. During the last 15 seconds of a match, if a team tips over or removes a mobile goal from a protected corner but the score difference is not match affecting, is a major violation still warranted? Can it be assumed that both of these actions would fit the criteria of 'intentional' or 'strategic' and thus make this a major violation regardless of whether the action was match affecting?”
+    “<SG11> protects mobile stakes in the positive corners during the last 15 seconds of a match. The Violation Notes on the rule states that Intentional, strategic, or egregious Violations will be considered Major Violations. During the last 15 seconds of a match, if a team tips over or removes a mobile goal from a protected corner but the score difference is not match affecting, is a major violation still warranted? Can it be assumed that both of these actions would fit the criteria of 'intentional' or 'strategic' and thus make this a major violation regardless of whether the action was match affecting?"
   ],
   answer: [
     “In every case we can think of\*, changing the score of a Protected Mobile Goal by tipping it over or removing it from the Corner will be part of an intentional, strategic, or egregious action. Per the Violation Note for #vex-rule[G11], these are automatically Major Violations and should result in a Disqualification. This note applies regardless of whether or not it is a Match Affecting Violation.
 
-    \*We acknowledge that a Robot could, conceivably, accidentally tip over a precariously Placed Protected Mobile Goal through transitive or incidental contact that could result in the Mobile Goal no longer being Placed. In that and similar possibilities, the Violation probably isn't intentional or strategic. Have we seen it happen, or do we expect to? No.”
+    \*We acknowledge that a Robot could, conceivably, accidentally tip over a precariously Placed Protected Mobile Goal through transitive or incidental contact that could result in the Mobile Goal no longer being Placed. In that and similar possibilities, the Violation probably isn't intentional or strategic. Have we seen it happen, or do we expect to? No."
   ],
   significance: [
     Regardless of the cause or intentions that result in removing a mobile goal from the positive corner in the last 15 seconds of the match, the action will result in a major violation.

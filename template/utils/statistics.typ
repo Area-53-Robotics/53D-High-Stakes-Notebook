@@ -11,13 +11,13 @@
 #let median(data, digits: none) = {
   let data = data.sorted()
 
-  let median-index = data.len() / 2
+  let median-index = (data.len() / 2) - 1
 
   if calc.odd(data.len()) {
-    return data.at(calc.ceil(median-index) + 1)
+    return data.at(calc.ceil(median-index))
   } else {
-    let bottom-num = data.at(median-index + 1)
-    let top-num = data.at(median-index + 2)
+    let bottom-num = data.at(int(median-index))
+    let top-num = data.at(int(median-index) + 1)
 
     return mean((bottom-num, top-num))
   }

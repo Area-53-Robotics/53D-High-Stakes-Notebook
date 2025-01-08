@@ -47,7 +47,7 @@
     - The redirect mechanism must be strong enough to lift the robot above the ladder.
   ],
   constraints: [
-    - #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
     - #vex-rule[R13] Motors are limited to a combined power of 88W
       - The redirect mechanism should only require 11 watts to save power for new motorized subsystems in the future.
     - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal.

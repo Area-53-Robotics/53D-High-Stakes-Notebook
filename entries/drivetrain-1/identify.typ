@@ -41,7 +41,7 @@ Our team spent a lot of time talking and planning the foundation of our robot: t
       - Most robots will have at least this much mass, and we need to be able to push them or stall them for defensive strategies.
   ],
   constraints: [
-    - #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
       - To fit other subsystems, the drivetrain will have to be constrained further than this. These are the preliminary size limits we came up with:
         - Length: 16 in
         - Width: 16 in

@@ -82,7 +82,7 @@ Variables: \
 ]
 
 = Tracking Theory
-The position tracking system provides the rest of the robots' code with live data on the current position and orientation (represented as a position vector $arrow(d)$, and orientation $theta$) of a predefined point on the robot (called the “tracking center”, see @figure1). Note that the tracking wheels can be placed anywhere along the dotted lines without affecting the math; it is the _perpendicular_ distance to the tracking center that matters, as explained below.
+The position tracking system provides the rest of the robots' code with live data on the current position and orientation (represented as a position vector $arrow(d)$, and orientation $theta$) of a predefined point on the robot (called the “tracking center", see @figure1). Note that the tracking wheels can be placed anywhere along the dotted lines without affecting the math; it is the _perpendicular_ distance to the tracking center that matters, as explained below.
 
 #figure(
   image(

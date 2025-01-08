@@ -46,7 +46,7 @@ Today we had an online meeting, during which we discussed the implementation of 
     - The intake should not interact with any other subsystems unless necessary to allow more space.
   ],
   constraints: [
-    - #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
     - #vex-rule[R13] Motors are limited to a combined power of 88W
       - The intake should only require 11 watts to save power for new motorized subsystems in the future.
     - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal.

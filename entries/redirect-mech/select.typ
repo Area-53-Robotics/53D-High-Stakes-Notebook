@@ -25,16 +25,16 @@ The redirect mechanism will be one of the most important aspects of our robot be
     ("Stability", 5),
     ("Durability", 4),
     ("Reliability", 5),
-    ("Durability", 2),
+    ("Simplicity", 3),
   ),
   choices: (
-    ("Six-bar", 4, 2, 4, 3, 3, ),
-    ("Four-bar", 3, 3, 4, 4, 4, ),
+    ("Six-bar", 4, 2, 4, 3, 3),
+    ("Four-bar", 3, 3, 4, 4, 4),
     ("Pneumatics", 3, 4, 3, 2, 2),
   ),
   body: colbreak()
 )
 
 #admonition(type: "select", title: "Final Selection")[
-  We chose the hook intake idea because of how reliable the hooks are at picking up rings from different positions and intaking them onto the mobile goal. From videos that we saw online, the hooks were able to score rings faster than a hood intake. Additionally, hook intakes are lighter than hood intakes, which keeps the door open for us to build an endgame climb mechanism in the future.
+  We chose the four-bar design inspired by 1010W's design. Not only will building the four-bar design be an excellent chance to mentor the novice buildings on four-bar linkage, but we are confident that we can build the four-bar quickly.
 ]

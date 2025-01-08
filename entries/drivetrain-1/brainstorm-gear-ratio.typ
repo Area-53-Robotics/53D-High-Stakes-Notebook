@@ -31,7 +31,7 @@ The last important factor that goes into a drivetrain is the gear ratio that is 
 ]
 
 #gear-ratio-pro-con(
-  name: "450 RPM 2.75” Wheels",
+  name: "450 RPM 2.75\" Wheels",
   image: image("brainstorm-gear-ratio/450 RPM 2.75 inch.excalidraw.svg"),
   motor-cartridge: "600 RPM (Blue Cartridge)",
   wheel-size: 2.75,
@@ -55,7 +55,7 @@ The last important factor that goes into a drivetrain is the gear ratio that is 
 #colbreak()
 
 #gear-ratio-pro-con(
-  name: "600 RPM 2.75” Wheels",
+  name: "600 RPM 2.75\" Wheels",
   image: image("brainstorm-gear-ratio/600 RPM 2.75 inch.excalidraw.svg"),
   motor-cartridge: "600 RPM (Blue Cartridge)",
   wheel-size: 2.75,
@@ -77,7 +77,7 @@ The last important factor that goes into a drivetrain is the gear ratio that is 
 )
 
 #gear-ratio-pro-con(
-  name: "450 RPM 3.25” Wheels",
+  name: "450 RPM 3.25\" Wheels",
   image: image("brainstorm-gear-ratio/450 RPM 3.25 inch.excalidraw.svg"),
   motor-cartridge: "600 RPM (Blue Cartridge)",
   wheel-size: 3.25,
@@ -93,6 +93,6 @@ The last important factor that goes into a drivetrain is the gear ratio that is 
     - *Complexity* - This gear ratio requires gearing downwards and using bigger wheels, which can be hard to fit into a drivetrain half.
   ],
   notes: [
-    - 3.25” wheels allow for 3 hole wide drive halves
+    - 3.25" wheels allow for 3 hole wide drive halves
   ]
 )

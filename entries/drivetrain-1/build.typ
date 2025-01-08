@@ -52,8 +52,8 @@ We wanted to start this season off with a running start. Since we had the CAD of
   ),
   [
     === Materials
-    - x4 3.25” Omni Wheel
-    - x4 3.25” Traction Wheel
+    - x4 3.25" Omni Wheel
+    - x4 3.25" Traction Wheel
     - x4 48-tooth Gear
     - x6 36-tooth Gear
     - x6 11W 600 RPM motor
@@ -105,7 +105,7 @@ We wanted to start this season off with a running start. Since we had the CAD of
   [
     === Assembly: Drivetrain
     - Attached the gears to the wheels
-      - Since we are working with 3.25” wheels, the wheels are taller than the gears. We can directly screw the gears to the wheels
+      - Since we are working with 3.25" wheels, the wheels are taller than the gears. We can directly screw the gears to the wheels
     - Following the CAD [page here], we attached the gears to the other end of the C-channel
       - The outer C-channel is flipped from the outside because we are making 5-inch-wide drive halves. This method helped us fit the collars on the axles.
     - Our wheels are offset one hole above the motors. This helps us lower our center of gravity.

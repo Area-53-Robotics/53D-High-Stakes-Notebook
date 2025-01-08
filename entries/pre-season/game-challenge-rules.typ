@@ -66,13 +66,13 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   column-gutter: 10pt,
 
   [
-    - *Ring* #sym.dash.em A hollow red or blue torus-shaped plastic object with an outer diameter of 7”, an inner “hole” diameter of 3", and a thickness (or “tube diameter”) of 2”
+    - *Ring* #sym.dash.em A hollow red or blue torus-shaped plastic object with an outer diameter of 7", an inner “hole" diameter of 3", and a thickness (or “tube diameter") of 2"
     - 48 Rings, 24 of each color
     - #vex-rule[SC4] A Ring is considered a Top Ring if it meets the following criteria:
       - a. The Ring is Scored on a Stake (i.e., meets all criteria in #vex-rule[SC3]).
       - b. The Ring is the furthest Scored Ring from a given Stake's base (i.e., Mobile Goal base or Field Perimeter wall).
       - c. There is no minimum number of Rings required; if only one Ring is Scored on a Stake, then it is still considered Stake's Top Ring.
-      - Note: A Ring that is considered a Top Ring does not also receive points for being Scored on a Stake; i.e., that Ring is worth 3 points, not a total of “3 + 1” points.
+      - Note: A Ring that is considered a Top Ring does not also receive points for being Scored on a Stake; i.e., that Ring is worth 3 points, not a total of “3 + 1" points.
   ],
   image("/assets/field-elements/ring.png"),
   grid.cell(colspan: 2)[
@@ -94,7 +94,7 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   column-gutter: 10pt,
 
   [
-    - *Stake* #sym.dash.em A vertical ½” Schedule 40 PVC pipe (gray, red, or blue) with a compliant barb at the top, used for Scoring Rings.
+    - *Stake* #sym.dash.em A vertical ½" Schedule 40 PVC pipe (gray, red, or blue) with a compliant barb at the top, used for Scoring Rings.
     - There are 10 Stakes:
       - 5 neutral Stakes in Mobile Goals, which fit 6 Rings each
       - 2 Alliance Wall Stakes, one per Alliance, which fit 2 Rings each
@@ -105,7 +105,7 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
       - b. The Ring is not contacting a gray foam tile.
       - c. Any part of the Stake is at least partially within the volume defined by the inner edges of the Ring.
       - Each Ring can only be counted for points once, even in cases where the Ring qualifies as Scored on multiple Stakes. If multiple Stakes are encircled by the same Ring, Top Rings will not be awarded for those Stakes. 
-      - d. The Stake does not exceed its total permitted number of Rings. In the event of too many Rings on a Stake, the “highest” Rings will be removed.
+      - d. The Stake does not exceed its total permitted number of Rings. In the event of too many Rings on a Stake, the “highest" Rings will be removed.
   ],
   stack(
     spacing: 5pt,
@@ -128,14 +128,14 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   column-gutter: 10pt,
   
   [
-    - *Mobile Goal* #sym.dash.em One of 5 large Scoring Objects, each with a Stake in the center. Mobile Goals are hexagonal, with a maximal diameter of 10” and an overall height of 14.5”. The Stake is considered part of the Mobile Goal
+    - *Mobile Goal* #sym.dash.em One of 5 large Scoring Objects, each with a Stake in the center. Mobile Goals are hexagonal, with a maximal diameter of 10" and an overall height of 14.5". The Stake is considered part of the Mobile Goal
     - #vex-rule[SC6] A Mobile Goal that has been Placed will result in the following Corner modifiers to its Scored Rings: 
       - a. Placed in a Positive Corner
         - i. Values of all Scored Rings on the Mobile Goal will be doubled. Scored Rings will receive 2 points, and Scored Top Rings will receive 6 points.
       - b. Placed in a Negative Corner
         - i. Values of all Scored Rings on the Mobile Goal will be set to zero points.
         - ii. For each Ring, an equivalent amount of points will be removed from that Alliance's other Scored Rings. Scored Rings will remove 1 point, and Scored Top Rings will remove 3 points.
-        - iii. This negator only applies to an Alliance's “Ring points.”
+        - iii. This negator only applies to an Alliance's “Ring points."
   ],
   image("/assets/field-elements/mobile-goal.png"),
   grid.cell(colspan: 2)[
@@ -159,7 +159,7 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   column-gutter: 10pt,
 
   [
-    - *Ladder* #sym.dash.em A 36” x 36” x 46” structure located in the center of the field. The Ladder has four vertical posts, and three sets of horizontal rungs at 18”, 32”, and 46” to denote the three Climbing Levels. There is also a single High Stake atop the vertical post nearest the audience side of the Field, at the 180 degree mark on a GPS strip. All supporting structures, hardware, and the High Stake are considered part of the Ladder
+    - *Ladder* #sym.dash.em A 36" x 36" x 46" structure located in the center of the field. The Ladder has four vertical posts, and three sets of horizontal rungs at 18", 32", and 46" to denote the three Climbing Levels. There is also a single High Stake atop the vertical post nearest the audience side of the Field, at the 180 degree mark on a GPS strip. All supporting structures, hardware, and the High Stake are considered part of the Ladder
     - #vex-rule[SC7] A Robot is considered to have Climbed to a Level if it meets the following criteria:
       - a. The Robot is contacting the Ladder.
       - b. The Robot is not contacting any other Field Elements, including the gray foam tiles.
@@ -191,12 +191,12 @@ VRC High Stakes is a 2024-2025 game focusing significantly on collaboration, rob
   column-gutter: 10pt,
 
   [
-    - *Corner* #sym.dash.em One of four 12” x 12” locations in which Mobile Goals can be Placed. The Corners are bounded by the inner edges of the Field Perimeter and the outer edge of the associated white tape lines. The Corner is defined as the foam tile and tape line themselves; it is not a 3-dimensional volume.
-      - *Negative Corner* #sym.dash.em A Corner of the field, designated by the “-” sign on the stickers applied to the top of the Field Perimeter.
-      - *Positive Corner* #sym.dash.em A Corner of the field, designated by the “+” sign on the stickers applied to the top of the Field Perimeter.
+    - *Corner* #sym.dash.em One of four 12" x 12" locations in which Mobile Goals can be Placed. The Corners are bounded by the inner edges of the Field Perimeter and the outer edge of the associated white tape lines. The Corner is defined as the foam tile and tape line themselves; it is not a 3-dimensional volume.
+      - *Negative Corner* #sym.dash.em A Corner of the field, designated by the “-" sign on the stickers applied to the top of the Field Perimeter.
+      - *Positive Corner* #sym.dash.em A Corner of the field, designated by the “+" sign on the stickers applied to the top of the Field Perimeter.
     - #vex-rule[SC5] A Mobile Goal is considered Placed in a Corner if it meets the following criteria: 
       - a. The Mobile Goal's base is contacting the Corner (i.e., the Floor and/or white tape line).
-      - b. It is “upright.” For the purposes of this definition, a Mobile Goal is considered “upright” if no contact is being made between its Stake (and/or any Rings on this Stake) and the Floor or Field Perimeter.
+      - b. It is “upright." For the purposes of this definition, a Mobile Goal is considered “upright" if no contact is being made between its Stake (and/or any Rings on this Stake) and the Floor or Field Perimeter.
       - c. Contact with a Robot is irrelevant, as long as all other criteria are met
     - Note: Only one Mobile Goal may be considered Placed in each Corner.
   ],
@@ -229,27 +229,27 @@ There are multiple categories of rules, each of which apply to different aspects
   grid.cell(colspan: 2)[
     == Robot
     + #vex-rule[R1] One Robot per Team
-    + #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
+    + #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
     + #vex-rule[R5] Robots may only expand horizontally in one direction
     + #vex-rule[R11] Let go of Scoring Objects (ring or mobile goal) after the Match
     + #vex-rule[R13] Motors are limited to a combined power of 88W
-    + #vex-rule[R19] Robots may use custom plastic parts cut from a single 12” x 24” sheet, up to 0.070” thick.
+    + #vex-rule[R19] Robots may use custom plastic parts cut from a single 12" x 24" sheet, up to 0.070" thick.
     + #vex-rule[R23] Pneumatics are limited to a maximum of 2 pneumatic air reservoirs charged to a maximum of 100 psi.
   ],
   grid.cell(rowspan: 2)[
     == Specific Game Rules
-    + #vex-rule[SG2] Horizontal expansion is limited to 24” in one X/Y direction
-    + #vex-rule[SG3] Vertical expansion is limited to 2 levels of the Ladder (32.16” upwards when on the floor)
-      + Level 0: 0”, the Floor tiles
-      + Level 1: #sym.lt.eq 18.16”, from the Floor to the top of the black rung
-      + Level 2: 18.17”-32.16”, from the top of the black rung to the top of the gray rung
+    + #vex-rule[SG2] Horizontal expansion is limited to 24" in one X/Y direction
+    + #vex-rule[SG3] Vertical expansion is limited to 2 levels of the Ladder (32.16" upwards when on the floor)
+      + Level 0: 0", the Floor tiles
+      + Level 1: #sym.lt.eq 18.16", from the Floor to the top of the black rung
+      + Level 2: 18.17"-32.16", from the top of the black rung to the top of the gray rung
       + Level 3: 32.17: to 46.16", from the top of the gray rung to the top of the yellow rung
       + Level 4: #sym.gt.eq 46.17", above the yellow rung
     + #vex-rule[SG5] Each Robot gets one Ring as a preload.
     + #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal.
     + #vex-rule[SG9] Don't remove opponents from the Ladder.
     + #vex-rule[SG10] Alliance Wall Stakes are protected.
-    + #vex-rule[SG11] Positive corners are “safe” during the endgame (last 10 seconds).
+    + #vex-rule[SG11] Positive corners are “safe" during the endgame (last 10 seconds).
   ],
   [
     == Tournament
@@ -263,7 +263,7 @@ There are multiple categories of rules, each of which apply to different aspects
     + #vex-rule[G6] Robots may not intentionally detach parts during the Match.
     + #vex-rule[G7] Don't clamp your Robot to the Field.
     + #vex-rule[G13] Don't destroy other Robots.
-    + #vex-rule[G14] Offensive Robots get the “benefit of the doubt.”
+    + #vex-rule[G14] Offensive Robots get the “benefit of the doubt."
     + #vex-rule[G16] No Holding for more than a 5-second count
   ],
 )

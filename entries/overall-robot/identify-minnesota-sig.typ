@@ -58,7 +58,7 @@ The Minnesota Signature Event is a high level competitive VEX robotics tournamen
     #image("minnesota-signature-event/minnesota-picture-2.jpg", width: 170pt)
   ],
   table.cell[
-    - *Drivetrain*: They use 6 motors with a 450 RPM drivetrain on 3.25” wheels. They also use all Omnis for better drifting.
+    - *Drivetrain*: They use 6 motors with a 450 RPM drivetrain on 3.25" wheels. They also use all Omnis for better drifting.
     - *Tracking wheels*: They have two tracking wheels, horizontal and vertical, at the bottom of their drivetrain. The tracking wheels have a Delrin based design that is banded down.
   ],
   table.cell[

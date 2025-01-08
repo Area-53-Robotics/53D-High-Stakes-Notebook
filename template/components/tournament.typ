@@ -244,6 +244,7 @@
 #let subsystem-analysis(
   reflection: none,
   radius: 3,
+  outer-label-radius: 127%,
   overperformed: 0,
   satisfactory: 0,
   underperformed: 0,
@@ -281,7 +282,7 @@
 
     pie-chart(
       radius: 3,
-      outer-label-radius: 127%,
+      outer-label-radius: outer-label-radius,
       data-type: "mts", 
       colors: (),
       (

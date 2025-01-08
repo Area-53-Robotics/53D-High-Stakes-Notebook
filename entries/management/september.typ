@@ -36,7 +36,7 @@ We finished our new overall robot plans earlier than we initially planned, which
 Similar to the month of June, we did not need to buy any new materials to construct our mechanisms. However, as the season starts to transition out of the early season and into the mid-season, it will become increasingly likely that we need to buy new parts.
 
 = September Time Management
-September is the last month in our identification of the “early season,” meaning that this will be our last month to make significant changes to the robot before we become restricted by competition deadlines. In addition, Area 53 is hosting a scrimmage on September 28th, so we will try to complete our design cycles before then.
+September is the last month in our identification of the “early season," meaning that this will be our last month to make significant changes to the robot before we become restricted by competition deadlines. In addition, Area 53 is hosting a scrimmage on September 28th, so we will try to complete our design cycles before then.
 
 Keeping this information in mind, we created this Gantt chart:
 

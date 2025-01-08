@@ -47,7 +47,7 @@ This season reintroduced the mobile goal, a game element that was in the 2021-22
     - The clamp should be able to grab and release mobile goals quickly to minimize time spent on each task.
   ],
   constraints: [
-    - #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
     - #vex-rule[R13] Motors are limited to a combined power of 88W
       - Our other subsystems will need power, so we will preliminarily limit the mobile goal clamp's power draw to 11W.
     - #vex-rule[R23b] Pneumatic devices may be charged to a maximum of 100 psi.

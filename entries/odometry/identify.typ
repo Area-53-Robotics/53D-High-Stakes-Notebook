@@ -50,7 +50,7 @@ During the autonomous phase of a match, the robot can only move using pre-progra
     - The orientation reported by the position tracking system must maintain #sym.plus.minus 2#sym.degree accuracy for 1 minute
   ],
   constraints: [
-    - #vex-rule[R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
     - #vex-rule[R15] No modifications to electronic or pneumatic components are allowed
     - #vex-rule[R27] Use a "Competition Template" for programming
   ],

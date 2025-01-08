@@ -33,14 +33,14 @@ Before beginning construction of our drivetrain, we took some time to evaluate d
   ],
   [
     == Steps
-    + *Requirements* - Identify the project requirements, detail what is needed to complete the project, and determine the definition of “done.”
-      - Correlates with the “Identify” EDP step
+    + *Requirements* - Identify the project requirements, detail what is needed to complete the project, and determine the definition of “done."
+      - Correlates with the “Identify" EDP step
     + *Design* - Create the design of the solution through CAD, sketches, mock-ups, etc.
-      - Correlates with the “Brainstorm” and “Select” EDP steps
+      - Correlates with the “Brainstorm" and “Select" EDP steps
     + *Implementation* - Build the solution
-      - Correlates with the “Build” and “Program” EDP steps
+      - Correlates with the “Build" and “Program" EDP steps
     + *Verification* - Test if the solution meets all of the identified project requirements
-      - Correlates with the “Test” EDP step
+      - Correlates with the “Test" EDP step
     + *Maintenance* - Ensure the solution is kept functional after its completion
       - The EDP does not have a step dedicated to this, but it achieves a similar goal by being a cycle
   ],
@@ -60,24 +60,24 @@ Before beginning construction of our drivetrain, we took some time to evaluate d
 
     == Steps
     1. *Sprint Backlog* - Identify the task(s) from the backlog that need to be completed
-      - Correlates with the “Identify” EDP step
+      - Correlates with the “Identify" EDP step
   ],
   [
-    2. *Iterative Cycle* - This is repeated multiple times over set time intervals, such as every 3 weeks. The cycle is repeated until we meet the definition of “done.”
+    2. *Iterative Cycle* - This is repeated multiple times over set time intervals, such as every 3 weeks. The cycle is repeated until we meet the definition of “done."
       - *Planning* - Plan the solution through CAD, sketches, mock-ups, etc.
-        - Correlates with the “Brainstorm” and “Select” EDP steps
+        - Correlates with the “Brainstorm" and “Select" EDP steps
       - *Implementation* - Build the solution
-        - Correlates with the “Build” and “Program” EDP steps
-      - *Review* - Verify that the solution meets all criteria identified during the “Sprint Backlog” phase
-        - Correlates with the “Test” EDP step
+        - Correlates with the “Build" and “Program" EDP steps
+      - *Review* - Verify that the solution meets all criteria identified during the “Sprint Backlog" phase
+        - Correlates with the “Test" EDP step
       - *Retrospect*
         - This step is unique to the Scrum methodology, putting an emphasis on looking at past successes and failures to improve future designs.
   ],
   grid.cell(align: center + horizon)[#image("kanban-board/scrum-methodology.svg")],
   grid.cell(colspan: 2)[
     3. *Definition of Done*
-      - If the solution meets the definition of “done,” then restart the Scrum Methodology from the “Sprint Backlog” phase with a new task that needs to be completed.
-      - If the solution does not meet the definition of “done,” then restart the Iterative Cycle.
+      - If the solution meets the definition of “done," then restart the Scrum Methodology from the “Sprint Backlog" phase with a new task that needs to be completed.
+      - If the solution does not meet the definition of “done," then restart the Iterative Cycle.
   ]
 )
 

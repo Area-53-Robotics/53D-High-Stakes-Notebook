@@ -50,7 +50,7 @@
 
   ],
   constraints: [
-    - #vex-rule [R4] Robots must fit within an 18” x 18” x 18” volume
+    - #vex-rule [R4] Robots must fit within an 18" x 18" x 18" volume
       - The intake cannot take up too much space, as we need to save space for other mechanisms.
     - #vex-rule [R13] Motors are limited to a combined power of 88W
       - 66W are being used by the drivetrain, and we will likely need 11W for the Ladybrown v1, leaving 11W for the intake.

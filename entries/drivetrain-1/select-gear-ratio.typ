@@ -40,9 +40,9 @@
     ("Weight Capacity", 4),
   ),
   choices: (
-    ("450 RPM,\n2.75” Wheels", 3, 3, 4, 3, 4, 3, 3),
-    ("600 RPM,\n2.75” Wheels", 4, 2, 2, 3, 2, 3, 2),
-    ("450 RPM,\n3.25” Wheels", 3, 4, 4, 4, 4, 3, 4),
+    ("450 RPM,\n2.75\" Wheels", 3, 3, 4, 3, 4, 3, 3),
+    ("600 RPM,\n2.75\" Wheels", 4, 2, 2, 3, 2, 3, 2),
+    ("450 RPM,\n3.25\" Wheels", 3, 4, 4, 4, 4, 3, 4),
   ),
   body: colbreak()
 )
