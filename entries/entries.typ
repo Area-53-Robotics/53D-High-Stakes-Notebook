@@ -67,7 +67,7 @@
 #include "clamp-2/plan.typ"
 #include "clamp-2/build.typ"
 #include "clamp-2/build-troubleshooting.typ"
-// #include "clamp-2/test.typ"
+#include "clamp-2/test.typ"
 #include "redirect-mech/identify.typ"
 #include "redirect-mech/understand.typ"
 #include "redirect-mech/brainstorm.typ"

@@ -22,7 +22,7 @@ The design goals for the ladybrown should be similar to the Redirect mechanism b
 
 
 #figure(
-  image("Identify Ladybrown.excalidraw.svg", width: 50%),
+  image("identify-ladybrown.excalidraw.svg", width: 50%),
   caption: "In the above image, (1) the robot intakes a ring. (2) Once the ring has made it to the top of the intake, the ladybrown can prepare to pick it up. (3) The ladybrown has picked up the ring and rotated 180°. (4) The ladybrown can score the ring onto the wall stakes.
 
   The ladybrown allows us to directly collect rings from our intake and place them onto a wall stake. By using lateral movement, the ladybrown can effortlessly score rings. "
