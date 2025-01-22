@@ -77,11 +77,12 @@
 #include "redirect-mech/program.typ"
 #include "redirect-mech/test.typ"
 #include "competition/dulaney-royal-rumble.typ"
+#include "overall-robot-2/identify.typ"
 // #include "ladybrown-1/identify.typ"
 // #include "ladybrown-1/understand.typ"
 // #include "ladybrown-1/brainstorm.typ"
 // #include "ladybrown-1/select.typ"
-// #include "intake-2/identify.typ"
+ #include "intake-2/identify.typ"
 // #include "clamp-3/identify.typ"
 
 // TBD
