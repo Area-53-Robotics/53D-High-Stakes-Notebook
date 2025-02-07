@@ -15,27 +15,29 @@
   yearly-schedule: "Ahead",
   (
     (true, "Identify the design goals and constraints for the intake.", "Everyone"),
-      )
+  )
 )
 
 #pro-con(
   name: "Original Idea",
-  image: image("identify/intake-old-design.svg"), 
+  image: image("identify/intake-old-design.excalidraw.svg"), 
   description: [ ],
   pros: [
     - *Structural Stability* -  The old intake was braced heavily from the clamp side.
-    - *Intaking Ability* - Due to the intake’s width, the second intake stage had an easy time intaking rings.
+    - *Intaking Ability* - Due to the intake's width, the second intake stage had an easy time intaking rings.
   ], 
   cons: [
-    - *Weight* - The extra width of our old intake required more materials to build, increasing the robot’s total weight.
+    - *Weight* - The extra width of our old intake required more materials to build, increasing the robot's total weight.
     - *Space* - The width of our intake prevented us from effectively making use of the available robot space, taking up space from other subsystems.
     - *Electronics* - Since the intake took up a lot of the robot space, we had to place our brain and battery in exposed areas.
   ]
 )
+
 #colbreak()
+
 #pro-con(
   name: "New Idea",
-  image: image("identify/intake-new-design.svg"), 
+  image: image("identify/intake-new-design.excalidraw.svg"), 
   description: [ ],
   pros: [
     - *Compactness* - This version will be skinnier than the previous intake design.
@@ -47,8 +49,6 @@
     - *Structural Stability* - There are a lot of vulnerable spots on our intake that will experience a lot of sheering.
   ]
 )
-
-
 
 = New Design Goals & Constraints
 #goals-constraints(

@@ -9,7 +9,7 @@
   witnessed: "Rory",
 )
 
-The ladybrown mechanism utilizes friction in its grippers to securely hold onto the ring, ensuring it doesn't slip during motion. When the mechanism rotates, it relies on angular displacement to position the ring accurately, achieving a 180-degree turn to align with the wall stakes. During the scoring process, collision forces are carefully managed to ensure the ring is placed without damaging either the robot or the ring, maintaining precision and control.
+The ladybrown mechanism utilizes friction in its grippers to securely hold onto the ring, ensuring it does not slip during motion. When the mechanism rotates, it relies on angular displacement to position the ring accurately, achieving a 180-degree turn to align with the wall stakes. During the scoring process, collision forces are carefully managed to ensure the ring is placed without damaging either the robot or the ring, maintaining precision and control.
 
 #set grid(
   columns: (1fr, 1fr),

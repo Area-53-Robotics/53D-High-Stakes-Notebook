@@ -3,19 +3,19 @@
 #show: create-entry.with(
   title: "Odometry",
   type: "identify",
-  date: datetime(year: 2024, month: 8, day: 14),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
+  date: datetime(year: 2024, month: 11, day: 22),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
 #to-do(
-  date: datetime(year: 2024, month: 8, day: 14),
+  date: datetime(year: 2024, month: 11, day: 22),
   monthly-schedule: "Ahead",
   yearly-schedule: "Ahead",
   (
-    (true, "Identify the design goals and constraints for the mobile goal clamp.", "Everyone"),
-    (true, "Determine the mathematical and scientific concepts involved in clamp design.", "Everyone"),
+    (true, "Identify the design goals and constraints for odometry.", "Everyone"),
+    (true, "Determine the mathematical and scientific concepts involved in odometry.", "Everyone"),
   )
 )
 

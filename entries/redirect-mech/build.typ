@@ -48,7 +48,7 @@ Following the CAD, we began working on the redirect mechanism. We made great pro
 == Build Process
 #grid(
   figure(
-    image("build/2024.10.11-1.png", width: 170pt),
+    image("build/2024.10.11-1.png", width: 130pt),
     caption: "Basket of the redirect mechanism. The ring will slide and rest in there."
   ),
   [
