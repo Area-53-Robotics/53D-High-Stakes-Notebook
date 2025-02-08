@@ -24,16 +24,16 @@ We got together to brainstorm ladybrown designs and research successful ladybrow
 
 #pro-con(
   name: "Angled Ladybrown",
-  image: image("brainstorm/Brainstorm angled lady brown.excalidraw(1).svg"),
+  image: image("brainstorm/angled-ladybrown.excalidraw.svg"),
   description: [
-   The support for the ladybrown is at the intake side of the robot. There is a gusset on the drivetrain’s gusset, which allows us to control the angle of the ladybrown. This design would save space on the intake side of the robot. 
+   The support for the ladybrown is at the intake side of the robot. There is a gusset on the drivetrain's gusset, which allows us to control the angle of the ladybrown. This design would save space on the intake side of the robot. 
   ],
   pros: [
-    - *Stability* - Since the ladybrown supports are close to the robot’s center of gravity, it is stable.
-    - *Structure* - The angled ladybrown creates a triangle shape once fully mounted. The triangle shape resists deformities, strengthening the ladybrown’s structure.
+    - *Stability* - Since the ladybrown supports are close to the robot's center of gravity, it is stable.
+    - *Structure* - The angled ladybrown creates a triangle shape once fully mounted. The triangle shape resists deformities, strengthening the ladybrown's structure.
   ],
   cons: [
-    - *Bracing* - - Since the ladybrown’s support is angled, there can only be a single screw joint supporting the ladybrown at the bottom. Extra support is needed.
+    - *Bracing* - Since the ladybrown's support is angled, there can only be a single screw joint supporting the ladybrown at the bottom. Extra support is needed.
   ],
   notes: [
     - Very popular design. 
@@ -43,8 +43,8 @@ We got together to brainstorm ladybrown designs and research successful ladybrow
 #colbreak()
 
 #pro-con(
-  name: "Straight-up Ladybrown ",
-  image: image("brainstorm/Brainstorm straight-up lady brown.excalidraw.svg"),
+  name: "Straight-up Ladybrown",
+  image: image("brainstorm/straight-up-ladybrown.excalidraw.svg"),
   description: [
     The support for the ladybrown is at the intake side of the robot. There is a 2-wide C-channel on top of the drivetrain chassis where the ladybrown is mounted. 
   ],
@@ -53,7 +53,7 @@ We got together to brainstorm ladybrown designs and research successful ladybrow
   ],
   cons: [
     - *Arm Length* - WThis version of the ladybrown has a shorter arm length. This would require us to be closer to the wall stakes for scoring. 
-    - *Center of Gravity* - The ladybrown is far from the robot’s center of gravity, lowering stability.
+    - *Center of Gravity* - The ladybrown is far from the robot's center of gravity, lowering stability.
   ],
   notes: [
     - We have the space in our drivetrain needed to make this design. 
@@ -62,9 +62,9 @@ We got together to brainstorm ladybrown designs and research successful ladybrow
 
 #pro-con(
   name: "Ladybrown Hooks",
-  image: image("brainstorm/Brainstorm Lady brown Hook.excalidraw.svg"),
+  image: image("brainstorm/ladybrown-hook.excalidraw.svg"),
   description: [
-    When the ring makes it to the top of the intake, the ladybrown’s hook will grab onto the ring. Once secured, it will fire the ring onto the wall stake.  
+    When the ring makes it to the top of the intake, the ladybrown's hook will grab onto the ring. Once secured, it will fire the ring onto the wall stake.  
 
 
   ],

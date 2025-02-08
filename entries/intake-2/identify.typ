@@ -23,7 +23,7 @@
   image: image("identify/intake-old-design.excalidraw.svg"), 
   description: [ ],
   pros: [
-    - *Structural Stability* -  The old intake was braced heavily from the clamp side.
+    - *Structural Stability* - The old intake was braced heavily from the clamp side.
     - *Intaking Ability* - Due to the intake's width, the second intake stage had an easy time intaking rings.
   ], 
   cons: [
