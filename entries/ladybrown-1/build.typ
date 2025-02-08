@@ -79,7 +79,7 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
     caption: "The intake side of our robot. There is the 11x1x1 C-channel angled from the 2x1x1 C-channel."
   ),
   figure(
-    image("build/24-11-1-3.png", width: 280pt),
+    image("build/24-11-1-3.excalidraw.svg", width: 280pt),
     caption: "Ladybrown stress diagram"
   ),
   [
@@ -154,7 +154,7 @@ We continued building the ladybrown, focusing primarily on the upper sections wh
 )
 #grid(
   figure(
-    image("build/24-11-2-3.png", width: 170pt),
+    image("build/24-11-2-3.excalidraw.svg", width: 170pt),
   ),
   [
     === Cross Brace Diagram
@@ -248,7 +248,7 @@ Today, we focused on finalizing the second triangular brace, completing the main
 )
 #grid(
   figure(
-    image("build/24-11-8-4.png", width: 170pt),
+    image("build/24-11-8-4.excalidraw.svg", width: 170pt),
   ),
   [
     === Gear Cutting for Ladybrown
