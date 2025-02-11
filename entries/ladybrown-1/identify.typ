@@ -11,22 +11,24 @@
 
 #to-do(
   date: datetime(year: 2024, month: 10, day: 23),
-  monthly-schedule: "Ahead",
+  monthly-schedule: "Off",
   yearly-schedule: "Ahead",
   (
     (true, "Identify the design goals and constraints for the ladybrown.", "Everyone"),
     (true, "Determine the mathematical and scientific concepts involved in ladybrown design.", "Everyone"),
   )
 )
-The design goals for the ladybrown should be similar to the Redirect mechanism because they have the same function of scoring onto wall stakes. Therefore, based on our experience designing and building the redirect mechanism, we have a good idea of what to expect when designing the ladybrown.
 
+The design goals for the ladybrown should be similar to the Redirect mechanism because they have the same function of scoring onto wall stakes. Therefore, based on our experience designing and building the redirect mechanism, we have a good idea of what to expect when designing the ladybrown.
 
 #figure(
   image("identify-ladybrown.excalidraw.svg", width: 50%),
   caption: "In the above image, (1) the robot intakes a ring. (2) Once the ring has made it to the top of the intake, the ladybrown can prepare to pick it up. (3) The ladybrown has picked up the ring and rotated 180°. (4) The ladybrown can score the ring onto the wall stakes.
 
-  The ladybrown allows us to directly collect rings from our intake and place them onto a wall stake. By using lateral movement, the ladybrown can effortlessly score rings. "
+  The ladybrown allows us to directly collect rings from our intake and place them onto a wall stake. By using lateral movement, the ladybrown can effortlessly score rings."
 )
+
+#colbreak()
 
 #table(
   columns: (1fr),
@@ -39,7 +41,6 @@ The design goals for the ladybrown should be similar to the Redirect mechanism b
   [*Control* - The ladybrown needs ease of control for accurate grabbing, scoring, and releasing of rings. This is imperative, as the ability to score on wall stakes can earn many points, potentially changing the outcome of a match.],
   [*Speed* - Another main feature of the ladybrown is how quickly it can score rings onto the wall stakes. It is important to have a quick acceleration when scoring to minimize the time we are vulnerable to getting blocked.],
 )
-
 
 #goals-constraints(
   goals: [
@@ -56,6 +57,6 @@ The design goals for the ladybrown should be similar to the Redirect mechanism b
     - #vex-rule[R13] Motors are limited to a combined power of 88W
       - 66W are being used by the drivetrain, and we will likely need 11W for the intake v3, leaving 11W for the ladybrown.
     - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal
-    - Must not interfere with other mechanisms
+    - Must not interfere with other mechanisms.
   ],
 )

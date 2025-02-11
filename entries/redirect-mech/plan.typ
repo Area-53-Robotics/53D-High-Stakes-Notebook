@@ -22,7 +22,7 @@ We planned out the redirect mechanism using CAD. The technical drawings begin on
   folder: "redirect-mech-v1",
   sheets: 4,
   add-views: ("Isometric", "Top", "Front", "Side"),
-  date: datetime(year: 2024, month: 10, day: 3),
+  date: datetime(year: 2024, month: 10, day: 10),
   designed: "Jin",
   witnessed: "Ajibola",
 )

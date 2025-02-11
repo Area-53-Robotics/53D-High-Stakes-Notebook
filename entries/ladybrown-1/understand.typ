@@ -4,7 +4,7 @@
   title: "Ladybrown v1",
   type: "understand",
   date: datetime(year: 2024, month: 10, day: 23),
-  attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi"),
+  attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi", "Anders"),
   designed: "Jin",
   witnessed: "Rory",
 )
@@ -25,16 +25,13 @@ The ladybrown mechanism utilizes friction in its grippers to securely hold onto 
     = Friction
     #v(15pt)
   ],
-    image("understand/Understand_ Friction.excalidraw.svg", width: 200pt),
-
+  image("understand/friction.excalidraw.svg", width: 240pt),
   [
     == What is Friction?
-    Friction is the force that resists an object’s motion on a surface. The object can either be stationary or in motion relative to the surface. Friction occurs where the object is in contact with the surface. In other words, it takes place between two surfaces, and hence, is a contact force.
+    Friction is the force that resists an object's motion on a surface. The object can either be stationary or in motion relative to the surface. Friction occurs where the object is in contact with the surface. In other words, it takes place between two surfaces, and hence, is a contact force.
 
-    == How does it relate to the Ladybrown?
-
-    For the ladybrown to grab a ring, there needs to be a contact force between the ladybrown and the ring. This contact force creates a friction force that prevents the ring from slipping out of the ladybrown. 
-
+    == How does it relate to the ladybrown?
+    For the ladybrown to grab a ring, there needs to be a contact force between the ladybrown and the ring. This contact force creates a friction force that prevents the ring from slipping out of the ladybrown.
   ],
 )
 
@@ -46,14 +43,26 @@ The ladybrown mechanism utilizes friction in its grippers to securely hold onto 
   grid.cell(colspan: 2)[
     = Angular Displacement
     #v(15pt)
-  ],  
+  ],
   [
     == What is Angular Displacement?
-    The motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and the final point is termed ‘motion’. The angle difference between the initial and final positions of a point that has rotated along a specified axis is angular displacement. 
+    The motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and final point is termed as motion. The angle difference between the initial and final positions of a point that has rotated in a specified axis is angular displacement.
+
     == How does it relate to the ladybrown?
-    The ladybrown mechanism rotates 180° as part of its scoring functionality. This precise rotation ensures that the mechanism can consistently align with the wall stakes to score rings. 
+    The ladybrown mechanism rotates 180#sym.degree as part of its scoring functionality. This precise rotation ensures that the mechanism can consistently align with the wall stakes to score rings.
   ],
-   image("understand/Understand angular displacement .excalidraw.svg"),
+  stack(
+    spacing: 10pt,
+    image("understand/angular-displacement.excalidraw.svg", fit: "contain", height: 115pt),
+    admonition(type: "equation")[
+      If:
+      - $theta$ is the angular displacement
+      - $s$ is the distance traveled by the body
+      - $r$ is the radius of the circle along which the body is moving
+
+      $ theta = s / r $
+    ]
+  ),
 )
 
 #colbreak()
@@ -69,13 +78,10 @@ The ladybrown mechanism utilizes friction in its grippers to securely hold onto 
   ],
   [
     == What is Collision?
+    Collision is a reciprocal interaction between two masses for a very short interval wherein the momentum and energy of the colliding masses change.
 
-   Collision is a reciprocal interaction between two masses for a very short interval wherein the momentum and energy of the colliding masses change.
-
-    == How do they relate to to the ladybrown?
-    When the ladybrown grabs a ring from the intake, a collision between the ladybrown’s gussets and the ring occurs. Therefore, the momentum and energy of the ring changes. 
-
+    == How does it relate to to the ladybrown?
+    When the ladybrown grabs a ring from the intake, a collision between the ladybrown's gussets and the ring occurs. Therefore, the momentum and energy of the ring changes.
   ],
-    image("understand/Understand_ Collision.excalidraw.svg"),
- 
+  image("understand/collision.excalidraw.svg"),
 )

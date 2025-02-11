@@ -4,7 +4,7 @@
   title: "Redirect Mechanism v1",
   type: "understand",
   date: datetime(year: 2024, month: 10, day: 10),
-  attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi"),
+  attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi", "Anders"),
   designed: "Jin",
   witnessed: "Rory",
 )
@@ -55,10 +55,10 @@
   ],
   [
     == What is angular displacement?
-    The motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and final point is termed as motion. The angle difference between the initial and final positions of a point that has rotated in a specified axis is angular displacement. 
+    The motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and final point is termed as motion. The angle difference between the initial and final positions of a point that has rotated in a specified axis is angular displacement.
 
     == How does it relate to our robot?
-    The redirect mechanism rotates in a circular path. Since the redirect mechanism moves as a system, we can represent it as a particle. This means that we can determine the angular displacement by looking only at its center of gravity, allowing us to control the net direction of travel as the redirect mechanism rotates up and down. 
+    The redirect mechanism rotates in a circular path. Since the redirect mechanism moves as a system, we can represent it as a particle. This means that we can determine the angular displacement by looking only at its center of gravity, allowing us to control the net direction of travel as the redirect mechanism rotates up and down.
   ],
   stack(
     spacing: 10pt,

@@ -13,7 +13,7 @@ Using the observations in our #entry-reference(title: "The Minnesota Signature E
 
 #pro-con(
   name: "Idea 1",
-  image: image("brainstorm-2/overall robot-idea 1.excalidraw.svg"),
+  image: image("brainstorm/overall-robot-idea-1.excalidraw.svg"),
   description: [
     The robot's two-stage intake system begins with a flex wheel intake similar to those used in Over Under robots, where the flex wheels are spaced out to maximize surface area contact with the rings. In the second stage, a hook mechanism grabs the rings and hooks them into the mobile goal. For the wall stake mechanism, a trap door is employed to allow the rings to slide into the arm, facilitating the stacking process efficiently.
   ],
@@ -35,7 +35,7 @@ Using the observations in our #entry-reference(title: "The Minnesota Signature E
 
 #pro-con(
   name: "Idea 2",
-  image: image("brainstorm-2/overall robot-idea 2.excalidraw.svg"),
+  image: image("brainstorm/overall-robot-idea-2.excalidraw.svg"),
   description: [
     The robot's two-stage intake system begins with a flex wheel intake similar to those used in Over Under robots, where the flex wheels are spaced out to maximize surface area. In the second stage, additional flex wheels help push the ring up a ramp. 
   ],
@@ -52,7 +52,7 @@ Using the observations in our #entry-reference(title: "The Minnesota Signature E
 
 #pro-con(
   name: "Idea 3",
-  image: image("brainstorm-2/overall robot-idea 3.excalidraw.svg"),
+  image: image("brainstorm/overall-robot-idea-3.excalidraw.svg"),
   description: [
     The robot's two-stage intake system begins with a flex wheel intake similar to those used in Over Under robots, where the flex wheels are spaced out to maximize surface area contact with the rings. In the second stage, a hook mechanism grabs the rings and hooks them into the mobile goal. A two bar claw is used to pick up rings, place rings onto the wall stakes, and hang during the endgame.
   ],

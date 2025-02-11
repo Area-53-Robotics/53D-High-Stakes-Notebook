@@ -1,4 +1,3 @@
-
 // April
 #include "pre-season/pre-reveal-reflection.typ"
 #include "pre-season/reveal-video-thoughts.typ"
@@ -8,9 +7,9 @@
 
 // June
 #include "management/june.typ"
-#include "overall-robot/brainstorm.typ"
-#include "overall-robot/select.typ"
-#include "overall-robot/plan.typ"
+#include "overall-robot-1/brainstorm.typ"
+#include "overall-robot-1/select.typ"
+#include "overall-robot-1/plan.typ"
 #include "management/kanban-board.typ"
 #include "drivetrain-1/identify.typ"
 #include "drivetrain-1/understand.typ"
@@ -29,9 +28,9 @@
 
 // August
 #include "misc-program/github-workflows.typ"
-#include "overall-robot/identify-minnesota-sig.typ"
-#include "overall-robot/brainstorm-2.typ"
-#include "overall-robot/select-2.typ"
+#include "event-observations/identify-minnesota-sig.typ"
+#include "overall-robot-2/brainstorm.typ"
+#include "overall-robot-2/select.typ"
 #include "drivetrain-1/build-2.typ"
 #include "drivetrain-1/program-driver-control.typ"
 #include "drivetrain-1/test.typ"
@@ -61,7 +60,7 @@
 #include "autonomous/area-53-scrimmage-auton.typ"
 #include "competition/area-53-scrimmage.typ"
 
-// October
+// // October
 #include "management/october.typ"
 #include "clamp-2/identify.typ"
 #include "clamp-2/plan.typ"
@@ -77,14 +76,15 @@
 #include "redirect-mech/program.typ"
 #include "redirect-mech/test.typ"
 #include "competition/dulaney-royal-rumble.typ"
-#include "overall-robot-2/identify.typ"
-// #include "ladybrown-1/identify.typ"
-// #include "ladybrown-1/understand.typ"
-// #include "ladybrown-1/brainstorm.typ"
-// #include "ladybrown-1/select.typ"
-#include "ladybrown-1/build.typ"
+#include "ladybrown-1/identify.typ"
+#include "ladybrown-1/understand.typ"
+#include "ladybrown-1/brainstorm.typ"
+#include "ladybrown-1/select.typ"
+#include "ladybrown-1/plan.typ"
+#include "overall-robot-3/identify.typ"
 #include "intake-2/identify.typ"
-// #include "clamp-3/identify.typ"
+#include "ladybrown-1/build.typ"
+#include "ladybrown-1/program.typ"
 
 // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
@@ -99,5 +99,3 @@
 // #include "odometry/plan.typ"
 // #include "odometry/program-position-tracking.typ"
 // #include "odometry/program-pid.typ"
-
-// #include "ladybrown-1/program.typ"`

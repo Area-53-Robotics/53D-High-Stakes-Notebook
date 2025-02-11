@@ -22,7 +22,7 @@
   monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
-    (true, "Build the ladybrown mech according to today's delegation.", "Everyone"),
+    (true, "Build the ladybrown according to today's delegation.", "Everyone"),
   )
 )
 
@@ -77,14 +77,19 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
   figure(
     image("build/24-11-1-2.png", width: 170pt),
     caption: "The intake side of our robot. There is the 11x1x1 C-channel angled from the 2x1x1 C-channel."
-  ),
+  )
+)
+
+#v(10pt)
+
+#grid(
   figure(
-    image("build/24-11-1-3.excalidraw.svg", width: 280pt),
+    image("build/24-11-1-3.excalidraw.svg"),
     caption: "Ladybrown stress diagram"
   ),
   [
     === Ladybrown Stress Diagram
-    - #text(red)[Problem:] Our main worry about this version of the robot is the lack of support for our intake. 
+    - #text(red)[Problem:] Our main worry about this version of the robot is the lack of support for our intake.
     - There is horizontal stress on the left and right of our intake support.
     - We need more horizontal support to distribute the stress.
   ],
@@ -98,7 +103,7 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
   monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
-    (true, "Build the ladybrown mech according to today's delegation.", "Everyone"),
+    (true, "Build the ladybrown according to today's delegation.", "Everyone"),
   )
 )
 
@@ -128,15 +133,15 @@ We continued building the ladybrown, focusing primarily on the upper sections wh
     - 60-tooth gears 
   ],
   figure(
-    image("build/24-11-2-1.png", width: 170pt),
-    caption: "Beginning of ladybrown arm mounting"
+    image("build/24-11-2-1.png", height: 250pt),
+    caption: "Beginning of the ladybrown arm mounting."
   ),
   stack(
     spacing: 10pt,
     [
       === Assembly
-      - Reinforced the screw joint of our ladybrown by adding a nylon on the end of our screw joint. 
-      - Shifted the ladybrown angle lower. 
+      - Reinforced the screw joint of our ladybrown by adding a nylon on the end of our screw joint.
+      - Shifted the ladybrown angle lower.
         - A lower center of gravity would allow us to be more stable.
       - Added the 17x2x1 C-channel across the ladybrown.
         - This serves as a crossbar, preventing the robot from bending inwards.
@@ -149,17 +154,20 @@ We continued building the ladybrown, focusing primarily on the upper sections wh
   ),
   figure(
     image("build/24-11-2-2.png", width: 170pt),
-    caption: "The screw-jointed on the end of the ladybrown support."
+    caption: "The screw joint on the end of the ladybrown support."
   ),
 )
+
+#v(10pt)
+
 #grid(
   figure(
-    image("build/24-11-2-3.excalidraw.svg", width: 170pt),
+    image("build/24-11-2-3.excalidraw.svg"),
   ),
   [
     === Cross Brace Diagram
-    - The cross brace of the ladybrown provides structural support by distributing forces inward toward the center of the brace. 
-    - This inward support effectively counteracts bending forces, ensuring that the structure remains stable and maintains its intended shape. 
+    - The cross brace of the ladybrown provides structural support by distributing forces inward toward the center of the brace.
+    - This inward support effectively counteracts bending forces, ensuring that the structure remains stable and maintains its intended shape.
       - By reducing the stress and strain on individual components, the cross brace enhances the overall rigidity and durability of the mechanism.
   ],
 )
@@ -172,7 +180,7 @@ We continued building the ladybrown, focusing primarily on the upper sections wh
   monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
-    (true, "Build the ladybrown mech according to today's delegation.", "Everyone"),
+    (true, "Build the ladybrown according to today's delegation.", "Everyone"),
   )
 )
 
@@ -190,7 +198,7 @@ Today, we focused on finalizing the second triangular brace, completing the main
   today: [
     - Assemble the ladybrown arms: Jin, Makhi, Eric, Rory, Anders
     - Assemble the friction end of the ladybrown:  Makhi 
-    - Cut the gussets and gears for the lady brown: Eric 
+    - Cut the gussets and gears for the ladybrown: Eric 
   ]
 )
 
@@ -206,10 +214,10 @@ Today, we focused on finalizing the second triangular brace, completing the main
     - Mesh 
     - Polycarbonate 
     - Zipties
-    - The rest of the materials can be found in the toolbox. 
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
-    image("build/24-11-8-1.png", width: 170pt),
+    image("build/24-11-8-1.png", width: 175pt),
     caption: "The ladybrown arms"
   ),
   stack(
@@ -238,17 +246,20 @@ Today, we focused on finalizing the second triangular brace, completing the main
     spacing: 10pt,
     figure(
       image("build/24-11-8-2.png", width: 140pt),
-      caption: "The mesh and gussets at the end of our ladybrown"
+      caption: "The mesh and gussets at the end of our ladybrown."
     ),
     figure(
       image("build/24-11-8-3.png", width: 140pt),
-      caption: "The lady brown scoring on the wall stakes"
+      caption: "The ladybrown scoring on the wall stakes."
     ),
   ),
 )
+
+#v(10pt)
+
 #grid(
   figure(
-    image("build/24-11-8-4.excalidraw.svg", width: 170pt),
+    image("build/24-11-8-4.excalidraw.svg"),
   ),
   [
     === Gear Cutting for Ladybrown

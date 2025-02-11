@@ -13,9 +13,9 @@ Every member on 53D used the analysis in our #entry-reference(type: "identify", 
 
 #pro-con(
   name: "Ajibola",
-  image: image("/entries/overall-robot/brainstorm/ajibola-robot-idea.excalidraw.svg"),
+  image: image("brainstorm/ajibola-robot-idea.excalidraw.svg"),
   description: [
-    A three wheel drive, a four bar with a claw at the end for mobile goal manipulation and hang, an adjustable intake and a pneumatic clamp. 
+    A three wheel drive, a four bar with a claw at the end for mobile goal manipulation and hang, an adjustable intake and a pneumatic clamp.
   ],
   pros: [
     - *Balance* - The equally bulky intake and four-bar are on opposite sides of the robot, keeping the robot balanced.
@@ -28,7 +28,7 @@ Every member on 53D used the analysis in our #entry-reference(type: "identify", 
 
 #pro-con(
   name: "Jin Hao",
-  image: image("/entries/overall-robot/brainstorm/jin-robot-idea.excalidraw.svg"),
+  image: image("brainstorm/jin-robot-idea.excalidraw.svg"),
   description: [
     A four wheel drive, Over Under flex wheel intake first stage, adjustable conveyor intake that can reach wall stakes, passive clamp, and a pneumatic clamp.
   ],
@@ -46,7 +46,7 @@ Every member on 53D used the analysis in our #entry-reference(type: "identify", 
 
 #pro-con(
   name: "Makhi",
-  image: image("/entries/overall-robot/brainstorm/makhi-robot-idea.excalidraw.svg"),
+  image: image("brainstorm/makhi-robot-idea.excalidraw.svg"),
   description: [
     A two wheel drive, flex wheel intake to store the rings in chassis, a plunger like arm that can stick onto the rings and score them onto the rings.
   ],
@@ -64,7 +64,7 @@ Every member on 53D used the analysis in our #entry-reference(type: "identify", 
 
 #pro-con(
   name: "Ishika",
-  image: image("/entries/overall-robot/brainstorm/ishika-robot-idea.excalidraw.svg"),
+  image: image("brainstorm/ishika-robot-idea.excalidraw.svg"),
   description: [
     A three wheel drive, a pneumatic clamp for mobile goals, an plunger to pick up rings, a pneumatic arm for hang.
   ],
@@ -81,7 +81,7 @@ Every member on 53D used the analysis in our #entry-reference(type: "identify", 
 
 #pro-con(
   name: "Eric",
-  image: image("/entries/overall-robot/brainstorm/eric-robot-idea.excalidraw.svg"),
+  image: image("brainstorm/eric-robot-idea.excalidraw.svg"),
   description: [
     A 4 wheel drive, a conveyor that picks up ring and drop it into the mobile goal, a clamp to secure the mobile goal.
   ],
@@ -97,7 +97,7 @@ Every member on 53D used the analysis in our #entry-reference(type: "identify", 
 
 #pro-con(
   name: "Rory",
-  image: image("/entries/overall-robot/brainstorm/rory-robot-idea.excalidraw.svg"),
+  image: image("brainstorm/rory-robot-idea.excalidraw.svg"),
   description: [
     A 4 wheel drive, an adjustable conveyor with a passive hang on the end, an conveyor that picks up rings and a pneumatic mobile goal clamp.
   ],

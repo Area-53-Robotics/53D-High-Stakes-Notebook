@@ -3,19 +3,19 @@
 #show: create-entry.with(
   title: "Ladybrown v1",
   type: "program",
-  date: datetime(year: 2024, month: 8, day: 14),
+  date: datetime(year: 2024, month: 11, day: 15),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
 #to-do(
-  date: datetime(year: 2024, month: 8, day: 14),
+  date: datetime(year: 2024, month: 11, day: 15),
   monthly-schedule: "Ahead",
   yearly-schedule: "Ahead",
   (
-    (true, "Identify the design goals and constraints for the mobile goal clamp.", "Everyone"),
-    (true, "Determine the mathematical and scientific concepts involved in clamp design.", "Everyone"),
+    (true, "Program the ladybrown.", ("Ajibola", "Ishika")),
+    (true, "Test the ladybrown.", "Everyone"),
   )
 )
 
@@ -34,7 +34,7 @@ The ladybrown mechanism switches between 3 positions:
 - *Position 2* #sym.dash.em 324.00#sym.degree #sym.dash.em Picking up ring from the intake
 - *Position 3* #sym.dash.em 209.47#sym.degree #sym.dash.em Placing the ring on a stake
 
-// TODO: [Insert picture]
+#image("program/ladybrown-positions.excalidraw.svg", height: 255pt)
 
 We created the `ladybrownPosition` integer variable to hold a number from 1-3 representing which position the ladybrown is moving towards. We also made the `LadybrownSwitch()` function to allow the driver to cycle through the 3 positions by using the `L1` button to move the ladybrown down and the `L2` button to move the ladybrown up.
 
@@ -77,7 +77,7 @@ void opcontrol() {
 ```
 
 = Ladybrown Task
-With the ladybrown setup complete, our next step was to get the ladybrown mechanism to move. During the match, the ladybrown would need to be able to move at the same time as the drivetrain and other motor-powered mechanisms are activated. To do this, we created a ladybrown *task*, which is a function that is able to run simultaneously with the main function (such as `autonomous()` during the autonomous phase or `opcontrol()` during the driver control phase).
+With the ladybrown program setup complete, our next step was to get the ladybrown mechanism to move. During the match, the ladybrown needs to be able to move at the same time as the drivetrain and other motor-powered mechanisms. To do this, we created a ladybrown *task*, which is a function that is able to run simultaneously with the main function (such as `autonomous()` during the autonomous phase or `opcontrol()` during the driver control phase).
 
 #code-header[src/ladybrown.cpp]
 ```cpp
@@ -198,16 +198,16 @@ void LadybrownTask(void * param) {
 ```
 
 With this information, the ladybrown movement algorithm could begin. We made a new loop within the ladybrown task loop for the ladybrown movement algorithm, which continues until one of the following conditions is met:
-- The error is below 0.01#sym.degree
+- The error is below 0.01#sym.degree.
 - The ladybrown movement algorithm has been activated for 10000 msec (10 seconds).
 
-At the beginning of each loop of the ladybrown movement algorithm, we repeated the same data collection we did before beginning the loop. This serves two purposes:
-+ It updates the algorithm on what the current ladybrown angle is, so the movement algorithm can act accordingly
-+ It updates the ladybrown target angle as a failsafe, so that if the driver presses one of the ladybrown controller buttons before the ladybrown movement was completed, the ladybrown movement algorithm can account for the new target
+At the beginning of each loop of the movement algorithm, the same data collection we did before beginning the loop repeats. This serves two purposes:
++ It updates the movement algorithm on what the current ladybrown angle is so that it can act accordingly.
++ It updates the ladybrown target angle as a failsafe, so that if the driver presses one of the ladybrown controller buttons before the ladybrown movement was completed, the ladybrown movement algorithm can account for the new target.
 
-At this point, we realized that there was a potential problem with our algorithm. The initial position/position 1 for the ladybrown mechanism is at 360#sym.degree as reported by the rotation sensor.
-However, if the ladybrown mechanism were to go past the 360#sym.degree angle, the rotation sensor would restart at 0#sym.degree. Because the error calculation in our movement algorithm is just the target angle minus the current angle of the ladybrown,
-the ladybrown movement algorithm would treat 360#sym.degree significantly differently than 1#sym.degree, even if they are actually just 1#sym.degree apart. We solved this by creating a "wrap-around," where any angle from 1#sym.degree - 50#sym.degree is treated by the algorithm as 361#sym.degree - 410#sym.degree
+At this point, we realized that there was a potential problem with our algorithm. The initial position/position 1 for the ladybrown mechanism is at 360#sym.degree as reported by the rotation sensor. However, if the ladybrown mechanism were to go past the 360#sym.degree angle, the rotation sensor would restart at 0#sym.degree. Because the error calculation in our movement algorithm is just the target angle minus the current angle of the ladybrown, the ladybrown movement algorithm would treat 360#sym.degree significantly differently than 1#sym.degree, even if they are actually just 1#sym.degree apart. We solved this by creating a "wrap-around," where any angle from 1#sym.degree - 50#sym.degree is treated by the algorithm as 361#sym.degree - 410#sym.degree.
+
+#image("program/ladybrown-wraparound.excalidraw.svg", height: 230pt)
 
 We incorporated all of these components using the following code:
 
@@ -296,7 +296,7 @@ void LadybrownTask(void * param) {
   After completing this procedure, we ended with a ```cpp kP``` value of 150.
 ]
 
-After tuning ```cpp kP```, we had completed the ladybrown movement task. Here is the completed code:
+By tuning ```cpp kP```, we completed the ladybrown movement task. Here is the completed code:
 
 #code-header[src/ladybrown.cpp]
 ```cpp
@@ -304,7 +304,7 @@ void LadybrownTask(void * param) {
     // Variable representing the ladybrown task
     pros::Task task = pros::Task::current();
 
-    // The angle (in degrees) for each position
+    // The angle (in degrees) for each ladybrown position
     const float position1 = 360;
     const float position2 = 324.00;
     const float position3 = 209.47;

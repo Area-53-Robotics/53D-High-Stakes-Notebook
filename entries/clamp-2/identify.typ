@@ -3,7 +3,7 @@
 #show: create-entry.with(
   title: "Mobile Goal Clamp v2",
   type: "identify",
-  date: datetime(year: 2024, month: 10, day:03),
+  date: datetime(year: 2024, month: 10, day: 03),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Makhi",
   witnessed: "Rory",
@@ -30,11 +30,11 @@
   description: [ ],
   pros: [
     - *Electronics Placement* - Since the pistons are on the bottom of the drivetrain, we planned on placing our brain in the space that the previous clamps pistons took up.
-    - *Leverage* - This design will have a strong mechanical advantage when gripping mobile goals because it makes more use of its pistons powers. 
-    - *Compactness* - Since the pistons are below the drivetrain, the pistons are closer to eachother. 
+    - *Leverage* - This design will have a strong mechanical advantage when gripping mobile goals because it makes more use of its pistons powers.
+    - *Compactness* - Since the pistons are below the drivetrain, the pistons are closer to eachother.
   ], 
   cons: [
-    - *Tracking Wheel Placement* - Having the pistons at the bottom of the drivetrain will give us limited space to place tracking wheels. 
+    - *Tracking Wheel Placement* - Having the pistons at the bottom of the drivetrain will give us limited space to place tracking wheels.
   ]
 )
 
@@ -44,7 +44,7 @@
 #goals-constraints(
   goals: [
     - This clamp should angle the mobile goal towards the robot when clamping.
-    - The clamp should have enough grip on a mobile goal to secure it in our possession and prevent teams from stealing it. 
+    - The clamp should have enough grip on a mobile goal to secure it in our possession and prevent teams from stealing it.
     - The clamp should be efficient with air use if it uses pneumatics.
   ],
   constraints: [
