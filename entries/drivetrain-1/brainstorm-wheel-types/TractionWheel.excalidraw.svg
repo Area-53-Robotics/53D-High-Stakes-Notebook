@@ -4,8 +4,8 @@
   <defs>
     <style class="style-fonts">
       @font-face {
-        font-family: "Virgil 3 YOFF 3 YOFF 3 YOFF";
-        src: url("https://excalidraw.com/Virgil 3 YOFF 3 YOFF 3 YOFF.woff2");
+        font-family: "Virgil 3 YOFF 3 YOFF 3 YOFF 3 YOFF 3 YOFF";
+        src: url("https://excalidraw.com/Virgil 3 YOFF 3 YOFF 3 YOFF 3 YOFF 3 YOFF.woff2");
       }
       @font-face {
         font-family: "Cascadia";

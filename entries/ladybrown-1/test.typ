@@ -182,15 +182,11 @@ The ladybrown functions by grabbing a ring directly from the apex of the intake 
     rows: 4, 
 
     fill: (x, y) =>
-      if (x > 0 and calc.even(y)) or (x == 0 and calc.odd(y)) {gray.lighten(20%)},
+      if calc.even(y) or x == 0 {gray.lighten(20%)},
 
-    table.hline(y: 0, end: 1, stroke: none),
-    table.vline(x: 0, end: 1, stroke: none),
-    table.vline(x: 0, start: 2, end: 3, stroke: none),
-
-    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],[Trial 6], [Trial 7], [Trial 8], [Trial 9], [Trial 10],
+    [Trial \#], [1], [2], [3], [4], [5],[6], [7], [8], [9], [10],
     [Time], [4.33 s], [3.46 s], [2.78 s], [3.66 s], [2.51 s], [2.68 s], [2.59 s], [2.85 s], [2.61 s], [2.80 s],
-    [], [Trial 11], [Trial 12], [Trial 13], [Trial 14], [Trial 15], [Trial 16], [Trial 17], [Trial 18], [Trial 19], [Trial 20],
+    [Trial \#], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Time], [2.97 s], [2.86 s], [2.71 s], [2.64 s], [2.78 s], [2.75 s], [2.73 s], [2.59 s], [2.81 s], [2.77 s],
   )
 ]
@@ -262,10 +258,10 @@ We are happy with the results. Compared to the redirect mechanism, the ladybrown
 
 = Range of Motion (Speed)
 == Background
-The main advantage of the ladybrown compared to the redirect mechanism is its speed. The ladybrown can complete a 180 degree rotation faster than other high stake mechanisms. This speed would allow the robot to score on the neutral wall stakes before it gets blocked or pushed.
+The main advantage of the ladybrown compared to the redirect mechanism is its speed. The ladybrown can complete a 180#sym.degree rotation faster than other high stake mechanisms. This speed would allow the robot to score on the neutral wall stakes before it gets blocked or pushed.
 
 == Hypothesis
-The robot will make a full 180 degree rotation in 3 seconds or under. 
+The robot will make a full 180#sym.degree rotation in 3 seconds or under. 
 
 #grid(
   columns: (3fr, 7fr),
@@ -284,11 +280,9 @@ The robot will make a full 180 degree rotation in 3 seconds or under.
 
   [
     == Procedures
-    + Set the robot on the field with the four-bar down.
-    + Set the ladybrown to its idle position.
+    + Set the robot on the field with the ladybrown in its idle position.
     + Measure the time it takes for the ladybrown to make a 180 degree rotation.
-    + Repeat steps 1-3 for a total of 10 trials.
-
+    + Repeat steps 1-2 for a total of 10 trials.
   ],
 )
 
@@ -304,12 +298,11 @@ The robot will make a full 180 degree rotation in 3 seconds or under.
       if (x == 0) or (y == 0) {gray.lighten(20%)},
     
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
-    [Speed], [3.42 s],[3.54 s],[3.48 s],[3.52 s],[3.56 s],[3.46 s],[3.61 s],[3.53 s],[3.54 s],[3.63 s],
+    [Time], [3.42 s],[3.54 s],[3.48 s],[3.52 s],[3.56 s],[3.46 s],[3.61 s],[3.53 s],[3.54 s],[3.63 s]
   )
 ]
 
-#let range-of-motion-test-data = (3.42, 3.54, 3.48, 3.52, 3.56, 3.46, 3.61, 3.53, 3.54, 3.63,)
-
+#let range-of-motion-test-data = (3.42, 3.54, 3.48, 3.52, 3.56, 3.46, 3.61, 3.53, 3.54, 3.63)
 
 #grid(
   columns: (1fr, 2fr),
@@ -343,7 +336,7 @@ The robot will make a full 180 degree rotation in 3 seconds or under.
         x-label: "Trial #",
         x-tick-step: 1,
 
-        y-label: "Speed (s)",
+        y-label: "Time (s)",
         y-min: 1, y-max: 4,
 
         {
@@ -351,13 +344,13 @@ The robot will make a full 180 degree rotation in 3 seconds or under.
             range-of-motion-test-data.enumerate(start: 1),
             mark: "o",
             style: (stroke: none),
-            label: "Speed"
+            label: "Time"
           )
           plot.add(
             domain: (1, 10),
             style: (stroke: (paint: green), fill: green.lighten(75%)),
             hypograph: true,
-            label: "Target Speed",
+            label: "Target Time",
             x => {
               3
             }

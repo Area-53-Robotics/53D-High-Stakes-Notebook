@@ -13,10 +13,10 @@
   year: "2024 - 2025",
   season: "High Stakes",
   innovate: (
-    date: datetime(year: 2024, month: 1, day: 11),
+    date: datetime(year: 2025, month: 1, day: 11),
     event: "Valley Mall Qualifier",
-    description: "Our hook intake features a novel design that efficiently secures rings with minimal force, using a specially shaped hook mechanism to ensure a reliable grip and reduce the risk of missed rings. What sets it apart is its ability to share a motor with the flex wheel first stage intake. By utilizing a gear system to reverse rotation, the same motor powers both mechanisms, optimizing space and power usage. This innovative approach minimizes the motor count while allowing smooth transitions between the hook and flex wheel stages, enhancing the robot's efficiency and performance.",
-    approach: "Our intake is the most efficient intake for conserving momentum because of its ability to effortlessly transition from the first stage intake to the second stage intake. Additionally, as the ring rotates around the circular flywheel, the velocity of the ring is tangential to the surface of the flywheel. As the ring deposits from the intake, the intake uses the ring's momentum to fire the ring onto the mobile goal's stake.",
+    description: "The ladybrown is designed to rotate up to 180" + sym.degree + " to score on both alliance and neutral stakes. It is mounted at an angle on the side of our chassis, which helps maintain a lower center of gravity compared to mounting it vertically. The ladybrown grabs rings at the intake's apex. It uses mesh to absorb the rings' energy upon collision, preventing them from slipping out. Initially, our team manually set up the ladybrown before matches, which took time and introduced human error. We automated the process by using a rotation sensor, making pickup and scoring more efficient.",
+    approach: "Most ladybrown programs use default VEX motor movement functions to rotate the ladybrown motors. This often causes the ladybrown to overshoot or undershoot its target angle. Our ladybrown uses a Proportional-Integral-Derivative (PID) controller to adjust the speed of the ladybrown motors every 10 milliseconds based on how far away the ladybrown is from its target angle, ensuring consistent and smooth movement.",
     pages: [
       #set text(size: 12pt)
       #context {
@@ -24,7 +24,7 @@
 
         valid-entries = valid-entries.filter(
           entry => {
-            entry.last().title.match("Intake v1") != none
+            entry.last().title.match("Ladybrown v1") != none
           }
         )
 

@@ -180,15 +180,11 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
     rows: 4, 
 
     fill: (x, y) =>
-      if (x > 0 and calc.even(y)) or (x == 0 and calc.odd(y)) {gray.lighten(20%)},
+      if calc.even(y) or x == 0 {gray.lighten(20%)},
 
-    table.hline(y: 0, end: 1, stroke: none),
-    table.vline(x: 0, end: 1, stroke: none),
-    table.vline(x: 0, start: 2, end: 3, stroke: none),
-
-    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],[Trial 6], [Trial 7], [Trial 8], [Trial 9], [Trial 10],
-    [Time], [6.92 s], [6.42 s], [#sym.crossmark.heavy], [#sym.crossmark.heavy], [6.21 s], [7.92 s], [#sym.crossmark.heavy], [6.92 s], [#sym.crossmark.heavy], [8.23 s], 
-    [], [Trial 11], [Trial 12], [Trial 13], [Trial 14], [Trial 15], [Trial 16], [Trial 17], [Trial 18], [Trial 19], [Trial 20],
+    [Trial \#], [1], [2], [3], [4], [5],[6], [7], [8], [9], [10],
+    [Time], [6.92 s], [6.42 s], [#sym.crossmark.heavy], [#sym.crossmark.heavy], [6.21 s], [7.92 s], [#sym.crossmark.heavy], [6.92 s], [#sym.crossmark.heavy], [8.23 s],
+    [Trial \#], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Time], [6.45 s], [#sym.crossmark.heavy], [6.93 s], [6.83 s], [7.15 s], [#sym.crossmark.heavy], [7.01 s], [#sym.crossmark.heavy], [7.92 s], [7.48 s]
   )
 ]
