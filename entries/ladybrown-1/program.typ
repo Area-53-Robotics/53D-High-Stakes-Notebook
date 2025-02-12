@@ -1,4 +1,5 @@
 #import "/template/template.typ": *
+#import "../../packages.typ": fletcher, diagram, node, edge, rect, pill, parallelogram, diamond, hexagon
 
 #show: create-entry.with(
   title: "Ladybrown v1",
@@ -379,3 +380,55 @@ void LadybrownTask(void * param) {
     }
 }
 ```
+
+#colbreak()
+
+= Complete Ladybrown Program Flowchart
+#align(center, fletcher.diagram(
+    spacing: (2em, 2em),
+	node-stroke: 1pt,
+	node((1,0), [Driver Control \ Start], shape: pill),
+	edge("-|>"),
+	node((1,1), shape: rect, align(center)[
+		Ladybrown task loop \ waits for driver input
+	]),
+	edge("l,d", "-|>"),
+	edge("r,d", "-|>"),
+	node((0,2), shape: parallelogram, align(center)[
+		L1 button
+	]),
+	edge("d", "-|>"),
+	node((2,2), shape: parallelogram, align(center)[
+		L2 button
+	]),
+	edge("d", "-|>"),
+	node((0,3), shape: rect, align(center)[
+		Target ladybrown \ position decreases
+	]),
+    edge("d,r", "-|>"),
+	node((2,3), shape: rect, align(center)[
+		Target ladybrown \ position increases
+	]),
+    edge("d,l", "-|>"),
+	node((1,4), shape: rect, align(center)[
+		Calculate ladybrown angle error
+	]),
+    edge("-|>"),
+	node((1,5), shape: diamond, align(center)[
+		Are the movement loop \ exit conditions met?
+	]),
+    edge((rel: (0,0)),(rel: (2,0)), (rel: (0,-4)), (rel: (0,-0.05)), (rel: (-2, 0)), "-|>", [Yes], label-pos: 0.12, shift: (0, 0.05)),
+	edge("-|>", [No]),
+	node((1,6), shape: rect, align(center)[
+		Calculate ladybrown angle error
+	]),
+    edge("-|>"),
+	node((1,7), shape: rect, align(center)[
+		Calculate ladybrown motor voltage
+	]),
+    edge("-|>"),
+	node((1,8), shape: hexagon, align(center)[
+		Move ladybrown motors
+	]),
+    edge("l,u,u,u,r", "-|>")
+))

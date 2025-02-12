@@ -14,9 +14,12 @@
   monthly-schedule: "Off",
   yearly-schedule: "Ahead",
   (
-    (true, "Identify the design goals and constraints for the intake.", "Everyone"),
+    (true, "Identify the pros and cons of the new intake idea.", "Everyone"),
+    (true, "Plan the implementation of the intake idea.", "Everyone"),
   )
 )
+
+The first thing we are designing for our robot rebuild is the new intake. Since we will be building a ladybrown, we can afford to have our intake be skinny and compact. This change will help conserve space and help smooth the transition between the first and second intake stages.
 
 #pro-con(
   name: "Original Idea",

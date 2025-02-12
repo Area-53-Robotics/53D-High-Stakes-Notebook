@@ -8,6 +8,8 @@
   designed: "Makhi",
   witnessed: "Rory",
 )
+
+
 #to-do(
   date: datetime(year: 2024, month: 10, day: 25),
   monthly-schedule: "Off",
@@ -17,6 +19,8 @@
     (true, "Plan the implementation of the new overall robot idea.", "Everyone"),
   )
 )
+
+The redirect mechanism on the old robot was too heavy and inefficient. Our new idea, the ladybrown, would allow us to score rings on the wall stakes faster, giving us a significant advantage during match play. The ladybrown will make up a significant portion of the overall robot, so we compared the strengths and weaknesses of the new overall robot plan to those of the old overall robot plan.
 
 #pro-con(
   name: "Original Idea",
@@ -31,6 +35,8 @@
     - *Weight* - The redirect mechanism took up most of the robot's space. The extra weight decreased our acceleration.
   ]
 )
+
+#colbreak()
 
 #pro-con(
   name: "New Idea",
@@ -47,8 +53,6 @@
   ]
 )
 
-#colbreak()
-
 = New Design Goals & Constraints
 #goals-constraints(
   goals: [
@@ -59,6 +63,6 @@
   constraints: [
     - #vex-rule[R4] Robots must fit within an 18" x 18" x 18" volume
     - #vex-rule[R13] Motors are limited to a combined power of 88W
-    - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal.
+    - #vex-rule[SG6] Possession is limited to two Rings and one Mobile Goal
   ],
 )

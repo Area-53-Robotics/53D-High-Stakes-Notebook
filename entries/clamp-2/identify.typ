@@ -20,7 +20,7 @@
   cons: [
     - *Leverage* - Because the pistons needed to retract to activate the clamp, the pushing force was lacking.
     - *Extension* - The pistons overextended when trying to deactivate the clamp. This further decreased the little leverage that the clamp had.
-    - *Grip* - Enemy teams could easily grab the mobile goal out of our possession. 
+    - *Grip* - Enemy teams could easily grab the mobile goal out of our possession.
   ]
 )
 

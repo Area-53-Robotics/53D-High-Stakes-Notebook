@@ -60,7 +60,7 @@
 #include "autonomous/area-53-scrimmage-auton.typ"
 #include "competition/area-53-scrimmage.typ"
 
-// // October
+// October
 #include "management/october.typ"
 #include "clamp-2/identify.typ"
 #include "clamp-2/plan.typ"
@@ -82,7 +82,9 @@
 #include "ladybrown-1/select.typ"
 #include "ladybrown-1/plan.typ"
 #include "overall-robot-3/identify.typ"
+#include "overall-robot-3/plan.typ"
 #include "intake-2/identify.typ"
+#include "intake-2/plan.typ"
 #include "ladybrown-1/build.typ"
 #include "ladybrown-1/program.typ"
 
