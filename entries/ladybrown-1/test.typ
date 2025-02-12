@@ -262,10 +262,10 @@ We are happy with the results. Compared to the redirect mechanism, the ladybrown
 
 = Range of Motion (Speed)
 == Background
-// In our #entry-reference(title: "Redirect Mechanism v1", type: "select", date: datetime(year: 2024, month: 10, day: 10)), we chose to use a four-bar lift because of its simplicity and height. It is important that our four-bar lift can consistently reach its highest height. Before we tested the redirect mechanism, we measured its maximum height of 28.56 inches.
+The main advantage of the ladybrown compared to the redirect mechanism is its speed. The ladybrown can complete a 180 degree rotation faster than other high stake mechanisms. This speed would allow the robot to score on the neutral wall stakes before it gets blocked or pushed.
 
 == Hypothesis
-We believe that the redirect mechanism will consistently reach 26 inches. 
+The robot will make a full 180 degree rotation in 3 seconds or under. 
 
 #grid(
   columns: (3fr, 7fr),
@@ -277,7 +277,7 @@ We believe that the redirect mechanism will consistently reach 26 inches.
     #materials-table(
       (1, "Robot"),
       (1, "Controller"),
-      (1, "Measuring Tape"),
+      (1, "Stopwatch"),
       (1, "Notetaking Materials"),
     )
   ],
@@ -285,9 +285,10 @@ We believe that the redirect mechanism will consistently reach 26 inches.
   [
     == Procedures
     + Set the robot on the field with the four-bar down.
-    + Lift the four-bar as high as possible.
-    + Measure the height from the field floor to the top point on the four-bar.
+    + Set the ladybrown to its idle position.
+    + Measure the time it takes for the ladybrown to make a 180 degree rotation.
     + Repeat steps 1-3 for a total of 10 trials.
+
   ],
 )
 
@@ -303,11 +304,12 @@ We believe that the redirect mechanism will consistently reach 26 inches.
       if (x == 0) or (y == 0) {gray.lighten(20%)},
     
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
-    [Height], [26.45 in], [26.43 in], [26.45 in], [26.44 in], [26.45 in], [26.46 in], [26.45 in], [26.44 in], [26.45 in], [26.4 in]
+    [Speed], [3.42 s],[3.54 s],[3.48 s],[3.52 s],[3.56 s],[3.46 s],[3.61 s],[3.53 s],[3.54 s],[3.63 s],
   )
 ]
 
-#let range-of-motion-test-data = (26.45, 26.43, 26.45, 26.44, 26.45, 26.46, 26.45, 26.44, 26.45, 26.4)
+#let range-of-motion-test-data = (3.42, 3.54, 3.48, 3.52, 3.56, 3.46, 3.61, 3.53, 3.54, 3.63,)
+
 
 #grid(
   columns: (1fr, 2fr),
@@ -319,11 +321,11 @@ We believe that the redirect mechanism will consistently reach 26 inches.
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
-      [Mean], [#stats.mean(range-of-motion-test-data, digits: 2) in],
-      [Median], [#stats.median(range-of-motion-test-data) in],
-      [Range], [#stats.range(range-of-motion-test-data, digits: 2) in],
-      [Variance], [#stats.variance(range-of-motion-test-data, digits: 4) in#super("2")],
-      [Standard Deviation], [#stats.std-dev(range-of-motion-test-data, digits: 2) in],
+      [Mean], [#stats.mean(range-of-motion-test-data, digits: 2) s],
+      [Median], [#stats.median(range-of-motion-test-data) s],
+      [Range], [#stats.range(range-of-motion-test-data, digits: 2) s],
+      [Variance], [#stats.variance(range-of-motion-test-data, digits: 4) s#super("2")],
+      [Standard Deviation], [#stats.std-dev(range-of-motion-test-data, digits: 2) s],
     )
   ],
 
@@ -341,15 +343,24 @@ We believe that the redirect mechanism will consistently reach 26 inches.
         x-label: "Trial #",
         x-tick-step: 1,
 
-        y-label: "Height (in)",
-        y-min: 26.38, y-max: 26.48,
+        y-label: "Speed (s)",
+        y-min: 1, y-max: 4,
 
         {
           plot.add(
             range-of-motion-test-data.enumerate(start: 1),
             mark: "o",
             style: (stroke: none),
-            label: "Height"
+            label: "Speed"
+          )
+          plot.add(
+            domain: (1, 10),
+            style: (stroke: (paint: green), fill: green.lighten(75%)),
+            hypograph: true,
+            label: "Target Speed",
+            x => {
+              3
+            }
           )
         }
       )
@@ -358,4 +369,4 @@ We believe that the redirect mechanism will consistently reach 26 inches.
 )
 
 == Conclusion
-We are very pleased with the results. From the ground, the wall stakes are 26 inches tall. We have more than enough clearance to score rings on the wall stake. It is important to note that for the robot to score on the wall stakes, we need to lower the four-bar when the ring is hovering over the wall stake.
+Although the ladybrown did not meet our hypothesis, we are still happy with the results. The ladybrown PID macro slowed the rotation slightly, but this is a necessary trade-off for efficiency. 
