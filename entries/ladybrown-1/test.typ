@@ -1,23 +1,23 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Redirect Mechanism v1",
+  title: "Ladybrown v1",
   type: "test",
-  date: datetime(year: 2024, month: 10, day: 18),
+  date: datetime(year: 2024, month: 11, day: 15),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Eric",
   witnessed: "Rory",
 )
 
 
-We wanted to make sure that the redirect mechanism was ready for the Dulaney Royal Rumble tomorrow, so we tested it on the three “Aspects of the Redirect Mechanism" that we identified in our #entry-reference(title: "Redirect Mechanism v1", type: "identify", date: datetime(year: 2024, month: 10, day: 10)).
+With the ladybrown finished, we are ready to test its ability with scoring. We hope that the ladybrown will perform better overall than the redirect mechanism.
 
-= Efficiency (Scoring)
+= Handling (Grip)
 == Background
-Since High Stakes is a low-scoring game, it is crucial that the redirect mechanism can handle and score rings efficiently. From our previous tests, we believe that the redirect mechanism can score on the neutral alliance wall stake well. With this test, we specifically want to evaluate the redirect mechanism's basket.
+The ladybrown uses mesh to absorb the impact when the ring collides with it. Additionally, the amount of static friction the mesh generates between the rings and the mesh surface determines how far up the ladybrown the ring stops. Optimizing both of these variables will improve the ladybrown's ability to control the ring effectively.
 
 == Hypothesis
-The redirect mechanism will be able to score rings onto the neutral wall stakes at least 80% of the time.
+The robot will be able to grip onto the ring at least 80% of the time.
 
 #grid(
   columns: (3fr, 7fr),
@@ -37,9 +37,9 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
   [
     == Procedures
     + Place a ring stationary on the field.
-    + Allow the robot to intake the ring into the redirect mechanism's basket.
-    + Attempt to score on the neutral wall stake.
-    + Record whether the ring was successfully scored onto the stake.
+    + Have the robot intake the ring.
+    + Use the controller to move the ladybrown to its ring collecting position.
+    + Record if the ladybrown successfully collected the ring.
     + Repeat steps 1-4 for a total of 20 trials.
   ],
 )
@@ -58,7 +58,7 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
     align: center + horizon,
     
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
-    [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy],
+    [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
   )
 ]
 
@@ -72,8 +72,8 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Data Summary*],
-      [Passes], [16 trials],
-      [Failures], [4 trials],
+      [Passes], [20 trials],
+      [Failures], [0 trials],
     )
   ],
 
@@ -81,22 +81,23 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
     radius: 3.2,
     data-type: "trials",
     (
-      ("Passes", 16, green),
-      ("Failures", 4, red),
+      ("Passes", 20, green),
+      // ("Failures", 0, red),
     ),
   ),
 )
 
 == Conclusion
-We are satisfied with the results. We suspect that the robot failed to score on the neutral wall stake in 4 of the trials because the driver did not align the robot properly. In the future, we plan to attach a guide to the redirect mechanism to help the driver position the robot for neutral wall stake scoring.
+We are happy with how efficient the ladybrown is at collecting rings. This is a much better result from the redirect mechanism.
 
 
-= Redirecting (Control)
+= Scoring (Control)
 == Background
-The redirect mechanism works by intaking a ring past a certain height. Then, the robot reverses the intake's direction, and the ring is redirected into the four-bar. Since this is a complicated maneuver, this section will require the most troubleshooting. Additionally, how efficient the robot is at redirecting the rings directly correlates to the redirect mechanism's scoring capabilities, making this test important. 
+The ladybrown functions by grabbing a ring directly from the apex of the intake to score it onto the wall stake. We chose to build the ladybrown because of its speed in scoring rings onto the wall stakes, and we estimate it will take approximately three seconds to score a ring onto a wall stake.
 
 == Hypothesis
-The robot will be able to redirect the rings into the redirect mechanism 80% of the time. Additionally, the redirect mechanism will take at most 5 seconds to redirect a ring.
++ The robot will be able to score rings onto the wall stakes 80% of the time.
++ The ladybrown will take at most 3 seconds to redirect a ring.
 
 #grid(  
   columns: (3fr, 7fr),
@@ -118,11 +119,12 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
     == Procedures
     + Place a ring stationary on the field.
     + Have the robot intake the ring.
-    + Start the stopwatch.
-    + Once the rings pass the flaps, reverse the intake's direction.
-    + Stop the stopwatch when the ring enters the basket.
-    + Record whether the ring was successfully redirected and how long it took the ring to redirect.
-    + Repeat steps 1-6 for a total of 20 trials.
+    + Start the stopwatch when the ring reaches the apex of the intake.
+    + Use the controller to move the ladybrown to its ring collecting position.
+    + Score the ring onto the wall stake.
+    + Stop the stopwatch once the ring has been scored.
+    + Record whether the ring was successfully scored and how long it took the ring to be scored.
+    + Repeat steps 1-7 for a total of 20 trials.
   ],
 )
 
@@ -140,7 +142,7 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
     align: center + horizon,
     
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
-    [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
+    [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
   )
 ]
 
@@ -154,18 +156,18 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Data Summary*],
-      [Passes], [13 trials],
-      [Failures], [7 trials],
+      [Passes], [20 trials],
+      [Failures], [0 trials],
     )
   ],
 
   pie-chart(
-    radius: 2.55,
-    outer-label-radius: 135%,
+    radius: 2.3,
+    outer-label-radius: 125%,
     data-type: "trials",
     (
-      ("Passes", 13, green),
-      ("Failures", 7, red),
+      ("Passes", 20, green),
+      // ("Failures", 0, red),
     ),
   ),
 )
@@ -187,13 +189,13 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
     table.vline(x: 0, start: 2, end: 3, stroke: none),
 
     [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],[Trial 6], [Trial 7], [Trial 8], [Trial 9], [Trial 10],
-    [Time], [6.92 s], [6.42 s], [#sym.crossmark.heavy], [#sym.crossmark.heavy], [6.21 s], [7.92 s], [#sym.crossmark.heavy], [6.92 s], [#sym.crossmark.heavy], [8.23 s], 
+    [Time], [4.33 s], [3.46 s], [2.78 s], [3.66 s], [2.51 s], [2.68 s], [2.59 s], [2.85 s], [2.61 s], [2.80 s],
     [], [Trial 11], [Trial 12], [Trial 13], [Trial 14], [Trial 15], [Trial 16], [Trial 17], [Trial 18], [Trial 19], [Trial 20],
-    [Time], [6.45 s], [#sym.crossmark.heavy], [6.93 s], [6.83 s], [7.15 s], [#sym.crossmark.heavy], [7.01 s], [#sym.crossmark.heavy], [7.92 s], [7.48 s]
+    [Time], [2.97 s], [2.86 s], [2.71 s], [2.64 s], [2.78 s], [2.75 s], [2.73 s], [2.59 s], [2.81 s], [2.77 s],
   )
 ]
 
-#let redirecting-test-data = (6.92, 6.42, 6.21, 7.92, 6.92, 8.23, 6.45, 6.93, 6.83, 7.15, 7.01, 7.92, 7.48)
+#let scoring-test-data = (4.33, 3.46, 2.78, 3.66, 2.51, 2.68, 2.59, 2.85, 2.61, 2.80, 2.97, 2.86, 2.71, 2.64, 2.78, 2.75, 2.73, 2.59, 2.81, 2.77)
 
 #grid(
   columns: (1fr, 2fr),
@@ -205,11 +207,11 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
-      [Mean], [#stats.mean(redirecting-test-data, digits: 2) s],
-      [Median], [#stats.median(redirecting-test-data) s],
-      [Range], [#stats.range(redirecting-test-data, digits: 2) s],
-      [Variance], [#stats.variance(redirecting-test-data, digits: 4) s#super("2")],
-      [Standard Deviation], [#stats.std-dev(redirecting-test-data, digits: 2) s],
+      [Mean], [#stats.mean(scoring-test-data, digits: 2) s],
+      [Median], [#stats.median(scoring-test-data) s],
+      [Range], [#stats.range(scoring-test-data, digits: 2) s],
+      [Variance], [#stats.variance(scoring-test-data, digits: 4) s#super("2")],
+      [Standard Deviation], [#stats.std-dev(scoring-test-data, digits: 2) s],
     )
   ],
 
@@ -228,37 +230,23 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
         x-tick-step: 1,
 
         y-label: "Time (s)",
-        y-min: 0, y-max: 9,
+        y-min: 0, y-max: 4.5,
 
         {
           plot.add(
-            (
-              (1, 6.92),
-              (2, 6.42),
-              (5, 6.21),
-              (6, 7.92),
-              (8, 6.92),
-              (10, 8.23),
-              (11, 6.45),
-              (13, 6.93),
-              (14, 6.83),
-              (15, 7.15),
-              (17, 7.01),
-              (19, 7.92),
-              (20, 7.48)
-            ),
+            scoring-test-data.enumerate(start: 1),
             mark: "o",
             style: (stroke: none),
-            label: "Redirect Time"
+            label: "Scoring Time"
           )
 
           plot.add(
             domain: (1, 20),
             style: (stroke: (paint: green), fill: green.lighten(75%)),
             hypograph: true,
-            label: "Target Redirect Time",
+            label: "Target Scoring Time",
             x => {
-              5
+              3
             }
           )
         }
@@ -268,13 +256,13 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
 )
 
 == Conclusion
-Unfortunately, the redirect mechanism failed to meet both of our hypotheses. Out of the 20 trials, the robot was able to successfully redirect a ring 65% of the time. Additionally, the robot struggled to redirect the ring in some of the successful attempts. We believe it is because the flaps do not create a steep enough ramp for the ring to slide down from.
+We are happy with the results. Compared to the redirect mechanism, the ladybrown has a much higher success rate and faster scoring time. We are confident that the ladybrown will perform well in the upcoming tournament.
 
 #colbreak()
 
-= Range of Motion (Lift)
+= Range of Motion (Speed)
 == Background
-In our #entry-reference(title: "Redirect Mechanism v1", type: "select", date: datetime(year: 2024, month: 10, day: 10)), we chose to use a four-bar lift because of its simplicity and height. It is important that our four-bar lift can consistently reach its highest height. Before we tested the redirect mechanism, we measured its maximum height of 28.56 inches.
+// In our #entry-reference(title: "Redirect Mechanism v1", type: "select", date: datetime(year: 2024, month: 10, day: 10)), we chose to use a four-bar lift because of its simplicity and height. It is important that our four-bar lift can consistently reach its highest height. Before we tested the redirect mechanism, we measured its maximum height of 28.56 inches.
 
 == Hypothesis
 We believe that the redirect mechanism will consistently reach 26 inches. 
