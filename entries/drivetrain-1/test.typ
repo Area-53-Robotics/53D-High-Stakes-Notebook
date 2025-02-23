@@ -92,7 +92,6 @@ The drivetrain will display a speed of at least 72.77 in/s, which is 5% less tha
   {
     cetz.canvas({
       import cetz.draw: *
-      import cetz.plot
 
       plot.plot(
         size: (9, 4),
@@ -219,7 +218,6 @@ The robot will be able to maintain a distance-to-weight ratio of 0.75 ft/lbs or 
   {
     cetz.canvas({
       import cetz.draw: *
-      import cetz.plot
 
       plot.plot(
         size: (9, 4),
@@ -343,7 +341,6 @@ The drivetrain will have a turning radius of 5 inches or less when making a 90#s
   {
     cetz.canvas({
       import cetz.draw: *
-      import cetz.plot
 
       plot.plot(
         size: (9, 4),

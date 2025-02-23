@@ -57,7 +57,10 @@
 
                 #let date = entry.date.display("[year]/[month]/[day]")
 
-                #if shorten-names and info.name.len() + 2 + entry.title.len() > 26 {entry.title = entry.title.slice(0, 18) + "..."}
+                #if shorten-names and info.name.len() + 2 + entry.title.len() > 23 {
+                  let available-chars = 23 - info.name.len() - 2 - 3
+                  entry.title = entry.title.slice(0, available-chars) + "..."
+                }
                 
                 #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
                 #h(5pt)

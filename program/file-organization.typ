@@ -11,7 +11,7 @@
     height: 1em,
   )[
     #if (color != none) {
-      image.decode(nb_change_icon_stroke(raw_icon: read("/template/tabler-icons/" + icon + ".svg"), stroke: color))
+      image(nb_change_icon_stroke(raw_icon: read("/template/tabler-icons/" + icon + ".svg"), stroke: color))
     } else {
       image("/template/tabler-icons/" + icon + ".svg")
     }

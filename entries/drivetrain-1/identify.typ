@@ -35,8 +35,8 @@ Our team spent a lot of time talking and planning the foundation of our robot: t
       - This game will likely require faster movement than Over Under, so we want a drivetrain speed similar to or higher than last year.
     - To maintain 75% of its top speed when 2.25 lbs of mass are placed on it
       - The drivetrain will need to remain fast while supporting the weight of other subsystems on the robot.
-    - To be able to drive continuously for 2 minutes without the drivetrain motor temperatures rising above 55 #sym.degree.c
-      - VEX motors automatically #footnote[https://www.vexforum.com/t/v5-motor-current-limit-vs-temperature/107172] cut their maximum motor current in half at 55 #sym.degree.c, so we need the motors to remain below this threshold throughout the entire match.
+    - To be able to drive continuously for 2 minutes without the drivetrain motor temperatures rising above 55 $upright(°C)$
+      - VEX motors automatically #footnote[https://www.vexforum.com/t/v5-motor-current-limit-vs-temperature/107172] cut their maximum motor current in half at 55 $upright(°C)$, so we need the motors to remain below this threshold throughout the entire match.
     - To be able to push 6.65 lbs of mass
       - Most robots will have at least this much mass, and we need to be able to push them or stall them for defensive strategies.
   ],

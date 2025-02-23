@@ -23,7 +23,7 @@ jobs:
 
       # Installs Typst onto the virtual machine so that it can compile the notebook
       - name: Install Typst
-        uses: typst-community/setup-typst@v4
+        uses: typst-community/setup-typst@v4.0.2
 
       # Compiles the notebook
       - name: Compile Notebook

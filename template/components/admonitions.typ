@@ -15,7 +15,7 @@
   box(
     grid(
       columns: (3em, 1fr),
-      align(center + horizon)[#box(baseline: 30%, image.decode(info.icon, height: 2em))],
+      align(center + horizon)[#box(baseline: 30%, image(info.icon, height: 2em))],
       showybox(
         frame:(
           border-color: info.color,

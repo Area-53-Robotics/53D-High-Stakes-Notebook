@@ -84,18 +84,18 @@ There are multiple times throughout the match where the bot may be facing the dr
 
   table.cell(colspan: 2, fill: gray.lighten(20%))[Controller Mapping],
   table.cell(colspan: 2)[
-    #image.decode(read("program-driver-control/controller-mapping.svg"))
+    #image("program-driver-control/controller-mapping.svg")
   ],
 
   table.cell(fill: gray.lighten(20%))[Normal Bot Control],
   table.cell(fill: gray.lighten(20%))[Reversed Bot Control],
 
   [
-    #image.decode(read("program-driver-control/normal-mapping.excalidraw.svg"))
+    #image("program-driver-control/normal-mapping.excalidraw.svg")
   ],
 
   [
-    #image.decode(read("program-driver-control/reverse-mapping.excalidraw.svg"))
+    #image("program-driver-control/reverse-mapping.excalidraw.svg")
   ],
 )
 
