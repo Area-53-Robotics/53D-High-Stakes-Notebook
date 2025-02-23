@@ -9,7 +9,7 @@
   witnessed: "Rory",
 )
 
-The ladybrown mechanism utilizes friction in its grippers to securely hold onto the ring, ensuring it does not slip during motion. When the mechanism rotates, it relies on angular displacement to position the ring accurately, achieving a 180-degree turn to align with the wall stakes. During the scoring process, collision forces are carefully managed to ensure the ring is placed without damaging either the robot or the ring, maintaining precision and control.
+Since the ladybrown is a complex mechanism, it is important for the novice builders to properly understand the design. By breaking the design into smaller parts and explaining how each piece works together, we felt more comfortable to begin the brainstorming process.
 
 #set grid(
   columns: (1fr, 1fr),

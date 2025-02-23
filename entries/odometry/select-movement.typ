@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Odometry - Movement",
+  title: "Odometry v1 - Movement",
   type: "select",
-  date: datetime(year: 2024, month: 2, day: 12),
+  date: datetime(year: 2024, month: 11, day: 23),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",
@@ -39,7 +39,3 @@
 #admonition(type: "note")[
   Although we will be using PID for the majority of our autonomous movements, it is not exclusive with Pure Pursuit implementation. If possible, we would like to implement both movement options and use them as needed.
 ]
-
-= Implementation Plan
-+ We will read *An Introduction to PID Controllers by George Gillard (2017)* #footnote[https://georgegillard.com/component/osdownloads/routedownload/robotics/introduction-to-pid-controllers-2nd-edition] to learn the workings of PID.
-+ We will brainstorm and select an implementation method for PID

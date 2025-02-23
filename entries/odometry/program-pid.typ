@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Odometry - PID",
+  title: "Odometry v1 - PID",
   type: "program",
-  date: datetime(year: 2024, month: 1, day: 1),
+  date: datetime(year: 2024, month: 11, day: 30),
   attendance: ("Ajibola", "Ishika"),
   designed: "Ajibola",
   witnessed: "Ishika",

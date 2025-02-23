@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Odometry",
+  title: "Odometry v1",
   type: "identify",
   date: datetime(year: 2024, month: 11, day: 22),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -19,7 +19,7 @@
   )
 )
 
-During the autonomous phase of a match, the robot can only move using pre-programmed commands and information provided by sensor data. An odometry system determines the 2-D position of the robot in real time during the match, allowing the robot to act on that information autonomously.
+During the autonomous phase of a match, the robot can only move using pre-programmed commands and information provided by sensor data. An odometry system determines the 2-D position of the robot in real-time during the match, allowing the robot to act on that information autonomously.
 
 #admonition(type: "note")[
   "Odometry" and "position tracking" technically mean the same thing: estimating the change in position of the robot over time. However, we will define "position tracking" using the aforementioned definition, and define "odometry" as encompassing both "position tracking" and algorithms that operate using data produced by the position tracking system.

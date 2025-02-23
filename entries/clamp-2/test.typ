@@ -14,7 +14,7 @@ We hope that the second version of the mobile goal clamp will perform better tha
 
 = Grip Strength
 == Background
-In High Stakes, mobile goals are an important and limited game element. This means that we need to know our ability to hold on to the mobile goals and compete for other mobile goals. To test this, we pitted our robot against another, to see how long it could maintain its grip. If it lasted more than 15 seconds (enough time to escape), it would pass. 
+In High Stakes, mobile goals are an important and limited game element. This means that we need to know our robot's ability to hold on to the mobile goals and compete for other mobile goals. To test this, we pitted our robot against another, to see how long it could maintain its grip. If it lasted more than 15 seconds (enough time to escape), it would pass. 
 
 == Hypothesis
 The robot will be able to maintain its grip on the mobile goal for at least 15 seconds.
@@ -38,11 +38,11 @@ The robot will be able to maintain its grip on the mobile goal for at least 15 s
   [
     == Procedures
     + Fill two robots' air tanks with 100 PSI of air.
-    + Set both robots on the field with their clamps facing towards eachother.
+    + Set both robots on the field with their clamps facing toward eachother.
     + Place a mobile goal equidistant between the two robots.
     + Activate both robots' clamps.
-    + Begin a 15 second timer.
-    + Drive the opponent robot forwards until the timer runs out.
+    + Begin a 15-second timer.
+    + Drive the opponent robot forward until the timer runs out.
     + Write down if the opponent's robot was able to pull the mobile goal off our robot.
     + Repeat steps 1-7 for a total of 5 trials.
   ],
@@ -135,7 +135,7 @@ The new clamp was successful for all the trials and performed much better than t
 
 = Consistency
 == Background
-Consistency is very important in machines and in competitions, as we need to be able to predict how our robot will operate. In terms of the clamp, we need to be reasonably certain that it can successfully maintain a hold onto a mobile goal. We define a successful clamping as one in which the mobile goal stake tilts towards the robot.
+Consistency is very important in machines and competitions, as we need to be able to predict how our robot will operate. In terms of the clamp, we need to be reasonably certain that it can successfully maintain a hold on a mobile goal. We define a successful clamping as one in which the mobile goal stake tilts towards the robot.
 
 == Hypothesis
 The robot will successfully clamp onto the mobile goal 70% of the time.
@@ -215,7 +215,7 @@ We are satisfied with the results of this test. This test is not perfectly repre
 
 = Endurance
 == Background
-During matches it is often necessary to clamp, unclamp and reclamp mobile goals for strategic reasons such as gathering points and getting unstuck. Due to this, we wanted to test how many times our clamp could clamp down and release before the pistons depleted all the gas in the air tank. Our previous clamp ran out of air quickly. We hope that this version of the clamp is more efficient with air usage.
+During matches, it is often necessary to clamp, unclamp, and reclamp mobile goals for strategic reasons such as gathering points and getting unstuck. Due to this, we wanted to test how many times our clamp could clamp down and release in an ideal scenario before the pistons depleted all the gas in the air tank. Our previous clamp ran out of air quickly. We hope that this version of the clamp is more efficient with air usage.
 
 == Hypothesis
 The clamp will be able to clamp down and release 7 times.

@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Odometry - Implementation",
+  title: "Odometry v1 - Implementation",
   type: "select",
-  date: datetime(year: 2024, month: 2, day: 12),
+  date: datetime(year: 2024, month: 11, day: 29),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory"),
   designed: "Ajibola",
   witnessed: "Ishika",

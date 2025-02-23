@@ -7,6 +7,7 @@
 #import "page.typ": *
 #import "pie-chart.typ": *
 #import "pro-con.typ": *
+#import "qa-table.typ": *
 #import "text-format.typ": *
 #import "title.typ": *
 #import "toc.typ": *

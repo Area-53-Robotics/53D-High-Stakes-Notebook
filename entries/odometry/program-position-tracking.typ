@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Odometry - Position Tracking",
+  title: "Odometry v1 - Position Tracking",
   type: "program",
-  date: datetime(year: 2024, month: 1, day: 1),
+  date: datetime(year: 2024, month: 11, day: 30),
   attendance: ("Ajibola", "Ishika"),
   designed: "Ajibola",
   witnessed: "Ishika",
@@ -13,12 +13,15 @@
   "Figure " + figure.numbering + ": " + it.body
 }
 
-// #to-do(
-//   date: datetime(year: 2023, month: 12, day: 1),
-//   (
-//     (true, ""),
-//   )
-// )
+#to-do(
+  date: datetime(year: 2024, month: 11, day: 30),
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
+  (
+    (true, "Program the position tracking system.", ("Ajibola", "Ishika")),
+    (true, "Program the PID algorithms.", ("Ajibola", "Ishika")),
+  )
+)
 
 = Background
 A position tracking algorithm has 3 goals:
@@ -54,7 +57,6 @@ float prevHorizontal1 = 0;
 float prevHorizontal2 = 0;
 float prevImu = 0;
 ```
-
 
 = Definitions
 The following variables are approximately in the order that they are first used in the document. They will be further explained throughout the document.
