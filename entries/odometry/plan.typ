@@ -17,3 +17,12 @@
 
 = CAD Model
 We planned out our tracking wheel design using CAD. The technical drawings begin on the next page.
+
+#cad(
+  folder: "odometry-v1",
+  sheets: 3,
+  add-views: ("Isometric", "Side", "Front", "Top"),
+  date: datetime(year: 2024, month: 11, day: 29),
+  designed: "Ajibola",
+  witnessed: "Ishika",
+)

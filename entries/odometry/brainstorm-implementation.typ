@@ -14,8 +14,8 @@
   monthly-schedule: "On",
   yearly-schedule: "Off",
   (
-    (true, "Brainstorm implementation methods for an odometry system.", "Everyone"),
-    (true, "Select the best implementation method using a decision matrix.", "Everyone"),
+    (true, "Brainstorm implementation methods for an odometry system.", ("Ajibola", "Ishika")),
+    (true, "Select the best implementation method using a decision matrix.", ("Ajibola", "Ishika")),
     (true, "Brainstorm hardware configurations for an odometry system.", "Everyone"),
     (true, "Select the best hardware configuration using a decision matrix.", "Everyone"),
     (true, "Plan the implementation of the odometry system.", "Everyone"),
@@ -31,7 +31,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
     This would involve creating and programming our own movement algorithms from scratch.
   ],
   pros: [
-    - *Customizability* - We would be able to add and change as many features as we desire, and make the algorithms specific to our robot.
+    - *Customizability* - We would be able to add and change as many features as we desire and make the algorithms specific to our robot.
     - *Revertability* - Using Git commands, we can easily revert any breaking changes we make to the codebase.
   ],
   cons: [
@@ -54,8 +54,7 @@ Now that we have decided to use PID with a possibility for Pure Pursuit, we brai
     - *Support* - Many other teams use LemLib, so we can get support from them.
   ],
   cons: [
-    - *PROS 4 Unstable* - LemLib has a version that is compatible with our version of PROS, but it is currently unstable and will likely have a lot of issues.
-    // TODO: Come up with a new LemLib con.
+    - *Update Time* - LemLib's next confirmed major update, v0.6.0, release date is unknown.
   ],
 )
 

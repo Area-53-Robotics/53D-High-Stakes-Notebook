@@ -33,14 +33,14 @@
 
   ],
   auton_notes: [
-    - Our auton’s movements were reversed, messing up the auton.
+    - Our auton's movements were reversed, messing up the auton.
     - 53F failed to clamp on a mobile goal.
     - The blue alliance scored two rings and won auton.
 
   ],
   match_notes: [
     - 53F and we both scored a full mobile goal.
-    - 929V’s intake got jammed, but they scored 4 rings onto a mobile goal.
+    - 929V's intake got jammed, but they scored 4 rings onto a mobile goal.
     - We scored on one wall stake and failed to score on another.
     - 53F took the enemy alliance's full mobile goal into a negative corner.
 
@@ -310,13 +310,13 @@
 #h(1em) The tournament went well; I think we were able to definitely see our strengths from this tournament. I enjoyed seeing our ladybrown put to work, as it was a subsystem we had never used before. I think after this tournament there were definitely a lot of things the team realized needed to be fixed and a lot of things we could make even better. Regarding Auton, I think we need to tune PID and make consistent autons so that we aren't losing matches due to auton difference. 
 
 == Makhi 
-#h(1em) When I the teamwas driving the robot, I felt that the left side of our drivetrain had a lot of friction issues. I think  could benefit by taking apart the drivetrain to fix the free spin. Additionally, I am very happy with the performance today. Even though the intake didn’t work during the round of 16, I think we learn a lot with how to improve the robot.
+#h(1em) When I the teamwas driving the robot, I felt that the left side of our drivetrain had a lot of friction issues. I think  could benefit by taking apart the drivetrain to fix the free spin. Additionally, I am very happy with the performance today. Even though the intake didn't work during the round of 16, I think we learn a lot with how to improve the robot.
 
 == Eric
 #h(1em) We did well through the competition, we are definitely keeping our progress when comparing with other teams. During the competition there was a lack of organization as people were unclear on roles, times, or necessities throughout the day, coming up with clearer assignments than simply driver and drive team for future competitions
 
 == Rory
-#h(1em) I think the tournament went well overall, except for a few issues. Our intake broke during one of the elimination rounds, which caused some problems, but we still won that round. We faced a lot of challenges between matches that we had to fix quickly, which created a lot of stress. As a result, we had to make repairs fast, but they weren’t always done as well as we would have liked. Our final standing in the elimination rounds was 14th, which didn’t qualify us for the Excellence Award. That was disappointing, but it was still fine.
+#h(1em) I think the tournament went well overall, except for a few issues. Our intake broke during one of the elimination rounds, which caused some problems, but we still won that round. We faced a lot of challenges between matches that we had to fix quickly, which created a lot of stress. As a result, we had to make repairs fast, but they weren't always done as well as we would have liked. Our final standing in the elimination rounds was 14th, which didn't qualify us for the Excellence Award. That was disappointing, but it was still fine.
 
 == Anders
 #h(1em) Out of all our subsystems, our macro worked the best. It performed flawlessly most of the time and never broke. Our other systems worked well too, but the intake broke multiple times, the clamp was inconsistent toward the end, and at the beginning, the drivetrain had a lot of friction issues. We were able to fix the friction issues before the matches started, though. The Beltway Battle was a great learning experience, especially for ensuring that all our subsystems work reliably before each match.

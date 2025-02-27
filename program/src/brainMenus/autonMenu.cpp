@@ -1,6 +1,6 @@
 #include "main.h"
 
-// Creates the empty auton sleection screen
+// Creates the empty auton selection screen
 lv_obj_t * autonScr = lv_obj_create(NULL);
 
 // Initializes the object that will hold the auton selection button list

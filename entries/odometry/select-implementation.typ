@@ -12,11 +12,11 @@
 After brainstorming the autonomous implementation options, we needed to select one to use.
 
 #decision-matrix-criteria[
-  - Setup Intuitiveness - How easy the implementation method is to setup
-  - PID Robustness - How flexible the PID movement made using the implementation method is
-  - PID Implementation Time - How little time it takes to get the PID made using the implementation method working
-  - Pure Pursuit Robustness - How flexible the Pure Pursuit movement made using the implementation method is
-  - Pure Pursuit Implementation Time - How little time it takes to get the Pure Pursuit made using the implementation method working
+  - Setup Intuitiveness - How easy the implementation method is to set up. A higher score means it is easier.
+  - PID Robustness - How flexible the implementation method's PID movement is. A higher score means it is more flexible.
+  - PID Implementation Time - The amount of time it takes to get the implementation method's PID working. A higher score means it takes less time.
+  - Pure Pursuit Robustness - How flexible the implementation method's Pure Pursuit is. A higher score means it is more flexible.
+  - Pure Pursuit Implementation Time - The amount of time it takes to get the implementation method's Pure Pursuit working. A higher score means it takes less time.
 ]
 
 #double-decision-matrix(
@@ -32,6 +32,7 @@ After brainstorming the autonomous implementation options, we needed to select o
     ("LemLib", 3, 4, 4, 3, 3),
     ("ARMS", 4, 4, 4, 1, 1),
   ),
+  body: colbreak()
 )
 
 #admonition(type: "select", title: "Final Selection")[

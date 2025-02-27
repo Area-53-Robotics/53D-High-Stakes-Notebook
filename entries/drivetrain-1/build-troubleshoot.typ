@@ -4,11 +4,10 @@
   title: "Drivetrain v1 - Troubleshooting",
   type: "build",
   date: datetime(year: 2024, month: 11, day: 01),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric"),
+  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Jin",
   witnessed: "Makhi",
 )
-
 
 #set grid(
   columns: (1fr, 1fr),
@@ -16,13 +15,12 @@
   row-gutter: 0pt,
 )
 
-
 Our drivetrain had significant friction on the right side, so we disassembled it to identify the cause. We discovered that there was loctite stuck on a screw. After replacing the screw, we reassembled the drivetrain.
 
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory* (Collecting materials) : Anders, Rory, Eric
+    - *Inventory* (Collecting materials): Anders, Rory, Eric
     - *Manufacturing* (cutting pieces to size, cleaning sharp edges): Anders, Rory, Eric
     - *Oversight & Quality Control*: Jin
     - *Initial Testing*: Jin, Makhi, Anders
@@ -34,9 +32,6 @@ Our drivetrain had significant friction on the right side, so we disassembled it
   ]
 )
 
-
-
-
 == Build Process
 #grid(
   stack(
@@ -47,7 +42,7 @@ Our drivetrain had significant friction on the right side, so we disassembled it
       - 48-tooth gears
       - 3.25” Omni wheels
       - 3.25” Traction wheels
-      - The rest of the materials can be found in the toolbox
+      - The rest of the materials can be found in the toolbox.
     ],
     [
       === Assembly
@@ -57,12 +52,11 @@ Our drivetrain had significant friction on the right side, so we disassembled it
       - Added temporary bracing to prevent the robot from bending over time.
       - Re-added the motor cartridges.
       - Replaced the wheels and gear systems.
-
     ],
     [
       === Troubleshooting
       - Shook the drivetrain to test joint strength.
-      - Tested the drivetrain for friction
+      - Tested the drivetrain for friction.
         - First, we tested the free spin of the wheels. If the drivetrain has a strong free spin, then there is not any friction in the motor.
           - We found that we have good free spin.
         - Then, we tested the friction with the motors.
@@ -71,15 +65,13 @@ Our drivetrain had significant friction on the right side, so we disassembled it
   ),
   stack(
     spacing: 10pt,
-  figure(
-    image("build-troubleshooting/drivetrain-troubleshooting-1.png", width: 120pt),
-    caption: "The drive half with a supporting C-channel. Picture showcases the wheel system."
-  ),
-  
-  figure(
-    image("build-troubleshooting/drivetrain-troubleshooting-2.png", width: 160pt),
-    caption: "Drivetrain’s chassis without wheels and motors."
-  )
+    figure(
+      image("build-troubleshoot/drivetrain-troubleshooting-1.png", width: 200pt),
+      caption: "The wheel system of a drive half supported by a C-channel."
+    ),
+    figure(
+      image("build-troubleshoot/drivetrain-troubleshooting-2.png", width: 200pt),
+      caption: "Drivetrain chassis without wheels and motors."
+    )
   )
 )
-

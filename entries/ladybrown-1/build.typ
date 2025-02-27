@@ -18,11 +18,16 @@
 
 = 2024/11/01
 #to-do(
+  // TODO: Move this to the November management entry
   date: datetime(year: 2024, month: 11, day: 01),
   monthly-schedule: "On",
   yearly-schedule: "Ahead",
   (
+    (true, "Review our time and budget management during October.", "Everyone"),
+    (true, "Plan out the November meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),
     (true, "Build the ladybrown according to today's delegation.", "Everyone"),
+    (true, "Troubleshoot the drivetrain according to today's delegation.", "Everyone"),
+    (true, "Build the intake according to today's delegation.", "Everyone"),
   )
 )
 
@@ -104,6 +109,7 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
   yearly-schedule: "Ahead",
   (
     (true, "Build the ladybrown according to today's delegation.", "Everyone"),
+    (true, "Build the intake according to today's delegation.", "Everyone"),
   )
 )
 
@@ -181,6 +187,7 @@ We continued building the ladybrown, focusing primarily on the upper sections wh
   yearly-schedule: "Ahead",
   (
     (true, "Build the ladybrown according to today's delegation.", "Everyone"),
+    (true, "Build the intake according to today's delegation.", "Everyone"),
   )
 )
 

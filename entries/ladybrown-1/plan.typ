@@ -16,13 +16,13 @@
 #image("plan/ladybrown-v1-gantt-chart.png", width: 390pt)
 
 = CAD Model
-We planned out the redirect mechanism using CAD. The technical drawings begin on the next page.
+We planned out the ladybrown using CAD. The technical drawings begin on the next page.
 
-// #cad(
-//   folder: "ladybrown-v1",
-//   sheets: 4,
-//   add-views: ("Isometric", "Top", "Front", "Side"),
-//   date: datetime(year: 2024, month: 10, day: 24),
-//   designed: "Jin",
-//   witnessed: "Ajibola",
-// )
+#cad(
+  folder: "ladybrown-v1",
+  sheets: 3,
+  add-views: ("Isometric", "Side", "Front", "Top"),
+  date: datetime(year: 2024, month: 10, day: 24),
+  designed: "Jin",
+  witnessed: "Ajibola",
+)

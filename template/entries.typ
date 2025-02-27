@@ -1,4 +1,4 @@
-#import "colors.typ" : *
+#import "colors.typ": *
 #import "globals.typ": *
 #import "components/components.typ": *
 
@@ -174,12 +174,12 @@
         #counter(figure.where(kind: image)).update(0)
         #counter(figure.where(kind: table)).update(0)
         #counter(figure.where(kind: raw)).update(0)
-        
+
         #entry.body <notebook-entry>
         #counter(footnote).update(0)
       ]
     }
-    
+
     counter(page).update(_ => 0)
   }
 }
@@ -280,7 +280,7 @@
         #counter(footnote).update(0)
       ]
     }
-    
+
     counter(page).update(_ => 0)
   }
 }

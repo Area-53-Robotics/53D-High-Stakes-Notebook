@@ -9,16 +9,14 @@
   witnessed: "Ishika",
 )
 
-// Now that we have decided to use PID with a possibility for Pure Pursuit, we brainstormed a few different implementation methods that have the capability to use them.
-
 After deciding to use LemLib to implement odometry, we needed to choose an odometry hardware configuration that could obtain the data needed for the position tracking algorithm.
 
 Each odometry setup has a combination of some of the following components:
-- Tracking Wheels - Unpowered wheels with an optical shaft sensor or rotation sensor attached to them that can accurately track displacement on one axis
-  - Vertical Tracking Wheels - One vertical tracking wheel can track vertical displacement. Two vertical tracking wheels can track robot orientation.
+- Tracking Wheels - Unpowered wheels with an optical shaft sensor or rotation sensor attached to them that can accurately track displacement on one axis.
+  - Vertical Tracking Wheels - One vertical tracking wheel can track vertical displacement. Two vertical tracking wheels together can track robot orientation.
   - Horizontal Tracking Wheels - One horizontal tracking wheel can track horizontal displacement.
-- Inertial Measurement Unit (IMU) - Sensor that tracks changes in robot orientation
-- Motor Encoders - Encoders that are internal to the VEX motors that track the rotation of the motor
+- Inertial Measurement Unit (IMU) - Sensor that tracks changes in robot orientation.
+- Motor Encoders - Encoders that are internal to the VEX motors that track the rotation of the motor.
 
 #pro-con(
   name: "3 Tracking Wheels",
@@ -59,7 +57,7 @@ Each odometry setup has a combination of some of the following components:
     This setup uses 1 vertical tracking wheel and an IMU.
   ],
   pros: [
-    - *Space Efficiency* - An IMU can be placed anywhere on the drivetrain, and a single tracking wheel does not take up much space.
+    - *Space Efficiency* - An IMU can be placed anywhere near the center of the drivetrain, and a single tracking wheel does not take up much space.
   ],
   cons: [
     - *No Horizontal Displacement Tracking* - Without a horizontal tracking wheel, the odometry system cannot account for horizontal movements. Therefore, this setup is only compatible with drivetrains that have traction wheels to prevent horizontal movement.
