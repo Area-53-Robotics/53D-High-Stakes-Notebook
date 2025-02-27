@@ -90,6 +90,8 @@
 #include "ladybrown-1/build.typ"
 #include "ladybrown-1/program.typ"
 #include "ladybrown-1/test.typ"
+#include "intake-2/build.typ"
+#include "competition/capital-beltway-challenge.typ"
 
 // #include "odometry/identify.typ"
 // #include "odometry/brainstorm-movement.typ"
