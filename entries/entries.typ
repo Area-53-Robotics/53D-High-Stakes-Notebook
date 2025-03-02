@@ -92,7 +92,7 @@
 // #include "ladybrown-1/build.typ"
 // #include "ladybrown-1/program.typ"
 // #include "ladybrown-1/test.typ"
-
+#include "clamp-2/build-troubleshooting2.typ"
 // #include "odometry/identify.typ"
 // #include "odometry/brainstorm-movement.typ"
 // #include "odometry/select-movement.typ"
