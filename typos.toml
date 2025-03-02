@@ -5,3 +5,4 @@ extend-exclude = ["*.md"]
 Pilons = "Pilons"
 CADed = "CADed"
 Ded = "Ded"
+typ = "typ"
