@@ -15,7 +15,7 @@
   for (index, entry) in enumerated-entry-list {
     entry-list.push(entry)
   }
-  
+
   entry-list
 }
 
@@ -86,7 +86,7 @@
         columns: 4,
         fill: (_, y) =>
           if y == 0 {gray.lighten(20%)},
-        
+
         table.header(
           [Entry \#], [Page Range], [Designed By], [Witnessed By],
         ),

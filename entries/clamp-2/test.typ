@@ -10,11 +10,11 @@
 )
 
 
-We hope that the second version of the mobile goal clamp will perform better than the first version, especially because it makes better use of mechanical advantage. Additionally, a lot of high performing teams are using this type of clamp on their robot. We are going to use the same tests that we performed on the first version of the clamp in our #entry-reference(title: "Mobile Goal Clamp v1", type: "test", date: datetime(year: 2024, month: 8, day: 24)).
+We hope that the second version of the mobile goal clamp will perform better than the first version, especially because it makes better use of mechanical advantage. Additionally, a lot of high performing teams are using this type of clamp on their robot. We are going to use the same tests that we performed on the first version of the clamp in our #past-entry-reference(title: "Mobile Goal Clamp v1", type: "test", date: datetime(year: 2024, month: 8, day: 24)).
 
 = Grip Strength
 == Background
-In High Stakes, mobile goals are an important and limited game element. This means that we need to know our robot's ability to hold on to the mobile goals and compete for other mobile goals. To test this, we pitted our robot against another, to see how long it could maintain its grip. If it lasted more than 15 seconds (enough time to escape), it would pass. 
+In High Stakes, mobile goals are an important and limited game element. This means that we need to know our robot's ability to hold on to the mobile goals and compete for other mobile goals. To test this, we pitted our robot against another, to see how long it could maintain its grip. If it lasted more than 15 seconds (enough time to escape), it would pass.
 
 == Hypothesis
 The robot will be able to maintain its grip on the mobile goal for at least 15 seconds.
@@ -176,7 +176,7 @@ The robot will successfully clamp onto the mobile goal 70% of the time.
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
   )
@@ -259,7 +259,7 @@ The clamp will be able to clamp down and release 7 times.
 
     table.hline(y: 0, end: 1, stroke: none),
     table.vline(x: 0, end: 1, stroke: none),
-    
+
     [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
     [Number of clamps (down)], [9], [8], [9], [9], [8],
     [Number of releases (up)], [9], [7], [8], [8], [7],

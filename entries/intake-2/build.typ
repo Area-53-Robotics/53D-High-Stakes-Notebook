@@ -102,7 +102,7 @@ We worked on the second stage of the intake, focusing on achieving an optimal sp
       === Assembly
       - The first 180pt of the intake is attached by screw joints.
       - #text(red)[Problem:] The intake experienced a lot of vertical shaking. This can cause the intake to bend over time.
-        - #text(green)[Solution:] We screwed in the screw joint. Additionally, we placed a crown on the screw so that it can spin freely.
+      - #text(green)[Solution:] We screwed in the screw joint. Additionally, we placed a crown on the screw so that it can spin freely.
       - Placed the two 12-tooth gears on the screw.
       - Connected the intake rollers to the 12-tooth gears with chain.
         - This will allow the gear system and the first stage intake to move with the same chain.
@@ -183,7 +183,7 @@ We attached the brain to the inner half cuts and began working on the intake. We
     [
       === Troubleshooting
       - #text(red)[Problem:] The intake was turning in the wrong direction compared to the chain.
-        - #text(green)[Solution:] We added an additional gear between the first and second stages of the intake.
+      - #text(green)[Solution:] We added an additional gear between the first and second stages of the intake.
     ],
   ),
 )

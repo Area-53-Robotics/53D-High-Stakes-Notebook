@@ -159,8 +159,7 @@ Since the intake motor and gear were cantilevered, the motor was loosening as we
     [
       === Assembly
       - #text(red)[Problem:] The intake was slipping and loosening over time. Since the intake axle was cantilevered, the axle was bending due to the weight and stress.
-        - #text(green)[Solution:] Added supports for the intake motor.
-        - Replaced the intake motor's axle.
+      - #text(green)[Solution:] Added supports for the intake motor and replaced the intake motor's axle.
       - Readjusted the intake motor's position.
       - Replaced the intake axles.
       - Cut polycarbonate into proper shapes to use for the intake ramp.

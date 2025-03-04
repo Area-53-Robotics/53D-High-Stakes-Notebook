@@ -14,7 +14,7 @@
 ]
 
 = Auton Routine
-Due to the lack of time, we made a simple two ring auton. The robot would start in a position parallel to the mobile goal, and at the beginning of the autonomous period, the robot would move forwards until it reached the goal and then proceed to clamp it. Next, the intake would activate to score our preloaded ring onto the goal. Then, the robot would turn towards another ring and then drive towards it. When reaching the designated position the robot would activate the intake and score the ring onto the mobile goal. 
+Due to the lack of time, we made a simple two ring auton. The robot would start in a position parallel to the mobile goal, and at the beginning of the autonomous period, the robot would move forwards until it reached the goal and then proceed to clamp it. Next, the intake would activate to score our preloaded ring onto the goal. Then, the robot would turn towards another ring and then drive towards it. When reaching the designated position the robot would activate the intake and score the ring onto the mobile goal.
 
 = Auton Setup
 Before making the actual auton path we needed to create autonomous movement functions for the drivetrain. These functions allow us to send commands to the entire drivetrain at once instead of sending commands individually to both halves of the drivetrain.
@@ -39,6 +39,8 @@ void turnDrivetrain(int power, int timeout) {
 ```
 
 We made two movement functions for the drivetrain. The moveDrivetrain() function commands the robot to move forward or back for a specified amount of time and with a specified speed. The turnDrivetrain() function commands the robot to turn clockwise or counterclockwise with a specified speed. Both functions end with motor brake commands so that the motors do not keep running after the intended movement is completed.
+
+#colbreak()
 
 = Autonomous Programming
 With all of the setup done, we could finally program the auton itself.

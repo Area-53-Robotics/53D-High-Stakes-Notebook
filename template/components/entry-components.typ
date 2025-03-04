@@ -246,34 +246,34 @@
       fail-message += "\nDate: " + date.display("[year]/[month]/[day]")
     }
 
-    // Check entry list
-    if valid-entries.len() == 0 {
-      valid-entries = full-entry-list
+    // // Check entry list
+    // if valid-entries.len() == 0 {
+    //   valid-entries = full-entry-list
 
-      if date != none {
-        valid-entries = valid-entries.filter(
-          entry => {
-            entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
-          }
-        )
-      }
+    //   if date != none {
+    //     valid-entries = valid-entries.filter(
+    //       entry => {
+    //         entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+    //       }
+    //     )
+    //   }
 
-      if type != none {
-        valid-entries = valid-entries.filter(
-          entry => {
-            entry.type.match(type) != none
-          }
-        )
-      }
+    //   if type != none {
+    //     valid-entries = valid-entries.filter(
+    //       entry => {
+    //         entry.type.match(type) != none
+    //       }
+    //     )
+    //   }
 
-      if title != none {
-        valid-entries = valid-entries.filter(
-          entry => {
-            entry.title.match(title) != none
-          }
-        )
-      }
-    }
+    //   if title != none {
+    //     valid-entries = valid-entries.filter(
+    //       entry => {
+    //         entry.title.match(title) != none
+    //       }
+    //     )
+    //   }
+    // }
 
     assert(valid-entries.len() > 0, message: "No entries meet the given attributes of:" + fail-message)
     assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes of:" + fail-message)

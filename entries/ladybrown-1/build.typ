@@ -92,7 +92,7 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
 #to-do(
   date: datetime(year: 2024, month: 11, day: 02),
   monthly-schedule: "On",
-  yearly-schedule: "Ahead",
+  yearly-schedule: "Off",
   (
     (true, "Build the ladybrown according to today's delegation.", "Everyone"),
     (true, "Build the intake according to today's delegation.", "Everyone"),

@@ -12,7 +12,7 @@
 #to-do(
   date: datetime(year: 2024, month: 11, day: 01),
   monthly-schedule: "On",
-  yearly-schedule: "Ahead",
+  yearly-schedule: "Off",
   (
     (true, "Review our time and budget management during October.", "Everyone"),
     (true, "Plan out the November meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),

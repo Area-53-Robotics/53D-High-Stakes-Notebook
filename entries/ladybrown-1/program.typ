@@ -12,11 +12,12 @@
 
 #to-do(
   date: datetime(year: 2024, month: 11, day: 15),
-  monthly-schedule: "Ahead",
-  yearly-schedule: "Ahead",
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
   (
     (true, "Program the ladybrown.", ("Ajibola", "Ishika")),
     (true, "Test the ladybrown.", "Everyone"),
+    (true, "Test the intake.", "Everyone"),
   )
 )
 
@@ -35,7 +36,7 @@ The ladybrown mechanism switches between 3 positions:
 - *Position 2* #sym.dash.em 324.00#sym.degree #sym.dash.em Picking up ring from the intake
 - *Position 3* #sym.dash.em 209.47#sym.degree #sym.dash.em Placing the ring on a stake
 
-#image("program/ladybrown-positions.excalidraw.svg", height: 255pt)
+#image("program/ladybrown-positions.excalidraw.svg", height: 245pt)
 
 We created the `ladybrownPosition` integer variable to hold a number from 1-3 representing which position the ladybrown is moving towards. We also made the `LadybrownSwitch()` function to allow the driver to cycle through the 3 positions by using the `L1` button to move the ladybrown down and the `L2` button to move the ladybrown up.
 
@@ -59,7 +60,7 @@ void LadybrownSwitch(bool increase) {
 void opcontrol() {
 	while (true) {
         // ... Non-relevant lines of code excluded
-		
+
 		// When the L1 controller button is pressed...
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) {
 			// increase the ladybrown position by 1
@@ -69,7 +70,7 @@ void opcontrol() {
 			// decrease the ladybrown position by 1
 			LadybrownSwitch(false);
 		}
-		
+
         // ... Non-relevant lines of code excluded
 
 		pros::delay(20); // Run for 20 ms then update
@@ -98,7 +99,7 @@ void opcontrol() {
 
 	while (true) {
         // ... Non-relevant lines of code excluded
-		
+
 		// When the L1 controller button is pressed...
 		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) {
 			// increase the ladybrown position by 1
@@ -151,6 +152,8 @@ With the preliminary lines of code completed, were were able to start writing th
 
 We wanted the ladybrown algorithm to begin everytime one of the ladybrown buttons was pressed. To do this, we made each task loop wait for the task notification that is sent when one of the ladybrown buttons is pressed.
 
+#colbreak()
+
 #code-header[src/ladybrown.cpp]
 ```cpp
 void LadybrownTask(void * param) {
@@ -176,7 +179,7 @@ void LadybrownTask(void * param) {
 
         // Variable to track how long the ladybrown movement is taking
         int timeout = 0;
-        
+
         // Sets the ladybrown target angle based on the target position
         switch(ladybrownPosition) {
             case 1:
@@ -208,7 +211,7 @@ At the beginning of each loop of the movement algorithm, the same data collectio
 
 At this point, we realized that there was a potential problem with our algorithm. The initial position/position 1 for the ladybrown mechanism is at 360#sym.degree as reported by the rotation sensor. However, if the ladybrown mechanism were to go past the 360#sym.degree angle, the rotation sensor would restart at 0#sym.degree. Because the error calculation in our movement algorithm is just the target angle minus the current angle of the ladybrown, the ladybrown movement algorithm would treat 360#sym.degree significantly differently than 1#sym.degree, even if they are actually just 1#sym.degree apart. We solved this by creating a "wrap-around," where any angle from 1#sym.degree - 50#sym.degree is treated by the algorithm as 361#sym.degree - 410#sym.degree.
 
-#image("program/ladybrown-wraparound.excalidraw.svg", height: 230pt)
+#image("program/ladybrown-wraparound.excalidraw.svg", height: 215pt)
 
 We incorporated all of these components using the following code:
 
@@ -325,7 +328,7 @@ void LadybrownTask(void * param) {
 
         // Variable to track how long the ladybrown movement is taking
         int timeout = 0;
-        
+
         // Sets the ladybrown target angle based on the target position
         switch(ladybrownPosition) {
             case 1:

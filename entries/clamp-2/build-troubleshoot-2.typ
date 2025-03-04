@@ -48,8 +48,8 @@ During our last competition, we observed that we needed to update the model of t
         - We added a screw joint that went through the mobile goal clamp's pivot point.
         - This screw joint helped improve the clamp's structural integrity and reduce friction.
       - #text(red)[Problem:] The piston would sometimes overextend, causing a reduction in torque.
-        - #text(green)[Solution:] Mounted the pneumatic pistons in a new location between the drivetrain motors. This allowed the mobile goal clamp to fully leverage the pistons' arm length.
-          - Moved the pivot point of the clamp one hole back.
+      - #text(green)[Solution:] Mounted the pneumatic pistons in a new location between the drivetrain motors. This allowed the mobile goal clamp to fully leverage the pistons' arm length.
+        - Moved the pivot point of the clamp one hole back.
     ],
   ),
   stack(
