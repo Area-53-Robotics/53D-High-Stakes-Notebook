@@ -57,7 +57,7 @@ During our last competition, we observed that we needed to update the model of t
   stack(
     spacing: 10pt,
     figure(
-    image("build-troubleshooting2/11-18-24.png", width: 170pt),
+    image("build-troubleshoot-2/11-18-24.png", width: 170pt),
     caption: "The clamp at the end of today’s meeting."
     ),
     [
@@ -115,7 +115,7 @@ stack(
       - This allowed us to adjust the brace accordingly.
     ],
     figure(
-      image("build-troubleshooting2/11-19-24.png", width: 120pt),
+      image("build-troubleshoot-2/11-19-24.png", width: 120pt),
       caption: "The clamp at the end of today’s meeting."
     ),
   )
@@ -123,7 +123,7 @@ stack(
 
 #grid(
   figure(
-    image("build-troubleshooting2/Build 11_19_2024.excalidraw.svg"),
+    image("build-troubleshoot-2/11-19-24-system-diagram.excalidraw.svg"),
   ),
   [
     === Physics of Clamp

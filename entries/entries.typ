@@ -43,7 +43,7 @@
 // #include "clamp-1/build.typ"
 // #include "clamp-1/build-troubleshoot.typ"
 // #include "clamp-1/program.typ"
-// #include "clamp-1/test.typ"
+ #include "clamp-1/test.typ"
 // #include "intake-1/identify.typ"
 // #include "intake-1/understand.typ"
 // #include "intake-1/brainstorm.typ"
@@ -56,7 +56,7 @@
 // #include "intake-1/build.typ"
 // #include "intake-1/build-troubleshoot.typ"
 // #include "intake-1/program.typ"
-// #include "intake-1/test.typ"
+ #include "intake-1/test.typ"
 // #include "autonomous/area-53-scrimmage-auton.typ"
 // #include "competition/area-53-scrimmage.typ"
 
@@ -103,7 +103,10 @@
 // #include "odometry/plan.typ"
 // #include "odometry/program-position-tracking.typ"
 // #include "odometry/program-pid.typ"
-
-
+#include "intake-2/test.typ"
+#include "event-observations/speedway-sig.typ"
+#include "manual-updates/manual-v2.2-update.typ"
+#include "odometry/build.typ"
+#include "intake-2/build-maintenance.typ"
 // // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
