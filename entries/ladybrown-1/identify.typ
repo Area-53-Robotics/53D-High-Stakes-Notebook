@@ -35,7 +35,7 @@ The design goals for the ladybrown should be similar to the Redirect mechanism b
   rows: 4,
   align: left + top,
 
-  table.header(table.cell(fill: gray, align: center)[*Aspects of the Lady Brown*]),
+  table.header(table.cell(fill: gray, align: center)[*Aspects of the Ladybrown*]),
 
   [*Grip* - One of the main features of the ladybrown is its ability to grip onto the ring once the ring has reached the top of the intake. How well the ladybrown can grip onto a ring would affect its scoring and handling ability.],
   [*Control* - The ladybrown needs ease of control for accurate grabbing, scoring, and releasing of rings. This is imperative, as the ability to score on wall stakes can earn many points, potentially changing the outcome of a match.],

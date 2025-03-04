@@ -13,8 +13,8 @@
   year: "2024 - 2025",
   season: "High Stakes",
   innovate: (
-    date: datetime(year: 2025, month: 1, day: 11),
-    event: "Valley Mall Qualifier",
+    date: datetime(year: 2025, month: 3, day: 8),
+    event: none,
     description: "The ladybrown is designed to rotate up to 180" + sym.degree + " to score on both alliance and neutral stakes. It is mounted at an angle on the side of our chassis, which helps maintain a lower center of gravity compared to mounting it vertically. The ladybrown grabs rings at the intake's apex. It uses mesh to absorb the rings' energy upon collision, preventing them from slipping out. Initially, our team manually set up the ladybrown before matches, which took time and introduced human error. We automated the process by using a rotation sensor, making pickup and scoring more efficient.",
     approach: "Most ladybrown programs use default VEX motor movement functions to rotate the ladybrown motors. This often causes the ladybrown to overshoot or undershoot its target angle. Our ladybrown uses a Proportional-Integral-Derivative (PID) controller to adjust the speed of the ladybrown motors every 10 milliseconds based on how far away the ladybrown is from its target angle, ensuring consistent and smooth movement.",
     pages: [
@@ -61,7 +61,7 @@
                   let available-chars = 23 - info.name.len() - 2 - 3
                   entry.title = entry.title.slice(0, available-chars) + "..."
                 }
-                
+
                 #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
                 #h(5pt)
                 #if previous-date == entry.date [

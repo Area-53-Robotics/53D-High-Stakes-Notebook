@@ -27,7 +27,7 @@
   set footnote.entry(separator: none)
 
   show image: it => [
-    #align(center)[ 
+    #align(center)[
       #set text(font: "Virgil 3 YOFF")
       #it
     ]
@@ -50,7 +50,7 @@
     outset: (y: 3pt),
     radius: 2pt,
   )
-  
+
   include "components/codly.typ"
   show: codly-init.with()
 
@@ -79,7 +79,7 @@
 
   if innovate.event != none {
     pagebreak()
-    pagebreak()
+    pagebreak(to: "odd")
 
     page(
       margin: (rest: 0.5in),
@@ -132,28 +132,28 @@
   appendix-entry-counter.update(_ => 1)
   frontmatter-page-counter.update(_ => 1)
   counter(page).update(_ => 0)
-  
+
   pagebreak()
-  pagebreak()
-  
+  pagebreak(to: "odd")
+
   print-frontmatter-entries()
 
   counter(page).update(_ => page-number-offset)
 
   pagebreak()
-  pagebreak()
+  pagebreak(to: "odd")
 
   print-entries()
-  
-  pagebreak()
-  pagebreak()
 
-  print-program-entries()
+  // pagebreak()
+  // pagebreak(to: "odd")
 
-  pagebreak()
-  pagebreak()
+  // print-program-entries()
 
-  print-appendix-entries()
+  // pagebreak()
+  // pagebreak(to: "odd")
+
+  // print-appendix-entries()
 
   // signature-list(chronological: false)
 

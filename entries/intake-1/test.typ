@@ -133,7 +133,7 @@ The intake times were over what we expected, but aside from changing the gear ra
 
 = Jamming
 == Background
-During a match, intake jamming is extremely frustrating, as it prevents us from scoring and limits us to assisting our alliance partner by ramming game elements with the drivetrain. This slows down the pace of the game and makes it harder to win. 
+During a match, intake jamming is extremely frustrating, as it prevents us from scoring and limits us to assisting our alliance partner by ramming game elements with the drivetrain. This slows down the pace of the game and makes it harder to win.
 
 Given the jamming that we saw in Experiment 1, we created this experiment to test how many rings in quick succession it takes to jam the intake.
 
@@ -200,8 +200,8 @@ The intake will jam after the fourth ring has been fed into it.
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
-      [Mean], [#stats.mean(jamming-test-data) rings],
-      [Median], [#stats.median(jamming-test-data) rings],
+      [Mean], [#stats.mean(jamming-test-data, digits: 0)rd ring],
+      [Median], [#stats.median(jamming-test-data)rd ring],
       [Range], [#stats.range(jamming-test-data, digits: 1) rings],
       [Variance], [#stats.variance(jamming-test-data, digits: 4) rings#super("2")],
       [Standard Deviation], [#stats.std-dev(jamming-test-data, digits: 2) rings],
@@ -297,7 +297,7 @@ To maximize our chances of scoring points, it is crucial that the feeding of rin
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
     [Rings Scored], [6], [6], [5], [6], [5], [5], [6], [3], [5], [6]
   )
@@ -316,7 +316,7 @@ To maximize our chances of scoring points, it is crucial that the feeding of rin
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
       [Mean], [#stats.mean(consistency-test-data) rings],
-      // [Median], [#stats.median(consistency-test-data) rings],
+      [Median], [#stats.median(consistency-test-data) rings],
       [Range], [#stats.range(consistency-test-data, digits: 1) rings],
       [Variance], [#stats.variance(consistency-test-data, digits: 4) rings#super("2")],
       [Standard Deviation], [#stats.std-dev(consistency-test-data, digits: 2) rings],
@@ -346,14 +346,14 @@ To maximize our chances of scoring points, it is crucial that the feeding of rin
             consistency-test-data.enumerate(start: 1),
             mark: "o",
             style: (stroke: none),
-            label: "Rings"
+            label: "Scored Rings"
           )
 
           plot.add(
             domain: (1, 10),
             style: (stroke: (paint: green), fill: green.lighten(75%)),
             epigraph: true,
-            label: "Predicted Rings",
+            label: "Ideal Scored Rings",
             x => {
               5
             }

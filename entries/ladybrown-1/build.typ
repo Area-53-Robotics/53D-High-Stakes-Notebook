@@ -17,20 +17,6 @@
 )
 
 = 2024/11/01
-#to-do(
-  // TODO: Move this to the November management entry
-  date: datetime(year: 2024, month: 11, day: 01),
-  monthly-schedule: "On",
-  yearly-schedule: "Ahead",
-  (
-    (true, "Review our time and budget management during October.", "Everyone"),
-    (true, "Plan out the November meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),
-    (true, "Build the ladybrown according to today's delegation.", "Everyone"),
-    (true, "Troubleshoot the drivetrain according to today's delegation.", "Everyone"),
-    (true, "Build the intake according to today's delegation.", "Everyone"),
-  )
-)
-
 With the CAD completed, we are now ready to build the ladybrown. We are excited to build the new robot design because of its custom gussets. We made these gussets using CAD software and a laser cutter. Additionally, since the entire robot was CADed before building, the assembly process was more streamlined compared to earlier in the season.
 
 == Delegation
@@ -54,8 +40,8 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
     - 2x 11x1x1 C-channel
     - 2x 33x2x1 C-channel
     - 2x Custom Gussets
-    - 2x 5x1x1 C-channel 
-    - 2x 2x1x1 C-channel 
+    - 2x 5x1x1 C-channel
+    - 2x 2x1x1 C-channel
     - The rest of the materials can be found in our toolbox.
   ],
   figure(
@@ -135,11 +121,11 @@ We continued building the ladybrown, focusing primarily on the upper sections wh
   [
     === Materials
     - 17x2x1 C-channel
-    - 5.5-watt motors
-    - 60-tooth gears 
+    - 5.5W Motors
+    - 60-tooth Gears
   ],
   figure(
-    image("build/24-11-2-1.png", height: 250pt),
+    image("build/24-11-2-1.png", height: 240pt),
     caption: "Beginning of the ladybrown arm mounting."
   ),
   stack(
@@ -204,8 +190,8 @@ Today, we focused on finalizing the second triangular brace, completing the main
   ],
   today: [
     - Assemble the ladybrown arms: Jin, Makhi, Eric, Rory, Anders
-    - Assemble the friction end of the ladybrown:  Makhi 
-    - Cut the gussets and gears for the ladybrown: Eric 
+    - Assemble the friction end of the ladybrown:  Makhi
+    - Cut the gussets and gears for the ladybrown: Eric
   ]
 )
 
@@ -215,23 +201,23 @@ Today, we focused on finalizing the second triangular brace, completing the main
     === Materials
     - 2x 25x2x1 C-channel
     - 2x 17x1x1 C-channel
-    - 2x 5.5 Watt motors 
-    - 2x 12 tooth motors 
-    - High strength axles
-    - Mesh 
-    - Polycarbonate 
+    - 2x 5.5W Motors
+    - 2x 12-tooth Motors
+    - High Strength Axles
+    - Mesh
+    - Polycarbonate
     - Zipties
     - The rest of the materials can be found in the toolbox.
   ],
   figure(
-    image("build/24-11-8-1.png", width: 175pt),
-    caption: "The ladybrown arms"
+    image("build/24-11-8-1.png", width: 165pt),
+    caption: "Ladybrown side profile"
   ),
   stack(
     spacing: 10pt,
     [
       === Assembly
-      - We added the 25x2x1 C-channels to the drivetrain 
+      - We added the 25x2x1 C-channels to the drivetrain
         - To brace the drivetrain, we added the 17x1x1 C-channels on the other side.
         - We used polycarbonate to create intersections between the two 17x1x1 C-channels.
       - The ladybrown gear was cut into 2/3s to make space for the motors.
@@ -242,10 +228,10 @@ Today, we focused on finalizing the second triangular brace, completing the main
     ],
     [
       === Troubleshooting
-      -  #text(red)[Problem:] The 17x1x1 C-channels were too close to each other, leaving no space for the brain.
-        -  #text(green)[Solution:] We moved the 17x1x1 C-channels outward, which meant we also had to shift some other structural elements outwards as well.
-      -  #text(red)[Problem:] The meshes on our clamp were too close, so the rings would not fit.
-        -  #text(green)[Solution:] We had to move the clamp's support closer.
+      - #text(red)[Problem:] The 17x1x1 C-channels were too close to each other, leaving no space for the brain.
+      - #text(green)[Solution:] We moved the 17x1x1 C-channels outward, which meant we also had to shift some other structural elements outwards as well.
+      - #text(red)[Problem:] The meshes on our clamp were too close, so the rings would not fit.
+      - #text(green)[Solution:] We had to move the clamp's support closer.
       - We tested the ladybrown on its ability to score on the wall stakes.
     ],
   ),

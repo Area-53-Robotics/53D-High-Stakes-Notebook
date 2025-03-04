@@ -51,20 +51,22 @@
 
     result.push(entry)
   }
-  
+
   return result
 }
 
 #context {
+  // ! To remove the program and appendix from the TOC, comment out the helper calls and the toc() function parameters
+
   // let frontmatter-entries = helper("frontmatter")
   let body-entries = helper("body")
-  let program-entries = helper("program")
-  let appendix-entries = helper("appendix")
+  // let program-entries = helper("program")
+  // let appendix-entries = helper("appendix")
 
   toc(
     frontmatter: (),
     body: body-entries,
-    program: program-entries,
-    appendix: appendix-entries
+    // program: program-entries,
+    // appendix: appendix-entries
   )
 }

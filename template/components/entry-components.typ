@@ -34,7 +34,7 @@
     align: left + top,
 
     table.header(table.cell(fill: green)[*Design Goals*], table.cell(fill: red)[*Design Constraints*]),
-    
+
     goals,
     constraints,
   )
@@ -64,7 +64,7 @@
       footer: {
         context {
           entry-page-counter.step()
-          
+
           align(
             if calc.odd(here().page()) {
               right + bottom
@@ -187,7 +187,7 @@
       if y == 0 {gray.lighten(20%)},
 
     table.header[Qty][Material],
-    
+
     ..for (qty, material) in materials.pos() {
       (str(qty) + "x", material)
     }
@@ -202,7 +202,7 @@
 
   fill: (_, y) =>
     if y == 0 {gray.lighten(20%)},
-  
+
   [*Recurring Tasks*], [*Today's Tasks*],
   recurring, today
 )
@@ -244,6 +244,35 @@
     let fail-message = "\nTitle: " + title + "\nType: " + type
     if date != none {
       fail-message += "\nDate: " + date.display("[year]/[month]/[day]")
+    }
+
+    // Check entry list
+    if valid-entries.len() == 0 {
+      valid-entries = full-entry-list
+
+      if date != none {
+        valid-entries = valid-entries.filter(
+          entry => {
+            entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+          }
+        )
+      }
+
+      if type != none {
+        valid-entries = valid-entries.filter(
+          entry => {
+            entry.type.match(type) != none
+          }
+        )
+      }
+
+      if title != none {
+        valid-entries = valid-entries.filter(
+          entry => {
+            entry.title.match(title) != none
+          }
+        )
+      }
     }
 
     assert(valid-entries.len() > 0, message: "No entries meet the given attributes of:" + fail-message)

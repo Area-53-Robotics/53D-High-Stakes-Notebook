@@ -17,7 +17,6 @@
 )
 
 = 2024/12/22
-
 Before winter break, we used the CAD technical drawings in our [intake plan entry reference] to determine the parts Eric would need to build the new intake changes. He made a loose-fit model of the intake to help with planning and noted problems that needed to be fixed in the future.
 
 == Delegation
@@ -30,9 +29,8 @@ Before winter break, we used the CAD technical drawings in our [intake plan entr
   ],
   today: [
     - Plan out the robot: the whole team
-    - Prepare the intake frame: Eric 
-    - Troubleshoot and fix any loose items on the robot: Eric 
-
+    - Prepare the intake frame: Eric
+    - Troubleshoot and fix any loose items on the robot: Eric
   ]
 )
 
@@ -44,7 +42,6 @@ Before winter break, we used the CAD technical drawings in our [intake plan entr
     - Axles
     - Motor
     - The rest of the materials can be found in the toolbox
-
   ],
 
   figure(
@@ -55,21 +52,19 @@ Before winter break, we used the CAD technical drawings in our [intake plan entr
     spacing: 10pt,
     [
       === Assembly
-      - Before winter break, the intake’s frame was planned and modeled through CAD.
+      - Before winter break, the intake's frame was planned and modeled through CAD.
         - These materials were collected for the winter rebuild.
       - We had a virtual meeting to discuss where we want to place the electronics and wiring.
-
-    ],  
+    ],
     [
       === Troubleshooting
       - Loose fitting of the intake frame onto the robot to make sure it would fit properly.
     ],
   ),
   figure(
-      image("build-maintenance/12.22.24-2.png", width: 110pt),
-      caption: "The intake side of our robot. There is the 11x1x1 C-channel angled from the 2x1x1 C-channel."
-    ),
-  
+    image("build-maintenance/12.22.24-2.png", width: 110pt),
+    caption: "The intake side of our robot. There is the 11x1x1 C-channel angled from the 2x1x1 C-channel."
+  ),
 )
 
 #colbreak()
@@ -83,12 +78,11 @@ We mounted the previously made parts onto the robot and straightened any bent pa
     - *Inventory*: Eric
     - *Manufacturing*: Eric
     - *Oversight & Quality Control*: Eric
-    - *Initial Testing*: Eri 
+    - *Initial Testing*: Eric
   ],
   today: [
     - Assemble the new intake: Eric
     - Straighten any metal that was bending on the robot: Eric
-
   ]
 )
 
@@ -109,17 +103,15 @@ We mounted the previously made parts onto the robot and straightened any bent pa
     spacing: 10pt,
     [
       === Assembly
-      - The intake’s chassis was removed and replaced after bending the metal back in place. 
-        - The 3x1x1 C-channels for the intake’s mount were pushed inwards. This decreased the length of the intake by 3 holes.
+      - The intake's chassis was removed and replaced after bending the metal back in place.
+        - The 3x1x1 C-channels for the intake's mount were pushed inwards. This decreased the length of the intake by 3 holes.
       - The polycarbonate was removed and remade.
-      - New screw joints were made for the intake’s supports. This will help stabilize the intake when it is running and picking up rings. 
-
+      - New screw joints were made for the intake's supports. This will help stabilize the intake when it is running and picking up rings.
     ],
     [
       === Troubleshooting
       - Attempted to manually run the intake motor to see if any issues arose.
         - Thankfully, everything seemed fine.
-
     ],
   ),
   figure(
@@ -131,21 +123,20 @@ We mounted the previously made parts onto the robot and straightened any bent pa
 #colbreak()
 
 = 2024/12/31
-Since the intake motor and gear were cantilevered, the motor was loosening as we used the intake, harming the intake’s performance. To fix this, we replaced the motor and ziptied it down.
+Since the intake motor and gear were cantilevered, the motor was loosening as we used the intake, harming the intake's performance. To fix this, we replaced the motor and ziptied it down.
 
 == Delegation
 #delegation(
   recurring: [
     - *Inventory*: Eric
     - *Manufacturing*: Eric
-    - *Oversight & Quality Control*: Eric 
+    - *Oversight & Quality Control*: Eric
     - *Initial Testing*: Eric
   ],
   today: [
-    - Troubleshoot the problem with the intake’s motor: the whole team
-    - Troubleshoot the intake’s motor: Eric
-    - Replace the intake motor: Eric 
- 
+    - Troubleshoot the problem with the intake's motor: the whole team
+    - Troubleshoot the intake's motor: Eric
+    - Replace the intake motor: Eric
   ]
 )
 
@@ -157,13 +148,11 @@ Since the intake motor and gear were cantilevered, the motor was loosening as we
     - Low Strength Axles
     - Zipties
     - Polycarbonate
-    - The rest of the materials can be found  in the tool box.
-
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
     image("build-maintenance/12.31.24-1.png", width: 120pt),
-    caption: "Intake at the start of 12/31/2024
-"
+    caption: "Intake at the start of 12/31/2024"
   ),
   stack(
     spacing: 10pt,
@@ -171,8 +160,8 @@ Since the intake motor and gear were cantilevered, the motor was loosening as we
       === Assembly
       - #text(red)[Problem:] The intake was slipping and loosening over time. Since the intake axle was cantilevered, the axle was bending due to the weight and stress.
         - #text(green)[Solution:] Added supports for the intake motor.
-        - Replaced the intake motor’s axle.
-      - Readjusted the intake motor’s position. 
+        - Replaced the intake motor's axle.
+      - Readjusted the intake motor's position.
       - Replaced the intake axles.
       - Cut polycarbonate into proper shapes to use for the intake ramp.
     ],
@@ -181,9 +170,8 @@ Since the intake motor and gear were cantilevered, the motor was loosening as we
       -  Ran the intake motors to check for chain skipping and intake jamming.
     ],
   ),
-  
-    figure(
-      image("build-maintenance/12.31.24-2.png", width: 120pt),
-      caption: "Intake motor mounting by end of 12/31/2024"
-    ),
+  figure(
+    image("build-maintenance/12.31.24-2.png", width: 120pt),
+    caption: "Intake motor mounting by end of 12/31/2024"
   )
+)
