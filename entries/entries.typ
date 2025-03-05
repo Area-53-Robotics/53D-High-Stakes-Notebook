@@ -97,9 +97,9 @@
 #include "ladybrown-1/test.typ"
 #include "intake-2/test.typ"
 #include "competition/capital-beltway-challenge.typ"
+#include "clamp-2/build-troubleshoot-2.typ"
+#include "clamp-2/test-2.typ"
 // // ! Third Notebook
-// #include "clamp-2/build-troubleshoot-2.typ"
-// #include "clamp-2/test-2.typ"
 // #include "odometry/identify.typ"
 // #include "odometry/brainstorm-movement.typ"
 // #include "odometry/select-movement.typ"
@@ -114,5 +114,6 @@
 // #include "event-observations/speedway-sig.typ"
 // #include "manual-updates/manual-v2.2-update.typ"
 // #include "intake-2/build-maintenance.typ"
+
 // // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"

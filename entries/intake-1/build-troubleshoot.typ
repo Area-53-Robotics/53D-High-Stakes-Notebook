@@ -51,7 +51,7 @@ Today, we had a practice scrimmage consisting of three rounds. During the scrimm
     - Rubber bands
     - Zipties
     - Axle
-    - The rest can be found in the tool box
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
     image("build/2024.09.21-1.png", width: 170pt),

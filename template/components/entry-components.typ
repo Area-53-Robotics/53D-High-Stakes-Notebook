@@ -1,5 +1,5 @@
 #import "../icons/icons.typ": *
-#import "../globals.typ": frontmatter-page-counter, entry-page-counter, appendix-page-counter, entries, signature-type, page-number-offset
+#import "../globals.typ": frontmatter-page-counter, entry-page-counter, appendix-page-counter, entries, signature-type, first-page-number
 #import "../utils/entry-lists.typ": *
 
 #let signature-metadata = (
@@ -214,6 +214,11 @@
   title: none,
   body: [entry on],
 ) = {
+  let fail-message = "\nTitle: " + title + "\nType: " + type
+  if date != none {
+    fail-message += "\nDate: " + date.display("[year]/[month]/[day]")
+  }
+
   context {
     let valid-entries = entries.final().enumerate()
 
@@ -241,76 +246,36 @@
       )
     }
 
-    let fail-message = "\nTitle: " + title + "\nType: " + type
-    if date != none {
-      fail-message += "\nDate: " + date.display("[year]/[month]/[day]")
-    }
+    assert(valid-entries.len() <= 1, message: "\nMore than one entry meet the given attributes of:" + fail-message)
 
-    // // Check entry list
-    // if valid-entries.len() == 0 {
-    //   valid-entries = full-entry-list
+    if valid-entries.len() == 1 {
+      let entry = valid-entries.first()
+      let info = type-metadata.at(entry.last().type)
+      let page = counter(page).at(query(selector(<notebook-entry>)).at(entry.first()).location()).at(0)
 
-    //   if date != none {
-    //     valid-entries = valid-entries.filter(
-    //       entry => {
-    //         entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
-    //       }
-    //     )
-    //   }
-
-    //   if type != none {
-    //     valid-entries = valid-entries.filter(
-    //       entry => {
-    //         entry.type.match(type) != none
-    //       }
-    //     )
-    //   }
-
-    //   if title != none {
-    //     valid-entries = valid-entries.filter(
-    //       entry => {
-    //         entry.title.match(title) != none
-    //       }
-    //     )
-    //   }
-    // }
-
-    assert(valid-entries.len() > 0, message: "No entries meet the given attributes of:" + fail-message)
-    assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes of:" + fail-message)
-
-    let entry = valid-entries.first()
-    let info = type-metadata.at(entry.last().type)
-    let page = counter(page).at(query(selector(<notebook-entry>)).at(entry.first()).location()).at(0)
-
-    [
-      #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
-      #h(1pt)
-      #highlight(fill: info.color.lighten(30%))[
-        #link((page: {frontmatter-page-counter.final().at(0) + page + 2 - page-number-offset}, x: 0pt, y: 0pt))[
-          #text(fill: black)[
-            _#h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
+      [
+        #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
+        #h(1pt)
+        #highlight(fill: info.color.lighten(30%))[
+          #link((page: {frontmatter-page-counter.final().at(0) + page + 4 - first-page-number}, x: 0pt, y: 0pt))[
+            #text(fill: black)[
+              _#h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)_
+            ]
           ]
         ]
+        #body pg. #page #h(-0.15em)
       ]
-      #body pg. #page #h(-0.15em)
-    ]
-  }
-}
 
-// ! You can only have two entry references in an entry without getting the "did not converge" error
-#let past-entry-reference(
-  date: none,
-  type: none,
-  title: none,
-  body: [entry on],
-) = {
-  context {
-    let valid-entries = full-entry-list
+      return
+    }
+
+    // Check entry list
+    valid-entries = full-entry-list.enumerate()
 
     if date != none {
       valid-entries = valid-entries.filter(
         entry => {
-          entry.date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
+          entry.last().date.display("[year]/[month]/[day]").match(date.display("[year]/[month]/[day]")) != none
         }
       )
     }
@@ -318,7 +283,7 @@
     if type != none {
       valid-entries = valid-entries.filter(
         entry => {
-          entry.type.match(type) != none
+          entry.last().type.match(type) != none
         }
       )
     }
@@ -326,25 +291,26 @@
     if title != none {
       valid-entries = valid-entries.filter(
         entry => {
-          entry.title.match(title) != none
+          entry.last().title.match(title) != none
         }
       )
     }
 
-    assert(valid-entries.len() > 0, message: "No entries meet the given attributes")
-    assert(valid-entries.len() <= 1, message: "More than one entry meet the given attributes")
+    assert(valid-entries.len() <= 1, message: "\nMore than one entry meet the given attributes of:" + fail-message)
+    assert(valid-entries.len() > 0, message: "\nNo entries meet the given attributes of:" + fail-message)
 
+    // The valid entry is from the past nb entry list
     let entry = valid-entries.first()
-    let info = type-metadata.at(entry.type)
-    let page = entry.body
+    let info = type-metadata.at(entry.last().type)
+    let page = entry.last().body
 
     [
-      #box(baseline: 15%, nb_icon(label: entry.type, size: 1em))
+      #box(baseline: 15%, nb_icon(label: entry.last().type, size: 1em))
       #h(1pt)
       #highlight(fill: info.color.lighten(30%))[
-        #h(2pt) #entry.date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.title #h(2pt)
+        #h(2pt) #entry.last().date.display("[year]/[month]/[day]") #sym.dash.em #info.name: #entry.last().title #h(2pt)
       ]
-      #body pg. #page #h(-0.2em)
+      #body pg. #page #h(-0.15em)
     ]
   }
 }

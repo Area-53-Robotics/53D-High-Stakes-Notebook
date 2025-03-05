@@ -61,7 +61,7 @@ Following the CAD, we began working on the redirect mechanism. We made great pro
     - High strength axle
     - 1x 36-tooth gear
     - 1x 48-tooth gear
-    - The rest of the materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
 )
 
@@ -83,7 +83,7 @@ Following the CAD, we began working on the redirect mechanism. We made great pro
     - Created a lexan guide at the clamp side of the robot. This will help navigate rings off the intake and onto the mobile goal stakes.
   ],
   figure(
-    image("build/2024.10.11-2.png", width: 170pt), 
+    image("build/2024.10.11-2.png", width: 170pt),
     caption: "Top view of the redirect mechanism. You can see the ramp from which the ring will slide when we reverse the intake."
   ),
   figure(
@@ -97,7 +97,7 @@ Following the CAD, we began working on the redirect mechanism. We made great pro
   [
     === Troubleshooting
     - We tested the four-bar lift of the redirect mechanism.
-    - We saw that the intake had some difficulties intaking into the redirect mechanism. We plan to lower the redirect mechanism by a hole or so. 
+    - We saw that the intake had some difficulties intaking into the redirect mechanism. We plan to lower the redirect mechanism by a hole or so.
     - We discovered that the basket of the redirect mechanism was out of the size limit. We planned to fix the issue next meeting.
   ],
   figure(
@@ -124,10 +124,10 @@ The majority of the day was dedicated to addressing the robot size limit issue w
 #delegation(
   recurring: [
     - *Inventory*: Rory, Eric, Anders
-    - *Manufacturing*: Makhi, Rory 
-    - *Oversight & Quality Control*: Jin, Ajibola 
+    - *Manufacturing*: Makhi, Rory
+    - *Oversight & Quality Control*: Jin, Ajibola
     - *Initial Testing*: Makhi
-    - *Programming*: Ajibola, Ishika 
+    - *Programming*: Ajibola, Ishika
   ],
   today: [
     - Fixing the expansion limit error of our redirect mechanism: Jin, Eric
@@ -145,13 +145,13 @@ The majority of the day was dedicated to addressing the robot size limit issue w
   [
     === Materials
     - Polycarbonate
-    - 2x hinges 
+    - 2x hinges
     - Zipties
-    - The rest of the materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   [
     === Assembly
-    - Took apart the basket section of our redirect mechanism. 
+    - Took apart the basket section of our redirect mechanism.
     - Added hinges to the end of the four bar.
     - Attached the basket to the hinges.
       - This allows for lateral movement of the basket.
@@ -163,7 +163,7 @@ The majority of the day was dedicated to addressing the robot size limit issue w
     caption: "The new basket during testing."
   ),
   figure(
-    image("build/2024.10.12-2.png", width: 160pt), 
+    image("build/2024.10.12-2.png", width: 160pt),
     caption: "Bird's eye view of the redirect mechanism."
   ),
   [
@@ -191,14 +191,14 @@ Today was spent testing the redirect mechanism, an integral part of the robot's 
 #delegation(
   recurring: [
     - *Inventory*: Eric, Makhi
-    - *Manufacturing*: Jin, Makhi, Eric 
-    - *Oversight & Quality Control*: Jin, Ajibola 
+    - *Manufacturing*: Jin, Makhi, Eric
+    - *Oversight & Quality Control*: Jin, Ajibola
     - *Initial Testing*: Makhi
-    - *Programming*: Ajibola, Ishika 
+    - *Programming*: Ajibola, Ishika
   ],
   today: [
     - Field set up for testing: Jin, Eric, Rory, Anders
-    - Polycarbonate cutting: Eric, Rory 
+    - Polycarbonate cutting: Eric, Rory
     - Redirect mechanism friction troubleshooting: Jin, Makhi, Eric, Rory, Anders
   ]
 )
@@ -213,7 +213,7 @@ Today was spent testing the redirect mechanism, an integral part of the robot's 
     - License Plates
     - Paracord
     - 2x 8x1x1 C-channel
-    - The rest of the materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
     image("build/2024.10.17-1.png", width: 170pt),
@@ -227,7 +227,7 @@ Today was spent testing the redirect mechanism, an integral part of the robot's 
   row-gutter: 20pt,
   [
     === Assembly
-    - #text(red)[Problem:] The rings were having a hard time getting redirected onto the redirect mechanism. 
+    - #text(red)[Problem:] The rings were having a hard time getting redirected onto the redirect mechanism.
     - #text(green)[Solution:] We cut 2" by 4" polycarbonate flaps for the redirect mechanism
       - These flaps act as a trap door. As the rings travel up the intake, the flaps swing upwards, allowing the rings to pass through. Once the intake reverses direction, the flaps prevent the rings from traveling down the intake, causing them to instead drop to the redirect mechanism.
     - Locked the hinge flaps on the redirect mechanism.
@@ -236,7 +236,7 @@ Today was spent testing the redirect mechanism, an integral part of the robot's 
     - Tightened loose screws and added stand-offs.
   ],
   figure(
-    image("build/2024.10.17-2.png", width: 180pt), 
+    image("build/2024.10.17-2.png", width: 180pt),
     caption: "The new basket for our redirect mechanism."
   ),
   figure(

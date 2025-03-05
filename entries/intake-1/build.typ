@@ -49,7 +49,7 @@ Today we worked on the lower portion of the intake (the first stage intake). The
     - Axles
     - Chain
     - Flex wheels
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   [
     === Assembly
@@ -129,7 +129,7 @@ Today we worked on the lower portion of the intake (the first stage intake). The
       - Previously, we had standoffs as triangle braces. However, they were in the way of the intake. Instead, we wanted to replace the standoffs with 24x1x1 C-channel.
     - We cut ramps for the mobile goal out of polycarbonate
       - Drilled holes on the top corners to the ramp. Tied zipties to these corners to tension them up.
-      - We cut a gap in the middle for space for the hooks 
+      - We cut a gap in the middle for space for the hooks
     - Created a stopper for the intake
       - We want the intake to be pivoted above a specific height. Too low or too high and it will not contract the rings.
   ],
@@ -191,7 +191,7 @@ Today we finished the first stage intake to prepare our robot for scoring rings 
     - x1 17x3x1 C-channel
     - Flex wheels
     - High strength axle
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   grid.cell(inset: (top: 10pt, bottom: 10pt), figure(
     image("build/2024.09.13-1.jpg", width: 140pt),
@@ -206,7 +206,7 @@ Today we finished the first stage intake to prepare our robot for scoring rings 
     - Attached the connecting 17x3x1 C-channel to the first stage intake's two parallel C-channels with standoffs, screws, and nylons.
       - Attached a hinge at the bottom of the 17x3x1 C-channel
     - Cut a flap for the intake
-      - This is to prevent rings from reaching too far up when intook. The flap will push the rings down. 
+      - This is to prevent rings from reaching too far up when intook. The flap will push the rings down.
     - Placed flex wheels onto the high strength axle and attached it to the intake.
   ],
   grid.cell(inset: (top: 10pt, bottom: 10pt), figure(
@@ -249,12 +249,12 @@ Today we finished the first stage intake to prepare our robot for scoring rings 
 Today we improved our intake and mobile goal clamp designs. Subsequently, we participated in a small-scale scrimmage. Since some robots were not fully functional, our coach came up with a new game challenge that only required controlled driving.
 
 == Scrimmage
-*The Rules Summary*: 
+*The Rules Summary*:
 There were two teams, each consisting of two robots.
 The objectives were to move as many rings as possible onto your team's side of the field and to move mobile goals to your side, rings were one point, mobile-goals were five points.
 No pinning other robots and no parts or pieces outside the field.
 
-*The Game*: 
+*The Game*:
 In the first round our team won by creating a strategy to sweep the majority of rings on to our side while grabbing mobile-goals. The second and third round followed suit.
 
 == Delegation
@@ -267,7 +267,7 @@ In the first round our team won by creating a strategy to sweep the majority of 
     - *Programming*: Ishika
   ],
   today: [
-    - Attach the front lexan plate: Everyone 
+    - Attach the front lexan plate: Everyone
   ]
 )
 
@@ -280,7 +280,7 @@ In the first round our team won by creating a strategy to sweep the majority of 
   [
     === Materials
     - Polycarbonate
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
 
     === Assembly
     - We used polycarbonate, screws, spacers, and nylons to avoid the jamming of rings in the core of our robot and properly orient them.
@@ -328,7 +328,7 @@ In the first round our team won by creating a strategy to sweep the majority of 
     - Polycarbonate
     - Rubber bands
     - Zipties
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   [
     === Assembly

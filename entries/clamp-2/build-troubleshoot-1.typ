@@ -54,7 +54,7 @@ Today, we wanted to finish building the clamp. We hope for this iteration of the
     - x1 2x2x1 C-channel
     - Zipties
     - Delrin
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   [
     === Assembly

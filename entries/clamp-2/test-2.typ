@@ -1,16 +1,16 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Clamp v2",
+  title: "Mobile Goal Clamp v2 - Re-Test",
   type: "test",
-  date: datetime(year: 2024, month: 10, day: 5),
+  date: datetime(year: 2024, month: 11, day: 19),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Eric",
   witnessed: "Anders",
 )
 
 
-We hope that the second version of the mobile goal clamp will perform better than the first version, especially because it makes better use of mechanical advantage. Additionally, a lot of high performing teams are using this type of clamp on their robot. We are going to use the same tests that we performed on the first version of the clamp in our #entry-reference(title: "Mobile Goal Clamp v1", type: "test", date: datetime(year: 2024, month: 8, day: 24)).
+With the new mobile goal clamp finished, we were excited to test and troubleshoot it. We ran the mobile goal clamp through the same tests that we did in our #entry-reference(  title: "Mobile Goal Clamp v2", type: "test", date: datetime(year: 2024, month: 10, day: 5)).
 
 = Grip Strength
 == Background
@@ -54,21 +54,27 @@ The robot will be able to maintain its grip on the mobile goal for at least 15 s
   #show table.cell.where(y: 0): strong
 
   #table(
-    columns: 6,
+    columns: 7,
 
     fill: (x, y) =>
-      if (y == 0 and x > 0) or (x == 0 and y > 0) {gray.lighten(20%)},
+      if (y == 0 and x > 1) or (x < 2 and y > 0) {gray.lighten(20%)},
 
-    table.hline(y: 0, end: 1, stroke: none),
+    table.hline(y: 0, end: 2, stroke: none),
     table.vline(x: 0, end: 1, stroke: none),
+    table.vline(x: 1, end: 1, stroke: none),
 
-    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    [], [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    table.cell(rowspan: 2, align: center + horizon)[New Test],
+    [Time (s)], [15.6], [16.6], [15.7], [17.4], [15.7],
+    [Pass/Fail], [Pass], [Pass], [Pass], [Pass], [Pass],
+    table.cell(rowspan: 2, align: center + horizon)[Old Test],
     [Time (s)], [15.5], [16.9], [15.7], [16.8], [16.2],
     [Pass/Fail], [Pass], [Pass], [Pass], [Pass], [Pass],
   )
 ]
 
-#let grip-strength-test-data = (15.5, 16.9, 15.7, 16.8, 16.2)
+#let old-grip-strength-test-data = (15.5, 16.9, 15.7, 16.8, 16.2)
+#let new-grip-strength-test-data = (15.6, 16.6, 15.7, 17.4, 15.7)
 
 #colbreak()
 
@@ -81,12 +87,12 @@ The robot will be able to maintain its grip on the mobile goal for at least 15 s
       columns: 2,
       align: center + horizon,
 
-      table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics*],
-      [Mean], [#stats.mean(grip-strength-test-data) s],
-      [Median], [#stats.median(grip-strength-test-data) s],
-      [Range], [#stats.range(grip-strength-test-data, digits: 1) s],
-      [Variance], [#stats.variance(grip-strength-test-data, digits: 4) s#super("2")],
-      [Standard Deviation], [#stats.std-dev(grip-strength-test-data, digits: 2) s],
+      table.cell(fill: gray.lighten(20%), colspan: 2)[*Statistics (New Test)*],
+      [Mean], [#stats.mean(new-grip-strength-test-data, digits: 1) s],
+      [Median], [#stats.median(new-grip-strength-test-data) s],
+      [Range], [#stats.range(new-grip-strength-test-data, digits: 1) s],
+      [Variance], [#stats.variance(new-grip-strength-test-data, digits: 4) s#super("2")],
+      [Standard Deviation], [#stats.std-dev(new-grip-strength-test-data, digits: 2) s],
     )
   ],
 
@@ -105,14 +111,21 @@ The robot will be able to maintain its grip on the mobile goal for at least 15 s
         x-tick-step: 1,
 
         y-label: "Time (s)",
-        y-min: 7, y-max: 17,
+        y-min: 13, y-max: 18,
 
         {
           plot.add(
-            grip-strength-test-data.enumerate(start: 1),
+            new-grip-strength-test-data.enumerate(start: 1),
             mark: "o",
             style: (stroke: none),
-            label: "Grip Time"
+            label: "New Test Grip Time"
+          )
+
+          plot.add(
+            old-grip-strength-test-data.enumerate(start: 1),
+            mark: "o",
+            style: (stroke: none),
+            label: "Old Test Grip Time"
           )
 
           plot.add(
@@ -131,7 +144,7 @@ The robot will be able to maintain its grip on the mobile goal for at least 15 s
 )
 
 == Conclusion
-The new clamp was successful for all the trials and performed much better than the previous clamp. We are really happy with this result because we now have a much stronger grip on the mobile goal.
+We are happy to see that the re-test had an increased pass rate of 100%. This means that our clamp is consistent when grabbing a mobile goal. Something that we noticed was that the clamp had a stronger grip on the mobile goal compared to the previous test.
 
 = Consistency
 == Background
@@ -166,23 +179,27 @@ The robot will successfully clamp onto the mobile goal 70% of the time.
   ],
 )
 
+#colbreak()
+
 == Results
 #align(center)[
   #show table.cell.where(x: 0): strong
   #show table.cell.where(y: 0): strong
 
   #table(
-    columns: 21,
+    columns: 22,
 
     fill: (x, y) =>
-      if (x == 0) or (y == 0) {gray.lighten(20%)},
+      if x < 2 or y == 0 {gray.lighten(20%)},
 
-    [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
-    [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
+    table.cell(colspan: 2)[Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
+    table.cell(rowspan: 2, align: center + horizon)[Pass/Fail],
+    [New Test],
+    [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
+    [Old Test],
+    [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy]
   )
 ]
-
-#colbreak()
 
 #grid(
   columns: (1fr, 1fr),
@@ -194,8 +211,8 @@ The robot will successfully clamp onto the mobile goal 70% of the time.
       align: center + horizon,
 
       table.cell(fill: gray.lighten(20%), colspan: 2)[*Data Summary*],
-      [Passes], [17 trials],
-      [Failures], [3 trials],
+      [Passes], [20 trials],
+      [Failures], [0 trials],
     )
   ],
 
@@ -203,8 +220,8 @@ The robot will successfully clamp onto the mobile goal 70% of the time.
     radius: 3.3,
     data-type: "trials",
     (
-      ("Passes", 17, green),
-      ("Failures", 3, red),
+      ("Passes", 20, green),
+      ("Failures", 0, red),
     ),
   ),
 )
@@ -219,6 +236,8 @@ During matches, it is often necessary to clamp, unclamp, and reclamp mobile goal
 
 == Hypothesis
 The clamp will be able to clamp down and release 7 times.
+
+#colbreak()
 
 #grid(
   columns: (3fr, 7fr),
@@ -252,15 +271,20 @@ The clamp will be able to clamp down and release 7 times.
   #show table.cell.where(y: 0): strong
 
   #table(
-    columns: 6,
+    columns: 7,
 
     fill: (x, y) =>
-      if (y == 0 and x > 0) or (x == 0 and y > 0) {gray.lighten(20%)},
+      if (y == 0 and x > 1) or (x < 2 and y > 0) {gray.lighten(20%)},
 
-    table.hline(y: 0, end: 1, stroke: none),
+    table.hline(y: 0, end: 2, stroke: none),
     table.vline(x: 0, end: 1, stroke: none),
+    table.vline(x: 1, end: 1, stroke: none),
 
-    [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    [], [], [Trial 1], [Trial 2], [Trial 3], [Trial 4], [Trial 5],
+    table.cell(rowspan: 2, align: center + horizon)[New Test],
+    [Number of clamps (down)], [14], [14], [16], [15], [14],
+    [Number of releases (up)], [13], [13], [15], [14], [13],
+    table.cell(rowspan: 2, align: center + horizon)[Old Test],
     [Number of clamps (down)], [9], [8], [9], [9], [8],
     [Number of releases (up)], [9], [7], [8], [8], [7],
   )
@@ -274,25 +298,35 @@ The clamp will be able to clamp down and release 7 times.
       size: (11, auto),
 
       label-key: 0,
-      value-key: (1, 2),
+      value-key: (1, 2, 3, 4),
       mode: "clustered",
 
       legend: "north-east",
       legend-style: (padding: 0.15, item: (spacing: 0.01)),
-      labels: ([Clamps], [Releases]),
+      labels: ([Clamps (New Test)], [Releases (New Test)], [Clamps (Old Test)], [Releases (Old Test)]),
 
+      x-tick-step: 1,
       y-label: "Trial #",
 
+      bar-style: idx => {
+        (
+          fill: if idx == 0 {blue.lighten(70%)}
+            else if idx == 1 {blue.lighten(20%)}
+            else if idx == 2 {red.lighten(70%)}
+            else if idx == 3 {red.lighten(20%)}
+        )
+      },
+
       (
-        ([1], 9, 9),
-        ([2], 8, 7),
-        ([3], 9, 8),
-        ([4], 9, 8),
-        ([5], 8, 7),
+        ([1], 14, 13, 9, 9),
+        ([2], 14, 13, 8, 7),
+        ([3], 16, 15, 9, 8),
+        ([4], 15, 14, 9, 8),
+        ([5], 14, 13, 8, 7),
       )
     )
   })
 ]
 
 == Conclusion
-The second version of the clamp was more efficient with air usage than the first version. We noticed that using double-acting pistons with rubber bands helped with improving air efficiency.
+This is a major improvement in the PSI usage of the clamp pistons. The changes that we made to the mobile goal clamp allowed it to use air more efficiently. We are very happy with the results.

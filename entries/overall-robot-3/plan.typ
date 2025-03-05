@@ -15,4 +15,4 @@ After identifying the strengths and weaknesses of our new overall robot plan, we
 #image("overall-robot-v3-wbs.excalidraw.svg")
 
 = Gantt Chart
-We will continue to use the High Stakes season gantt chart that we made in our #past-entry-reference(type: "management", title: "High Stakes Season Planning").
+We will continue to use the High Stakes season gantt chart that we made in our #entry-reference(type: "management", title: "High Stakes Season Planning").

@@ -93,7 +93,7 @@ We mounted the previously made parts onto the robot and straightened any bent pa
     - Angles
     - Low Strength Axles
     - 11W Speed Motor
-    - The rest of the materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
     image("build-maintenance/12.29.24-1.png", height: 150pt),

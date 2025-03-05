@@ -17,6 +17,15 @@
 )
 
 = 2024/11/18
+#to-do(
+  date: datetime(year: 2024, month: 11, day: 18),
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
+  (
+    (true, "Build the mobile goal clamp according to today's delegation.", "Everyone"),
+  )
+)
+
 During our last competition, we observed that we needed to update the model of the mobile goal clamp. We moved the pivot point one hole backward and moved the pistons accordingly.
 
 == Delegation
@@ -35,37 +44,49 @@ During our last competition, we observed that we needed to update the model of t
 
 == Build Process
 #grid(
-   stack(
-    spacing: 10pt,
+  stack(
+    spacing: 15pt,
     [
       === Materials
       - 2x Single-Acting Pneumatic Pistons
-      - The rest of the materials can be find in the toolbox
+      - The rest of the materials can be found in the toolbox.
     ],
     [
       === Assembly
-      - Remade the mobile goal clamp joint
+      - Remade the mobile goal clamp joint.
         - We added a screw joint that went through the mobile goal clamp's pivot point.
         - This screw joint helped improve the clamp's structural integrity and reduce friction.
       - #text(red)[Problem:] The piston would sometimes overextend, causing a reduction in torque.
       - #text(green)[Solution:] Mounted the pneumatic pistons in a new location between the drivetrain motors. This allowed the mobile goal clamp to fully leverage the pistons' arm length.
         - Moved the pivot point of the clamp one hole back.
-    ],
+    ]
   ),
   stack(
-    spacing: 10pt,
-    figure(
-      image("build-troubleshoot-2/11-18-24.png", width: 170pt),
-      caption: "The clamp at the end of today's meeting."
-    ),
+    spacing: 15pt,
     [
       === Troubleshooting
       - We turned the clamp on and off and readjusted the pivot each time to maximize torque.
-    ]
+    ],
+    figure(
+      image("build-troubleshoot-2/11-18-24.png", width: 150pt),
+      caption: "The clamp at the end of today's meeting."
+    )
+  ),
+)
+
+#colbreak()
+
+= 2024/11/19
+#to-do(
+  date: datetime(year: 2024, month: 11, day: 19),
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
+  (
+    (true, "Build the mobile goal clamp according to today's delegation.", "Everyone"),
+    (true, "Test the mobile goal clamp.", "Everyone"),
   )
 )
 
-= 2024/11/19
 Continuing from the previous meeting, we modified the back of the clamp. This modification allowed us to brace the side stronger and improve the angle of the mobile goal clamp when it is clamping on the mobile goal. Lastly, we planned to add guides for our mobile goal clamp.
 
 == Delegation
@@ -85,26 +106,25 @@ Continuing from the previous meeting, we modified the back of the clamp. This mo
 == Build Process
 #grid(
   stack(
-    spacing: 10pt,
+    spacing: 15pt,
     [
       === Materials
-      - High strength axle.
+      - High-Strength Axle
       - x2 3x1x1 C-channel
       - The rest of the materials can be found in the toolbox.
     ],
     [
       === Assembly
-      - Two holes from the high strength axle. A hole was drilled at the end of each side
+      - A hole was drilled at both ends of the high-strength axle.
       - #text(red)[Problem:] At the end of the drivetrain, the drive halves were bowing inwards, contributing to the drivetrain's friction.
       - #text(green)[Solution:] Attached the high strength axle to prevent bowing.
         - Additionally, this high strength axle acts as a pivot for the mobile goal. This deepens the angle when the mobile goal is clamped down.
       - Added the 3x1x1 C-channels to the side of the mobile goal clamp.
         - This allowed us to increase the distance that the mobile goal can clamp down.
-
     ],
   ),
   stack(
-    spacing: 10pt,
+    spacing: 15pt,
     [
       === Troubleshooting
       - We tested how consistent the mobile goal clamp was by repeatedly clamping the mobile goal clamp.
@@ -122,7 +142,7 @@ Continuing from the previous meeting, we modified the back of the clamp. This mo
     image("build-troubleshoot-2/11-19-24-system-diagram.excalidraw.svg"),
   ),
   [
-    === Physics of Clamp
+    === Physics of the Clamp
     - Both the clamp and the mobile goal-high strength axle system can be treated as individual levers.
     - For the clamp, the pistons contribute to a load force, while a weight force pushes down onto the mobile goal.
     - In the mobile goal-high strength axle system, the high strength axle is treated as a pivot.

@@ -16,7 +16,7 @@
 #let appendix-entry-counter = counter("appendix-entry-counter")
 
 // Global Notebook Variables
-#let page-number-offset = 0
+#let first-page-number = 150
 
 #let team-members = ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders")
 

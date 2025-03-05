@@ -39,8 +39,8 @@ Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we
   ],
   today: [
     - Assemble the new fulcrum for the clamp: Eric, Rory
-    - Assemble the new clamp arm: Jin, Makhi 
-    - Assemble the pistons: Jin, Makhi 
+    - Assemble the new clamp arm: Jin, Makhi
+    - Assemble the pistons: Jin, Makhi
   ]
 )
 == Build Process
@@ -54,14 +54,14 @@ Today we plan to rebuild the mobile goal clamp and troubleshoot based on what we
     - x2 3x1x1 C-Channel
     - Zipties
     - Rubber stopper
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   grid.cell(colspan: 2)[
     === Assembly
     - Created a new screw joint as a pivot for the new clamp
       - We added crowns to the end of the clamps C-channel walls to reduce the vibration of the screw.
     - Added the x2 3x1x1 C-channels to the bracing of the drivetrain.
-      - This is the fulcrum of the clamp, as well as where the screw joint will be. 
+      - This is the fulcrum of the clamp, as well as where the screw joint will be.
     - Placed a rubber stopper at the outer end of the C-channel arm.
     - Added and modified placements of bearing blocks to be used for extra grip.
   ],

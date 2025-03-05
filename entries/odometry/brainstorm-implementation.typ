@@ -19,6 +19,7 @@
     (true, "Brainstorm hardware configurations for an odometry system.", "Everyone"),
     (true, "Select the best hardware configuration using a decision matrix.", "Everyone"),
     (true, "Plan the implementation of the odometry system.", "Everyone"),
+    (true, "Build the odometry hardware according to today's delegation.", "Everyone"),
   )
 )
 

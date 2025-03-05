@@ -44,7 +44,7 @@ We built the first stage of the intake based on the CAD design. We also began co
       - 2x 12x1x1 C-channel
       - 4x 2” flex wheels
       - 6-tooth sprockets
-      - The rest of the materials can be found in our toolbox.
+      - The rest of the materials can be found in the toolbox.
     ],
     [
       === Assembly
@@ -96,7 +96,7 @@ We worked on the second stage of the intake, focusing on achieving an optimal sp
       - 2x 12-tooth gears
       - Polycarbonate
       - Chain
-      - The rest of the materials can be in our toolbox.
+      - The rest of the materials can be found in the toolbox.
     ],
     [
       === Assembly
@@ -155,7 +155,7 @@ We attached the brain to the inner half cuts and began working on the intake. We
     - Chain
     - 3x low-strength axles
     - 8 2” flex wheels
-    - The rest of the materials can be found in our toolbox.
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
     image("build/intake.11.8-1.png", width: 160pt),

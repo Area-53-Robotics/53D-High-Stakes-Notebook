@@ -138,10 +138,10 @@
 
   print-frontmatter-entries()
 
-  counter(page).update(_ => page-number-offset)
-
   pagebreak()
   pagebreak(to: "odd")
+
+  counter(page).update(_ => first-page-number)
 
   print-entries()
 
@@ -157,5 +157,8 @@
 
   // signature-list(chronological: false)
 
-  // entry-page-list()
+  {
+    show raw.where(block: false): it => it.text
+    // entry-page-list()
+  }
 }

@@ -26,7 +26,7 @@
   )
 )
 
-Now that we have the towers, we are ready to create the mobile goal clamp. The clamp is essential for this season because controlling mobile goals is crucial for scoring. We hope to finish building the clamp as soon as possible to expedite programming and testing. 
+Now that we have the towers, we are ready to create the mobile goal clamp. The clamp is essential for this season because controlling mobile goals is crucial for scoring. We hope to finish building the clamp as soon as possible to expedite programming and testing.
 
 == Delegation
 #delegation(
@@ -38,7 +38,7 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The c
   ],
   today: [
     - Assembling the mounts for the clamp: Rory, Eric
-    - Assemble the pistons for the clamp: Jin, Anders 
+    - Assemble the pistons for the clamp: Jin, Anders
   ]
 )
 
@@ -51,16 +51,16 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The c
   [
     === Materials
     - x2 single-action pistons
-    - x2 3x1x1 C-channel 
+    - x2 3x1x1 C-channel
     - x1 12x2x1 C-channel
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
 )
 
 #grid(
   grid.cell(colspan: 2)[
     === Assembly
-    - With the 2 3x1x1 C-channels, we created a mount at the front of the drivetrain. 
+    - With the 2 3x1x1 C-channels, we created a mount at the front of the drivetrain.
       - This serves as the mounting point for where the clamp will pivot off of.
     - Attached the 12x2x1 C-channel to the mobile goal mount using a screw joint so that it can pivot freely.
     - Added pillow bearings to the upper C-channel.
@@ -81,7 +81,7 @@ Now that we have the towers, we are ready to create the mobile goal clamp. The c
     === Troubleshooting
     - The bracing between the towers interfered with the clamp. We had to change the way we braced the towers from standoffs to C-channel.
       - The standoff brace that we had restricted the movement of the clamp
-    - We shortened the arm of the clamp to 7 holes because it was sticking out 
+    - We shortened the arm of the clamp to 7 holes because it was sticking out
   ],
   figure(
     image("build/2024.08.17-4.jpg", width: 200pt),
@@ -104,7 +104,7 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory*: Eric, Rory 
+    - *Inventory*: Eric, Rory
     - *Manufacturing*: Jin, Anders, Eric, Rory
     - *Oversight & Quality Control*: Jin
     - *Initial Testing*: Eric, Anders, Rory
@@ -124,19 +124,19 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
   ),
   [
     === Materials
-    - x1 Pneumatic air cylinder 
+    - x1 Pneumatic air cylinder
     - x1 Double-action solenoid
     - x1 T-junction
     - Pneumatic tubing
     - Zipties
     - Rubber bands
-    - The remaining materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
   [
     === Assembly
     - We attached the air tank to the side of the robot with zipties and rubber bands.
       - This was the only space we could place the air tank
-      - #text(red)[Problem:] Having the air tank here could offset our center of gravity 
+      - #text(red)[Problem:] Having the air tank here could offset our center of gravity
     - We cut pneumatic tubing and used it to connect the air tank to the double action solenoid.
       - We also connected the solenoid to the T-junction and then connected the T-junction to the top of the pistons.
     - We inflated the air tank and quickly tested the pneumatics.
@@ -153,9 +153,9 @@ Today we worked on adding the pneumatics to the robot. We decided to use single-
     spacing: 10pt,
     [
       === Troubleshooting
-      - The clamp did not hold onto the mobile goal very securely, and it also did not tilt it enough. 
-      - First, we tried adding mesh to increase the grip on the mobile goal, however this did not work. 
-      - Next, we tried changing the position of the rubber grips, which significantly improved the grip onto the mobile goal. 
+      - The clamp did not hold onto the mobile goal very securely, and it also did not tilt it enough.
+      - First, we tried adding mesh to increase the grip on the mobile goal, however this did not work.
+      - Next, we tried changing the position of the rubber grips, which significantly improved the grip onto the mobile goal.
       - We wanted to switch out the single-action pistons with double-action pistons, but we had to postpone that to the next practice.
     ],
     figure(

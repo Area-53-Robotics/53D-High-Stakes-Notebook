@@ -42,7 +42,7 @@ With the CAD completed, we are now ready to build the ladybrown. We are excited 
     - 2x Custom Gussets
     - 2x 5x1x1 C-channel
     - 2x 2x1x1 C-channel
-    - The rest of the materials can be found in our toolbox.
+    - The rest of the materials can be found in the toolbox.
   ],
   figure(
     image("build/24-11-1-1.png", width: 170pt),
