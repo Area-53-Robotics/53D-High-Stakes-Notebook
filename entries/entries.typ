@@ -114,6 +114,18 @@
 // #include "event-observations/speedway-sig.typ"
 // #include "manual-updates/manual-v2.2-update.typ"
 // #include "intake-2/build-maintenance.typ"
+#include "competition/south-hagerstown-rebel-rumble.typ"
 
+#include "ring-rush-mech-1/identify.typ"
+#include "ring-rush-mech-1/understand.typ"
+#include "ring-rush-mech-1/brainstorm.typ"
+#include "ring-rush-mech-1/select.typ"
+#include "ring-rush-mech-1/plan.typ"
+#include "goal-rush-mech-1/identify.typ"
+#include "goal-rush-mech-1/understand.typ"
+#include "goal-rush-mech-1/brainstorm.typ"
+#include "goal-rush-mech-1/select.typ"
+#include "goal-rush-mech-1/plan.typ"
+ #include "odometry/understand.typ"
 // // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
