@@ -30,21 +30,17 @@
   strategy: [
     - 929S will play defensive while we try to rush for the opposite side and stay in a positive corner.
     - We will hopefully get both of the positive corners.
-
   ],
   auton_notes: [
     - We scored two rings.
     - 929S scored three rings.
     - 7135R scored three rings but did not score on the alliance wall stake.
-
   ],
   match_notes: [
     - We intook two rings before our intake chain snapped.
     - We fought over the negative corner with 7135R.
     - We tried to go for wall stakes but failed. Our ring kept slipping off our ladybrown.
     - We played defensively to block wall stakes.
-
-
   ],
   subsystems: (
     overperformed: none,
@@ -63,7 +59,6 @@
   awp: false,
   strategy: [
     - We will play offensively while 5588R sits in a positive corner. While they have the positive corner, we will pass mobile goals to them.
-
   ],
   auton_notes: [
     - The wrong auton was selected, so we did not score anything
@@ -74,7 +69,6 @@
     - The opponents left a free mobile goal in a positive corner, allowing us to take it out of the corner.
     - We scored a full mobile goal into a positive corner.
     - We tried to go for wall stakes at the end, but failed
-
   ],
   subsystems: (
     overperformed: none,
@@ -124,11 +118,9 @@
   awp: false,
   strategy: [
     - Score as many rings as possible because the opposing alliance cannot score any rings onto the mobile goals.
-
   ],
   auton_notes: [
     - 9080H crossed the auton line, causing us to win the auton bonus even though they messed up our auton.
-
   ],
   match_notes: [
     - We accidentally scored a blue ring, and filled the rest of the mobile goal with red rings.
@@ -136,7 +128,6 @@
     - We got entangled with another mobile goal, causing double possession. However, since we unclamped our mobile goal, we did not get disqualified.
     - 9080H placed one of our mobile goals into a negative corner.
     - Our top rings on our other mobile goals helped us win the match.
-
   ],
   subsystems: (
     overperformed: none,
@@ -155,17 +146,14 @@
   awp: false,
   strategy: [
     - Play defensively. Since we were most likely going to lose auton, we will play for wall stakes instead to make up the point difference.
-
   ],
   auton_notes: [
     - 929R pushed our robot, messing up our auton.
-
   ],
   match_notes: [
     - The intake gearing was changed before this match so that the intake had more speed but much less torque. This made scoring rings almost impossible because the rings could not travel up our intake ramp.
     - We scored a 2 ring mobile goal in a positive corner.
     - We grabbed an opponent's 2 ring mobile goal and pushed it into a negative corner.
-
   ],
   subsystems: (
     overperformed: none,
@@ -185,12 +173,10 @@
   strategy: [
     - Since the opponents cannot reliably score rings onto the mobile goals, we will score as many rings as possible.
     - It is important that we do not let them push our mobile goals into the negative corners.
-
   ],
   auton_notes: [
     - Our auton was misaligned.
     - 5588B had a solo AWP auton that scored three top rings and touched the ladder.
-
   ],
   match_notes: [
     - Our drivetrain was sticking a little at the start of the match.
@@ -229,9 +215,6 @@
     - We tried to go for wall stakes, but 960Y kept blocking us.
     - In the last 15 seconds, we grabbed a 4-ring blue mobile goal and tried to place it in a negative corner, but it did not count because the mobile goal's base did not break the plane of the corner.
     - One of our mobile goals did not count as in a positive corner because it was on top of a ring.
-
-
-
   ],
  subsystems: (
     overperformed: none,
@@ -259,7 +242,6 @@
     - 53C scored a full mobile goal in a positive corner, but it got knocked over.
     - We tried to push one of the opponents' mobile goals into a negative corner, but could not.
     - 53C scored while we could not do anything.
-
   ],
  subsystems: (
     overperformed: none,
@@ -277,7 +259,6 @@
   #subsystem-analysis(
     reflection: [
       Our drivetrain had friction issues on the left side. This caused us to have acceleration issues. Additionally, some of our motors were loose, causing the gears to not be spinning with the motors.
-
     ],
     radius: 3,
     overperformed: 0,
@@ -338,14 +319,13 @@
 #h(1em) I hope that we will be able to improve our ladybrown mechanism, since it is a great idea and with some more tuning, it will help us improve our scoring greatly. I also think our autons need more tuning and time before we use them again.
 
 == Makhi
-#h(1em)  We need more focus on our autonomous. I think we should put an autonomous selector on our robot to prevent us from picking the wrong auton. Additionally, I need to troubleshoot the friction fit of our ladybrown because the ring kept slipping off.
+#h(1em) We need more focus on our autonomous. I think we should put an autonomous selector on our robot to prevent us from picking the wrong auton. Additionally, I need to troubleshoot the friction fit of our ladybrown because the ring kept slipping off.
 
 == Eric
 #h(1em) Our squad performed well overall. Although we lost a lot of our qualifying matches, we identified key areas for improvement in our robot. Despite the setbacks, we still advanced to the elimination stage. One crucial takeaway for the future is the need to better track both our robot and our teammates. There were multiple instances where we were unsure of the robot's location or the whereabouts of key team members, including the drive team.
 
 == Rory
 #h(1em) I believe this tournament went significantly better than some of our previous ones. However, we faced a lot of stress between matches due to various issues, such as our autonomous not working and our robot moving on its own. Additionally, some matches had very little time between them, which made it difficult to troubleshoot problems or even switch our license plates before getting back on the field.
-
 
 == Anders
 #h(1em) Our intake kept jamming, causing us to miss out on a lot of easy wins. Going further, I want to troubleshoot the problem that is causing our chain to snap. If we can get our intake to be more consistent, then we would have no problem maximizing our score for future matches.

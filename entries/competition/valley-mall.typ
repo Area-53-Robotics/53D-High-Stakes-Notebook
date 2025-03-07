@@ -30,16 +30,12 @@
   strategy: [
     - Since one of the opposing robots cannot score rings, we need to prevent them from blocking the positive corners.
     - Additionally, we want to score one ring on each of the wall stakes since the red alliance cannot.
-
-
   ],
   auton_notes: [
     - We scored a ring on the alliance wall stake and touched the ladder.
     - However, we missed a mobile goal.
     - 934Z scored two top rings.
     - The red alliance scored 3 rings on a mobile goal.
-
-
   ],
   match_notes: [
     - Our intake chain snapped.
@@ -47,8 +43,6 @@
     - To prevent the enemy alliance from taking control of the positive corners, we stuck ourselves into a positive corner.
     - 934Z scored a mobile goal with five rings into a positive corner.
     - 1723A tried to place a full mobile goal into a positive corner. We later took this mobile goal and placed it in a negative corner.
-
-
   ],
   subsystems: (
     overperformed: none,
@@ -72,8 +66,6 @@
     - We scored one ring.
     - 9080C crossed the auton line, forfeiting the auton bonus to the blue alliance.
     - The enemy alliance did not have any autons.
-
-
   ],
   match_notes: [
     - Our alliance obtained a positive corner in the first 15 seconds.
@@ -81,8 +73,6 @@
     - We tried to place a blue mobile goal into a negative corner.
     - It got tipped over, so did not count as negative.
     - We scored one ring on the wall stakes.
-
-
   ],
   subsystems: (
     overperformed: none,
@@ -102,8 +92,6 @@
   strategy: [
     - 9845B will try to score one ring for the AWP.
     - During driver control, we will take control of the wall stakes.
-
-
   ],
   auton_notes: [
     - We scored one ring.
@@ -117,8 +105,6 @@
     - The opposing alliance gained control of both positive corners.
     - We scored 1 ring on the wall stake.
     - Our intake chains broke, preventing us from scoring on the wall stakes in the last 10 seconds.
-
-
   ],
   subsystems: (
     overperformed: none,
@@ -137,14 +123,11 @@
   awp: false,
   strategy: [
     - 76752A cannot score well. Since they're much heavier than the enemy alliance, they will stay in a positive corner and wait for us to deliver goals to them.
-
   ],
   auton_notes: [
     - We missed the alliance wall stake.
     - 76752A did not have an auton.
     - 53F scored 2 rings.
-
-
   ],
   match_notes: [
     - 53F scored a mobile goal with 5 rings into a positive corner.
@@ -153,8 +136,6 @@
     - Our intake gear slipped, preventing us from using the intake for the rest of the match.
     - We played defense.
     - 76752A scored a single ring into the mobile goal.
-
-
   ],
   subsystems: (
     overperformed: none,
@@ -174,12 +155,9 @@
   strategy: [
     - We will play for wall stakes.
     - 4580A will play defense and block a positive corner.
-
-
   ],
   auton_notes: [
     - We and 929T each scored one ring on a mobile goal.
-
   ],
   match_notes: [
     - We scored three rings onto the mobile goal in the first 15 seconds.
@@ -209,8 +187,6 @@
   auton_notes: [
     - We scored a ring on the alliance wall stake.
     - We scored another ring on a mobile goal.
-
-
   ],
   match_notes: [
     - We scored a full mobile goal and placed it into a positive corner.
@@ -218,8 +194,6 @@
     - 593A's battery fell out, disconnecting them from the match.
     - We placed the opposing alliance's full mobile goal into a negative corner.
     - We scored a ring onto the wall stake.
-
-
   ],
    subsystems: (
     overperformed: none,
@@ -239,8 +213,6 @@
   strategy: [
     - We will obtain a full mobile goal and then score wall stakes.
     - 53F will play aggressively and score as many mobile goals as possible.
-
-
   ],
   auton_notes: [
     - Us and 53F both missed the mobile goals.
@@ -254,8 +226,6 @@
     - We placed their mobile goal into a negative corner.
     - 76752A almost scored our mobile goal in a negative corner but 53F blocked it.
     - We kept missing wall stakes.
-
-
   ],
  subsystems: (
     overperformed: none,
@@ -357,7 +327,9 @@
     disabled: 0
   )
 ]
+
 #colbreak()
+
 = Individual Reflections
 == Jin
 #h(1em) We communicated a lot more at this past competition, which has helped with our team cooperation and performance. Earlier, we had problems with being unprepared for matches, like having the wrong license plates on. I am happy to say that we have been much more prepared at these past matches than before.
@@ -366,7 +338,7 @@
 #h(1em) I hope that we will be able to improve our ladybrown mechanism, since it is a great idea and with some more tuning, it will help us improve our scoring greatly.
 
 == Makhi
-#h(1em)  I have gotten much more practice with driving the bot since the past competition, which has helped our matches. I am feeling more comfortable with the bot's controls, and our strategy has definitely improved as well.
+#h(1em) I have gotten much more practice with driving the bot since the past competition, which has helped our matches. I am feeling more comfortable with the bot's controls, and our strategy has definitely improved as well.
 
 == Eric
 #h(1em) Our intake needs some major fixes to be match-ready in the future. In its current state, it has caused us to lose many matches, which needs to be addressed. Hopefully we will find a new position for the chain, so that it doesn't snap so much.

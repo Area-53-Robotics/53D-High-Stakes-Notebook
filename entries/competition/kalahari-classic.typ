@@ -337,7 +337,7 @@
 
 = Individual Reflections
 == Ajibola
-#h(1em)  I think this competition went a lot better than our other ones, and we did a much better job about communicating and being prepared before matches. That said, we did need to switch our autons at the last minute sometimes, which makes me think that an auton switcher on the controller would be useful.
+#h(1em) I think this competition went a lot better than our other ones, and we did a much better job about communicating and being prepared before matches. That said, we did need to switch our autons at the last minute sometimes, which makes me think that an auton switcher on the controller would be useful.
 
 == Jin
 #h(1em) Overall, I think we did really well in this tournament. Something that I noticed was that we need a corner sweeper. We had difficulties clearing a corner which caused us to struggle controlling the corners. I really want to work on a corner sweeper or a mobile goal rush mechanism before states.
@@ -346,10 +346,10 @@
 #h(1em) Our autons did okay at this competition, but I think we need more time to perfect them before states. I want to make sure they are very reliable, and I think that different autons for qualification matches and elimination matches would be good. Additionally, I would like to incorporate any future ring/goal rush mechanisms into our autons, so that we can score as many points as possible.
 
 == Makhi
-#h(1em)  As the driver, I can feel that our drive train has a lot of issues. Sometimes, the gears in our drivetrain would disengage with the motor, creating a lot of friction issues. I really want to fix the spacing in our drivetrain. Additionally, I need to troubleshoot the ladybrown. Sometimes, the rings on our ladybrown would slip off when we try to score on the wall stake.
+#h(1em) As the driver, I can feel that our drive train has a lot of issues. Sometimes, the gears in our drivetrain would disengage with the motor, creating a lot of friction issues. I really want to fix the spacing in our drivetrain. Additionally, I need to troubleshoot the ladybrown. Sometimes, the rings on our ladybrown would slip off when we try to score on the wall stake.
 
 == Eric
-#h(1em)  I think we can benefit with better communication with each other and with our alliance. In our first match, we forgot to replace the battery on our robot. This causes us to disconnect in the middle of the match. Additionally, we need to fix our intake because it keeps jamming.
+#h(1em) I think we can benefit with better communication with each other and with our alliance. In our first match, we forgot to replace the battery on our robot. This causes us to disconnect in the middle of the match. Additionally, we need to fix our intake because it keeps jamming.
 
 == Rory
 #h(1em) Our intake chains kept snapping off. We need to look at the spacing of our intake, as well as see if the chain link is too tight. I also think we can benefit from fixing the drivetrain. Our drivetrain motors keep coming loose.

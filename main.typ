@@ -8,7 +8,7 @@
 #show: notebook.with(
   team: "53D",
   organization: "Area 53",
-  count: (current: 2, total: 4),
+  count: (current: 3, total: 4),
   cover: circle(align(center + horizon)[#image("/assets/logos/logo.svg", width: 110%)], fill: black),
   year: "2024 - 2025",
   season: "High Stakes",

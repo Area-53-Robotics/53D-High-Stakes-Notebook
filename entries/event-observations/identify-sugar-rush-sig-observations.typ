@@ -8,8 +8,19 @@
   designed: "Anders",
   witnessed: "Jin",
 )
+
 = Objective
-  - Observe strategy and mechanisms that could be helpful for our robot.
+- .
+
+#to-do(
+  date: datetime(year: 2025, month: 1, day: 5),
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
+  (
+    (true, "Observe mechanisms used in the Sugar Rush Signature event.", "Everyone"),
+    (true, "Analyze strategies used in the Sugar Rush Signature event.", "Everyone"),
+  )
+)
 
 = Event Information
 - Tournament name: Sugar Rush Signature Event
@@ -17,7 +28,7 @@
   // - 325 University Drive
   // -  Hershey, Pennsylvania 17033
   // - United States
-- Date(s): 2025/1/3 - 2025/1/4
+- Date(s): 2025/01/03 - 2025/01/04
 - Capacity: 120 teams
 
 = Overview
@@ -31,7 +42,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
     repeat: false,
     table.cell(colspan: 2, align: center, fill: gray.lighten(20%))[
       *5956B Bangarang \
-      Won finals 2-1*
+      Won Finals 2-1*
     ],
   ),
 
@@ -42,7 +53,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
     )
   ],
   table.cell[
-    - *Auton*:  First, they tried to score a preloaded ring onto the blue stake, but the ring did not come off their robot. Next, they went for a mobile goal, clamped it, and scored one ring on it. Then, they went for the rings in the corner, but did not intake any. Finally, they went to the ladder in the middle of the field and touched it.
+    - *Auton*: First, they tried to score a preloaded ring onto the blue stake, but the ring did not come off their robot. Next, they went for a mobile goal, clamped it, and scored one ring on it. Then, they went for the rings in the corner, but did not intake any. Finally, they went to the ladder in the middle of the field and touched it.
   ],
   table.cell[
     #figure(
@@ -52,7 +63,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
   ],
   table.cell[
     - *Drivetrain*: They use 6 motors and 6 2.75” wheels with a 450 RPM drivetrain. They also use all omnis for better drifting.
-    - *Tracking wheels*: They have one tracking wheel on the bottom of their drivetrain.
+    - *Tracking Wheels*: They have one tracking wheel on the bottom of their drivetrain.
   ],
   table.cell[
     #figure(
@@ -69,15 +80,17 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
   ],
   table.cell[
     #figure(
-        image("identify-sugar-rush-sig/bangarang-observations-5.png", width: 165pt),
-        caption: "The wall stake mechanism from their Haunted Signature Event Robot Reveal"
+      image("identify-sugar-rush-sig/bangarang-observations-5.png", width: 165pt),
+      caption: "The wall stake mechanism from their Haunted Signature Event Robot Reveal"
     )
   ],
   table.cell[
     - *Wall Stake Mechanism*: They have a 66 RPM wall stake mechanism that takes rings directly from the intake and friction fits it in between the two arms. It then easily slides off onto the wall stakes.
   ]
 )
+
 #colbreak()
+
 #table(
   columns: (1fr,1fr),
 
@@ -88,7 +101,6 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
       Finals*
     ],
   ),
-
   table.cell[
     #figure(
       image("identify-sugar-rush-sig/monte-observations-1.png", width: 150pt),

@@ -17,7 +17,7 @@
 )
 
 = 2024/12/22
-Before winter break, we used the CAD technical drawings in our [intake plan entry reference] to determine the parts Eric would need to build the new intake changes. He made a loose-fit model of the intake to help with planning and noted problems that needed to be fixed in the future.
+Before winter break, we used the CAD technical drawings in our #entry-reference(title: "Intake v2", type: "plan", date: datetime(year: 2024, month: 10, day: 26)) to determine the parts Eric would need to build the new intake changes. He made a loose-fit model of the intake to help with planning and noted problems that needed to be fixed in the future.
 
 == Delegation
 #delegation(
@@ -28,7 +28,7 @@ Before winter break, we used the CAD technical drawings in our [intake plan entr
     - *Initial Testing*: Eric
   ],
   today: [
-    - Plan out the robot: the whole team
+    - Plan out the robot: Everyone
     - Prepare the intake frame: Eric
     - Troubleshoot and fix any loose items on the robot: Eric
   ]
@@ -41,7 +41,7 @@ Before winter break, we used the CAD technical drawings in our [intake plan entr
     - Angles
     - Axles
     - Motor
-    - The rest of the materials can be found in the toolbox
+    - The rest of the materials can be found in the toolbox.
   ],
 
   figure(
@@ -166,7 +166,7 @@ Since the intake motor and gear were cantilevered, the motor was loosening as we
     ],
     [
       === Troubleshooting
-      -  Ran the intake motors to check for chain skipping and intake jamming.
+      - Ran the intake motors to check for chain skipping and intake jamming.
     ],
   ),
   figure(
