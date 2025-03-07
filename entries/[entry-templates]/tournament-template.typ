@@ -24,7 +24,7 @@
   match: "Q-",
   red_alliance: (teams: ("#", "#"), score: 0),
   blue_alliance: (teams: ("#", "#"), score: 0),
-  won: false,
+  outcome: "Loss",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -196,7 +196,7 @@
         )
       ]
     ],
-    
+
     cetz.canvas({
       import cetz.draw: *
       import cetz.chart
@@ -257,7 +257,7 @@
         )
       ]
     ],
-    
+
     cetz.canvas({
       import cetz.draw: *
       import cetz.chart
@@ -318,7 +318,7 @@
         )
       ]
     ],
-    
+
     cetz.canvas({
       import cetz.draw: *
       import cetz.chart
@@ -365,11 +365,11 @@
 
 == Ajibola
 
-== Jin 
+== Jin
 
 == Ishika
 
-== Makhi 
+== Makhi
 
 == Rory
 

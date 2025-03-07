@@ -27,10 +27,10 @@ We agree that the mobile goal rush mechanism should be a fairly simple mechanism
   image("understand/clamp-levers.excalidraw.svg", width: 170pt),
   [
     == What is Leverage?
-    Leverage is the mechanical advantage gained by using a lever to amplify force. A lever is a rigid bar that rotates around a fixed point called a fulcrum. By applying force at one point on the lever, one can move a load at another point with either increased force or increased distance, depending on the lever’s setup.
+    Leverage is the mechanical advantage gained by using a lever to amplify force. A lever is a rigid bar that rotates around a fixed point called a fulcrum. By applying force at one point on the lever, one can move a load at another point with either increased force or increased distance, depending on the lever's setup.
 
     == How does it relate to our robot?
-    When the piston extends, it applies a force near the pivot, causing the arm to drop down. Since force is being applied closer to the pivot rather than at the end, the arm’s movement is quick and forceful. The longer the arm, the greater the sweeping reach and potential force exerted on the rings, making it more effective at disrupting stacks.
+    When the piston extends, it applies a force near the pivot, causing the arm to drop down. Since force is being applied closer to the pivot rather than at the end, the arm's movement is quick and forceful. The longer the arm, the greater the sweeping reach and potential force exerted on the rings, making it more effective at disrupting stacks.
   ],
 )
 
@@ -50,14 +50,14 @@ We agree that the mobile goal rush mechanism should be a fairly simple mechanism
     #admonition(type: "equation")[
       If:
       - #sym.tau is the exerted torque (rotational force)
-      - $r$ is the distance from the fulcrum 
+      - $r$ is the distance from the fulcrum
       - $F$ is the force that is applied
 
       #text(size: 15pt)[
         $ #sym.tau = r F $
       ]
     ]
-     
+
     == How does torque relate to the mechanism?
     The arms of a clamp act like levers, and the pivot point of these arms is the fulcrum. When a motor or actuator applies force to the arms, torque is generated. This torque causes the arms to rotate around the fulcrum and close around the object.
     The greater the torque, the more force the clamp can apply to grip the object.

@@ -24,13 +24,13 @@ Since tracking wheels is a crucial component for our auton, it is important for 
     = Integral
     #v(15pt)
   ],
-  image("understand/understand-intergral.excalidraw.svg", width: 200pt),
+  image("understand/integral.excalidraw.svg", width: 200pt),
   [
-    == What is integral ?
+    == What is an integral?
     An integral is a mathematical concept that represents the area under a curve or the accumulation of quantities. It is defined as the limit of a sum of areas of rectangles under a curve as the width of the rectangles approaches zero, and it can be classified into definite and indefinite integrals.
 
     == How does it relate to odometry?
-    Odometry calculates the robot’s position as an accumulation of the rotations the tracking wheel(s) has made since the program’s start. Additionally, the PID movement method uses an integral component to increase its output as the PID accumulates error.
+    Odometry calculates the robot's position as an accumulation of the rotations the tracking wheel(s) has made since the program's start. Additionally, the PID movement method uses an integral component to increase its output as the PID accumulates error.
   ],
 )
 
@@ -51,7 +51,7 @@ Since tracking wheels is a crucial component for our auton, it is important for 
     == How does it relate to odometry?
     The PID movement method uses a derivative component to decrease its output if the rate of change of the error is decreasing too rapidly.
   ],
-    image("understand/understand-derivative.excalidraw.svg", fit: "contain", height: 150pt),
+    image("understand/derivative.excalidraw.svg", fit: "contain", height: 150pt),
 )
 #colbreak()
 #grid(
@@ -63,12 +63,12 @@ Since tracking wheels is a crucial component for our auton, it is important for 
     = Angular Rotation
     #v(15pt)
   ],
-  image("understand/angular-rotation.excalidraw.svg", fit: "contain", height: 125pt), 
+  image("understand/angular-rotation.excalidraw.svg", fit: "contain", height: 125pt),
   [
     == What is angular rotation?
-    TThe motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and the final point is termed ‘motion’. The angle difference between the initial and final positions of a point that has rotated along a specified axis is angular displacement.
+    TThe motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and the final point is termed 'motion'. The angle difference between the initial and final positions of a point that has rotated along a specified axis is angular displacement.
 
     == How does it relate to odeometry?
-    Odometry calculates the robot’s position as an accumulation of the angular rotations the tracking wheel(s) has made since the program’s start.
+    Odometry calculates the robot's position as an accumulation of the angular rotations the tracking wheel(s) has made since the program's start.
   ],
 )

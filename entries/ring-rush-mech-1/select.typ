@@ -16,7 +16,7 @@ The ring rush mechanism will be primarily used for the auton. Since the theoreti
   - Efficiency - How efficient it is at stealing rings. A higher score means it is more efficient.
   - Structure - How strong it is when it is deployed. A higher score means it can handle more stress.
   - Air Usage - How efficiently it can use air. A higher score means it is more efficient at using air.
-  - Versatility - The mechanism’s ability to serve multiple functions. A higher score means that it can be used for more functions.
+  - Versatility - The mechanism's ability to serve multiple functions. A higher score means that it can be used for more functions.
   - Weight - How light it is. A higher score means it is more light.
 ]
 

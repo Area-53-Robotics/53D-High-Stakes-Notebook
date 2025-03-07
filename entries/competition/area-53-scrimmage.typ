@@ -16,14 +16,14 @@
 ]
 
 = Competition Goals
-- Verify that our subsystems are at a competitive level. 
+- Verify that our subsystems are at a competitive level.
 
 = Matches
 #tournament-match(
   match: "Q1",
   red_alliance: (teams: ("53D", "23382H"), score: 33),
   blue_alliance: (teams: ("20096G", "53B"), score: 20),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -50,7 +50,7 @@
   match: "Q3",
   red_alliance: (teams: ("53B", "53C"), score: 12),
   blue_alliance: (teams: ("53D", "53E"), score: 3),
-  won: false,
+  outcome: "Loss",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -62,7 +62,7 @@
   ],
   match_notes: [
     - 53B and 53E were unable to score rings onto mobile goals.
-    - Our intake still did not have flaps so we could not score rings 
+    - Our intake still did not have flaps so we could not score rings
     - We tried to pin 53C as much as we could from scoring in the positive corners
     - Both positive corners were occupied by the red alliance, allowing them to win
   ],
@@ -78,7 +78,7 @@
   match: "Q6",
   red_alliance: (teams: ("53D", "53A"), score: 28),
   blue_alliance: (teams: ("53E", "23382H"), score: 23),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -106,7 +106,7 @@
   match: "Q7",
   red_alliance: (teams: ("23382H", "53C"), score: 33),
   blue_alliance: (teams: ("53D", "53F"), score: 0),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -134,7 +134,7 @@
   match: "Q9",
   red_alliance: (teams: ("53D", "53E"), score: 0),
   blue_alliance: (teams: ("20096G", "53F"), score: 34),
-  won: false,
+  outcome: "Loss",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -162,7 +162,7 @@
   match: "Q11",
   red_alliance: (teams: ("53B", "53F"), score: 3),
   blue_alliance: (teams: ("53A", "53D"), score: 35),
-  won: true,
+  outcome: "Win",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -192,7 +192,7 @@
   match: "Q13",
   red_alliance: (teams: ("53C", "53A"), score: 20),
   blue_alliance: (teams: ("53D", "20096G"), score: 24),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: true,
   strategy: [
@@ -221,7 +221,7 @@
   match: "Q16",
   red_alliance: (teams: ("53D", "20096G"), score: 27),
   blue_alliance: (teams: ("53A", "53C"), score: 11),
-  won: true,
+  outcome: "Win",
   auton: "Red",
   awp: false,
   strategy: [
@@ -249,7 +249,7 @@
   match: "Semifinals",
   red_alliance: (teams: ("53D", "53C"), score: 29),
   blue_alliance: (teams: ("53A", "53F"), score: 9),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -277,7 +277,7 @@
   match: "Finals",
   red_alliance: (teams: ("20096G", "23382H"), score: 28),
   blue_alliance: (teams: ("53D", "53C"), score: 18),
-  won: false,
+  outcome: "Loss",
   auton: "Red",
   awp: false,
   strategy: [
@@ -349,13 +349,13 @@
 
 = Individual Reflections
 
-== Jin 
-#h(1em) The challenges with the intake and clamp serve as reminders that even small design elements can significantly impact performance. Going further, I want to place a stronger emphasis on planning and CADing. 
+== Jin
+#h(1em) The challenges with the intake and clamp serve as reminders that even small design elements can significantly impact performance. Going further, I want to place a stronger emphasis on planning and CADing.
 
 == Ishika
 #h(1em) Our standing in the Scrimmage reflects how much our team has grown over the past year. The intake performed well, quickly gathering and scoring rings, although it occasionally got stuck on a wire, highlighting the need for better wire management. The clamp needs tuning for more consistent performance, as it impacted our autonomous mode, which functioned but struggled to clamp the goal effectively. Additionally, our autonomous routine could improve, as the quick version used wasn't fully troubleshooted. I believe our driver showed great skill, but as a team, we need to discuss strategy to ensure backup drivers and the rest of the drive team understand matchplay better. Overall, the scrimmage was a valuable learning experience that helped identify our weak spots.
 
-== Makhi 
+== Makhi
 #h(1em) Overall I think we did quite well, a few things we need to improve on include communication and handling stress and time. We also need to have any changes completed before competitions in the future to allow as much time as possible to repair and strategize during the event itself. Getting driver practice and seeing what other teams are doing was helpful in the game. Getting 3rd in team rankings and second in alliance rankings shows that we are doing much better this year than at this time last year.
 
 == Rory

@@ -25,8 +25,8 @@ From our previous observations in our #entry-reference(title: "Speedway Signatur
 
 #figure(
   image("identify-ring-rush.excalidraw.svg", width: 50%),
-  caption: "In the above image, (1) the robot activates the ring rush mechanism during autonomous and rush for the ring stack. The ring stack is disrupted. (2) The ring rush mechanism steals two rings from the ring stack. 
-  The ring rush mechanism allows us to upset the enemy alliance’s auton, as well as collect rings from the center line without crossing. "
+  caption: "In the above image, (1) the robot activates the ring rush mechanism during autonomous and rush for the ring stack. The ring stack is disrupted. (2) The ring rush mechanism steals two rings from the ring stack.
+  The ring rush mechanism allows us to upset the enemy alliance's auton, as well as collect rings from the center line without crossing. "
 )
 #colbreak()
 #table(
@@ -36,7 +36,7 @@ From our previous observations in our #entry-reference(title: "Speedway Signatur
 
   table.header(table.cell(fill: gray, align: center)[*Aspects of the Ring Rush Mechanism*]),
 
-  [*Reach* - The ring rush mechanism extends outwards in front of the robot to reach the ring stack before the enemy alliance. If the ring rush mechanism can disrupt the ring stack faster than the opposing alliance can get to it, then they may pick up a wrong color ring. 
+  [*Reach* - The ring rush mechanism extends outwards in front of the robot to reach the ring stack before the enemy alliance. If the ring rush mechanism can disrupt the ring stack faster than the opposing alliance can get to it, then they may pick up a wrong color ring.
   ],
   [*Control* - When the ring rush mechanism disrupts the ring stack, it also pulls rings toward our side of the field. The ability to manipulate rings would allow us to score more rings during auton.
   ],
@@ -49,7 +49,7 @@ From our previous observations in our #entry-reference(title: "Speedway Signatur
     - The ring rush mechanism should be able to grab two rings.
     - The ring rush mechanism should be able to disrupt the ring stack during autonomous.
     - The ring rush should stay deactivated during driver control
-    - If possible, the ring rush mechanism can unflip mobile goals. 
+    - If possible, the ring rush mechanism can unflip mobile goals.
 
   ],
   constraints: [
