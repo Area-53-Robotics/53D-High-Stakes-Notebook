@@ -41,7 +41,6 @@
     - The clamp was causing issues, so we focused on wall stakes.
     - We had difficulty scoring wall stakes because our ladybrown motors were overheating.
     - The battery ran out and we got disconnected.
-
   ],
   subsystems: (
     overperformed: none,
@@ -59,14 +58,12 @@
   auton: "Red",
   awp: true,
   strategy: [
-    - We are very confident that we can win this match, so we will play more offensively.
+    - We are very confident that we can win this match, so we will play offensively.
     - We will score a mobile goal in a positive corner as quickly as possible, then score on the wall stakes.
-
   ],
   auton_notes: [
     - Our auton worked perfectly, scoring two top rings.
     - Us and 6008A scored 7 total points in auton.
-
   ],
   match_notes: [
     - We got a mostly full mobile goal and worked with 6008A to control the positive corners.
@@ -74,7 +71,6 @@
     - We placed our mobile goals in the positive corners.
     - 99904C tried to go for wall stakes with moderate success. However, we later played defensively against them.
     - 6008A made a negative play with the opponents' mobile goal at the very end, descoring 3 rings.
-
   ],
   subsystems: (
     overperformed: none,
@@ -94,12 +90,10 @@
   strategy: [
     - Protect a positive corner while 242X fills a mobile goal.
     - When 242X is in the positive corner, try to contest for the other positive corner.
-
   ],
   auton_notes: [
     - The opposing alliance's auton rushed the ring stack and made us score a wrong color ring.
     - We scored a ring on the alliance wall stake.
-
   ],
   match_notes: [
     - Our intake jammed.
@@ -134,7 +128,6 @@
     - We protected the positive corners while 45434R filled up their mobile goal.
     - We fought over a positive corner and managed to place our mobile goal into it.
     - 1233A got a wall stake.
-
   ],
   subsystems: (
     overperformed: none,
@@ -154,13 +147,10 @@
   strategy: [
     - We want to play very offensively in this match and try to control both of the positive corners.
     - Then, in the last 15 seconds, we will try to score on the wall stake.
-
   ],
   auton_notes: [
     - Our auton scored one ring on a wall stake and one on a mobile goal, but crossed the auton line so we lost the auton bonus.
     - We would have won the AWP if we had not crossed the auton line.
-
-
   ],
   match_notes: [
     - We filled up a mobile goal.
@@ -171,7 +161,6 @@
     - We managed to descore their full mobile goal from a positive angle.
     - They tipped over our mobile goal which was in a positive corner.
     - We tried to put the mobile goal in a negative corner but it did not count.
-
   ],
   subsystems: (
     overperformed: none,
@@ -191,12 +180,10 @@
   strategy: [
     - Have the drive team provide communications regarding open positive corners and undefended mobile goals.
     - We will play aggressively and score as many rings as possible on the wall stakes
-
   ],
   auton_notes: [
     - 2011K had a ring rush mechanism and disrupted the ring stack.
     - Our auton scored a wrong colored ring.
-
   ],
   match_notes: [
     - We controlled a positive corner early in the match.
@@ -222,13 +209,11 @@
   strategy: [
     - 9257Z will play aggressively by trying to control a positive corner as quickly as possible.
     - We will play defensively and prevent the blue alliance from scoring onto the wall stake.
-
   ],
   auton_notes: [
     - 60883B had a ring rush mechanism and disrupted the ring stack.
     - 60883B scored three rings onto a mobile goal.
     - We scored the wrong color ring, giving the opposing alliance the auton bonus.
-
   ],
   match_notes: [
     - We got 4 rings onto a mobile goal and placed it in a positive corner.
@@ -265,7 +250,6 @@
     - 91142B filled up a mobile goal while we defended a positive corner.
     - Both alliances placed a full mobile goal into a positive corner.
     - Both alliances made a negative play for both full mobile goals that were in the positive corners. Their mobile goal was scored in the negative, but ours was not touching the ground, meaning it was not negative.
-
   ],
  subsystems: (
     overperformed: none,

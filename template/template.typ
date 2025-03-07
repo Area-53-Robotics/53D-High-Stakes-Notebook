@@ -155,8 +155,8 @@
 
   print-appendix-entries()
 
-  // signature-list(chronological: true)
-  // signature-list(chronological: false)
+signature-list(chronological: true)
+signature-list(chronological: false)
 
   {
     show raw.where(block: false): it => it.text
