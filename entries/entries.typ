@@ -149,8 +149,13 @@
 // #include "goal-rush-mech-1/select.typ"
 // #include "goal-rush-mech-1/plan.typ"
 // ! build ring rush
+#include "ring-rush-mech-1/build.typ"
+#include "ring-rush-mech-1/build-troubleshooting.typ"
 // ! build goal rush
+#include "goal-rush-mech-1/build.typ"
+#include "goal-rush-mech-1/build-troubleshooting.typ"
 // ! OV robot troubleshooting
+#include "overall-robot-3/build-troubleshoot2.typ"
 // ! program ring rush
 // ! test ring rush
 // ! program goal rush
