@@ -121,6 +121,7 @@
 #include "competition/valley-mall.typ"
 #include "competition/kalahari-classic.typ"
 #include "competition/cardinal-classic.typ"
+#include "manual-updates/manual-v3.0-update.typ"
 
 
 #include "ring-rush-mech-1/identify.typ"
@@ -133,6 +134,7 @@
 #include "goal-rush-mech-1/brainstorm.typ"
 #include "goal-rush-mech-1/select.typ"
 #include "goal-rush-mech-1/plan.typ"
+#include "goal-rush-mech-1/test.typ"
 #include "odometry/understand.typ"
 // // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"

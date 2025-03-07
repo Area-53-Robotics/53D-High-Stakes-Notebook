@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Game Manual v2.0 Update",
+  title: "Game Manual v2.2 Update",
   type: "identify",
   date: datetime(year: 2024, month: 12, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),

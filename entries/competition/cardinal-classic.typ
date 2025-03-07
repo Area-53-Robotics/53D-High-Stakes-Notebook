@@ -24,7 +24,7 @@
   match: "Q13",
   red_alliance: (teams: ("99009B", "7135R"), score: 19),
   blue_alliance: (teams: ("53D", "929S"), score: 26),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: true,
   strategy: [
@@ -58,7 +58,7 @@
   match: "Q21",
   red_alliance: (teams: ("53D", "5588R"), score: 14),
   blue_alliance: (teams: ("26648B", "5839B"), score: 10),
-  won: true,
+  outcome: "Win",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -88,7 +88,7 @@
   match: "Q42",
   red_alliance: (teams: ("20096G", "7135T"), score: 21),
   blue_alliance: (teams: ("5525A", "53D"), score: 20),
-  won: false,
+  outcome: "Loss",
   auton: "Red",
   awp: false,
   strategy: [
@@ -119,7 +119,7 @@
   match: "Q57",
   red_alliance: (teams: ("53D", "36407C"), score: 16),
   blue_alliance: (teams: ("960B", "9080H"), score: 0),
-  won: true,
+  outcome: "Win",
   auton: "Red",
   awp: false,
   strategy: [
@@ -150,7 +150,7 @@
   match: "Q67",
   red_alliance: (teams: ("53D", "929R"), score: 8),
   blue_alliance: (teams: ("929T", "26648W"), score: 8),
-  won: false, 
+  outcome: "Tie", 
   auton: "Blue",
   awp: false,
   strategy: [
@@ -179,7 +179,7 @@
   match: "Q77",
   red_alliance: (teams: ("9039R", "12699B"), score: 0),
   blue_alliance: (teams: ("53D", "5588B"), score: 18),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: true,
   strategy: [
@@ -212,7 +212,7 @@
   match: "Round of 16",
   red_alliance: (teams: ("53C", "53D"), score: 26),
   blue_alliance: (teams: ("960Z", "960Y"), score: 22),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -245,7 +245,7 @@
   match: "Quarterfinals",
   red_alliance: (teams: ("53C", "53D"), score: 21),
   blue_alliance: (teams: ("99009A", "99009B"), score: 36),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
