@@ -5,8 +5,8 @@
   type: "test",
   date: datetime(year: 2024, month: 10, day: 18),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
-  designed: "Eric",
-  witnessed: "Rory",
+  designed: "Rory",
+  witnessed: "Eric",
 )
 
 
@@ -54,9 +54,9 @@ The redirect mechanism will be able to score rings onto the neutral wall stakes 
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     align: center + horizon,
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy],
   )
@@ -93,12 +93,12 @@ We are satisfied with the results. We suspect that the robot failed to score on 
 
 = Redirecting (Control)
 == Background
-The redirect mechanism works by intaking a ring past a certain height. Then, the robot reverses the intake's direction, and the ring is redirected into the four-bar. Since this is a complicated maneuver, this section will require the most troubleshooting. Additionally, how efficient the robot is at redirecting the rings directly correlates to the redirect mechanism's scoring capabilities, making this test important. 
+The redirect mechanism works by intaking a ring past a certain height. Then, the robot reverses the intake's direction, and the ring is redirected into the four-bar. Since this is a complicated maneuver, this section will require the most troubleshooting. Additionally, how efficient the robot is at redirecting the rings directly correlates to the redirect mechanism's scoring capabilities, making this test important.
 
 == Hypothesis
 The robot will be able to redirect the rings into the redirect mechanism 80% of the time. Additionally, the redirect mechanism will take at most 5 seconds to redirect a ring.
 
-#grid(  
+#grid(
   columns: (3fr, 7fr),
   rows: 1,
   column-gutter: 15pt,
@@ -136,9 +136,9 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     align: center + horizon,
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.crossmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
   )
@@ -177,7 +177,7 @@ The robot will be able to redirect the rings into the redirect mechanism 80% of 
 
   #table(
     columns: 11,
-    rows: 4, 
+    rows: 4,
 
     fill: (x, y) =>
       if calc.even(y) or x == 0 {gray.lighten(20%)},
@@ -273,7 +273,7 @@ Unfortunately, the redirect mechanism failed to meet both of our hypotheses. Out
 In our #entry-reference(title: "Redirect Mechanism v1", type: "select", date: datetime(year: 2024, month: 10, day: 10)), we chose to use a four-bar lift because of its simplicity and height. It is important that our four-bar lift can consistently reach its highest height. Before we tested the redirect mechanism, we measured its maximum height of 28.56 inches.
 
 == Hypothesis
-We believe that the redirect mechanism will consistently reach 26 inches. 
+We believe that the redirect mechanism will consistently reach 26 inches.
 
 #grid(
   columns: (3fr, 7fr),
@@ -309,7 +309,7 @@ We believe that the redirect mechanism will consistently reach 26 inches.
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
     [Height], [26.45 in], [26.43 in], [26.45 in], [26.44 in], [26.45 in], [26.46 in], [26.45 in], [26.44 in], [26.45 in], [26.4 in]
   )

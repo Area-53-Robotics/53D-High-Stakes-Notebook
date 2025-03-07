@@ -5,7 +5,7 @@
   type: "brainstorm",
   date: datetime(year: 2024, month: 10, day: 24),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
-  designed: "Eric",
+  designed: "Makhi",
   witnessed: "Jin",
 )
 

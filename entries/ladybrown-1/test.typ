@@ -5,8 +5,8 @@
   type: "test",
   date: datetime(year: 2024, month: 11, day: 15),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
-  designed: "Eric",
-  witnessed: "Rory",
+  designed: "Anders",
+  witnessed: "Makhi",
 )
 
 
@@ -54,9 +54,9 @@ The robot will be able to grip onto the ring at least 80% of the time.
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     align: center + horizon,
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
   )
@@ -99,7 +99,7 @@ The ladybrown functions by grabbing a ring directly from the apex of the intake 
 + The robot will be able to score rings onto the wall stakes 80% of the time.
 + The ladybrown will take at most 3 seconds to redirect a ring.
 
-#grid(  
+#grid(
   columns: (3fr, 7fr),
   rows: 1,
   column-gutter: 15pt,
@@ -138,9 +138,9 @@ The ladybrown functions by grabbing a ring directly from the apex of the intake 
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     align: center + horizon,
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20],
     [Pass/Fail], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy], [#sym.checkmark.heavy],
   )
@@ -179,7 +179,7 @@ The ladybrown functions by grabbing a ring directly from the apex of the intake 
 
   #table(
     columns: 11,
-    rows: 4, 
+    rows: 4,
 
     fill: (x, y) =>
       if calc.even(y) or x == 0 {gray.lighten(20%)},
@@ -261,7 +261,7 @@ We are happy with the results. Compared to the redirect mechanism, the ladybrown
 The main advantage of the ladybrown compared to the redirect mechanism is its speed. The ladybrown can complete a 180#sym.degree rotation faster than other high stake mechanisms. This speed would allow the robot to score on the neutral wall stakes before it gets blocked or pushed.
 
 == Hypothesis
-The robot will make a full 180#sym.degree rotation in 3 seconds or under. 
+The robot will make a full 180#sym.degree rotation in 3 seconds or under.
 
 #grid(
   columns: (3fr, 7fr),
@@ -296,7 +296,7 @@ The robot will make a full 180#sym.degree rotation in 3 seconds or under.
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     [Trial \#], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10],
     [Time], [3.42 s],[3.54 s],[3.48 s],[3.52 s],[3.56 s],[3.46 s],[3.61 s],[3.53 s],[3.54 s],[3.63 s]
   )
@@ -362,4 +362,4 @@ The robot will make a full 180#sym.degree rotation in 3 seconds or under.
 )
 
 == Conclusion
-Although the ladybrown did not meet our hypothesis, we are still happy with the results. The ladybrown PID macro slowed the rotation slightly, but this is a necessary trade-off for efficiency. 
+Although the ladybrown did not meet our hypothesis, we are still happy with the results. The ladybrown PID macro slowed the rotation slightly, but this is a necessary trade-off for efficiency.

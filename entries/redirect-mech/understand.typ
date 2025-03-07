@@ -6,7 +6,7 @@
   date: datetime(year: 2024, month: 10, day: 10),
   attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi", "Anders"),
   designed: "Jin",
-  witnessed: "Rory",
+  witnessed: "Eric",
 )
 
 #set grid(
@@ -88,16 +88,16 @@
     The tangential velocity is the measurement of the speed at any point tangent to a rotating wheel moving in circular motion. Alternatively described, tangential velocity is the component of the motion along the edge of a circle measured at any arbitrary point of time.
 
     == How does it relate to our robot?
-    How fast the redirect mechanism moves is determined by its tangential velocity. Since the redirect mechanism rotates using a system of gears, the tangential velocity directly relates to the linear speed of the gear systems. 
+    How fast the redirect mechanism moves is determined by its tangential velocity. Since the redirect mechanism rotates using a system of gears, the tangential velocity directly relates to the linear speed of the gear systems.
   ],
   stack(
     spacing: 10pt,
-    image("understand/tangential-velocity.excalidraw.svg", fit: "contain", height: 125pt), 
+    image("understand/tangential-velocity.excalidraw.svg", fit: "contain", height: 125pt),
     admonition(type: "equation")[
       If:
       - $V#sub[r]$ is the tangential velocity
-      - $r$ is the radius of the circular path 
-      - $omega$ is the angular velocity 
+      - $r$ is the radius of the circular path
+      - $omega$ is the angular velocity
 
       $ V#sub[r] = r omega $
     ]

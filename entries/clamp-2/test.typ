@@ -6,7 +6,7 @@
   date: datetime(year: 2024, month: 10, day: 5),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
   designed: "Eric",
-  witnessed: "Anders",
+  witnessed: "Ishika",
 )
 
 

@@ -5,8 +5,8 @@
   type: "build",
   date: datetime(year: 2024, month: 11, day: 01),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
-  designed: "Jin",
-  witnessed: "Makhi",
+  designed: "Rory",
+  witnessed: "Eric",
 )
 
 #set grid(

@@ -6,7 +6,7 @@
   date: datetime(year: 2024, month: 10, day: 19),
   attendance: ("Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Jin",
-  witnessed: "Ishika",
+  witnessed: "Anders",
 )
 
 #admonition(type: "competition", title: "Competition Results")[

@@ -6,7 +6,7 @@
   date: datetime(year: 2024, month: 10, day: 23),
   attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi", "Anders"),
   designed: "Jin",
-  witnessed: "Rory",
+  witnessed: "Anders",
 )
 
 Since the ladybrown is a complex mechanism, it is important for the novice builders to properly understand the design. By breaking the design into smaller parts and explaining how each piece works together, we felt more comfortable to begin the brainstorming process.

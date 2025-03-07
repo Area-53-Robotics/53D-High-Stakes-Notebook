@@ -1,4 +1,6 @@
 #import "../globals.typ": entries, team-members
+#import "../icons/icons.typ": type-metadata
+
 
 #let entry-page-list() = context {
   let headings = query(selector(<notebook-entry>))
@@ -30,7 +32,7 @@
         ..for name in team-members {
           (table(
             columns: 2,
-            rows: 3,
+            rows: (25pt, 45pt, auto),
 
             [= #name], [],
             [== Designed By Pages], [== Witnessed By Pages],
@@ -83,32 +85,35 @@
       )
     } else {
       table(
-        columns: 4,
+        columns: 5,
         fill: (_, y) =>
           if y == 0 {gray.lighten(20%)},
 
         table.header(
-          [Entry \#], [Page Range], [Designed By], [Witnessed By],
+          [Entry \#], [Entry Name], [Page Range], [Designed By], [Witnessed By],
         ),
         ..for (index, entry) in entries.final().enumerate() {
-          let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
-          let last-page = 0
+          // if type-metadata.at(entry.type).name == "Test" {
+            let first-page = counter(page).at(query(selector(<notebook-entry>)).at(index).location()).at(0)
+            let last-page = 0
 
-          if index < query(selector(<notebook-entry>)).len() - 1 {
-            last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
-          } else {
-            last-page = [END]
-          }
+            if index < query(selector(<notebook-entry>)).len() - 1 {
+              last-page = counter(page).at(query(selector(<notebook-entry>)).at(index + 1).location()).at(0) - 1
+            } else {
+              last-page = [END]
+            }
 
-          let cell = table.cell
-          (
-            cell[#(index + 1)],
-            cell[
-              #first-page - #last-page
-            ],
-            cell[#entry.designed],
-            cell[#entry.witnessed]
-          )
+            let cell = table.cell
+            (
+              cell[#(index + 1)],
+              cell[#type-metadata.at(entry.type).name: #entry.title],
+              cell[
+                #first-page - #last-page
+              ],
+              cell[#entry.designed],
+              cell[#entry.witnessed]
+            )
+          // }
         },
       )
     }
