@@ -19,7 +19,7 @@ Earlier this season, we took notes on the Speedway and Sugar Rush signature even
     This idea uses a custom gusset that slides into the mobile goal. This gusset can then allow the mobile goal rush mechanism to let go of the mobile goal when the mobile goal rush mechanism retracts. There is an additional gusset that helps when clearing corners.
   ],
   pros: [
-    - *Strength* -  Because it uses lexan, it’s very durable.
+    - *Strength* -  Because it uses lexan, it's very durable.
     - *Weight* - Since it uses custom lexan, it is significantly lighter than a mobile goal rush mechanism that uses C-channel or metal.
   ],
   cons: [
@@ -38,7 +38,7 @@ Earlier this season, we took notes on the Speedway and Sugar Rush signature even
   name: "Idea 2",
   image: image("brainstorm/goal-rush-idea-2.excalidraw.svg"),
   description: [
-    Unlike ideas 1 and 3 that insert between the mobile goal, this idea uses the rubber bumper to slam into the mobile goal’s interior. Since this idea would clamp onto the mobile goal from the interior, there is a square gusset to push against the mobile goal’s umbrella. This would knock over the mobile goal.
+    Unlike ideas 1 and 3 that insert between the mobile goal, this idea uses the rubber bumper to slam into the mobile goal's interior. Since this idea would clamp onto the mobile goal from the interior, there is a square gusset to push against the mobile goal's umbrella. This would knock over the mobile goal.
   ],
   pros: [
     - *Control* - We can knock over mobile goals.
@@ -56,7 +56,7 @@ Earlier this season, we took notes on the Speedway and Sugar Rush signature even
   name: "Idea 3",
   image: image("brainstorm/goal-rush-idea-3.excalidraw.svg"),
   description: [
-    Similar to idea 1, this clamps under the mobile goal. However, it clamps onto the mobile goal’s outer rings.
+    Similar to idea 1, this clamps under the mobile goal. However, it clamps onto the mobile goal's outer rings.
   ],
   pros: [
     - *Efficiency* - Since it uses a C-channel clamp, this idea would have a strong grip on the mobile goal.

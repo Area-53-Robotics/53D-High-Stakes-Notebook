@@ -13,8 +13,7 @@ After observing the Speedway Tournament, we became interested in analyzing and d
 
 == Autonomous Strategies
 #table(
-  columns: (1fr,1fr),
-
+  columns: (1fr, 1fr),
 
   table.cell[
     #figure(
@@ -38,7 +37,7 @@ After observing the Speedway Tournament, we became interested in analyzing and d
     #image("identify-speedway-sig/12.6.24-2.png", width: 170pt)
     - End result for SF autonomous
     - Red alliance 99904B, 11101B
-    - Blue alliance 2011k, 2011J
+    - Blue alliance 2011K, 2011J
     - Auton winner: blue
 
   ],
@@ -80,7 +79,7 @@ After observing the Speedway Tournament, we became interested in analyzing and d
   table.cell[
     #image("identify-speedway-sig/12.6.24-4.png", width: 170pt)
     - End result for Finals 2
-    - Red alliance 2011k, 2011J
+    - Red alliance 2011K, 2011J
     - Blue alliance: 100A, 229V
     - Winner: Blue
 
@@ -88,8 +87,8 @@ After observing the Speedway Tournament, we became interested in analyzing and d
   ],
   table.cell[
     = What we noticed
-    - When both of the blue alliance members were guarding the positive corner and wall stake, 2011k used the window to score a red ring onto the mobile goal.
-    - Since 2011K was in the positive corner and 2011J was in the negative corner, the blue alliance was able to score three rings onto the  wall stake.
+    - When both of the blue alliance members were guarding the positive corner and wall stake, 2011K used the window to score a red ring onto the mobile goal.
+    - Since 2011K was in a positive corner and 2011J was in a negative corner, the blue alliance was able to score three rings onto the wall stake.
 
 
   ],

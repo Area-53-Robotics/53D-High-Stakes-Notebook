@@ -8,7 +8,7 @@
   designed: "Jin",
   witnessed: "Rory",
 )
-It is important to understand the physics and mechanics of the ring rush mechanism to optimize the mechanism. By breaking the concept into digestible pieces, we feel more comfortable brainstorming a potential design. 
+It is important to understand the physics and mechanics of the ring rush mechanism to optimize the mechanism. By breaking the concept into digestible pieces, we feel more comfortable brainstorming a potential design.
 
 #set grid(
   columns: (1fr, 1fr),
@@ -40,23 +40,23 @@ It is important to understand the physics and mechanics of the ring rush mechani
     else if x == 1 {center + horizon},
 
   grid.cell(colspan: 2)[
-    = Pascal’s principle
+    = Pascal's principle
     #v(15pt)
   ],
   image("understand/pascal-principle.excalidraw.svg", width: 170pt),
   [
     == What is Pascal's principle?
-    Pascal’s Principle states that when pressure is applied to a confined fluid, the pressure is transmitted equally in all directions throughout the fluid.
+    Pascal's Principle states that when pressure is applied to a confined fluid, the pressure is transmitted equally in all directions throughout the fluid.
 
     == How does it relate to the robot?
-   The mechanism’s pistons operate using compressed air. When air pressure is applied to one side of the piston, it pushes outward with equal force across the entire piston’s surface area, causing it to extend. Similarly, when the air pressure shifts to the opposite side, the piston retracts.
+   The mechanism's pistons operate using compressed air. When air pressure is applied to one side of the piston, it pushes outward with equal force across the entire piston's surface area, causing it to extend. Similarly, when the air pressure shifts to the opposite side, the piston retracts.
   ],
   image("understand/pascal-formula.png", fit: "contain", height: 110pt),
    admonition(type: "equation")[
       If:
       - $P$ is pressure
       - $F#sub[1] and F#sub[2]$  are force applied at different points in the system.
-      - $A#sub[1] and A#sub[2]$ are the areas of the surface where the force is applied. 
+      - $A#sub[1] and A#sub[2]$ are the areas of the surface where the force is applied.
 
       $ P = (F#sub[1]) / (A#sub[1]) = (F#sub[2]) / (A#sub[2]) $
     ]
@@ -73,8 +73,8 @@ It is important to understand the physics and mechanics of the ring rush mechani
   ],
   stack(
     spacing: 10pt,
-    image("understand/Impulse 1.excalidraw.svg", width: 200pt),
-    image("understand/Impulse 2.excalidraw.svg", width: 200pt)
+    image("understand/impulse-1.excalidraw.svg", width: 200pt),
+    image("understand/impulse-2.excalidraw.svg", width: 200pt)
   ),
   [
     == What is Impulse?

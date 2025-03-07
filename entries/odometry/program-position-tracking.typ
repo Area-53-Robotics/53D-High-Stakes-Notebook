@@ -84,7 +84,7 @@ Variables: \
 ]
 
 = Tracking Theory
-The position tracking system provides the rest of the robots' code with live data on the current position and orientation (represented as a position vector $arrow(d)$, and orientation $theta$) of a predefined point on the robot (called the “tracking center", see @figure1). Note that the tracking wheels can be placed anywhere along the dotted lines without affecting the math; it is the _perpendicular_ distance to the tracking center that matters, as explained below.
+The position tracking system provides the rest of the robots' code with live data on the current position and orientation (represented as a position vector $arrow(d)$, and orientation $theta$) of a predefined point on the robot (called the "tracking center", see @figure1). Note that the tracking wheels can be placed anywhere along the dotted lines without affecting the math; it is the _perpendicular_ distance to the tracking center that matters, as explained below.
 
 #figure(
   image(
@@ -109,7 +109,7 @@ void lemlib::update() {
     float imuRaw = 0;
 
     // ... Non-relevant lines of code excluded
-    
+
     // Gets the current heading detected by the inertial sensor
     if (odomSensors.imu != nullptr) imuRaw = degToRad(odomSensors.imu->get_rotation());
 
@@ -331,7 +331,7 @@ void lemlib::update() {
     float vertical1Raw = 0;
 
     // ... Non-relevant lines of code excluded
-    
+
     // get the current sensor values
     if (odomSensors.vertical1 != nullptr) vertical1Raw = odomSensors.vertical1->getDistanceTraveled();
 
@@ -362,7 +362,7 @@ void lemlib::update() {
 
     // ... Non-relevant lines of code excluded
 
-    
+
     // calculate change in x and y
     float deltaX = 0;
     float deltaY = 0;

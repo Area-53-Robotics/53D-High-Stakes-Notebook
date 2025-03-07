@@ -16,15 +16,15 @@
 ]
 
 = Competition Goals
-- Test that our robot is at a competitive level. 
-- Figure out the necessary changes to be made to the robot. 
+- Test that our robot is at a competitive level.
+- Figure out the necessary changes to be made to the robot.
 
 = Matches
 #tournament-match(
   match: "Q5",
   red_alliance: (teams: ("1893J", "929T"), score: 7),
   blue_alliance: (teams: ("53D", "1727A"), score: 29),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -54,7 +54,7 @@
   match: "Q14",
   red_alliance: (teams: ("53D", "1893A"), score: 11),
   blue_alliance: (teams: ("929V", "1658T"), score: 21),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -66,12 +66,12 @@
     - They scored one ring.
   ],
   match_notes: [
-    - 929V scored three rings immediately at the start of the match. 
-    - While we were intaking rings, our intake jammed. We only scored 4 rings. 
+    - 929V scored three rings immediately at the start of the match.
+    - While we were intaking rings, our intake jammed. We only scored 4 rings.
     - 1893A was only able to score 1 ring.
-    - We pushed 1 of their mobile goals out of the positive corner. 
+    - We pushed 1 of their mobile goals out of the positive corner.
     - Our alliance tried to score the half-filled up mobile goal into a positive corner.
-    - We attempted to score onto the wall stakes but failed. 
+    - We attempted to score onto the wall stakes but failed.
   ],
   subsystems: (
     overperformed: none,
@@ -85,7 +85,7 @@
   match: "Q20",
   red_alliance: (teams: ("53F", "53D"), score: 7),
   blue_alliance: (teams: ("929S", "9080S"), score: 16),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -98,7 +98,7 @@
   ],
   match_notes: [
     - At the start of the match, we completely filled a mobile goal with rings.
-    - Afterwards, our intake got jammed. 
+    - Afterwards, our intake got jammed.
     - Then, we prevented the other alliance from placing their mobile goal into a positive corner.
     - The other alliance only scored three rings onto their mobile goal.
     - 9080S tried to hang but we prevented them from touching the ladder.
@@ -115,12 +115,12 @@
   match: "Q33",
   red_alliance: (teams: ("233282H", "9080C"), score: 19),
   blue_alliance: (teams: ("53B", "53D"), score: 13),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
     - Similar to the previous match, we planned to play as aggressively as we could.
-    - 53B could not intake rings well, so they planned to play defensively. 
+    - 53B could not intake rings well, so they planned to play defensively.
   ],
   auton_notes: [
     - We won auton because the opposing alliance crossed the auton line.
@@ -143,7 +143,7 @@
   match: "Q39",
   red_alliance: (teams: ("53D", "1727R"), score: 24),
   blue_alliance: (teams: ("53E", "53A"), score: 25),
-  won: false,
+  outcome: "Loss",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -172,7 +172,7 @@
   match: "Q51",
   red_alliance: (teams: ("53D", "68186A"), score: 35),
   blue_alliance: (teams: ("79666A", "55618A"), score: 4),
-  won: true,
+  outcome: "Win",
   auton: "Tie",
   awp: false,
   strategy: [
@@ -186,7 +186,7 @@
     - We scored a full mobile goal at the beginning of the match, and passed it to 68186A.
     - We scored 3 rings onto the wall stakes.
     - The opposing alliance only scored 2 rings into a mobile goal.
-    - Our alliance collected another full mobile goal. 
+    - Our alliance collected another full mobile goal.
   ],
    subsystems: (
     overperformed: ("Redirect Mechanism", "Intake"),
@@ -200,7 +200,7 @@
   match: "Round of 16",
   red_alliance: (teams: ("9080C", "53C"), score: 27),
   blue_alliance: (teams: ("53D", "53F"), score: 20),
-  won: false,
+  outcome: "Loss",
   auton: "Red",
   awp: false,
   strategy: [
@@ -212,11 +212,11 @@
     - We did not have auton.
   ],
   match_notes: [
-    - Both alliances secured a full mobile goal into a positive corner. 
+    - Both alliances secured a full mobile goal into a positive corner.
     - We scored 1 ring onto the wall stake.
     - When we tried to score another ring onto the wall stake, 53C pushed us.
     - We scored 5 rings onto another mobile goal.
-    - The opposing alliance had another full mobile goal. 
+    - The opposing alliance had another full mobile goal.
   ],
  subsystems: (
     overperformed: "Intake",
@@ -274,7 +274,7 @@
 ]
 
 #box[
-  == Redirect Mechanism 
+  == Redirect Mechanism
   #subsystem-analysis(
     reflection: [
       Although slow, the redirect mechanism won us many matches. We were pleased with its performance, but we want to brainstorm a new solution for faster wall stake scoring potential.
@@ -291,13 +291,13 @@
 == Ajibola
 #h(1em) I am a bit disappointed in our performance at this tournament. I expected us to get a points advantage in our matches by using the redirect mechanism to score points on the wall stakes. After this tournament, we should look into improving our wall stake scoring method, by either improving the structure or programming of the redirect mechanism, or building a new wall stake scoring mechanism. On a more positive note, I am very proud that we won the Design Award. It reflects the significant amount of work we have put into our documentation, and I believe that we can maintain this momentum throughout the season.
 
-== Jin 
+== Jin
 #h(1em) One of the best birthday wishes I could ask for: spending time with some of my favorite people and winning the design award. However, I believe our clamp can be improved. During the match, we frequently had to reclamp or ram the mobile goal into a corner to properly secure it. I want to redesign the clamp using the new VEX pistons. Their shorter reach will prevent over-clamping when securing the mobile goal's corner.
 
 == Ishika
 #h(1em) The tournament went well; most of our subsystems performed very effectively. However, we did encounter a few issues, such as the intake getting caught on the wires. Additionally, we were unable to get the redirect mechanism working for all the matches. The gameplay highlighted the importance of the few extra points that auton contributes to the team's score. Moving forward, we should focus on developing a better auton. I also believe our drivers and drive team should have more practice time to become fully accustomed to the robot and its subsystems. In many matches, we seemed to be unlucky with our alliance partners and the opponents we faced. Overall, this was a valuable learning experience, and I am confident that our team will apply these lessons to improve in the next competition.
 
-== Makhi 
+== Makhi
 #h(1em) I think we did fine at the tournament. As the driver, I really want to try using three omni-wheels instead of two for faster acceleration. Additionally, I wasn't too happy with how the redirect mechanism feels. It's too slow and very easy to defend against. I saw online a new method for scoring wall stakes called the 'Lady Brown.' This method is much simpler because it only requires a simple rotating motion to score the ring onto the wall stake.
 
 == Eric

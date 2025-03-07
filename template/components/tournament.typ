@@ -6,7 +6,7 @@
   match: "",
   red_alliance: (teams: ("", ""), score: 0),
   blue_alliance: (teams: ("", ""), score: 0),
-  won: false,
+  outcome: "Tie",
   auton: "Tie",
   awp: false,
   strategy: [],
@@ -19,8 +19,9 @@
     disabled: none,
   )
 ) = {
-  assert(auton in ("Red", "Blue", "Tie"), message: "Invalid auton winner")
-  
+  assert(outcome in ("Win", "Loss", "Tie"), message: "Invalid match outcome, the options are 'Win', 'Loss', 'Tie'")
+  assert(auton in ("Red", "Blue", "Tie"), message: "Invalid auton winner, the options are 'Red', 'Blue', and 'Tie'")
+
   for category in subsystems {
     assert(
       (type(category) == str) or (type(category) == array),
@@ -31,10 +32,12 @@
   show: showybox.with(
     frame:(
       border-color: {
-        if won == true {
+        if outcome == "Win" {
           green
-        } else {
+        } else if outcome == "Loss" {
           red
+        } else if outcome == "Tie" {
+          gray
         }
       },
       body-color: none,
@@ -64,11 +67,7 @@
         )[
           #align(center)[
             *#match* \
-            #if won == true [
-              Win
-            ] else [
-              Loss
-            ]
+            #outcome
           ]
         ],
 
@@ -119,7 +118,7 @@
       )
 
       #v(-0.5em)
-      
+
       #grid(
         columns: 1,
         rows: 2,
@@ -192,7 +191,7 @@
           #text(size: 13pt)[*Auton Notes:*]
           #auton_notes
         ],
-        
+
         rect(
           radius: 5pt,
           width: 100%
@@ -283,7 +282,7 @@
     pie-chart(
       radius: 3,
       outer-label-radius: outer-label-radius,
-      data-type: "mts", 
+      data-type: "mts",
       colors: (),
       (
         ("Over-\nperformed", overperformed, green),

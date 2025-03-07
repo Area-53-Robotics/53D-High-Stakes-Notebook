@@ -24,7 +24,7 @@
   match: "Q9",
   red_alliance: (teams: ("53D", "16700C"), score: 3),
   blue_alliance: (teams: ("66852A", "9080S"), score: 19),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -58,7 +58,7 @@
   match: "Q14",
   red_alliance: (teams: ("929V", "7135G"), score: 17),
   blue_alliance: (teams: ("53D", "96807A"), score: 29),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -90,7 +90,7 @@
   match: "Q29",
   red_alliance: (teams: ("1727F", "53D"), score: 17),
   blue_alliance: (teams: ("1723A", "1723B"), score: 6),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -106,7 +106,7 @@
   match_notes: [
     - We struggled to get a mobile goal because our ladybrown was blocking our intake.
     - We scored 4 rings on a mobile goal and placed it in a positive corner.
-    - 1723A tried to take the mobile goal that was in the positive corner. 
+    - 1723A tried to take the mobile goal that was in the positive corner.
     - In response, we took their full mobile goal and scored it in a negative corner.
     - Scored a ring on the wall stakes in the last second.
     - 1727F blocked 1723A from scoring a mobile goal with three rings into a positive corner.
@@ -125,7 +125,7 @@
   match: "Q34",
   red_alliance: (teams: ("5588E", "5588B"), score: 29),
   blue_alliance: (teams: ("53D", "9012A"), score: 9),
-  won: false,
+  outcome: "Loss",
   auton: "Red",
   awp: false,
   strategy: [
@@ -158,7 +158,7 @@
   match: "Q42",
   red_alliance: (teams: ("53D", "9080R"), score: 16),
   blue_alliance: (teams: ("9012E", "7135T"), score: 12),
-  won: true,
+  outcome: "Win",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -191,14 +191,14 @@
   match: "Q56",
   red_alliance: (teams: ("12699A", "19800A"), score: 26),
   blue_alliance: (teams: ("53D", "23098B"), score: 15),
-  won: true,
+  outcome: "Win",
   auton: "Red",
   awp: false,
   strategy: [
     - Communicate with 76763A about open positive corners. We want to take control of a positive corner as quickly as possible.
   ],
   auton_notes: [
-    - 76763A’s auton did not score any rings because their clamp failed.
+    - 76763A's auton did not score any rings because their clamp failed.
     - The red alliance scored a ring on their alliance wall stake.
 
   ],
@@ -223,7 +223,7 @@
   match: "Round of 16",
   red_alliance: (teams: ("929V", "53D"), score: 25),
   blue_alliance: (teams: ("7135W", "7135G"), score: 0),
-  won: true,
+  outcome: "Win",
   auton: "Red",
   awp: false,
   strategy: [
@@ -257,7 +257,7 @@
   match: "Quarterfinals",
   red_alliance: (teams: ("5588E", "5588B"), score: 0),
   blue_alliance: (teams: ("929V", "53D"), score: 7),
-  won: true,
+  outcome: "Win",
   auton: "Red",
   awp: false,
   strategy: [
@@ -289,7 +289,7 @@
   match: "Semifinals",
   red_alliance: (teams: ("929V", "53D"), score: 28),
   blue_alliance: (teams: ("1658T", "1727K"), score: 34),
-  won: false,
+  outcome: "Loss",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -390,7 +390,7 @@
 #h(1em) I think this competition went well, but we need to improve our communication within our team and with other teams. We were often unprepared for matches, and needed to switch out license plates at the last minute, which was not a good look for our team.
 
 == Ishika
-#h(1em)  think that we need to work on our clamp, because it is necessary for scoring on mobile goals, which is how we get most of our points. I think we should study other team’s designs, and then combine their ideas to create the most reliable clamp possible.
+#h(1em)  think that we need to work on our clamp, because it is necessary for scoring on mobile goals, which is how we get most of our points. I think we should study other team's designs, and then combine their ideas to create the most reliable clamp possible.
 
 == Makhi
 #h(1em)  I think that I, as our driver, need more practice with the ladybrown mechanism. Aligning it with the wall stakes is difficult, and if I could master that, it would let us score points even if all the other mobile goal are taken.
