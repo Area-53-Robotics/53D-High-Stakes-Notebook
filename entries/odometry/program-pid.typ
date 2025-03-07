@@ -122,6 +122,8 @@ float lemlib::angleError(float target, float position, bool radians, AngularDire
 }
 ```
 
+#colbreak()
+
 #code-header(main: false, dest: "https://github.com/LemLib/LemLib/blob/stable/src/lemlib/chassis/motions/moveToPose.cpp")[LemLib/src/lemlib/chassis/motions/moveToPose.cpp]
 ```cpp
 const float angularError =
@@ -154,7 +156,7 @@ LemLib uses a boomerang controller in order to be able to move the robot to a sp
   $ y_"carrot" = y_"target" - h cos(theta_"target") * d_"lead" $
 ]
 
-#v(100pt)
+// #colbreak()
 
 #code-header(main: false, dest: "https://github.com/LemLib/LemLib/blob/stable/src/lemlib/chassis/motions/moveToPose.cpp")[LemLib/src/lemlib/chassis/motions/moveToPose.cpp]
 ```cpp

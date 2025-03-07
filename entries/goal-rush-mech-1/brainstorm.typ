@@ -9,7 +9,6 @@
   witnessed: "Jin",
 )
 
-
 Earlier this season, we took notes on the Speedway and Sugar Rush signature events. We used these notes to assist us in brainstorming different ways to build the mobile goal rush mechanism.
 
 #pro-con(
@@ -27,10 +26,7 @@ Earlier this season, we took notes on the Speedway and Sugar Rush signature even
   ],
   notes: [
     - The mobile goal rush mechanism can be used as a corner sweeper.
-      - We may not have the time to try this idea.
-
-
-
+    - We may not have the time to try this idea.
   ],
 )
 

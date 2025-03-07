@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Overall Robot - Troubleshooting v3",
+  title: "Overall Robot v3 - Troubleshooting",
   type: "build",
   date: datetime(year: 2025, month: 2, day: 13),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -27,7 +27,7 @@ The main goal of today’s meeting was to get everything ready for the next few 
     - *Initial Testing*: Eric
   ],
   today: [
-    - Troubleshoot the intake: Eric 
+    - Troubleshoot the intake: Eric
     - Troubleshoot the ladybrown: Eric
     - Troubleshoot the ring rush mechanism: Eric
     - Troubleshoot the pneumatics: Eric
@@ -92,7 +92,7 @@ The main goal of today’s meeting was to get everything ready for the next few 
 
     ],
   ),
- 
+
 )
 
 = 2024/02/21
@@ -111,7 +111,7 @@ The purpose of today’s meeting was to troubleshoot any pneumatic leaks and bui
   ],
   today: [
     - Change the solenoid: Eric
-    - Change mobile goal rush mechanism spacing: Jin 
+    - Change mobile goal rush mechanism spacing: Jin
     - Replace mobile goal rush mechanism shaft with unbent metal: Jin
   ]
 )
@@ -119,7 +119,7 @@ The purpose of today’s meeting was to troubleshoot any pneumatic leaks and bui
 == Build Process
 #grid(
   stack(
-    spacing: 10pt, 
+    spacing: 10pt,
   [
     === Materials
     - Single-Action Solenoids
@@ -152,24 +152,24 @@ The purpose of today’s meeting was to troubleshoot any pneumatic leaks and bui
     image("build-troubleshoot/2.21.25-1.png", width: 120pt),
     caption: "The broken double-acting solenoid. We replaced it because it was leaking air."
   ),
-    
+
     figure(
     image("build-troubleshoot/2.21.25-2.png", width: 120pt),
     caption: "Troubleshooting the drivetrain by fixing the spacing."
   ),
   ),
- 
+
 )
 
 
 = 2024/02/22
 
 While testing auton, our mobile goal rush mechanism arm snapped. We had to reinforce the arm, losing some valuable auton time. Regardless, we still made good progress on the auton.
-#colbreak() 
+#colbreak()
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory*: Eric, Rory, 
+    - *Inventory*: Eric, Rory,
     - *Manufacturing*: Eric
     - *Oversight & Quality Control*: Jin, Makhi
     - *Initial Testing*: Everyone
@@ -189,7 +189,7 @@ While testing auton, our mobile goal rush mechanism arm snapped. We had to reinf
     - 2x 18x1x1 C-channel
     - 2x 4x1x1 C-channel
     - Custom Gusset
-    - Mallet 
+    - Mallet
   ],
   figure(
     image("build-troubleshoot/2.22.25-1.png", width: 100pt),
@@ -201,7 +201,7 @@ While testing auton, our mobile goal rush mechanism arm snapped. We had to reinf
     [
       === Assembly
       - #text(red)[Problem:] The ring rush mechanism was experiencing friction.
-        - #text(green)[Solution:]: Loosened the screw joint slightly. This was possible since there was no nylon at the end of the screw joint. 
+        - #text(green)[Solution:]: Loosened the screw joint slightly. This was possible since there was no nylon at the end of the screw joint.
       - #text(red)[Problem:] Air was leaking out of the pneumatics at about 1.5 PSI per second.
         - #text(green)[Solution:] Checked every junction that was connected to the mobile goal rush mechanism.
         - Replaced the double-acting solenoid.

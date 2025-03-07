@@ -9,9 +9,6 @@
   witnessed: "Jin",
 )
 
-= Objective
-- .
-
 #to-do(
   date: datetime(year: 2025, month: 1, day: 5),
   monthly-schedule: "On",
@@ -24,7 +21,7 @@
 
 = Event Information
 - Tournament name: Sugar Rush Signature Event
-- Location: Hershey Lodge,
+- Location: Hershey Lodge
   // - 325 University Drive
   // -  Hershey, Pennsylvania 17033
   // - United States
@@ -57,8 +54,8 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
   ],
   table.cell[
     #figure(
-      image("identify-sugar-rush-sig/bangarang-observations-2.png", width: 150pt),
-      caption: "The drivetrain from their Sugar rush reveal video"
+      image("identify-sugar-rush-sig/bangarang-observations-2.png", width: 110pt),
+      caption: "The drivetrain from their Sugar Rush reveal video"
     )
   ],
   table.cell[
@@ -71,7 +68,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
         #image("identify-sugar-rush-sig/bangarang-observations-3.png", width: 150pt)
         #image("identify-sugar-rush-sig/bangarang-observations-4.png", width: 150pt)
       ],
-      caption: "The intake and climb mechanism from their Haunted Signature Event Robot Reveal"
+      caption: "The intake and climb mechanisms from their Haunted Signature Event Robot Reveal"
     )
   ],
   table.cell[

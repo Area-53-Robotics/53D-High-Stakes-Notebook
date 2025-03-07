@@ -51,9 +51,21 @@ Since tracking wheels is a crucial component for our auton, it is important for 
     == How does it relate to odometry?
     The PID movement method uses a derivative component to decrease its output if the rate of change of the error is decreasing too rapidly.
   ],
-    image("understand/derivative.excalidraw.svg", fit: "contain", height: 150pt),
+  stack(
+    spacing: 10pt,
+    image("understand/derivative.excalidraw.svg", height: 135pt),
+    admonition(type: "equation")[
+      If:
+      - $(d y)/(d x)$ is the derivative
+      - $x$ is the input variable
+      - $h$ is the difference from the first point to the second point
+      $ (d y)/(d x) = op("lim", limits: #true)_(h->0) (f(x + h) - f(x)) / h $
+    ],
+  ),
 )
+
 #colbreak()
+
 #grid(
   align: (x, _) =>
     if x == 0 {left + top}
@@ -63,12 +75,23 @@ Since tracking wheels is a crucial component for our auton, it is important for 
     = Angular Rotation
     #v(15pt)
   ],
-  image("understand/angular-rotation.excalidraw.svg", fit: "contain", height: 125pt),
   [
     == What is angular rotation?
-    TThe motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and the final point is termed 'motion'. The angle difference between the initial and final positions of a point that has rotated along a specified axis is angular displacement.
+    The motion of an object along a curved path is known as curvilinear motion. The difference between the initial point and the final point is termed 'motion'. The angle difference between the initial and final positions of a point that has rotated along a specified axis is angular displacement.
 
-    == How does it relate to odeometry?
+    == How does it relate to odometry?
     Odometry calculates the robot's position as an accumulation of the angular rotations the tracking wheel(s) has made since the program's start.
   ],
+  stack(
+    spacing: 10pt,
+    image("understand/angular-rotation.excalidraw.svg", fit: "contain", height: 115pt),
+    admonition(type: "equation")[
+      If:
+      - $theta$ is the angular displacement
+      - $s$ is the distance traveled by the body
+      - $r$ is the radius of the circle along which the body is moving
+
+      $ theta = s / r $
+    ]
+  ),
 )

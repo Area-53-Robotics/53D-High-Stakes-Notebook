@@ -8,8 +8,15 @@
   designed: "Anders",
   witnessed: "Jin",
 )
-= Objective
-  - Observe mechanisms that could be helpful for our robot.
+
+#to-do(
+  date: datetime(year: 2024, month: 12, day: 07),
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
+  (
+    (true, "Observe mechanisms used in the Speedway Signature event.", "Everyone"),
+  )
+)
 
 = Event Information
 - Tournament name: Speedway Signature Event
@@ -47,7 +54,7 @@
   table.cell[
     #figure(
       image("identify-speedway-sig/ace-2.png", width: 150pt),
-      caption: "A picture of ACE's clamp. They are lining themselves up with the mobile goal."
+      caption: "ACE lining their clamp up with the mobile goal."
     )
   ],
   table.cell[

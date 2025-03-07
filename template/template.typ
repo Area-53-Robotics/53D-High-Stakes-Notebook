@@ -145,15 +145,15 @@
 
   print-entries()
 
-  // pagebreak()
-  // pagebreak(to: "odd")
+  pagebreak()
+  pagebreak(to: "odd")
 
-  // print-program-entries()
+  print-program-entries()
 
-  // pagebreak()
-  // pagebreak(to: "odd")
+  pagebreak()
+  pagebreak(to: "odd")
 
-  // print-appendix-entries()
+  print-appendix-entries()
 
   // signature-list(chronological: true)
   // signature-list(chronological: false)

@@ -58,28 +58,26 @@
     - #icon("folder-cog") .github #line-fill Config files for our GitHub workflows
     - #icon("folder-cog") firmware #line-fill PROS firmware code
     - #icon("folder-open") include #line-fill C++ header files
+      - #icon("folder") lemlib #line-fill LemLib header files
       - #icon("folder") liblvgl #line-fill LVGL header files
       - #icon("folder") pros #line-fill PROS header files
       - #icon("folder-open") subsystemHeaders #line-fill Individual subsystem headers
-        - #icon(color: purple, "brand-cpp") clamp.hpp
+        - #icon(color: purple, "brand-cpp") ladybrown.hpp
+        - #icon(color: purple, "brand-cpp") pneumatics.hpp
       - #icon(color: purple, "brand-cpp") api.h
       // - #icon(color: purple, "brand-cpp") autonomous.hpp
-      - #icon(color: purple, "brand-cpp") autonSelector.hpp
+      // - #icon(color: purple, "brand-cpp") autonSelector.hpp
+      - #icon(color: purple, "brand-cpp") chassis.hpp
       - #icon(color: purple, "brand-cpp") global.hpp
       - #icon(color: purple, "brand-cpp") main.h
     - #icon("folder-open") #program-folder(name: "src", num: 1, bold: true, under: true)[Competition code for the robot]
-      - #icon("folder-open") #program-folder(name: "brainMenus", num: 2, bold: true, under: false)[Pre-auton menu screens]
-        - #icon(color: blue, "brand-cpp") #program-file(name: "autonMenu.cpp", label: <autonMenu.cpp>)[Auton selector screen]
-        - #icon(color: blue, "brand-cpp") #program-file(name: "keybindMenu.cpp", label: <keybindMenu.cpp>)[Keybind viewer screen]
-        - #icon(color: blue, "brand-cpp") #program-file(name: "motorMenu.cpp", label: <motorMenu.cpp>)[Motor telemetry screen]
-        - #icon(color: blue, "brand-cpp") #program-file(name: "notesMenu.cpp", label: <notesMenu.cpp>)[Notes viewer screen]
-        - #icon(color: blue, "brand-cpp") #program-file(name: "sensorMenu.cpp", label: <sensorMenu.cpp>)[Sensor telemetry screen]
-      - #icon("folder-open") #program-folder(name: "subsystemFiles", num: 3, bold: true, under: false)[Individual subsystem code] 
-        - #icon(color: blue, "brand-cpp") #program-file(name: "clamp.cpp", label: <clamp.cpp>)[Clamp code and helper functions]
+      - #icon("folder-open") #program-folder(name: "subsystemFiles", num: 2, bold: true, under: false)[Individual subsystem code]
+        - #icon(color: blue, "brand-cpp") #program-file(name: "ladybrown.cpp", label: <ladybrown.cpp>)[Ladybrown code and helper functions]
+        - #icon(color: blue, "brand-cpp") #program-file(name: "pneumatics.cpp", label: <pneumatics.cpp>)[Clamp, ring rush, and goal rush code]
       - #icon(color: blue, "brand-cpp") #program-file(name: "autonomous.cpp", label: <autonomous.cpp>)[Autonomous period program]
-      - #icon(color: blue, "brand-cpp") #program-file(name: "autonSelector.cpp", label: <autonSelector.cpp>)[Global auton selector menu functions]
+      - #icon(color: blue, "brand-cpp") #program-file(name: "chassis.cpp", label: <chassis.cpp>)[Autonomous robot movement functions]
       - #icon(color: blue, "brand-cpp") #program-file(name: "global.cpp", label: <global.cpp>)[Global object declarations such as motors]
-      - #icon(color: blue, "brand-cpp") #program-file(name: "main.cpp", label: <main.cpp>)[Robot initialization and disabled period code]
+      - #icon(color: blue, "brand-cpp") #program-file(name: "main.cpp", label: <main.cpp>)[Robot initialization, disabled period, and driver control code]
       // - #icon(color: blue, "brand-cpp") #program-file(name: "opcontrol.cpp", label: <opcontrol.cpp>)[Driver control period code]
     - #icon("brand-git") .gitignore #line-fill Git config file
     - #icon(color: orange, "letter-m") common.mk #line-fill PROS build configs

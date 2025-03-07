@@ -1,5 +1,4 @@
 #include "main.h"
-#include "pros/misc.h"
 
 /**
  * A callback function for LLEMU's center button.
@@ -25,9 +24,10 @@ void on_center_button() {
  */
 void initialize() {
 	pros::lcd::initialize();
-	pros::lcd::set_text(1, "Hello PROS User!");
+	chassis.calibrate();
+	// pros::lcd::set_text(1, "Hello PROS User!");
 
-	pros::lcd::register_btn1_cb(on_center_button);
+	// pros::lcd::register_btn1_cb(on_center_button);
 }
 
 /**
@@ -47,22 +47,23 @@ void disabled() {}
  * starts.
  */
 void competition_initialize() {
-    CreateMenuDropdown();
-    OpenAutonSelectMenu();
+	InitMotorArraySizes();
+    // CreateMenuDropdown();
+    // OpenAutonSelectMenu();
 }
 
 float GetCurveOutput(int input) {
     return (std::exp(-20/12.7)+std::exp((std::abs(input)-127)/12.7)*(1-std::exp(-20/12.7))) * input;
 }
 
-void MotorAccelerationTest() {
-	std::cout << "Time, BLM, MLM, FLM, BRM, MRM, FRM" << std::endl;
-	unsigned int loopCount = 0;
-
+void PositionTrack(void * param) {
 	while(true) {
-		std::cout << (loopCount * 20) << ", ";
-			
-		pros::delay(20);
+		lemlib::Pose pose = chassis.getPose();
+		printf("X: %f, Y: %f, Theta: %f\n", pose.x, pose.y, pose.theta);
+		pros::lcd::print(0, "X (inches): %f", pose.x);
+		pros::lcd::print(1, "Y (inches): %f", pose.y);
+		pros::lcd::print(2, "Theta (degrees): %f", pose.theta);
+		pros::delay(100);
 	}
 }
 
@@ -83,19 +84,63 @@ void opcontrol() {
     // CreateMenuDropdown();
     // OpenAutonSelectMenu();
 
+	pros::Task position_track_task(PositionTrack, (void*)"PROS");
+
+	// if(!pros::competition::is_connected()) autonomous();
+
+	// Initializes the ladybrown task
+	pros::Task ladybrown_task(LadybrownTask, (void*)"PROS");
+
 	while (true) {
 		// Tank control scheme
 		int LYAxis = Controller.get_analog(ANALOG_LEFT_Y); // Gets amount forward/backward from left joystick
-		int RYAxis = Controller.get_analog(ANALOG_RIGHT_Y);  // Gets the turn left/right from right joystick
-		
-		left_mg.move(GetCurveOutput(LYAxis)); // Sets left motor voltage
-		right_mg.move(GetCurveOutput(RYAxis)); // Sets right motor voltage
-		
-		if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) IntakeMotor.move_velocity(450);
-		else if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) IntakeMotor.move(-127);
+		int RYAxis = Controller.get_analog(ANALOG_RIGHT_Y); // Gets the turn left/right from right joystick
+
+		left_mg.move(LYAxis); // Sets left motor voltage
+		right_mg.move(RYAxis); // Sets right motor voltage
+
+		// When the L1 controller button is pressed...
+		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) {
+			// increase the ladybrown position by 1
+			LadybrownSwitch(true);
+			// notify the ladybrown mechanism to move to the new target position
+			ladybrown_task.notify();
+		// When the L2 controller button is pressed...
+		}
+		// else if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L2)) {
+		// 	// decrease the ladybrown position by 1
+		// 	LadybrownSwitch(false);
+		// 	// notify the ladybrown mechanism to move to the new target position
+		// 	ladybrown_task.notify();
+		// }
+
+		// The intake motor spins forward when R2 is held and spins reverse when R1 is held.
+		if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R2)) IntakeMotor.move_velocity(500);
+		else if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_R1)) IntakeMotor.move_velocity(-500);
 		else IntakeMotor.brake();
 
-		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_L1)) PneumaticClamp();
+		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_X)) RingRush();
+
+		// Sets the clamp to operate in driver control after pressing the A button
+		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)) PneumaticClamp();
+
+		if(Controller.get_digital(pros::E_CONTROLLER_DIGITAL_L2)) {
+			if (!goalRushActivated) {
+				GoalRushPiston.set_value(1);
+				goalRushActivated = true;
+			}
+		} else {
+			if (goalRushActivated) {
+				GoalRushPiston.set_value(0);
+				goalRushActivated = false;
+			}
+		}
+
+		
+		if(Controller.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_Y)) {
+			driveReversed = !driveReversed;
+			ControllerDisplay();
+		}
 
 		pros::delay(20); // Run for 20 ms then update
 	}

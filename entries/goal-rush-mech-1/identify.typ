@@ -9,7 +9,7 @@
   witnessed: "Anders",
 )
 
-From our previous observations in our #entry-reference(title: "Speedway Signature Event Observations", type: "identify", date: datetime(year: 2024, month: 12, day: 06)) and #entry-reference(title: "Sugar Rush Observations", type: "identify", date: datetime(year: 2025, month: 01, day: 05)), we saw that many teams had a mobile goal rush mechanism. This mechanism is useful during auton because it allows us to have early control of a positive corner, and useful during driver control to clear positive and negative corners.
+From our previous observations in our #entry-reference(  title: "Speedway Signature Event - Observations", type: "identify", date: datetime(year: 2024, month: 12, day: 07)) and #entry-reference(title: "Sugar Rush Signature Event - Observations", type: "identify", date: datetime(year: 2025, month: 01, day: 05)), we saw that many teams had a mobile goal rush mechanism. This mechanism is useful during auton because it allows us to have early control of a positive corner, and useful during driver control to clear positive and negative corners.
 
 #figure(
   image("identify-goal-rush.excalidraw.svg", width: 50%),

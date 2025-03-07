@@ -563,6 +563,3 @@ $
 Finally, to calculate the new global position, we add the global position displacement to the current global position:
 
 $ arrow(d) = arrow(d_0) + Delta arrow(d) $
-
-= Credits
-This document was heavily inspired by Team 5225's #link("https://thepilons.ca/wp-content/uploads/2018/10/Tracking.pdf")[Introduction to Position Tracking] and Rex Liu's #link("https://youtube.com/playlist?list=PLsTj2tgnvJ8Qm96AQsrS2ehwexOj03Try&si=QhO_7y0mBj92Ewjw")[Essence of Robot Odometry] playlist.
