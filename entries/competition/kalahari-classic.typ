@@ -97,7 +97,7 @@
 
   ],
   auton_notes: [
-    - The opposing alliance’s auton rushed the ring stack and made us score a wrong color ring.
+    - The opposing alliance's auton rushed the ring stack and made us score a wrong color ring.
     - We scored a ring on the alliance wall stake.
 
   ],
@@ -153,7 +153,7 @@
   awp: false,
   strategy: [
     - We want to play very offensively in this match and try to control both of the positive corners.
-    - Then, in the last 15 seconds, we will try to score on the wall stake. 
+    - Then, in the last 15 seconds, we will try to score on the wall stake.
 
   ],
   auton_notes: [
@@ -296,7 +296,7 @@
   == Clamp
   #subsystem-analysis(
     reflection: [
-      Although we have had issues with our mobile goal clamp in previous competitions, it almost worked perfectly at Kalahari. Aside from a few times where we needed to reclamp a mobile goal (which are inevitable), we did not have any issues with the clamp. We were able to securely hold on to mobile goals and sometimes even steal an opponent’s mobile goal at times.
+      Although we have had issues with our mobile goal clamp in previous competitions, it almost worked perfectly at Kalahari. Aside from a few times where we needed to reclamp a mobile goal (which are inevitable), we did not have any issues with the clamp. We were able to securely hold on to mobile goals and sometimes even steal an opponent's mobile goal at times.
     ],
     radius: 3,
     overperformed: 0,
@@ -325,7 +325,7 @@
   == Ladybrown
   #subsystem-analysis(
     reflection: [
-     Although we did not get that many chances to utilize our ladybrown mechanism, it still came in very handy and worked well. When all the mobile goals were in use or defended, we could still score on the wall stakes, which made the winning difference in a lot of matches. We also used the ladybrown mechanism to extend our bot’s reach when defending against other bots, especially when they were going for wall stakes themselves.
+     Although we did not get that many chances to utilize our ladybrown mechanism, it still came in very handy and worked well. When all the mobile goals were in use or defended, we could still score on the wall stakes, which made the winning difference in a lot of matches. We also used the ladybrown mechanism to extend our bot's reach when defending against other bots, especially when they were going for wall stakes themselves.
     ],
     radius: 3,
     overperformed: 0,
@@ -340,7 +340,7 @@
 #h(1em)  I think this competition went a lot better than our other ones, and we did a much better job about communicating and being prepared before matches. That said, we did need to switch our autons at the last minute sometimes, which makes me think that an auton switcher on the controller would be useful.
 
 == Jin
-#h(1em) Overall, I think we did really well in this tournament. Something that I noticed was that we need a corner sweeper. We had difficulties clearing a corner which caused us to struggle controlling the corners. I really want to work on a corner sweeper or a mobile goal rush mechanism before states. 
+#h(1em) Overall, I think we did really well in this tournament. Something that I noticed was that we need a corner sweeper. We had difficulties clearing a corner which caused us to struggle controlling the corners. I really want to work on a corner sweeper or a mobile goal rush mechanism before states.
 
 == Ishika
 #h(1em) Our autons did okay at this competition, but I think we need more time to perfect them before states. I want to make sure they are very reliable, and I think that different autons for qualification matches and elimination matches would be good. Additionally, I would like to incorporate any future ring/goal rush mechanisms into our autons, so that we can score as many points as possible.
@@ -352,7 +352,7 @@
 #h(1em)  I think we can benefit with better communication with each other and with our alliance. In our first match, we forgot to replace the battery on our robot. This causes us to disconnect in the middle of the match. Additionally, we need to fix our intake because it keeps jamming.
 
 == Rory
-#h(1em) Our intake chains kept snapping off. We need to look at the spacing of our intake, as well as see if the chain link is too tight. I also think we can benefit from fixing the drivetrain. Our drivetrain motors keep coming loose. 
+#h(1em) Our intake chains kept snapping off. We need to look at the spacing of our intake, as well as see if the chain link is too tight. I also think we can benefit from fixing the drivetrain. Our drivetrain motors keep coming loose.
 
 == Anders
-#h(1em) Overall, a good competition. It is a shame that we did not use our ladybrown often in the tournament. I want to add a ring rush mechanism onto our robot that will disrupt the ring stack during autonomous. We kept intaking the wrong color ring, causing us to loose auton bonus. 
+#h(1em) Overall, a good competition. It is a shame that we did not use our ladybrown often in the tournament. I want to add a ring rush mechanism onto our robot that will disrupt the ring stack during autonomous. We kept intaking the wrong color ring, causing us to loose auton bonus.

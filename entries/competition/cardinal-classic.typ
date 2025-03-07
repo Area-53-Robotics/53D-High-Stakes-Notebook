@@ -4,7 +4,7 @@
   title: "Cardinal Classic",
   type: "competition",
   date: datetime(year: 2025, month: 01, day: 18),
-  attendance: ( "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
+  attendance: ("Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Jin",
   witnessed: "Ishika",
 )
@@ -62,7 +62,7 @@
   auton: "Tie",
   awp: false,
   strategy: [
-    - We will play offensively while 5588R sits in a positive corner. While they have the positive corner, we will pass mobile goals to them. 
+    - We will play offensively while 5588R sits in a positive corner. While they have the positive corner, we will pass mobile goals to them.
 
   ],
   auton_notes: [
@@ -72,7 +72,7 @@
     - We scored three rings on a mobile goal and tried to score it in a positive corner.
     - We fought with 5839B over a positive corner, but neither team got the positive corner.
     - The opponents left a free mobile goal in a positive corner, allowing us to take it out of the corner.
-    - We scored a full mobile goal into a positive corner. 
+    - We scored a full mobile goal into a positive corner.
     - We tried to go for wall stakes at the end, but failed
 
   ],
@@ -93,7 +93,7 @@
   awp: false,
   strategy: [
     - We want to play defensive because we are likely going to lose the auton bonus.
-    - We will secure a mobile goal into a positive corner. 
+    - We will secure a mobile goal into a positive corner.
   ],
   auton_notes: [
     - Our auton had an unknown issue causing the robot to go in random directions.
@@ -103,7 +103,7 @@
   match_notes: [
     - We picked up a mobile goal with one opposite-colored ring.
     - We filled the mobile goal with rings and placed it in an undefended positive corner.
-    - We clamped onto 7135T’s mobile goal and played "tug of war" with them.
+    - We clamped onto 7135T's mobile goal and played "tug of war" with them.
     - 20096G climbed to level one.
     - 5525A filled a mobile goal in the last 15 seconds.
   ],
@@ -150,7 +150,7 @@
   match: "Q67",
   red_alliance: (teams: ("53D", "929R"), score: 8),
   blue_alliance: (teams: ("929T", "26648W"), score: 8),
-  outcome: "Tie", 
+  outcome: "Tie",
   auton: "Blue",
   awp: false,
   strategy: [
@@ -164,7 +164,7 @@
   match_notes: [
     - The intake gearing was changed before this match so that the intake had more speed but much less torque. This made scoring rings almost impossible because the rings could not travel up our intake ramp.
     - We scored a 2 ring mobile goal in a positive corner.
-    - We grabbed an opponent’s 2 ring mobile goal and pushed it into a negative corner.
+    - We grabbed an opponent's 2 ring mobile goal and pushed it into a negative corner.
 
   ],
   subsystems: (
@@ -227,7 +227,7 @@
     - Us and 960Z fought over a positive corner. We both had a mobile goal with one ring.
     - We got our mobile goal placed in a positive corner while 53C scored a 4-ring mobile goal in the other positive corner.
     - We tried to go for wall stakes, but 960Y kept blocking us.
-    - In the last 15 seconds, we grabbed a 4-ring blue mobile goal and tried to place it in a negative corner, but it did not count because the mobile goal’s base did not break the plane of the corner.
+    - In the last 15 seconds, we grabbed a 4-ring blue mobile goal and tried to place it in a negative corner, but it did not count because the mobile goal's base did not break the plane of the corner.
     - One of our mobile goals did not count as in a positive corner because it was on top of a ring.
 
 
@@ -249,15 +249,15 @@
   auton: "Blue",
   awp: false,
   strategy: [
-    - Since 53C’s auton was most likely going to cross over the auton line again, both 53C and us will play aggressively.
+    - Since 53C's auton was most likely going to cross over the auton line again, both 53C and us will play aggressively.
   ],
   auton_notes: [
     - Our auton got the alliance wall stake and then messed up the rest of the auton routine.
   ],
   match_notes: [
-    - Our intake got stuck on the top of a mobile goal’s umbrella and could not outtake. We were jammed.
+    - Our intake got stuck on the top of a mobile goal's umbrella and could not outtake. We were jammed.
     - 53C scored a full mobile goal in a positive corner, but it got knocked over.
-    - We tried to push one of the opponents’ mobile goals into a negative corner, but could not.
+    - We tried to push one of the opponents' mobile goals into a negative corner, but could not.
     - 53C scored while we could not do anything.
 
   ],
@@ -305,7 +305,7 @@
   == Intake
   #subsystem-analysis(
     reflection: [
-      Our intake jammed for some of our matches, causing us to be disabled for the rest of the match. We faced issues with our intake’s chain snapping, getting caught on a mobile goal, or torque issues.
+      Our intake jammed for some of our matches, causing us to be disabled for the rest of the match. We faced issues with our intake's chain snapping, getting caught on a mobile goal, or torque issues.
     ],
     radius: 3,
     outer-label-radius: 130%,
@@ -331,18 +331,17 @@
 ]
 
 = Individual Reflections
-
 == Jin
-#h(1em) Since our wheels don’t have nylons at the end of their screw joints, we have a lot of friction problems. We need to find a way to add nylons at the end of the screwjoints, as well as check for any problems with the chassis. We may have to replace the chassis with better metal.
+#h(1em) Since our wheels don't have nylons at the end of their screw joints, we have a lot of friction problems. We need to find a way to add nylons at the end of the screwjoints, as well as check for any problems with the chassis. We may have to replace the chassis with better metal.
 
 == Ishika
-#h(1em) I hope that we will be able to improve our ladybrown mechanism, since it is a great idea and with some more tuning, it will help us improve our scoring greatly. I also think our autons need more tuning and time before we use them again. 
+#h(1em) I hope that we will be able to improve our ladybrown mechanism, since it is a great idea and with some more tuning, it will help us improve our scoring greatly. I also think our autons need more tuning and time before we use them again.
 
 == Makhi
 #h(1em)  We need more focus on our autonomous. I think we should put an autonomous selector on our robot to prevent us from picking the wrong auton. Additionally, I need to troubleshoot the friction fit of our ladybrown because the ring kept slipping off.
 
 == Eric
-#h(1em) Our squad performed well overall. Although we lost a lot of our qualifying matches, we identified key areas for improvement in our robot. Despite the setbacks, we still advanced to the elimination stage. One crucial takeaway for the future is the need to better track both our robot and our teammates. There were multiple instances where we were unsure of the robot’s location or the whereabouts of key team members, including the drive team.
+#h(1em) Our squad performed well overall. Although we lost a lot of our qualifying matches, we identified key areas for improvement in our robot. Despite the setbacks, we still advanced to the elimination stage. One crucial takeaway for the future is the need to better track both our robot and our teammates. There were multiple instances where we were unsure of the robot's location or the whereabouts of key team members, including the drive team.
 
 == Rory
 #h(1em) I believe this tournament went significantly better than some of our previous ones. However, we faced a lot of stress between matches due to various issues, such as our autonomous not working and our robot moving on its own. Additionally, some matches had very little time between them, which made it difficult to troubleshoot problems or even switch our license plates before getting back on the field.

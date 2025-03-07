@@ -10,7 +10,7 @@
 )
 
 
-The primary goal of testing the mobile goal rush mechanism is to analyze how effective it is at grabbing mobile goals. The mobile goal rush mechanism is a crucial component to our auton and grabbing mobile goals from opponent’s robots.
+The primary goal of testing the mobile goal rush mechanism is to analyze how effective it is at grabbing mobile goals. The mobile goal rush mechanism is a crucial component to our auton and grabbing mobile goals from opponent's robots.
 
 = Consistency
 == Background
@@ -91,11 +91,11 @@ The mobile goal rush mechanism will grab the mobile goal 80% of the time
   ),
 )
 == Conclusion
-We are happy to see that the mobile goal rush mechanism is successful at grabbing the mobile goal. However, it appears that the mobile goal rush mechanism experiences a lot of bending over time. This would lower how effective the mobile goal rush mechanism is in the future. 
+We are happy to see that the mobile goal rush mechanism is successful at grabbing the mobile goal. However, it appears that the mobile goal rush mechanism experiences a lot of bending over time. This would lower how effective the mobile goal rush mechanism is in the future.
 
 = Activation
 == Background
-The mobile goal rush mechanism would be used multiple times throughout a match. During auton, we will use the mobile goal rush mechanism to grab the mobile goal that is on the auton line. During driver control, we will use the mobile goal rush mechanism to grab a mobile goal from the enemy's robots. It is important for us to test how well it can activate and deactivate. 
+The mobile goal rush mechanism would be used multiple times throughout a match. During auton, we will use the mobile goal rush mechanism to grab the mobile goal that is on the auton line. During driver control, we will use the mobile goal rush mechanism to grab a mobile goal from the enemy's robots. It is important for us to test how well it can activate and deactivate.
 
 == Hypothesis
 The mobile goal rush will be able to activate and deactivate 10 times.
@@ -138,9 +138,9 @@ The mobile goal rush will be able to activate and deactivate 10 times.
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
+
     [Trial \#], [1], [2], [3], [4], [5],
-    [Successful Activations], [15], [15], [14], [15], [15], 
+    [Successful Activations], [15], [15], [14], [15], [15],
   )
 ]
 
@@ -210,7 +210,7 @@ Although we can use the mobile goal rush mechanism a maximum of 15 times in isol
 
 = Grip Strength
 == Background
-Besides grabbing the mobile goal that is on the auton line during auton, the mobile goal rush mechanism can also steal mobile goals from positive corners and enemy robots. 
+Besides grabbing the mobile goal that is on the auton line during auton, the mobile goal rush mechanism can also steal mobile goals from positive corners and enemy robots.
 
 == Hypothesis
 The mobile goal rush mechanism will successfully grab a mobile goal from an enemy robot 80% of the time.
@@ -228,18 +228,18 @@ The mobile goal rush mechanism will successfully grab a mobile goal from an enem
       (1, "Mobile Goal"),
       (6, "Rings"),
       (5, "Notetaking Materials"),
-    ) 
+    )
   ],
 
   [
     == Procedures
     + Place all 6 rings onto the mobile goal.
-    + Place the full mobile goal into the enemy robot’s clamp.
+    + Place the full mobile goal into the enemy robot's clamp.
     + Place our robot 12 inches in front of the enemy robot so that it is facing the mobile goal.
     + Activate the mobile goal rush mechanism and hook onto the mobile goal.
     + Drive both robots backward, pulling away from each other.
     + After the two robots disengage, record whether our robot successfully obtained the mobile goal.
-    + Repeat steps 2-6 for a total of 5 trials. 
+    + Repeat steps 2-6 for a total of 5 trials.
 
   ],
 )
@@ -254,8 +254,8 @@ The mobile goal rush mechanism will successfully grab a mobile goal from an enem
 
     fill: (x, y) =>
       if (x == 0) or (y == 0) {gray.lighten(20%)},
-    
-    [Trial \#], [1], [2], [3], [4], [5], 
+
+    [Trial \#], [1], [2], [3], [4], [5],
     [Success/Fail], [Success], [Failure], [Failure], [Failure], [Success],
   )
 ]
@@ -286,4 +286,4 @@ The mobile goal rush mechanism will successfully grab a mobile goal from an enem
 )
 
 == Conclusion
-Even though the mobile goal rush mechanism failed to meet the hypothesis, we are still happy with the results. The mobile goal rush mechanism is a surprise factor, meaning that we can grab a mobile goal from the enemy’s robot if they are not paying attention. However, the mobile goal rush mechanism struggles to take the mobile goal if both robots are tugging for it, so we cannot use this as our main strategy. 
+Even though the mobile goal rush mechanism failed to meet the hypothesis, we are still happy with the results. The mobile goal rush mechanism is a surprise factor, meaning that we can grab a mobile goal from the enemy's robot if they are not paying attention. However, the mobile goal rush mechanism struggles to take the mobile goal if both robots are tugging for it, so we cannot use this as our main strategy.

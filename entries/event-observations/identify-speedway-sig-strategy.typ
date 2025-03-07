@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "The Speedway Signature Event Strategy",
+  title: "Speedway Signature Event - Strategy",
   type: "identify",
-  date: datetime(year: 2024, month: 12, day: 06),
+  date: datetime(year: 2024, month: 12, day: 13),
   attendance: ("Jin", "Rory", "Eric", "Anders", "Makhi"),
   designed: "Anders",
   witnessed: "Jin",

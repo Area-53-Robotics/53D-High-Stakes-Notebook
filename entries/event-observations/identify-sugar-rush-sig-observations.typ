@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Sugar Rush Observations",
+  title: "Sugar Rush Signature Event - Observations",
   type: "identify",
   date: datetime(year: 2025, month: 01, day: 05),
   attendance: ("Jin", "Rory", "Eric", "Anders", "Makhi"),
@@ -12,8 +12,8 @@
   - Observe strategy and mechanisms that could be helpful for our robot.
 
 = Event Information
-- Tournament name: Sugar Rush Signature Event 
-- Location: Hershey Lodge, 
+- Tournament name: Sugar Rush Signature Event
+- Location: Hershey Lodge,
   // - 325 University Drive
   // -  Hershey, Pennsylvania 17033
   // - United States
@@ -30,7 +30,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
   table.header(
     repeat: false,
     table.cell(colspan: 2, align: center, fill: gray.lighten(20%))[
-      *5956B Bangarang \   
+      *5956B Bangarang \
       Won finals 2-1*
     ],
   ),
@@ -51,7 +51,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
     )
   ],
   table.cell[
-    - *Drivetrain*: They use 6 motors and 6 2.75” wheels with a 450 RPM drivetrain. They also use all omnis for better drifting. 
+    - *Drivetrain*: They use 6 motors and 6 2.75” wheels with a 450 RPM drivetrain. They also use all omnis for better drifting.
     - *Tracking wheels*: They have one tracking wheel on the bottom of their drivetrain.
   ],
   table.cell[
@@ -84,7 +84,7 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
   table.header(
     repeat: false,
     table.cell(colspan: 2, align: center, fill: gray.lighten(20%))[
-      *11777C MONTE \   
+      *11777C MONTE \
       Finals*
     ],
   ),
@@ -128,6 +128,6 @@ The Sugar Rush Signature Event is a high-level competition VEX Robotics tourname
 )
 
 = Final Observations
-1. We saw a lot of ladybrowns that were capable of rotating 180 degrees. These types of ladybrowns were capable of flipping mobile goals over and descoring rings from mobile goals. We are considering rebuilding our ladybrown so that it has a 180 degree range of rotation. 
-2. We saw that a lot of robots had an auton that can score on the neutral wall stake. The ability to score on the wall stakes during auton would give us a significant advantage because then the enemy team would need to focus on placing their own color rings on the wall stakes. This gives them less time to focus on securing positive corners. 
-3. We did not see any significant hang mechanisms. Some teams ran a passive hang that is attached to their ladybrown. It looks like going for stage two and three are not worth the time invested to reach there. 
+1. We saw a lot of ladybrowns that were capable of rotating 180 degrees. These types of ladybrowns were capable of flipping mobile goals over and descoring rings from mobile goals. We are considering rebuilding our ladybrown so that it has a 180 degree range of rotation.
+2. We saw that a lot of robots had an auton that can score on the neutral wall stake. The ability to score on the wall stakes during auton would give us a significant advantage because then the enemy team would need to focus on placing their own color rings on the wall stakes. This gives them less time to focus on securing positive corners.
+3. We did not see any significant hang mechanisms. Some teams ran a passive hang that is attached to their ladybrown. It looks like going for stage two and three are not worth the time invested to reach there.

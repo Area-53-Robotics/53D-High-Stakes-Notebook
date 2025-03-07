@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Sugar Rush Strategy Analysis",
+  title: "Sugar Rush Signature Event - Strategy",
   type: "identify",
-  date: datetime(year: 2054, month: 01, day: 05),
+  date: datetime(year: 2025, month: 01, day: 05),
   attendance: ("Jin", "Rory", "Eric", "Anders", "Makhi"),
   designed: "Anders",
   witnessed: "Jin",
@@ -23,7 +23,7 @@ After observing the Sugar Rush Tournament, we became interested in analyzing and
     - End result of Quarterfinals #2-1
     - Red: 6121F, 842T
     - Blue: 12C, 727R
-    - Auton winner: Red alliance 
+    - Auton winner: Red alliance
 
   ],
   table.cell[
@@ -39,15 +39,15 @@ After observing the Sugar Rush Tournament, we became interested in analyzing and
     #image("identify-sugar-rush-sig/strategy-2.png", width: 170pt)
     - End result of Semifinals #2-1
     - Red: 70407R, 6842K
-    - Blue: 9039H, 2072A 
-    - Auton winner: Red alliance 
+    - Blue: 9039H, 2072A
+    - Auton winner: Red alliance
   ],
   table.cell[
     = What we noticed
     - Both robots on the mobile goal side of the field have a mobile goal rush mechanism. The team who successfully stole the mobile goal won.
-    - If you miss a part of your auton due to interference, such as a ruined ring stack, then your entire path is ruined. 
+    - If you miss a part of your auton due to interference, such as a ruined ring stack, then your entire path is ruined.
     - 2072A had a ring mechanism that allowed them to ruin the ring stack.
-    - Upsetting the enemy team’s auton is important.
+    - Upsetting the enemy team's auton is important.
   ],
 )
 #colbreak()
@@ -60,17 +60,17 @@ After observing the Sugar Rush Tournament, we became interested in analyzing and
     #figure(
       image("identify-sugar-rush-sig/strategy-3.png"),
     )
-    - End result of Finals 1 
+    - End result of Finals 1
     - Red alliance: 5956B, 11777C
     - Blue alliance: 2775V, 4610C
-    - Winner: Red alliance 
+    - Winner: Red alliance
 
 
   ],
   table.cell[
     = What we noticed
     - 5956B swept the positive corner.
-    - The red alliance was able to pass mobile goals to each other. 
+    - The red alliance was able to pass mobile goals to each other.
     - It's better to have more control of mobile goals than having control of a positive corner.
     - When an enemy alliance has a positive corner, try to tip the mobile goal.
     - Scoring on the neutral wall stakes is very important.
@@ -87,7 +87,7 @@ After observing the Sugar Rush Tournament, we became interested in analyzing and
   table.cell[
     = What we noticed
     - 9039H struggled to control a positive corner because they did not have a corner sweeper.
-    - When the positive corners are getting guarded, it is the other robot’s job to fight for the neutral wall stakes.
+    - When the positive corners are getting guarded, it is the other robot's job to fight for the neutral wall stakes.
     - In the last 15 seconds, teams still held onto the mobile goals to prevent the enemy team from stealing them.
   ],
 )

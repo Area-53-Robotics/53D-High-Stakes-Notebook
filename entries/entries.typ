@@ -101,6 +101,7 @@
 #include "clamp-2/test-2.typ"
 // // ! Third Notebook
 // #include "odometry/identify.typ"
+// #include "odometry/understand.typ"
 // #include "odometry/brainstorm-movement.typ"
 // #include "odometry/select-movement.typ"
 // #include "odometry/brainstorm-implementation.typ"
@@ -111,19 +112,31 @@
 // #include "odometry/build.typ"
 // #include "odometry/program-position-tracking.typ"
 // #include "odometry/program-pid.typ"
-// #include "event-observations/speedway-sig.typ"
-// #include "event-observations/identify-speedway-sig.typ"
-// #include "manual-updates/manual-v2.2-update.typ"
-// #include "intake-2/build-maintenance.typ"
-// #include "event-observations/identify-sugar-rush-sig.typ"
-// #include "event-observations/sugar-rush-sig.typ"
+
+// // December
+// #include "odometry/test.typ"
+// #include "event-observations/identify-speedway-sig-observations.typ"
+// #include "event-observations/identify-speedway-sig-strategy.typ"
 // #include "competition/south-hagerstown-rebel-rumble.typ"
+// #include "manual-updates/manual-v2.2-update.typ"
+// ! OV robot troubleshooting
+// #include "intake-2/build-maintenance.typ"
+
+// // January
+// #include "management/january.typ"
+// ! intake troubleshooting
+// #include "event-observations/identify-sugar-rush-sig-observations.typ"
+// #include "event-observations/identify-sugar-rush-sig-strategy.typ"
 // #include "competition/valley-mall.typ"
-// #include "competition/kalahari-classic.typ"
+// ! intake v2 retest
 // #include "competition/cardinal-classic.typ"
+// #include "competition/kalahari-classic.typ"
 // #include "manual-updates/manual-v3.0-update.typ"
+// ! drivetrain v1 troubleshoot
 
-
+// // February
+// // ! Fourth Notebook
+// #include "management/february.typ"
 // #include "ring-rush-mech-1/identify.typ"
 // #include "ring-rush-mech-1/understand.typ"
 // #include "ring-rush-mech-1/brainstorm.typ"
@@ -134,7 +147,13 @@
 // #include "goal-rush-mech-1/brainstorm.typ"
 // #include "goal-rush-mech-1/select.typ"
 // #include "goal-rush-mech-1/plan.typ"
+// ! build ring rush
+// ! build goal rush
+// ! OV robot troubleshooting
+// ! program ring rush
+// ! test ring rush
+// ! program goal rush
 // #include "goal-rush-mech-1/test.typ"
-// #include "odometry/understand.typ"
+
 // // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"

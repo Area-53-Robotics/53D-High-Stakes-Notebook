@@ -4,7 +4,7 @@
   title: "Valley Mall",
   type: "competition",
   date: datetime(year: 2025, month: 01, day: 11),
-  attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
+  attendance: ("Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Jin",
   witnessed: "Ishika",
 )
@@ -114,7 +114,7 @@
     - 1727R also scored a full mobile goal in the first 15 seconds.
     - We blocked 1727R from getting to a positive corner.
     - We scored another full mobile goal.
-    - The opposing alliance gained control of both positive corners. 
+    - The opposing alliance gained control of both positive corners.
     - We scored 1 ring on the wall stake.
     - Our intake chains broke, preventing us from scoring on the wall stakes in the last 10 seconds.
 
@@ -136,7 +136,7 @@
   auton: "Red",
   awp: false,
   strategy: [
-    - 76752A cannot score well. Since they’re much heavier than the enemy alliance, they will stay in a positive corner and wait for us to deliver goals to them.
+    - 76752A cannot score well. Since they're much heavier than the enemy alliance, they will stay in a positive corner and wait for us to deliver goals to them.
 
   ],
   auton_notes: [
@@ -149,7 +149,7 @@
   match_notes: [
     - 53F scored a mobile goal with 5 rings into a positive corner.
     - We scored a mobile goal with 6 rings into a positive corner.
-    - We got 53F’s mobile goal out of the positive corner.
+    - We got 53F's mobile goal out of the positive corner.
     - Our intake gear slipped, preventing us from using the intake for the rest of the match.
     - We played defense.
     - 76752A scored a single ring into the mobile goal.
@@ -215,8 +215,8 @@
   match_notes: [
     - We scored a full mobile goal and placed it into a positive corner.
     - 47418A blocked a positive corner.
-    - 593A’s battery fell out, disconnecting them from the match.
-    - We placed the opposing alliance’s full mobile goal into a negative corner.
+    - 593A's battery fell out, disconnecting them from the match.
+    - We placed the opposing alliance's full mobile goal into a negative corner.
     - We scored a ring onto the wall stake.
 
 
@@ -273,7 +273,7 @@
   auton: "Blue",
   awp: false,
   strategy: [
-    - Communicate about undefended mobile goals and corners so we can get double positive corner possession and possibly negate an opponent’s mobile goals.
+    - Communicate about undefended mobile goals and corners so we can get double positive corner possession and possibly negate an opponent's mobile goals.
   ],
   auton_notes: [
     - Our auton missed the mobile goal.
@@ -359,9 +359,6 @@
 ]
 #colbreak()
 = Individual Reflections
-== Ajibola
-#h(1em)  I am glad our auton is working better, but I think there is still room for improvement. Scoring the Autonomous Win Point on the first match was great, but I think we need to increase our auton’s reliability to score the auton bonus and AWP more often.
-
 == Jin
 #h(1em) We communicated a lot more at this past competition, which has helped with our team cooperation and performance. Earlier, we had problems with being unprepared for matches, like having the wrong license plates on. I am happy to say that we have been much more prepared at these past matches than before.
 
@@ -369,10 +366,10 @@
 #h(1em) I hope that we will be able to improve our ladybrown mechanism, since it is a great idea and with some more tuning, it will help us improve our scoring greatly.
 
 == Makhi
-#h(1em)  I have gotten much more practice with driving the bot since the past competition, which has helped our matches. I am feeling more comfortable with the bot’s controls, and our strategy has definitely improved as well.
+#h(1em)  I have gotten much more practice with driving the bot since the past competition, which has helped our matches. I am feeling more comfortable with the bot's controls, and our strategy has definitely improved as well.
 
 == Eric
-#h(1em) Our intake needs some major fixes to be match-ready in the future. In its current state, it has caused us to lose many matches, which needs to be addressed. Hopefully we will find a new position for the chain, so that it doesn’t snap so much.
+#h(1em) Our intake needs some major fixes to be match-ready in the future. In its current state, it has caused us to lose many matches, which needs to be addressed. Hopefully we will find a new position for the chain, so that it doesn't snap so much.
 
 == Rory
 #h(1em) I am very glad that our clamp is functional. It is much more reliable now, mostly due to our improvements to the shape and grip. This is great news for our competition scoring, and has definitely helped us make it to quarterfinals at Valley Mall.
