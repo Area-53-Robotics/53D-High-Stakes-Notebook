@@ -1,13 +1,14 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Rush Mechanism v1",
+  title: "Goal Rush Mechanism v1",
   type: "understand",
   date: datetime(year: 2025, month: 02, day: 01),
   attendance: ("Ajibola", "Ishika", "Eric", "Rory", "Makhi", "Anders"),
   designed: "Jin",
   witnessed: "Rory",
 )
+
 We agree that the mobile goal rush mechanism should be a fairly simple mechanism to build and troubleshoot. Regardless, understanding how the mobile goal rush mechanism works helps speed up the building process and functions as a beneficial learning experience for the novice builders.
 
 #set grid(
@@ -89,6 +90,5 @@ We agree that the mobile goal rush mechanism should be a fairly simple mechanism
     ]
     == How does this relate to the robot?
     The mobile goal rush mechanism is a mechanism that relies on pneumatics for activation. When the pneumatics extend, the volume of the cylinder decreases while the pressure increases. An increase in pressure helps prevent the piston from retracting back when pushed by enemy robots.
-
   ],
 )

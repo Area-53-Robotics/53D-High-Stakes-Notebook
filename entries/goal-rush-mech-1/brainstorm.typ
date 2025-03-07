@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Rush Mechanism v1",
+  title: "Goal Rush Mechanism v1",
   type: "brainstorm",
   date: datetime(year: 2025, month: 02, day: 02),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),

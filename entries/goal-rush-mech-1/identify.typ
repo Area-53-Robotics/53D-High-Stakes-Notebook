@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Mechanism v1",
+  title: "Goal Rush Mechanism v1",
   type: "identify",
   date: datetime(year: 2025, month: 02, day: 01),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -14,8 +14,8 @@ From our previous observations in our #entry-reference(title: "Speedway Signatur
 #figure(
   image("identify-goal-rush.excalidraw.svg", width: 50%),
   caption: "In the above image, (1) the robot starts at the initial position with the mobile goal rush mechanism extended. Then the robot goes forward and rushes for the mobile goal that is on the autonomous line. (2) The robot drags the mobile goal to their side of the field with the mobile goal rush mechanism and releases it. (3) The robot travels to a corner and sweeps it.
-  
-  The mobile goal rush mechanism allows us to steal a mobile goal and clear the ring stack that is found in the corner. 
+
+  The mobile goal rush mechanism allows us to steal a mobile goal and clear the ring stack that is found in the corner.
  "
 )
 
@@ -39,7 +39,7 @@ From our previous observations in our #entry-reference(title: "Speedway Signatur
     - The mobile goal rush mechanism should have a locking mechanism to steal a mobile goal
     - The mobile goal rush mechanism should be able to clear a ring stack consisting of 4 rings.
     - If possible, the mobile goal rush mechanism should be able to flip goals.
-      - Flipping goals is a defensive measure that prevents mobile goals from being counted towards negative corners. 
+      - Flipping goals is a defensive measure that prevents mobile goals from being counted towards negative corners.
 
 
   ],
