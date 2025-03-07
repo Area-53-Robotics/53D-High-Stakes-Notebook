@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Rush Mechanism v1",
+  title: "Goal Rush Mechanism v1",
   type: "test",
   date: datetime(year: 2025, month: 2, day: 28),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Rory", "Eric", "Anders"),
@@ -42,7 +42,6 @@ The mobile goal rush mechanism will grab the mobile goal 80% of the time
     + Drive backward 2 tiles.
     + Record if the robot was successful at grabbing the mobile goal.
     + Repeat steps 1-5 for a total of 5 trials.
-
   ],
 )
 
@@ -90,6 +89,7 @@ The mobile goal rush mechanism will grab the mobile goal 80% of the time
     ),
   ),
 )
+
 == Conclusion
 We are happy to see that the mobile goal rush mechanism is successful at grabbing the mobile goal. However, it appears that the mobile goal rush mechanism experiences a lot of bending over time. This would lower how effective the mobile goal rush mechanism is in the future.
 
@@ -124,7 +124,6 @@ The mobile goal rush will be able to activate and deactivate 10 times.
     + Repeat steps 3-4 until the robot runs out of air.
     + Record the number of successful activations.
     + Repeat steps 1-6 for a total of 5 trials.
-
   ],
 )
 
@@ -243,7 +242,9 @@ The mobile goal rush mechanism will successfully grab a mobile goal from an enem
 
   ],
 )
+
 #colbreak()
+
 == Results
 #align(center)[
   #show table.cell.where(x: 0): strong

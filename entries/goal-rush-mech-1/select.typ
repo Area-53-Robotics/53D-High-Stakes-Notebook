@@ -1,9 +1,9 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Rush Mechanism v1",
+  title: "Goal Rush Mechanism v1",
   type: "select",
-  date: datetime(year: 2024, month: 02, day: 02),
+  date: datetime(year: 2025, month: 02, day: 02),
   attendance: ("Ajibola", "Ishika", "Eric", "Jin", "Rory", "Makhi"),
   designed: "Rory",
   witnessed: "Ishika",

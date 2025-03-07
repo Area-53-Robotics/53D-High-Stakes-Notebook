@@ -123,7 +123,8 @@ We found unresolved issues with the intake during testing yesterday. More issues
 
 == Build Process
 #grid(
-  [
+  row-gutter: 20pt,
+  grid.cell(colspan: 2)[
     === Materials
     - High-Strength 24-tooth Gear
     - Low-Strength 24-tooth Gear
@@ -132,33 +133,31 @@ We found unresolved issues with the intake during testing yesterday. More issues
     - x1 11x1x1 C-channel
     - The rest of the materials can be found in the toolbox.
   ],
-  stack(
-    dir: ltr,
-    spacing: 10pt,
-    figure(
-      image("build-troubleshoot/1.4.25-1.png", width: 100pt),
-      caption: "Cut metal 24-tooth gear"
-    ),
-    figure(
-      image("build-troubleshoot/1.4.25-2.png", width: 100pt),
-      caption: "The 11x1x1 C-channel support\nfor the intake first stage."
-    ),
+  figure(
+    image("build-troubleshoot/1.4.25-1.png", height: 140pt),
+    caption: "Cut metal 24-tooth gear"
+  ),
+  figure(
+    image("build-troubleshoot/1.4.25-2.png", height: 140pt),
+    caption: "The 11x1x1 C-channel support\nfor the intake first stage."
   ),
 )
 
-      === Assembly
-      - #text(red)[Problem:] Rings were having a difficult time getting up the intake ramp.
-      - #text(green)[Solution:] We switched the gears that were on the second stage's gear system so that it is now 300 RPM. This decreases the overall RPM of the intake in exchange for more torque.
-      - #text(red)[Problem:] We could not use a high-strength 24-tooth gear because of spacing. Part of the gear would contact the intake's hooks, which would cause friction.
-      - #text(green)[Solution:] A silver 24-tooth gear was cut in half.
-      - #text(red)[Problem:] The first stage intake was cantilevered, causing the gears to slip at high RPM.
-      - #text(green)[Solution:]
-        - An 11x1x1 C-channel was mounted on the side to add extra support for the gear system.
-        - The sprocket on our first stage intake was moved to the left to account for this change.
+#colbreak()
 
-      === Troubleshooting
-      - At the start of practice, we ran the intake with rings interfering to check the intake's torque.
-      - Between and after intake changes, we ran the intake to test if it could pick up rings.
+=== Assembly
+- #text(red)[Problem:] Rings were having a difficult time getting up the intake ramp.
+- #text(green)[Solution:] We switched the gears that were on the second stage's gear system so that it is now 300 RPM. This decreases the overall RPM of the intake in exchange for more torque.
+- #text(red)[Problem:] We could not use a high-strength 24-tooth gear because of spacing. Part of the gear would contact the intake's hooks, which would cause friction.
+- #text(green)[Solution:] A silver 24-tooth gear was cut in half.
+- #text(red)[Problem:] The first stage intake was cantilevered, causing the gears to slip at high RPM.
+- #text(green)[Solution:]
+  - An 11x1x1 C-channel was mounted on the side to add extra support for the gear system.
+  - The sprocket on our first stage intake was moved to the left to account for this change.
+
+=== Troubleshooting
+- At the start of practice, we ran the intake with rings interfering to check the intake's torque.
+- Between and after intake changes, we ran the intake to test if it could pick up rings.
 
 #colbreak()
 
@@ -188,9 +187,10 @@ During practice, we identified problems with the new intake ramp and a skipping 
   ]
 )
 
-== Build Process
 #grid(
+  columns: 3,
   [
+    == Build Process
     === Materials
     - Polycarbonate
     - Zipties
@@ -198,33 +198,28 @@ During practice, we identified problems with the new intake ramp and a skipping 
     - The rest of the materials can be found in the toolbox.
   ],
   figure(
-    image("build-troubleshoot/1.9.25-1.png", width: 120pt),
+    image("build-troubleshoot/1.9.25-1.png", height: 100pt),
     caption: "Ramp & stoppers in the redone intake"
   ),
   figure(
-    image("build-troubleshoot/1.9.25-2.png", width: 120pt),
+    image("build-troubleshoot/1.9.25-2.png", height: 85pt),
     caption: "The apex of our intake. The spacing was changed to reduce bending."
   ),
-  stack(
-    spacing: 10pt,
-    [
-      === Assembly
-      - Removed the previous intake plate
-        - The rings were having trouble going up the ramp. The angle needed to change.
-      - Cut a new intake plate
-        - Bored holes in the new plate.
-        - Placed the plate in place and attached it to support axles using zipties.
-      - Tightened the zipties.
-      - Added fasteners halfway down and tightened them to induce bending on the polycarbonate.
-      - #text(red)[Problem:] The top of our intake was bending a little.
-      - #text(green)[Solution:] Reduced the spacing by 1/8 inch.
-    ],
-    [
-      === Troubleshooting
-      - Drove the robot between robot adjustments to find and test intake issues.
-    ],
-  ),
 )
+
+=== Assembly
+- Removed the previous intake plate
+  - The rings were having trouble going up the ramp. The angle needed to change.
+- Cut a new intake plate
+  - Bored holes in the new plate.
+  - Placed the plate in place and attached it to support axles using zipties.
+- Tightened the zipties.
+- Added fasteners halfway down and tightened them to induce bending on the polycarbonate.
+- #text(red)[Problem:] The top of our intake was bending a little.
+- #text(green)[Solution:] Reduced the spacing by 1/8 inch.
+
+=== Troubleshooting
+- Drove the robot between robot adjustments to find and test intake issues.
 
 #colbreak()
 
@@ -256,17 +251,20 @@ After finalising a fix for the intake transmission, the old intake transmission 
 
 == Build Process
 #grid(
-  [
+  row-gutter: 15pt,
+  grid.cell(rowspan: 2)[
     === Materials
     - Axles
     - High-Strength 36-tooth Gear
     - Low-Strength 36-tooth Gear
     - The rest of the materials can be found in the toolbox.
 
-    #v(30pt)
-
-    === Troubleshooting
-    - Activated the intake for an extended period of time while collecting rings to test power and consistency.
+    === Assembly
+    - Removed the axles and screw joints of the transmission to begin replacement.
+    - The axle was experiencing some stress because the rotation of the chain would slowly bend the axle downwards.
+    - A 11x1x1 C-channel was used as the front brace, reducing stress.
+    - Replaced the axle and added another in place of the screw joint along with new bearings for smoother intake rotation.
+    - Reconnected the chain to the first stage.
   ],
   figure(
     stack(
@@ -277,11 +275,8 @@ After finalising a fix for the intake transmission, the old intake transmission 
     ),
     caption: "New bracing of the transmission between the first and second stages of the intake."
   ),
+  [
+    === Troubleshooting
+    - Activated the intake for an extended period of time while collecting rings to test power and consistency.
+  ]
 )
-
-=== Assembly
-- Removed the axles and screw joints of the transmission to begin replacement.
-- The axle was experiencing some stress because the rotation of the chain would slowly bend the axle downwards.
-- A 11x1x1 C-channel was used as the front brace, reducing stress.
-- Replaced the axle and added another in place of the screw joint along with new bearings for smoother intake rotation.
-- Reconnected the chain to the first stage.
