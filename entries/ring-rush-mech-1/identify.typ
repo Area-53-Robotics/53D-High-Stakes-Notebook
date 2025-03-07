@@ -21,7 +21,7 @@
     (true, "Plan the implementation of the ring rush mech idea.", "Everyone"),
   )
 )
-From our previous observations in our [Identify speedway observations] and our [Identify sugar rush observations], we saw that a lot of teams had a ring rush mechanism. The purpose of the ring rush mechanism is to disrupt the ring stack during auton and steal two rings.
+From our previous observations in our #entry-reference(title: "Speedway Signature Event Observations", type: "identify", date: datetime(year: 2024, month: 12, day: 06)) and our #entry-reference(title: "Sugar Rush Observations", type: "identify", date: datetime(year: 2025, month: 01, day: 05)), we saw that a lot of teams had a ring rush mechanism. The purpose of the ring rush mechanism is to disrupt the ring stack during auton and steal two rings.
 
 #figure(
   image("identify-ring-rush.excalidraw.svg", width: 50%),

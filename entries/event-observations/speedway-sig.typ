@@ -4,9 +4,9 @@
   title: "The Speedway Signature Event Strategy",
   type: "identify",
   date: datetime(year: 2024, month: 12, day: 06),
-  attendance: ("Jin", "Ishika", "Eric"),
-  designed: "Jin",
-  witnessed: "Ishika",
+  attendance: ("Jin", "Rory", "Eric", "Anders", "Makhi"),
+  designed: "Anders",
+  witnessed: "Jin",
 )
 
 After observing the Speedway Tournament, we became interested in analyzing and documenting the strategies we witnessed. We took detailed notes on both autonomous routines and match strategies, identifying key tactics that could be beneficial for our future competitions.

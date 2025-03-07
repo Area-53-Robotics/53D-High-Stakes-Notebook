@@ -112,9 +112,16 @@
 // #include "odometry/program-position-tracking.typ"
 // #include "odometry/program-pid.typ"
 // #include "event-observations/speedway-sig.typ"
+#include "event-observations/identify-speedway-sig.typ"
 // #include "manual-updates/manual-v2.2-update.typ"
 // #include "intake-2/build-maintenance.typ"
+#include "event-observations/identify-sugar-rush-sig.typ"
+#include "event-observations/sugar-rush-sig.typ"
 #include "competition/south-hagerstown-rebel-rumble.typ"
+#include "competition/valley-mall.typ"
+#include "competition/kalahari-classic.typ"
+#include "competition/cardinal-classic.typ"
+
 
 #include "ring-rush-mech-1/identify.typ"
 #include "ring-rush-mech-1/understand.typ"
@@ -126,6 +133,6 @@
 #include "goal-rush-mech-1/brainstorm.typ"
 #include "goal-rush-mech-1/select.typ"
 #include "goal-rush-mech-1/plan.typ"
- #include "odometry/understand.typ"
+#include "odometry/understand.typ"
 // // TBD
 // #include "pre-auton-menu/program-pre-auton-menu.typ"
