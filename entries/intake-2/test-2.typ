@@ -9,11 +9,6 @@
   witnessed: "Rory",
 )
 
-#colbreak()
-#colbreak()
-#colbreak()
-
-/*
 The primary goal of testing the new intake is to evaluate how effectively it can manipulate rings. To ensure consistency and comparability, we conducted the same series of tests that we performed on the first intake.
 
 = Speed
@@ -396,4 +391,3 @@ The intake will properly score 5 or more out of 6 rings onto the mobile goal.
 
 == Conclusion
 The smoother transition between the first two stages of the intake made the robot much more consistent at scoring rings onto the mobile goal. However, we wonder how effective this intake would be during real match play, as many factors, such as the angle at which the mobile goal is clamped and material stress, can reduce the effectiveness of our intake.
-*/

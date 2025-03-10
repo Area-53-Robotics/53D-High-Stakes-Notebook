@@ -16,6 +16,11 @@
 #let appendix-entry-counter = counter("appendix-entry-counter")
 
 // Global Notebook Variables
+/*
+  First Notebook: 1
+  Second Notebook: 150
+  Third Notebook: 300
+*/
 #let first-page-number = 300
 
 #let team-members = ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders")

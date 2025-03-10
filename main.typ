@@ -14,9 +14,9 @@
   season: "High Stakes",
   innovate: (
     date: datetime(year: 2025, month: 3, day: 8),
-    event: none,
-    description: "The ladybrown is designed to rotate up to 180" + sym.degree + " to score on both alliance and neutral stakes. It is mounted at an angle on the side of our chassis, which helps maintain a lower center of gravity compared to mounting it vertically. The ladybrown grabs rings at the intake's apex. It uses mesh to absorb the rings' energy upon collision, preventing them from slipping out. Initially, our team manually set up the ladybrown before matches, which took time and introduced human error. We automated the process by using a rotation sensor, making pickup and scoring more efficient.",
-    approach: "Most ladybrown programs use default VEX motor movement functions to rotate the ladybrown motors. This often causes the ladybrown to overshoot or undershoot its target angle. Our ladybrown uses a Proportional-Integral-Derivative (PID) controller to adjust the speed of the ladybrown motors every 10 milliseconds based on how far away the ladybrown is from its target angle, ensuring consistent and smooth movement.",
+    event: "Maryland States Championship",
+    description: "Our mobile goal rush mechanism gives us significant advantages in a match. First, with its extended reach, we can grab a mobile goal from the autonomous line before the opposing team has a chance to take it, while also interfering with the enemy alliance's autonomous route by disrupting the mobile goal. Second, the mobile goal rush mechanism would allow us to clamp onto mobile goals that the enemy team posses. We can pull the mobile goal from their clamp or pull them out of the corner.",
+    approach: "The most innovative part of the mobile goal rush mechanism is at the end of the mobile goal rush mechanism, which is the clamp. This clamp behaves similar to a fish hook. When we activate the mobile goal rush mechanism, the clamp slides under the mobile goal's base. When we deactivate the clamp, the clamp hooks on the mobile goal's base, allowing us to drag the mobile goal.",
     pages: [
       #set text(size: 12pt)
       #context {
@@ -24,7 +24,7 @@
 
         valid-entries = valid-entries.filter(
           entry => {
-            entry.last().title.match("Ladybrown v1") != none
+            entry.last().title.match("Goal Rush Mechanism v1") != none
           }
         )
 

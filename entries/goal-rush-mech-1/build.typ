@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Rush Mechanism v1",
+  title: "Goal Rush Mechanism v1",
   type: "build",
   date: datetime(year: 2025, month: 2, day: 7),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -39,8 +39,8 @@ We saw when observing signature events that having a mobile goal rush mechanism 
     spacing:10pt,
       [
         === Materials
-        - 1x 90-degree gusset 
-        - 1x 18x1x1 C-channel 
+        - 1x 90-degree gusset
+        - 1x 18x1x1 C-channel
         - 1x 9x1x1 C-channel
         - The rest of the materials can be found in the toolbox.
 
@@ -65,7 +65,7 @@ We saw when observing signature events that having a mobile goal rush mechanism 
       figure(
       image("build/goal-2.7.25-2.png", width: 110pt),
       caption: "Mobile goal rush mechanism in resting position"
-    ) 
+    )
   ),
   [
     === Troubleshooting
@@ -76,7 +76,7 @@ We saw when observing signature events that having a mobile goal rush mechanism 
 #colbreak()
 = 2024/02/08
 
-Today we finished the mobile goal rush mechanism wiring and tubing. Our next step is to test and troubleshoot the mobile goal rush mechanism. 
+Today we finished the mobile goal rush mechanism wiring and tubing. Our next step is to test and troubleshoot the mobile goal rush mechanism.
 
 == Delegation
 #delegation(

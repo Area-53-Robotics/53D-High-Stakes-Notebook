@@ -1,45 +1,45 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "November Planning",
+  title: "February Planning",
   type: "management",
-  date: datetime(year: 2024, month: 11, day: 1),
+  date: datetime(year: 2025, month: 2, day: 1),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
   designed: "Ajibola",
   witnessed: "Ishika",
 )
 
-#colbreak()
+#to-do(
+  date: datetime(year: 2025, month: 2, day: 1),
+  monthly-schedule: "On",
+  yearly-schedule: "Off",
+  (
+    (true, "Review our time and budget management during January.", "Everyone"),
+    (true, "Plan out the February meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),
+    (true, "Identify the design goals and constraints for the ring rush mechanism.", "Everyone"),
+    (true, "Determine the math and scientific concepts involved in ring rush mech design.", "Everyone"),
+    (true, "Identify the design goals and constraints for the goal rush mechanism.", "Everyone"),
+    (true, "Determine the math and scientific concepts involved in goal rush mech design.", "Everyone"),
+  )
+)
 
-// #to-do(
-//   date: datetime(year: 2024, month: 11, day: 01),
-//   monthly-schedule: "On",
-//   yearly-schedule: "Off",
-//   (
-//     (true, "Review our time and budget management during October.", "Everyone"),
-//     (true, "Plan out the November meetings by creating a Gantt chart & reviewing our budget.", "Everyone"),
-//     (true, "Build the ladybrown according to today's delegation.", "Everyone"),
-//     (true, "Troubleshoot the drivetrain according to today's delegation.", "Everyone"),
-//     (true, "Build the intake according to today's delegation.", "Everyone"),
-//   )
-// )
+Today was our first February meeting, so we dedicated some time to planning out the upcoming month.
 
-// Today was our first November meeting, so we dedicated some time to planning out the upcoming month.
+= January Management Review
+== January Time Management
+#gantt-chart-key(intended-color: rgb("bfbfbf"))
+#image("gantt-charts/january-post-1.png", width: 400pt)
+#image("gantt-charts/january-post-2.png", width: 460pt)
 
-// = October Management Review
-// == October Time Management
-// #gantt-chart-key()
-// #image("gantt-charts/october-post-1.png", width: 400pt)
-// #image("gantt-charts/october-post-2.png", width: 460pt)
+We managed to nearly perfectly follow our schedule in January, which will set us up nicely for our design cycles in February.
 
-// After the Dulaney Royal Rumble competition, we decided to replace the redirect mechanism with the ladybrown instead of creating the odometry system to improve our scoring during the driver control period. We were also able to have two more meetings than we had planned for at the beginning of October. As a result, the meetings after the Dulaney Royal Rumble competition ended up containing different tasks than we originally planned.
+== January Budget & Materials Management
+The construction of the intake v2 and overall robot maintenance did not require us to buy new parts. So our budget usage remains unchanged.
 
-// == October Budget & Materials Management
-// We built the ladybrown without buying any new materials, and we were able to reuse parts from the redirect mechanism when building the ladybrown. So far this season, we have not spent any money to buy new materials, showing that our designs have been cost-efficient.
+= February Time Management
+This is our last full month of meetings before the states championship, so we will need to finalize our robot. We want to build both a ring rush mechanism and a goal rush mechanism this month, so we will need to speed up the design cycles for both mechanisms.
 
-// = November Time Management
-// Because we qualified for the state championship at the Dulaney Royal Rumble, we do not have to rush our build process before tournaments to worry about state qualifications. We want to use this month to finish our ladybrown & intake design cycles and start the odometry design cycle that we were unable to start in October.
+Keeping this information in mind, we created this Gantt chart:
 
-// Keeping this information in mind, we created this Gantt chart:
-
-// #image("gantt-charts/november-pre.png")
+#image("gantt-charts/february-pre-1.png")
+#image("gantt-charts/february-pre-2.png")

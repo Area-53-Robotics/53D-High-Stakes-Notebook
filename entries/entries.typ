@@ -99,7 +99,7 @@
 // #include "competition/capital-beltway-challenge.typ"
 // #include "clamp-2/build-troubleshoot-2.typ"
 // #include "clamp-2/test-2.typ"
-// // ! Third Notebook
+// ! Third Notebook
 #include "odometry/identify.typ"
 #include "odometry/understand.typ"
 #include "odometry/brainstorm-movement.typ"
@@ -147,7 +147,6 @@
 #include "goal-rush-mech-1/brainstorm.typ"
 #include "goal-rush-mech-1/select.typ"
 #include "goal-rush-mech-1/plan.typ"
-// ! Fourth Notebook
 #include "ring-rush-mech-1/build.typ"
 #include "ring-rush-mech-1/build-troubleshooting.typ"
 #include "goal-rush-mech-1/build.typ"

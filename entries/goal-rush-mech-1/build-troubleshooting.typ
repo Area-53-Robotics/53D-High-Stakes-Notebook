@@ -1,7 +1,7 @@
 #import "/template/template.typ": *
 
 #show: create-entry.with(
-  title: "Mobile Goal Rush Mechanism - Troubleshooting v1",
+  title: "Goal Rush Mechanism v1 - Troubleshooting",
   type: "build",
   date: datetime(year: 2025, month: 2, day: 14),
   attendance: ("Ajibola", "Jin", "Ishika", "Makhi", "Eric", "Rory", "Anders"),
@@ -21,7 +21,7 @@ We planned to finish troubleshooting the mobile goal rush mechanism today to giv
 == Delegation
 #delegation(
   recurring: [
-    - *Inventory*: Eric, Rory, 
+    - *Inventory*: Eric, Rory,
     - *Manufacturing*: Eric, Rory
     - *Oversight & Quality Control*: Eric, Rory
     - *Initial Testing*: Everyone
@@ -59,7 +59,7 @@ We planned to finish troubleshooting the mobile goal rush mechanism today to giv
     [
       === Assembly
       - #text(red)[Problem:] The ring rush mechanism was experiencing friction.
-        - #text(green)[Solution:]: Loosened the screw joint slightly. This was possible since there was no nylon at the end of the screw joint. 
+        - #text(green)[Solution:]: Loosened the screw joint slightly. This was possible since there was no nylon at the end of the screw joint.
       - #text(red)[Problem:]: Air was leaking out of the pneumatics at about 1.5 PSI per second.
         - #text(green)[Solution:] Checked every junction that was connected to the mobile goal rush mechanism.
         - Replaced the double-acting solenoid.
@@ -67,7 +67,7 @@ We planned to finish troubleshooting the mobile goal rush mechanism today to giv
         - #text(green)[Solution:] Shortened the stand-offs at the end of the mobile goal rush mechanism.
 
     ],
-    
+
     [
       === Troubleshooting
       - Tested how consistent the mobile goal rush mechanism was by driving into a mobile goal.
